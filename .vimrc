@@ -22,7 +22,7 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  Bundle 'msanders/snipmate.vim'
  Bundle 'Townk/vim-autoclose'
  Bundle 'kien/ctrlp.vim'
- "Bundle 'Valloric/YouCompleteMe'
+ Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on "req
 

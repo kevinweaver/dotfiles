@@ -5,7 +5,7 @@ rbenvInstall() {
   git clone git://github.com/sstephenson/rbenv.git $HOME/.rbenv
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshrc
   git clone git://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
-  echo -e "If you're not using the zshrc in this repo add 'eval "$(rbenv init -)"' to your bashrc or zshrc.\n"
+  echo "If you're not using the zshrc in this repo add eval "$(rbenv init -)" to your bashrc or zshrc."
 }
 
 #build vim from source
