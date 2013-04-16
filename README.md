@@ -3,7 +3,7 @@ dotfiles
 
 My very own personal dotfiles
 
-/colorschemes  - Gnome Terminal Colorscheme scripts.  Should be moved to scripts repo.
+/colorschemes  - Gnome Terminal Colorscheme scripts.  Should be moved to scripts repo. <br/>
 /config_files - Powerline Config Files, made some customizations here <br/>
 /.fontconfig   - Font config files <br/>
 /.fonts        - A bunch of sick fonts! <br/>
