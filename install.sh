@@ -65,7 +65,7 @@ ohmyzsh() {
 }
 
 echo -e "Installing zsh and git...\n"
-sudo apt-get update; sudo apt-get install zsh git
+sudo apt-get update; sudo apt-get install curl wget zsh git
 
 #Build Vim from Source
 buildVim
