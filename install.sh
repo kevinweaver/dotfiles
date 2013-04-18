@@ -64,6 +64,11 @@ ohmyzsh() {
   chsh -s /bin/zsh
 }
 
+#Install irssi
+irssi(){
+  sudo apt-get -y install irssi irssi-scripts ca-certificates libcrypt-blowfish-perl libcrypt-dh-perl libcrypt-openssl-bignum-perl libmath-bigint-gmp-perl
+}
+
 echo -e "Installing zsh and git...\n"
 sudo apt-get update; sudo apt-get install curl wget zsh git
 
@@ -114,6 +119,8 @@ ubuPowerline
 
 #rbenv installation
 rbenvInstall
+#install irssi
+irssi
 
 #ip tables to prevent a good bit of bullshit ISP throttling
 echo -e "Adding ISP throttling IP to iptables...\n"
