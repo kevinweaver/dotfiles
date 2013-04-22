@@ -167,6 +167,8 @@ aliases = {
 };
 
 statusbar = {
+  #sb_default_bg = %4;
+
   # formats:
   # when using {templates}, the template is shown only if it's argument isn't
   # empty unless no argument is given. for example {sb} is printed always,

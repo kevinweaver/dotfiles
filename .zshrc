@@ -11,7 +11,6 @@ alias la="ls -a"
 alias deploy="~/scripts/deployment_scripts/main_deploy.sh"
 alias sudo="nocorrect sudo"
 
-if [ "$TMUX" = "" ]; then tmux; fi
 
 #Aliases
 source $HOME/.zsh_aliases
@@ -20,6 +19,8 @@ source $HOME/.zsh_aliases
 plugins=(git github vundle rbenv ruby rails rails3 encode64 tmux)
 
 source $ZSH/oh-my-zsh.sh
+TERM=xterm-256color
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # Default PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 # HOMEBREW / GVM / REVEL
