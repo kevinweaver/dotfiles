@@ -19,7 +19,8 @@ source $HOME/.zsh_aliases
 plugins=(git github vundle rbenv ruby rails rails3 encode64 tmux)
 
 source $ZSH/oh-my-zsh.sh
-TERM=xterm-256color
+
+export TERM=xterm-256color
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # Default PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
