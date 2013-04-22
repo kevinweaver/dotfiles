@@ -104,15 +104,13 @@ chatnets = {
   };
   SILC = { type = "SILC"; };
   "irc.freenode.net" = { type = "IRC"; autosendcmd = "Freenode"; };
-  OTFC = {
-    type = "IRC";
-     };
+  OTFC = { type = "IRC"; };
 };
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; }
-  { name = "#orderdeck"; chatnet = "Freenode"; autojoin = "Yes"; }
+  { name = "silc"; chatnet = "silc"; autojoin = "No"; },
+  { name = "#orderdeck"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#omnidev"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
@@ -287,4 +285,5 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "screwer-redux"; };
+  "perl/core/scripts" = { nicklist_height = "10"; nicklist_width = "10"; };
 };
