@@ -1,6 +1,0 @@
-/set bell_beeps ON
-/set beep_msg_level MSGS NOTICES DCC DCCMSGS HILIGHT
-/NICKLIST FIFO
-/set nicklist_width 10
-/set nicklist_height 10
-
