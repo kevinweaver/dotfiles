@@ -159,3 +159,4 @@ map <leader>t :w\|!rspec --drb --color %<cr>
 "        au InsertLeave * set timeoutlen=1000
 "    augroup END
 "endif
+set rtp+=/home/kevin/.local/lib/python2.7/site-packages/powerline/bindings/vim
