@@ -113,6 +113,7 @@ read -p "Enter your name (full name): " name
 read -p "Enter your git email address: " email
 git config --global user.name "$name"
 git config --global user.email "$email"
+git config --global push.default simple
 
 #Install Pianobar
 echo -e "Installing Necessary Pianobar files...\n"
