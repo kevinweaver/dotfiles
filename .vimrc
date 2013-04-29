@@ -70,6 +70,7 @@ set showcmd       " display incomplete commands
 set hidden        " keep undo history for background buffers
 set autoread      " autoamically read the file again when it is changed externally
 set showtabline=2 " always show tab bar
+set term=cons25   " fix issue with arrow keys
 
 " Editting configuration
 syntax enable
