@@ -67,7 +67,22 @@ ohmyzsh() {
 #Install irssi
 irssi(){
   sudo apt-get -y install irssi irssi-scripts ca-certificates libcrypt-blowfish-perl libcrypt-dh-perl libcrypt-openssl-bignum-perl libmath-bigint-gmp-perl
+  #ADD NICKLIST FIFO
 }
+
+#Install tmux and wemux
+tmuxwemux(){
+  echo -e "Installing tmux..."
+  sudo apt-get tmux
+  echo -e "Installing wemux..."
+  git clone git://github.com/zolrath/wemux.git /usr/local/share/wemux
+  ln -s /usr/local/share/wemux/wemux /usr/local/bin/wemux
+  cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
+  echo -e "Running basic wemux configuration..."
+  read -p "Which user would you like to set as your wemux host? (Probably this one)" user
+  echo "host_list=($user)" >> /user/local/etc/wemux.conf
+}
+
 
 echo -e "Installing zsh and git...\n"
 sudo apt-get update; sudo apt-get install curl wget zsh git
@@ -76,15 +91,21 @@ sudo apt-get update; sudo apt-get install curl wget zsh git
 buildVim
 #install oh-my-zsh
 ohmyzsh
+#install wemux
+tmuxwemux
 
 #Install vimrc zshrc and functions
 echo -e "Symlinking vimrc, zshrc, tmux.conf and such to HOME...\n"
 rm $HOME/.zshrc
+rm $HOME/.irssi
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zsh_aliases $HOME/.zsh_aliases
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/.tmux $HOME/.tmux
+ln -s $HOME/.dotfiles/.irssi $HOME/.irssi
+ln -s $HOME/.dotfiles/.fontconfig $HOME/.fontconfig
+ln -s $HOME/.dotfiles/.fonts $HOME/.fonts
 mkdir -p $HOME/.vim/tmp $HOME/.vim/backups
 
 echo -e "Running basic git configuration...\n"
