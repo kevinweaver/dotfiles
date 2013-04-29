@@ -1,5 +1,5 @@
 #! /bin/bash
-
+ 
 #install rbenv on osx or any linux
 rbenvInstall() {
   git clone git://github.com/sstephenson/rbenv.git $HOME/.rbenv
