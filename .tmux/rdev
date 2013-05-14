@@ -1,5 +1,29 @@
-selectp -t 0              # Select pane 0
-splitw -h -p 50 'bpython' # Split pane 0 vertically by 50%
-selectp -t 1              # Select pane 1
-splitw -v -p 25           # Split pane 1 horizontally by 25%
-selectp -t 0              # Select pane 0
+# pane0:top |  pane1:bottom-left | pane2:bottom-mid | pane3: bottom-right
+# select first pane -- only one if empty
+rename-window Ruby-Dev
+select-pane -t 0
+# split horizontally by 85%
+split-window -v -p 20
+# select bottom pane and split vertically for pianobar
+select-pane -t 1
+split-window -h -p 10
+#split for nicklist
+select-pane -t 1
+split-window -h -p 5
+#split for irssi
+select-pane -t 1
+split-window -h -p 30
+#split for guard/compass/server
+select-pane -t 1
+split-window -h -p 50
+
+#launch irssi and pianobar in their respective panes
+send -t 5 pianobar ENTER
+send -t 3 irssi ENTER
+send -t 4 'cat ~/.irssi/nicklistfifo' ENTER
+send -t 3 '/NICKLIST FIFO' ENTER
+select-pane -t 0
+
+#open new window at my dev server
+new-window -n 'Omni-Util' 'ssh oms1'
+select-window -t 1

@@ -12,7 +12,8 @@ select-pane -t 1
 split-window -h -p 50
 
 select-pane -t 2
-split-window -h -p 15
+split-window -h -p 12
+
 
 #launch irssi and pianobar in their respective panes
 send -t 4 pianobar ENTER
