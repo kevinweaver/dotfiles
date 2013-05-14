@@ -67,7 +67,6 @@ ohmyzsh() {
 #Install irssi
 irssi(){
   sudo apt-get -y install irssi irssi-scripts ca-certificates libcrypt-blowfish-perl libcrypt-dh-perl libcrypt-openssl-bignum-perl libmath-bigint-gmp-perl
-  #ADD NICKLIST FIFO
 }
 
 #Install tmux and wemux
@@ -83,10 +82,35 @@ tmuxwemux(){
   echo "host_list=($user)" >> /user/local/etc/wemux.conf
 }
 
+#Install Python
+python(){
+  echo -e "Installing sqlite 3..."
+  sudo apt-get install libsqlite3-dev
+  sudo apt-get install sqlite3
+  sudo apt-get install bzip2 libbz2-dev
+  echo -e "Installing python 3.3..."
+  mkdir $HOME/applications
+  cd $HOME/applications
+  wget http://python.org/ftp/python/3.3.0/Python-3.3.0.tar.bz2
+  tar jxf ./Python-3.3.0.tar.bz2
+  cd ./Python-3.3.0
+  ./configure --prefix=/opt/python3.3
+  make && sudo make install
+  echo -e "Installing python 2.7..."
+  cd $HOME/applications
+  sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+  wget http://python.org/ftp/python/2.7.2/Python-2.7.2.tgz
+  tar -xvf Python-2.7.2.tgz && cd Python-2.7.2/
+  ./configure
+  make
+  sudo make altinstall
+}
 
 echo -e "Installing zsh and git...\n"
 sudo apt-get update; sudo apt-get install curl wget zsh git
 
+#install python
+python
 #Build Vim from Source
 buildVim
 #install oh-my-zsh
