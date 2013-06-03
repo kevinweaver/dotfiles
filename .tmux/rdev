@@ -5,8 +5,8 @@ select-pane -t 0
 # split horizontally by 85%
 split-window -v -p 20
 # select bottom pane and split vertically for pianobar
-select-pane -t 1
-split-window -h -p 10
+#select-pane -t 1
+#split-window -h -p 10
 #split for nicklist
 select-pane -t 1
 split-window -h -p 5
@@ -18,7 +18,6 @@ select-pane -t 1
 split-window -h -p 50
 
 #launch irssi and pianobar in their respective panes
-send -t 5 pianobar ENTER
 send -t 3 irssi ENTER
 send -t 4 'cat ~/.irssi/nicklistfifo' ENTER
 send -t 3 '/NICKLIST FIFO' ENTER
