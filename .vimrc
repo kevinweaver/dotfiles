@@ -9,7 +9,7 @@ call vundle#rc()
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " let Vundle manage Vundle
-" required! 
+" required!
  Bundle 'gmarik/vundle'
  Bundle 'tpope/vim-fugitive'
  Bundle 'tpope/vim-rails'
@@ -23,6 +23,7 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  Bundle 'Townk/vim-autoclose'
  Bundle 'kien/ctrlp.vim'
  Bundle 'Valloric/YouCompleteMe'
+ Bundle 'wakatime/vim-wakatime'
 
 filetype plugin indent on "req
 

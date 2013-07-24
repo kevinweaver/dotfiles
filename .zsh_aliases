@@ -20,6 +20,7 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
+
 alias sublime_text="subl"
 alias sublime-text="subl"
 alias rakeall="bundle exec rake db:migrate && bundle exec rake db:test:prepare && bundle exec rake db:seed && RAILS_ENV=test bundle exec rake db:seed"
@@ -27,3 +28,4 @@ alias rakeall="bundle exec rake db:migrate && bundle exec rake db:test:prepare &
 #Website Project Folders
 alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart_tranq"
 alias bctech="cd ~/workspace/sites/bctech/wp-content/themes/bcenfold"
+alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
