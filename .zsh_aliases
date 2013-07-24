@@ -20,3 +20,8 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
+
+#websites
+tranquilo () {
+  cd ~/workspace/sites/tranq_kick/sites/all/themes/omega_kickstart_tranq/ 
+}
