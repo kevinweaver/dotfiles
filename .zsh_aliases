@@ -20,8 +20,18 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
+<<<<<<< HEAD
 
 #websites
 tranquilo () {
   cd ~/workspace/sites/tranq_kick/sites/all/themes/omega_kickstart_tranq/ 
 }
+=======
+alias sublime_text="subl"
+alias sublime-text="subl"
+alias rakeall="bundle exec rake db:migrate && bundle exec rake db:test:prepare && bundle exec rake db:seed && RAILS_ENV=test bundle exec rake db:seed"
+
+#Website Project Folders
+alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart_tranq"
+alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
+>>>>>>> ed777ce33a8bf0235f32739dda3edf163e2578d4

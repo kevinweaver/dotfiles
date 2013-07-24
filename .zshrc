@@ -26,7 +26,7 @@ if [ "$TMUX" = "" ]; then tmux; fi
 
 # Default PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 # HOMEBREW / GVM / REVEL
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/opt
 
 function chpwd() {
     emulate -L zsh
