@@ -26,4 +26,4 @@ alias rakeall="bundle exec rake db:migrate && bundle exec rake db:test:prepare &
 
 #Website Project Folders
 alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart_tranq"
-alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
+alias bctech="cd ~/workspace/sites/bctech/wp-content/themes/bcenfold"
