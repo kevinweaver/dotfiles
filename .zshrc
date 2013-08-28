@@ -10,6 +10,9 @@ alias ll="ls -l"
 alias la="ls -a"
 alias deploy="~/scripts/deployment_scripts/main_deploy.sh"
 alias sudo="nocorrect sudo"
+alias gitog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+
 
 
 #Aliases
@@ -37,4 +40,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Load rvm into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
-
+PATH=${PATH}:~/applications/android-sdk-linux/tools
+PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
