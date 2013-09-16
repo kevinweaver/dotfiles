@@ -1,6 +1,8 @@
 set nocompatible               " be iproved
 filetype off                   " required!
 "esc is far away, let's try ;; to get us out of insert mode
+ 
+
 
 imap ;; <esc>
 
@@ -23,7 +25,9 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  Bundle 'Townk/vim-autoclose'
  Bundle 'kien/ctrlp.vim'
  Bundle 'Valloric/YouCompleteMe'
- Bundle 'wakatime/vim-wakatime'
+ "Bundle 'wakatime/vim-wakatime'
+ Bundle 'airblade/vim-gitgutter'
+ Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on "req
 

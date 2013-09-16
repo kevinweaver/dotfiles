@@ -1,0 +1,62 @@
+2013-07-09 10:52:56	-->	jhartigan (~jake@c-76-117-113-136.hsd1.nj.comcast.net) has joined #orderdeck
+2013-07-09 10:52:56	--	Nicks #orderdeck: [@MpWilli @tommyvyo drkyro jchaike jhartigan jspeak Koreanderson kweaver kweaver_]
+2013-07-09 10:52:56	--	Channel #orderdeck: 9 nicks (2 ops, 0 halfops, 0 voices, 7 normals)
+2013-07-09 10:52:58	--	Mode #orderdeck [+cnt]
+2013-07-09 10:52:58	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-07-09 10:53:04	drkyro	morning gusy MpWilli tommyvyo kweaver
+2013-07-09 10:54:19	jhartigan	OUCH
+2013-07-09 10:54:22	jhartigan	no morning?
+2013-07-09 10:54:32	jhartigan	jeez drkyro gmorning to you toooo
+2013-07-09 10:54:49	kweaver	ouchhh
+2013-07-09 10:55:04	jhartigan	kweaver:  i think lithium fucking hates me right now
+2013-07-09 10:55:15	jhartigan	i cannot get a good connection on either computer
+2013-07-09 10:55:27	jhartigan	got some sql dumpbs but the ftp is a joke
+2013-07-09 10:56:04	kweaver	try the unban me button?
+2013-07-09 10:56:17	kweaver	that worked for me at least once
+2013-07-09 10:57:31	drkyro	jhartigan fuck you too, theres to many people here, how about you build a bot where i can say good morning :all and it auto tags everyone
+2013-07-09 10:59:11	kweaver	jhartigan:  just pull all the db dumps then
+2013-07-09 10:59:16	kweaver	i havent done any yet
+2013-07-09 11:00:18	kweaver	once I'm done pulling the sites, I'll go through and push them all to folders in /dev
+2013-07-09 11:01:02	kweaver	you can throw the dbdumps in the right folders, and then tomorrow we can start putting some sites up
+2013-07-09 11:01:19	jhartigan	alright ill start from the top and login to each for their dumps then
+2013-07-09 11:01:26	jhartigan	gonna reset the router one more time
+2013-07-09 11:04:33	<--	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
+2013-07-09 11:04:38	-->	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
+2013-07-09 11:04:38	<--	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
+2013-07-09 11:04:38	-->	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
+2013-07-09 11:04:38	--	Mode #orderdeck [+o tommyvyo] by ChanServ
+2013-07-09 11:12:01	@tommyvyo	yo kweaver
+2013-07-09 11:12:22	@tommyvyo	yo jhartigan jchaike jspeak Koreanderson drkyro and MPWILLI
+2013-07-09 11:12:36	@MpWilli	WHAT IS UP!
+2013-07-09 11:12:37	jspeak	sup tommyvyo
+2013-07-09 11:13:17	jhartigan	hey homie how goes it
+2013-07-09 11:13:47	drkyro	fgdf
+2013-07-09 11:13:47	drkyro	gf
+2013-07-09 11:13:47	drkyro	 
+2013-07-09 11:13:47	drkyro	df
+2013-07-09 11:13:48	drkyro	g
+2013-07-09 11:14:06	drkyro	sorry phone felt on keyboard
+2013-07-09 11:15:31	@tommyvyo	well
+2013-07-09 11:15:36	@tommyvyo	i got sunburn on my back
+2013-07-09 11:15:38	@tommyvyo	and sand in my bed
+2013-07-09 11:15:45	@tommyvyo	and now its like a sandpaper bed
+2013-07-09 11:15:49	@tommyvyo	also my macbook pro charger broke
+2013-07-09 11:17:21	@tommyvyo	jhartigan swim today
+2013-07-09 11:17:38	jhartigan	maybe!
+2013-07-09 11:17:54	jhartigan	right now im on the on call duty - sisters probs got apendecitis currently in the er
+2013-07-09 11:19:08	kweaver	you hear that tommyvyo?  dudes playin call of duty
+2013-07-09 11:19:14	@tommyvyo	i kno right im jell
+2013-07-09 11:19:47	jhartigan	lol yea that wasnt the best sentence was it
+2013-07-09 11:23:01	jhartigan	but so depending on how that shit goes i may be available to swimmyswam tommyvyo   probs not till later on though
+2013-07-09 11:27:03	◀▬	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
+2013-07-09 11:27:24	▬▶	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
+2013-07-09 11:27:24	◀▬	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
+2013-07-09 11:27:24	▬▶	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
+2013-07-09 11:27:24	--	Mode #orderdeck [+o tommyvyo] by ChanServ
+2013-07-09 11:37:18	◀▬	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
+2013-07-09 11:38:09	▬▶	_________ (~textual@50-198-229-9-static.hfc.comcastbusiness.net) has joined #orderdeck
+2013-07-09 11:45:03	kweaver	jhartigan:  just bold the ones that you have db dumps for
+2013-07-09 11:53:42	▬▶	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
+2013-07-09 11:53:42	◀▬	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
+2013-07-09 11:53:42	▬▶	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
+2013-07-09 11:53:42	--	Mode #orderdeck [+o tommyvyo] by ChanServ

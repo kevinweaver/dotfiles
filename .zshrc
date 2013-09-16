@@ -21,7 +21,7 @@ plugins=(git github vundle rbenv ruby rails rails3 encode64 tmux)
 source $ZSH/oh-my-zsh.sh
 
 export TERM=xterm-256color
-alias irssi='TERM=screen-256color irssi'
+alias weechat='TERM=screen-256color weechat-curses'
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # Default PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin

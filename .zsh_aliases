@@ -21,6 +21,7 @@ extract () {
      fi
 }
 
+alias mxlookup="nslookup -q=mx"
 alias sublime_text="subl"
 alias sublime-text="subl"
 alias rakeall="bundle exec rake db:migrate && bundle exec rake db:test:prepare && bundle exec rake db:seed && RAILS_ENV=test bundle exec rake db:seed"

@@ -6,22 +6,31 @@ select-pane -t 0
 split-window -v -p 20
 # select bottom pane and split vertically by 33%
 select-pane -t 1
-split-window -h -p 20
+split-window -h -p 75
 # select larger bottom pane and split in half - yielding 3 1/3 chunks
-select-pane -t 1
-split-window -h -p 50
-
 select-pane -t 2
-split-window -h -p 12
-
+split-window -h -p 66
 
 #launch irssi and pianobar in their respective panes
-send -t 4 pianobar ENTER
-send -t 2 irssi ENTER
-send -t 3 'cat ~/.irssi/nicklistfifo' ENTER
-send -t 2 '/NICKLIST FIFO' ENTER
+#send -t 4 pianobar ENTER
+send -t 3 weechat ENTER
+#send -t 3 'cat ~/.irssi/nicklistfifo' ENTER
+#send -t 2 '/NICKLIST FIFO' ENTER
 select-pane -t 0
 
 #open new window at my dev server
-new-window -n 'Omni-Utility' 'ssh oms1'
+new-window -n 'OMS2'
+select-window -t 2
+
+select-pane -t 0
+# split horizontally by 85%
+split-window -v -p 20
+# select bottom pane and split vertically by 33%
+select-pane -t 1
+split-window -h -p 75
+# select larger bottom pane and split in half - yielding 3 1/3 chunks
+select-pane -t 2
+split-window -h -p 66
+
+
 select-window -t 1
