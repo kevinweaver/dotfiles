@@ -1,62 +1,724 @@
-2013-07-09 10:52:56	-->	jhartigan (~jake@c-76-117-113-136.hsd1.nj.comcast.net) has joined #orderdeck
-2013-07-09 10:52:56	--	Nicks #orderdeck: [@MpWilli @tommyvyo drkyro jchaike jhartigan jspeak Koreanderson kweaver kweaver_]
-2013-07-09 10:52:56	--	Channel #orderdeck: 9 nicks (2 ops, 0 halfops, 0 voices, 7 normals)
-2013-07-09 10:52:58	--	Mode #orderdeck [+cnt]
-2013-07-09 10:52:58	--	Channel created on Tue, 27 Dec 2011 08:43:45
-2013-07-09 10:53:04	drkyro	morning gusy MpWilli tommyvyo kweaver
-2013-07-09 10:54:19	jhartigan	OUCH
-2013-07-09 10:54:22	jhartigan	no morning?
-2013-07-09 10:54:32	jhartigan	jeez drkyro gmorning to you toooo
-2013-07-09 10:54:49	kweaver	ouchhh
-2013-07-09 10:55:04	jhartigan	kweaver:  i think lithium fucking hates me right now
-2013-07-09 10:55:15	jhartigan	i cannot get a good connection on either computer
-2013-07-09 10:55:27	jhartigan	got some sql dumpbs but the ftp is a joke
-2013-07-09 10:56:04	kweaver	try the unban me button?
-2013-07-09 10:56:17	kweaver	that worked for me at least once
-2013-07-09 10:57:31	drkyro	jhartigan fuck you too, theres to many people here, how about you build a bot where i can say good morning :all and it auto tags everyone
-2013-07-09 10:59:11	kweaver	jhartigan:  just pull all the db dumps then
-2013-07-09 10:59:16	kweaver	i havent done any yet
-2013-07-09 11:00:18	kweaver	once I'm done pulling the sites, I'll go through and push them all to folders in /dev
-2013-07-09 11:01:02	kweaver	you can throw the dbdumps in the right folders, and then tomorrow we can start putting some sites up
-2013-07-09 11:01:19	jhartigan	alright ill start from the top and login to each for their dumps then
-2013-07-09 11:01:26	jhartigan	gonna reset the router one more time
-2013-07-09 11:04:33	<--	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
-2013-07-09 11:04:38	-->	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
-2013-07-09 11:04:38	<--	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
-2013-07-09 11:04:38	-->	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
-2013-07-09 11:04:38	--	Mode #orderdeck [+o tommyvyo] by ChanServ
-2013-07-09 11:12:01	@tommyvyo	yo kweaver
-2013-07-09 11:12:22	@tommyvyo	yo jhartigan jchaike jspeak Koreanderson drkyro and MPWILLI
-2013-07-09 11:12:36	@MpWilli	WHAT IS UP!
-2013-07-09 11:12:37	jspeak	sup tommyvyo
-2013-07-09 11:13:17	jhartigan	hey homie how goes it
-2013-07-09 11:13:47	drkyro	fgdf
-2013-07-09 11:13:47	drkyro	gf
-2013-07-09 11:13:47	drkyro	 
-2013-07-09 11:13:47	drkyro	df
-2013-07-09 11:13:48	drkyro	g
-2013-07-09 11:14:06	drkyro	sorry phone felt on keyboard
-2013-07-09 11:15:31	@tommyvyo	well
-2013-07-09 11:15:36	@tommyvyo	i got sunburn on my back
-2013-07-09 11:15:38	@tommyvyo	and sand in my bed
-2013-07-09 11:15:45	@tommyvyo	and now its like a sandpaper bed
-2013-07-09 11:15:49	@tommyvyo	also my macbook pro charger broke
-2013-07-09 11:17:21	@tommyvyo	jhartigan swim today
-2013-07-09 11:17:38	jhartigan	maybe!
-2013-07-09 11:17:54	jhartigan	right now im on the on call duty - sisters probs got apendecitis currently in the er
-2013-07-09 11:19:08	kweaver	you hear that tommyvyo?  dudes playin call of duty
-2013-07-09 11:19:14	@tommyvyo	i kno right im jell
-2013-07-09 11:19:47	jhartigan	lol yea that wasnt the best sentence was it
-2013-07-09 11:23:01	jhartigan	but so depending on how that shit goes i may be available to swimmyswam tommyvyo   probs not till later on though
-2013-07-09 11:27:03	◀▬	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
-2013-07-09 11:27:24	▬▶	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
-2013-07-09 11:27:24	◀▬	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
-2013-07-09 11:27:24	▬▶	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
-2013-07-09 11:27:24	--	Mode #orderdeck [+o tommyvyo] by ChanServ
-2013-07-09 11:37:18	◀▬	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has quit (Quit: 	)
-2013-07-09 11:38:09	▬▶	_________ (~textual@50-198-229-9-static.hfc.comcastbusiness.net) has joined #orderdeck
-2013-07-09 11:45:03	kweaver	jhartigan:  just bold the ones that you have db dumps for
-2013-07-09 11:53:42	▬▶	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has joined #orderdeck
-2013-07-09 11:53:42	◀▬	tommyvyo (~tommyvyo@c-68-83-3-164.hsd1.nj.comcast.net) has quit (Changing host)
-2013-07-09 11:53:42	▬▶	tommyvyo (~tommyvyo@unaffiliated/tommyvyo) has joined #orderdeck
-2013-07-09 11:53:42	--	Mode #orderdeck [+o tommyvyo] by ChanServ
+2013-09-11 16:32:33	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-11 16:32:33	--	Topic for #orderdeck is "nothing to see"
+2013-09-11 16:32:33	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-11 16:32:33	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike_ jfortunato jhartigan jspeak Koreanderson kweaver kweaver1 matthewspeak]
+2013-09-11 16:32:33	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-11 16:32:33	--	Mode #orderdeck [+cnt]
+2013-09-11 16:32:33	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-11 16:33:03	kweaver	sup
+2013-09-11 16:33:06	kweaver	my names kevin
+2013-09-11 16:38:37	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-11 16:38:37	--	Topic for #orderdeck is "nothing to see"
+2013-09-11 16:38:37	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-11 16:38:37	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike_ jfortunato jhartigan jspeak Koreanderson kweaver kweaver1 matthewspeak]
+2013-09-11 16:38:37	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-11 16:38:38	--	Mode #orderdeck [+cnt]
+2013-09-11 16:38:38	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-11 16:40:29	<--	beadyox (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has quit (Ping timeout: 256 seconds)
+2013-09-11 16:40:32	jspeak	tldrlol!
+2013-09-11 16:59:25	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-11 16:59:25	--	Topic for #orderdeck is "nothing to see"
+2013-09-11 16:59:25	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-11 16:59:25	--	Nicks #orderdeck: [@MpWilli @tommyvyo drkyro dtriley4 erockmazz jhartigan kweaver kweaver1]
+2013-09-11 16:59:25	--	Channel #orderdeck: 8 nicks (2 ops, 0 halfops, 0 voices, 6 normals)
+2013-09-11 16:59:26	--	Mode #orderdeck [+cnt]
+2013-09-11 16:59:26	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-11 17:01:24	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-11 17:01:24	--	Topic for #orderdeck is "nothing to see"
+2013-09-11 17:01:24	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-11 17:01:24	--	Nicks #orderdeck: [@MpWilli @tommyvyo drkyro dtriley4 erockmazz jhartigan kweaver kweaver1]
+2013-09-11 17:01:24	--	Channel #orderdeck: 8 nicks (2 ops, 0 halfops, 0 voices, 6 normals)
+2013-09-11 17:01:25	--	Mode #orderdeck [+cnt]
+2013-09-11 17:01:25	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-11 17:01:25	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-11 17:03:37	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-11 17:03:37	--	Topic for #orderdeck is "nothing to see"
+2013-09-11 17:03:37	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-11 17:03:37	--	Nicks #orderdeck: [@tommyvyo drkyro dtriley4 erockmazz jhartigan kweaver kweaver1]
+2013-09-11 17:03:37	--	Channel #orderdeck: 7 nicks (1 op, 0 halfops, 0 voices, 6 normals)
+2013-09-11 17:03:37	--	Mode #orderdeck [+cnt]
+2013-09-11 17:03:37	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 09:27:00	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 09:27:00	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 09:27:00	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 09:27:00	--	Nicks #orderdeck: [@MpWilli @tommyvyo erockmazz jfortunato jhartigan kweaver kweaver_laptop matthewspeak]
+2013-09-12 09:27:00	--	Channel #orderdeck: 8 nicks (2 ops, 0 halfops, 0 voices, 6 normals)
+2013-09-12 09:27:01	--	Mode #orderdeck [+cnt]
+2013-09-12 09:27:01	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 09:27:20	jhartigan	someone tell my back to chill the fuck out
+2013-09-12 09:27:43	matthewspeak	you know what will help your back?
+2013-09-12 09:27:50	matthewspeak	seeing digital tape machine on oct 12 at the blockley
+2013-09-12 09:29:18	jhartigan	amongst otherthings i wanna do, gotta wait on florida shit
+2013-09-12 09:30:13	matthewspeak	aiiight
+2013-09-12 09:30:43	matthewspeak	when are you guys finding out about that?
+2013-09-12 09:31:45	erockmazz	damn
+2013-09-12 09:31:50	erockmazz	I'd like to see them :*
+2013-09-12 09:31:52	erockmazz	:(
+2013-09-12 09:32:04	erockmazz	matthewspeak: have you heard Monsters of Folk?
+2013-09-12 09:32:14	matthewspeak	nope
+2013-09-12 09:32:29	erockmazz	It's basically My Morning Jacket & Bright Eyes
+2013-09-12 09:32:33	erockmazz	hybrid supergroup
+2013-09-12 09:32:37	matthewspeak	oh ok
+2013-09-12 09:32:39	matthewspeak	so literally?
+2013-09-12 09:32:42	erockmazz	yeah
+2013-09-12 09:32:44	jhartigan	hopefully the end of the week matthewspeak
+2013-09-12 09:32:52	matthewspeak	that's cool erockmazz and jhartigan
+2013-09-12 09:32:52	erockmazz	Jim James from My Morning Jacket
+2013-09-12 09:32:57	matthewspeak	yeah i like those guys
+2013-09-12 09:33:00	erockmazz	Conor Oberst and Mike Mogis from Bright Eyes
+2013-09-12 09:33:10	erockmazz	and M Ward (She & Him)
+2013-09-12 09:35:41	matthewspeak	DTM would probably put on a sweet show in a small venue
+2013-09-12 09:35:59	matthewspeak	haha remember DTM Project erockmazz?
+2013-09-12 09:36:08	erockmazz	hell yes
+2013-09-12 09:36:21	erockmazz	I wish they had played more
+2013-09-12 09:38:51	-->	Koreanderson (~Brian@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 09:40:16	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 09:45:21	-->	dtriley4 (ada75a82@gateway/web/freenode/ip.173.167.90.130) has joined #orderdeck
+2013-09-12 09:45:40	@tommyvyo	wait what is this erock mazz
+2013-09-12 09:45:47	@tommyvyo	thats awesome
+2013-09-12 09:45:55	@tommyvyo	M ward and conor oberst
+2013-09-12 09:45:58	@tommyvyo	i never listened to my morning jacket
+2013-09-12 09:46:11	erockmazz	Monsters of Folk
+2013-09-12 09:46:21	erockmazz	they recorded an album
+2013-09-12 09:46:24	erockmazz	and are planning a second
+2013-09-12 09:46:26	erockmazz	it's pretty good
+2013-09-12 09:46:31	erockmazz	if you like that kind of music
+2013-09-12 09:46:33	@tommyvyo	ima check dat out
+2013-09-12 09:46:44	erockmazz	I personally love Conor Oberst
+2013-09-12 09:46:47	@tommyvyo	me too
+2013-09-12 09:46:52	erockmazz	but I know a lot of people hate on him
+2013-09-12 09:46:58	erockmazz	Oh nice, yeah check them out then
+2013-09-12 09:47:26	@tommyvyo	MpWilli: i think you'll like this
+2013-09-12 09:47:28	@tommyvyo	https://soundcloud.com/itskulkid/mumford-sons-i-will-wait
+2013-09-12 09:47:28	[url]:	http://tinyurl.com/m2eyon2
+2013-09-12 09:49:57	@MpWilli	ima check dat out
+2013-09-12 09:52:08	@tommyvyo	also check out his mumford and sons remix
+2013-09-12 09:52:09	@tommyvyo	no
+2013-09-12 09:52:15	@tommyvyo	i mean his lana del rey
+2013-09-12 10:02:21	@MpWilli	oh i will
+2013-09-12 10:03:38	dtriley4	sup
+2013-09-12 10:04:26	erockmazz	sup
+2013-09-12 10:05:03	jspeak	sup
+2013-09-12 10:05:22	matthewspeak	sup
+2013-09-12 10:06:09	dtriley4	sup;
+2013-09-12 10:09:27	erockmazz	sup
+2013-09-12 10:09:36	erockmazz	ma
+2013-09-12 10:10:10	erockmazz	hoy
+2013-09-12 10:10:23	erockmazz	supma
+2013-09-12 10:10:30	erockmazz	sup
+2013-09-12 10:10:42	jspeak	doy
+2013-09-12 10:11:44	jhartigan	sup
+2013-09-12 10:11:57	-->	drkyro (~drkyro@c-98-254-18-79.hsd1.fl.comcast.net) has joined #orderdeck
+2013-09-12 10:11:59	jhartigan	hoy
+2013-09-12 10:12:03	erockmazz	damnit
+2013-09-12 10:12:05	erockmazz	jake got me
+2013-09-12 10:12:14	jhartigan	DRINK
+2013-09-12 10:12:16	jhartigan	ayo
+2013-09-12 10:12:42	jhartigan	we should play some doymasupmahhoy and some poker soon pls jspeak
+2013-09-12 10:13:17	jspeak	yeeeeeah
+2013-09-12 10:14:50	jhartigan	everyone else
+2013-09-12 10:14:53	jhartigan	poker soon
+2013-09-12 10:15:04	jhartigan	erockmazz: ...well setup a webcam and have a dedicated card flipper
+2013-09-12 10:15:13	erockmazz	lol
+2013-09-12 10:15:36	erockmazz	I'm in
+2013-09-12 10:15:46	erockmazz	you guys could all take laptops and we could play online :p
+2013-09-12 10:16:13	jhartigan	i was thinkin about that
+2013-09-12 10:16:20	jhartigan	paypal around some winnings haha
+2013-09-12 10:16:41	matthewspeak	what ever happened with online poker legalization?
+2013-09-12 10:17:03	erockmazz	idunno about playing for money
+2013-09-12 10:17:11	erockmazz	but there are sites that you can go in and just play for free
+2013-09-12 10:17:15	erockmazz	and get your friends in a room
+2013-09-12 10:17:32	erockmazz	one of ben's friends determined their fantasy draft order like that
+2013-09-12 10:17:38	erockmazz	tournament style poker
+2013-09-12 10:17:45	erockmazz	last man standing got first pick in draft
+2013-09-12 10:17:57	erockmazz	which I thought was a pretty cool idea
+2013-09-12 10:19:04	matthewspeak	that's cool
+2013-09-12 10:19:23	matthewspeak	online poker was legalized in NJ like last year
+2013-09-12 10:19:26	matthewspeak	for money
+2013-09-12 10:19:36	matthewspeak	but i don't know what ever happened with it
+2013-09-12 10:26:47	jhartigan	started in may matthewspeak
+2013-09-12 10:26:56	jhartigan	final bill is in november if it passes
+2013-09-12 10:40:55	-->	_________ (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has joined #orderdeck
+2013-09-12 10:41:26	--	_________ is now known as beadyox
+2013-09-12 11:12:27	-->	jchaike (~jchaike@dhcp-143-220.rowan.edu) has joined #orderdeck
+2013-09-12 11:17:21	jchaike	what sup everyone? MpWilli tommyvyo beadyox drkyro dtriley4 erockmazz jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak
+2013-09-12 11:17:29	jspeak	yoyo jchaike
+2013-09-12 11:17:39	jchaike	whats everyone up to
+2013-09-12 11:17:42	erockmazz	slow day - not much at all
+2013-09-12 11:19:08	beadyox	just doing my thang
+2013-09-12 11:19:11	beadyox	you?
+2013-09-12 11:19:38	jchaike	between classes, trying to let go of go daddy but they just WONT LET ME LEAVE lol
+2013-09-12 11:20:44	drkyro	MpWilli all you https://soundcloud.com/gramatik/tilt-mode-feat-gibbz
+2013-09-12 11:41:18	kweaver_laptop	supp
+2013-09-12 11:41:21	kweaver_laptop	umm
+2013-09-12 11:55:55	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #orderdeck
+2013-09-12 11:55:55	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 11:55:55	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 11:55:55	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 11:55:55	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-12 11:55:55	--	Mode #orderdeck [+cnt]
+2013-09-12 11:55:55	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 11:56:20	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #orderdeck
+2013-09-12 11:56:20	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 11:56:20	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 11:56:20	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 11:56:20	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-12 11:56:20	--	Mode #orderdeck [+cnt]
+2013-09-12 11:56:20	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 11:57:53	jhartigan	lemme know if that changes anything.. i have to taqke the browns to the superbowl jchaike
+2013-09-12 11:58:31	jchaike	cool thanks jhartigan
+2013-09-12 11:59:42	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #orderdeck
+2013-09-12 11:59:42	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 11:59:42	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 11:59:42	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 11:59:42	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-12 11:59:42	--	Mode #orderdeck [+cnt]
+2013-09-12 11:59:42	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 12:01:17	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #orderdeck
+2013-09-12 12:01:17	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 12:01:17	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 12:01:17	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 12:01:17	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-12 12:01:17	--	Notice(leguin.freenode.net): [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2013-09-12 12:01:17	--	Mode #orderdeck [+cnt]
+2013-09-12 12:01:17	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 12:02:19	<--	jchaike (~jchaike@dhcp-143-220.rowan.edu) has quit (Quit: Computer has gone to sleep.)
+2013-09-12 12:05:09	drkyro	omg tommyvyo  i cant take it off replay
+2013-09-12 12:05:14	drkyro	this is so mamazing
+2013-09-12 12:05:17	-->	jchaike (~jchaike@dhcp-143-220.rowan.edu) has joined #orderdeck
+2013-09-12 12:06:08	@tommyvyo	It's pretty good
+2013-09-12 12:09:53	drkyro	tommyvyo ive also been digin this one a lot https://soundcloud.com/gramatik/tilt-mode-feat-gibbz
+2013-09-12 12:15:45	@tommyvyo	Haven't heard that one
+2013-09-12 12:15:55	@tommyvyo	I don't think, is it the exmag one?
+2013-09-12 12:17:53	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #orderdeck
+2013-09-12 12:17:53	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 12:17:53	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 12:17:53	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 12:17:53	--	Channel #orderdeck: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-09-12 12:17:53	--	Mode #orderdeck [+cnt]
+2013-09-12 12:17:53	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 12:18:05	<--	jchaike (~jchaike@dhcp-143-220.rowan.edu) has quit (Quit: Computer has gone to sleep.)
+2013-09-12 13:20:28	--	irc: disconnected from server
+2013-09-12 13:20:54	-->	kweaver_laptop (~kweaver@pool-173-71-66-182.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 13:20:54	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 13:20:54	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 13:20:54	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox drkyro dtriley4 erockmazz jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-12 13:20:54	--	Channel #orderdeck: 13 nicks (2 ops, 0 halfops, 0 voices, 11 normals)
+2013-09-12 13:21:04	--	Mode #orderdeck [+cnt]
+2013-09-12 13:21:04	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 13:26:08	Koreanderson	http://www.youtube.com/watch?v=_Ii3cZlgqV4
+2013-09-12 13:43:49	kweaver_laptop	can you guys do me a favor
+2013-09-12 13:44:04	kweaver_laptop	go here and click the Reservations page: http://theflandershotel.com/
+2013-09-12 13:44:04	drkyro	kweaver_laptop no
+2013-09-12 13:44:14	kweaver_laptop	tell me if its resolving for you
+2013-09-12 13:44:25	drkyro	HOLY NAVIGATION BATMAN
+2013-09-12 13:44:33	kweaver_laptop	yeah they want like 600 pages
+2013-09-12 13:44:47	drkyro	kweaver_laptop its takes me too http://irm.theflandershotel.com/IRMNet/(S(eexrfs55mcltag550amcdm45))/Res/ResMain.aspx?Resort=01
+2013-09-12 13:44:47	[url]:	http://tinyurl.com/lorz3ha
+2013-09-12 13:45:06	kweaver_laptop	correct, but does that site work?
+2013-09-12 13:45:14	drkyro	it does for me
+2013-09-12 13:45:14	kweaver_laptop	it should take you to an ugly reservations page
+2013-09-12 13:45:41	dtriley4	resolving as in DNS, or like
+2013-09-12 13:45:48	dtriley4	resolving as in how i feel about it?
+2013-09-12 13:45:55	dtriley4	jk
+2013-09-12 13:45:56	kweaver_laptop	lol
+2013-09-12 13:46:00	kweaver_laptop	but the site is there?
+2013-09-12 13:46:00	dtriley4	rack rate
+2013-09-12 13:46:02	dtriley4	rackem
+2013-09-12 13:46:04	dtriley4	yeah
+2013-09-12 13:46:07	kweaver_laptop	ok cool
+2013-09-12 13:47:16	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 264 seconds)
+2013-09-12 13:47:45	dtriley4	iphone 5s looks cool
+2013-09-12 13:47:51	dtriley4	....
+2013-09-12 13:48:49	dtriley4	ʕノ•ᴥ•ʔノ ︵ ┻━┻
+2013-09-12 13:49:13	-->	jchaike (~jchaike@pool-96-248-109-194.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 13:49:13	dtriley4	‎(ﾉಥ益ಥ）ﾉ﻿ ┻━┻
+2013-09-12 13:51:04	dtriley4	http://shirt.woot.com/offers/what-are-those-foxes-saying
+2013-09-12 13:54:10	erockmazz	lmao dtriley4
+2013-09-12 13:54:30	erockmazz	bootstrappin' all up in here today
+2013-09-12 13:54:36	erockmazz	here being work
+2013-09-12 13:54:44	erockmazz	turning pro
+2013-09-12 14:01:36	@MpWilli	OMG EVERYONE TURKEY BOWLS ARE BACK!
+2013-09-12 14:01:41	@MpWilli	THEYRE SO GOOD IN MY MOUTH
+2013-09-12 14:02:48	kweaver_laptop	I didnt see it at our wawa :(
+2013-09-12 14:03:00	kweaver_laptop	wheres your nearest wawa MpWilli ?
+2013-09-12 14:03:04	kweaver_laptop	errrr
+2013-09-12 14:03:06	kweaver_laptop	erockmazz: 
+2013-09-12 14:03:06	kweaver_laptop	lol
+2013-09-12 14:03:16	kweaver_laptop	I know where everymerchants wawa is
+2013-09-12 14:03:18	@MpWilli	they actually have waw in florida now
+2013-09-12 14:03:18	erockmazz	damnit
+2013-09-12 14:03:21	kweaver_laptop	ITS INSIDE THE BUILDING
+2013-09-12 14:03:25	@MpWilli	hahahahah
+2013-09-12 14:03:26	erockmazz	yeah in orlando
+2013-09-12 14:03:31	erockmazz	and nowhere close to me
+2013-09-12 14:03:37	kweaver_laptop	that stinks
+2013-09-12 14:03:38	erockmazz	or drkyro
+2013-09-12 14:03:52	kweaver_laptop	might as well be across 10000 deserts
+2013-09-12 14:04:01	kweaver_laptop	if its not in walking distance
+2013-09-12 14:04:05	erockmazz	public dominates this whole area
+2013-09-12 14:04:15	erockmazz	and I must say, they make some decent sandwiches
+2013-09-12 14:04:15	kweaver_laptop	yeah publics are the tats
+2013-09-12 14:04:19	drkyro	was up erockmazz
+2013-09-12 14:04:25	erockmazz	publix*
+2013-09-12 14:04:30	erockmazz	autocorrect
+2013-09-12 14:04:40	erockmazz	you have any WaWas downy here?
+2013-09-12 14:04:44	erockmazz	down there**
+2013-09-12 14:05:36	drkyro	erockmazz Store #5123
+2013-09-12 14:05:36	drkyro	1125 E. Irlo Bronson Memorial Hwy.
+2013-09-12 14:05:36	drkyro	St. Cloud, FL 34769
+2013-09-12 14:05:53	drkyro	thats the only on in florida
+2013-09-12 14:06:33	erockmazz	they are planning on opening more i believe
+2013-09-12 14:06:39	erockmazz	but none near us
+2013-09-12 14:06:44	erockmazz	you're miami right?
+2013-09-12 14:07:31	<--	kweaver_laptop (~kweaver@pool-173-71-66-182.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.1)
+2013-09-12 21:53:30	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 21:53:30	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 21:53:30	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 21:53:30	--	Nicks #orderdeck: [@MpWilli @tommyvyo jchaike jhartigan kweaver kweaver_laptop]
+2013-09-12 21:53:30	--	Channel #orderdeck: 6 nicks (2 ops, 0 halfops, 0 voices, 4 normals)
+2013-09-12 21:53:30	--	Mode #orderdeck [+cnt]
+2013-09-12 21:53:30	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 21:58:16	-->	bananaboy_deskto (~bananaboy@dhcp-arubawireless-113-230.rowan.edu) has joined #orderdeck
+2013-09-12 21:58:29	bananaboy_deskto	hey guys
+2013-09-12 22:13:54	<--	bananaboy_deskto (~bananaboy@dhcp-arubawireless-113-230.rowan.edu) has quit (Ping timeout: 264 seconds)
+2013-09-12 22:45:51	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-12 22:45:51	--	Topic for #orderdeck is "nothing to see"
+2013-09-12 22:45:51	--	Topic set by MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) on Wed, 28 Aug 2013 09:48:16
+2013-09-12 22:45:51	--	Nicks #orderdeck: [@MpWilli @tommyvyo jchaike jhartigan kweaver kweaver_laptop]
+2013-09-12 22:45:51	--	Channel #orderdeck: 6 nicks (2 ops, 0 halfops, 0 voices, 4 normals)
+2013-09-12 22:45:52	--	Mode #orderdeck [+cnt]
+2013-09-12 22:45:52	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-12 22:47:51	<--	jchaike (~jchaike@pool-96-248-109-194.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-12 23:17:44	--	MpWilli has changed topic for #orderdeck from "nothing to see" to "Reminder: Tommyvyo needs to separate the code for the social loging so they dont share icons and classing… DUH"
+2013-09-12 23:17:56	--	MpWilli has changed topic for #orderdeck from "Reminder: Tommyvyo needs to separate the code for the social loging so they dont share icons and classing… DUH" to "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-12 23:46:14	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 240 seconds)
+2013-09-13 00:03:49	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Remote host closed the connection)
+2013-09-13 00:19:47	<--	tommyvyo (uid5016@gateway/web/irccloud.com/x-zzreqvrvamtyzipz) has quit (Ping timeout: 260 seconds)
+2013-09-13 09:06:14	--	irc: disconnected from server
+2013-09-13 09:06:39	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 09:06:40	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 09:06:40	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 09:06:40	--	Nicks #orderdeck: [_________ kweaver_laptop tommyvyo]
+2013-09-13 09:06:40	--	Channel #orderdeck: 3 nicks (0 ops, 0 halfops, 0 voices, 3 normals)
+2013-09-13 09:06:40	--	Mode #orderdeck [+cnt]
+2013-09-13 09:06:40	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 09:10:24	-->	matthewspeak (~Matt@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 09:11:29	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 09:11:30	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-13 09:14:13	-->	Koreanderson (~Brian@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 09:14:35	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 10:38:08	--	irc: disconnected from server
+2013-09-13 10:38:32	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 10:38:32	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 10:38:32	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 10:38:32	--	Nicks #orderdeck: [beadyox drkyro erockmazz jchaike jfortunato jspeak Koreanderson kweaver_laptop matthewspeak tommyvyo]
+2013-09-13 10:38:32	--	Channel #orderdeck: 10 nicks (0 ops, 0 halfops, 0 voices, 10 normals)
+2013-09-13 10:38:32	--	Mode #orderdeck [+cnt]
+2013-09-13 10:38:32	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 10:38:41	jchaike	im sorting through code for work, trying to figuyre out what the fuck is going on, so im just doing lots of for each loops to find out what the hell is in these arrays
+2013-09-13 10:38:44	jchaike	and only to find MORE arrays
+2013-09-13 10:38:53	drkyro	try to make the array into and object and work with it, arrays in arrays holds up the process if its a long one
+2013-09-13 10:39:10	drkyro	ohh thats no problem
+2013-09-13 10:39:13	jchaike	im not putting that amount of effort into this crap code lol
+2013-09-13 10:39:20	drkyro	ohh then fuck it
+2013-09-13 10:39:25	drkyro	array section bro
+2013-09-13 10:39:29	drkyro	seption*
+2013-09-13 10:39:29	jchaike	drkyro,  im dealing with 40thousand lines of if, elseif, else, elseif, lmao
+2013-09-13 10:39:55	drkyro	jchaike ahhahaha wow yea dont even try to use standards there
+2013-09-13 10:41:11	jchaike	drkyro,  http://imgur.com/iSCEP9g
+2013-09-13 10:41:12	jchaike	lol
+2013-09-13 10:41:44	drkyro	jchaike ohh god why
+2013-09-13 10:41:52	jchaike	thats only the first document, theres includes to other ones lool
+2013-09-13 11:14:40	-->	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 11:44:18	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 11:44:18	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-13 11:47:53	Koreanderson	nah drkyro
+2013-09-13 11:47:56	Koreanderson	he isn't
+2013-09-13 11:49:27	drkyro	Koreanderson im sorry to bother you but could you text him to ping me ass soon as possible
+2013-09-13 11:53:52	matthewspeak	erockmazz: what do you guys use in your office for assignments and queues and stuff?
+2013-09-13 11:54:17	erockmazz	like to organize work assigned to people?
+2013-09-13 11:54:23	matthewspeak	yeah
+2013-09-13 11:54:30	erockmazz	they used to use Asana
+2013-09-13 11:54:32	erockmazz	which is nice
+2013-09-13 11:54:35	matthewspeak	yeah we use that
+2013-09-13 11:54:38	erockmazz	but recently switched to TFS
+2013-09-13 11:54:53	erockmazz	everyone here is going to hate on it though
+2013-09-13 11:55:05	erockmazz	everything here is windows based
+2013-09-13 11:55:06	jhartigan	asanas a clustefuckstick for organization though
+2013-09-13 11:55:17	erockmazz	^ +1 for jhartigan
+2013-09-13 11:55:22	erockmazz	that's why we switched
+2013-09-13 11:55:35	jhartigan	like for an organization app it kinda sucks
+2013-09-13 11:55:36	matthewspeak	yeah ours is a bit unorganized
+2013-09-13 11:55:38	jhartigan	trello is much better
+2013-09-13 11:56:34	drkyro	by they way MpWilli Koreanderson  how was flume
+2013-09-13 11:56:47	jhartigan	the thing about a task manager is it should just work.. asanas a bit of a sluuut when it comes to marking things done, assigning taskts.. and wel leverything
+2013-09-13 11:58:16	erockmazz	asana's also good because you can use it as communication with your client
+2013-09-13 11:58:52	erockmazz	as far as internal assignments go though, we find that TFS is perfect
+2013-09-13 12:01:02	erockmazz	matthewspeak: the ben folds five album you told me to listen to, was it the self titles
+2013-09-13 12:01:05	erockmazz	titled*
+2013-09-13 12:01:10	matthewspeak	yeah
+2013-09-13 12:03:47	jhartigan	ITS SO GOOD
+2013-09-13 12:04:58	erockmazz	these piano riffs are pretty amazing
+2013-09-13 12:05:12	Koreanderson	drkyro: it was awesome man
+2013-09-13 12:08:02	jhartigan	i really like the sound of the life and mind as well matthewspeak
+2013-09-13 12:08:19	matthewspeak	yeah it's solid as hell
+2013-09-13 12:08:50	matthewspeak	erase me WHAT THE FUCK IS THIS you're crazy
+2013-09-13 12:11:17	jhartigan	put me in the ground and plow the daisies
+2013-09-13 12:15:51	matthewspeak	erockmazz: the bass playing is really good too
+2013-09-13 12:16:00	matthewspeak	listen closely, he is all over the place
+2013-09-13 12:20:48	jhartigan	company of theives - running from a gamble is pretty fucking solid rocking album ya should check out matthewspeak erockmazz
+2013-09-13 12:22:17	matthewspeak	ok
+2013-09-13 12:31:05	jhartigan	GUYS
+2013-09-13 12:31:07	jhartigan	GUYS
+2013-09-13 12:31:10	jhartigan	were gonna be off lithium
+2013-09-13 12:31:12	jhartigan	forever
+2013-09-13 12:31:15	jhartigan	momentarily
+2013-09-13 12:31:20	jhartigan	#e-BONER
+2013-09-13 12:38:38	jhartigan	jspeak: darren was talkin about the comedy show tonight and meeting up in pitman
+2013-09-13 12:39:03	jhartigan	i said id talk to you but didnt see why he couldnt meetup at your place
+2013-09-13 12:50:02	jchaike	jhartigan,  what is lithium
+2013-09-13 12:50:13	jhartigan	big bag of dicks
+2013-09-13 12:50:21	jchaike	sounds depressing lol
+2013-09-13 12:50:33	jchaike	php frameowrk?
+2013-09-13 12:53:11	jspeak	ah sick
+2013-09-13 12:53:20	jspeak	yeah thats fine
+2013-09-13 12:53:26	jspeak	why not just meet us at peebs?
+2013-09-13 12:58:30	tommyvyo	whats up drkyro
+2013-09-13 12:58:36	erockmazz	LOL
+2013-09-13 12:58:39	erockmazz	Darren is coming out?
+2013-09-13 12:58:43	erockmazz	pics or it never happened
+2013-09-13 12:58:49	erockmazz	i'll give you until monday
+2013-09-13 12:59:22	erockmazz	in my inbox no later than 9:59AM
+2013-09-13 13:04:13	jspeak	he came the other night
+2013-09-13 13:04:15	jspeak	to pbs
+2013-09-13 13:04:20	jspeak	i was shocked
+2013-09-13 13:33:34	jhartigan	lmap
+2013-09-13 13:33:36	jhartigan	yes
+2013-09-13 13:33:38	jhartigan	lmap
+2013-09-13 13:33:46	jhartigan	laugh my ass pirate
+2013-09-13 13:35:18	drkyro	tommyvyo can we go to private for sec
+2013-09-13 13:39:22	jchaike	;) ;)
+2013-09-13 13:39:35	tommyvyo	awwwww yis D:
+2013-09-13 13:39:47	jhartigan	dicpics imminent for tomq
+2013-09-13 13:39:49	jhartigan	tommyvyo:
+2013-09-13 13:40:23	tommyvyo	watup
+2013-09-13 13:40:25	tommyvyo	o
+2013-09-13 13:40:26	tommyvyo	lol
+2013-09-13 13:42:24	jhartigan	haha
+2013-09-13 13:43:10	jhartigan	yo tommyvyo actually. i was picking my brain the other day.. say someone decided to be a dick and made dns records for a site i hosted on digital ocean as well and had the same nameservers as me
+2013-09-13 13:43:23	jhartigan	who gets priority and proof of ownership?
+2013-09-13 13:44:48	jchaike	jhartigan,  wouldnt that be an issue anywhere, not just digital ocean?
+2013-09-13 13:44:56	jchaike	+ isnt your domain registered under your name, which so is digital ocean, for proof
+2013-09-13 13:44:57	jhartigan	yeah
+2013-09-13 13:45:19	jhartigan	its an issue anywhere someone has the same dns with the nameservers pointing to the same domain
+2013-09-13 13:45:25	jhartigan	im just curious as to how its resolved
+2013-09-13 13:45:29	jchaike	is that how domains get "HIJACKED"
+2013-09-13 13:45:30	jchaike	lol
+2013-09-13 14:00:05	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 14:00:06	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 14:00:06	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 14:00:06	--	Nicks #orderdeck: [@MpWilli beadyox drkyro erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver_laptop matthewspeak tommyvyo]
+2013-09-13 14:00:06	--	Channel #orderdeck: 12 nicks (1 op, 0 halfops, 0 voices, 11 normals)
+2013-09-13 14:00:06	--	Mode #orderdeck [+cnt]
+2013-09-13 14:00:06	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 14:00:17	jhartigan	KEVIN
+2013-09-13 14:00:19	jhartigan	KEVIN
+2013-09-13 14:00:20	kweaver_laptop	hey
+2013-09-13 14:00:21	kweaver_laptop	faskdlj
+2013-09-13 14:00:21	kweaver_laptop	sf
+2013-09-13 14:00:21	jhartigan	HAI
+2013-09-13 14:00:21	kweaver_laptop	a
+2013-09-13 14:00:22	kweaver_laptop	x
+2013-09-13 14:07:08	tommyvyo	jhartigan on a nameserver domain records are unique identifiers so you wouldn't be able to
+2013-09-13 14:08:26	jhartigan	so it wouldnt let me add the same domain if its already on that nameserver?
+2013-09-13 14:08:52	tommyvyo	yea
+2013-09-13 14:09:29	jhartigan	well i suppose that makes sense then
+2013-09-13 14:09:36	jhartigan	didnt think itd be that simple haha
+2013-09-13 14:10:50	tommyvyo	i dont think thats how domains get hijacked either
+2013-09-13 14:13:12	tommyvyo	i think a few years ago, it might have been cloudfront or some other NY based startup got their domain hijacked from some kid in california and he did it by impersonating security questions on a cell phone account and then changing the nameservers
+2013-09-13 14:20:43	jhartigan	guys can i has favor
+2013-09-13 14:20:54	jhartigan	kevins router / network dns cache is fucking retarded
+2013-09-13 14:21:02	jhartigan	so could you please visit and ping rowanaft.org formme
+2013-09-13 14:23:43	jchaike	C:\Users\AmericanOutlets> ping rowanaft.org
+2013-09-13 14:23:43	jchaike	Ping request could not find host rowanaft.org. Please check the name and try aga
+2013-09-13 14:23:44	jchaike	in.
+2013-09-13 14:24:07	jchaike	jhartigan,  ^^
+2013-09-13 14:24:13	jchaike	good ol
+2013-09-13 14:24:16	jchaike	 windows cmd
+2013-09-13 14:24:32	jhartigan	thats not good
+2013-09-13 14:24:34	jhartigan	but thanks
+2013-09-13 14:24:36	jhartigan	much
+2013-09-13 14:48:16	--	irc: disconnected from server
+2013-09-13 14:48:40	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 14:48:40	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 14:48:40	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 14:48:40	--	Nicks #orderdeck: [@MpWilli beadyox drkyro erockmazz jchaike jfortunato jharty jspeak Koreanderson kweaver1 kweaver_laptop matthewspeak tommyvyo]
+2013-09-13 14:48:40	--	Channel #orderdeck: 13 nicks (1 op, 0 halfops, 0 voices, 12 normals)
+2013-09-13 14:48:40	--	Mode #orderdeck [+cnt]
+2013-09-13 14:48:40	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 14:49:27	jharty	halp
+2013-09-13 14:50:50	jharty	error establishing db connection. db there, user there, pw set, privileges flushed
+2013-09-13 14:50:53	jharty	fucking lost
+2013-09-13 14:53:17	jspeak	with what platform jharty?
+2013-09-13 14:53:30	jharty	i htink i just got it
+2013-09-13 14:53:35	jharty	fucking cpanel prefixes db names
+2013-09-13 14:53:41	jharty	so the export might actually be something silly
+2013-09-13 14:53:42	matthewspeak	is it plugged in?
+2013-09-13 14:53:59	jspeak	did you try turning it off and on?
+2013-09-13 14:54:03	jspeak	blow on it?
+2013-09-13 14:54:21	matthewspeak	did you read the fucking manual?
+2013-09-13 14:54:29	jharty	OMG  BLOW ON IT TRICK DUH
+2013-09-13 15:05:55	jharty	i blew on it
+2013-09-13 15:05:57	jharty	it worked
+2013-09-13 15:06:06	<--	erockmazz (~eric.mazz@50-198-242-81-static.hfc.comcastbusiness.net) has left #orderdeck
+2013-09-13 15:06:20	-->	erockmazz (~eric.mazz@50-198-242-81-static.hfc.comcastbusiness.net) has joined #orderdeck
+2013-09-13 15:06:23	erockmazz	http://img.gawkerassets.com/img/187n6cf4dccgejpg/ku-xlarge.jpg
+2013-09-13 15:06:23	[url]:	http://tinyurl.com/lsf4rur
+2013-09-13 15:06:26	erockmazz	3rd bullet down
+2013-09-13 15:07:20	jharty	fuckin idiots
+2013-09-13 15:10:02	jchaike	its so you would go out and buy the game again!
+2013-09-13 15:10:03	jchaike	lol
+2013-09-13 15:23:09	jharty	kweaver_laptop: http://serverfault.com/questions/327829/redirect-subdomain-virtual-host-subdomains-to-path
+2013-09-13 15:23:09	[url]:	http://tinyurl.com/n4o3e5f
+2013-09-13 15:41:30	jchaike	drkyro, how are you with jquery?
+2013-09-13 15:44:44	drkyro	jchaike ive gotten better
+2013-09-13 15:45:03	jchaike	i need to detect when ANY combo box has changed
+2013-09-13 15:45:30	drkyro	jchaike first wtf is a combo box
+2013-09-13 15:45:43	jchaike	luls select
+2013-09-13 15:45:44	jchaike	sorry
+2013-09-13 15:45:53	jchaike	but nvm i fucked up
+2013-09-13 15:45:56	jchaike	fucking SMARTY SHIT
+2013-09-13 15:45:56	drkyro	one sec let me gist your ass
+2013-09-13 15:46:04	jchaike	fuck smarty
+2013-09-13 15:46:05	jchaike	holy shit
+2013-09-13 15:46:12	jchaike	{literal} {/literal} garbage
+2013-09-13 15:47:09	drkyro	jchaike https://gist.github.com/drkyro/eb2703ae8bed25fef3a0
+2013-09-13 15:49:29	jchaike	thanks drkyro
+2013-09-13 15:50:36	drkyro	jchaike does it help
+2013-09-13 16:11:12	matthewspeak	erockmazz: new dream theater album monday
+2013-09-13 16:12:36	erockmazz	crap seriously?
+2013-09-13 16:12:38	erockmazz	awesome
+2013-09-13 16:13:59	matthewspeak	yeah already
+2013-09-13 16:26:31	jspeak	matthewspeak:
+2013-09-13 16:26:38	jspeak	when you thinkin?
+2013-09-13 16:33:41	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.0)
+2013-09-13 16:33:57	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-13 16:34:01	jspeak	matthewspeak:
+2013-09-13 16:34:08	jspeak	gogogogogog
+2013-09-13 16:36:18	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2013-09-13 16:36:26	<--	Koreanderson (~Brian@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-13 16:40:09	jharty	damn yo
+2013-09-13 16:40:13	jharty	bitches be duckin out early
+2013-09-13 16:40:50	tommyvyo	right wtf
+2013-09-13 16:42:08	jchaike	someone help me with dumb math becuase i think i fried my brain
+2013-09-13 16:43:13	jchaike	this is the  "math problem" i got something on sale for 12.50. It was on sale for 50% off. What was the original price? Write a formula to find the original price independent of the discount
+2013-09-13 16:43:23	<--	matthewspeak (~Matt@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2013-09-13 16:43:50	jchaike	javascripts giving me weird ass answers when i do ((ourprice/(100-discount))*100);
+2013-09-13 16:44:13	tommyvyo	lol jchaike
+2013-09-13 16:44:18	tommyvyo	javascript does weird shit with integers
+2013-09-13 16:44:30	jchaike	i did jquery Number(
+2013-09-13 16:45:06	jchaike	var ourprice = $(".product-price-value").text();
+2013-09-13 16:45:06	jchaike	ourprice=Number(ourprice.replace(/[^0-9\.]+/g,""));
+2013-09-13 16:45:19	jchaike	(because it has a $$ in it)
+2013-09-13 16:46:15	jharty	well .5(original) = 12.5
+2013-09-13 16:46:27	jharty	so 12.5/.5 would be the math
+2013-09-13 16:46:45	jchaike	fuck me. thank you jharty  lmfao
+2013-09-13 16:46:55	jharty	work retail
+2013-09-13 16:47:00	jharty	percentages are cake after that
+2013-09-13 16:47:22	jchaike	no i did lmfao, i know HOW to do it... just javascript was giving me answers taht were off by like .10 each time
+2013-09-13 16:47:23	jchaike	it was weird
+2013-09-13 16:47:29	jchaike	i think my formula was overcomplicated lol
+2013-09-13 16:47:35	jharty	cause js isnt staticly typed
+2013-09-13 16:47:42	jharty	im not js expert so youd have t look into it
+2013-09-13 16:48:04	jharty	probably specify a set number of places after the decimal, namely two, and always to use cieling for the third after it
+2013-09-13 16:48:07	jharty	thats my guess anyway
+2013-09-13 16:48:31	jchaike	yeah i gotta lok into why js is shit lol thakns jharty
+2013-09-13 16:48:51	jharty	alsooo...
+2013-09-13 16:49:15	jharty	if youre calculating pricing with js someone could spoof it and potentially send a form with a pirce they set
+2013-09-13 16:49:20	jharty	depending on how your shit works
+2013-09-13 16:50:37	jchaike	nah its not even for that. theres the list price and "our price" and the our price is crossed off to show you how great of a sale youre getting, and they want it to update live
+2013-09-13 16:50:48	jchaike	so its like dynamically updated for a static piece of text
+2013-09-13 16:50:49	jchaike	lol
+2013-09-13 16:52:44	jharty	thats cool.  just dont want someone spoofing an ajax request and getting shit for pennies
+2013-09-13 16:53:46	jchaike	true haha, i'm pretty certain the "list price" is completely independent from the form thats submitted when its added to the car, but ill double check with epople to get myself covered lol
+2013-09-13 16:53:46	<--	kweaver1 (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2013-09-13 16:53:47	jchaike	thanks
+2013-09-13 17:25:08	--	irc: disconnected from server
+2013-09-13 17:25:33	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 17:25:33	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 17:25:33	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 17:25:33	--	Nicks #orderdeck: [beadyox drkyro jharty kweaver_laptop tommyvyo]
+2013-09-13 17:25:33	--	Channel #orderdeck: 5 nicks (0 ops, 0 halfops, 0 voices, 5 normals)
+2013-09-13 17:25:33	--	Mode #orderdeck [+cnt]
+2013-09-13 17:25:33	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 17:35:28	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-13 17:36:59	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2013-09-13 17:40:50	jharty	drkyro: tommyvyo  one yall do me a favor and goto rowanaft.org
+2013-09-13 17:41:06	drkyro	jharty mni Developers - Server 2
+2013-09-13 17:41:17	jharty	thanks dude
+2013-09-13 17:41:26	jharty	fuckin kevins shit.. you never know if shits resolved
+2013-09-13 17:46:03	tommyvyo	yep
+2013-09-13 18:04:41	jharty	who you yeppppppppppin
+2013-09-13 18:12:54	<--	jharty (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.1)
+2013-09-13 18:37:04	-->	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 18:40:27	<--	drkyro (~drkyro@c-98-254-18-79.hsd1.fl.comcast.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2013-09-13 19:34:37	<--	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2013-09-13 20:04:46	--	irc: disconnected from server
+2013-09-13 20:05:11	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 20:05:11	--	Topic for #orderdeck is "Reminder: Tommyvyo needs to separate the code for the social login buttons so they dont share icons and classing… DUH"
+2013-09-13 20:05:11	--	Topic set by MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) on Thu, 12 Sep 2013 23:17:56
+2013-09-13 20:05:11	--	Nicks #orderdeck: [beadyox jhartigan kweaver_laptop tommyvyo]
+2013-09-13 20:05:11	--	Channel #orderdeck: 4 nicks (0 ops, 0 halfops, 0 voices, 4 normals)
+2013-09-13 20:05:11	--	Mode #orderdeck [+cnt]
+2013-09-13 20:05:11	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-13 20:22:57	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-13 20:51:42	<--	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2013-09-13 22:22:29	<--	beadyox (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-13 23:54:26	-->	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-13 23:59:06	<--	jhartigan (~jhartigan@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2013-09-14 01:32:33	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-14 09:22:47	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 09:22:47	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 09:25:40	@MpWilli	you awake tommyvyo ?
+2013-09-14 09:33:25	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-14 11:14:05	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 11:29:23	-->	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has joined #orderdeck
+2013-09-14 13:03:05	<--	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has quit (Ping timeout: 264 seconds)
+2013-09-14 13:09:01	-->	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has joined #orderdeck
+2013-09-14 13:32:04	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 13:32:04	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 13:44:53	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-14 14:51:03	@MpWilli	sup kweaver_laptop
+2013-09-14 14:51:07	@MpWilli	sup jchaike
+2013-09-14 14:51:12	jchaike	to MpWilli  whatsup
+2013-09-14 14:51:15	jchaike	*yo
+2013-09-14 14:51:21	@MpWilli	not much chillin
+2013-09-14 15:21:45	jchaike	MpWilli you familiar with making seamless backgrounds?
+2013-09-14 16:00:50	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-14 16:12:08	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 16:12:15	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Client Quit)
+2013-09-14 16:16:35	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 16:58:11	<--	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-14 17:02:22	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-14 18:15:16	-->	kweaver (~kevin@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-14 18:15:30	kweaver	sup tommyvyo
+2013-09-14 18:15:57	tommyvyo	At this great bar called Bauhaus with Matt
+2013-09-14 18:16:07	tommyvyo	Wrecked on my bike today, shits ducked up.
+2013-09-14 18:16:12	tommyvyo	What about you homie
+2013-09-14 18:16:31	kweaver	ugh that blows
+2013-09-14 18:16:44	kweaver	you and your bike alright?
+2013-09-14 18:17:27	kweaver	not much, remember I told you that I would inform your any time I would be in philly drinking?
+2013-09-14 18:17:42	kweaver	as to never betray eachothers friendships again
+2013-09-14 18:18:39	kweaver	well tomorrow, Danielle and I are running the Philly 1/2 marathon, and afterwords Michelob is giving free taste tests of Michelob Ultra!
+2013-09-14 18:19:15	kweaver	so I have an obligation to inform you
+2013-09-14 19:31:27	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 19:31:27	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 19:32:32	-->	Koreanderson (~Brian@68.46.126.184) has joined #orderdeck
+2013-09-14 19:45:10	<--	Koreanderson (~Brian@68.46.126.184) has quit (Quit: Leaving.)
+2013-09-14 21:03:00	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-14 21:30:35	-->	jhartigan (~jhartigan@c-69-248-38-125.hsd1.nj.comcast.net) has joined #orderdeck
+2013-09-14 21:38:17	<--	jhartigan (~jhartigan@c-69-248-38-125.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2013-09-14 22:08:09	<--	kweaver (~kevin@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Remote host closed the connection)
+2013-09-14 22:58:18	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 22:58:18	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 23:01:55	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Client Quit)
+2013-09-14 23:02:52	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 23:02:52	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 23:25:18	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-14 23:37:24	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-14 23:37:24	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-14 23:41:35	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-15 01:13:25	tommyvyo	Koreanderson:
+2013-09-15 01:29:41	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-15 02:05:48	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-15 10:57:19	-->	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has joined #orderdeck
+2013-09-15 10:58:47	<--	jchaike (~jchaike@ool-44c0a4bd.dyn.optonline.net) has quit (Client Quit)
+2013-09-15 11:56:02	-->	kweaver (~kevin@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-15 11:57:05	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-15 11:57:05	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-15 11:59:30	@MpWilli	sup tommyvyo
+2013-09-15 12:50:06	<--	kweaver (~kevin@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Remote host closed the connection)
+2013-09-15 12:53:09	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-15 13:00:54	-->	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-15 13:53:55	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-15 13:53:55	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-15 14:30:51	<--	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-09-15 14:36:19	-->	MpWilli (~mpwilli@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-15 14:36:19	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2013-09-15 15:22:56	-->	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has joined #orderdeck
+2013-09-15 16:01:25	tommyvyo	yo MpWilli
+2013-09-15 16:01:33	@MpWilli	sup tommyvyo
+2013-09-15 16:01:42	tommyvyo	just pushed a new top bar
+2013-09-15 16:01:49	tommyvyo	so that it only shows my account dropdown if there is something to drop down
+2013-09-15 16:02:07	@MpWilli	fuck yeah dude
+2013-09-15 16:02:16	@MpWilli	tommyvyo orders page is changing up a bit my dude
+2013-09-15 16:04:18	<--	kweaver (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2013-09-15 16:26:55	<--	Koreanderson (~Brian@pool-71-185-45-53.phlapa.fios.verizon.net) has quit (Quit: Leaving.)
+2013-09-15 18:53:35	-->	Koreanderson (~Brian@ip-64-134-97-58.public.wayport.net) has joined #orderdeck
+2013-09-16 10:11:26	-->	kweaver_laptop (~kweaver@pool-96-248-122-10.cmdnnj.fios.verizon.net) has joined #orderdeck
+2013-09-16 10:11:26	--	Topic for #orderdeck is "http://www.reddit.com/r/web_design/comments/1mftyi/screwed_by_paypal_what_marketplacespayment/cc8yf4n"
+2013-09-16 10:11:26	--	Topic set by tommyvyo (uid5016@gateway/web/irccloud.com/x-kfsrloyyovhwduhh) on Mon, 16 Sep 2013 03:41:38
+2013-09-16 10:11:26	--	Nicks #orderdeck: [@MpWilli @tommyvyo beadyox erockmazz jchaike jfortunato jhartigan jspeak Koreanderson kweaver kweaver_laptop matthewspeak]
+2013-09-16 10:11:26	--	Channel #orderdeck: 12 nicks (2 ops, 0 halfops, 0 voices, 10 normals)
+2013-09-16 10:11:27	--	Mode #orderdeck [+cnt]
+2013-09-16 10:11:27	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2013-09-16 10:18:19	jhartigan	jspeak: see ivy suing a british casino cause they said he cheated and wont apy him 8M
+2013-09-16 10:18:33	jspeak	lol damn
+2013-09-16 10:19:10	jhartigan	used 'edge sorting' apparently he used flaws on the backs of the cards to identify certain ones
+2013-09-16 10:19:11	jspeak	from a tournament? or just from playing the tables?
+2013-09-16 10:19:34	jspeak	o o
+2013-09-16 10:19:53	jspeak	isnt that why they use new decks every few hands?
+2013-09-16 10:20:22	jspeak	i mean if they arnt changing the decks, then its their fault
+2013-09-16 10:20:25	jhartigan	yeah.. well its apparently from cards that are cut in sheets where the pattern covers all of it
+2013-09-16 10:20:48	jhartigan	so like the pattern is visibly shifted on certain cards by a small small degree and the nyou can identify defects from it
+2013-09-16 10:21:04	kweaver	so yeah, the casino's fault
+2013-09-16 10:21:04	kweaver	lol
+2013-09-16 10:21:06	kweaver	i hope he wins
+2013-09-16 10:21:45	Koreanderson	hey guys
+2013-09-16 10:21:52	Koreanderson	explain to me "Working knowledge of accessibility (Section 508, WCAG, ARIA) and usability best practices and techniques"
+2013-09-16 10:21:54	jhartigan	yeah.
+2013-09-16 10:21:58	kweaver	if you're a casino that makes $billions and you only want to spend 25cents per deck, then you're going to have a bad time
+2013-09-16 10:22:09	jhartigan	he asked for the ability to raise the bets to 150k from 50k cause he had it sorted
+2013-09-16 10:23:20	jhartigan	he was playing the house.. some version of baccarat
+2013-09-16 10:23:29	jhartigan	so theyre pissed cause he took them, not some other chumps
+2013-09-16 10:23:56	kweaver	Koreanderson:  basically saying that you know how to make things accessible for people with disabilities
+2013-09-16 10:24:01	kweaver	using alt tags
+2013-09-16 10:24:04	kweaver	titles
+2013-09-16 10:24:08	kweaver	labels
+2013-09-16 10:24:11	Koreanderson	oh ok
+2013-09-16 10:24:21	Koreanderson	how kweaver how was your run?
+2013-09-16 10:24:23	Koreanderson	oh*
+2013-09-16 10:24:37	kweaver	twas good
+2013-09-16 10:24:44	kweaver	ran it with the gal
+2013-09-16 10:24:57	kweaver	had an overall good time
+2013-09-16 10:25:27	Koreanderson	very awesome
+2013-09-16 10:26:17	-->	drkyro (~drkyro@c-98-254-18-79.hsd1.fl.comcast.net) has joined #orderdeck
+2013-09-16 10:27:41	kweaver	jhartigan:  chabit is good to goo
+2013-09-16 10:27:56	kweaver	i also swapped BC's analytics with their own account and threw that info in the secret
+2013-09-16 10:28:23	kweaver	ima double check our to-do's and add anything new I can think of
+2013-09-16 10:28:41	drkyro	morning guys
+2013-09-16 10:30:43	jchaike	sup drkyro
+2013-09-16 10:31:17	drkyro	sup jchaike  how awas the weekend
+2013-09-16 10:32:24	jchaike	pretty good, headed back home for the weekend spent time with the FAM
+2013-09-16 10:36:24	drkyro	awesome man
+2013-09-16 10:36:43	jchaike	hbu drkyro
+2013-09-16 10:37:38	drkyro	i spend all saturday with my mother, took her out for lunch then coffee drove around town then to a fancy bar for a drink and ended up at  the movies,
+2013-09-16 10:38:45	jchaike	drkyro,  what movie? ive been wanting to go to the movies i havent been in a few weeks, i didnt see anything too great out
+2013-09-16 10:39:50	drkyro	jchaike the grandmaster, if youre a fan of ip man then you must see that
+2013-09-16 10:39:55	drkyro	also this is the end
+2013-09-16 10:40:02	kweaver	has anyone been to the pitman wawa this weekend?
+2013-09-16 10:40:15	kweaver	and can anyone confirm if the gobler will be there?
+2013-09-16 10:40:50	kweaver	I need ocular confirmation of the sandwich
+2013-09-16 10:43:38	<--	kweaver (~kevin@pool-96-248-122-10.cmdnnj.fios.verizon.net) has quit (Quit: leaving)
+2013-09-16 10:43:47	jchaike	drkyro, this is the end is EXCELLENT
+2013-09-16 10:43:53	jchaike	i cant wait for that movie to come out on dVD
+2013-09-16 10:44:09	drkyro	jchaike i kind of the it, if you want i can link you to it
+2013-09-16 10:44:56	jchaike	link to what, the torrent? drkyro
+2013-09-16 10:45:08	drkyro	yea of just search iot on thepirate
+2013-09-16 10:46:14	jchaike	nahhh i dont do movie torrents
+2013-09-16 10:46:26	drkyro	ahh ok
+2013-09-16 10:46:42	jchaike	i got caught way too many times (letters from cablevision lol) and i like owning phsyical copies of movies
+2013-09-16 10:46:50	jchaike	^ im almost @ 500 movies haha
+2013-09-16 10:46:54	jchaike	*owning 500 movies
+2013-09-16 10:47:02	jchaike	i think im at 437 right now
