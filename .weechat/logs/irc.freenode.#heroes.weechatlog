@@ -1,0 +1,54 @@
+2013-10-14 16:39:47	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #heroes
+2013-10-14 16:39:47	--	Nicks #heroes: [@ChanServ jchaike jhartigan kweaver kweaver_laptop]
+2013-10-14 16:39:47	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2013-10-14 16:39:49	--	Mode #heroes [+cnt]
+2013-10-14 16:39:49	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2013-10-14 16:39:52	kweaver_laptop	sup jchaike 
+2013-10-14 16:40:13	jchaike	not much werkin on heroes
+2013-10-14 16:40:25	jchaike	did you have anything specific in mind for the sidebar menu?
+2013-10-14 16:40:39	kweaver_laptop	at this point, no
+2013-10-14 16:40:47	kweaver_laptop	you mean the functionality of it?
+2013-10-14 16:41:15	jchaike	yeah kinda, like did you wanna use jQuery and animate the sidebar arrow indicator and such?
+2013-10-14 16:41:30	jchaike	also i need a little help putting the foundation grid specifically inside the box thing
+2013-10-14 16:41:39	kweaver_laptop	hold off on that stuff for now, Im not even 100% about 
+2013-10-14 16:41:40	kweaver_laptop	that
+2013-10-14 16:42:13	kweaver_laptop	jchaike G+ for a minute
+2013-10-14 16:42:17	kweaver_laptop	just easier than typing
+2013-10-14 16:42:39	jchaike	i actually can't g+ lol i don't have a voice lmao kweaver_laptop
+2013-10-14 16:42:48	kweaver_laptop	aight
+2013-10-14 16:43:06	kweaver_laptop	rename the folder you currently have your work in
+2013-10-14 16:43:09	kweaver_laptop	the whole project folder
+2013-10-14 16:43:32	kweaver_laptop	change it from ems_heroes to ems_heroes_nemsis
+2013-10-14 16:43:43	jchaike	ok
+2013-10-14 16:43:50	kweaver_laptop	and ill invite you to the new repo
+2013-10-14 16:44:09	jchaike	ok, i actually wanna just pull the repo, and then ill add in my specific work into it
+2013-10-14 16:44:56	kweaver_laptop	dont worry about pulling that repo
+2013-10-14 16:45:17	kweaver_laptop	i branched out into a second one because the databases are pretty different
+2013-10-14 16:45:37	kweaver_laptop	so I started a new one specifically for the flu stuff
+2013-10-14 16:45:46	kweaver_laptop	without the nemsis database backend
+2013-10-14 16:45:57	jchaike	okay
+2013-10-14 16:46:08	kweaver_laptop	so once you rename your main folder
+2013-10-14 16:46:25	kweaver_laptop	then clone the new repo with:
+2013-10-14 16:46:30	kweaver_laptop	git clone git@bitbucket.org:kevinweaver/ems_heroes.git
+2013-10-14 16:46:32	kweaver_laptop	one min though
+2013-10-14 16:46:34	kweaver_laptop	gotta invite you
+2013-10-14 16:48:12	kweaver_laptop	youre good jchaike 
+2013-10-14 16:48:16	kweaver_laptop	try it
+2013-10-14 16:48:55	jchaike	kk cool
+2013-10-14 16:49:57	jchaike	got it
+2013-10-14 16:50:00	jchaike	so now you want me to copy in my stuff from the public folder?
+2013-10-14 16:50:02	kweaver_laptop	yeah
+2013-10-14 16:50:07	kweaver_laptop	and put it in this repo
+2013-10-14 16:50:22	kweaver_laptop	feel free to hang on or delete that previous repo
+2013-10-14 16:50:41	kweaver_laptop	if we ever need to yank that db from it, Ill probably just do it on this new repo
+2013-10-14 16:51:11	jchaike	ok cool
+2013-10-14 16:54:27	jchaike	kweaver_laptop want me to push to the master?
+2013-10-14 16:54:34	kweaver_laptop	sure thing
+2013-10-14 16:57:00	jchaike	all up to date
+2013-10-14 16:57:45	jchaike	kweaver_laptop are you doing heroes now also?
+2013-10-14 16:58:01	kweaver_laptop	will be after I send out an email
+2013-10-14 16:58:15	jchaike	ok cool
+2013-10-14 17:13:48	jchaike	when you're working on heroes i need some help with the grid implementation
+2013-10-14 17:21:39	kweaver_laptop	brb jchaike 
+2013-10-14 17:21:46	jchaike	kk
+2013-10-14 17:22:50	<--	kweaver (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
