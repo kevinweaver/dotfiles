@@ -374,3 +374,153 @@
 2013-10-14 16:39:49		Options saved to alias.conf
 2013-10-14 17:34:05		ruby: scripts unloaded
 2013-10-14 17:34:05		python: scripts unloaded
+2013-10-14 17:41:59		script: downloading list of scripts...
+2013-10-14 17:41:59		python scripts loaded: notify
+2013-10-14 17:42:00		ruby scripts loaded: url_shorten
+2013-10-14 17:42:00		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-14 17:42:00		script: 249 scripts for WeeChat 0.4.2
+2013-10-14 19:01:57		ruby: scripts unloaded
+2013-10-14 19:01:57		python: scripts unloaded
+2013-10-15 17:18:49		script: downloading list of scripts...
+2013-10-15 17:18:49		python scripts loaded: notify
+2013-10-15 17:18:49		ruby scripts loaded: url_shorten
+2013-10-15 17:18:49		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-15 17:18:50		script: 249 scripts for WeeChat 0.4.2
+2013-10-15 21:29:12		ruby: scripts unloaded
+2013-10-15 21:29:12		python: scripts unloaded
+2013-10-16 10:29:54		script: downloading list of scripts...
+2013-10-16 10:29:54		python scripts loaded: notify
+2013-10-16 10:29:54		ruby scripts loaded: url_shorten
+2013-10-16 10:29:54		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-16 10:29:54	=!=	script: list of scripts is empty (repository file is broken, or download has failed)
+2013-10-16 10:39:21		ruby: scripts unloaded
+2013-10-16 10:39:21		python: scripts unloaded
+2013-10-16 10:39:22	=!=	script: list of scripts is empty (repository file is broken, or download has failed)
+2013-10-16 10:39:23		python scripts loaded: notify
+2013-10-16 10:39:23		ruby scripts loaded: url_shorten
+2013-10-16 10:39:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-16 12:21:44		ruby: scripts unloaded
+2013-10-16 12:21:44		python: scripts unloaded
+2013-10-16 12:21:45		script: downloading list of scripts...
+2013-10-16 12:21:45		python scripts loaded: notify
+2013-10-16 12:21:45		ruby scripts loaded: url_shorten
+2013-10-16 12:21:45		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-16 12:21:45		script: 249 scripts for WeeChat 0.4.2
+2013-10-17 11:38:49	=!=	Error: unknown command "site" (type /help for help)
+2013-10-17 18:28:32		script: downloading list of scripts...
+2013-10-17 18:28:32		python scripts loaded: notify
+2013-10-17 18:28:32		ruby scripts loaded: url_shorten
+2013-10-17 18:28:32		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-17 18:28:33		script: 249 scripts for WeeChat 0.4.2
+2013-10-18 11:07:43		ruby: scripts unloaded
+2013-10-18 11:07:43		python: scripts unloaded
+2013-10-18 11:24:25		script: downloading list of scripts...
+2013-10-18 11:24:25		python scripts loaded: notify
+2013-10-18 11:24:25		ruby scripts loaded: url_shorten
+2013-10-18 11:24:25		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-18 11:24:26		script: 249 scripts for WeeChat 0.4.2
+2013-10-18 16:13:49		ruby: scripts unloaded
+2013-10-18 16:13:49		python: scripts unloaded
+2013-10-19 14:39:32		script: downloading list of scripts...
+2013-10-19 14:39:32		python scripts loaded: notify
+2013-10-19 14:39:32		ruby scripts loaded: url_shorten
+2013-10-19 14:39:32		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 14:39:32	=!=	script: error downloading list of scripts: Error with URL 'http://www.weechat.org/files/plugins.xml.gz'
+2013-10-19 14:44:05		ruby: scripts unloaded
+2013-10-19 14:44:05		python: scripts unloaded
+2013-10-19 14:45:07		script: downloading list of scripts...
+2013-10-19 14:45:07		python scripts loaded: notify
+2013-10-19 14:45:07		ruby scripts loaded: url_shorten
+2013-10-19 14:45:07		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 14:45:07	=!=	script: error downloading list of scripts: Error with URL 'http://www.weechat.org/files/plugins.xml.gz'
+2013-10-19 14:52:36		ruby: scripts unloaded
+2013-10-19 14:52:37		python: scripts unloaded
+2013-10-19 14:58:43		script: downloading list of scripts...
+2013-10-19 14:58:43		python scripts loaded: notify
+2013-10-19 14:58:43		ruby scripts loaded: url_shorten
+2013-10-19 14:58:43		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 14:58:44		script: 256 scripts for WeeChat 0.4.2
+2013-10-19 17:47:18		ruby: scripts unloaded
+2013-10-19 17:47:18		python: scripts unloaded
+2013-10-19 17:47:19		script: downloading list of scripts...
+2013-10-19 17:47:19		python scripts loaded: notify
+2013-10-19 17:47:19		ruby scripts loaded: url_shorten
+2013-10-19 17:47:19		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 17:47:20		script: 256 scripts for WeeChat 0.4.2
+2013-10-19 20:47:31		ruby: scripts unloaded
+2013-10-19 20:47:31		python: scripts unloaded
+2013-10-20 12:19:11		script: downloading list of scripts...
+2013-10-20 12:19:12		python scripts loaded: notify
+2013-10-20 12:19:12		ruby scripts loaded: url_shorten
+2013-10-20 12:19:12		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-20 12:19:16		script: 256 scripts for WeeChat 0.4.2
+2013-10-20 12:46:10		ruby: scripts unloaded
+2013-10-20 12:46:10		python: scripts unloaded
+2013-10-20 17:08:00		script: downloading list of scripts...
+2013-10-20 17:08:00		python scripts loaded: notify
+2013-10-20 17:08:01		ruby scripts loaded: url_shorten
+2013-10-20 17:08:01		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-20 17:08:01		script: 256 scripts for WeeChat 0.4.2
+2013-10-20 17:27:12		ruby: scripts unloaded
+2013-10-20 17:27:12		python: scripts unloaded
+2013-10-20 17:58:26		script: 256 scripts for WeeChat 0.4.2
+2013-10-20 17:58:26		python scripts loaded: notify
+2013-10-20 17:58:26		ruby scripts loaded: url_shorten
+2013-10-20 17:58:26		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-20 23:25:17	=!=	Error: unknown command "quir" (type /help for help)
+2013-10-20 23:25:19		ruby: scripts unloaded
+2013-10-20 23:25:19		python: scripts unloaded
+2013-10-21 09:04:18		script: downloading list of scripts...
+2013-10-21 09:04:18		python scripts loaded: notify
+2013-10-21 09:04:18		ruby scripts loaded: url_shorten
+2013-10-21 09:04:18		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-21 09:04:19		script: 256 scripts for WeeChat 0.4.2
+2013-10-21 11:05:38		ruby: scripts unloaded
+2013-10-21 11:05:38		python: scripts unloaded
+2013-10-21 19:01:33		script: downloading list of scripts...
+2013-10-21 19:01:33		python scripts loaded: notify
+2013-10-21 19:01:33		ruby scripts loaded: url_shorten
+2013-10-21 19:01:33		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-21 19:01:34		script: 256 scripts for WeeChat 0.4.2
+2013-10-23 11:03:23		ruby: scripts unloaded
+2013-10-23 11:03:24		python: scripts unloaded
+2013-10-23 11:03:54		script: downloading list of scripts...
+2013-10-23 11:03:54		python scripts loaded: notify
+2013-10-23 11:03:54		ruby scripts loaded: url_shorten
+2013-10-23 11:03:54		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-23 11:03:55	=!=	script: list of scripts is empty (repository file is broken, or download has failed)
+2013-10-23 15:17:08		ruby: scripts unloaded
+2013-10-23 15:17:08		python: scripts unloaded
+2013-10-23 16:02:23		script: downloading list of scripts...
+2013-10-23 16:02:23		python scripts loaded: notify
+2013-10-23 16:02:23		ruby scripts loaded: url_shorten
+2013-10-23 16:02:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-23 16:02:24		script: 260 scripts for WeeChat 0.4.2
+2013-10-24 09:53:05		ruby: scripts unloaded
+2013-10-24 09:53:05		python: scripts unloaded
+2013-10-24 10:36:12		script: downloading list of scripts...
+2013-10-24 10:36:12		python scripts loaded: notify
+2013-10-24 10:36:12		ruby scripts loaded: url_shorten
+2013-10-24 10:36:12		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-24 10:36:12		script: 260 scripts for WeeChat 0.4.2
+2013-10-24 13:54:14		ruby: scripts unloaded
+2013-10-24 13:54:14		python: scripts unloaded
+2013-10-24 23:59:32		script: downloading list of scripts...
+2013-10-24 23:59:33		python scripts loaded: notify
+2013-10-24 23:59:33		ruby scripts loaded: url_shorten
+2013-10-24 23:59:33		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-24 23:59:34		script: 260 scripts for WeeChat 0.4.2
+2013-10-25 09:24:26		ruby: scripts unloaded
+2013-10-25 09:24:26		python: scripts unloaded
+2013-10-26 11:46:46		script: downloading list of scripts...
+2013-10-26 11:46:46		python scripts loaded: notify
+2013-10-26 11:46:46		ruby scripts loaded: url_shorten
+2013-10-26 11:46:46		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-26 11:46:47		script: 260 scripts for WeeChat 0.4.2
+2013-10-27 12:27:05		ruby: scripts unloaded
+2013-10-27 12:27:05		python: scripts unloaded
+2013-10-27 12:27:08		script: downloading list of scripts...
+2013-10-27 12:27:08		python scripts loaded: notify
+2013-10-27 12:27:08		ruby scripts loaded: url_shorten
+2013-10-27 12:27:08		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-27 12:27:09		script: 260 scripts for WeeChat 0.4.2

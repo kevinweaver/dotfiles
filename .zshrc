@@ -42,3 +42,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=${PATH}:~/applications/android-sdk-linux/tools
 PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
