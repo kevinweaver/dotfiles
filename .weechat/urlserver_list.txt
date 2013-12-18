@@ -1,0 +1,11 @@
+{
+  0: ('09/12/13 15:25:56', 'jakenbake', 'irc.freenode.#omnidev', 'http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad', 'jakenbake\tkweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad'),
+  1: ('09/12/13 15:26:05', 'jakenbake', 'irc.freenode.#omnidev', 'http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad', 'jakenbake\tkweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad'),
+  2: ('09/12/13 15:26:58', '', 'irc.server.freenode', 'http://tinyurl.com/api-create.php?url=%s', '\t[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s'),
+  3: ('09/12/13 15:27:20', 'jakenbake', 'irc.freenode.#omnidev', 'http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad', 'jakenbake\tkweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad'),
+  4: ('09/12/13 15:28:50', '', 'irc.server.freenode', 'http://tinyurl.com/api-create.php?url=%s', '\t[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s'),
+  5: ('09/12/13 15:29:02', 'holmes.freenode.net', 'irc.freenode.#omnidev', 'http://freenode.net/faq.shtml#nicksetup', "--\tNotice(holmes.freenode.net) -> #omnidev: [freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup"),
+  6: ('09/12/13 15:29:06', 'jakenbake', 'irc.freenode.#omnidev', 'http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad', 'jakenbake\tkweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad'),
+  7: ('09/12/13 15:29:09', '', 'irc.freenode.#omnidev', 'http://tinyurl.com/m8yuf8x', '[url]:\thttp://tinyurl.com/m8yuf8x'),
+  8: ('09/12/13 15:31:15', 'jakenbake', 'irc.freenode.#omnidev', 'http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad', 'jakenbake\tkweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad'),
+}

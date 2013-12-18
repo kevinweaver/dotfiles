@@ -1976,3 +1976,2600 @@
 2013-10-28 09:38:12	--	Mode #omnidev [+cnt]
 2013-10-28 09:38:13	--	Channel created on Wed, 16 May 2012 23:00:17
 2013-10-28 10:26:55	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-28 11:30:52	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-28 11:32:27	kweaver	jhartigan:  jharty ever have an issue with losing your vim syntax highlighting?
+2013-10-28 11:33:08	jhartigan	nope.  syntax on is still in yer vimrc?
+2013-10-28 11:35:10	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-10-28 11:46:18	kweaver	yeah it is
+2013-10-28 11:46:25	kweaver	i made sure nothing changed in my vimrc
+2013-10-28 11:46:36	kweaver	installing 7.4 now
+2013-10-28 11:46:43	jhartigan	i think thatll fix it
+2013-10-28 11:54:53	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-10-28 11:55:21	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-28 11:55:54	kweaver	we good jhartigan
+2013-10-28 11:57:11	jhartigan	yeah thats weird that caused the issue. i figure its got something todo with actually processing the embedded image
+2013-10-28 11:57:15	jhartigan	or attempting to render it
+2013-10-28 11:58:52	kweaver	yeah im thinking it was probably a buffer overload.  I had two data-png urls in there, the first one wasnt too long and was fine, the second was probably a few hundred KB all in one line
+2013-10-28 11:59:08	kweaver	vim took like 15 seconds to paste in there
+2013-10-28 12:00:52	jhartigan	yeah i think by default the encoded file is somehow processed to a degree
+2013-10-28 12:00:54	jhartigan	iunno though
+2013-10-28 13:29:16	kweaver	jhartigan:  are you able to get the bitsync secret for the documents folder you started?
+2013-10-28 13:29:33	kweaver	I tried the last one you gave me, but it says there are 0 files
+2013-10-28 13:29:46	kweaver	you sent them over gchat
+2013-10-28 13:34:26	kweaver	nm got it
+2013-10-28 13:36:05	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-10-28 13:36:05	--	irc: disconnected from server
+2013-10-28 20:47:23	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-28 20:47:23	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2013-10-28 20:47:23	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-28 20:47:23	--	Notice(adams.freenode.net) -> #omnidev: [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2013-10-28 20:47:25	--	Mode #omnidev [+cnt]
+2013-10-28 20:47:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-28 21:06:38	<--	kweaver1 (~kweaver@96.248.78.50) has quit (Ping timeout: 240 seconds)
+2013-10-28 21:34:49	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-28 21:39:29	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-10-28 21:52:37	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-28 22:11:17	<--	kweaver1 (~kweaver@96.248.78.50) has quit (Ping timeout: 248 seconds)
+2013-10-28 22:33:27	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-28 23:25:36	<--	kweaver1 (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-10-28 23:27:44	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-28 23:35:35	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-28 23:40:26	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 264 seconds)
+2013-10-28 23:51:48	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 240 seconds)
+2013-10-28 23:57:24	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-10-28 23:57:24	--	irc: disconnected from server
+2013-10-29 09:11:26	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-29 09:11:27	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2013-10-29 09:11:27	--	Nicks #omnidev: [@kweaver]
+2013-10-29 09:11:27	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-10-29 09:11:27	--	Mode #omnidev [-o kweaver] by services.
+2013-10-29 09:11:27	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383052286 to 1337223617
+2013-10-29 09:11:27	--	Mode #omnidev [+ct-s] by services.
+2013-10-29 09:11:27	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-10-29 09:11:27	--	Mode #omnidev [+o ChanServ] by services.
+2013-10-29 09:11:28	--	Mode #omnidev [+cnt]
+2013-10-29 09:11:28	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-29 09:22:03	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-29 09:22:03	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-10-29 09:23:14	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-29 09:39:30	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-10-29 09:43:41	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Operation timed out)
+2013-10-29 10:16:31	--	irc: disconnected from server
+2013-10-29 11:28:22	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-29 11:28:22	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-29 11:28:22	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-29 11:28:24	--	Mode #omnidev [+cnt]
+2013-10-29 11:28:24	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-29 11:30:51	kweaver	damnnn
+2013-10-29 11:30:54	kweaver	and then one day
+2013-10-29 11:30:59	kweaver	when we're really badass
+2013-10-29 11:31:09	kweaver	we could map the scrolling to speed up the video
+2013-10-29 11:31:17	kweaver	which would create the illusion of you moving to the right
+2013-10-29 11:31:18	kweaver	i believe
+2013-10-29 11:31:43	jhartigan	it may yeah.. not sure. but  i think it would
+2013-10-29 11:32:11	kweaver	if you have things moving in front of it also, i think that would be the case
+2013-10-29 11:32:30	kweaver	anyway im gonna put together this contract
+2013-10-29 11:33:11	kweaver	today I want to at least get the design to the point where you can help me with it
+2013-10-29 12:07:12	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-29 12:07:12	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-29 12:07:12	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-29 12:07:15	--	Mode #omnidev [+cnt]
+2013-10-29 12:07:15	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-29 12:35:20	jhartigan	well at least there were responses from em both
+2013-10-29 12:39:49	kweaver	awesome
+2013-10-29 12:40:07	kweaver	whatd kelly say?
+2013-10-29 12:40:37	kweaver	got ourselves another no-replyall-er
+2013-10-29 12:41:17	jhartigan	yeah shit just noticed
+2013-10-29 12:41:31	jhartigan	shes got food instpection this week and a jury duty summons so shell let us know sat if she can do next week
+2013-10-29 12:41:39	kweaver	hahahaha
+2013-10-29 12:41:41	kweaver	nopeeeee
+2013-10-29 12:43:15	kweaver	alright well set yourself a reminder, or write up a boomerang for next monday
+2013-10-29 12:43:21	kweaver	just checking in
+2013-10-29 12:43:49	kweaver	im done assuming that she will actually reply when she says she does
+2013-10-29 12:43:57	jhartigan	yeah i figued thats gonna have to be the plan with them
+2013-10-29 12:44:09	jhartigan	i mean were almost up to their hosting renewal.. still no site haah
+2013-10-29 17:51:44	-->	kweaver_laptop (~kweaver@177.sub-70-215-85.myvzw.com) has joined #omnidev
+2013-10-29 17:51:44	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-29 17:51:44	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-29 17:51:46	--	Mode #omnidev [+cnt]
+2013-10-29 17:51:46	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-29 21:36:46	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-29 21:36:46	--	Mode #omnidev [+ns] by moorcock.freenode.net
+2013-10-29 21:36:46	--	Nicks #omnidev: [@kweaver]
+2013-10-29 21:36:46	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-10-29 21:36:46	--	Mode #omnidev [-o kweaver] by services.
+2013-10-29 21:36:46	--	Notice(moorcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383097006 to 1337223617
+2013-10-29 21:36:46	--	Mode #omnidev [+ct-s] by services.
+2013-10-29 21:36:46	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-10-29 21:36:46	--	Mode #omnidev [+o ChanServ] by services.
+2013-10-29 21:36:48	--	Mode #omnidev [+cnt]
+2013-10-29 21:36:48	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 09:24:32	--	irc: disconnected from server
+2013-10-30 09:24:56	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 09:24:56	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-10-30 09:24:56	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-10-30 09:24:56	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-10-30 09:24:59	--	Mode #omnidev [+cnt]
+2013-10-30 09:24:59	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 09:33:15	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-10-30 13:55:29	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 13:55:29	--	Nicks #omnidev: [jharty kweaver kweaver_laptop]
+2013-10-30 13:55:29	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-30 13:55:31	--	Mode #omnidev [+cnt]
+2013-10-30 13:55:31	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 14:10:05	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-10-30 14:55:28	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 14:55:28	--	Nicks #omnidev: [jharty kweaver]
+2013-10-30 14:55:28	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-10-30 14:55:30	--	Mode #omnidev [+cnt]
+2013-10-30 14:55:31	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 21:15:09	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 21:15:09	--	Mode #omnidev [+ns] by pratchett.freenode.net
+2013-10-30 21:15:09	--	Nicks #omnidev: [@kweaver]
+2013-10-30 21:15:09	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-10-30 21:15:09	--	Mode #omnidev [-o kweaver] by services.
+2013-10-30 21:15:09	--	Notice(pratchett.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383182109 to 1337223617
+2013-10-30 21:15:09	--	Mode #omnidev [+ct-s] by services.
+2013-10-30 21:15:09	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-10-30 21:15:09	--	Mode #omnidev [+o ChanServ] by services.
+2013-10-30 21:15:11	--	Mode #omnidev [+cnt]
+2013-10-30 21:15:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 21:18:29	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 21:18:29	--	Nicks #omnidev: [@ChanServ kweaver]
+2013-10-30 21:18:29	--	Channel #omnidev: 2 nicks (1 op, 0 voices, 1 normal)
+2013-10-30 21:18:31	--	Mode #omnidev [+cnt]
+2013-10-30 21:18:31	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-30 21:24:28	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-30 21:24:28	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-10-30 23:04:39	<--	kweaver1 (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-10-31 15:04:24	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-31 15:04:24	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-31 15:04:24	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-31 15:04:26	--	Mode #omnidev [+cnt]
+2013-10-31 15:04:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-31 15:08:33	jhartigan	ok kweaver can you check 192.168.1.1:8888
+2013-10-31 15:12:00	kweaver_laptop	just from my laptop?
+2013-10-31 15:12:02	kweaver_laptop	jhartigan: 
+2013-10-31 15:12:10	jhartigan	yeah.. fuck
+2013-10-31 15:12:15	jhartigan	192.168.1.17
+2013-10-31 15:12:21	jhartigan	not 192.168.1.1
+2013-10-31 15:13:03	kweaver_laptop	192.168.1.17:8888 isnt working
+2013-10-31 15:13:18	jhartigan	k. its probably that fios router
+2013-10-31 15:13:30	jhartigan	but i think we can setup btsync from cmd line as well
+2013-10-31 15:15:43	jhartigan	actually it wasnt running.. pid issuse
+2013-10-31 15:15:45	jhartigan	sec
+2013-10-31 15:15:54	kweaver_laptop	k
+2013-10-31 15:15:57	kweaver_laptop	lemme know when
+2013-10-31 15:16:03	jhartigan	yeah i will
+2013-10-31 15:16:09	jhartigan	cause if you setup files by cmd
+2013-10-31 15:16:14	jhartigan	it overrrides the webui settings
+2013-10-31 16:02:57	--	irc: disconnected from server
+2013-10-31 16:03:23	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-31 16:03:23	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-31 16:03:23	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-31 16:03:26	--	Mode #omnidev [+cnt]
+2013-10-31 16:03:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-31 16:06:31	jhartigan	kweaver_laptop: can you try dat bitch out again?
+2013-10-31 16:09:53	kweaver_laptop	yeah
+2013-10-31 16:10:06	kweaver_laptop	http://192.168.1.17:8888/
+2013-10-31 16:10:08	kweaver_laptop	right?
+2013-10-31 16:10:09	jhartigan	then give that bitch a try
+2013-10-31 16:10:12	jhartigan	bitches love trys
+2013-10-31 16:10:14	jhartigan	yaya
+2013-10-31 16:10:25	jhartigan	im expecting a fail.. but not sure
+2013-10-31 16:10:32	kweaver_laptop	nothin
+2013-10-31 16:10:38	kweaver_laptop	oh
+2013-10-31 16:10:39	kweaver_laptop	were good
+2013-10-31 16:10:42	kweaver_laptop	name/pass?
+2013-10-31 16:10:59	jhartigan	oh spit
+2013-10-31 16:11:18	jhartigan	thats a good question haha
+2013-10-31 16:11:24	jhartigan	admin kupomog312!
+2013-10-31 16:11:50	kweaver_laptop	took me to http://192.168.1.17:8888/gui/
+2013-10-31 16:11:54	kweaver_laptop	but its blank
+2013-10-31 16:12:11	kweaver_laptop	looks like the name and pass worked though
+2013-10-31 16:12:18	jhartigan	hmmm
+2013-10-31 16:12:32	jhartigan	refresh?
+2013-10-31 16:12:39	kweaver_laptop	yeah tried a few times
+2013-10-31 16:12:39	jhartigan	if no dice ill ook into it
+2013-10-31 16:12:43	kweaver_laptop	its not loading either
+2013-10-31 16:13:11	kweaver_laptop	meaning, its finished loading, with nothing there
+2013-10-31 16:13:21	jhartigan	hokay
+2013-10-31 16:13:29	jhartigan	i mean we could manually add shit with ssh
+2013-10-31 16:13:37	jhartigan	but i guess web ui is easier yaknow
+2013-10-31 16:13:45	jhartigan	ill see if i can fix her up
+2013-10-31 16:13:46	kweaver_laptop	yeah itd be nice to have at least
+2013-10-31 16:13:47	kweaver_laptop	k
+2013-10-31 16:13:52	jhartigan	if you want. go into your router
+2013-10-31 16:13:55	jhartigan	firewall
+2013-10-31 16:13:58	jhartigan	portforwards
+2013-10-31 16:14:07	jhartigan	and 8888 to the pi
+2013-10-31 16:14:09	jhartigan	both
+2013-10-31 16:14:16	jhartigan	then i can test it from here
+2013-10-31 16:15:26	kweaver_laptop	k sec
+2013-10-31 16:19:58	kweaver_laptop	done jhartigan h
+2013-10-31 16:20:04	kweaver_laptop	brb
+2013-10-31 16:20:18	jhartigan	kk
+2013-10-31 16:22:35	kweaver_laptop	can you get in jhartigan ?
+2013-10-31 16:22:53	jhartigan	blank page
+2013-10-31 16:22:58	jhartigan	but the forwarding is workin fine
+2013-10-31 16:23:02	kweaver_laptop	k cool
+2013-10-31 16:23:04	jhartigan	so just have some diggins to do
+2013-10-31 16:23:43	jhartigan	omg kweaver_laptop are you seeing this in od?
+2013-10-31 16:28:22	kweaver_laptop	oh no....
+2013-10-31 16:28:26	kweaver_laptop	oh god...
+2013-10-31 16:29:27	kweaver_laptop	i would have died if he ran that
+2013-10-31 16:29:31	jhartigan	fucking christ.. kid gave me a serious heart attack
+2013-10-31 16:29:42	jhartigan	i wouldve too though
+2013-10-31 16:30:01	jhartigan	shit woulda been 'nick cannon' hilarious
+2013-10-31 16:37:51	jhartigan	oh spit kweaver_laptop
+2013-10-31 16:37:55	jhartigan	check dat ip
+2013-10-31 16:38:01	jhartigan	im so excite for this pi
+2013-10-31 16:40:53	jhartigan	no love over here =(
+2013-10-31 16:45:03	kweaver_laptop	sup
+2013-10-31 16:45:11	kweaver_laptop	sec
+2013-10-31 16:45:26	kweaver_laptop	nice jhartigan 
+2013-10-31 16:47:53	jhartigan	yeah dude.. so when we add the hddd
+2013-10-31 16:48:01	jhartigan	we have a totally persistent boxsync running
+2013-10-31 16:55:00	kweaver_laptop	so whats the plan with bitsync?  is that just so we have access to the backups as well?
+2013-10-31 16:55:53	jhartigan	nah
+2013-10-31 16:56:00	jhartigan	backups are always on a harddrive
+2013-10-31 16:56:08	jhartigan	now we have a server for the btsync
+2013-10-31 16:56:12	jhartigan	so when you make a change its there
+2013-10-31 16:56:15	jhartigan	when i make a change
+2013-10-31 16:56:17	jhartigan	its there
+2013-10-31 16:56:19	jhartigan	always
+2013-10-31 16:56:23	jhartigan	we dont both ahve to have pcs on
+2013-10-31 17:00:43	kweaver_laptop	ah ok
+2013-10-31 17:15:00	jhartigan	so the weirdest thing about the pi
+2013-10-31 17:15:14	jhartigan	is that its only a 2gb partition.. even though i wrote it to the whole disk
+2013-10-31 17:27:32	kweaver_laptop	thats weird
+2013-10-31 17:27:36	kweaver_laptop	is that gonna cause an issue later?
+2013-10-31 17:28:07	jhartigan	nah theres still 500mb
+2013-10-31 17:28:11	jhartigan	but im working on a fix
+2013-10-31 17:33:45	jhartigan	oh kweaver_laptop
+2013-10-31 17:34:03	jhartigan	your desktop in linxu? thats apparently the easiest way
+2013-10-31 17:34:05	jhartigan	oh wait
+2013-10-31 17:34:06	jhartigan	maybe not
+2013-10-31 17:35:35	kweaver_laptop	yeah but im out front on the lappy
+2013-10-31 17:35:41	kweaver_laptop	you can ssh in if youd like
+2013-10-31 17:35:48	kweaver_laptop	probably in a tmux session
+2013-10-31 17:36:00	kweaver_laptop	so you can see all my ascii porn 
+2013-10-31 17:36:06	jhartigan	nah if i cant do it over ssh the sd card has to in your desktop and resize it  while unmounted
+2013-10-31 17:36:13	jhartigan	OH MY GOD I NEED TO GET SOME
+2013-10-31 17:36:31	kweaver_laptop	hahaa seriously
+2013-10-31 17:36:32	jhartigan	http://www.asciipr0n.com/
+2013-10-31 17:36:41	jhartigan	yes i google ascii porn
+2013-10-31 17:37:19	jhartigan	http://www.asciipr0n.com/pr0n/pinups/pinup00.txt
+2013-10-31 17:37:20	jhartigan	lolol
+2013-10-31 17:39:57	jhartigan	hmm okay well i found a guide.. and its apparently easyy
+2013-10-31 17:40:00	jhartigan	wish me luck
+2013-10-31 17:41:30	kweaver_laptop	lololol sick pron
+2013-10-31 17:41:59	jhartigan	yeah ill be in my bunk
+2013-10-31 17:42:01	kweaver_laptop	looks like something youd see on the monitor of a hacker in an early 90's hacker movie
+2013-10-31 17:42:18	jhartigan	when were rich and have an office
+2013-10-31 17:42:25	jhartigan	its going behind my desk
+2013-10-31 17:42:30	jhartigan	in andywarhol style
+2013-10-31 17:42:33	jhartigan	pure fucking art
+2013-10-31 17:42:45	kweaver_laptop	whenever our new site is done, and we're set on a logo, we should put our logo in ascii on every site
+2013-10-31 17:43:12	kweaver_laptop	or just use that
+2013-10-31 17:43:49	jhartigan	yeah i tried an ascii logo for us one time
+2013-10-31 17:43:51	jhartigan	it didnt go well
+2013-10-31 17:46:22	kweaver_laptop	yeah I think i put one up
+2013-10-31 17:47:28	jhartigan	can you do me a favor and go reboot the pi
+2013-10-31 17:47:32	jhartigan	the signal i sent didnt reboot
+2013-10-31 17:47:52	kweaver_laptop	yay
+2013-10-31 17:47:53	kweaver_laptop	a
+2013-10-31 17:47:55	kweaver_laptop	sec
+2013-10-31 17:47:58	kweaver_laptop	is there a button?
+2013-10-31 17:48:34	jhartigan	nah
+2013-10-31 17:48:39	jhartigan	just unplug replug
+2013-10-31 17:53:04	jhartigan	if you did it im still getting nothing damnit
+2013-10-31 17:56:23	jhartigan	can you ping 192.168.1.255 and see if 1.17 is on there
+2013-10-31 17:56:30	jhartigan	im getting nothin
+2013-10-31 17:58:16	kweaver_laptop	i replugged
+2013-10-31 17:58:17	kweaver_laptop	seck
+2013-10-31 17:58:19	kweaver_laptop	sec
+2013-10-31 17:59:21	kweaver_laptop	im getting packets from .15
+2013-10-31 18:00:06	jhartigan	yeah.. im wondering if for some reason the router didnt make its ip static
+2013-10-31 18:00:13	jhartigan	mind checking for ness on the router ?
+2013-10-31 18:01:25	kweaver_laptop	status inactive
+2013-10-31 18:01:30	kweaver_laptop	for ness
+2013-10-31 18:01:40	kweaver_laptop	any reason why that would be the case?
+2013-10-31 18:01:43	jhartigan	no idea
+2013-10-31 18:01:48	kweaver_laptop	I just unplugged and replugged power
+2013-10-31 18:01:50	kweaver_laptop	ill do it again
+2013-10-31 18:01:50	jhartigan	whats its ip?
+2013-10-31 18:01:59	kweaver_laptop	192.168.1.17
+2013-10-31 18:02:03	jhartigan	so its static
+2013-10-31 18:02:05	kweaver_laptop	yeah
+2013-10-31 18:02:06	jhartigan	hmm inactive is so weird
+2013-10-31 18:07:24	jhartigan	only thing i saw online is that sometimes the ethcable gets tweaked
+2013-10-31 18:07:33	jhartigan	dunno what happened though.. the live resize mighta failed
+2013-10-31 18:41:57	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-31 18:41:57	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-10-31 18:41:57	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-10-31 18:41:59	--	Mode #omnidev [+cnt]
+2013-10-31 18:41:59	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-10-31 18:41:59	kweaver_laptop	jhartigan: 
+2013-10-31 18:42:27	kweaver_laptop	Kernal panic - not syncing: FS: Unable to mount root fs on unknown-block(179,5)
+2013-10-31 18:42:49	kweaver_laptop	VFS:***
+2013-10-31 18:42:57	jhartigan	whoops
+2013-10-31 18:43:24	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 272 seconds)
+2013-10-31 18:44:13	kweaver_laptop	jhartigan: just come over tomorrow at some point 
+2013-10-31 18:44:31	kweaver_laptop	before PBs
+2013-10-31 18:44:50	jhartigan	yeah... damn thats shitty
+2013-10-31 18:45:25	jhartigan	http://raspberrypi.stackexchange.com/questions/4331/kernel-panic-unable-to-mount-root-fs-on-unknown-block-after-restart
+2013-10-31 18:45:25	[url]:	http://tinyurl.com/l98amux
+2013-10-31 18:45:34	jhartigan	apparently the second post could fix it
+2013-10-31 18:45:37	jhartigan	but i might have to reinstall
+2013-10-31 18:45:42	jhartigan	and if so ill do it right
+2013-10-31 18:47:09	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-10-31 19:06:45	jhartigan	sudo apt-get install testdisk
+2013-10-31 19:06:46	jhartigan	http://www.recantha.co.uk/blog/?p=1208
+2013-10-31 19:10:07	jhartigan	kweaver_laptop: if you wanna take a quick crack at that? we can probably save her
+2013-10-31 19:10:09	jhartigan	i think
+2013-10-31 19:21:14	jhartigan	kweaver_laptop: kweaver lemme know if you feel like giving that a go
+2013-10-31 19:21:27	jhartigan	im making the backups into a script thats run by cron for easier maintenence
+2013-10-31 19:24:59	kweaver_laptop	danielle and I are gonna watch a movie now
+2013-10-31 19:25:02	kweaver_laptop	i can try it tomorrow
+2013-10-31 19:25:18	jhartigan	sounds good man
+2013-10-31 19:25:35	jhartigan	enjoy. ill talk to ya tomorrow
+2013-10-31 21:08:54	-->	joni1101 (~joni@bas6-toronto06-2925014501.dsl.bell.ca) has joined #omnidev
+2013-10-31 21:16:56	<--	joni1101 (~joni@bas6-toronto06-2925014501.dsl.bell.ca) has left #omnidev
+2013-11-01 01:35:00	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-11-01 02:27:46	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 268 seconds)
+2013-11-01 09:37:35	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-01 09:38:13	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-01 09:42:01	kweaver	jhartigan:  since my dad doesnt have a lot of money to spend, I figured I was just going to do his site mostly alone
+2013-11-01 09:42:15	kweaver	unless you dont have anything else to work on
+2013-11-01 09:44:55	kweaver	I havent had a chance to do any more mockups for the horizontal omni site, but I have it in my head
+2013-11-01 09:45:00	kweaver	if you wanted to work on that you can
+2013-11-01 09:45:14	kweaver	ill explain in a quick G+ jhartigan
+2013-11-01 10:31:17	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: No route to host)
+2013-11-01 10:36:01	-->	jhartigan (~jhartigan@68.44.222.82) has joined #omnidev
+2013-11-01 10:48:37	kweaver	jhartigan:
+2013-11-01 10:50:13	kweaver	my dad wants the ability to have different user types and price groups, so im gonna buy that $100 plugin that we planned on buying for GTA and hes gonna pay us back via our credit card processing.
+2013-11-01 10:50:36	kweaver	I think ill set him up for a monthly recurring payment too, so I know how that works
+2013-11-01 10:50:50	jhartigan	just saw your other messages. i dont mind working on your dads site at all
+2013-11-01 10:51:31	jhartigan	yeah sure if you wanna.  itll be good to get one on it under our belts
+2013-11-01 10:51:44	jhartigan	ideally we can move everyone during their renewal period this year
+2013-11-01 10:51:54	kweaver	yeah
+2013-11-01 10:52:27	kweaver	and even more idealy, we can hand them an account on an online bill pay app too
+2013-11-01 10:59:28	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-01 11:00:09	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-01 11:09:40	kweaver	so apparently my dad is up here
+2013-11-01 11:09:45	kweaver	im gonna go hang with him for a bit
+2013-11-01 11:09:49	kweaver	work on whatever
+2013-11-01 11:09:56	kweaver	we'll probably still work on his site
+2013-11-01 11:10:25	kweaver	if you have nothing else, just work on the omni documents jhartigan
+2013-11-01 11:10:45	jhartigan	haha oh shit thats cool. yeah do it up
+2013-11-01 11:10:51	jhartigan	i got a few things to finish with backups
+2013-11-01 11:11:05	jhartigan	at some point later i gotta meet my moms but ill be around most of the day
+2013-11-01 11:11:31	jhartigan	so hit me up if youre at home later on and we can maybe get the pi ready to rock n roll
+2013-11-02 13:47:32	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-02 13:47:32	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-11-02 13:47:32	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-02 13:47:32	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-02 13:47:34	--	Mode #omnidev [+cnt]
+2013-11-02 13:47:34	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-02 20:34:56	--	irc: disconnected from server
+2013-11-02 20:35:23	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-02 20:35:23	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-02 20:35:23	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-02 20:35:25	--	Mode #omnidev [+cnt]
+2013-11-02 20:35:25	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-02 23:14:28	--	irc: disconnected from server
+2013-11-02 23:14:52	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-02 23:14:52	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-02 23:14:52	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-02 23:14:54	--	Mode #omnidev [+cnt]
+2013-11-02 23:14:54	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-03 02:03:39	<--	kweaver (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-11-03 09:19:16	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-03 11:34:42	--	irc: disconnected from server
+2013-11-03 11:35:06	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-03 11:35:06	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-11-03 11:35:06	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-03 11:35:07	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-03 11:35:08	--	Mode #omnidev [+cnt]
+2013-11-03 11:35:08	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-03 11:56:41	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-03 12:01:24	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-03 19:22:31	--	irc: disconnected from server
+2013-11-03 19:22:56	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-03 19:22:56	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-03 19:22:56	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-03 19:22:58	--	Mode #omnidev [+cnt]
+2013-11-03 19:22:58	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-03 22:40:15	--	irc: disconnected from server
+2013-11-03 22:40:39	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-03 22:40:39	--	Mode #omnidev [+ns] by card.freenode.net
+2013-11-03 22:40:39	--	Nicks #omnidev: [@kweaver_laptop]
+2013-11-03 22:40:39	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-03 22:40:39	--	Mode #omnidev [-o kweaver_laptop] by services.
+2013-11-03 22:40:39	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383536439 to 1337223617
+2013-11-03 22:40:39	--	Mode #omnidev [+ct-s] by services.
+2013-11-03 22:40:39	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-03 22:40:39	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-03 22:40:41	--	Mode #omnidev [+cnt]
+2013-11-03 22:40:41	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-04 09:15:37	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-04 09:15:37	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-04 09:37:46	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-04 09:53:14	kweaver	jhartigan:  brb gotta pick up amelia from the auto shop
+2013-11-04 09:53:25	kweaver	add some stuff to the list if Im forgetting anything
+2013-11-04 09:53:59	kweaver	Most of these items are pretty basic, or else Id put them in as jira issues
+2013-11-04 09:57:32	jhartigan	sounds good
+2013-11-04 09:57:55	jhartigan	yeah i sent outa  follow up to barsuglia a minute ago
+2013-11-04 09:58:07	jhartigan	and ill nag tom today
+2013-11-04 09:58:13	jhartigan	and buy nag.. i get a gun
+2013-11-04 09:58:37	kweaver	yeah you should nug him
+2013-11-04 09:58:43	kweaver	nug = gun
+2013-11-04 09:58:51	jhartigan	lol
+2013-11-04 10:02:33	jhartigan	im gonna get a coffee right quick so i have one before you call dentista
+2013-11-04 10:40:16	kweaver	just talked to karlyn habitat
+2013-11-04 10:40:50	kweaver	she wants us to set up a flickr account under her email address, and tie it into the site
+2013-11-04 10:41:09	jhartigan	oh boy
+2013-11-04 10:41:16	kweaver	probably similar to the florist but with flickr
+2013-11-04 10:41:24	kweaver	do you know if flickr allows for folders?
+2013-11-04 10:41:56	jhartigan	id assume it does. i htink flickrs the largest/most used photo sharing site
+2013-11-04 10:42:03	kweaver	k
+2013-11-04 10:42:09	jhartigan	other than imgur but i feel they have a more "professional" crowd
+2013-11-04 10:42:20	kweaver	ill call nancy now, and if she picks up, ill be calling you
+2013-11-04 10:43:07	jhartigan	okay
+2013-11-04 10:46:09	kweaver	she answered!
+2013-11-04 10:46:29	jhartigan	oh my christ jesus praise be!
+2013-11-04 10:46:39	kweaver	and then she told me to hold
+2013-11-04 10:46:53	jhartigan	lol
+2013-11-04 10:46:54	jhartigan	bitch
+2013-11-04 10:48:27	kweaver	she told me to call her back in 5
+2013-11-04 10:48:35	kweaver	so ill just call you first
+2013-11-04 11:46:46	jhartigan	jesus
+2013-11-04 11:46:57	jhartigan	that was the most disorganized sounding office ever
+2013-11-04 11:47:06	jhartigan	im gonna get on live chat with smarsh about smtp mail
+2013-11-04 11:47:13	jhartigan	if not well just make them a gmail
+2013-11-04 11:48:03	kweaver	ok
+2013-11-04 11:48:08	kweaver	G+ me when you get a sec
+2013-11-04 12:48:58	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-04 13:26:59	jharty	https://plus.google.com/101575845284041762218/posts
+2013-11-04 13:27:01	jharty	he posts alot on seo
+2013-11-04 13:27:03	jharty	gonna learn it all
+2013-11-04 13:27:22	jharty	he works for them http://www.ripenecommerce.com/
+2013-11-04 13:27:25	jharty	kweaver:  ^
+2013-11-04 13:27:28	jharty	for future reference
+2013-11-04 13:51:22	kweaver	nice find jharty
+2013-11-04 13:51:45	jharty	oh my fucking christ dude
+2013-11-04 13:51:50	jharty	joomla is 1.5 versions behind
+2013-11-04 13:52:34	jharty	support expired on it in 12-2012 and it was an LTS version =(
+2013-11-04 13:54:52	kweaver	bleh
+2013-11-04 13:54:58	kweaver	well we can mention that to them
+2013-11-04 13:55:02	kweaver	if we want to
+2013-11-04 13:55:14	jharty	yeah... its a hard ball.. like is a full redo better than hourly
+2013-11-04 13:55:16	jharty	etc
+2013-11-04 13:55:22	kweaver	I figure my goal for these people is to a establish brotherhood first
+2013-11-04 13:55:28	kweaver	not just because hes black
+2013-11-04 13:55:38	jharty	its just because hes black
+2013-11-04 13:55:47	jharty	comraderie would be if he was white
+2013-11-04 13:55:48	jharty	i know it
+2013-11-04 13:55:49	kweaver	it is.  but then later, we can bring up the idea of a redo
+2013-11-04 13:56:03	kweaver	once we've earned some money from them
+2013-11-04 13:58:47	jharty	see my email
+2013-11-04 14:03:32	kweaver	yeah just responded
+2013-11-04 14:03:39	kweaver	amelia needs a ride to pick up her car now
+2013-11-04 14:03:42	kweaver	...
+2013-11-04 14:03:45	kweaver	brb
+2013-11-04 14:05:42	jhartigan	kk
+2013-11-04 14:41:21	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 14:41:50	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-04 14:48:40	jharty	smarsh replied.. wanted to know the client and what service they use.. so hopefully well get an answer.. were in luck it looks like joomla does have the smtp support in 1.5
+2013-11-04 14:48:49	jharty	so thats taken care of i think
+2013-11-04 14:48:53	jharty	i hope =/
+2013-11-04 14:53:48	jharty	i also think we can upload the brochure with the media manager
+2013-11-04 15:24:17	jhartigan	yo kweaver you find anyway to edit the site
+2013-11-04 15:24:25	jhartigan	i think we have to have ftp access
+2013-11-04 15:32:18	jhartigan	fucking holdbrook doesnt use smarsh
+2013-11-04 15:32:21	jhartigan	wtf
+2013-11-04 15:33:00	jhartigan	kweaver: kweaver_laptop
+2013-11-04 15:33:02	jhartigan	gj
+2013-11-04 15:33:04	jhartigan	Dr. Tenbrook
+2013-11-04 15:33:14	jhartigan	dunno if you wanna address that
+2013-11-04 15:39:08	kweaver	lol
+2013-11-04 15:39:11	kweaver	fixed
+2013-11-04 15:39:14	kweaver	damn it
+2013-11-04 15:39:24	kweaver	Im usually pretty careful with that stuff
+2013-11-04 15:39:37	jhartigan	haha i would have explained you just talked to tenbrook or something hahaha
+2013-11-04 15:39:50	jhartigan	just figured it should look like a quick super fix instead of 25min later
+2013-11-04 15:40:00	jhartigan	anyways you see what i said above about joomla?
+2013-11-04 15:40:08	jhartigan	and daves gig seems pretty simple/straightforward
+2013-11-04 15:40:43	jhartigan	and about their email
+2013-11-04 15:47:59	jhartigan	daves requirements are def odd. itll get semi strict.. tomorrow we should sit down and figure out what we would charge for this
+2013-11-04 15:48:10	jhartigan	lemme know when you caught up on the email / joomla situation above
+2013-11-04 15:49:19	kweaver	yeah sup jhartigan
+2013-11-04 15:50:41	jhartigan	14:53:05    jharty | i also think we can upload the brochure with the media manager                                                                                                                                                                             │
+2013-11-04 15:50:43	jhartigan	15:23:34 jhartigan | yo kweaver you find anyway to edit the site                                                                                                                                                                                                │
+2013-11-04 15:50:45	jhartigan	15:23:42 jhartigan | i think we have to have ftp access                                                                                                                                                                                                         │
+2013-11-04 15:50:47	jhartigan	15:31:36 jhartigan | fucking holdbrook doesnt use smarsh                                                                                                                                                                                                        │
+2013-11-04 15:50:49	jhartigan	15:31:36 jhartigan | wtf
+2013-11-04 15:51:06	kweaver	do you know what they do use?
+2013-11-04 15:51:51	kweaver	you can reply to that last email then, and say there might have been some confusion with Dr. Holdbrook while Nancy was on the phone
+2013-11-04 15:51:58	kweaver	and then they dont use smarsh
+2013-11-04 15:52:08	kweaver	if you do know what they use
+2013-11-04 15:52:37	jhartigan	yeah I'm gonna send one out. unless they have a hosted smarsh solution
+2013-11-04 15:55:43	kweaver	yeah just ask her to get together any info she might have on the email provider that they use
+2013-11-04 15:59:02	jhartigan	yeah but what you think about joomla
+2013-11-04 15:59:07	jhartigan	i think we need ftp access
+2013-11-04 16:03:37	jhartigan	josh terrifies me.. he scares me so much that i feel terrible about leaving you with the heroes.. ohman
+2013-11-04 16:04:10	kweaver	oh dont worry about that.  Im not giving him any amount of work on anything that really matters
+2013-11-04 16:04:28	kweaver	yeah im looking in the joomla backend
+2013-11-04 16:04:43	kweaver	we probably need ftp.  lets just wait til she gets us everything she can
+2013-11-04 16:04:45	jhartigan	i feel so mean saying that... but his questions
+2013-11-04 16:04:53	kweaver	I dont want to confuse her with more requests
+2013-11-04 16:05:00	jhartigan	yeah ive been all over backend. i got file uploads and the mail settings
+2013-11-04 16:05:11	jhartigan	but cant find shit that remotely looks like an editor or parts of pages
+2013-11-04 16:06:09	kweaver	I know this is an old version of joomla, but im really surprised at how bad this back end is
+2013-11-04 16:06:23	jhartigan	yeah its fucking terrible
+2013-11-04 16:06:40	jhartigan	i tried to find something remotely developer oriented but i really think this shit is made for like marketers
+2013-11-04 16:06:51	jhartigan	its got like 0 dev features
+2013-11-04 16:07:05	kweaver	I was expecting more from it considering that some people seem to discuss it like its on the same level as WP  or Drupal
+2013-11-04 16:07:42	jhartigan	yeah seriously
+2013-11-04 16:07:57	jhartigan	its like everything thats confusing about drupal and everything that doesnt work well in wordpress
+2013-11-04 16:07:59	jhartigan	in one
+2013-11-04 16:08:12	kweaver	lol yeah
+2013-11-04 16:08:25	kweaver	I found the page editor
+2013-11-04 16:08:34	kweaver	Content > Article Manager
+2013-11-04 16:08:36	jhartigan	oh shit where
+2013-11-04 16:08:45	kweaver	it looks like the entire site is broken into "articles"
+2013-11-04 16:08:51	kweaver	its a fuggin mess
+2013-11-04 16:09:58	jhartigan	yeah
+2013-11-04 16:10:01	jhartigan	i found that
+2013-11-04 16:10:04	kweaver	oh
+2013-11-04 16:10:06	jhartigan	but i dont think we ahve access to any css and shit
+2013-11-04 16:11:13	kweaver	ohh
+2013-11-04 16:11:32	jhartigan	yeah as far as the actual page content it sucks its all in there
+2013-11-04 16:11:42	jhartigan	and then theres an entire tab with entirely too many options for menus haha
+2013-11-04 16:14:29	kweaver	jhartigan:
+2013-11-04 16:14:33	kweaver	) Log in to www.yoursitename.com/administrator
+2013-11-04 16:14:35	kweaver	2) In the row of menus across the top, go to "site"
+2013-11-04 16:14:37	kweaver	3) Choose template manager in the drop down menus
+2013-11-04 16:14:39	kweaver	4) Choose Site templates in the menu that slides out to the side
+2013-11-04 16:14:41	kweaver	5) When the page loads, put a check mark in the box next to your default template.
+2013-11-04 16:14:43	kweaver	6) Click "Edit CSS" in the top right hand corner.
+2013-11-04 16:14:45	kweaver	7) Make the changes to your CSS file that you wish to
+2013-11-04 16:14:47	kweaver	we dont have Site Templates there
+2013-11-04 16:14:54	kweaver	soooo, we probably have a limited permissions account
+2013-11-04 16:15:27	jhartigan	template manager is under fucking extensions
+2013-11-04 16:15:30	jhartigan	its that old
+2013-11-04 16:17:13	jhartigan	i think the dude runs this shit on his own server
+2013-11-04 16:17:28	jhartigan	ip is 174.132.30.186
+2013-11-04 16:17:49	jhartigan	fucking shits in /home/wendall/public_html
+2013-11-04 16:22:20	kweaver	running a whois on that ip turns up softlayer.com by network solutions
+2013-11-04 16:23:15	jharty	oh okay
+2013-11-04 16:23:19	jharty	maybe its a vps on it
+2013-11-04 17:23:25	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 17:35:30	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-04 17:57:12	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-11-04 19:58:10	<--	kweaver (~kweaver@96.248.78.50) has quit (*.net *.split)
+2013-11-04 19:59:26	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-04 21:52:58	<--	kweaver (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-11-05 02:02:41	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-05 09:48:36	--	irc: disconnected from server
+2013-11-05 09:49:03	-->	kweaver_laptop (~kweaver@107.19.165.150) has joined #omnidev
+2013-11-05 09:49:03	--	Mode #omnidev [+ns] by sendak.freenode.net
+2013-11-05 09:49:03	--	Nicks #omnidev: [@kweaver_laptop]
+2013-11-05 09:49:03	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-05 09:49:05	--	Mode #omnidev [+ns]
+2013-11-05 09:49:05	--	Channel created on Tue, 05 Nov 2013 09:45:31
+2013-11-05 09:49:15	--	Mode #omnidev [-o kweaver_laptop] by services.
+2013-11-05 09:49:15	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383662731 to 1337223617
+2013-11-05 09:49:15	--	Mode #omnidev [+ct-s] by services.
+2013-11-05 09:49:15	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-05 09:49:15	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-05 10:01:06	-->	jhartigan (~jhartigan@150.250.127.107) has joined #omnidev
+2013-11-05 10:01:06	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-05 12:55:42	--	irc: disconnected from server
+2013-11-05 12:56:05	-->	kweaver_laptop (~kweaver@dhcp-arubawireless-118-39.rowan.edu) has joined #omnidev
+2013-11-05 12:56:05	--	Nicks #omnidev: [jhartigan kweaver_laptop]
+2013-11-05 12:56:05	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-05 12:56:07	--	Mode #omnidev [+cnt]
+2013-11-05 12:56:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-05 15:05:02	--	irc: disconnected from server
+2013-11-05 15:05:29	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-05 15:05:29	--	Nicks #omnidev: [@ChanServ jhartigan kweaver_laptop]
+2013-11-05 15:05:29	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-05 15:05:30	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-05 15:05:31	--	Mode #omnidev [+cnt]
+2013-11-05 15:05:32	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-05 19:03:45	<--	jhartigan (~jhartigan@96.248.78.50) has quit (Ping timeout: 246 seconds)
+2013-11-05 19:29:59	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-05 19:38:31	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-05 19:45:21	kweaver	jhartigan:
+2013-11-05 19:45:23	kweaver	http://www.pixeden.com/miscellaneous/psd-clothing-label-mockup
+2013-11-05 19:45:23	[url]:	http://tinyurl.com/l29mycy
+2013-11-05 19:45:30	kweaver	todays resource on pixeden
+2013-11-05 19:45:31	kweaver	lololol
+2013-11-05 19:45:51	kweaver	pretty much screams KCC
+2013-11-05 19:46:19	jhartigan	lmao
+2013-11-05 19:46:24	jhartigan	maybe well use it on their footer?
+2013-11-05 19:46:31	kweaver	yeah we'll find somewhere for it
+2013-11-05 19:46:41	jhartigan	or sidebar perhaps
+2013-11-05 19:47:07	jhartigan	after shes done with sleepless nights writing five pages of text
+2013-11-05 19:47:14	jhartigan	some severe writers block
+2013-11-05 19:47:21	kweaver	yeah im gonna laugh when she sends me like a paragraph
+2013-11-05 19:49:34	jhartigan	yeah dude
+2013-11-05 19:49:58	jhartigan	"Like omg i make clothes and my sugar daddy supports these habits so i keep blowing him and dont leave"
+2013-11-05 19:51:13	kweaver	lolol yupp
+2013-11-05 19:51:43	jhartigan	pretty sure im bout to have rw fixed for the external
+2013-11-05 19:51:49	jhartigan	ls
+2013-11-05 19:51:55	jhartigan	fuck... wrong window lo
+2013-11-05 19:53:11	kweaver	I was acutally thinking of this concept like 2 days ago
+2013-11-05 19:53:14	kweaver	http://www.theverge.com/2013/11/5/5066444/streamnation-2-share-ripped-movies-tv-shows-with-friends-fair-use
+2013-11-05 19:53:14	[url]:	http://tinyurl.com/mts28vc
+2013-11-05 19:53:22	kweaver	might try it out
+2013-11-05 19:54:17	kweaver	nevermind
+2013-11-05 19:54:26	kweaver	thought there would be at least a free plan
+2013-11-05 19:54:54	kweaver	damnnn it works with chromecast too
+2013-11-05 19:56:47	jhartigan	woreddd
+2013-11-05 19:57:02	jhartigan	whats the cost on it
+2013-11-05 20:06:24	kweaver	100GB is $4/month
+2013-11-05 20:06:26	kweaver	jhartigan:
+2013-11-05 20:06:41	kweaver	up to Unlimited for $19/month
+2013-11-05 20:07:30	jhartigan	hmm
+2013-11-05 20:19:08	jhartigan	if this works on reboot were good ill have tonight as the first ye ol backup test
+2013-11-05 20:25:56	jhartigan	we in businessssss
+2013-11-05 20:27:52	jhartigan	oh man dat btsunc cruising
+2013-11-05 20:28:15	jhartigan	lmao... your lan connection is like 300MB/s
+2013-11-05 20:28:39	jhartigan	oh... its counting
+2013-11-05 20:28:41	jhartigan	lameeeee
+2013-11-05 20:29:01	jhartigan	cool thing is.. it doesnt connect to me at all. it knows your two pcs are closer
+2013-11-05 20:29:03	jhartigan	thats awesome
+2013-11-05 20:29:10	kweaver	counting what?
+2013-11-05 20:29:19	jhartigan	counting filesize'
+2013-11-05 20:29:28	kweaver	ok
+2013-11-05 20:29:36	kweaver	sweet
+2013-11-05 20:29:41	jhartigan	if you login to kweave.no-ip.org:8888 or 192.168.1.17:8888
+2013-11-05 20:29:42	kweaver	so were good to go with bitsync?
+2013-11-05 20:29:47	jhartigan	youll see only youre connected
+2013-11-05 20:29:49	jhartigan	shes syncing now
+2013-11-05 20:30:24	jhartigan	oh its omni
+2013-11-05 20:30:25	jhartigan	and the usual
+2013-11-05 20:31:52	kweaver	this ssh is taking a while
+2013-11-05 20:31:55	jhartigan	kweaver: do you want me to set a limit for the pi? so she doesnt go nuts on your bandwidth randomly.. not that well be stacking huge files after this sunc
+2013-11-05 20:31:57	jhartigan	ssh?
+2013-11-05 20:31:57	kweaver	on both computers
+2013-11-05 20:32:05	jhartigan	cause you cant ssh to port 8888
+2013-11-05 20:32:09	jhartigan	thats the web gui
+2013-11-05 20:32:37	kweaver	oh yeah
+2013-11-05 20:33:28	jhartigan	but yeah creds are omni and the standard fellow
+2013-11-05 20:34:06	kweaver	goterr
+2013-11-05 20:34:23	jhartigan	k.. says youre ssh'd into the pi now
+2013-11-05 20:34:25	jhartigan	also
+2013-11-05 20:35:11	kweaver	yah my lapper
+2013-11-05 20:35:22	kweaver	what logs are you seeing?
+2013-11-05 20:35:33	jhartigan	hm?
+2013-11-05 20:35:46	kweaver	how do you know that im ssh'd in
+2013-11-05 20:35:50	jhartigan	who
+2013-11-05 20:35:57	jhartigan	meant whoami
+2013-11-05 20:36:03	jhartigan	as i had su -- backups
+2013-11-05 20:36:06	jhartigan	to setup the backup kees
+2013-11-05 20:36:13	jhartigan	im a creep
+2013-11-05 20:36:16	jhartigan	dont worry about it
+2013-11-05 20:36:19	jhartigan	or the cameras
+2013-11-05 20:37:44	kweaver	yaya thats what I figured
+2013-11-05 20:37:48	kweaver	keyloggers
+2013-11-05 20:37:49	kweaver	cameras
+2013-11-05 20:37:52	kweaver	the whole 9
+2013-11-05 20:38:37	jhartigan	so. basically theres a backup user on the pi - backups - he sshkey authenticates into the backup user on the servers - backups
+2013-11-05 20:38:51	jhartigan	backups on the servers - runs cron jobs to back everything up
+2013-11-05 20:38:57	jhartigan	pi goes in and retrieves
+2013-11-05 20:38:59	jhartigan	everyones happy
+2013-11-05 20:40:22	jhartigan	kweaver: kweaver .... i think your ubuntu is syncing down the BTsync directory at the moment
+2013-11-05 20:40:39	kweaver	huh?
+2013-11-05 20:40:41	jhartigan	you fixed that though so you dont run out of space right?
+2013-11-05 20:40:46	kweaver	oh shit
+2013-11-05 20:41:56	kweaver	oh yeah, i fixed her
+2013-11-05 20:42:31	kweaver	on my acer it says im uploading to pi master ness
+2013-11-05 20:44:02	jhartigan	what about on desktop
+2013-11-05 20:44:08	jhartigan	cause it looks like youre doing something
+2013-11-05 20:45:19	kweaver	my desktop says im uploading 11GB to ness, and also downloading 951mb from him
+2013-11-05 20:45:30	kweaver	not sure what that would be
+2013-11-05 20:45:50	jhartigan	nothing lol
+2013-11-05 20:45:58	jhartigan	maybe its like a temp file
+2013-11-05 20:46:20	kweaver	yeah
+2013-11-05 20:47:27	kweaver_laptop	so were in business with bitsync
+2013-11-05 20:47:33	kweaver_laptop	did you already set up your cron jobs?
+2013-11-05 20:48:08	jhartigan	theyre written
+2013-11-05 20:48:11	jhartigan	not active
+2013-11-05 20:48:26	jhartigan	http://github.com/skimm/pibackups
+2013-11-05 20:48:32	kweaver_laptop	sweet beans
+2013-11-05 20:48:43	jhartigan	pibackup*
+2013-11-05 20:49:02	kweaver_laptop	nah dude, thats a 404, youre a liar
+2013-11-05 20:49:08	kweaver_laptop	jk
+2013-11-05 20:49:11	jhartigan	iam.jph
+2013-11-05 20:49:14	jhartigan	.jpg
+2013-11-05 20:49:19	jhartigan	fuck.... i am jph
+2013-11-05 20:49:23	jhartigan	holy shit.. thats awesome
+2013-11-05 20:55:16	jhartigan	youre still on the pi right kweaver_laptop
+2013-11-05 20:55:26	jhartigan	sudo pacman -S rsync please
+2013-11-05 20:55:33	jhartigan	plus now you know pacman suntax
+2013-11-05 20:55:39	jhartigan	YES suntax
+2013-11-05 20:55:49	kweaver_laptop	thats what my dad has to pay for living in florida
+2013-11-05 20:55:57	jhartigan	lmao
+2013-11-05 20:58:36	kweaver_laptop	Undefined Argument "please"
+2013-11-05 20:58:44	kweaver_laptop	jk
+2013-11-05 20:59:02	jhartigan	PACMAN DOESNT SAY THAT
+2013-11-05 20:59:06	jhartigan	HES A GOOD BOY
+2013-11-05 20:59:08	kweaver_laptop	^thought that would be a good josh quote
+2013-11-05 20:59:12	jhartigan	lmao
+2013-11-05 20:59:13	jhartigan	dude
+2013-11-05 20:59:29	jhartigan	i rreally thought for a moment i was gonna be responsible for a disk wupe
+2013-11-05 20:59:49	kweaver_laptop	seriously
+2013-11-05 20:59:54	kweaver_laptop	rsync be installed
+2013-11-05 21:00:12	kweaver_laptop	what does the -S flag do?
+2013-11-05 21:00:33	jhartigan	install
+2013-11-05 21:01:25	jhartigan	-Syy sync all repos
+2013-11-05 21:01:32	jhartigan	-Syu sync and upgrade
+2013-11-05 21:01:35	jhartigan	-R remove
+2013-11-05 21:01:56	jhartigan	-Rs package and its depenencies that arent required by anything else
+2013-11-05 21:02:23	kweaver_laptop	sweet
+2013-11-05 21:02:36	jhartigan	-Rsc remove package which is a dependency of something else
+2013-11-05 21:02:38	jhartigan	^dont do this
+2013-11-05 21:02:57	jhartigan	unless theres an error. had to use it once due to a gnome packaging error just for a proper reinastall
+2013-11-05 21:03:19	kweaver_laptop	-PRO  Pull Rug Out from under everyone else
+2013-11-05 21:03:27	jhartigan	lol
+2013-11-05 21:03:29	jhartigan	now
+2013-11-05 21:03:33	jhartigan	packer -Syu
+2013-11-05 21:03:35	jhartigan	is the cute one
+2013-11-05 21:03:43	jhartigan	packer is an AUR wrapper for pacman
+2013-11-05 21:03:58	jhartigan	lets you install user packages so youll only ever use packer -Syu and packer -S
+2013-11-05 21:04:04	jhartigan	to remove its always pacman
+2013-11-05 21:04:20	jhartigan	packer -Syu syncs all core extra and all them repos
+2013-11-05 21:04:35	jhartigan	then it tracks and syncs all aur files.. like lnav and btsync
+2013-11-05 21:05:21	kweaver_laptop	nice
+2013-11-05 21:16:09	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-05 21:44:55	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: No route to host)
+2013-11-05 21:50:25	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-05 22:07:42	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-05 23:30:00	--	irc: disconnected from server
+2013-11-05 23:31:15	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-05 23:31:15	--	Nicks #omnidev: [jhartigan jharty kweaver_laptop]
+2013-11-05 23:31:15	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-05 23:31:15	--	Notice(calvino.freenode.net) -> #omnidev: [freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup
+2013-11-05 23:31:17	--	Mode #omnidev [+cnt]
+2013-11-05 23:31:17	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-06 00:36:46	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-06 01:29:24	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-06 01:35:29	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-11-06 19:38:48	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-06 19:38:48	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-06 19:38:48	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-06 19:38:50	--	Mode #omnidev [+cnt]
+2013-11-06 19:38:50	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-06 21:55:34	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-06 21:55:34	--	Mode #omnidev [+ns] by cameron.freenode.net
+2013-11-06 21:55:34	--	Nicks #omnidev: [@kweaver]
+2013-11-06 21:55:34	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-06 21:55:34	--	Mode #omnidev [-o kweaver] by services.
+2013-11-06 21:55:34	--	Notice(cameron.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1383792933 to 1337223617
+2013-11-06 21:55:34	--	Mode #omnidev [+ct-s] by services.
+2013-11-06 21:55:34	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-06 21:55:34	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-06 21:55:37	--	Mode #omnidev [+cnt]
+2013-11-06 21:55:37	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-07 13:47:53	--	irc: disconnected from server
+2013-11-07 13:48:19	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-07 13:48:19	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-07 13:48:19	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-07 13:48:22	--	Mode #omnidev [+cnt]
+2013-11-07 13:48:22	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-07 14:57:12	jhartigan	alright im headed to wawa right quick
+2013-11-07 14:57:23	kweaver	k
+2013-11-07 15:19:39	kweaver	jhartigan: you see dleonhardt's email?
+2013-11-07 15:19:57	kweaver	two projects!
+2013-11-07 15:19:59	kweaver	woooo
+2013-11-07 15:20:08	jhartigan	yeah
+2013-11-07 15:20:11	jhartigan	gotit at wawa
+2013-11-07 15:20:14	jhartigan	the second one is cake
+2013-11-07 15:20:24	kweaver	yeah definitely
+2013-11-07 15:21:04	kweaver	i wanna give him a call later and see if I can get a general concept of their budget
+2013-11-07 15:21:25	kweaver	this company seems big enough to have an understanding of what software costs
+2013-11-07 15:21:29	kweaver	so im not too worried
+2013-11-07 15:29:32	kweaver	the vast majority of project two is the visuals and the graphing
+2013-11-07 15:30:02	kweaver	if they want it "identical", it could actually be a bigger project
+2013-11-07 15:30:51	jhartigan	yeah it could be
+2013-11-07 15:31:16	jhartigan	the math is easy.. and theres def some js/cs libraries for graphs but its definitely a difficult one
+2013-11-07 15:31:26	jhartigan	the problem is <2mo for both
+2013-11-07 15:31:33	kweaver	yeahhhhh
+2013-11-07 15:31:34	jhartigan	whatever cash they have they lose it, so its not about the price
+2013-11-07 15:31:43	jhartigan	its about the budget getting reset
+2013-11-07 15:31:49	kweaver	we should go over the spec shortly
+2013-11-07 15:31:57	kweaver	we might want to bring tom and matt on board
+2013-11-07 15:32:26	jhartigan	i mean 4 persons on the two
+2013-11-07 15:32:32	jhartigan	im thinking we can get 80/hour easy
+2013-11-07 15:32:41	kweaver	yeah definitely
+2013-11-07 15:33:14	jhartigan	my best guess would be 2 weeks each per project
+2013-11-07 15:33:37	jhartigan	which would give us around 2 weeks of revision time assuming we start after next week
+2013-11-07 15:34:27	kweaver	problem is, matt needs to quit his fuckin job
+2013-11-07 15:34:36	jhartigan	rough guestimates with four of us on two weeks per project gets us aroud 10k after taxes
+2013-11-07 15:34:45	jhartigan	2500/4 weeks isnt bad
+2013-11-07 15:34:49	kweaver	because bringing them on board really just means bringing tom on board
+2013-11-07 15:35:01	jhartigan	tom gets that more than that from other clients tho
+2013-11-07 15:35:40	kweaver	well lemme finish adding a couple initial items into magento
+2013-11-07 15:35:41	jhartigan	i mean the JS slider isnt that bad. in terms of technical aspects. a little learning hear and there and some tie ins to the xml shit
+2013-11-07 15:35:45	kweaver	i added at the categories
+2013-11-07 15:35:58	kweaver	and then ill export
+2013-11-07 15:58:49	jhartigan	can you login to dev/BarsugliaOmni/wp-admin  i cant get in with admin barsu312! or barsug312!  been messing with pippet most of the day but remembered i wanted to put  the easy wp smtp on there
+2013-11-07 16:08:10	kweaver	is that the url jhartigan ?
+2013-11-07 16:08:16	kweaver	its saying not found
+2013-11-07 16:08:42	kweaver	nm forgot oms2
+2013-11-07 16:10:35	kweaver	just sent a password reset jhartigan
+2013-11-07 16:10:38	kweaver	but not getting anything
+2013-11-07 16:11:28	kweaver	which makes sense
+2013-11-07 16:11:32	kweaver	since we dont have smtp
+2013-11-07 16:13:04	jhartigan	we can just do it on the old one
+2013-11-07 16:13:11	jhartigan	and use the easy peaze migration
+2013-11-07 16:13:20	jhartigan	wget and dump is simple enough
+2013-11-07 16:13:28	jhartigan	runnin my dog outdoors
+2013-11-07 16:36:43	kweaver	sounds good
+2013-11-07 16:36:45	kweaver	eating real quick
+2013-11-07 17:01:37	kweaver	jhartigan: how do I get to phpMyAdmin on oms2?
+2013-11-07 17:02:53	kweaver	looks like some of the default products that game with this theme are bugged and giving me an error when Im trying to delete them
+2013-11-07 17:06:45	jhartigan	there is no php my admin
+2013-11-07 17:06:50	jhartigan	never has been
+2013-11-07 17:07:39	kweaver	didnt we talk about having that?
+2013-11-07 17:07:59	jhartigan	yeah we talked about not having it
+2013-11-07 17:08:05	jhartigan	decided we had no need for it
+2013-11-07 17:14:34	jhartigan	should be a standard ubuntu package if you need to install it
+2013-11-07 17:15:40	kweaver	I think im gonna
+2013-11-07 17:15:52	kweaver	only because that database has 341 tables
+2013-11-07 17:17:11	jhartigan	you just gotta be careful with users and passwords cause now its facing the web
+2013-11-07 17:22:51	kweaver	oms2.omni-dev.com/phpmyadmin
+2013-11-07 17:24:07	kweaver	it uses the root user
+2013-11-07 17:24:28	kweaver	i dont know if theres a way to use another one
+2013-11-07 17:25:04	jhartigan	it uses any user for mysql
+2013-11-07 17:25:27	jhartigan	its literally a graphical mysql
+2013-11-07 17:25:44	kweaver	oh nm, i got confused when kevin/rowan5018 wasnt working
+2013-11-07 17:25:55	kweaver	but i forget I never crreated him as a mysql user
+2013-11-07 17:29:23	jhartigan	we should probably disable root login through php my admin
+2013-11-07 17:29:46	jhartigan	just use the client db owner and pass as they have full privileges for the account
+2013-11-07 17:31:11	kweaver	k
+2013-11-07 17:31:16	kweaver	do you know how to disable root?
+2013-11-07 17:32:51	kweaver	nm got it
+2013-11-07 17:36:05	kweaver	all set
+2013-11-07 17:36:21	kweaver	jhartigan, we dont have any other users with root access to mysql, do we?
+2013-11-07 17:37:14	jhartigan	nah
+2013-11-07 17:37:20	jhartigan	every user has access to their shit
+2013-11-07 17:37:30	jhartigan	oh you set the root off
+2013-11-07 17:37:34	jhartigan	okay i didnt wanna log you out
+2013-11-07 17:37:41	jhartigan	the only user with table access otherwise is backups
+2013-11-07 17:37:51	jhartigan	and his is read only to all tables cept information schema and accounts
+2013-11-07 17:38:05	jhartigan	but that way theres no web facing account with root available
+2013-11-07 17:42:37	kweaver	k
+2013-11-07 17:42:56	kweaver	yeah if you try to log in with root now, youll get access denied
+2013-11-07 17:59:56	kweaver	so i deleted all the example data jhartigan
+2013-11-07 18:00:12	kweaver	Ill upload it to drive and we can work on it tomorrow
+2013-11-07 18:17:16	jhartigan	what drive?
+2013-11-07 18:17:24	kweaver_laptop	the gooooooooogle drive
+2013-11-07 18:39:16	jhartigan	huh?
+2013-11-07 18:39:23	jhartigan	you mean you made a csv then?
+2013-11-07 22:05:46	kweaver	yaya
+2013-11-07 22:05:54	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-07 22:19:48	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-08 00:11:48	<--	kweaver (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-11-08 03:38:12	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-08 09:07:13	--	irc: disconnected from server
+2013-11-08 09:07:37	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-08 09:07:37	--	Nicks #omnidev: [@ChanServ jhartigan kweaver_laptop]
+2013-11-08 09:07:37	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-08 09:07:37	--	Notice(sendak.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2013-11-08 09:07:38	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-08 09:07:40	--	Mode #omnidev [+cnt]
+2013-11-08 09:07:40	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-08 09:16:36	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-08 09:20:15	kweaver	jhartigan: you see Zurb: ink?
+2013-11-08 09:21:13	kweaver	http://designinstruct.com/tool/responsive-html-email-framework-zurb-ink/
+2013-11-08 09:21:14	[url]:	http://tinyurl.com/oxuldcw
+2013-11-08 10:28:27	kweaver	jhartigan: G+ in 15 min?
+2013-11-08 10:28:35	kweaver	and we'll start my dads items
+2013-11-08 10:34:10	jhartigan	yeah i saw zurb.  seems pretty damn awesome.  whatcha mean start em?  isnt it a csv for the one stop upload?  the we just have to do the changes and dicpics?
+2013-11-08 10:35:07	kweaver	yeah
+2013-11-08 10:35:25	kweaver	i exported a csv from magento with 3 items in it
+2013-11-08 10:35:49	kweaver	there is no east export from cubecart to magento
+2013-11-08 10:35:52	kweaver	easy**
+2013-11-08 10:36:17	kweaver	theres a $70 extension
+2013-11-08 10:36:41	kweaver	and even then, magento has a shit load more fields that need to be populated
+2013-11-08 10:38:00	kweaver	so the fastest route for us is to export the 3 items I already have in magento, fill in the rest together via in a google drive spreadsheet, and then import that into magento
+2013-11-08 10:44:55	jhartigan	okay i gotcha now. thats where i thought we were for
+2013-11-08 10:58:07	jhartigan	imma go grab a coffee. didnt think i needed one but since i dosed in the chair for like 20 minutes it seems like a solid endeavor
+2013-11-08 10:58:09	jhartigan	brbs
+2013-11-08 10:58:15	kweaver	k
+2013-11-08 10:58:19	kweaver	just G+ me when you get back
+2013-11-08 11:24:40	kweaver	jhartigan I was hoping we could at least export to a csv and copy/paste columns into the appropriate places
+2013-11-08 11:24:52	kweaver	it doesnt look like cubecart3 even had an export...
+2013-11-08 11:35:19	jhartigan	haha it wouldnt surprise me. sorry took the dog out and went to dunkin
+2013-11-08 11:35:28	jhartigan	wanted something sweet instead of the normal brew
+2013-11-08 11:35:36	jhartigan	but they apparently get backup up like its their job
+2013-11-08 11:36:02	jhartigan	dude in their saying he shoulda bought a tesla cause its only 5k more than his lexus. i thought teslas were like 300k
+2013-11-08 11:38:06	jhartigan	omg theyre normal luxury car prices now?
+2013-11-08 11:38:12	jhartigan	wtfffff i wanna be rich and get one
+2013-11-08 11:38:16	jhartigan	lets become hookers
+2013-11-08 11:38:54	kweaver	yeah lee was trying to get brian or tim to buy a tesla
+2013-11-08 11:39:13	jhartigan	i had no idea they dropped so much
+2013-11-08 11:39:18	kweaver	i might be able to get us something that will speed up our troubles
+2013-11-08 11:39:19	jhartigan	66cash - 89 cash
+2013-11-08 11:39:21	kweaver	with the csv
+2013-11-08 11:39:29	jhartigan	lol
+2013-11-08 11:39:45	jhartigan	I mean I dont mind the manual entry if your thing isnt an option
+2013-11-08 11:39:52	jhartigan	well just have to divvy up the sections and get it done
+2013-11-08 11:40:00	jhartigan	also you can jsut use excell and export to csv i believe
+2013-11-08 11:41:51	kweaver	oh were in business
+2013-11-08 11:44:08	jhartigan	what kind of business
+2013-11-08 12:09:46	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-08 17:03:26	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-08 17:05:43	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-08 17:05:43	--	irc: disconnected from server
+2013-11-09 12:43:44	-->	kweaver (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-09 12:43:44	--	Mode #omnidev [+ns] by leguin.freenode.net
+2013-11-09 12:43:44	--	Nicks #omnidev: [@kweaver]
+2013-11-09 12:43:44	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-09 12:43:44	--	Mode #omnidev [-o kweaver] by services.
+2013-11-09 12:43:44	--	Notice(leguin.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1384019024 to 1337223617
+2013-11-09 12:43:44	--	Mode #omnidev [+ct-s] by services.
+2013-11-09 12:43:44	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-09 12:43:44	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-09 12:43:46	--	Mode #omnidev [+cnt]
+2013-11-09 12:43:46	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-10 13:08:52	-->	kweaver (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-10 13:08:52	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2013-11-10 13:08:52	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-10 13:08:52	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-10 13:08:54	--	Mode #omnidev [+cnt]
+2013-11-10 13:08:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-10 17:15:19	--	irc: disconnected from server
+2013-11-10 17:15:41	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-10 17:15:41	--	Mode #omnidev [+ns] by barjavel.freenode.net
+2013-11-10 17:15:41	--	Nicks #omnidev: [@kweaver]
+2013-11-10 17:15:41	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-10 17:15:41	--	Mode #omnidev [-o kweaver] by services.
+2013-11-10 17:15:41	--	Notice(barjavel.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1384121741 to 1337223617
+2013-11-10 17:15:41	--	Mode #omnidev [+ct-s] by services.
+2013-11-10 17:15:41	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-10 17:15:41	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-10 17:15:43	--	Mode #omnidev [+cnt]
+2013-11-10 17:15:43	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-10 21:50:52	--	irc: disconnected from server
+2013-11-10 21:51:14	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-10 21:51:14	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-11-10 21:51:14	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-10 21:51:14	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-10 21:51:16	--	Mode #omnidev [+cnt]
+2013-11-10 21:51:16	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-10 23:45:47	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-11 09:24:45	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-11 09:24:45	--	Mode #omnidev [+ns] by rajaniemi.freenode.net
+2013-11-11 09:24:45	--	Nicks #omnidev: [@kweaver]
+2013-11-11 09:24:45	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-11 09:24:45	--	Mode #omnidev [-o kweaver] by services.
+2013-11-11 09:24:45	--	Notice(rajaniemi.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1384179885 to 1337223617
+2013-11-11 09:24:45	--	Mode #omnidev [+ct-s] by services.
+2013-11-11 09:24:45	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-11 09:24:45	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-11 09:24:47	--	Mode #omnidev [+cnt]
+2013-11-11 09:24:47	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-11 09:28:17	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-11 09:28:17	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-11 09:34:46	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-11 10:36:29	kweaver1	jh
+2013-11-11 10:36:31	kweaver1	jhartigan:
+2013-11-11 10:36:34	kweaver1	do you follow?
+2013-11-11 10:46:15	jhartigan	follow what?
+2013-11-11 10:46:17	jhartigan	sorry
+2013-11-11 10:46:20	jhartigan	just saw
+2013-11-11 10:46:55	jhartigan	oh la la deposit
+2013-11-11 10:52:57	jhartigan	http://toastytech.com/evil/index.html
+2013-11-11 16:39:52	--	irc: disconnected from server
+2013-11-11 16:40:18	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-11 16:40:18	--	Nicks #omnidev: [jhartigan jharty kweaver kweaver1]
+2013-11-11 16:40:18	--	Channel #omnidev: 4 nicks (0 ops, 0 voices, 4 normals)
+2013-11-11 16:40:19	jharty	i keep trying and its a no go
+2013-11-11 16:40:21	--	Mode #omnidev [+cnt]
+2013-11-11 16:40:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-11 16:40:29	kweaver1	i got in jharty
+2013-11-11 16:40:55	kweaver1	whatchu need?
+2013-11-11 16:41:24	jharty	add the dns for the domain
+2013-11-11 16:41:31	jharty	im apparently not allowed to login
+2013-11-11 16:55:26	kweaver1	done jhart
+2013-11-11 16:55:28	kweaver1	jharty:
+2013-11-11 16:57:10	jhartigan	thanks. i hate that people dont read fucking email
+2013-11-11 16:57:24	jhartigan	karlyn : been busy! what do you need me to do!
+2013-11-11 16:57:28	jhartigan	fucking fuck fuck
+2013-11-11 16:57:35	jhartigan	ill email her later and inform her to eat a shoe
+2013-11-11 16:57:45	jhartigan	or just resend my first mail with explicit fucking instructions on what to do
+2013-11-11 16:57:51	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-11-11 16:57:58	jhartigan	anywho imma do the migration and try and fix a few other things with it
+2013-11-11 16:59:16	kweaver1	jhartigan jhanna sounds like shes back to square one...
+2013-11-11 17:00:13	jhartigan	yeah wtf is that shit.
+2013-11-11 17:00:32	jhartigan	i mean. where i stand is she can go and do her shit, we did all that was required of her and keep the first half
+2013-11-11 17:02:09	jhartigan	http://styled-by-design.com/
+2013-11-11 17:02:11	jhartigan	foud it
+2013-11-11 17:04:14	kweaver1	yeah, Im fine if she wants to go that route.  just means shes has to part with the extra $200
+2013-11-11 17:04:39	jhartigan	yeah.  the sites they do are so bland
+2013-11-11 17:04:42	jhartigan	but i dont give a damn
+2013-11-11 17:05:04	jhartigan	and now she wants the person that does sites for low end customs to do her high end site
+2013-11-11 17:05:14	kweaver1	lol
+2013-11-11 17:05:15	kweaver1	yeah
+2013-11-11 17:05:55	jhartigan	the person is a JH person and has 4 sites in portfolio including herself.
+2013-11-11 17:05:57	jhartigan	shes just does it for extra cash
+2013-11-11 17:19:17	kweaver1	yeah ill respond to her later
+2013-11-11 17:30:21	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-11 17:35:03	jhartigan	59 domains on dat account
+2013-11-11 17:35:27	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-11 17:55:50	jhartigan	you left the S off the domain =(
+2013-11-11 18:14:17	kweaver1	oh shit jhartigan
+2013-11-11 18:14:20	kweaver1	did you fix it?
+2013-11-11 18:14:24	kweaver1	sorry
+2013-11-11 18:14:53	jhartigan	yeah i got in
+2013-11-11 18:14:55	jhartigan	its all good
+2013-11-11 18:14:58	jhartigan	i just thought i fucked something
+2013-11-11 18:15:16	jhartigan	of course.. magento uses .htaccess, DB, and a config file for rewrites
+2013-11-11 18:15:22	jhartigan	2 out of 3 taken care of so far
+2013-11-11 18:24:43	jhartigan	can you check the site and make sure im not caching something
+2013-11-11 18:25:33	kweaver1	loading with no css.  title = 404 not found 1
+2013-11-11 18:25:41	jhartigan	yeah its that fucking redirect
+2013-11-11 18:25:54	kweaver1	oh yeah
+2013-11-11 18:26:03	kweaver1	took me to /recyclingpw
+2013-11-11 18:26:10	kweaver1	so you might need to look up where that is stored
+2013-11-11 18:26:12	kweaver1	in magento
+2013-11-11 18:26:14	kweaver1	or in the db
+2013-11-11 18:26:14	jhartigan	except its not in the htaccess or in the db
+2013-11-11 18:27:16	kweaver1	in the apache config for it?
+2013-11-11 18:41:22	jhartigan	huh?
+2013-11-11 18:42:50	jhartigan	fixed it
+2013-11-11 18:42:54	jhartigan	fucking cache files
+2013-11-11 18:42:57	jhartigan	try it now
+2013-11-11 18:43:14	kweaver1	good to go
+2013-11-11 18:43:24	jhartigan	so disable cache before migrations
+2013-11-11 18:43:27	jhartigan	gotta remember that oen
+2013-11-11 18:43:31	jhartigan	one*
+2013-11-11 18:45:55	jhartigan	the custom colors dont seem to take
+2013-11-11 18:45:55	jhartigan	i set it to the logos green
+2013-11-11 18:48:25	kweaver1	looking at it now
+2013-11-11 18:48:28	jhartigan	wheres the ssl at?
+2013-11-11 18:48:31	kweaver1	yeah thats weird
+2013-11-11 18:48:38	kweaver1	on our omnidevelopers@gmail namecheap
+2013-11-11 18:48:45	jhartigan	i tried googling the problem and got nowhere
+2013-11-11 18:49:17	kweaver1	so I basically redid our complete proposal/contract
+2013-11-11 18:49:19	jhartigan	alrighty imma put the ssl up and then go workout and eat dinner
+2013-11-11 18:49:24	kweaver1	more seemless into one doc
+2013-11-11 18:49:45	kweaver1	this one is 6 pages, but its likely that regular website proposals will be closer to 8 pages
+2013-11-11 18:52:23	jhartigan	was me ignore the alert
+2013-11-11 18:53:33	kweaver1	jhartigan, you still in the server?
+2013-11-11 18:53:55	kweaver1	you mind checking the phone number email that is attached to that monit alert?
+2013-11-11 18:53:55	kweaver1	im not getting texts
+2013-11-11 18:56:19	jhartigan	lolol one 5 too many
+2013-11-11 18:56:24	jhartigan	somebodys been getting texts
+2013-11-11 18:56:31	jhartigan	856725 not 723
+2013-11-11 19:03:17	kweaver1	lol oh well
+2013-11-11 19:03:21	kweaver1	send a test one! jhartigan
+2013-11-11 19:03:44	jhartigan	itll do it when i restart the service
+2013-11-11 19:03:46	jhartigan	sec
+2013-11-11 19:05:27	jhartigan	your shit blow down/up/around
+2013-11-11 19:08:31	jhartigan	your dads gonna get an email where he ahs to do something to approve the ssl
+2013-11-11 19:08:34	jhartigan	nothing i can do there
+2013-11-11 19:08:42	jhartigan	its based on the whois or domain related
+2013-11-11 19:08:56	kweaver1	k
+2013-11-11 19:09:02	kweaver1	jhartigan: got the text
+2013-11-11 19:09:12	kweaver1	i dunno if it was because I was doing shit with my phone
+2013-11-11 19:09:16	jhartigan	lol okay well when he approves it we can move forward
+2013-11-11 19:09:19	kweaver1	but it still didnt play the right text tone...
+2013-11-11 19:09:26	jhartigan	but you got a text right?
+2013-11-11 19:13:13	jhartigan	alright well im gonna go eat and lift. if he accepts it all tonight ill be able to finish cert addition, but its all setup to the 90th percentile
+2013-11-11 19:39:04	--	irc: disconnected from server
+2013-11-12 09:14:26	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-12 09:14:26	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2013-11-12 09:14:26	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-12 09:14:26	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-12 09:14:28	--	Mode #omnidev [+cnt]
+2013-11-12 09:14:29	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-12 10:33:05	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-12 10:33:05	--	irc: disconnected from server
+2013-11-13 09:19:52	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-13 09:19:52	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-11-13 09:19:52	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-13 09:19:52	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-13 09:19:54	--	Mode #omnidev [+cnt]
+2013-11-13 09:19:54	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-13 09:35:05	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-14 10:28:56	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-14 10:28:56	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-14 10:28:56	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-14 10:28:58	--	Mode #omnidev [+cnt]
+2013-11-14 10:28:59	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-14 10:47:58	kweaver	jhartigan, dave:"hey man. we're gonna send you a revised copy of the spec pretty soonjust going over it right now"
+2013-11-14 10:48:51	jhartigan	I HIT SNOOZE ON PURPOSE SO ID WAKE UP TO BETTER NEWS DAMNIT
+2013-11-14 11:14:08	kweaver	jhartigan I can see what theyve been taking so long doing
+2013-11-14 11:14:19	kweaver	they changed around like 10 specs
+2013-11-14 11:14:26	kweaver	mostly just going in more detail
+2013-11-14 11:14:36	jhartigan	oh shit they responded finally
+2013-11-14 11:14:46	jhartigan	oh i got the email
+2013-11-14 11:14:49	jhartigan	didnt notice
+2013-11-14 11:16:07	kweaver	im a little worried about them not caring about the bmi calc
+2013-11-14 11:16:36	kweaver	theyve clearly gone all out with the specs, making sure this slideshow will turn out exactly as they want it
+2013-11-14 11:16:53	jhartigan	it also doesnt already exist
+2013-11-14 11:17:29	jhartigan	oh shit yo
+2013-11-14 11:17:32	jhartigan	ie8+
+2013-11-14 11:17:35	jhartigan	fucking tits
+2013-11-14 11:17:39	kweaver	yesss
+2013-11-14 11:18:03	kweaver	nah I know.  but they didnt even feel like writing anything up for the calc, and dave said his boss hasnt talked about the bmi calc at all
+2013-11-14 11:18:13	kweaver	im just going to set my expectations low on that one
+2013-11-14 11:18:46	jhartigan	yeah. either way its good we got another spec and all that jazz
+2013-11-14 11:19:24	kweaver	plus, I could see them being like "well, the one project takes up most of our free budget anyway.  we'll just see how you guys do with it and save the bmi calc for next year"
+2013-11-14 11:21:00	jhartigan	yeah thats another possibility
+2013-11-14 11:21:07	jhartigan	we have no clue what their budget is currently
+2013-11-14 11:21:11	kweaver	yeah
+2013-11-14 11:28:43	kweaver	so they use that cross browser app BrowserStack jhartigan
+2013-11-14 11:28:45	kweaver	https://www.browserstack.com/pricing
+2013-11-14 11:28:45	[url]:	http://tinyurl.com/kc7vegw
+2013-11-14 11:28:58	kweaver	they have 5 accounts.....
+2013-11-14 11:29:26	kweaver	they spend $240 per month on just making sure their html and css changes look good in safari
+2013-11-14 11:29:37	jhartigan	lol
+2013-11-14 11:29:43	jhartigan	as opposed to buying a mac?
+2013-11-14 11:30:32	kweaver	seriously...
+2013-11-14 11:30:42	kweaver	but anyway, they're going to lend us an account
+2013-11-14 11:30:52	kweaver	"assuming we move forward"
+2013-11-14 11:30:56	kweaver	so tired of assuming
+2013-11-14 11:31:07	jhartigan	wtf do they want
+2013-11-14 11:31:16	jhartigan	they can have the rights to my first born at this point
+2013-11-14 11:32:04	kweaver	well im saving their spec sheet and attaching it to the proposal
+2013-11-14 11:32:15	kweaver	so that its all one pdf, just at the end of our stuff
+2013-11-14 11:32:37	jhartigan	sounds fine to me
+2013-11-14 11:32:47	jhartigan	i didnt notice anything i didnt like in there
+2013-11-14 11:43:32	kweaver	sending now
+2013-11-14 11:44:33	kweaver	worst case, they have us just do the slider, we knock their socks off with a speedy return, and then we'll have a clear cut next project to start bugging them about in january
+2013-11-14 11:45:28	jhartigan	well i dont think we should bug them about their project
+2013-11-14 11:45:38	kweaver	you know what I mean though
+2013-11-14 11:45:39	jhartigan	they might have had a reason for left over budget this year
+2013-11-14 11:45:44	kweaver	im not suggesting we spam them
+2013-11-14 11:46:24	kweaver	but that at least gives us a more defined next job, better than "we might have 'future projects' "
+2013-11-14 11:46:54	jhartigan	yeah sure
+2013-11-14 11:48:42	kweaver	bflaim wants to chat today about picking a new theme for the site to keep things fresh
+2013-11-14 11:48:54	kweaver	I dont think he realizes that basically means creating an entire new site
+2013-11-14 11:49:11	kweaver	hes probably under the assumption that its plug an play
+2013-11-14 11:49:34	jhartigan	what is with them
+2013-11-14 11:49:38	kweaver	no idea
+2013-11-14 11:49:41	jhartigan	they picked this theme like 3 months ago
+2013-11-14 11:49:49	kweaver	pretty sure they just like wasting our time
+2013-11-14 11:49:57	kweaver	since they dont know what else to do with us
+2013-11-14 11:52:00	jhartigan	yeah shit i guess so
+2013-11-14 11:53:03	jhartigan	first its - yo we have these meta as fuck testimonials wed like that completely clash
+2013-11-14 11:53:13	jhartigan	no they probably want a new meta theme to add onto the site
+2013-11-14 11:53:20	jhartigan	so they meta testimonials fit
+2013-11-14 11:54:08	kweaver	Ill explain that its the equivelant of starting over, and that while we've gotten a lot of great new potential clients from them,  the only recent money from their clients has been the $700 from jhanna that we still need to get
+2013-11-14 11:55:48	jhartigan	yeah and i mean.. its seriously a 3 month old site... fresh and rushing into a design arent the same thing
+2013-11-14 12:01:55	jhartigan	im purty hungry gonna go make some foods
+2013-11-14 13:05:58	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 244 seconds)
+2013-11-14 13:22:33	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-14 14:03:09	kweaver	jhartigan:
+2013-11-14 14:03:25	kweaver	im adding a new item to my giant to do list
+2013-11-14 14:03:38	kweaver	http://www.dailyblogtips.com/wordpress-security-tip-remove-the-admin-user/
+2013-11-14 14:03:38	[url]:	http://tinyurl.com/m5qjp4
+2013-11-14 14:04:08	kweaver	we should change the default name "admin" for all of our sites
+2013-11-14 14:04:29	kweaver	even if we just changed it to "Omni" or something
+2013-11-14 14:08:37	jhartigan	yeh it halves the security of shit pretty hard
+2013-11-14 14:11:43	jhartigan	dude... i swear people dont fucking read
+2013-11-14 14:12:01	jhartigan	does my email i sent to holdbrook look like "I have to contact smarsh" in any way
+2013-11-14 14:15:56	kweaver	nah, why?
+2013-11-14 14:16:04	kweaver	just G+ me
+2013-11-14 14:16:08	kweaver	I wanted to go over some things
+2013-11-14 14:16:26	jhartigan	she repsonded saying we are translating the forms - so she doesnt have any, and to let her know how it goes with smarsh
+2013-11-14 14:19:02	kweaver	lololol
+2013-11-14 14:19:24	kweaver	G+?  or are you butt naked
+2013-11-14 14:19:26	kweaver	?
+2013-11-14 14:20:55	jhartigan	nah i have a sock on
+2013-11-14 16:42:39	kweaver	jhartigan
+2013-11-14 16:42:48	kweaver	its not even so much the money
+2013-11-14 16:43:06	kweaver	its the assurance that we made the right decision to work for ourselves
+2013-11-14 16:43:48	jhartigan	yeah its a huge step
+2013-11-14 16:44:02	jhartigan	means we have enough of some form of validation
+2013-11-14 16:46:30	kweaver	i havent put money in savings for almost 2 years now
+2013-11-14 16:47:07	jhartigan	i have pulled money from savings for 2 years now
+2013-11-14 16:47:11	jhartigan	#thanksbrian
+2013-11-14 16:47:15	jhartigan	not his fault tho
+2013-11-14 16:47:22	jhartigan	i got to get an internship it was worth it
+2013-11-14 16:48:54	kweaver	yeah same
+2013-11-14 16:50:00	jhartigan	ive been hovering on my 200 - 500 dollar emergency fund for so long
+2013-11-14 16:50:07	jhartigan	now its gonna be a 2k emergency fun
+2013-11-14 16:50:09	jhartigan	fund*
+2013-11-14 16:50:11	jhartigan	aw yis
+2013-11-14 16:58:47	jhartigan	i found some html. its a default magento file
+2013-11-14 16:58:56	jhartigan	i commented out the html so the template still loads but does nothing
+2013-11-14 17:00:12	kweaver	jhartigan well its probably to late to ask if he wants us to come down tomorrow
+2013-11-14 17:00:28	jhartigan	dont rush it. i think were in the clear
+2013-11-14 17:00:33	kweaver	i mean
+2013-11-14 17:00:33	jhartigan	seeming over eager isnt good either
+2013-11-14 17:00:45	kweaver	yeah
+2013-11-14 17:01:07	jhartigan	send it out with the change and just mention we can mkae it tomorrow afternoon if they needed us that soon or any time next week
+2013-11-14 17:01:26	kweaver	that works
+2013-11-14 17:08:59	kweaver	lol
+2013-11-14 17:09:01	kweaver	fuckin
+2013-11-14 17:09:32	kweaver	I spend 10 minutes carefully making sure I make the changes, change the dates, and save them both as .pdfs
+2013-11-14 17:09:45	kweaver	I accidently attach the .indd file for the one
+2013-11-14 17:09:55	jhartigan	oh well
+2013-11-14 17:10:03	jhartigan	i think its okay at this point haha
+2013-11-14 17:10:18	kweaver	hes like "um.... we dont work with people who make mistakes"
+2013-11-14 17:13:32	jhartigan	thatd be the worst thing ever
+2013-11-14 17:20:35	kweaver	lol
+2013-11-14 17:30:25	jhartigan	yo the widgets fucking suck
+2013-11-14 17:30:26	jhartigan	ew
+2013-11-14 17:42:21	jhartigan	fixed one
+2013-11-14 17:45:52	jhartigan	yeah they kinda suck.. im getting dinner with the fam... well have to tweak the new products shit soon
+2013-11-14 18:40:52	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: No route to host)
+2013-11-14 18:42:28	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-14 19:14:52	--	irc: disconnected from server
+2013-11-14 19:15:19	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-14 19:15:19	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-14 19:15:19	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-14 19:15:19	--	Notice(adams.freenode.net) -> #omnidev: [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2013-11-14 19:15:21	--	Mode #omnidev [+cnt]
+2013-11-14 19:15:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-14 19:53:58	--	irc: disconnected from server
+2013-11-14 19:54:23	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-14 19:54:23	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-14 19:54:23	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-14 19:54:25	--	Mode #omnidev [+cnt]
+2013-11-14 19:54:25	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-15 09:32:28	--	irc: disconnected from server
+2013-11-15 09:32:53	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-15 09:32:53	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-15 09:32:53	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-15 09:32:55	--	Mode #omnidev [+cnt]
+2013-11-15 09:32:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-15 10:01:51	kweaver	jhartigan:
+2013-11-15 10:01:58	kweaver	were going to grab lunch with dave and them
+2013-11-15 10:02:43	jhartigan	word up
+2013-11-15 10:02:47	jhartigan	what time / where
+2013-11-18 09:30:45	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-18 09:30:45	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2013-11-18 09:30:45	--	Nicks #omnidev: [@kweaver]
+2013-11-18 09:30:45	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-18 09:30:45	--	Mode #omnidev [-o kweaver] by services.
+2013-11-18 09:30:45	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1384785045 to 1337223617
+2013-11-18 09:30:45	--	Mode #omnidev [+ct-s] by services.
+2013-11-18 09:30:45	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-18 09:30:45	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-18 09:30:47	--	Mode #omnidev [+cnt]
+2013-11-18 09:30:47	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-18 09:37:49	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-18 09:37:49	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-18 09:58:20	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-18 10:01:46	jhartigan	kweaver1: kweaver im in the clear so long as our pilot friend is ready
+2013-11-18 10:02:04	kweaver1	pilot?
+2013-11-18 10:02:16	kweaver1	tom?
+2013-11-18 10:02:18	jhartigan	thomas and his damn airplane mode
+2013-11-18 10:05:11	jhartigan	https://github.com/paulirish/browser-logos
+2013-11-18 10:05:11	[url]:	http://tinyurl.com/n2rxhwb
+2013-11-18 11:46:22	<--	kweaver1 (~kweaver@96.248.78.50) has left #omnidev
+2013-11-18 12:05:14	jhartigan	kweaver: can you check on the pi
+2013-11-18 12:05:19	jhartigan	its saying no route to host
+2013-11-18 12:07:01	jhartigan	lemme know if its still running properly and whatnot
+2013-11-18 12:23:01	kweaver	k
+2013-11-18 12:23:17	kweaver	I fixed the bitbucket
+2013-11-18 12:23:34	kweaver	its 5 total, and we had dean, dave, and josh on random repos
+2013-11-18 12:23:37	jhartigan	okay cool. im finishing barsu
+2013-11-18 12:24:00	kweaver	jhartigan, I remember we connected from jira to bitbucket
+2013-11-18 12:24:13	kweaver	but if you go on bitbucket and click the top left menu button
+2013-11-18 12:24:28	kweaver	it says we should connect our other shits
+2013-11-18 12:25:39	jhartigan	dunno.. in the account mine says jira last updated 11 hours ago
+2013-11-18 12:25:47	jhartigan	we should jira this project tho
+2013-11-18 12:31:03	jhartigan	did you reboot the pi?
+2013-11-18 12:34:56	jhartigan	its working now, backups seem fine, tho my archive script still hasnt run yet
+2013-11-18 12:34:58	jhartigan	odd
+2013-11-18 12:35:24	jhartigan	wondering if the @weekly directive needs to become 0 7 *** instead
+2013-11-18 12:39:35	kweaver	jhartigan: reset the pi and it worked
+2013-11-18 12:39:42	kweaver	I wonder if it had to do with thepower outage
+2013-11-18 12:40:10	kweaver	yeah jhartigan I was going to make it a jira project
+2013-11-18 12:40:22	jhartigan	oh yours dropped too?
+2013-11-18 12:40:36	jhartigan	i wonder if it did, its almost like it didnt actually power off
+2013-11-18 12:40:47	jhartigan	it was stuck in limbo or something
+2013-11-18 12:40:51	kweaver	yeah i think so
+2013-11-18 12:40:53	jhartigan	i made jira projects
+2013-11-18 12:41:00	jhartigan	gonna link them after i move barsuglia
+2013-11-18 12:41:01	kweaver	yeah my power went out last night
+2013-11-18 12:41:15	kweaver	briefly
+2013-11-18 12:41:22	jhartigan	yeah same.. enough to knock my radio batteries off
+2013-11-18 12:41:24	jhartigan	fuckers
+2013-11-18 12:41:29	jhartigan	now i need togo get Ds
+2013-11-18 12:41:35	jhartigan	who the fuck buys D batteries anymore
+2013-11-18 12:41:39	kweaver	I thought I heard what sounded like a trasformer blow 
+2013-11-18 12:41:48	kweaver	outside
+2013-11-18 12:42:04	kweaver	it could have been a truck door slamming or something
+2013-11-18 12:42:07	jhartigan	coulda been.
+2013-11-18 12:42:13	kweaver	but it was the exact second the power flashed
+2013-11-18 12:42:15	jhartigan	maybe a short on a transformer though as well
+2013-11-18 12:42:29	jhartigan	yeah we got some nasty wind, i wonder if its related to the midwestern storms
+2013-11-18 12:43:33	jhartigan	oh shit... barsuglia was due 10/10
+2013-11-18 12:43:36	jhartigan	did we bill them?
+2013-11-18 12:51:37	jhartigan	also the projects should now be linked JIRA into bitbucket and viceversa
+2013-11-18 13:37:24	kweaver	we did not jhartigan
+2013-11-18 13:37:57	kweaver	jhartigan:  tomorrow or wednesday, did you wanna come over and we can square away our quickbooks?
+2013-11-18 13:38:11	kweaver	and then we can shoot out invoices for everony thats over due
+2013-11-18 14:01:29	--	irc: disconnected from server
+2013-11-18 14:01:55	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-18 14:01:55	--	Nicks #omnidev: [jhartigan kweaver]
+2013-11-18 14:01:55	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-18 14:01:57	--	Mode #omnidev [+cnt]
+2013-11-18 14:01:58	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-18 14:05:58	jhartigan	alright well i think barsus good to go. im gonna do the account unlock for your dads mail and then grab lunch and start on the nemours js
+2013-11-18 14:34:58	kweaver	k jhartigan 
+2013-11-18 14:35:09	kweaver	i might push before you start
+2013-11-18 16:32:50	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-18 16:32:50	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2013-11-18 16:32:50	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-18 16:32:52	--	Mode #omnidev [+cnt]
+2013-11-18 16:32:52	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-18 16:39:20	jhartigan	ah.  mighta froze it with tmux.. you can do that.. i forget how to resume shit tho
+2013-11-18 16:39:34	jhartigan	whatchu think bout dem slidezzzz
+2013-11-18 16:42:00	kweaver1	diggin it
+2013-11-18 16:42:16	jhartigan	those are all on google images - supercool 360x240
+2013-11-18 16:42:20	jhartigan	cause the supacool
+2013-11-18 16:42:38	kweaver1	ill throw their styling on later
+2013-11-18 16:43:06	jhartigan	yeah i mean there still alot i have to do to it
+2013-11-18 16:43:06	kweaver1	next we should look into options for javascript touch sliding
+2013-11-18 16:48:18	kweaver1	jhartigan:  for that I found a couple routes
+2013-11-18 16:48:42	kweaver1	1.   a slider with it built in already, http://codecanyon.net/item/mobile-touch-swipe-nojquery-jssor-slider/2797680
+2013-11-18 16:48:43	[url]:	http://tinyurl.com/mv43htq
+2013-11-18 16:49:00	kweaver1	2. a javascript only touch library https://github.com/EightMedia/hammer.js/
+2013-11-18 16:49:00	[url]:	http://tinyurl.com/b3xtp3k
+2013-11-18 16:49:56	jhartigan	does it look good to use a prebuilt library
+2013-11-18 16:49:57	jhartigan	im kinda torn on it
+2013-11-18 16:50:05	jhartigan	not that we have to advertise it
+2013-11-18 16:50:35	kweaver1	library might be overkill
+2013-11-18 16:50:44	jhartigan	didnt mean library
+2013-11-18 16:50:45	kweaver1	im looking for the article I found about it
+2013-11-18 16:50:46	jhartigan	meant slider
+2013-11-18 16:50:56	jhartigan	said library cause dumb
+2013-11-18 16:50:59	jhartigan	library im fine with
+2013-11-18 16:51:39	kweaver1	if anything, I dont mind just looking at a slider, and taking it line by line and pulling what we need
+2013-11-18 16:51:47	kweaver1	refactor it
+2013-11-18 16:51:56	kweaver1	and make it work with multiple slider etc
+2013-11-18 16:52:29	kweaver1	itll be quicker if we are at least basing ours off of another
+2013-11-18 16:53:18	kweaver1	if there is one aspect of the internet that has been written from scratch 50,000 times, its a slider
+2013-11-18 16:53:38	kweaver1	brb
+2013-11-19 13:33:53	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-19 13:33:53	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-19 13:33:53	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-19 13:33:55	--	Mode #omnidev [+cnt]
+2013-11-19 13:33:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-19 13:34:13	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-19 14:16:37	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-19 14:50:21	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-19 15:56:58	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-19 16:59:00	jhartigan	kweaver: kweaver_laptop whats the way to load the scripts in the head instead of footer?
+2013-11-19 16:59:13	jhartigan	with the middleman config
+2013-11-19 16:59:46	kweaver	just make a new scripts call in the layout/layout.erb file
+2013-11-19 16:59:51	kweaver	and only call what you need in the header
+2013-11-19 16:59:57	jhartigan	kk
+2013-11-19 17:00:07	kweaver	working on Mark M's shit
+2013-11-19 17:00:10	jhartigan	i probably woulda got that if i looked at the file
+2013-11-19 17:00:11	kweaver	since he called yesterday
+2013-11-19 17:00:15	jhartigan	instead of being an idiot
+2013-11-19 17:00:17	jhartigan	lol did he
+2013-11-19 17:00:20	jhartigan	bill that fucker
+2013-11-19 17:00:37	jhartigan	kweaver: im making this http://cssdeck.com/labs/image-slider-1
+2013-11-19 17:00:46	jhartigan	work with a div with image and text
+2013-11-19 17:00:56	jhartigan	and a config variable
+2013-11-19 17:01:59	kweaver	aight cool  just keep the touch swipe in mind too
+2013-11-19 17:02:51	jhartigan	yeah im more concerned about animations at this point.
+2013-11-19 17:02:58	jhartigan	rather than changing images
+2013-11-19 19:42:01	kweaver	jhartigan:  you there?
+2013-11-19 19:42:06	kweaver	whats the creds for tranquilo?
+2013-11-20 01:34:50	<--	kweaver (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-11-20 09:31:43	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-20 09:31:43	--	Mode #omnidev [+ns] by pratchett.freenode.net
+2013-11-20 09:31:43	--	Nicks #omnidev: [@kweaver]
+2013-11-20 09:31:43	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-20 09:31:43	--	Mode #omnidev [-o kweaver] by services.
+2013-11-20 09:31:43	--	Notice(pratchett.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1384957903 to 1337223617
+2013-11-20 09:31:43	--	Mode #omnidev [+ct-s] by services.
+2013-11-20 09:31:43	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-20 09:31:43	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-20 09:31:45	--	Mode #omnidev [+cnt]
+2013-11-20 09:31:45	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-20 09:42:45	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-20 09:42:45	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-20 11:54:48	--	You are now known as jhartigan
+2013-11-20 23:40:26	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-20 23:46:56	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-21 00:27:20	<--	kweaver1 (~kweaver@96.248.78.50) has quit (Read error: Connection reset by peer)
+2013-11-21 00:27:22	<--	jhartigan (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-21 00:27:22	--	irc: disconnected from server
+2013-11-21 09:33:52	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-21 09:33:52	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2013-11-21 09:33:52	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-21 09:33:52	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-21 09:33:55	--	Mode #omnidev [+cnt]
+2013-11-21 09:33:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-21 09:37:33	kweaver	jhartigan: you get my email?
+2013-11-21 09:37:45	kweaver	at first I thought mark made the subject
+2013-11-21 09:38:05	kweaver	but it was a customer
+2013-11-21 09:38:59	jhartigan	well shes dumb
+2013-11-21 09:39:04	jhartigan	i already replied
+2013-11-21 09:39:40	kweaver	thats what I figured
+2013-11-21 09:39:52	kweaver	do you remember if we are actually using the coupon module?
+2013-11-21 09:40:20	jhartigan	its enabled
+2013-11-21 09:40:21	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-21 09:40:29	jhartigan	thats irrelevant to this issue
+2013-11-21 09:40:40	kweaver	nah, but I did just find another issue
+2013-11-21 09:40:42	jhartigan	is it? i dunno cause its the kickstart ui not standard drupal commerce
+2013-11-21 09:40:52	jhartigan	so i couldnt tell you if its the module or not
+2013-11-21 09:41:00	jhartigan	its a guide on the kickstart page
+2013-11-21 09:41:08	jhartigan	that was used but thats all i got for you
+2013-11-21 09:41:29	kweaver	enter the coupon to add 1, then go back and enter it again to add another
+2013-11-21 09:41:35	kweaver	then go back and keep doing it
+2013-11-21 09:41:40	kweaver	the coupon percentage stacks
+2013-11-21 09:43:28	jhartigan	no it doesnt
+2013-11-21 09:43:52	kweaver	nevermind
+2013-11-21 09:43:58	jhartigan	it reduces cause he has tiers
+2013-11-21 09:43:59	kweaver	its the quantitity discount
+2013-11-21 09:44:01	kweaver	yaya
+2013-11-21 09:44:06	kweaver	k we good
+2013-11-21 09:44:11	jhartigan	yeah it caps at four and shes an idiot
+2013-11-21 09:44:17	jhartigan	he is too. so theres that
+2013-11-21 09:44:22	jhartigan	also
+2013-11-21 09:44:30	jhartigan	you can enter invalid coupons and you dont get an error
+2013-11-21 09:44:36	jhartigan	does he have another site somewhere?
+2013-11-21 09:44:41	jhartigan	you just dont get a discount
+2013-11-21 09:45:40	kweaver	i was just going to say the same thing
+2013-11-21 09:46:01	kweaver	yeah I dont know why she thinks it said its invalid
+2013-11-21 09:46:06	jhartigan	man i was making a screenshot of a dicpics coupon for you =/
+2013-11-21 09:46:21	jhartigan	but i mean whatever happened.. is not on this site
+2013-11-21 09:46:31	jhartigan	it may be ugly, but like a good slut, she works fine
+2013-11-21 09:57:25	kweaver	just responded
+2013-11-21 09:57:31	kweaver	Mark,
+2013-11-21 09:57:31	kweaver	   Jake and I tested it with every quantity and 4 computers and every browser so it definitely works.  Also, functionality like that would never be a caching issue either.   She  mentioned " It said it was invalid. " .   The coupon module we used does not come with any validation for wrong coupons by default.  Typing in a wrong coupon will not display any error, it simply will not do anything.
+2013-11-21 09:57:42	kweaver	My guess:
+2013-11-21 09:57:42	kweaver	1.  She's on the wrong site.
+2013-11-21 09:57:42	kweaver	2.  She applied it, it worked, but she looked at the order total after shipping and thought it didn't work. 
+2013-11-21 09:58:10	kweaver	its fantastic to see how quickly stupid people have difficulty with very basic tasks
+2013-11-21 09:58:30	kweaver	makes you think how many calls a site like amazon gets
+2013-11-21 09:58:37	kweaver	for people having trouble doing things
+2013-11-21 09:59:23	jhartigan	yeah dude customer service over there must be a shitshow
+2013-11-21 09:59:51	kweaver	like literally, he sent that last night
+2013-11-21 10:00:06	kweaver	and I told him it worked in the afternoon
+2013-11-21 10:00:20	kweaver	there was only a couple hours that people even knew it existed
+2013-11-21 10:01:27	jhartigan	yeah i really have no idea what could have happened
+2013-11-21 10:01:40	jhartigan	i did some googling, couldnt find anything else she would have been on
+2013-11-21 10:51:05	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-21 10:51:05	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2013-11-21 10:51:05	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-21 10:51:07	--	Mode #omnidev [+cnt]
+2013-11-21 10:51:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-21 12:12:54	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-21 13:55:16	-->	kweaver (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-21 13:55:16	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2013-11-21 13:55:16	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-21 13:55:21	--	Mode #omnidev [+cnt]
+2013-11-21 13:55:22	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-21 14:07:04	jhartigan	kweaver got changes to make for her gona do them first to get it out of the way
+2013-11-21 14:09:17	jhartigan	also kweaver do you have the login info?
+2013-11-21 14:09:20	jhartigan	i cant find it anywhere
+2013-11-21 14:37:13	kweaver	jhartigan when you pull that info from the doc, can you throw it in the secret?
+2013-11-21 14:38:10	jhartigan	nope
+2013-11-21 14:38:25	jhartigan	yes, but only cause i didnt close the document yet
+2013-11-21 14:38:48	kweaver	wow
+2013-11-21 14:38:55	kweaver	close one
+2013-11-21 14:38:59	jhartigan	indeed
+2013-11-21 14:39:04	jhartigan	i had it memorized too haha
+2013-11-21 14:39:10	jhartigan	it was holdbrook23451
+2013-11-21 14:39:15	jhartigan	not hold23451
+2013-11-21 14:39:20	jhartigan	i have weird talents =/
+2013-11-21 14:41:47	kweaver	weirdo
+2013-11-21 14:42:32	jhartigan	DONT JUDGE ME
+2013-11-21 14:42:54	jhartigan	yo did you pull that repo
+2013-11-21 14:43:05	jhartigan	lemme know what you think about the slider layout i chose for the html
+2013-11-21 14:44:30	kweaver	looks good jhartigan 
+2013-11-21 14:44:34	kweaver	do we need a wrapper though?
+2013-11-21 14:44:44	jhartigan	not sure
+2013-11-21 14:44:46	jhartigan	dont think we do
+2013-11-21 14:44:49	kweaver	ill play with it
+2013-11-21 14:44:53	jhartigan	i just did it out of slider habit but havent used it yet
+2013-11-21 14:46:42	jhartigan	yo also
+2013-11-21 14:46:48	jhartigan	im dropping that initial image class
+2013-11-21 14:46:53	jhartigan	id
+2013-11-21 14:46:55	jhartigan	classid
+2013-11-21 14:46:57	jhartigan	dicks
+2013-11-21 14:47:00	kweaver	ok
+2013-11-21 14:47:00	jhartigan	but shes dropped like its hot
+2013-11-21 14:47:06	kweaver	ill just delete em too
+2013-11-21 14:47:12	jhartigan	and all JS subject to change
+2013-11-21 14:47:19	kweaver	thats fine
+2013-11-21 14:47:37	kweaver	the html should be fine, might just remove the wrapper
+2013-11-21 14:47:53	jhartigan	i dont think im gonna use it for anything
+2013-11-21 14:48:04	jhartigan	i actually have a workaround in my JS for it i think hahahah
+2013-11-21 14:48:16	jhartigan	yes i do.
+2013-11-21 14:48:19	jhartigan	jesus
+2013-11-21 14:57:43	jhartigan	yo kweaver do you remember where you set the slides up?
+2013-11-21 14:57:52	jhartigan	i cant seem to find the actual slides i found the general setting
+2013-11-21 14:58:49	kweaver	ummm
+2013-11-21 14:58:59	kweaver	you mean the examples they gave us?
+2013-11-21 14:59:10	jhartigan	nah where we disabled the whitening one
+2013-11-21 14:59:13	jhartigan	so i can add this one
+2013-11-21 14:59:14	kweaver	ohh
+2013-11-21 14:59:15	kweaver	holdbrook
+2013-11-21 14:59:21	kweaver	it was an article
+2013-11-21 14:59:22	jhartigan	yeah
+2013-11-21 14:59:24	kweaver	in that section
+2013-11-21 14:59:25	jhartigan	okay
+2013-11-21 14:59:27	jhartigan	cool thanks
+2013-11-21 14:59:28	kweaver	like the last page
+2013-11-21 14:59:30	kweaver	i think
+2013-11-21 15:00:15	jhartigan	yeah i found it now
+2013-11-21 15:00:18	jhartigan	ill be done over here soon
+2013-11-21 15:00:22	kweaver	k
+2013-11-21 15:08:23	--	irc: disconnected from server
+2013-11-21 15:08:46	-->	kweaver (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-21 15:08:46	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2013-11-21 15:08:46	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-21 15:08:48	--	Mode #omnidev [+cnt]
+2013-11-21 15:08:48	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-21 16:30:31	kweaver	jhartigan:  ill send out the tranq and barsu invoices when i get home on the deskytop
+2013-11-21 16:30:52	jhartigan	yeah its not a  big deal
+2013-11-21 16:30:57	jhartigan	i just wanna make people pay us
+2013-11-21 16:31:03	jhartigan	so i can roll around in the money were gonna get soon
+2013-11-21 16:31:06	jhartigan	every dollar counts
+2013-11-21 16:31:38	jhartigan	were waiting on the forms from them for spanish and then were waiting on me to do those other forms. ill probably do the forms tomorrow
+2013-11-21 16:36:23	kweaver	sick
+2013-11-21 16:36:31	kweaver	yeah just keep rackin up dem holdbrook hours
+2013-11-21 16:36:38	jhartigan	yeah i added them to the shit
+2013-11-21 16:36:39	kweaver	I dont think they'll give a shit when they see the invoice
+2013-11-21 16:36:53	jhartigan	trying to get my head back into the slider.. that holdbrrook shit fucked up my mojo haha
+2013-11-21 16:36:54	kweaver	some good, fast moolaa
+2013-11-21 16:36:59	jhartigan	i dont think so either
+2013-11-21 16:37:04	jhartigan	it sounds like they care about speed
+2013-11-21 16:37:10	jhartigan	which is why i dropped the slider and did it
+2013-11-21 16:37:16	jhartigan	but now my brains broken
+2013-11-22 10:39:56	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-22 10:39:56	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-22 10:39:56	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-22 10:39:58	--	Mode #omnidev [+cnt]
+2013-11-22 10:39:58	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-22 10:42:19	jhartigan	yo take a loook at the email i just sent you
+2013-11-22 10:42:48	jhartigan	im telling her to use it as a pdf to start but i have a feeling thats not going to be the happiest of solutions
+2013-11-22 10:43:00	kweaver	ya sec
+2013-11-22 10:44:08	kweaver	wat
+2013-11-22 10:44:39	jhartigan	i dont know what she means.. im assuming somone with their l33t skills at the office made a "newsletter" in paint
+2013-11-22 10:45:01	kweaver	yeah, why is this image illegible just because its a jpeg?
+2013-11-22 10:45:09	kweaver	shes obviously just doing computers wrong
+2013-11-22 10:45:12	jhartigan	yeah
+2013-11-22 10:46:06	kweaver	maybe we should call her?
+2013-11-22 10:46:15	kweaver	and just figure out what they want
+2013-11-22 10:46:20	jhartigan	im trying to avoid working on their shit today
+2013-11-22 10:46:25	jhartigan	other than attempting a form
+2013-11-22 10:51:01	kweaver	im writing up a response
+2013-11-22 10:51:10	kweaver	do you want to send it, or you want me?
+2013-11-22 10:51:18	kweaver	i think the idea is just to have a featured patient page
+2013-11-22 10:51:23	jhartigan	oh i was about to send it
+2013-11-22 10:51:29	jhartigan	yeah i get that
+2013-11-22 10:51:32	kweaver	oh ok
+2013-11-22 10:51:43	jhartigan	but im not gonna sit here and do a page and convert a jpeg into an article
+2013-11-22 10:51:51	jhartigan	when i have more important shit to do today
+2013-11-22 10:51:54	kweaver	yeah I would just recommend that they have us create a featured page, and then simply link to it on their facebook
+2013-11-22 10:52:12	kweaver	and then just tell them, if thats the concept they're going for, we can do it next week
+2013-11-22 10:56:47	jhartigan	yeah if she asks in a reply illl tell her what time it is
+2013-11-22 10:56:57	jhartigan	which means ill tell her send it and well do it next week
+2013-11-22 10:57:12	jhartigan	and the way this is going we might wanna start billing them in increments
+2013-11-22 10:57:19	jhartigan	cause it looks/seems like they wanna keep doing shit
+2013-11-22 10:57:23	jhartigan	could be wrong though
+2013-11-22 11:01:59	kweaver	yeah, actually while youre still talking to her.  can you send her another email saying that we will be sending her an invoice this afternoon for everything so far.
+2013-11-22 11:02:48	kweaver	just so im not blind siding her with it
+2013-11-22 11:03:10	jhartigan	yeah if she doesnt reply within a half hour ill send it out to her
+2013-11-22 11:03:17	kweaver	k
+2013-11-22 11:09:25	jhartigan	yo you see chromecast hackathon early december for release of SDK
+2013-11-22 11:09:31	jhartigan	oh the third party apps, let them come
+2013-11-22 11:16:44	kweaver_laptop	nice
+2013-11-22 11:16:47	kweaver_laptop	nicee
+2013-11-22 11:17:14	kweaver_laptop	jhartigan open the secret
+2013-11-22 11:17:31	kweaver_laptop	im getting something saying that my laptop has it locked for edit since 6/11/13
+2013-11-22 11:17:42	kweaver_laptop	even though im on my laptop, and we didnt have bitsync then
+2013-11-22 11:18:09	kweaver_laptop	if you open a copy,, its still the most up to date version of it
+2013-11-22 11:20:56	jhartigan	huh?
+2013-11-22 11:20:59	jhartigan	i dont get an error
+2013-11-22 11:22:19	kweaver	thats weirdddd
+2013-11-22 11:22:23	kweaver	im getting it on both computers
+2013-11-22 11:22:26	jhartigan	a cache issue?
+2013-11-22 11:22:29	jhartigan	oh shit
+2013-11-22 11:22:29	kweaver	maybs
+2013-11-22 11:22:38	jhartigan	you mean the online secret right?
+2013-11-22 11:22:42	jhartigan	or offline
+2013-11-22 11:22:44	kweaver	nah in bitsync
+2013-11-22 11:23:08	jhartigan	i dont have a copy
+2013-11-22 11:23:11	jhartigan	so theres that
+2013-11-22 11:23:13	jhartigan	is it in documents?
+2013-11-22 11:23:19	jhartigan	if so my copy is completely mia
+2013-11-22 11:23:55	kweaver	I had made a documents folder in the sync I had organized
+2013-11-22 11:24:01	kweaver	then you made a separate sync for docs
+2013-11-22 11:24:23	jhartigan	oh the one on my mac
+2013-11-22 11:24:24	kweaver	so if youre looking at the one next to Design  and Export, that was the one I made
+2013-11-22 11:24:26	jhartigan	yeah ignore that one
+2013-11-22 11:24:37	kweaver	the extra sync you made?
+2013-11-22 11:24:43	kweaver	I can just move it to my folder
+2013-11-22 11:24:45	jhartigan	cause i dont a) need it and b) switched to .sync ignore
+2013-11-22 11:25:06	jhartigan	works like a gitignore so you dont get files and folders
+2013-11-22 11:25:31	kweaver	alright I threw it in the other Documents folder next to Design and Export
+2013-11-22 11:25:35	kweaver	it should be there soon
+2013-11-22 11:25:41	kweaver	ill just delete the old folder once you have it
+2013-11-22 11:26:04	jhartigan	mine appears to be synching now
+2013-11-22 11:26:08	jhartigan	if its borked
+2013-11-22 11:26:13	jhartigan	well just run another export
+2013-11-22 11:29:03	jhartigan	kweaver: mine opened no probs jobs
+2013-11-22 11:29:25	jhartigan	you see google wallet debit is free to get from the app
+2013-11-22 11:31:10	jhartigan	anyways brb coffeess - if no answer from nancy ill follow up with hey were charging you and give us info and well get you a page next week
+2013-11-22 11:34:30	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-11-22 11:34:30	--	irc: disconnected from server
+2013-11-22 13:56:45	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-22 13:56:45	--	Nicks #omnidev: [jhartigan kweaver]
+2013-11-22 13:56:45	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-22 13:56:48	--	Mode #omnidev [+cnt]
+2013-11-22 13:56:48	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-22 13:57:01	kweaver	jhartigan, they just want a page made up that they can link to
+2013-11-22 13:58:31	kweaver	reply to her email, ask them to send us an example "featured patient" with all the info/pictures they would want on there
+2013-11-22 13:58:41	kweaver	and then we will make a page for them next week
+2013-11-22 13:58:44	kweaver	that they can link to
+2013-11-22 14:01:40	jhartigan	i already did that
+2013-11-22 14:01:42	jhartigan	forever ago
+2013-11-22 14:01:44	jhartigan	you were ccd
+2013-11-22 14:02:00	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-22 14:39:15	kweaver	im kinda pissed at myself for being this disorganized with barsuglia
+2013-11-22 14:39:28	kweaver	granted I wasnt expecting a 13 month turn around
+2013-11-22 14:39:40	kweaver	but Im still looking for with proposal
+2013-11-22 14:39:53	kweaver	and I dont think we even gave them one
+2013-11-22 14:39:58	jhartigan	yeah.. i mean were definitely at fault to a degree
+2013-11-22 14:40:05	jhartigan	but they did it worse
+2013-11-22 14:40:09	jhartigan	im 90% sure they owe 500
+2013-11-22 14:40:13	kweaver	because we werent expecting them to just pay us during that meeting
+2013-11-22 14:40:18	jhartigan	yeah
+2013-11-22 14:40:18	kweaver	that sounds right
+2013-11-22 14:40:26	jhartigan	cause he gave us 800 i think
+2013-11-22 14:41:23	jhartigan	500 site and hosting
+2013-11-22 14:41:28	jhartigan	which i guess we moved sometime round then
+2013-11-22 14:41:48	jhartigan	dunno.. i guess at the end of the day, its better we clsoe this out, and just move them to CC/25/month in june
+2013-11-22 14:43:21	jhartigan	ugh i wish pnc had labels like simple
+2013-11-22 14:43:30	jhartigan	we could keep track of payments visually so easily
+2013-11-22 15:28:05	kweaver1	jhartigan so I just set up my dad with a VM recurring $20 - month
+2013-11-22 15:28:16	kweaver1	and it doesnt offer any sort of automated emailing
+2013-11-22 15:28:18	kweaver1	or anything
+2013-11-22 15:28:21	kweaver1	soooooo
+2013-11-22 15:28:28	kweaver1	I REALLLY want to build that app soon
+2013-11-22 15:28:32	kweaver1	even just for that
+2013-11-22 15:29:42	kweaver1	the norm seems to be an invoice email a week before due, and a receipt email once it goes through
+2013-11-22 15:33:05	jhartigan	yeah thats probably good to have
+2013-11-22 15:33:09	jhartigan	not havving email is shitty
+2013-11-22 15:33:17	jhartigan	we can just use smtp with a template
+2013-11-22 15:33:19	jhartigan	sorry was tlakin to the moms
+2013-11-22 15:33:26	kweaver1	np
+2013-11-22 15:33:29	kweaver1	yeah thats what I thought
+2013-11-22 15:33:31	jhartigan	gotta run out right quick should be back at 4
+2013-11-22 15:33:35	jhartigan	gonna do the app
+2013-11-22 15:33:41	kweaver1	I figure while im doing newsletter email
+2013-11-22 15:33:45	kweaver1	I might as well make us on too
+2013-11-22 15:33:51	jhartigan	mlg at 530 so ill probably poke at it while watching
+2013-11-22 15:33:56	kweaver1	for that automated monthly email and receipt
+2013-11-22 15:34:05	jhartigan	yeah. if we can get smtp to work wll enough
+2013-11-22 15:35:18	jhartigan	if not.. ill setup https://wiki.archlinux.org/index.php/SSMTP
+2013-11-22 16:25:47	kweaver1	jhartigan:  we should probably get a signed contract from barsu with all of usual details
+2013-11-22 16:26:55	jhartigan	most likely ya.. give em that goddamn 30 day shit too so they dont worry about changes in the next month
+2013-11-22 16:27:25	kweaver1	ill send this out before the invoice then
+2013-11-22 16:27:38	kweaver1	or maybe just make it 1 doc
+2013-11-22 16:27:47	kweaver1	ill do that
+2013-11-22 16:28:00	jhartigan	yeah might as well
+2013-11-22 16:28:07	jhartigan	im gonna make the changes to the dentist today
+2013-11-22 16:28:14	jhartigan	well.. maybe not
+2013-11-22 16:28:24	jhartigan	she hasnt responded with how she wants that damn content
+2013-11-22 16:29:17	kweaver1	jhartigan do you know off hand where to change smtp setting in magento?  my dad wants to just use his eastsales@comcast.net for it
+2013-11-22 16:29:44	jhartigan	theres like 6 email addresses the site uses
+2013-11-22 16:29:48	jhartigan	under general
+2013-11-22 16:29:51	jhartigan	i can change em
+2013-11-22 16:29:56	jhartigan	but thats assuming he can use comcast to do it
+2013-11-22 16:29:56	kweaver1	if you want
+2013-11-22 16:29:59	kweaver1	http://customer.comcast.com/help-and-support/internet/email-client-programs-with-xfinity-email/
+2013-11-22 16:30:00	jhartigan	this is just mail that gets sent out
+2013-11-22 16:30:08	jhartigan	he still gets mail to eastsales
+2013-11-22 16:30:09	kweaver1	yeah i explained that it didnt matter
+2013-11-22 16:30:15	kweaver1	but he kept complaining
+2013-11-22 16:30:28	jhartigan	lolol
+2013-11-22 16:30:41	kweaver1	well if youre busy I can look for it in there
+2013-11-22 16:31:30	jhartigan	nah ill make the changes
+2013-11-22 16:31:35	jhartigan	what you think i should do for the dentist
+2013-11-22 16:31:41	jhartigan	she wants a blurb
+2013-11-22 16:31:42	kweaver1	just wait til monday
+2013-11-22 16:31:48	kweaver1	she hasnt responded
+2013-11-22 16:31:49	jhartigan	i dont know what the fuck that means other than slider haha
+2013-11-22 16:31:52	jhartigan	yeah thats fine
+2013-11-22 16:32:18	kweaver1	a "blip" actually
+2013-11-22 16:32:26	jhartigan	oh fuck
+2013-11-22 16:32:28	jhartigan	we need radar
+2013-11-22 16:33:01	kweaver1	actually, just respond to her again and ask her if she means a slide.
+2013-11-22 16:33:07	kweaver1	but then dont work on it until she responds
+2013-11-22 16:33:17	jhartigan	i cant log in to your dads
+2013-11-22 16:33:24	jhartigan	yeah i asked her if thats what she did mean
+2013-11-22 16:33:35	kweaver1	ok
+2013-11-22 16:33:37	kweaver1	then yeah wait
+2013-11-22 16:34:23	jhartigan	yeah wtf
+2013-11-22 16:34:26	jhartigan	i cant login
+2013-11-22 16:34:29	jhartigan	admin recpw312!
+2013-11-22 16:34:30	jhartigan	right?
+2013-11-22 16:34:38	kweaver1	forgot to tell you
+2013-11-22 16:34:41	kweaver1	I changed it to omni
+2013-11-22 16:34:44	kweaver1	instead of admin
+2013-11-22 16:34:46	jhartigan	YOU SLUT
+2013-11-22 16:34:52	jhartigan	thats cool
+2013-11-22 16:34:57	kweaver1	just figured we should probably do that to all our sites at some point
+2013-11-22 16:34:57	jhartigan	i just tried it like 8 times
+2013-11-22 16:35:01	kweaver1	after reading that article
+2013-11-22 16:35:03	jhartigan	and was like theres no way im fucking this up
+2013-11-22 16:35:05	jhartigan	yeah its smart
+2013-11-22 16:35:11	jhartigan	i read it before at bradm
+2013-11-22 16:35:17	jhartigan	and forgot about the suggestion entirely
+2013-11-22 16:36:55	jhartigan	gonna need your dads PW
+2013-11-22 16:36:59	jhartigan	or you can put her in if youd like
+2013-11-22 16:42:17	jhartigan	kay =(
+2013-11-22 16:42:20	jhartigan	kweaver1: ^
+2013-11-22 16:42:27	jhartigan	jkjk but we do need a password if we gon do this
+2013-11-22 16:42:42	kweaver1	yeah ive been trying to figure it out
+2013-11-22 16:42:48	kweaver1	everything we have in the secret is old
+2013-11-22 16:42:52	kweaver1	and he doesnt know
+2013-11-22 16:42:59	kweaver1	might have to reset him....
+2013-11-22 16:43:00	jhartigan	oh shit
+2013-11-22 16:43:06	kweaver1	and then reset his outlook....
+2013-11-22 16:43:06	jhartigan	lol he doesnt know the email well damn
+2013-11-22 16:43:07	kweaver1	ughh
+2013-11-22 16:43:11	jhartigan	i wasnt aware we had it
+2013-11-22 16:44:13	jhartigan	ugh... 110 off - www.amazon.com/gp/product/B0036FQ23A/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0036FQ23A&linkCode=as2&tag=yez-20
+2013-11-22 16:44:18	jhartigan	i wants it so bad
+2013-11-22 16:49:28	kweaver1	nice
+2013-11-22 16:49:51	jhartigan	i cant.. no vesa monitors
+2013-11-22 16:49:55	jhartigan	but holy fuck is that cool
+2013-11-22 16:57:18	jhartigan	kweaver1: no dice on le email i presumee
+2013-11-22 16:59:32	kweaver1	just called
+2013-11-22 16:59:34	kweaver1	hes gonna look
+2013-11-22 16:59:41	kweaver1	and if not, ill walk him through the reset
+2013-11-22 17:00:38	jhartigan	haha wouldnt it be so much better for him to just leave it
+2013-11-22 17:00:44	jhartigan	i woulda said fuck it already hahaha
+2013-11-22 17:08:47	jhartigan	im gonna reboot in prep of watching mlg from the dota client cause their stream sucks so send me a message on hangouts and ill get it done if we get dat pw figured out
+2013-11-22 17:08:49	jhartigan	brbs
+2013-11-22 17:09:47	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-22 23:01:21	<--	kweaver1 (~kweaver@96.248.78.50) has left #omnidev
+2013-11-24 11:28:26	-->	kweaver (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-11-24 11:28:26	--	Mode #omnidev [+ns] by sendak.freenode.net
+2013-11-24 11:28:26	--	Nicks #omnidev: [@kweaver]
+2013-11-24 11:28:26	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-11-24 11:28:26	--	Mode #omnidev [-o kweaver] by services.
+2013-11-24 11:28:26	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1385310506 to 1337223617
+2013-11-24 11:28:26	--	Mode #omnidev [+ct-s] by services.
+2013-11-24 11:28:26	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-11-24 11:28:26	--	Mode #omnidev [+o ChanServ] by services.
+2013-11-24 11:28:29	--	Mode #omnidev [+cnt]
+2013-11-24 11:28:29	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-24 11:56:18	<--	kweaver (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-24 11:56:18	--	irc: disconnected from server
+2013-11-25 09:21:16	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-25 09:21:16	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-11-25 09:21:16	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-11-25 09:21:16	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-11-25 09:21:18	--	Mode #omnidev [+cnt]
+2013-11-25 09:21:19	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-25 11:19:14	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-25 11:19:14	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-25 11:19:14	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-25 11:19:17	--	Mode #omnidev [+cnt]
+2013-11-25 11:19:17	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-25 11:25:08	kweaver_laptop	jhartigan I reinstalled contact form 7 on barsu
+2013-11-25 11:25:30	kweaver_laptop	Im pretty sure I had installed it when we first realized we needed it
+2013-11-25 11:25:44	kweaver_laptop	maybe I didnt, I dunno
+2013-11-25 11:26:31	kweaver_laptop	but that horrific email with the subject "i buy wholsalke"  made me realize we didnt have it
+2013-11-25 11:35:51	jhartigan	hahaha. but i put it on the new site
+2013-11-25 11:35:53	jhartigan	oh
+2013-11-25 11:35:58	jhartigan	i did smtp shit
+2013-11-25 11:36:51	jhartigan	yeah yo i fuckin laid in bed for 4 hours last night.. so i just went with the snooze id rather work without falling asleep on myself
+2013-11-25 11:57:49	--	irc: disconnected from server
+2013-11-25 11:58:15	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-25 11:58:15	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-25 11:58:15	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-25 11:58:18	--	Mode #omnidev [+cnt]
+2013-11-25 11:58:18	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-25 11:58:51	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-25 11:58:51	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-25 11:58:51	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-25 11:58:53	--	Mode #omnidev [+cnt]
+2013-11-25 11:58:53	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-25 12:01:15	kweaver_laptop	jhartigan:  you there?
+2013-11-25 12:02:43	kweaver_laptop	im introducing a couple of new classes to the slider
+2013-11-25 12:02:50	kweaver_laptop	and I want to make sure im not breaking anything
+2013-11-25 12:05:11	kweaver_laptop	I forget a couple classes that we will want 
+2013-11-25 12:05:14	kweaver_laptop	forgot*
+2013-11-25 12:31:03	kweaver_laptop	also jhartigan, when you get a chance, can you make me a project sergeant general in jira?
+2013-11-25 12:47:03	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-25 12:56:15	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-25 12:56:21	jhartigan	im here now i think
+2013-11-25 12:56:25	jhartigan	fuckin net droppin
+2013-11-25 12:56:35	jhartigan	happened all day saturdays
+2013-11-25 12:57:03	jhartigan	you shouldnt be breaking anything on the slider though dont worry bout dat
+2013-11-25 12:58:27	kweaver_laptop	k ill push soon
+2013-11-25 12:59:08	kweaver_laptop	jhartigan can you double check to make sure im not cray
+2013-11-25 12:59:13	jhartigan	alrighty.  imma get some food right quick and then im good.  if i drop again.. its most likely comcast, but theres always a chance of meatalls
+2013-11-25 12:59:20	kweaver_laptop	did they ever require x number of thumbs?
+2013-11-25 12:59:23	kweaver_laptop	or just 3 always
+2013-11-25 12:59:34	jhartigan	i dont remember anything about a requirement of number
+2013-11-25 12:59:38	jhartigan	just lazy loading
+2013-11-25 12:59:43	kweaver_laptop	k thats what I thought
+2013-11-25 12:59:46	jhartigan	with dynamically created thumbs
+2013-11-25 12:59:52	kweaver_laptop	i skimmed too, but wasnt sure if they mentioned anything
+2013-11-25 12:59:54	jhartigan	and toggling of the thumbs
+2013-11-25 13:00:06	kweaver_laptop	and overriding default thumbs
+2013-11-25 13:00:08	kweaver_laptop	which is odd
+2013-11-25 13:00:29	jhartigan	yeah... alot of the specs are kind of odd
+2013-11-25 13:00:35	kweaver_laptop	I figure by default, they dont enter any thumb section and the js will generate it with all the same thumbs
+2013-11-25 13:00:48	kweaver_laptop	then if they want no thumbs, the set a js var
+2013-11-25 13:01:15	kweaver_laptop	then if they want specific thumbs, they paste the full thumbs section and manually change the ones they need
+2013-11-25 13:02:01	jhartigan	yeah thats how i figured itd go
+2013-11-25 13:02:11	jhartigan	im not really sure why youd override thumbs, but im no doctor
+2013-11-25 13:05:19	kweaver_laptop	samezzz
+2013-11-25 13:30:43	--	irc: disconnected from server
+2013-11-25 13:31:10	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-25 13:31:10	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-25 13:31:10	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-25 13:31:13	--	Mode #omnidev [+cnt]
+2013-11-25 13:31:13	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-25 13:31:55	kweaver_laptop	jhartigan:  when you get a chance, can I get jira privs on the projects?
+2013-11-25 13:41:10	jhartigan	yeah.. shit. i dont understand how this shit works
+2013-11-25 13:41:12	jhartigan	were all the same
+2013-11-25 13:44:07	jhartigan	try it now
+2013-11-25 13:44:20	jhartigan	youre nearly every roll now
+2013-11-25 13:55:44	kweaver_laptop	lol yeah they set it up to a very permission intensive default
+2013-11-25 13:55:47	kweaver_laptop	which im cool with
+2013-11-25 13:56:08	kweaver_laptop	just means we have to give eachother permission whenever we make a new project I think
+2013-11-25 13:56:14	jhartigan	yeah
+2013-11-25 13:56:17	jhartigan	so it worked?
+2013-11-25 13:56:29	jhartigan	i think the role needed is deputy, even though its under developer
+2013-11-25 13:56:46	kweaver_laptop	looking now
+2013-11-25 13:56:52	kweaver_laptop	yeah im good
+2013-11-26 10:08:04	--	irc: disconnected from server
+2013-11-26 10:08:29	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-26 10:08:29	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-26 10:08:29	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-26 10:08:32	--	Mode #omnidev [+cnt]
+2013-11-26 10:08:32	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-26 10:17:38	kweaver	toms in town, so whenever he gets on, Ima see if he wants to go to sbucks jhartigan
+2013-11-26 10:19:40	jhartigan	well das cooool.  i feel like hes in town more than we ever know haha
+2013-11-26 10:19:49	kweaver	yeah I know
+2013-11-26 10:20:20	kweaver	ill probably end up waiting 4 hours  for him and then he'll tell me that he has to take his niece to the park
+2013-11-26 10:20:35	kweaver	Ive only seen 2 commits come from the bmi calc
+2013-11-26 10:20:42	kweaver	so I want to see what hes up to
+2013-11-26 10:21:07	jhartigan	hahaha
+2013-11-26 10:21:14	kweaver	did you see I started the responsive layout for the slider?
+2013-11-26 10:21:19	jhartigan	yeah thats a good idea. I havent looked at the bmi fora few days
+2013-11-26 10:21:36	jhartigan	hmm? did you push that at some point? I merged your shit into mine yesterday night
+2013-11-26 10:21:50	jhartigan	but didnt look at any css
+2013-11-26 10:21:52	kweaver	yeah I pushed yesterday around 2?
+2013-11-26 10:22:03	kweaver	if you load the index you should see it
+2013-11-26 10:22:23	kweaver	its just the barebones layout, but the rest should only take me like 2 hours
+2013-11-26 10:22:45	kweaver	then I was gonna see how you were doing with the js, and how tom was doing with everything
+2013-11-26 10:22:50	kweaver	figured id just bounce
+2013-11-26 10:25:05	jhartigan	 bounce bounce bounce bounce
+2013-11-26 10:25:18	jhartigan	some people call it hip hop, trance, dance, rock and pop
+2013-11-26 10:25:41	jhartigan	lol sorry - dacav5 tetris if youve never heard it haha
+2013-11-26 10:26:02	jhartigan	yeah i keep breaking and improving... today i wanna have all the borked shit removed
+2013-11-26 10:26:15	jhartigan	and get the bare bones working guy done
+2013-11-26 11:15:14	kweaver	I texted tom, but ill probably go either way after lunch
+2013-11-26 11:15:17	kweaver	maybe around 1
+2013-11-26 11:33:11	jhartigan	the elusive thomas... i was gonna go somewhere with that but lost all motivation
+2013-11-26 11:33:58	jhartigan	thats cool though. sometime round 2 - 3 im gonna go help lacey move her shit into storage and then ill be back home doin shit when were done.
+2013-11-26 11:39:52	kweaver	k
+2013-11-26 11:43:24	jhartigan	apparently the apartment they got in wilmington was ghetto city
+2013-11-26 11:43:34	jhartigan	like no AC unit with cardboard and tape in its place
+2013-11-26 11:43:51	jhartigan	in the winter, and she said it made camden look like a playground
+2013-11-26 12:17:24	jhartigan	oh yo i found this yesterday
+2013-11-26 12:17:25	jhartigan	http://stelfox.net/blog/2013/11/using-vim-as-your-password-manager/
+2013-11-26 12:17:26	[url]:	http://tinyurl.com/mm4gk3t
+2013-11-26 12:31:41	jhartigan	oh yo didd you get my message about the pi still being down
+2013-11-26 12:31:56	jhartigan	sent on last night but dont think you ended up seing it
+2013-11-26 12:49:41	kweaver	ill reset it jhartigan
+2013-11-26 12:49:49	kweaver	also, im cool with just using that
+2013-11-26 12:49:56	kweaver	vim deal
+2013-11-26 12:50:40	kweaver	the design of programmer blogs always amuses me
+2013-11-26 12:50:58	kweaver	the guy went through the trouble of adding that nifty on-hover zoom sidebar
+2013-11-26 12:51:12	kweaver	but left the default typeface as times new roman
+2013-11-26 12:52:14	kweaver	even the rest of his blog uses Open Sans
+2013-11-26 12:54:15	kweaver	and you can tell he probably designed the blog himself, since if you go to the blog section, it just lists all of the posts in full with no minification or read more buttons
+2013-11-26 12:55:27	jhartigan	hahahah very true. I actually did nothing other than click the link and read it.. didn't look at anything else on it hah
+2013-11-26 12:55:33	jhartigan	but id have to agree
+2013-11-26 13:35:14	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-26 13:38:07	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-11-26 14:45:10	jhartigan	kweaver: i just merged, cleaned up, and fixed some shit
+2013-11-26 14:45:27	kweaver	sweet deal
+2013-11-26 14:45:36	jhartigan	im gonna go do the storage move and then ill be workin on this lata
+2013-11-26 14:45:46	kweaver	you gonna go help lacey?
+2013-11-26 14:45:46	jhartigan	the main thing.. i think the JS i have at the bottom of the page isnt working
+2013-11-26 14:46:02	kweaver	also i reset the pi
+2013-11-26 14:46:09	jhartigan	yeah shouldnt take too long, me him and her boyfriend should be able to make it to the storage jawn in one trip i thinks
+2013-11-26 14:46:11	jhartigan	okay cool
+2013-11-26 14:46:18	jhartigan	imma look into him tonight as well
+2013-11-26 14:46:20	kweaver	sounds good
+2013-11-26 14:46:43	kweaver	alright good luck with the mooves
+2013-11-26 14:47:07	jhartigan	haha thanks. hopefully their uhaul isnt too big
+2013-11-26 14:53:22	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-11-26 20:28:53	--	irc: disconnected from server
+2013-11-26 20:29:19	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #omnidev
+2013-11-26 20:29:19	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-26 20:29:19	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-26 20:29:22	--	Mode #omnidev [+cnt]
+2013-11-26 20:29:22	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-26 20:37:33	--	irc: disconnected from server
+2013-11-26 20:37:59	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #omnidev
+2013-11-26 20:37:59	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-26 20:37:59	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-26 20:38:01	--	Mode #omnidev [+cnt]
+2013-11-26 20:38:02	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-27 09:53:30	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-27 09:53:30	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-27 09:53:30	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-27 09:53:32	--	Mode #omnidev [+cnt]
+2013-11-27 09:53:32	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-27 09:53:34	kweaver	jhartigan, howd the move go?
+2013-11-27 09:53:39	<--	kweaver (~kweaver@96.248.78.50) has quit (Client Quit)
+2013-11-27 09:55:08	jhartigan	eh way longer than id hoped.. im more sore than id wanted to be as well haha
+2013-11-27 09:55:41	jhartigan	wasnt too bad though
+2013-11-27 09:55:46	jhartigan	aside from the rain
+2013-11-27 10:01:59	jhartigan	how was dem minecraftins?  i fuckin passed out when i got home.. moving takes it out of you, specially when youre out of shape like my dumb ass
+2013-11-27 10:02:20	jhartigan	oh and i talked to my moms, i should have a ride home from pbs tonight
+2013-11-27 10:03:38	kweaver_laptop	aight sick
+2013-11-27 10:03:58	kweaver_laptop	I may or may not say hi to people at clancys first
+2013-11-27 10:04:05	kweaver_laptop	I dunno yet
+2013-11-27 10:04:10	kweaver_laptop	if so, only for like an hour
+2013-11-27 10:04:56	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-27 10:05:02	kweaver_laptop	also jhartigan, sbucks today?  I'll probably leaveshortly
+2013-11-27 10:06:18	jhartigan	go for it. i have wash in and im not trying to use that laptop all day haha. maybe ill swing by after i finish the dryer cycle
+2013-11-27 10:06:55	kweaver_laptop	that works
+2013-11-27 10:07:15	jhartigan	probably like an hour and a half.. maybe a little less on it
+2013-11-27 10:07:21	jhartigan	should be halfway done the wash
+2013-11-27 10:07:22	kweaver_laptop	what was the resolution on that holdbrook shit?
+2013-11-27 10:07:37	jhartigan	uh i got an email last night that said "heres the pdf
+2013-11-27 10:07:39	jhartigan	so again
+2013-11-27 10:07:42	jhartigan	they dont fucking read
+2013-11-27 10:07:48	jhartigan	i didnt do anything with it at the time
+2013-11-27 10:08:10	kweaver_laptop	which pdf?
+2013-11-27 10:08:55	jhartigan	a newsletter one
+2013-11-27 10:09:49	kweaver_laptop	to show us an example patient of the month?
+2013-11-27 10:09:52	jhartigan	some trashy four page thing.  ill have to double check but i think they just want it uploaded
+2013-11-27 10:09:54	kweaver_laptop	isnt that what we asked for?
+2013-11-27 10:10:02	kweaver_laptop	oh
+2013-11-27 10:10:16	jhartigan	yeah we asked for the patient info
+2013-11-27 10:10:18	jhartigan	didnt get it
+2013-11-27 10:10:45	kweaver_laptop	so this newsletter this is much more than just a patient of the month now?
+2013-11-27 10:11:10	kweaver_laptop	yeah ask what they want done with it
+2013-11-27 10:11:34	kweaver_laptop	I mean if they want us to recreate the entire thing every month, im cool with it cause it means a lotttt of extra hours to clock
+2013-11-27 10:12:30	jhartigan	nah im pretty sure they just wanted it uploaded. but then they have a patient of the month as well
+2013-11-27 10:12:32	jhartigan	all in all
+2013-11-27 10:12:40	jhartigan	theyre fucking trying t way too hard for a dentist
+2013-11-27 10:12:46	jhartigan	but they pay money so i dont care
+2013-11-27 10:49:41	--	irc: disconnected from server
+2013-11-27 10:50:07	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-11-27 10:50:07	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-11-27 10:50:07	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-11-27 10:50:10	--	Mode #omnidev [+cnt]
+2013-11-27 10:50:10	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-27 11:00:37	jhartigan	dryer shoould be done in like 25 min or so
+2013-11-27 11:18:15	kweaver	aight jhartigan I havent left yet
+2013-11-27 11:18:17	kweaver	amelia might come
+2013-11-27 11:18:20	kweaver	since she never works
+2013-11-27 11:19:49	jhartigan	hahah. dude seriously. i wanna be a nurse haha
+2013-11-27 11:19:54	jhartigan	get paid to be off
+2013-11-27 11:54:30	jhartigan	kweaver: ive liberated my clothes from the dryer.. dunno why it was still running
+2013-11-27 11:54:34	jhartigan	im good whenever
+2013-11-27 11:56:14	kweaver	k me too
+2013-11-27 11:56:24	kweaver	did you want to come here and then Ill drive us over?
+2013-11-27 11:56:33	kweaver	jhartigan:
+2013-11-27 11:56:55	jhartigan	yeah sure
+2013-11-27 11:56:58	jhartigan	em coming?
+2013-11-27 11:57:00	jhartigan	want coffe?
+2013-11-27 11:57:09	jhartigan	have booze?
+2013-11-27 11:57:12	jhartigan	okay no to the booze
+2013-11-27 11:57:14	jhartigan	its too early
+2013-11-27 11:57:24	kweaver	maybe, maybe, and later
+2013-11-27 11:57:39	kweaver	I didnt eat yet, did you?
+2013-11-27 11:57:44	jhartigan	had breakfast
+2013-11-27 11:57:51	jhartigan	not too too hungry now but i dont mind something small
+2013-11-27 11:59:09	kweaver	hmmm
+2013-11-27 12:00:35	kweaver	well its up to ya
+2013-11-27 12:00:46	kweaver	we havent done samuari in a while
+2013-11-27 12:01:25	jhartigan	aw shit yo
+2013-11-27 12:03:48	kweaver	id be down fer dat
+2013-11-27 12:03:49	kweaver	also
+2013-11-27 12:04:01	kweaver	dean wants me to drop off a paper to someones mailbox
+2013-11-27 12:04:07	jhartigan	what a hoe
+2013-11-27 12:04:12	kweaver	seriously
+2013-11-27 12:04:17	kweaver	kid goes home a day early
+2013-11-27 12:04:25	jhartigan	yeah i can do up the samurai............................
+2013-11-27 12:04:25	kweaver	realizes it has to be submitted via mailbox
+2013-11-27 12:04:28	jhartigan	lol
+2013-11-27 12:04:31	jhartigan	who requires that
+2013-11-27 12:04:36	jhartigan	what a bitch cs teacher hahaa
+2013-11-27 12:06:25	jhartigan	anyways yeah kweaver ill head out
+2013-11-27 12:06:37	jhartigan	lemme know if i should scoop em for the samaurai
+2013-11-27 12:16:10	kweaver	sounds good jhartigan
+2013-11-27 12:16:23	kweaver	shes probably going to say no since shes showering
+2013-11-27 12:16:26	kweaver	and that takes 6 hours
+2013-11-27 12:17:21	jhartigan	yep.. women. alright well ill really head out now
+2013-11-27 12:17:25	jhartigan	peace peace
+2013-11-27 12:18:31	kweaver	k see ya
+2013-11-27 12:22:21	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-27 14:22:22	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-27 14:22:25	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-27 14:22:25	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-27 14:22:25	--	Notice(sendak.freenode.net) -> #omnidev: [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2013-11-27 14:22:30	--	Mode #omnidev [+cnt]
+2013-11-27 14:22:35	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-11-27 14:28:52	-->	jake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-27 14:29:04	--	jake is now known as Guest6943
+2013-11-27 14:30:14	--	Guest6943 is now known as jakesan
+2013-11-27 14:59:09	<--	jakesan (~jake@ip-64-134-241-205.public.wayport.net) has quit (Read error: Connection reset by peer)
+2013-11-27 16:07:12	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-11-27 16:07:12	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-11-27 16:07:12	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-11-27 16:07:14	--	Mode #omnidev [+cnt]
+2013-11-27 16:07:14	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-01 12:41:53	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-12-01 12:41:53	--	Nicks #omnidev: [@ChanServ kweaver kweaver_laptop]
+2013-12-01 12:41:53	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-01 12:41:53	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-01 12:41:55	--	Mode #omnidev [+cnt]
+2013-12-01 12:41:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-01 15:21:51	--	irc: disconnected from server
+2013-12-01 15:22:14	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-12-01 15:22:14	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-01 15:22:14	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-01 15:22:17	--	Mode #omnidev [+cnt]
+2013-12-01 15:22:17	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-01 19:16:56	--	irc: disconnected from server
+2013-12-01 19:17:21	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-01 19:17:21	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-01 19:17:21	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-01 19:17:24	--	Mode #omnidev [+cnt]
+2013-12-01 19:17:24	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-01 20:48:31	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 245 seconds)
+2013-12-01 21:41:08	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-01 23:15:26	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 240 seconds)
+2013-12-02 08:34:18	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-02 09:03:25	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-02 09:08:10	kweaver	jhartigan:  got a check from mark
+2013-12-02 09:08:19	kweaver	hoping nemours comes today
+2013-12-02 09:10:05	jhartigan	oh shiit mark writing out checks
+2013-12-02 09:10:08	jhartigan	look at him being a big boy
+2013-12-02 09:10:16	jhartigan	yeah nemours would be the best obviously
+2013-12-02 09:10:41	jhartigan	guess the good news is we have mark, holdbrook, barsuglia, kcc, and nemours all to cash
+2013-12-02 09:10:47	jhartigan	cash is coool
+2013-12-02 09:11:48	kweaver	is holdbrook toggl up to date currently?
+2013-12-02 09:11:54	kweaver	if so, Ill send that out shortly
+2013-12-02 09:12:09	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-02 09:12:09	--	irc: disconnected from server
+2013-12-03 10:04:09	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-03 10:04:09	--	Mode #omnidev [+ns] by card.freenode.net
+2013-12-03 10:04:09	--	Nicks #omnidev: [@kweaver]
+2013-12-03 10:04:09	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-03 10:04:09	--	Mode #omnidev [-o kweaver] by services.
+2013-12-03 10:04:09	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386083049 to 1337223617
+2013-12-03 10:04:09	--	Mode #omnidev [+ct-s] by services.
+2013-12-03 10:04:09	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-03 10:04:09	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-03 10:04:11	--	Mode #omnidev [+cnt]
+2013-12-03 10:04:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-03 10:14:30	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-03 10:14:30	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-03 12:34:10	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-03 13:00:24	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-12-03 14:16:38	--	irc: disconnected from server
+2013-12-03 14:17:13	-->	kweaver (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-03 14:17:13	--	Mode #omnidev [+ns] by sendak.freenode.net
+2013-12-03 14:17:13	--	Nicks #omnidev: [@kweaver]
+2013-12-03 14:17:13	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-03 14:17:13	--	Mode #omnidev [-o kweaver] by services.
+2013-12-03 14:17:13	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386098234 to 1337223617
+2013-12-03 14:17:13	--	Mode #omnidev [+ct-s] by services.
+2013-12-03 14:17:13	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-03 14:17:13	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-03 14:17:16	--	Mode #omnidev [+cnt]
+2013-12-03 14:17:16	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-03 14:50:57	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-03 14:50:57	--	Mode #omnidev [+ns] by leguin.freenode.net
+2013-12-03 14:50:57	--	Nicks #omnidev: [@kweaver]
+2013-12-03 14:50:57	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-03 14:50:57	--	Mode #omnidev [-o kweaver] by services.
+2013-12-03 14:50:57	--	Notice(leguin.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386100257 to 1337223617
+2013-12-03 14:50:57	--	Mode #omnidev [+ct-s] by services.
+2013-12-03 14:50:57	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-03 14:50:57	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-03 14:50:59	--	Mode #omnidev [+cnt]
+2013-12-03 14:50:59	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-03 15:01:59	<--	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has quit (Quit: WeeChat 0.4.2)
+2013-12-03 15:01:59	--	irc: disconnected from server
+2013-12-03 15:04:21	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-03 15:04:21	--	Nicks #omnidev: [@ChanServ kweaver]
+2013-12-03 15:04:21	--	Channel #omnidev: 2 nicks (1 op, 0 voices, 1 normal)
+2013-12-03 15:04:23	--	Mode #omnidev [+cnt]
+2013-12-03 15:04:23	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-03 16:24:22	--	irc: disconnected from server
+2013-12-03 16:24:45	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-03 16:24:45	--	Mode #omnidev [+ns] by pratchett.freenode.net
+2013-12-03 16:24:45	--	Nicks #omnidev: [@kweaver]
+2013-12-03 16:24:45	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-03 16:24:45	--	Mode #omnidev [-o kweaver] by services.
+2013-12-03 16:24:45	--	Notice(pratchett.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386105885 to 1337223617
+2013-12-03 16:24:45	--	Mode #omnidev [+ct-s] by services.
+2013-12-03 16:24:45	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-03 16:24:45	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-03 16:24:47	--	Mode #omnidev [+cnt]
+2013-12-03 16:24:47	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-04 11:27:18	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #omnidev
+2013-12-04 11:27:18	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-04 11:27:18	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-04 11:28:04	--	Mode #omnidev [+cnt]
+2013-12-04 11:28:04	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-04 11:33:35	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-04 12:03:11	--	irc: disconnected from server
+2013-12-04 12:03:33	-->	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has joined #omnidev
+2013-12-04 12:03:33	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-12-04 12:03:33	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-04 12:03:35	--	Mode #omnidev [+cnt]
+2013-12-04 12:03:35	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-04 12:41:05	kweaver_laptop	jhartigan just talked to dandrea.  gonna set an A-record, and manually do a transfer for them to a Go Daddy Account they set up.  Then just bill them for my time
+2013-12-04 12:41:33	kweaver_laptop	visionline finished their site and thought I was just going to keep hosting the domain
+2013-12-04 12:41:39	kweaver_laptop	so I said lol nope
+2013-12-04 12:41:53	kweaver_laptop	and told barb that I can do the transfer for them and bill for my time
+2013-12-04 12:42:19	kweaver_laptop	nobody at dandrea knows anything about domains, so $20 they'll just lose the Go Daddy account
+2013-12-04 12:57:28	jhartigan	thats whattup.  yeah yo sorrry been sitting on my laptop... weechat open,,,,,never pulled the conf file haha
+2013-12-04 12:57:39	jhartigan	just was like eh guess its a slow day
+2013-12-04 13:01:28	jhartigan	gonna go make some luch.  bbs.  oh also cm 10.2 outtie
+2013-12-04 13:01:53	kweaver_laptop	oh nice
+2013-12-04 13:02:08	kweaver_laptop	jhartigan did you want to go to sbucks later?
+2013-12-04 13:10:15	jhartigan	i could. dont matter to me.  no tom till tomorrow righto?
+2013-12-04 13:20:07	<--	kweaver_laptop (~kweaver@c-68-45-224-175.hsd1.pa.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-12-04 13:20:07	--	irc: disconnected from server
+2013-12-04 14:16:07	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-04 14:16:07	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-12-04 14:16:07	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-04 14:16:10	--	Mode #omnidev [+cnt]
+2013-12-04 14:16:10	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-04 16:36:46	-->	kweaver (~kweaver@189.sub-70-215-81.myvzw.com) has joined #omnidev
+2013-12-04 16:36:46	--	Nicks #omnidev: [jhartigan kweaver]
+2013-12-04 16:36:46	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-04 16:36:48	--	Mode #omnidev [+cnt]
+2013-12-04 16:36:49	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-04 16:40:20	kweaver	jhartigan:  just signed into this jewish foundation site
+2013-12-04 16:40:24	kweaver	wordpress
+2013-12-04 16:40:27	kweaver	guess how many pages
+2013-12-04 16:40:28	kweaver	total
+2013-12-04 16:40:30	kweaver	GUESS
+2013-12-04 16:40:49	jhartigan	1238
+2013-12-04 16:42:33	kweaver	Wrong.  190.
+2013-12-04 16:42:48	kweaver	it doesnt even look like a big site on the front end either
+2013-12-04 16:43:00	jhartigan	damn i was hoping it was huge
+2013-12-04 16:43:02	jhartigan	stil is
+2013-12-04 17:09:27	kweaver	sooo. Im thinking next week
+2013-12-04 17:09:52	kweaver	hardcore turning down everything
+2013-12-04 17:10:05	kweaver	even considering a gmail away message
+2013-12-04 17:10:11	kweaver	just for the week
+2013-12-04 17:10:25	kweaver	whatdyou think jhartigan ?
+2013-12-04 17:11:01	kweaver	just you and me, every day, working on the the bmi and slider
+2013-12-04 17:11:02	jhartigan	probably a good plan. im in
+2013-12-04 17:19:16	<--	kweaver (~kweaver@189.sub-70-215-81.myvzw.com) has quit (Quit: WeeChat 0.4.2)
+2013-12-04 17:19:16	--	irc: disconnected from server
+2013-12-05 12:45:48	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-05 12:45:48	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-05 12:45:48	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-05 12:45:48	--	Notice(sendak.freenode.net) -> #omnidev: [freenode-info] if you're at a conference and other people are having trouble connecting, please mention it to staff: http://freenode.net/faq.shtml#gettinghelp
+2013-12-05 12:45:50	--	Mode #omnidev [+cnt]
+2013-12-05 12:45:50	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-05 12:48:30	-->	Guest92933 (~jake@dhcp-arubawireless-113-148.rowan.edu) has joined #omnidev
+2013-12-05 12:48:39	--	Guest92933 is now known as jakesan
+2013-12-05 14:49:31	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 240 seconds)
+2013-12-05 14:49:31	--	irc: disconnected from server
+2013-12-05 17:10:03	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-05 17:10:03	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-05 17:10:03	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-05 17:10:06	--	Mode #omnidev [+cnt]
+2013-12-05 17:10:06	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-05 17:15:18	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-05 17:15:18	--	irc: disconnected from server
+2013-12-05 17:16:15	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-05 17:16:15	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-05 17:16:15	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-05 17:16:17	--	Mode #omnidev [+cnt]
+2013-12-05 17:16:17	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-05 17:24:38	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 240 seconds)
+2013-12-05 22:41:42	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-06 01:21:29	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-06 09:29:03	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-06 09:29:03	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2013-12-06 09:29:03	--	Nicks #omnidev: [@kweaver]
+2013-12-06 09:29:03	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-06 09:29:03	--	Mode #omnidev [-o kweaver] by services.
+2013-12-06 09:29:03	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386340143 to 1337223617
+2013-12-06 09:29:03	--	Mode #omnidev [+ct-s] by services.
+2013-12-06 09:29:03	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-06 09:29:03	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-06 09:29:05	--	Mode #omnidev [+cnt]
+2013-12-06 09:29:05	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-06 09:31:53	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-06 09:31:53	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-06 11:04:47	--	irc: disconnected from server
+2013-12-06 11:05:09	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-06 11:05:09	--	Nicks #omnidev: [kweaver kweaver_desktop]
+2013-12-06 11:05:09	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-06 11:05:11	--	Mode #omnidev [+cnt]
+2013-12-06 11:05:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-06 12:31:13	<--	kweaver_desktop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-06 12:45:39	-->	kweaver1 (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-06 13:13:18	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-06 13:24:15	kweaver	jhartigan: might have an issue
+2013-12-06 13:25:02	kweaver	I could have sworn that on PWS, we were just sending email from his gmail, but it must have been lithium or something
+2013-12-06 13:25:37	kweaver	sent via his comcast address, I am getting images but no CSS loaded
+2013-12-06 13:25:48	kweaver	sent via his gmail address, I am getting no images or css loaded
+2013-12-06 13:36:44	kweaver	hmmmmm
+2013-12-06 13:48:33	kweaver	might have gotten it
+2013-12-06 14:06:47	kweaver	just need to change some functionality in the wysiwyg editor and we are golden
+2013-12-06 14:52:07	jhartigan	shit sorry was on the laptop.. lemme know if you still need help ill try and help out
+2013-12-06 14:57:35	kweaver	im balls deep and im almost there
+2013-12-06 14:57:48	kweaver	everything works perfectly
+2013-12-06 14:57:51	kweaver	the only problem
+2013-12-06 14:58:09	kweaver	is the wysiwyg for magento strips body tags 
+2013-12-06 14:58:34	kweaver	because it tries to be XHTML compatible
+2013-12-06 14:58:40	kweaver	which is admirable
+2013-12-06 14:58:56	kweaver	the wysiwyg they use is called tinyMCE
+2013-12-06 14:59:28	kweaver	and it has a config file to allow whatever tags you want
+2013-12-06 14:59:37	kweaver	but its not working, and the docs are kinda bad
+2013-12-06 14:59:58	jhartigan	tinymce is pretty common, but CKEditor is better and even more commo
+2013-12-06 15:00:06	jhartigan	theres no way to replace it is there?/
+2013-12-06 15:01:48	kweaver	could be, but before I look into yanking it from every page entirely, you can definitely allow the tags
+2013-12-06 15:02:47	kweaver	jhartigan, just finish up anything going on with Holdbrook, work on anything else in that to do list, and Im thinking we just send out a quick email to any of our currently active clients saying we will be busy
+2013-12-06 15:02:58	kweaver	all next week
+2013-12-06 15:03:16	kweaver	only the ones we're actively doing stuff for 
+2013-12-06 15:10:45	kweaver	jhartigan tom pushed
+2013-12-06 15:10:57	kweaver	he mentioned that it just needed to be styled
+2013-12-06 15:11:11	kweaver	but he hasnt done any graphing either
+2013-12-06 15:11:52	kweaver	pull and check it
+2013-12-06 15:12:35	kweaver	Now I'm wondering if starting an entirely new project 10 days before nemours is a good idea.. 
+2013-12-06 15:19:12	jhartigan	I mean its not going to get finished this weekend, but whats your concens?
+2013-12-06 15:22:40	kweaver	with that knowledge, would it be smarter just work on nemours this weekend?
+2013-12-06 15:23:43	kweaver	now that Ive seen where the BMI is, im still very confident in our ability to everything with nemours, but Im not 100% that just the two of us can handle the rest in 5 just days
+2013-12-06 15:39:20	jhartigan	well im down to work on nemours. plus matts got a party and tom wants to do his show, and you have girlfriendly duties to tend to. we might as well just put in some work on nenours this weekend and we can spend too days after xmas id assume doing shit for a payment gateway
+2013-12-06 15:40:16	kweaver	so should we just go chill for just a bit tomorrow then?
+2013-12-06 15:40:58	kweaver	just grab food, play some ssbm, and work on whatever for like a few hours
+2013-12-06 15:41:03	kweaver	then go back home and do nemours
+2013-12-06 15:41:20	jhartigan	i mean we can do it in whatever order ya
+2013-12-06 15:41:28	jhartigan	but even if we just work on nemours for a bit while there
+2013-12-06 15:41:35	jhartigan	3 heads for like 3 hours is a good thing
+2013-12-06 15:41:46	kweaver	yeah that works
+2013-12-06 15:42:07	jhartigan	i mean where toms at with the bmi is nice cause all the goundworks gone
+2013-12-06 15:42:12	jhartigan	ill go though it and nemours it
+2013-12-06 15:42:18	jhartigan	but plotting wont be too hard i dont think
+2013-12-06 15:42:24	jhartigan	could be wrong, but i dont think it will
+2013-12-06 15:42:26	jhartigan	then its styling
+2013-12-06 15:42:28	jhartigan	ill do what i can
+2013-12-06 15:48:23	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2013-12-06 15:55:33	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-06 17:15:42	jhartigan	kweaver1: gotta reboot.. need windows of all thing to burn this usb disk for my laptop.. fucked shit up last night
+2013-12-06 17:16:17	kweaver1	I still think you should put that SSD to good use before you get too settled
+2013-12-06 17:16:22	kweaver1	just through both OSes there
+2013-12-06 17:16:33	kweaver1	throw**
+2013-12-06 17:20:54	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2013-12-06 19:52:36	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-06 19:52:36	--	irc: disconnected from server
+2013-12-07 10:51:42	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-07 10:51:42	--	Mode #omnidev [+ns] by calvino.freenode.net
+2013-12-07 10:51:42	--	Nicks #omnidev: [@kweaver]
+2013-12-07 10:51:42	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-07 10:51:44	--	Mode #omnidev [-o kweaver] by services.
+2013-12-07 10:51:44	--	Notice(calvino.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386431502 to 1337223617
+2013-12-07 10:51:44	--	Mode #omnidev [+ct-s] by services.
+2013-12-07 10:51:44	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-07 10:51:44	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-07 10:51:44	--	Mode #omnidev [+cnt]
+2013-12-07 10:51:45	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-07 13:57:27	--	irc: disconnected from server
+2013-12-07 13:57:51	-->	kweaver (~kweaver@pool-98-115-160-134.phlapa.fios.verizon.net) has joined #omnidev
+2013-12-07 13:57:51	--	Mode #omnidev [+ns] by morgan.freenode.net
+2013-12-07 13:57:51	--	Nicks #omnidev: [@kweaver]
+2013-12-07 13:57:51	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-07 13:57:51	--	Mode #omnidev [-o kweaver] by services.
+2013-12-07 13:57:51	--	Notice(morgan.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386442671 to 1337223617
+2013-12-07 13:57:51	--	Mode #omnidev [+ct-s] by services.
+2013-12-07 13:57:51	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-07 13:57:51	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-07 13:57:53	--	Mode #omnidev [+cnt]
+2013-12-07 13:57:54	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-07 14:19:30	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-07 14:19:30	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-07 14:46:58	-->	kweaver (~kweaver@pool-98-115-160-134.phlapa.fios.verizon.net) has joined #omnidev
+2013-12-07 14:46:58	--	Nicks #omnidev: [jhartigan kweaver]
+2013-12-07 14:46:58	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-07 14:47:00	--	Mode #omnidev [+cnt]
+2013-12-07 14:47:00	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-07 16:26:00	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2013-12-07 20:48:34	--	irc: disconnected from server
+2013-12-07 20:58:37	-->	kweaver (~kweaver@pool-98-115-160-134.phlapa.fios.verizon.net) has joined #omnidev
+2013-12-07 20:58:37	--	Mode #omnidev [+ns] by wolfe.freenode.net
+2013-12-07 20:58:37	--	Nicks #omnidev: [@kweaver]
+2013-12-07 20:58:37	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-07 20:58:37	--	Mode #omnidev [-o kweaver] by services.
+2013-12-07 20:58:37	--	Notice(wolfe.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386467916 to 1337223617
+2013-12-07 20:58:37	--	Mode #omnidev [+ct-s] by services.
+2013-12-07 20:58:37	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-07 20:58:37	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-07 20:58:39	--	Mode #omnidev [+cnt]
+2013-12-07 20:58:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-08 08:58:30	--	irc: disconnected from server
+2013-12-08 08:58:54	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-08 08:58:54	--	Mode #omnidev [+ns] by moorcock.freenode.net
+2013-12-08 08:58:54	--	Nicks #omnidev: [@kweaver]
+2013-12-08 08:58:54	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-08 08:58:54	--	Notice(moorcock.freenode.net) -> #omnidev: [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2013-12-08 08:58:55	--	Mode #omnidev [-o kweaver] by services.
+2013-12-08 08:58:55	--	Notice(moorcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386511134 to 1337223617
+2013-12-08 08:58:55	--	Mode #omnidev [+ct-s] by services.
+2013-12-08 08:58:55	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-08 08:58:55	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-08 08:58:56	--	Mode #omnidev [+cnt]
+2013-12-08 08:58:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-08 13:32:02	--	irc: disconnected from server
+2013-12-08 13:32:23	-->	kweaver (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2013-12-08 13:32:23	--	Mode #omnidev [+ns] by barjavel.freenode.net
+2013-12-08 13:32:23	--	Nicks #omnidev: [@kweaver]
+2013-12-08 13:32:23	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-08 13:32:23	--	Mode #omnidev [-o kweaver] by services.
+2013-12-08 13:32:23	--	Notice(barjavel.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386527543 to 1337223617
+2013-12-08 13:32:23	--	Mode #omnidev [+ct-s] by services.
+2013-12-08 13:32:23	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-08 13:32:23	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-08 13:32:25	--	Mode #omnidev [+cnt]
+2013-12-08 13:32:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-08 18:02:29	-->	uberlaggydarwin (~uberlaggy@ppp118-210-206-237.lns20.adl6.internode.on.net) has joined #omnidev
+2013-12-08 18:02:30	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-08 18:02:33	<--	uberlaggydarwin (~uberlaggy@ppp118-210-206-237.lns20.adl6.internode.on.net) has left #omnidev
+2013-12-08 19:20:18	--	irc: disconnected from server
+2013-12-08 19:21:06	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-08 19:21:06	--	Mode #omnidev [+ns] by hobana.freenode.net
+2013-12-08 19:21:06	--	Nicks #omnidev: [@kweaver]
+2013-12-08 19:21:06	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-08 19:21:06	--	Mode #omnidev [-o kweaver] by services.
+2013-12-08 19:21:06	--	Notice(hobana.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386548466 to 1337223617
+2013-12-08 19:21:06	--	Mode #omnidev [+ct-s] by services.
+2013-12-08 19:21:06	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-08 19:21:06	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-08 19:21:09	--	Mode #omnidev [+cnt]
+2013-12-08 19:21:09	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-08 20:25:37	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 09:10:55	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-09 09:10:55	--	Mode #omnidev [+ns] by asimov.freenode.net
+2013-12-09 09:10:55	--	Nicks #omnidev: [@kweaver]
+2013-12-09 09:10:55	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-09 09:10:55	--	Mode #omnidev [-o kweaver] by services.
+2013-12-09 09:10:55	--	Notice(asimov.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1386598255 to 1337223617
+2013-12-09 09:10:55	--	Mode #omnidev [+ct-s] by services.
+2013-12-09 09:10:55	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-09 09:10:55	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-09 09:10:57	--	Mode #omnidev [+cnt]
+2013-12-09 09:10:57	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 10:16:36	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 10:16:36	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2013-12-09 10:16:36	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-09 10:16:36	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-09 10:16:38	--	Mode #omnidev [+cnt]
+2013-12-09 10:16:38	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 10:33:50	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 264 seconds)
+2013-12-09 12:26:55	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 12:27:04	jakenbake	kweaver:
+2013-12-09 12:30:00	jakenbake	kweaver:
+2013-12-09 12:34:58	jakenbake	kweaver:
+2013-12-09 12:35:45	kweaver	i like this girl
+2013-12-09 12:35:53	kweaver	she sounds like you and  i talking about clients
+2013-12-09 12:36:00	kweaver	"i hate people...... people are retarted"
+2013-12-09 12:37:43	jakenbake	yeah i know i thought the same thing
+2013-12-09 12:37:48	jakenbake	totally called out of work for the snow too
+2013-12-09 12:37:56	jakenbake	"im working from home -- at starbuck"
+2013-12-09 12:43:06	kweaver	jakenbake:  heyyy
+2013-12-09 12:43:09	kweaver	jakenbake:  heyyysup
+2013-12-09 12:43:16	jakenbake	hmm
+2013-12-09 12:45:37	kweaver	jakenbake:   hey
+2013-12-09 12:45:39	kweaver	jakenbake:   hey
+2013-12-09 12:45:39	kweaver	jakenbake:   hey
+2013-12-09 12:50:29	kweaver	jh
+2013-12-09 12:50:31	kweaver	jakenbake: 
+2013-12-09 12:51:24	jakenbake	kweaver: hu
+2013-12-09 12:52:39	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 12:53:57	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 12:54:06	kweaver	jakenbake: 
+2013-12-09 12:54:15	kweaver	jakenbake: hey  
+2013-12-09 12:54:19	kweaver	jakenbake: hey  
+2013-12-09 12:54:19	kweaver	jakenbake: hey  
+2013-12-09 12:54:19	kweaver	jakenbake: hey  
+2013-12-09 12:54:20	kweaver	jakenbake: hey  
+2013-12-09 12:55:54	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 12:55:54	--	Nicks #omnidev: [jakenbake kweaver]
+2013-12-09 12:55:54	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-09 12:55:56	--	Mode #omnidev [+cnt]
+2013-12-09 12:55:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 12:58:23	jakenbake	kweaver: BEEPBOOP
+2013-12-09 12:58:56	-->	kweaver_ (~androirc@2600:1002:b102:e513:0:12:d0d7:1601) has joined #omnidev
+2013-12-09 13:18:19	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:18:19	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:18:19	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:18:19	--	Notice(pratchett.freenode.net) -> #omnidev: [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2013-12-09 13:18:20	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 13:18:21	--	Mode #omnidev [+cnt]
+2013-12-09 13:18:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 13:18:36	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:23:20	jakenbake	jakenbake:
+2013-12-09 13:23:38	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 13:23:50	kweaver	hey kweaver_ 
+2013-12-09 13:23:54	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:23:58	kweaver	hey kweaver
+2013-12-09 13:24:15	kweaver	kweaver
+2013-12-09 13:24:17	jakenbake	kweaver:
+2013-12-09 13:24:20	kweaver	jakenbake: 
+2013-12-09 13:26:45	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2013-12-09 13:26:59	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:28:13	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2013-12-09 13:28:29	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:30:27	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2013-12-09 13:30:44	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:30:53	kweaver	jakenbake: 
+2013-12-09 13:31:05	kweaver	jakenbake: 
+2013-12-09 13:31:42	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2013-12-09 13:31:59	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:32:46	kweaver	hey jakenbake 
+2013-12-09 13:35:07	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2013-12-09 13:35:25	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 13:35:26	kweaver	jakenbake: 
+2013-12-09 13:37:09	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:37:09	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:37:09	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:37:11	--	Mode #omnidev [+cnt]
+2013-12-09 13:37:12	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 13:38:02	kweaver	jakenbake: 
+2013-12-09 13:38:18	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:38:18	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:38:18	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:38:20	--	Mode #omnidev [+cnt]
+2013-12-09 13:38:20	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 13:38:21	jakenbake	kweaver_: kweaver
+2013-12-09 13:38:29	jakenbake	kweaver: gasdasdas
+2013-12-09 13:38:33	kweaver	jakenbake: 
+2013-12-09 13:38:36	kweaver	jakenbake: 
+2013-12-09 13:38:38	kweaver	jakenbake: 
+2013-12-09 13:39:46	jakenbake	kweaver: kweaver_ HIIIIIIII
+2013-12-09 13:40:35	kweaver	jakenbake: 
+2013-12-09 13:41:55	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:41:55	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:41:55	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:41:57	--	Mode #omnidev [+cnt]
+2013-12-09 13:41:57	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 13:42:05	kweaver_	jakenbake kweaver
+2013-12-09 13:42:11	kweaver_	jakenbake kweaver
+2013-12-09 13:43:21	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:43:21	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:43:21	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:43:21	--	Notice(dickson.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2013-12-09 13:43:23	--	Mode #omnidev [+cnt]
+2013-12-09 13:43:23	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 13:43:23	kweaver_	jakenbake kweaver
+2013-12-09 13:43:25	jakenbake	kweaver_: kweaver you smell
+2013-12-09 13:45:50	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 13:45:50	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 13:45:50	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 13:45:50	--	Notice(pratchett.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2013-12-09 13:45:52	kweaver_	jakenbake kweaver
+2013-12-09 13:45:52	--	Mode #omnidev [+cnt]
+2013-12-09 13:45:52	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 14:04:48	kweaver_	jakenbake kweaver
+2013-12-09 14:04:50	<--	kweaver_ (~androirc@2600:1002:b102:e513:0:12:d0d7:1601) has quit (Remote host closed the connection)
+2013-12-09 14:05:06	-->	kweaver_ (~androirc@2600:1002:b102:e513:0:12:d0d7:1601) has joined #omnidev
+2013-12-09 14:16:39	<--	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 14:16:39	--	irc: disconnected from server
+2013-12-09 14:24:35	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 14:24:35	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 14:24:35	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 14:24:37	--	Mode #omnidev [+cnt]
+2013-12-09 14:24:37	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 14:37:03	jakenbake	kweaver:
+2013-12-09 14:41:43	<--	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 14:41:43	--	irc: disconnected from server
+2013-12-09 14:46:09	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 14:46:09	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 14:46:09	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 14:46:11	--	Mode #omnidev [+cnt]
+2013-12-09 14:46:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 14:46:38	kweaver_	jakenbake kweaver
+2013-12-09 14:47:46	kweaver_	jakenbake kweaver
+2013-12-09 14:49:16	<--	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has quit (Client Quit)
+2013-12-09 14:51:05	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 14:51:05	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 14:51:05	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 14:51:07	--	Mode #omnidev [+cnt]
+2013-12-09 14:51:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 14:51:10	kweaver_	jakenbake kweaver
+2013-12-09 14:53:31	<--	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has quit (Client Quit)
+2013-12-09 14:53:31	--	irc: disconnected from server
+2013-12-09 14:54:16	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 14:54:16	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 14:54:16	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 14:54:16	--	Notice(holmes.freenode.net) -> #omnidev: [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2013-12-09 14:54:18	--	Mode #omnidev [+cnt]
+2013-12-09 14:54:18	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 14:54:23	kweaver_	jakenbake kweaver
+2013-12-09 15:00:15	jakenbake	kweaver_: poops
+2013-12-09 15:01:11	jakenbake	kweaver_: poops
+2013-12-09 15:01:14	jakenbake	kweaver_: poops
+2013-12-09 15:01:19	jakenbake	kweaver poops
+2013-12-09 15:09:00	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:09:00	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:09:00	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:09:01	jakenbake	kweaver poops
+2013-12-09 15:09:02	--	Mode #omnidev [+cnt]
+2013-12-09 15:09:02	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:09:08	kweaver_	jakenbake kweaver
+2013-12-09 15:09:16	kweaver_	jakenbake kweaver
+2013-12-09 15:09:24	kweaver_	jakenbake kweaver
+2013-12-09 15:09:51	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2013-12-09 15:10:06	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2013-12-09 15:12:15	kweaver_	jakenbake kweaver
+2013-12-09 15:12:46	kweaver_	jakenbake kweaver
+2013-12-09 15:19:30	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:19:30	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:19:30	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:19:30	--	Notice(holmes.freenode.net) -> #omnidev: [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2013-12-09 15:19:32	--	Mode #omnidev [+cnt]
+2013-12-09 15:19:32	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:19:35	kweaver_	jakenbake kweaver
+2013-12-09 15:19:46	kweaver_	jakenbake kweaver
+2013-12-09 15:20:49	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:23:32	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:23:32	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:23:32	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:23:34	--	Mode #omnidev [+cnt]
+2013-12-09 15:23:34	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:23:50	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:23:56	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:24:39	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:24:43	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:25:56	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:26:00	kweaver	hi
+2013-12-09 15:26:05	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:27:11	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:27:11	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:27:11	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:27:13	--	Mode #omnidev [+cnt]
+2013-12-09 15:27:13	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:27:20	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:29:02	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:29:02	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:29:02	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:29:02	--	Notice(holmes.freenode.net) -> #omnidev: [freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup
+2013-12-09 15:29:04	--	Mode #omnidev [+cnt]
+2013-12-09 15:29:04	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:29:06	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:29:09	[url]:	http://tinyurl.com/m8yuf8x
+2013-12-09 15:30:23	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:30:30	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:31:15	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:31:59	-->	kweaver (~kweaver@dhcp-arubawireless-118-111.rowan.edu) has joined #omnidev
+2013-12-09 15:31:59	--	Nicks #omnidev: [jakenbake kweaver kweaver_]
+2013-12-09 15:31:59	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-09 15:32:00	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:32:01	--	Mode #omnidev [+cnt]
+2013-12-09 15:32:01	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-09 15:32:02	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:32:04	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:32:06	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:32:57	jakenbake	kweaver_:  http
+2013-12-09 15:33:00	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:33:09	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-09 15:33:16	jakenbake	kweaver:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
