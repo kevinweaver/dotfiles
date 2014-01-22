@@ -21,6 +21,7 @@ extract () {
      fi
 }
 
+alias vim="vim.basic"
 alias scan="xsane"
 alias scanner="xsane"
 alias mxlookup="nslookup -q=mx"

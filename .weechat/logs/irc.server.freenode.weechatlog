@@ -19220,3 +19220,55 @@
 2014-01-22 11:42:25	--	User mode [+i] by kweaver
 2014-01-22 11:42:25	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
 2014-01-22 11:42:30	--	#orderdeck: Cannot join channel (+r) - you need to be identified with services
+2014-01-22 12:02:04	--	irc: connected to chat.freenode.net/6667 (93.152.160.101)
+2014-01-22 12:02:04	--	hitchcock.freenode.net (hitchcock.freenode.net): *** Looking up your hostname...
+2014-01-22 12:02:04	--	hitchcock.freenode.net (hitchcock.freenode.net): *** Checking Ident
+2014-01-22 12:02:04	--	hitchcock.freenode.net (hitchcock.freenode.net): *** Couldn't look up your hostname
+2014-01-22 12:02:11	--	hitchcock.freenode.net (hitchcock.freenode.net): *** No Ident response
+2014-01-22 12:02:11	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-01-22 12:02:12	--	Your host is hitchcock.freenode.net[93.152.160.101/6667], running version ircd-seven-1.1.3
+2014-01-22 12:02:12	--	This server was created Mon Dec 31 2012 at 23:37:41 EET
+2014-01-22 12:02:12	--	hitchcock.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-01-22 12:02:12	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-01-22 12:02:12	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-01-22 12:02:12	--	EXTBAN=$,arxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-01-22 12:02:12	--	There are 220 users and 96601 invisible on 26 servers
+2014-01-22 12:02:12	--	35 :IRC Operators online
+2014-01-22 12:02:12	--	11 :unknown connection(s)
+2014-01-22 12:02:12	--	57017 :channels formed
+2014-01-22 12:02:12	--	I have 6080 clients and 1 servers
+2014-01-22 12:02:12	--	6080 9804 :Current local users 6080, max 9804
+2014-01-22 12:02:12	--	96821 98891 :Current global users 96821, max 98891
+2014-01-22 12:02:12	--	Highest connection count: 9805 (9804 clients) (1012313 connections received)
+2014-01-22 12:02:12	--	- hitchcock.freenode.net Message of the Day -
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2014-01-22 12:02:12	--	- OnlineDirect (http://onlinedirect.bg).
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2014-01-22 12:02:12	--	- England, Sir Alfred Hitchcock was a noted film director
+2014-01-22 12:02:12	--	- and producer. Over a long career he pioneered many modern
+2014-01-22 12:02:12	--	- techniques in film-making, made more than 50 feature films,
+2014-01-22 12:02:12	--	- and influenced many present-day directors and producers.
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- Welcome to freenode - supporting the free and open source
+2014-01-22 12:02:12	--	- software communities since 1998.
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- By connecting to freenode you indicate that you have read and
+2014-01-22 12:02:12	--	- agree to adhere to our policies and procedures as per the
+2014-01-22 12:02:12	--	- website (http://freenode.net/).
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- We would like to remind you that unauthorised public logging
+2014-01-22 12:02:12	--	- of channels on the network is prohibited. Public channel
+2014-01-22 12:02:12	--	- logging should only take place where the channel owner(s) has
+2014-01-22 12:02:12	--	- requested this and users of the channel are all made aware
+2014-01-22 12:02:12	--	- (if you are publically logging your channel, you may wish to
+2014-01-22 12:02:12	--	- keep a notice in the topic and perhaps as an on-join message).
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- freenode runs an open proxy scanner. For details on freenode
+2014-01-22 12:02:12	--	- network policy, please take a look at our policy page
+2014-01-22 12:02:12	--	- (http://freenode.net/policy.shtml).  Your use of the network
+2014-01-22 12:02:12	--	- indicates your acceptance of this policy.
+2014-01-22 12:02:12	--	-
+2014-01-22 12:02:12	--	- Please join #freenode for any network-related questions or
+2014-01-22 12:02:12	--	- queries
