@@ -19,7 +19,7 @@ alias gitog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cg
 source $HOME/.zsh_aliases
 
 # Plugins to load, loc in  ~/.oh-my-zsh/custom/plugins/ Ex: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github vundle rbenv ruby rails rails3 encode64 tmux)
+plugins=(git github vundle rbenv ruby rails encode64 tmux)
 
 source $ZSH/oh-my-zsh.sh
 

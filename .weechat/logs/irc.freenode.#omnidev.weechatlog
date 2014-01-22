@@ -4573,3 +4573,2319 @@
 2013-12-09 15:33:00	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
 2013-12-09 15:33:09	jakenbake	kweaver_:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
 2013-12-09 15:33:16	jakenbake	kweaver:  http://askubuntu.com/questions/163507/cannot-right-click-with-synaptics-touchpad
+2013-12-18 17:48:28	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-18 17:48:28	--	Nicks #omnidev: [kweaver kweaver_laptop]
+2013-12-18 17:48:28	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-18 17:48:30	--	Mode #omnidev [+cnt]
+2013-12-18 17:48:30	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-18 20:14:11	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-18 20:39:13	jhartigan	ayo kweaver you dere?
+2013-12-18 20:39:34	kweaver	yeah 
+2013-12-18 20:39:56	kweaver	ended up rewriting the aspect ratio in a way thats probably 50x more effecient
+2013-12-18 20:40:00	kweaver	almost done now
+2013-12-18 20:40:04	jhartigan	how was the sbux?
+2013-12-18 20:40:08	kweaver	it was fine
+2013-12-18 20:40:13	jhartigan	lol jesuss
+2013-12-18 20:40:19	jhartigan	glad you got it working for ya though
+2013-12-18 20:41:14	jhartigan	well i got fuckin so tired at like 4ish so i ended up nappin hard planning to stay up overnight so ill probably get some good work done and thisll hopefully put me on a normal sleep rotation
+2013-12-18 20:41:26	jhartigan	lemme know when you wanna push and il pull that down
+2013-12-18 20:41:51	kweaver	you wanna meet up tomorrow?  I figure we basically need to be finished everything by tomorrow afternoon, so that we can be IE testing through the night  
+2013-12-18 20:42:02	kweaver	not pushable yet
+2013-12-18 20:42:10	kweaver	probs another 20 minutes
+2013-12-18 20:42:54	jhartigan	yeah we can meet up
+2013-12-18 20:43:14	jhartigan	i dont know what you have udner the everything list, but ill have probably everything done tonight / early morning
+2013-12-18 20:43:29	jhartigan	all i have are the thumbs and fix lazy load
+2013-12-18 20:43:32	jhartigan	what else is there
+2013-12-18 20:43:39	kweaver	lemme check the lsit
+2013-12-18 20:44:35	kweaver	whered you leave off with lazyload?
+2013-12-18 20:45:13	jhartigan	it just doesnt work with the non on scroll call
+2013-12-18 20:45:55	kweaver	Im also going to operate under the assumption that tom may or may not end up doing the percentile calc
+2013-12-18 20:46:45	kweaver	he hasnt looked at the new version we received
+2013-12-18 20:46:52	kweaver	as of at least this afternoon
+2013-12-18 20:47:08	jhartigan	oh okay well ill look at that after thumbs are done then
+2013-12-18 20:47:29	kweaver	yeah just make sure everything is done with the slider
+2013-12-18 20:47:55	kweaver	I honestly wouldnt even look at the bmi until we are 100% finished IE testing the slider
+2013-12-18 20:48:07	kweaver	id rather be 100% finished one project then 90% finished both
+2013-12-18 20:48:11	jhartigan	yeah as far as i know the autoplay, which will be 2 min, thumbnails and then echo are it for the slider
+2013-12-18 20:48:32	kweaver	plus, if tom doesnt get percentile and IE8 testing done before friday
+2013-12-18 20:48:35	kweaver	its his own fault
+2013-12-18 20:48:40	kweaver	in which case
+2013-12-18 20:49:01	kweaver	we would probably have to have a stern talk with him about conducting future projects
+2013-12-18 20:49:02	kweaver	lol
+2013-12-18 20:51:02	kweaver	ok i need to focus on this function before I get lost again
+2013-12-18 20:51:05	kweaver	ill be around
+2013-12-18 20:51:20	jhartigan	yeahd dude
+2013-12-18 20:51:26	jhartigan	do it up lemme know when to pull
+2013-12-18 20:51:32	jhartigan	imma figure out some food and lift
+2013-12-18 20:51:38	jhartigan	then work throug hthe night
+2013-12-18 21:37:47	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-18 21:56:08	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 250 seconds)
+2013-12-18 21:58:19	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-18 21:58:19	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-12-18 21:58:19	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-18 21:58:22	--	Mode #omnidev [+cnt]
+2013-12-18 21:58:22	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-18 21:58:44	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-18 21:58:44	--	Nicks #omnidev: [jhartigan kweaver kweaver_laptop]
+2013-12-18 21:58:44	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-18 21:58:47	--	Mode #omnidev [+cnt]
+2013-12-18 21:58:47	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-18 21:59:37	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2013-12-18 22:14:09	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-18 22:32:26	kweaver	jakenbake: 
+2013-12-18 22:33:45	kweaver	gonna push aspect ratio.  now we just need to have it set on onload and an onresize that loops through all the slide images and then all the thumbnails
+2013-12-18 22:34:07	jakenbake	why not just call it on resize of the slider
+2013-12-18 22:34:14	jakenbake	so its not calling on multiple events
+2013-12-18 22:34:47	kweaver	yeah thats what I mean
+2013-12-18 22:35:16	kweaver	as well as onload
+2013-12-18 22:41:43	jakenbake	also maybe im crazy
+2013-12-18 22:41:47	jakenbake	why adjust it constantly
+2013-12-18 22:41:49	jakenbake	set it once
+2013-12-18 22:41:58	jakenbake	and if its resized properly the ratio never changes
+2013-12-18 22:43:15	kweaver	the problem is that we arent actually adjusting or cropping the image
+2013-12-18 22:43:30	kweaver	we have to adjust the image inside of the container
+2013-12-18 22:43:36	kweaver	which is inside of another container
+2013-12-18 22:43:48	kweaver	all of which have variable widths and heights
+2013-12-18 22:43:55	jakenbake	yeah but why not jsut adjust the image when its loaded once
+2013-12-18 22:44:09	kweaver	youll see when I push this pup
+2013-12-18 22:45:18	jakenbake	nah i dont get the reason though.  if the ratio is set. it shouldnt change on resize unless i dont understand images
+2013-12-18 22:45:56	kweaver	I know why youre thinking that, because I imagined this being simpler than it actually is
+2013-12-18 22:46:14	kweaver	here
+2013-12-18 22:46:22	kweaver	so i dont mess up the master version
+2013-12-18 22:46:33	kweaver	git checkout -b ratio
+2013-12-18 22:46:36	kweaver	git pull origin ratio
+2013-12-18 22:46:41	kweaver	and check out my function
+2013-12-18 22:46:57	kweaver	i had to hardcode thumbnails in there while I was working on them
+2013-12-18 22:47:08	kweaver	so I dont want to fugup master
+2013-12-18 22:48:12	kweaver	I have 3 scenarios. thumbnail too wide, thumbnail too tall, and slide image too wide
+2013-12-18 22:49:00	kweaver	I commented it to shit too since its pretty complex
+2013-12-18 22:50:25	kweaver	disregard the verticalAlign() function, I no longer use that
+2013-12-18 22:51:54	kweaver	essentaily, we are manipulating both the image and the image container
+2013-12-18 22:53:38	kweaver	for thumbnails, the image container needs to take up 26% width of the parent, and the appropriate height of a 3:2 ratio
+2013-12-18 22:54:33	kweaver	then we need to make sure the image inside, and set to one absolute value and one auto,  if we set two absolute values, the image will appear squished
+2013-12-18 22:55:09	kweaver	then we need to set a negative margin to appropriately center it within the container
+2013-12-18 22:56:30	jakenbake	i mean it running looks fine to me, i just dont see why the image cant be scalled to the ratio, which you have the three cases for, once and then just rely on proper responsiveness
+2013-12-18 22:57:19	kweaver	because the issue is that there is no simple way to tell and image to just keep a ratio, without squishing
+2013-12-18 22:57:26	kweaver	tell an**
+2013-12-18 22:58:39	kweaver	so instead of squishing it, we can just the ratio of the container, and center the image within that
+2013-12-18 22:58:51	kweaver	and we have to keep checking if the image is centered
+2013-12-18 22:59:25	kweaver	just keep the ratio of the container**
+2013-12-18 23:00:48	kweaver	its sort of a similar concept to that backstretch plugin, only the container is variable too
+2013-12-18 23:03:03	jakenbake	okay i follow you.  that makes sense to me
+2013-12-18 23:04:05	kweaver	yeah trust me, if you google the terms "javascript image aspect ratio" on my computer, youll find like 3 pages of purple links
+2013-12-18 23:04:51	kweaver	I tried literally every single stack overflow answer, and they all couldnt relate to our scenario with variable height AND width in the container AND the image
+2013-12-18 23:06:10	jakenbake	pics or it didnt happen
+2013-12-19 00:18:53	kweaver	jakenbake
+2013-12-19 00:19:04	kweaver	I didnt think wed have much to worry about the mobile layout
+2013-12-19 00:19:09	kweaver	but they do some surprisingly stupid things
+2013-12-19 00:19:26	kweaver	like no allow any images past 98%
+2013-12-19 00:19:32	kweaver	Ill be able to override them
+2013-12-19 00:19:46	kweaver	but be sure to check what youre doing on all of their lame layouts
+2013-12-19 00:52:42	kweaver	sup jakenbake 
+2013-12-19 01:06:20	kweaver	bleh deadlines suck
+2013-12-19 01:12:46	kweaver	I know it sounds like theres only a couple items left on the to do, but I think we are going to have a hard time getting them both complete and IE8 ready by friday
+2013-12-19 01:30:44	jakenbake	i think IE 8 is most likely the main problem that lies ahead,  i dunno how much of a pain in the ass it is, but i dont think till be easy
+2013-12-19 01:32:18	kweaver	how are you doing with the thumb navs?
+2013-12-19 01:32:30	kweaver	thats a little sucker too
+2013-12-19 01:33:35	jakenbake	nah its not
+2013-12-19 01:33:37	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-19 01:33:38	jakenbake	why would it be?
+2013-12-19 01:33:49	jakenbake	i have the scenarios worked out on paper
+2013-12-19 01:33:58	jakenbake	but i dont see why theyre a problem over all
+2013-12-19 01:34:09	kweaver	I just mean its the only piece of functionality left
+2013-12-19 01:34:27	kweaver	im about to push the controls overlay
+2013-12-19 01:35:10	jakenbake	k lemme know and ill merge it in before i work these scenarios into actual code
+2013-12-19 01:41:35	kweaver	pushed jakenbake 
+2013-12-19 01:42:58	jakenbake	kweaver: is there a puse logo?
+2013-12-19 01:43:01	jakenbake	pause*
+2013-12-19 01:43:19	kweaver	working on that now on the lappy
+2013-12-19 01:43:38	kweaver	gotta photoshop one real quick
+2013-12-19 01:44:10	jakenbake	ooh okay.. just making sure my shit was working with the class swap
+2013-12-19 01:44:13	jakenbake	looks good though
+2013-12-19 01:48:03	kweaver	in order to have one set of controls that overlays all of the slide images, we have to use some js to find the correct height for it
+2013-12-19 01:48:18	kweaver	its just one line though
+2013-12-19 01:48:39	kweaver	the other option would be controls over every single image
+2013-12-19 01:52:52	jakenbake	i saw you mentioned the ie 8 shit and all to tom.  any response from him about what hes got left?  just IE and cpercentile right?
+2013-12-19 01:53:24	kweaver	yeah I texted him too
+2013-12-19 01:53:30	kweaver	hes at some party
+2013-12-19 01:53:32	kweaver	lol
+2013-12-19 01:53:45	kweaver	he was like "this friday or next friday??"
+2013-12-19 01:54:07	kweaver	I was like "dude.. this friday."
+2013-12-19 01:54:14	jakenbake	haha wattt.  shouldnt two things be relatively simple to have done from monday -> friday
+2013-12-19 01:54:28	kweaver	I dont know how else to describe the urgency of our situation
+2013-12-19 01:55:56	kweaver	thats another reason Im stressing a little. because I have to work on the assumption that tom is just going to play CS tomorrow
+2013-12-19 01:55:57	kweaver	lol
+2013-12-19 01:56:13	jakenbake	lolol
+2013-12-19 02:36:24	kweaver	just pushed jakenbake 
+2013-12-19 02:37:14	kweaver	I was just looking at the origin docs and they have   "...read me" 
+2013-12-19 02:37:24	kweaver	so im gonna change it in your script jakenbake 
+2013-12-19 02:37:26	kweaver	just dont be alarmed
+2013-12-19 02:37:34	kweaver	when you have to merge that line
+2013-12-19 02:38:03	kweaver	"...read more"****
+2013-12-19 02:39:59	jakenbake	lol
+2013-12-19 02:40:01	jakenbake	read me?
+2013-12-19 02:40:03	jakenbake	really?
+2013-12-19 02:40:05	jakenbake	thats fucking weird
+2013-12-19 02:40:10	kweaver	read more
+2013-12-19 02:40:17	kweaver	but the dots are on the read more link
+2013-12-19 02:40:22	kweaver	like    "...read more"
+2013-12-19 02:40:24	jakenbake	no dont
+2013-12-19 02:40:30	jakenbake	well.. you can actually
+2013-12-19 02:40:31	kweaver	you wanna change it then?
+2013-12-19 02:40:34	kweaver	sup to you
+2013-12-19 02:40:44	kweaver	you change it then
+2013-12-19 02:40:47	kweaver	so you dont have to merge
+2013-12-19 02:40:56	kweaver	just make it "...read me"
+2013-12-19 02:40:58	kweaver	all lowercase
+2013-12-19 02:46:22	jakenbake	yeah i thought you meant merging my spans
+2013-12-19 02:46:26	jakenbake	i can change it though
+2013-12-19 02:46:32	jakenbake	read me is fucking silly though but thats okay
+2013-12-19 02:46:47	kweaver	fuck these typos
+2013-12-19 02:46:54	kweaver	i keep typing read me
+2013-12-19 02:46:56	kweaver	its read more
+2013-12-19 02:47:00	kweaver	lolololol
+2013-12-19 02:47:09	kweaver	im meaning to put the emphasis on the ...
+2013-12-19 02:47:24	kweaver	jakenbake: 
+2013-12-19 02:47:55	jakenbake	yteah
+2013-12-19 02:47:58	jakenbake	were not changing that
+2013-12-19 02:48:15	kweaver	thats an easy fix
+2013-12-19 02:48:40	kweaver	if its a pain, just have ... on both sides
+2013-12-19 02:48:47	kweaver	example
+2013-12-19 02:48:56	kweaver	This is a long sentence... ...readmore
+2013-12-19 02:48:59	kweaver	thats reasonable
+2013-12-19 02:50:08	jakenbake	wait they want it on both you mean?
+2013-12-19 02:50:28	kweaver	The image just shows it on the ...read more
+2013-12-19 02:50:37	kweaver	but when you said "were not changing that"
+2013-12-19 02:50:48	kweaver	did you mean it would be too hard of a fix to remove it from the left side?
+2013-12-19 02:52:36	jakenbake	not necessarily no
+2013-12-19 02:52:47	kweaver	I assumed when you said "were not changing that" you were basically saying "fuck that, its not worth the time redoing what I did"
+2013-12-19 02:53:03	kweaver	so if its a pain in the dick, just throw the extra ... on the read more string
+2013-12-19 02:53:12	kweaver	if its not a pain, just remove it from the left side as well
+2013-12-19 02:55:18	jakenbake	yeah it shouldnt be a problem
+2013-12-19 03:14:41	kweaver	alright jakenbake im looking at this in IE8
+2013-12-19 03:15:09	kweaver	the good news is the styling looks almost fine
+2013-12-19 03:15:17	jakenbake	i figured as much
+2013-12-19 03:15:26	jakenbake	i thought that our main problem would be normalizing js
+2013-12-19 03:15:38	kweaver	yeah
+2013-12-19 03:15:51	kweaver	it basically looks like it would for a user without js
+2013-12-19 03:16:00	kweaver	but thats what i figured 
+2013-12-19 03:16:02	jakenbake	lol really?
+2013-12-19 03:16:20	kweaver	yeah its just all 3 slides, no controls or anything
+2013-12-19 03:16:32	kweaver	for the cost of browser stack dude
+2013-12-19 03:16:41	kweaver	this is reallllly slow
+2013-12-19 03:17:26	kweaver	and you cant resize the browser
+2013-12-19 03:17:56	kweaver	nm you can
+2013-12-19 03:19:24	jakenbake	lol i was gonna say
+2013-12-19 03:19:30	jakenbake	but i was still gonna use windows for it'
+2013-12-19 03:19:45	kweaver	yeah i will too
+2013-12-19 03:19:56	kweaver	once were in debug mode, we should put it on oms1
+2013-12-19 03:20:49	jakenbake	yeah i figured that was the easist to do
+2013-12-19 03:25:02	kweaver	jakenbake I remember you talking about echo, but I forget what you said about that status of lazyloading?
+2013-12-19 03:25:26	jakenbake	its not working
+2013-12-19 03:25:34	jakenbake	only wants to work on the scroll method
+2013-12-19 03:25:38	kweaver	alright
+2013-12-19 03:25:38	jakenbake	not on the render one
+2013-12-19 03:25:47	kweaver	we can look at it once thumbnails are donezo
+2013-12-19 03:26:39	kweaver	im just organizing the final to do
+2013-12-19 03:26:45	kweaver	gonna email it with tom as well
+2013-12-19 03:28:34	jakenbake	okay thats cool
+2013-12-19 03:28:37	jakenbake	yeah get some sleep bro
+2013-12-19 03:28:42	jakenbake	im gonna be up but i napped
+2013-12-19 03:29:22	kweaver	yeah once I send this out im off
+2013-12-19 03:30:36	kweaver	see if you can get down the thumbnails and then sleep what you need to, but you should head over whenever youre done 
+2013-12-19 03:30:50	jakenbake	im not gonna sleep today
+2013-12-19 03:30:54	jakenbake	dont have it in me
+2013-12-19 03:30:55	kweaver	I have a feeling tomorrow is going to be another all nighter
+2013-12-19 03:30:58	jakenbake	slept till 10 somethin
+2013-12-19 03:31:07	jakenbake	and then napped later in the day
+2013-12-19 03:31:55	kweaver	alright just sleep at some point because I think tomorrow night is going to have to be a marathon as well
+2013-12-19 03:32:11	kweaver	this time im not buying mocha coffee from wawa
+2013-12-19 03:32:13	kweaver	that was gross
+2013-12-19 03:32:29	jakenbake	lolol yeah i hear you haha
+2013-12-19 03:32:42	jakenbake	im stickin with tea
+2013-12-19 03:32:49	jakenbake	lemme know when you get up but get yerself some sleep
+2013-12-19 03:32:56	jakenbake	i dont think that IE8 should take the whole day
+2013-12-19 03:34:19	kweaver	if my aspect ratio doesnt down in IE8, Im just going to give them some fixed ratios and squish the image
+2013-12-19 03:34:32	kweaver	they dont deserve my aspect ratio function
+2013-12-19 03:34:35	jakenbake	so presuming i finish all functionality.. although not sure wwhat to do for echo i dont think ie8 could take all day
+2013-12-19 03:34:43	jakenbake	only because the underlying js has to have been ported
+2013-12-19 03:36:46	jakenbake	plus... we could nag dave but i dont like doing that to him since its not just for learning its for a project as well
+2013-12-19 03:36:51	jakenbake	he says he doesnt mind but
+2013-12-19 03:37:16	kweaver	yeah lets only nag him if we have to
+2013-12-19 03:37:51	kweaver	if you can get thumbnailNav finished, I would call tonight a success
+2013-12-19 03:38:00	kweaver	flying colors
+2013-12-19 03:38:03	kweaver	BOOOM
+2013-12-19 03:38:36	jakenbake	ill ge tit done
+2013-12-19 03:38:42	jakenbake	im sure ill hit quirks
+2013-12-19 03:38:48	jakenbake	but its not like its a complicated process
+2013-12-19 03:55:34	kweaver	aight im out jakenbake 
+2013-12-19 03:55:38	kweaver	good luck 
+2013-12-19 03:57:30	jakenbake	laters man
+2013-12-19 03:57:33	jakenbake	get some sleep
+2013-12-19 03:59:23	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-19 03:59:23	--	irc: disconnected from server
+2013-12-19 11:33:23	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-19 11:33:23	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2013-12-19 11:33:23	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-19 11:33:23	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-19 11:33:25	--	Mode #omnidev [+cnt]
+2013-12-19 11:33:25	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-19 11:35:02	kweaver	sup jakenbake 
+2013-12-19 11:35:12	kweaver	you still up?
+2013-12-19 11:38:13	jakenbake	no
+2013-12-19 11:38:13	jakenbake	im a robot
+2013-12-19 11:38:13	jakenbake	i almost crashed randomly at like 7am though
+2013-12-19 11:38:13	jakenbake	not sure why
+2013-12-19 11:38:13	jakenbake	feel way better now
+2013-12-19 11:38:35	kweaver	how goes the thumbnails?
+2013-12-19 11:38:42	jakenbake	excellent
+2013-12-19 11:38:50	jakenbake	theres one quirk.. that i know how to do a workaround for
+2013-12-19 11:38:53	jakenbake	but im trying to avoid it
+2013-12-19 11:39:04	kweaver	sweet
+2013-12-19 11:39:06	kweaver	is it pushable?
+2013-12-19 11:39:14	jakenbake	yeah sure
+2013-12-19 11:39:16	jakenbake	sec
+2013-12-19 11:39:23	jakenbake	autoplay and play pause all donezo as well
+2013-12-19 11:41:00	kweaver	also did you look at this at all when you were looking for lazy load?
+2013-12-19 11:41:01	kweaver	https://github.com/rgrove/lazyload/
+2013-12-19 11:44:51	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (*.net *.split)
+2013-12-19 11:56:02	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-19 11:57:16	kweaver	jakenbake BC is going to have us host the "CEO Group" website that he randomly mentioned last week
+2013-12-19 11:57:23	kweaver	someone is sending me the files now
+2013-12-19 11:57:26	kweaver	heres the catch
+2013-12-19 11:57:33	jakenbake	oh
+2013-12-19 11:57:49	kweaver	its 200mb, a drupal site, and who knows if theyre okay with smtp for sending mail
+2013-12-19 11:57:53	jakenbake	brian wants an invoice and shit if the jew things done
+2013-12-19 11:58:04	kweaver	did he talk to you or something?
+2013-12-19 11:58:28	jakenbake	as well as an email to 'close the loop'
+2013-12-19 11:58:30	jakenbake	yeah
+2013-12-19 11:58:40	kweaver	what does that mean
+2013-12-19 11:58:45	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (*.net *.split)
+2013-12-19 12:05:09	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-19 12:09:10	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (*.net *.split)
+2013-12-19 12:15:15	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-19 12:19:12	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-19 12:19:12	--	irc: disconnected from server
+2013-12-19 13:39:04	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-19 13:39:04	--	Nicks #omnidev: [kweaver kweaver_desktop]
+2013-12-19 13:39:04	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2013-12-19 13:39:07	--	Mode #omnidev [+cnt]
+2013-12-19 13:39:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-19 14:30:45	<--	kweaver (~kweaver@96.248.78.50) has quit (Ping timeout: 265 seconds)
+2013-12-19 20:01:20	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-19 20:04:49	jakenbake	hi kweaver_desktop how goes it?  sorry totest slept through my 7om alarm
+2013-12-19 20:05:06	kweaver_desktop	nah its fine
+2013-12-19 20:05:11	kweaver_desktop	its good
+2013-12-19 20:06:55	kweaver_desktop	cashed those checks, got the files for the drupal site, did the holdbrook update, looked at the bmi for a bit, and then ive been reading through your slide code 
+2013-12-19 20:07:06	kweaver_desktop	i dont know if that lazyload plugin will work for us
+2013-12-19 20:07:22	kweaver_desktop	its very simple, just loads a js file or a css file when you tell it to
+2013-12-19 20:07:26	kweaver_desktop	not even specific functions
+2013-12-19 20:07:29	kweaver_desktop	just a file it seems
+2013-12-19 20:07:53	kweaver_desktop	which doesnt work if were going to be working with a minified js and a minified css
+2013-12-19 20:09:11	kweaver_desktop	tom said the bmi works on IE8, but I looked at it and the input entry fields dont even load, so i didnt even get to see if the the graphing works or anything
+2013-12-19 20:09:31	kweaver_desktop	I asked him and he just said it works for him lol, so i dunno
+2013-12-19 20:13:54	kweaver_desktop	I also ran it through an xhtml scanner and were just missing a few things like alt tags on images and type tags on script tags
+2013-12-19 20:16:24	kweaver_desktop	well jakenbake, I bought 4 five-hour energies and ive got a bunch of coffee here
+2013-12-19 20:23:00	jakenbake	lolol.  1) i think i can do a lazy load myself if i dont get it to work just based on how the one i found works  2) so for alt tags, can I put 'slideshow-image-x'?  3) wat with tom... is it on oms1?
+2013-12-19 20:25:45	kweaver_desktop	1. yeah echo looks more like what we want, or some personalized variation.  i can look at it too to say why it wouldnt be working.  2. yes. 3. nah, I just used browserstack
+2013-12-19 20:26:48	jakenbake	haha okay.  wanted to look at it right quick
+2013-12-19 20:27:18	kweaver_desktop	although browserstack is pretty slow, it is nice to have a VM of every possible OS and every browser all just a couple clicks away
+2013-12-19 20:27:23	jakenbake	kweaver_desktop: for the alt tags... this shit doesnt pull from a non rendered site right?  like all that content would come from a site that has js right?
+2013-12-19 20:27:32	jakenbake	oh another find
+2013-12-19 20:27:41	jakenbake	IE8 console works if dev tools is opened haha
+2013-12-19 20:28:31	kweaver_desktop	i tried looking at the console for ours and it either wasnt loaded, or ie just doesnt feel nice enough to give errors
+2013-12-19 20:28:41	kweaver_desktop	i assume it was the first reason
+2013-12-19 20:28:55	jakenbake	yeah you have to load the dev tools
+2013-12-19 20:28:59	jakenbake	then refresh the page
+2013-12-19 20:29:07	kweaver_desktop	aye
+2013-12-19 20:29:48	kweaver_desktop	anyway did you wanna come over?  you dont have to but I think late nights are easier with another person there
+2013-12-19 20:35:49	kweaver_desktop	jakenbake your slider code looks really good
+2013-12-19 20:36:06	jakenbake	yeah ill come over.
+2013-12-19 20:36:11	jakenbake	in IE8?  no fuckin way
+2013-12-19 20:36:13	jakenbake	really?
+2013-12-19 20:36:23	kweaver_desktop	doing this project makes me want to do more with basic javascript projects
+2013-12-19 20:36:29	kweaver_desktop	nono
+2013-12-19 20:36:32	jakenbake	yeah dude thats what im saying
+2013-12-19 20:36:33	kweaver_desktop	just your code
+2013-12-19 20:36:35	jakenbake	oh
+2013-12-19 20:36:36	kweaver_desktop	reviewing it
+2013-12-19 20:36:37	jakenbake	haha thanks
+2013-12-19 20:36:41	kweaver_desktop	lol sorry to excite you
+2013-12-19 20:36:46	kweaver_desktop	JAKE, WERE DONE!  GO BACK TO BED!
+2013-12-19 20:36:49	jakenbake	its okay. ill forgive you this once
+2013-12-19 20:37:21	jakenbake	alrighty. im gonna get my shit together and then I'll swing by.  should be like 20 or so
+2013-12-19 20:37:24	kweaver_desktop	MAKE SURE YOU LEAVE YOUR WALLET ON THE NIGHT STAND SO THE MONEY FAIRY CAN DROP OFF $7,000 IN IT TONIGHT
+2013-12-19 20:37:28	kweaver_desktop	k
+2013-12-19 20:37:41	jakenbake	haha wait the nemours check came?
+2013-12-19 20:37:43	kweaver_desktop	nop
+2013-12-19 20:37:46	jakenbake	fuck
+2013-12-19 20:37:49	jakenbake	damnit
+2013-12-19 20:37:53	kweaver_desktop	im just trying to get your hopes in the sky
+2013-12-19 20:37:55	jakenbake	you had your one forgiven moment
+2013-12-19 20:37:58	kweaver_desktop	so I can shatter them back down
+2013-12-19 20:38:00	jakenbake	lol
+2013-12-19 20:38:08	kweaver_desktop	and replace them with coffee and 5 hour energies
+2013-12-19 20:38:53	kweaver_desktop	if you're lucky, ill save you the sour apple five hour energy
+2013-12-19 20:39:02	kweaver_desktop	as if the taste didnt already make me want to throw up
+2013-12-19 20:39:25	jakenbake	alrighty ill be by shortly. cant resist that sour apple
+2013-12-19 20:40:19	kweaver_desktop	k
+2013-12-19 20:43:52	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-12-19 22:10:09	-->	jakenbake (~jake@96.248.78.50) has joined #omnidev
+2013-12-20 02:37:47	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-20 07:57:06	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-20 11:28:05	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-20 14:09:09	<--	jakenbake (~jake@96.248.78.50) has quit (Ping timeout: 246 seconds)
+2013-12-20 15:26:44	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-21 09:31:47	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-21 09:31:47	--	Mode #omnidev [+ns] by sendak.freenode.net
+2013-12-21 09:31:47	--	Nicks #omnidev: [@kweaver]
+2013-12-21 09:31:47	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-21 09:31:47	--	Mode #omnidev [-o kweaver] by services.
+2013-12-21 09:31:47	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1387636329 to 1337223617
+2013-12-21 09:31:47	--	Mode #omnidev [+ct-s] by services.
+2013-12-21 09:31:47	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-21 09:31:47	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-21 09:31:49	--	Mode #omnidev [+cnt]
+2013-12-21 09:31:49	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-21 17:06:57	-->	DooMMasteR (~DooMMaste@unaffiliated/doommaster) has joined #omnidev
+2013-12-21 17:06:57	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-21 17:07:00	<--	DooMMasteR (~DooMMaste@unaffiliated/doommaster) has left #omnidev
+2013-12-23 09:49:17	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-23 09:49:17	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2013-12-23 09:49:17	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-23 09:49:17	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-23 09:49:19	--	Mode #omnidev [+cnt]
+2013-12-23 09:49:19	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-23 09:51:21	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-23 09:51:21	--	Nicks #omnidev: [jakenbake kweaver kweaver_desktop]
+2013-12-23 09:51:21	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-23 09:51:23	--	Mode #omnidev [+cnt]
+2013-12-23 09:51:23	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-23 09:53:15	jakenbake	kweaver_desktop:
+2013-12-23 09:53:20	kweaver_desktop	sup
+2013-12-23 09:53:28	jakenbake	tom asked bout nemours due date
+2013-12-23 09:53:40	jakenbake	i said they arent really expecting a specific date but we were shooting for end of the week
+2013-12-23 09:53:51	kweaver_desktop	yeah thats what i was gonna say
+2013-12-23 09:53:52	jakenbake	not to kill himself with holidays but to get it in if he could
+2013-12-23 09:54:18	kweaver_desktop	yeah dont ruin christmas by it, but just get it done as quickly as possible
+2013-12-23 09:54:33	jakenbake	also free dd coffee if you get their app
+2013-12-23 09:54:35	jakenbake	for the eagles win
+2013-12-23 09:54:48	kweaver_desktop	oh nice
+2013-12-23 09:56:09	kweaver_desktop	i finally got the drupal files for the ceo site
+2013-12-23 09:57:07	jakenbake	oh sickness
+2013-12-23 11:00:38	<--	kweaver_desktop (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-23 11:00:38	--	irc: disconnected from server
+2013-12-23 14:48:58	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-23 14:48:58	--	Nicks #omnidev: [jakenbake kweaver kweaver_desktop]
+2013-12-23 14:48:58	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-23 14:49:00	--	Mode #omnidev [+cnt]
+2013-12-23 14:49:00	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-23 14:50:29	kweaver_desktop	so jakenbake, its not all the files?
+2013-12-23 14:52:12	jakenbake	its literally only images
+2013-12-23 14:52:12	kweaver_desktop	lookin now
+2013-12-23 14:52:16	kweaver_desktop	yeah and the db
+2013-12-23 14:52:16	jakenbake	and a settings file
+2013-12-23 14:52:30	kweaver_desktop	we'd still need at least some theme files
+2013-12-23 14:53:17	jakenbake	lol where do you see a db?
+2013-12-23 14:53:39	kweaver_desktop	root folder
+2013-12-23 14:53:50	kweaver_desktop	called TEST_drupal_v6.......sql
+2013-12-23 14:53:54	jakenbake	not in the folder i downloaded
+2013-12-23 14:54:04	jakenbake	also drupal 6 does not just migrate to d7
+2013-12-23 14:54:44	jakenbake	mine has just files. settings and default settings
+2013-12-23 14:54:50	kweaver_desktop	its a zip called "ceo_group" and inside is a the sql file, and a folder called "ceo_group"
+2013-12-23 14:54:50	jakenbake	files just has images
+2013-12-23 14:55:00	kweaver_desktop	i think you extracted jsut the subfolder
+2013-12-23 14:55:59	jakenbake	nah i didnt. it just was packaged poorly
+2013-12-23 14:56:04	jakenbake	didnt realize there was one still in downloads
+2013-12-23 14:56:10	jakenbake	i mean db plus images
+2013-12-23 14:56:18	jakenbake	this would mean they have no theme whatsoever
+2013-12-23 14:57:11	kweaver_desktop	yeah im emailing him now
+2013-12-23 19:30:03	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-23 19:56:26	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 248 seconds)
+2013-12-26 10:24:35	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-26 10:24:35	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2013-12-26 10:24:35	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-26 10:24:35	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-26 10:24:37	--	Mode #omnidev [+cnt]
+2013-12-26 10:24:37	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-26 10:25:10	kweaver	sup jakenbake 
+2013-12-26 10:25:13	kweaver	how your christmas?
+2013-12-26 10:28:36	jakenbake	not bad. how bout you man
+2013-12-26 10:28:49	kweaver	goood
+2013-12-26 10:34:20	kweaver	jakenbake gonna shower and coffee, then gonna trya and get through as much of the slider as I can til like 6
+2013-12-26 10:34:29	kweaver	then have another fam party
+2013-12-26 10:34:40	kweaver	whatchu got going on today?
+2013-12-26 10:35:16	jakenbake	not much. probs just gonna do the slider for the most of the day
+2013-12-26 10:35:19	jakenbake	break whenever
+2013-12-26 10:35:33	jakenbake	well probably do gifts at some point cause yesterday was busy but thats it
+2013-12-26 10:38:04	kweaver	sounds good
+2013-12-26 10:38:16	kweaver	i was also thinking
+2013-12-26 10:39:10	jakenbake	we bedazzle the slider?
+2013-12-26 10:39:19	jakenbake	not gonna lie i thought about ti
+2013-12-26 10:39:20	kweaver	yes, chirstmas colors
+2013-12-26 10:39:49	kweaver	just so we have a better grasp of how much we'll be refactoring for IE.  I wanna run through really quick with the IE and just comment or set stub values on all the lines that we get IE8 errors
+2013-12-26 10:40:41	jakenbake	yeah thats what i was planning on doin
+2013-12-26 10:40:46	kweaver	just so we know ahead of time how much we have to chang
+2013-12-26 10:40:55	jakenbake	its good for future in general and future with them if we have one
+2013-12-26 10:42:18	jakenbake	im installing the ms ievms on the laptop
+2013-12-26 10:42:25	jakenbake	gotta make the dev go faster
+2013-12-26 10:42:45	kweaver	good idea
+2013-12-26 10:42:59	kweaver	what vm's you using
+2013-12-26 10:43:03	kweaver	ill install too
+2013-12-26 10:44:07	jakenbake	http://www.modern.ie/en-us/virtualization-tools#downloads
+2013-12-26 10:44:10	jakenbake	ms provides them
+2013-12-26 10:44:18	jakenbake	heres the thing. make sure after you install them
+2013-12-26 10:44:21	jakenbake	you image them
+2013-12-26 10:44:28	jakenbake	else youll have to redownload and install
+2013-12-26 10:44:35	jakenbake	as they expire after 30days
+2013-12-26 10:44:44	jakenbake	so you just image rollback for it
+2013-12-26 10:45:15	kweaver	how do you image them?
+2013-12-26 10:46:29	jakenbake	like in vbox
+2013-12-26 10:46:32	jakenbake	you hit take snapshot
+2013-12-26 10:46:40	jakenbake	that way you just roll back to the snapshot
+2013-12-26 10:46:49	kweaver	oh ok wasnt sure if it was harder than that
+2013-12-26 10:47:20	jakenbake	nah. ms just did as much work as they wanted and i guess should although the only reason is because they suck that we need them
+2013-12-26 10:53:48	kweaver	you gonna test it on XP IE8?
+2013-12-26 10:53:53	kweaver	dunno if theres a diff
+2013-12-26 10:54:12	kweaver	just figured Ill install XP and vista, but use XP mainly
+2013-12-26 11:00:42	jakenbake	i was just gonna do IE8 opnyl on xp for now
+2013-12-26 11:00:45	jakenbake	cause their servers are slow
+2013-12-26 14:29:44	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2013-12-26 14:38:47	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-26 14:54:50	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-26 14:54:50	--	irc: disconnected from server
+2013-12-27 08:50:05	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-27 08:50:05	--	Mode #omnidev [+ns] by card.freenode.net
+2013-12-27 08:50:05	--	Nicks #omnidev: [@kweaver]
+2013-12-27 08:50:05	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-27 08:50:05	--	Mode #omnidev [-o kweaver] by services.
+2013-12-27 08:50:05	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1388152209 to 1337223617
+2013-12-27 08:50:05	--	Mode #omnidev [+ct-s] by services.
+2013-12-27 08:50:05	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-27 08:50:05	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-27 08:50:07	--	Mode #omnidev [+cnt]
+2013-12-27 08:50:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-28 16:29:54	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-28 16:29:54	--	Nicks #omnidev: [jakenbake kweaver kweaver_desktop]
+2013-12-28 16:29:54	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-28 16:29:56	--	Mode #omnidev [+cnt]
+2013-12-28 16:29:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-28 16:30:16	kweaver	jakenbake: what branch are you on?
+2013-12-28 16:31:43	jakenbake	refactor
+2013-12-28 16:38:27	kweaver_desktop	Uncaught ReferenceError: thumsbParent is not defined 
+2013-12-28 16:38:32	kweaver_desktop	dunno if you noticed that
+2013-12-28 16:38:38	kweaver_desktop	typo
+2013-12-28 16:39:55	jakenbake	yeah
+2013-12-28 16:47:17	jakenbake	i think i found the error finally in the refactor
+2013-12-28 16:57:02	jakenbake	trtying to fix one other kweaver_desktop pull now
+2013-12-28 16:57:19	jakenbake	for a working refactor with and shitss
+2013-12-28 17:04:10	kweaver_desktop	git it
+2013-12-28 17:04:12	kweaver_desktop	got it*
+2013-12-28 17:04:30	kweaver_desktop	whats the one other jakenbake ?
+2013-12-28 17:05:01	jakenbake	hm?
+2013-12-28 17:05:10	kweaver_desktop	you said youre trying to fix one other
+2013-12-28 17:05:22	jakenbake	thats what i fixed
+2013-12-28 17:05:35	jakenbake	it was some out of order shit due to the way things are built now
+2013-12-28 17:05:41	jakenbake	it makes more sense the way it is now
+2013-12-28 17:05:46	jakenbake	just had to fix some codes here and tehre
+2013-12-28 17:08:54	kweaver_desktop	just push the transparency thang
+2013-12-28 17:09:03	kweaver_desktop	so basically we just need to figure out the nav offset bug and see what else IE needs us to fix?
+2013-12-28 17:09:20	jakenbake	yeah but the nav offset is not that bad
+2013-12-28 17:09:28	jakenbake	i can fix it pretty simply in a bit
+2013-12-28 17:09:33	jakenbake	gonna break and figure out dinner
+2013-12-28 17:09:39	kweaver_desktop	k
+2013-12-28 17:09:58	kweaver_desktop	ill keep shitting all fuckin day and then Ill see what else IE wants from us
+2013-12-28 17:10:10	jakenbake	jesus dude
+2013-12-28 17:10:11	jakenbake	really sucks
+2013-12-28 17:10:49	jakenbake	the navoffset basically the way it is now. if the current slide is not within +- 1 of the current thumb
+2013-12-28 17:10:52	jakenbake	it gets adjusted
+2013-12-28 17:11:07	jakenbake	works basically the way it is now*
+2013-12-28 17:11:23	jakenbake	no more worrying about so many special cases and shit
+2013-12-29 14:55:19	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-29 14:55:19	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2013-12-29 14:55:19	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2013-12-29 14:55:19	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-29 14:55:21	--	Mode #omnidev [+cnt]
+2013-12-29 14:55:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-29 16:01:13	jakenbake	kweaver: do you see that odd one im talkin about
+2013-12-29 16:01:26	jakenbake	i changed shit up this morning and realized its behaving completely goofy there
+2013-12-29 16:01:30	jakenbake	and the logs dont help
+2013-12-29 16:02:00	kweaver	yeah still falls offset somehow and then the arrows get confused
+2013-12-29 16:02:11	kweaver	debugger that bugger I guess
+2013-12-29 16:02:20	kweaver	i dunno
+2013-12-29 16:02:23	kweaver	im looking at the calc
+2013-12-29 16:02:28	kweaver	tom hasnt pushed anything
+2013-12-29 16:02:39	kweaver	$20 says he hasnt touched it
+2013-12-29 16:02:52	kweaver	I reallyyyyy shouldnt have told him we had til monday
+2013-12-29 16:03:04	kweaver	hes gonna start 5am tomorrow
+2013-12-29 16:03:15	jakenbake	haha is he really
+2013-12-29 16:03:24	jakenbake	whend you tell him monday haha
+2013-12-29 16:03:27	jakenbake	i told him friday
+2013-12-29 16:04:00	kweaver	just ran into him outside my house on friday, told him to push what he has today but if its not completely done, we can send monday
+2013-12-29 16:04:03	kweaver	worst mistake ever
+2013-12-29 16:04:12	jakenbake	haha oh man oh man
+2013-12-29 16:05:20	kweaver	well I pinged and texted him
+2013-12-29 16:05:26	kweaver	so hopefully he'll get back to me soon
+2013-12-29 16:06:21	jakenbake	yeah. well is he back home yet
+2013-12-29 16:06:25	jakenbake	i think hes probably on his way home
+2013-12-29 16:06:26	kweaver	i dunno
+2013-12-29 16:07:05	jakenbake	if the show was friday and sat. well he could be home by now
+2013-12-29 16:07:09	jakenbake	va isnt all that far
+2013-12-29 16:07:29	kweaver	oh shit he had a show?
+2013-12-29 16:07:36	kweaver	maybe I saw him thursday then
+2013-12-29 16:07:49	kweaver	yaya cause friday I was already out of commision
+2013-12-29 16:07:56	jakenbake	yeah he went to virginia this weekend
+2013-12-29 16:08:10	kweaver	alright so then yeah, he definitely hasnt touched it
+2013-12-29 16:08:31	kweaver	well if I learned one thing from this experience, its to give tom his own special deadline
+2013-12-29 16:09:00	kweaver	another thing, I think we could have added at least a couple more days to the quote
+2013-12-29 16:09:11	jakenbake	yeah i dont think we needed to specify the 16th
+2013-12-29 16:09:11	kweaver	but I think we were pretty close in our estimate
+2013-12-29 16:09:13	jakenbake	sucks we did
+2013-12-29 16:09:15	jakenbake	but its okay
+2013-12-29 16:09:17	jakenbake	theyre cool with it
+2013-12-29 17:53:37	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-29 18:07:22	kweaver_laptop	jakenbake im gonna do the bmi print.css
+2013-12-29 18:08:24	kweaver_laptop	when im done ill see if you need  help with the slider nav
+2013-12-29 19:47:58	<--	kweaver_laptop (~kweaver@96.248.78.50) has quit (Ping timeout: 260 seconds)
+2013-12-29 21:08:21	kweaver	you there jakenbake ?
+2013-12-29 21:12:01	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 252 seconds)
+2013-12-29 22:27:52	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-30 19:14:59	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-30 19:14:59	--	Nicks #omnidev: [jakenbake kweaver kweaver_top]
+2013-12-30 19:14:59	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2013-12-30 19:15:01	--	Mode #omnidev [+cnt]
+2013-12-30 19:15:01	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-30 19:16:20	kweaver	jakenbake the work around I was thinking of would be a little hacky
+2013-12-30 19:16:25	kweaver	im testing now
+2013-12-30 19:16:30	kweaver	now so much hacky
+2013-12-30 19:17:21	kweaver	basically the reason is that all other browsers know the width of the images by the time they are loaded with the data-override
+2013-12-30 19:17:33	kweaver	but chrome thinks its infinity
+2013-12-30 19:17:51	kweaver	and stepping through with the debugger
+2013-12-30 19:18:25	kweaver	even through every step of the load, the image never appear until after all of the initial javascript is completely done
+2013-12-30 19:31:53	kweaver	dude this bug is elusiveeee.  it just happens some of the time
+2013-12-30 19:32:13	kweaver	I think always the first load, but then refreshing its like 50%
+2013-12-30 19:32:25	kweaver	unless this is just caching
+2013-12-30 19:41:16	jakenbake	hmm
+2013-12-30 19:41:18	jakenbake	i asked dave
+2013-12-30 19:41:22	jakenbake	and he said it was odd
+2013-12-30 19:41:26	jakenbake	maybe if we were to delay something?
+2013-12-30 19:41:49	jakenbake	also lazy load didnt work in my tests a bit ago
+2013-12-30 19:41:57	kweaver	ok Ill look at it
+2013-12-30 19:44:31	kweaver	I mean
+2013-12-30 19:44:37	kweaver	the really hacky way
+2013-12-30 19:45:17	kweaver	would be to just have a function thats called when the dom if finished using this guy
+2013-12-30 19:45:21	kweaver	document.addEventListener('DOMContentLoaded', function() {
+2013-12-30 19:45:21	kweaver	   // your code here
+2013-12-30 19:45:21	kweaver	}, false);
+2013-12-30 19:45:40	kweaver	click the next button on the nav, and then click the previous button
+2013-12-30 19:45:47	kweaver	or just reload the images
+2013-12-30 19:46:00	jakenbake	yeah sure
+2013-12-30 19:46:07	jakenbake	hmm
+2013-12-30 19:46:07	kweaver	I dunno why im calling it hacky though, cause this is entirely chromes fault
+2013-12-30 19:49:17	jakenbake	yeah its all webkit
+2013-12-30 19:49:38	jakenbake	uhm lemme see.. if you know what the problem is.. would a delay somewhere help it?
+2013-12-30 19:49:40	kweaver	yeah him
+2013-12-30 19:50:01	kweaver	I was playing with delays that one night
+2013-12-30 19:50:06	kweaver	but my brian was fuzzy
+2013-12-30 19:50:21	kweaver	lemme try this function real quick, if it doesnt work, ill try delays again
+2013-12-30 19:50:21	jakenbake	yeah if it was that nigt...
+2013-12-30 19:50:28	kweaver	dont worry about this bug
+2013-12-30 19:50:28	jakenbake	ill ask dave
+2013-12-30 19:50:37	kweaver	ill get it
+2013-12-30 19:50:51	kweaver	if anything, feel free to start tidying up or something
+2013-12-30 19:51:55	kweaver	you can pull #kh-slideshow-1 and -2 initializations out of slider.js too if you want
+2013-12-30 19:52:32	kweaver	we're in almost ship mode now
+2013-12-30 19:55:36	jakenbake	alrighty.. pulling that shit out is mad easy
+2013-12-30 19:55:39	jakenbake	ill do that at the very end
+2013-12-30 20:32:52	kweaver	you there jakenbake?
+2013-12-30 20:33:33	kweaver	reloading the images didnt work
+2013-12-30 20:33:45	kweaver	im thinking we just try the next
+2013-12-30 20:33:49	kweaver	and reverse
+2013-12-30 20:36:21	kweaver	son of a bitch..
+2013-12-30 20:36:25	kweaver	sooo
+2013-12-30 20:36:31	kweaver	that didnt work either
+2013-12-30 20:36:33	kweaver	...
+2013-12-30 20:36:39	kweaver	back to the delays
+2013-12-30 20:48:25	jakenbake	so hitting next and prev doesnt work?
+2013-12-30 20:48:30	jakenbake	it must need a delay then
+2013-12-30 20:48:38	jakenbake	cause it works otherwise
+2013-12-30 20:51:08	kweaver	thats what im thinking
+2013-12-30 20:51:19	kweaver	playing with it now
+2013-12-30 20:52:22	jakenbake	ive had it work like 2x in chrome randomly
+2013-12-30 20:52:33	kweaver	keep refreshing
+2013-12-30 20:52:38	kweaver	it goes through spurts
+2013-12-30 20:52:53	kweaver	there were a few times where I thought i fixed it cause it worked like 4 times in a row
+2013-12-30 20:52:59	kweaver	its stupid
+2013-12-30 21:03:49	kweaver	hey jakenbake, you wanna know another reason why outlook 365 is terrible?  their email forwarding works like 80% of the time, and then the rest, it takes an extra 6-8 hours to deliver
+2013-12-30 21:04:14	kweaver	luckily i checked it today
+2013-12-30 21:04:24	kweaver	but i just finally got an email from this morning
+2013-12-30 21:08:23	jakenbake	oh shit.. i acutally never check mine out
+2013-12-30 21:14:40	kweaver	just set it to forward
+2013-12-30 21:15:18	jakenbake	yeah its on forward but i dont ever log into it
+2013-12-30 21:15:24	kweaver	ok
+2013-12-30 21:15:27	kweaver	yeah they eventually come
+2013-12-30 21:15:31	kweaver	but late 
+2013-12-30 21:15:38	kweaver	i wouldnt worry about it for you
+2013-12-30 21:15:42	kweaver	but i get shit to this every day
+2013-12-30 21:16:09	kweaver	lee said you can set it up to use that email on gmail
+2013-12-30 21:16:19	kweaver	so I told him hes going to show me next time we go to bc
+2013-12-30 21:17:00	kweaver	or rather
+2013-12-30 21:17:16	kweaver	he has it set to go to his gmail and respond to it from there or something
+2013-12-30 21:17:18	kweaver	i forget
+2013-12-30 21:17:39	kweaver	whatever it is, he doesnt use that garbage and im jelly
+2013-12-30 21:19:43	-->	Guest1331 (~cygnus@91.210.103.45) has joined #omnidev
+2013-12-30 21:20:05	jakenbake	yeah thats not too hard to do
+2013-12-30 21:29:09	<--	Guest1331 (~cygnus@91.210.103.45) has quit (Remote host closed the connection)
+2013-12-30 22:01:53	-->	sestrsnal (~sestrsnal@91.210.101.118) has joined #omnidev
+2013-12-30 22:14:28	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2013-12-31 00:37:41	<--	sestrsnal (~sestrsnal@91.210.101.118) has quit (Remote host closed the connection)
+2013-12-31 01:47:55	<--	kweaver_top (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-31 02:16:38	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2013-12-31 02:16:38	--	irc: disconnected from server
+2013-12-31 09:43:33	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2013-12-31 09:43:33	--	Mode #omnidev [+ns] by card.freenode.net
+2013-12-31 09:43:33	--	Nicks #omnidev: [@kweaver]
+2013-12-31 09:43:33	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2013-12-31 09:43:33	--	Mode #omnidev [-o kweaver] by services.
+2013-12-31 09:43:33	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1388501013 to 1337223617
+2013-12-31 09:43:33	--	Mode #omnidev [+ct-s] by services.
+2013-12-31 09:43:33	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2013-12-31 09:43:33	--	Mode #omnidev [+o ChanServ] by services.
+2013-12-31 09:43:34	--	Mode #omnidev [+cnt]
+2013-12-31 09:43:34	--	Channel created on Wed, 16 May 2012 23:00:17
+2013-12-31 09:48:02	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2013-12-31 09:48:08	<--	ChanServ (ChanServ@services.) has left #omnidev
+2013-12-31 09:50:56	jakenbake	kweaver: got yer mail earlier. sorry was in bed at like 9 and just finished trimming the hair and attempted to trim the beard
+2013-12-31 09:51:02	jakenbake	i dont think the nav will be too hard
+2013-12-31 09:51:11	jakenbake	is your fix working in IE??
+2013-12-31 09:51:26	kweaver	my webkit fix?
+2013-12-31 09:51:43	kweaver	yaya, I actually only apply it to webkit browsers
+2013-12-31 09:53:26	kweaver	and its basically just waiting until the slider init is complete, resetting the 3 thumbnail image widths, and re scanning it with my aspect ratio function
+2013-12-31 09:53:27	jakenbake	yeah i saw that
+2013-12-31 09:53:41	jakenbake	we should probably add opera to that mix
+2013-12-31 09:53:51	kweaver	oh yeah
+2013-12-31 09:53:59	jakenbake	i see you used the jsdoc
+2013-12-31 09:54:12	kweaver	I was just going to see if you could add one if statement
+2013-12-31 09:54:15	jakenbake	haha yo i was like oh clean up lemme see... WHAT 200 more lines!~
+2013-12-31 09:54:25	kweaver	hahaha
+2013-12-31 09:54:32	kweaver	yeah im gonna have tom use the same format
+2013-12-31 09:55:54	kweaver	if its not too much trouble, could you just do an if to see if the slider has thumbnail-override set?
+2013-12-31 09:56:14	kweaver	also did we come up with the term data-override or was that a plugin?
+2013-12-31 09:56:15	jakenbake	it does
+2013-12-31 09:56:28	jakenbake	data-override is for thumb overrides
+2013-12-31 09:56:36	jakenbake	data- is whatever you want
+2013-12-31 09:56:42	kweaver	ok
+2013-12-31 09:56:49	jakenbake	theres a few ifs for the thumbnail override kweaver
+2013-12-31 09:56:59	jakenbake	cause it needs it on build and on setting and whatnot
+2013-12-31 09:57:05	jakenbake	is there something specific you need?
+2013-12-31 09:57:07	kweaver	can you just throw an if around my fix call I mean
+2013-12-31 09:57:19	kweaver	so that its only applied if the thumbnail override is set to on
+2013-12-31 09:57:26	jakenbake	oooooh
+2013-12-31 09:57:27	kweaver	just a small efficiency thing
+2013-12-31 09:57:28	jakenbake	i gotchu
+2013-12-31 09:57:30	jakenbake	yeah
+2013-12-31 09:57:39	kweaver	since 95% of sliders probably wont have thumbnail override
+2013-12-31 09:57:57	kweaver	gonna shower really quick and do my IE thing
+2013-12-31 09:58:04	jakenbake	the webkit fix function?
+2013-12-31 09:58:16	jakenbake	im gonna grab breakfast and then fix that nav bug
+2013-12-31 09:59:17	kweaver	yeah ill give you a line #, sec
+2013-12-31 10:01:55	jakenbake	already did it
+2013-12-31 10:02:04	kweaver	delete my comments in line 938 and 939. those were there when I moved it into the function
+2013-12-31 10:02:12	jakenbake	962
+2013-12-31 10:02:22	kweaver	/loop through any slider
+2013-12-31 10:02:28	kweaver	and  //OR DELETE THIS
+2013-12-31 10:02:38	jakenbake	right
+2013-12-31 10:02:43	jakenbake	and then add the check in 962
+2013-12-31 10:02:48	kweaver	yeah
+2013-12-31 10:02:51	jakenbake	so if its webkit and thumnail gen is off
+2013-12-31 10:02:53	kweaver	just && it
+2013-12-31 10:02:54	jakenbake	yep were good
+2013-12-31 10:02:57	jakenbake	its done
+2013-12-31 10:02:58	kweaver	k cool
+2013-12-31 10:03:35	jakenbake	k im gonna get food ill brb
+2013-12-31 10:03:44	kweaver	k see ya
+2013-12-31 10:42:33	jakenbake	yo kweaver you can use vi mode in your sheell
+2013-12-31 10:42:34	jakenbake	shell
+2013-12-31 10:46:09	kweaver	how?
+2013-12-31 10:46:29	jakenbake	set -o vi
+2013-12-31 10:47:07	jakenbake	and if you want backspace you need bindkey "^?" backward-delete-char
+2013-12-31 10:47:19	jakenbake	those in zshrc
+2013-12-31 10:47:44	kweaver	hmmm
+2013-12-31 10:48:04	kweaver	ill try it in a bit, trying to sort out an order for my dads old site
+2013-12-31 10:48:13	kweaver	PWS
+2013-12-31 10:51:03	kweaver	magento didnt create an order or email him, and paypal just knows how much money and who
+2013-12-31 10:51:11	kweaver	so we dont know what items
+2013-12-31 10:51:42	jakenbake	on the first one we did?
+2013-12-31 10:51:44	jakenbake	thats fucking odd
+2013-12-31 10:55:11	kweaver	yeah..
+2013-12-31 10:55:37	kweaver	im destroying that site like next month
+2013-12-31 10:56:21	kweaver	of course its not just a single item where I can compare it to the order number
+2013-12-31 10:56:32	kweaver	and of course its not two of the same item
+2013-12-31 11:04:30	jakenbake	thats shitty
+2013-12-31 11:04:34	jakenbake	talked to dave about config
+2013-12-31 11:04:43	jakenbake	he said hed do it my way. and is walking me through something
+2013-12-31 11:04:49	jakenbake	gonna make that change and then fix the slider
+2013-12-31 11:19:32	jakenbake	kweaver: did you say you fixed the lazy load?
+2013-12-31 11:26:57	kweaver	nah, but itll be easy
+2013-12-31 12:55:48	jakenbake	kweaver: pull down
+2013-12-31 12:55:50	jakenbake	i think
+2013-12-31 12:55:55	jakenbake	its officially fixed
+2013-12-31 12:55:57	jakenbake	with less code to boot
+2013-12-31 12:57:22	kweaver	oh dip
+2013-12-31 12:57:24	kweaver	ill look
+2013-12-31 12:58:09	kweaver	jakenbake: 
+2013-12-31 12:58:17	kweaver	opposite way is still broken
+2013-12-31 12:58:22	kweaver	move nav left and then slide right
+2013-12-31 12:58:33	kweaver	so do whatever you did to both
+2013-12-31 13:01:17	jakenbake	hmm i did
+2013-12-31 13:01:19	jakenbake	so i di something elkse
+2013-12-31 13:01:28	jakenbake	check now haha
+2013-12-31 13:01:29	jakenbake	i think its good now
+2013-12-31 13:01:31	jakenbake	but i never know for sure
+2013-12-31 13:01:38	jakenbake	i just ran some similar tests and didnt get any issues
+2013-12-31 13:02:42	kweaver	nah still broke
+2013-12-31 13:02:46	kweaver	go to slide 5
+2013-12-31 13:02:48	kweaver	nav left
+2013-12-31 13:02:51	kweaver	slide right
+2013-12-31 13:05:58	jakenbake	FUCK
+2013-12-31 13:06:00	jakenbake	okay
+2013-12-31 13:06:03	jakenbake	i think it is now sec commiting
+2013-12-31 13:06:14	kweaver	just try once haha
+2013-12-31 13:06:17	kweaver	and then ill try
+2013-12-31 13:06:27	jakenbake	yeah i did
+2013-12-31 13:06:30	jakenbake	i tried a few ways
+2013-12-31 13:06:32	jakenbake	click nav
+2013-12-31 13:06:36	jakenbake	regular
+2013-12-31 13:06:37	jakenbake	etc
+2013-12-31 13:06:42	jakenbake	alrighty give it your worst
+2013-12-31 13:08:00	kweaver	I think
+2013-12-31 13:08:04	kweaver	shes good
+2013-12-31 13:08:49	jakenbake	yeah.. its about the 14th time ive thought that
+2013-12-31 13:08:50	jakenbake	so
+2013-12-31 13:09:04	jakenbake	my commit might have been FUCK OFF
+2013-12-31 13:09:06	jakenbake	so ignore that
+2013-12-31 13:09:17	kweaver	:}
+2013-12-31 13:09:31	kweaver	G+ real quick so we can discuss final steps
+2013-12-31 14:00:52	kweaver	bleh
+2013-12-31 14:02:45	kweaver	the fix is very easy, but I just need to check for IE8, which can't be done within a css file, only the usual html check <!--[if IE 8]>
+2013-12-31 14:03:27	kweaver	but then ill have to put all the styling in the html as well since we arent allowed to use more than one css file
+2013-12-31 14:04:41	kweaver	so ill probably have to add that to your init function to just generate the IE8 css inline
+2013-12-31 14:16:41	kweaver	maybe not
+2013-12-31 14:21:11	jakenbake	why not check for IE8 and if so add the appropriate class with important?
+2013-12-31 14:21:16	jakenbake	kweaver: lazy load done
+2013-12-31 14:21:51	kweaver	thats even smarter, you brave young man
+2013-12-31 14:21:59	jakenbake	haha i gotchu
+2013-12-31 14:22:03	kweaver	but I think I found a workaround instead
+2013-12-31 14:22:08	kweaver	thats sick though
+2013-12-31 14:22:13	jakenbake	i cant write the CSS.. but i sure know how to fucking avoid it
+2013-12-31 14:22:19	kweaver	lol
+2013-12-31 14:22:32	jakenbake	yeah i had to tweak some shit with what was there
+2013-12-31 14:22:37	jakenbake	but its most def lazy loading
+2013-12-31 14:22:44	jakenbake	and wont try to reload it if already done
+2013-12-31 14:22:52	kweaver	fuck
+2013-12-31 14:22:56	kweaver	found a nav bug jakenbake 
+2013-12-31 14:22:58	kweaver	:(
+2013-12-31 14:23:01	jakenbake	no you didnt
+2013-12-31 14:23:03	jakenbake	fuck off
+2013-12-31 14:23:09	jakenbake	lol what is it
+2013-12-31 14:23:11	kweaver	as soon as you thought you were done
+2013-12-31 14:23:20	kweaver	go to slide 3
+2013-12-31 14:23:23	kweaver	nav right
+2013-12-31 14:23:26	kweaver	slide right
+2013-12-31 14:24:40	kweaver	same with going to the left-most slide in a set
+2013-12-31 14:24:45	kweaver	naving left, then sliding left
+2013-12-31 14:25:26	jakenbake	yeah i know wht it is
+2013-12-31 14:25:34	jakenbake	its why i didnt have this set up the way it is now
+2013-12-31 14:25:40	jakenbake	we got so caught up testing the hard
+2013-12-31 14:25:45	jakenbake	we forgot the easy
+2013-12-31 14:25:49	kweaver	ok
+2013-12-31 14:26:29	kweaver	is that a good thing or a bad thing?
+2013-12-31 14:29:08	jakenbake	not sure
+2013-12-31 14:29:16	jakenbake	well go with its an okay thing
+2013-12-31 14:50:18	jakenbake	alrught
+2013-12-31 14:50:22	jakenbake	I FUCKING SWEAR
+2013-12-31 14:50:25	jakenbake	ITS WORKING
+2013-12-31 14:50:40	kweaver	yeah yeah thats what they all say
+2013-12-31 14:51:00	kweaver	i found this workaround for ie8 and background-size
+2013-12-31 14:51:00	jakenbake	hows your hax coming
+2013-12-31 14:51:08	kweaver	but its just overlaying it twice now..
+2013-12-31 14:51:14	kweaver	broken and less broken
+2013-12-31 14:51:21	kweaver	so i might just do the class thing
+2013-12-31 14:51:37	kweaver	its only play, logo and 4 navs
+2013-12-31 14:51:44	kweaver	all the same fix
+2013-12-31 14:51:45	jakenbake	i mean is a pain. everythings locatable
+2013-12-31 14:51:46	jakenbake	so
+2013-12-31 14:51:54	jakenbake	i have a variable for each of those!
+2013-12-31 14:51:55	jakenbake	boom
+2013-12-31 14:51:57	jakenbake	done
+2013-12-31 14:52:02	kweaver	yeah so ill just do that then
+2013-12-31 14:52:10	kweaver	first ill pull your stuff and look
+2013-12-31 14:52:14	jakenbake	knor asked me to pick up so booze but i called theyre open till 9pm
+2013-12-31 14:52:20	jakenbake	what did you wanna drink tonight
+2013-12-31 14:52:35	kweaver	just grab me whatever i grabbed you at jeffs
+2013-12-31 14:52:38	kweaver	i forget what it was
+2013-12-31 14:52:57	kweaver	ill probably only have 2 tonight
+2013-12-31 14:53:04	jakenbake	dave wants to game so if you give my shit a pass... which at this point i dont even know anymore haha im gonna type of the documenation and queue for a game with him ahd then ill go on booze run
+2013-12-31 14:53:06	jakenbake	LAME
+2013-12-31 14:53:14	jakenbake	but you did have some nasty shit
+2013-12-31 14:53:17	jakenbake	so i understand that
+2013-12-31 14:53:48	kweaver	yeah i feel perfectly fine, but still havent tried anything more dangerous than a gatorade yet
+2013-12-31 14:53:50	kweaver	soo
+2013-12-31 14:54:29	kweaver	alright you can swing by here before as well depending on when youre getting drinks
+2013-12-31 14:55:15	jakenbake	go wild.. straight tequila
+2013-12-31 14:55:23	jakenbake	oddly enough. thats what knor wants me to get
+2013-12-31 14:55:40	kweaver	....
+2013-12-31 14:55:42	kweaver	hes gonna die
+2013-12-31 14:55:54	jakenbake	its for that girl chelsea
+2013-12-31 14:56:03	kweaver	his gf?
+2013-12-31 14:56:08	jakenbake	nah
+2013-12-31 14:56:12	jakenbake	that blonde girl
+2013-12-31 14:56:26	kweaver	he has two girlfriends?!?
+2013-12-31 14:56:29	kweaver	nah i faintly remember
+2013-12-31 14:56:40	jakenbake	haha yeah they have a weird relationship
+2013-12-31 14:56:42	jakenbake	i agree
+2013-12-31 14:56:53	kweaver	yeah thats a little strange
+2013-12-31 14:56:55	jakenbake	she was at jeffs house once upon a time
+2013-12-31 14:56:55	kweaver	but whatevs
+2013-12-31 14:57:16	jakenbake	oh while youre in the css
+2013-12-31 14:57:27	jakenbake	set the slider thumb img {#ffff or whatevers
+2013-12-31 14:57:29	kweaver	jakenbake: 
+2013-12-31 14:57:34	kweaver	you broke your last fix
+2013-12-31 14:58:09	kweaver	nm it might be dif
+2013-12-31 14:58:10	kweaver	sec
+2013-12-31 14:59:37	jakenbake	yeah wait
+2013-12-31 14:59:40	jakenbake	its good from here
+2013-12-31 15:00:06	jakenbake	i tried really hard to break it
+2013-12-31 15:00:18	kweaver	yeah im looking for it again
+2013-12-31 15:00:26	kweaver	of course my mom called and had me do something
+2013-12-31 15:00:32	kweaver	sec
+2013-12-31 15:01:28	kweaver	nevermind I think it might have been those grey images throwing me off
+2013-12-31 15:03:06	kweaver	alright false alarm 
+2013-12-31 15:04:03	jakenbake	haha
+2013-12-31 15:04:12	jakenbake	better be
+2013-12-31 15:05:09	jakenbake	im doing some kind of doc now
+2013-12-31 15:08:01	kweaver	ok put together the meat and ill dress it up 
+2013-12-31 15:08:09	kweaver	like a turkey
+2013-12-31 15:08:16	kweaver	or a corpse
+2013-12-31 15:08:22	kweaver	..
+2013-12-31 15:09:21	jakenbake	lol
+2013-12-31 15:09:25	jakenbake	hahahaha
+2013-12-31 15:09:33	jakenbake	no idea why im laughing so hard at that
+2013-12-31 15:15:07	kweaver	lolol
+2013-12-31 15:15:44	kweaver	I shoulda set "you put the meat 'in it' and ill dress it up" and it would have sounded ever worse
+2013-12-31 15:16:01	kweaver	said**
+2013-12-31 15:20:00	jakenbake	;p;
+2013-12-31 15:45:07	kweaver	jakenbake this ie workaround is a butt
+2013-12-31 15:51:33	jakenbake	the css?
+2013-12-31 15:51:42	kweaver	yeah
+2013-12-31 15:51:47	kweaver	ill end up just doing the class thing
+2013-12-31 15:51:49	jakenbake	the actual css or applying it?
+2013-12-31 15:51:55	kweaver	but the butt is the actual css
+2013-12-31 15:51:58	jakenbake	yeah i thought thats what you decided on
+2013-12-31 15:52:04	jakenbake	oh
+2013-12-31 15:52:28	kweaver	pretzels are ready so im gonna go grab em
+2013-12-31 15:52:40	jakenbake	kk
+2013-12-31 15:55:58	kweaver	alright well jakenbake, matt and amelia dont want to be creative with food idea, so they just want to go in on stuff with you and I
+2013-12-31 15:56:10	kweaver	maybe i should just grab something else little from somewhere
+2013-12-31 15:56:19	kweaver	and we'll split it 5 ways (with danielle too)
+2013-12-31 15:57:12	kweaver	i dont think anyone is bringing any actual food items, so maybe some sort of smallish, actual food item tray
+2013-12-31 16:09:17	jakenbake	we wont be getting a tray of actual food from anywhere
+2013-12-31 16:09:22	jakenbake	its 4pm on NYE
+2013-12-31 16:09:31	jakenbake	almost done this nav
+2013-12-31 16:09:38	jakenbake	doc
+2013-12-31 16:09:43	jakenbake	jesus the nav haunts me
+2013-12-31 16:10:12	jakenbake	whats the third colorscheme
+2013-12-31 16:10:16	jakenbake	kids teens and what
+2013-12-31 16:10:18	jakenbake	i dont see a css for it
+2013-12-31 16:13:42	kweaver	theres only 2 jakenbake 
+2013-12-31 16:13:50	jakenbake	then im good
+2013-12-31 16:13:52	jakenbake	ignore
+2013-12-31 16:13:53	jakenbake	carry on
+2013-12-31 16:13:54	kweaver	haha
+2013-12-31 16:14:00	kweaver	youre thinking of 3 test layouts
+2013-12-31 16:14:01	kweaver	?
+2013-12-31 16:14:59	kweaver	and whats wrong with the nav jakenbake ?
+2013-12-31 16:15:10	kweaver	ohhh youre doing the doc
+2013-12-31 16:22:37	jakenbake	yeah
+2013-12-31 16:22:46	jakenbake	i fuckin just typed it out of frustration
+2013-12-31 16:22:50	jakenbake	i think the navs just fine
+2013-12-31 16:22:55	jakenbake	its been a pain in my dick long enough
+2013-12-31 16:26:48	jakenbake	client notes nemours slider doc if you wanna check it
+2013-12-31 16:26:55	jakenbake	i mean they said small and to the point
+2013-12-31 16:26:58	jakenbake	i think i got that
+2013-12-31 16:27:00	jakenbake	dunno though
+2013-12-31 16:28:00	kweaver	just paste a full example html slider I'd say
+2013-12-31 16:28:23	kweaver	meaning, just the code they would type
+2013-12-31 16:30:28	jakenbake	oh true
+2013-12-31 16:30:29	jakenbake	good idea
+2013-12-31 16:31:03	jakenbake	whats the sass convert command?
+2013-12-31 16:31:08	jakenbake	yes im that lazy
+2013-12-31 16:31:28	jakenbake	nevvermind
+2013-12-31 16:31:29	kweaver	youll wanna convert the haml though
+2013-12-31 16:31:31	jakenbake	disregard me
+2013-12-31 16:31:33	jakenbake	yeah
+2013-12-31 16:31:34	kweaver	just use a converter
+2013-12-31 16:31:35	jakenbake	exaclty
+2013-12-31 16:31:41	kweaver	online
+2013-12-31 16:31:42	kweaver	brb
+2013-12-31 17:19:33	jakenbake	okay kweaver i formatted that ball of code
+2013-12-31 17:19:38	jakenbake	anything else you think should go in it?
+2013-12-31 17:38:46	jakenbake	kayyyyy
+2013-12-31 17:49:39	jakenbake	kweaver: ? need any helps or any ideas for the doc?
+2013-12-31 17:49:50	jakenbake	if not im gona run to the booze store cause its gonna be a while id assume
+2013-12-31 17:49:57	kweaver	im cleaning a couple little things up with it now
+2013-12-31 17:50:06	kweaver	looks good though
+2013-12-31 17:51:23	kweaver	it sucks that this project didnt have us built something that we could use for ourselves too
+2013-12-31 17:51:25	kweaver	haha
+2013-12-31 17:51:32	kweaver	I assume most wont
+2013-12-31 17:52:10	kweaver	but it still would have been nice if it was a cooler javascript plugin
+2013-12-31 17:53:05	jakenbake	yeah most definitely
+2013-12-31 17:53:19	jakenbake	although im pretty confident with dom manipulation and pure js now
+2013-12-31 17:53:28	jakenbake	so maybe we can build shit wed need if a client needed it
+2013-12-31 17:53:40	kweaver	yeah def
+2013-12-31 18:12:29	kweaver	jakenbake: renamed our How To folder Client Documentation
+2013-12-31 18:12:31	kweaver	and moved it in there
+2013-12-31 18:12:35	kweaver	it looked good to me
+2013-12-31 18:12:40	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-02 17:27:03	-->	kweaver_desktop (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-02 17:27:03	--	Nicks #omnidev: [jakenbake kweaver kweaver_desktop]
+2014-01-02 17:27:03	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-01-02 17:27:05	--	Mode #omnidev [+cnt]
+2014-01-02 17:27:05	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-02 18:24:35	<--	jakenbake (~jake@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-02 19:38:25	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-02 19:57:45	jakenbake	kweaver: heres what was crashing it http://stackoverflow.com/questions/723823/why-does-my-website-crash-in-ie
+2014-01-02 19:57:52	jakenbake	still no idea whats causing the other errors
+2014-01-02 19:58:00	jakenbake	but your filter call could be the randocrash
+2014-01-02 20:04:05	jakenbake	tis also leading me to an interesting deduction
+2014-01-02 20:59:35	jakenbake	kweaver: unless maybe they have something... no nevermind we woulda noticed it
+2014-01-02 23:25:16	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-01-03 01:01:32	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-03 10:09:26	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-03 10:09:26	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2014-01-03 10:09:26	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-01-03 10:09:26	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-03 10:09:28	--	Mode #omnidev [+cnt]
+2014-01-03 10:09:28	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-03 10:54:38	kweaver	jh
+2014-01-03 10:54:39	kweaver	jakenbake: 
+2014-01-03 10:54:57	kweaver	Now im getting that IE crash everytime again
+2014-01-03 10:56:51	jakenbake	yeah did you get my link from last night
+2014-01-03 10:56:55	jakenbake	i sent you the reason i think
+2014-01-03 10:56:56	kweaver	yeah i saw
+2014-01-03 10:57:00	jakenbake	its the filters most likely
+2014-01-03 10:57:27	kweaver	well the images being hidden is definitely an issue of my IE fix, not source or anything
+2014-01-03 10:57:41	jakenbake	hmm? not sure what you menq
+2014-01-03 10:57:42	jakenbake	mean
+2014-01-03 10:57:53	jakenbake	the thing with the link i sent you is, your shit is in the dom
+2014-01-03 10:57:57	jakenbake	so its not that it doesnt exist
+2014-01-03 10:58:01	kweaver	yeah yeah def topic
+2014-01-03 10:58:03	jakenbake	but maybe not an IE8 filter?
+2014-01-03 10:58:05	kweaver	diff**
+2014-01-03 10:58:08	kweaver	check licensee
+2014-01-03 10:58:09	kweaver	in IE
+2014-01-03 10:58:22	kweaver	i just commented out my fix and all the images are visible
+2014-01-03 10:58:23	kweaver	just ugly
+2014-01-03 10:58:54	jakenbake	okay sec
+2014-01-03 11:00:17	jakenbake	gonna check this and then run to the wawa.. fuckin throat and sinuses feel like dick
+2014-01-03 11:00:24	jakenbake	gonna get somethin warm before matts meeting
+2014-01-03 11:00:30	jakenbake	which will probably be canceled
+2014-01-03 11:00:54	kweaver	most likely
+2014-01-03 11:02:00	jakenbake	okay. so
+2014-01-03 11:02:03	jakenbake	we know its the filters
+2014-01-03 11:02:05	jakenbake	has to be
+2014-01-03 11:02:08	jakenbake	right?
+2014-01-03 11:03:32	jakenbake	anyways. ill brb its interesting that that fixes it
+2014-01-03 11:54:32	jakenbake	kweaver:  "yeah thats bad, background-size is supported by IE9 only "
+2014-01-03 11:54:35	jakenbake	according to SO
+2014-01-03 11:57:32	jakenbake	http://forums.appthemes.com/report-classipress-bugs/solved-problem-slow-crash-ie-15429/
+2014-01-03 11:57:39	jakenbake	makign a fucking account so i can see the fucking response
+2014-01-03 11:57:41	jakenbake	jesus
+2014-01-03 11:58:17	jakenbake	nevermind
+2014-01-03 11:58:21	jakenbake	its to remove the filter
+2014-01-03 11:58:29	kweaver	bleh
+2014-01-03 12:01:15	kweaver	jakenbake the filters just arent doing anything
+2014-01-03 12:01:34	kweaver	my classes also change height and stuff
+2014-01-03 12:01:43	kweaver	they are all that is actually being applied
+2014-01-03 12:03:51	kweaver	like I just commented out all of the filters, theyre doing nothing
+2014-01-03 12:09:57	jakenbake	It is treated like an image element and not a CSS background-image, so it loses CSS properties like background-position and background-repeat. Also, it's src is relative to the current HTML document unlike a CSS background-image which path is relative to the CSS document.
+2014-01-03 12:10:00	jakenbake	boom
+2014-01-03 12:10:08	jakenbake	only with microsoft
+2014-01-03 12:10:11	jakenbake	could that happen
+2014-01-03 12:11:17	kweaver	ughhh
+2014-01-03 12:11:20	kweaver	alright
+2014-01-03 12:11:23	kweaver	well that answers that
+2014-01-03 12:12:06	kweaver	so now we have to write some javascript to find those images and append that css to the ie8 fix elements
+2014-01-03 12:12:16	jakenbake	kweaver: http://www.jacklmoore.com/notes/ie-transparency-problems/
+2014-01-03 12:12:25	jakenbake	can the first fix work for you?
+2014-01-03 12:12:35	jakenbake	by using a gradient that doesnt actually do anything?
+2014-01-03 12:13:35	kweaver	ill try, but i dont think so.  our issue is the fact that the css is looking in the wrong place for those iamges
+2014-01-03 12:13:48	jakenbake	also say we have shit monday. if he wants to keep dodging calls were not gonna fucking cater to him
+2014-01-03 12:13:59	jakenbake	well if thats the one issue, lets hardcode it first
+2014-01-03 12:14:03	jakenbake	and see what happens
+2014-01-03 12:14:15	kweaver	also, we still have to replace his site and logo
+2014-01-03 12:15:46	jakenbake	oh fuck hahahah
+2014-01-03 12:15:52	jakenbake	totally forgot they changed their shit
+2014-01-03 12:16:24	kweaver	yeah thats why i asked for tuesday
+2014-01-03 12:16:33	kweaver	thought we could do that really quick monday
+2014-01-03 12:17:36	kweaver	i just want to be done nemours so we can get to this shit thats been waiting for a month
+2014-01-03 12:17:40	jakenbake	yeap
+2014-01-03 12:17:53	jakenbake	and were not going to be flexible for the biggest flake in all history
+2014-01-03 12:20:47	jakenbake	kweaver: http://css-tricks.com/perfect-full-page-background-image/  method 2?
+2014-01-03 12:20:49	jakenbake	maybe?
+2014-01-03 12:21:23	jakenbake	it fucks with aspect ratio and shit
+2014-01-03 12:21:25	jakenbake	so probably not
+2014-01-03 12:22:43	kweaver	bmi still has some bugs jakenbake 
+2014-01-03 12:23:07	jakenbake	need me to look into it?
+2014-01-03 12:23:08	kweaver	we might be all hands on deck over there when were done this
+2014-01-03 12:34:32	kweaver	also jakenbake, not to sound any alarms.  he hasnt started print css.  he actually even deleted the couple classes i wrote
+2014-01-03 12:35:07	kweaver	brb
+2014-01-03 12:35:40	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-03 12:35:40	--	Nicks #omnidev: [jakenbake kweaver]
+2014-01-03 12:35:40	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-03 12:35:42	--	Mode #omnidev [+cnt]
+2014-01-03 12:35:42	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-03 12:36:05	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-03 12:36:05	--	Nicks #omnidev: [jakenbake kweaver]
+2014-01-03 12:36:05	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-03 12:36:07	--	Mode #omnidev [+cnt]
+2014-01-03 12:36:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-03 12:45:07	jakenbake	i did find one bug in it kweaver
+2014-01-03 12:45:11	kweaver	i saw
+2014-01-03 12:45:27	jakenbake	but its the only one i found
+2014-01-03 12:45:37	jakenbake	probably simple, but if he doesnt have time to fix it im sure i can find it
+2014-01-03 12:46:56	kweaver	I plotted a point that was prior to all other points in the grph and initially it didnt work
+2014-01-03 12:47:02	kweaver	but now it does
+2014-01-03 12:47:08	jakenbake	ie8?
+2014-01-03 12:47:09	kweaver	so maybe it was out of bounds and didnt tell me
+2014-01-03 12:47:13	kweaver	nah just chrome
+2014-01-03 12:47:15	jakenbake	cause hes got console logs in as well
+2014-01-03 12:47:17	jakenbake	oh okay
+2014-01-03 12:47:20	kweaver	anyway
+2014-01-03 12:47:31	kweaver	i put an absolute path in the filter and it worked fine
+2014-01-03 12:48:34	jakenbake	word?
+2014-01-03 12:48:40	jakenbake	so we just have to get the path appropriately then?
+2014-01-03 12:48:46	jakenbake	sorry i just went on a mad google hunt
+2014-01-03 12:48:54	kweaver	yeah 
+2014-01-03 12:48:56	jakenbake	but other than that, were good? also that explains the crash
+2014-01-03 12:48:58	kweaver	just trying to figure out how now
+2014-01-03 12:49:03	kweaver	it does?
+2014-01-03 12:49:06	jakenbake	cause it was transforming something that didnt exist
+2014-01-03 12:49:08	jakenbake	yeah
+2014-01-03 12:49:10	kweaver	ohhh
+2014-01-03 12:49:11	jakenbake	what it wanted
+2014-01-03 12:49:12	jakenbake	wasnt in the dom
+2014-01-03 12:49:15	kweaver	ok
+2014-01-03 12:49:22	kweaver	fuck you microsoft
+2014-01-03 12:49:50	jakenbake	lol what not?
+2014-01-03 12:49:52	jakenbake	now*
+2014-01-03 12:49:56	kweaver	nah
+2014-01-03 12:49:58	kweaver	just that issue
+2014-01-03 12:50:05	jakenbake	yeah. seriously though
+2014-01-03 12:50:14	kweaver	because they wanted filter to take urls differently
+2014-01-03 12:50:17	kweaver	that doesnt make
+2014-01-03 12:50:18	kweaver	any sense
+2014-01-03 12:50:22	jakenbake	i feel like MS is the king of workarounds. they write workarounds internally
+2014-01-03 12:50:30	kweaver	yeah exactly
+2014-01-03 12:50:34	jakenbake	and then everyone else has to deal cause they get shipped to production
+2014-01-03 12:50:59	kweaver	they have to have 8th graders working there
+2014-01-03 12:51:50	kweaver	since I signed off, i lost what you said earlier about filter paths
+2014-01-03 12:52:03	kweaver	can you paste it again?
+2014-01-03 12:52:23	jakenbake	yeah
+2014-01-03 12:52:38	jakenbake	It is treated like an image element and not a CSS background-image, so it loses CSS properties like background-position and background-repeat. Also, it's src is relative to the current HTML document unlike a CSS background-image which path is relative to the CSS document.
+2014-01-03 12:53:43	kweaver	got it
+2014-01-03 12:53:53	kweaver	so its literally just, remove the "../" from it
+2014-01-03 12:54:00	kweaver	from every image
+2014-01-03 12:54:27	jakenbake	uh yes
+2014-01-03 12:55:52	jakenbake	if were actually done this. im all for helping tom in whatever way i can to get this shipped
+2014-01-03 12:55:54	kweaver	yeah check out licensee
+2014-01-03 12:55:56	kweaver	were good
+2014-01-03 12:56:15	kweaver	ill change these on the server
+2014-01-03 12:56:19	kweaver	you start helping him
+2014-01-03 12:56:25	kweaver	lets G+ and go over final steps for him
+2014-01-03 12:57:38	jakenbake	kweaver:
+2014-01-03 12:57:42	kweaver	ya
+2014-01-03 12:57:42	jakenbake	change them in the code as well
+2014-01-03 12:57:45	kweaver	i am
+2014-01-03 12:58:11	jakenbake	okay.. totally meant repo when i said code
+2014-01-03 12:58:14	jakenbake	but im sure you knew that
+2014-01-03 12:58:19	kweaver	yeah
+2014-01-03 13:03:02	jakenbake	fucking... like if this dude didnt blog that. i never would have found it
+2014-01-03 13:03:37	jakenbake	the actual MSDN page (microsoft not moz. on the fucking filter) does not even say that
+2014-01-03 13:06:03	kweaver	good news is that licensee and mobile look ready to roll
+2014-01-03 13:06:13	kweaver	bad news is mothership keeps crashing so i cant see it
+2014-01-03 13:08:12	kweaver	it didnt crash and looks fine using browserstack
+2014-01-03 13:08:38	kweaver	could just be an issue with my VM? i dunno.  ill keep refreshing browserstack 
+2014-01-03 13:09:15	jakenbake	ill try my vm
+2014-01-03 13:12:09	kweaver	well its done
+2014-01-03 13:12:18	kweaver	and browserstack isnt crashing
+2014-01-03 13:12:23	kweaver	so im good
+2014-01-03 13:12:26	kweaver	slider is done
+2014-01-03 13:12:27	kweaver	out the window
+2014-01-03 13:12:30	kweaver	finished
+2014-01-03 13:13:39	jakenbake	i dont have any issues
+2014-01-03 13:13:49	jakenbake	yeah
+2014-01-03 13:13:56	jakenbake	BOOOM
+2014-01-03 13:13:56	jakenbake	OKAY OFF TO BMITOWN
+2014-01-03 13:14:01	jakenbake	AFTER I POOP
+2014-01-03 13:59:23	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-01-03 14:03:35	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-03 14:15:41	kweaver	gotta call kirk from the jewish foundation
+2014-01-03 14:15:41	kweaver	brb
+2014-01-03 14:22:29	jakenbake	aye sorry my interwebs has been in and out.. mostly out for the past 40min or so
+2014-01-03 14:31:44	kweaver	he didnt answer
+2014-01-03 14:32:02	kweaver	and their site has wayyyyy more functionality than s imple $3k-5k
+2014-01-03 14:32:05	kweaver	simple**
+2014-01-03 14:32:49	kweaver	they have user accounts, donation form, grant application, an in depth calendar, this weird eCard generator to send people eCards
+2014-01-03 14:33:23	kweaver	the user accounts store security questions, user address/info, newsletter preference
+2014-01-03 14:34:02	kweaver	so yet again, brian has set their expectations through the floor, and we get to sound like the dumbies
+2014-01-03 14:34:14	jakenbake	ugh yeah thats really shitty
+2014-01-03 14:34:31	jakenbake	well i dont have a 1k ping. so im back to productive
+2014-01-03 14:34:46	jakenbake	so, they presumably have SSL and some other extensive shit going on
+2014-01-03 14:35:02	jakenbake	i mean for 5k we could squeeze it. if nothing else came up, but really i dont think itd be owrth it
+2014-01-03 14:35:18	kweaver	the weird eCard generator would probably just have to go
+2014-01-03 14:35:34	jakenbake	who the fuck still sends ecards
+2014-01-03 14:35:55	-->	kweaverTop (~Kevin@96.248.78.50) has joined #omnidev
+2014-01-03 14:35:59	kweaverTop	http://jewishbytheshore.org/ecards_home.html
+2014-01-03 14:36:56	jakenbake	lmao
+2014-01-03 14:37:08	kweaverTop	they also have this national directory: http://jewishbytheshore.org/Section.aspx?ID=5
+2014-01-03 14:37:25	kweaverTop	if we would have shown this site to me just once I would have told him $5k+
+2014-01-03 14:37:26	jakenbake	well i think the biggest thing about the port is right there
+2014-01-03 14:37:28	jakenbake	aspx
+2014-01-03 14:37:30	jakenbake	boom
+2014-01-03 14:37:35	jakenbake	full rewrite
+2014-01-03 14:37:44	kweaverTop	yeah def
+2014-01-03 14:38:57	kweaverTop	dude click in that directory
+2014-01-03 14:39:32	kweaverTop	click around in there
+2014-01-03 14:39:44	kweaverTop	recreating that would be like 600+ pages alone
+2014-01-03 14:40:05	kweaverTop	plus its sorted by state
+2014-01-03 14:40:24	jakenbake	yeah its fucking huge
+2014-01-03 14:40:34	jakenbake	man i thought he mighta done okay with 3k - 5k
+2014-01-03 14:40:41	jakenbake	instead cant he just fucking g+ or text us a site
+2014-01-03 14:40:44	jakenbake	while hes with htme
+2014-01-03 14:40:47	jakenbake	and have us quote
+2014-01-03 14:40:51	jakenbake	itd be fucking so much easier
+2014-01-03 14:40:56	jakenbake	theres no way its a 3-5k
+2014-01-03 14:40:59	jakenbake	this is a 10k site
+2014-01-03 14:41:05	kweaverTop	to recreate this site as a full port from asp to a wordpress or drupal site without cutting anything is $10k+
+2014-01-03 14:41:20	jakenbake	this would most liekly have to be drupal
+2014-01-03 14:44:44	kweaverTop	yeah it would
+2014-01-03 14:44:59	kweaverTop	just the national directory alone
+2014-01-03 14:46:00	jakenbake	its entirely too custom to be wordpress unless we wrote a whole plugin
+2014-01-03 15:10:37	kweaver	jakenbake: 
+2014-01-03 15:10:38	kweaver	you there?
+2014-01-03 15:10:40	kweaver	G+ me
+2014-01-03 16:00:16	jakenbake	kweaver:
+2014-01-03 16:00:17	jakenbake	looks good from my house
+2014-01-03 16:00:22	jakenbake	hows the print css?
+2014-01-03 16:01:00	kweaver	its good. the css is basically almost done but i need tom to start appending a lot of extra written shit to the dom
+2014-01-03 16:01:09	kweaver	ill just start styling placeholder data until then
+2014-01-03 16:01:28	jakenbake	what shit?
+2014-01-03 16:01:30	jakenbake	and where
+2014-01-03 16:01:32	jakenbake	i can append it
+2014-01-03 16:01:43	kweaver	you have a printer hooked up?
+2014-01-03 16:01:46	kweaver	would be much faster
+2014-01-03 16:01:52	jakenbake	nope
+2014-01-03 16:01:59	jakenbake	how does a printer affect appending shit to the dom
+2014-01-03 16:02:02	jakenbake	lol
+2014-01-03 16:02:08	kweaver	so i can show you what were appending
+2014-01-03 16:02:19	kweaver	ill have to scan it then
+2014-01-03 16:02:23	jakenbake	i can still print preview it
+2014-01-03 16:02:29	kweaver	ok go to the real site
+2014-01-03 16:02:33	kweaver	put in like 4 points
+2014-01-03 16:02:35	kweaver	and do it up
+2014-01-03 16:03:41	jakenbake	just that massive bs
+2014-01-03 16:03:52	jakenbake	calculating, tracking, etc
+2014-01-03 16:03:54	jakenbake	all that?
+2014-01-03 16:06:14	kweaver	yeah everything under the graph
+2014-01-03 16:06:17	kweaver	needs to be appended
+2014-01-03 16:06:47	jakenbake	everything from BMI charts in bold to the view: desktop you mean
+2014-01-03 16:06:57	jakenbake	i didnt graph anything i just printed it to a pdf
+2014-01-03 16:07:15	kweaver	you need to graph points
+2014-01-03 16:07:22	kweaver	do at least like 3
+2014-01-03 16:07:37	jakenbake	why would i need to graph the text doesnt change
+2014-01-03 16:07:42	jakenbake	im just putting text down
+2014-01-03 16:08:05	kweaver	does it still append the measurements to the bottom?
+2014-01-03 16:08:31	kweaver	basically the bottom lists all the details about each measurement
+2014-01-03 16:11:57	jakenbake	theres not change when i add points
+2014-01-03 16:17:48	jakenbake	so is toms appended shit good?
+2014-01-03 16:17:57	jakenbake	lemme know when i can start building and pushing to the server
+2014-01-03 16:25:30	kweaver	he just needs to add classes any things
+2014-01-03 16:25:41	kweaver	im just styling it with some example data now
+2014-01-03 16:25:48	kweaver	and then when hes done, were good
+2014-01-03 16:25:55	kweaver	hoping another 30 minutes should be good 
+2014-01-03 16:26:21	jakenbake	k... im literally waiting and ready to deploy
+2014-01-03 16:26:24	jakenbake	so as soon as youre good
+2014-01-03 16:30:59	kweaver	jakenbake that you on pnc?
+2014-01-03 16:31:19	kweaver	got a security question wrong email
+2014-01-03 16:31:42	jakenbake	yeah
+2014-01-03 16:31:44	jakenbake	lol
+2014-01-03 16:31:50	jakenbake	pitman was answered 3 times in a row
+2014-01-03 16:31:54	jakenbake	and it said no
+2014-01-03 16:31:58	jakenbake	Pitman and pitman
+2014-01-03 16:32:02	jakenbake	for the sec for middleschool
+2014-01-03 16:32:34	jakenbake	anyways. i was gonna do the split on the money we put in there however long ago.  20% tax, 3% business, rest to us
+2014-01-03 16:32:50	jakenbake	.... kweaver
+2014-01-03 16:32:56	jakenbake	did they merge our accounts?
+2014-01-03 16:33:44	kweaver	whats our user ID
+2014-01-03 16:33:44	jakenbake	oh no they didnt.. holy fuck. nemours cleared already
+2014-01-03 16:33:48	kweaver	just omnidevelopers right?
+2014-01-03 16:33:50	jakenbake	omnidevelopers
+2014-01-03 16:34:05	jakenbake	im in it with my $HARTIGAN43 limited one
+2014-01-03 16:34:05	kweaver	access to that is suspended
+2014-01-03 16:34:09	kweaver	oh haha
+2014-01-03 16:34:11	jakenbake	and i guess i cant see the secondary account
+2014-01-03 16:34:19	kweaver	maybe
+2014-01-03 16:34:28	jakenbake	fuckin nemours already cleared
+2014-01-03 16:34:31	jakenbake	wtf
+2014-01-03 16:34:40	kweaver	thats crazy
+2014-01-03 16:34:43	kweaver	that shit usually takes forever
+2014-01-03 16:35:03	kweaver	anyway jakenbake I just figured for this check we just do 50/50 a
+2014-01-03 16:35:08	kweaver	you and i
+2014-01-03 16:35:11	jakenbake	yeah
+2014-01-03 16:35:11	jakenbake	so
+2014-01-03 16:35:32	kweaver	or 50/50 then subtract the laptops and leave that in the account
+2014-01-03 16:35:41	kweaver	but we can do tax in the next check
+2014-01-03 16:35:45	kweaver	I just need money asap
+2014-01-03 16:35:50	jakenbake	heres what ive got recently.  11/18 - 700, 12/19 - 552
+2014-01-03 16:36:01	jakenbake	those two ill do the 20% 3% split
+2014-01-03 16:36:09	jakenbake	and then ill 5050 the nemours?
+2014-01-03 16:36:15	kweaver	yeah
+2014-01-03 16:36:19	jakenbake	okay.. ill do those now
+2014-01-03 16:36:30	jakenbake	since im in. i cant move anything to the other account so well have to get that later
+2014-01-03 16:36:47	kweaver	but when youre calculating the 50/50, just subtract the laptop prices from each before sending
+2014-01-03 16:36:56	jakenbake	yep
+2014-01-03 16:36:58	jakenbake	mine was 910
+2014-01-03 16:36:59	kweaver	can you pay people on your account?
+2014-01-03 16:37:01	jakenbake	whats yours
+2014-01-03 16:37:05	jakenbake	dunno kweaver
+2014-01-03 16:37:13	kweaver	lemme just open access to the main
+2014-01-03 16:37:15	kweaver	sec
+2014-01-03 16:37:24	jakenbake	yeah i cant haha
+2014-01-03 16:37:35	jakenbake	open it real quick and ill log in properly and handle it
+2014-01-03 16:40:11	kweaver	on the phone now
+2014-01-03 16:43:27	jakenbake	k. fuck lol.  just give me the proper info so i dont fuck it again
+2014-01-03 16:43:29	jakenbake	brb
+2014-01-03 16:45:34	kweaver	so dick, theyre making me pick new ones
+2014-01-03 16:45:36	kweaver	and they all suck
+2014-01-03 16:46:25	jakenbake	yeah theyre fucking terrible
+2014-01-03 16:46:33	jakenbake	mine was what is your oldest siblings nickname
+2014-01-03 16:46:36	jakenbake	WHAT IF THEY DIDNT HAVE ONE?
+2014-01-03 16:46:51	kweaver	remember these: 1. favorite childhood toy:
+2014-01-03 16:46:54	kweaver	nintendo
+2014-01-03 16:46:58	kweaver	2. first pet
+2014-01-03 16:47:00	kweaver	sandy
+2014-01-03 16:47:08	kweaver	3. oldest sibling nickname
+2014-01-03 16:47:09	kweaver	eric
+2014-01-03 16:47:23	kweaver	ok were
+2014-01-03 16:47:25	kweaver	goo
+2014-01-03 16:47:25	kweaver	d
+2014-01-03 16:47:30	jakenbake	written down
+2014-01-03 16:47:31	jakenbake	sounds good
+2014-01-03 16:47:32	kweaver	omnidevelopers//kupomog312
+2014-01-03 16:47:34	jakenbake	ill start the transfer
+2014-01-03 16:47:45	kweaver	lemme get you the laptop amount
+2014-01-03 16:47:49	jakenbake	oh kweaver how much is the laptop
+2014-01-03 16:47:51	jakenbake	ya
+2014-01-03 16:48:27	kweaver	$486.84
+2014-01-03 16:48:31	kweaver	EXACTLY
+2014-01-03 16:48:47	jakenbake	lol
+2014-01-03 16:48:48	kweaver	okay you sort that out
+2014-01-03 16:48:55	jakenbake	so 486
+2014-01-03 16:48:58	kweaver	itd be nice to have that money by monday
+2014-01-03 16:49:04	jakenbake	mine was 909.19 but 910
+2014-01-03 16:49:09	jakenbake	ill eat the change for yours
+2014-01-03 16:49:22	kweaver	im gonna buy that moto x so hard monday
+2014-01-03 16:49:24	jakenbake	yeah sorting now
+2014-01-03 16:50:18	kweaver	and then once youre done sorting it out, pay the amex off and double check to make sure there will be enough left in  the account so we dont overdraw
+2014-01-03 16:50:23	kweaver	thats the last thing we need
+2014-01-03 16:53:25	jakenbake	okay
+2014-01-03 16:53:27	jakenbake	kweaver:
+2014-01-03 16:53:49	kweaver	sup
+2014-01-03 16:54:03	jakenbake	after those two check and nemours, minus our tops - :3991 to me, 4415 to you, 251 to taxes and 38 to business
+2014-01-03 16:54:09	jakenbake	just wanted to show you the numbers
+2014-01-03 16:54:20	jakenbake	i dont like doing money without being all transparent and shit
+2014-01-03 16:54:42	kweaver	wait
+2014-01-03 16:54:46	jakenbake	taxes and business amount are from those two small checks
+2014-01-03 16:55:00	kweaver	4415 would be a full half the check
+2014-01-03 16:55:05	jakenbake	yes
+2014-01-03 16:55:08	kweaver	you have to subtract my laptop
+2014-01-03 16:55:10	jakenbake	i did
+2014-01-03 16:55:17	jakenbake	we had 1200 to split as well
+2014-01-03 16:55:22	kweaver	ohhh
+2014-01-03 16:55:23	kweaver	nicee
+2014-01-03 16:55:27	jakenbake	so i took taxes and business cash out of it
+2014-01-03 16:55:37	jakenbake	and then added those into our amounts and subbed lappys
+2014-01-03 16:55:45	kweaver	so then its 38 business for those 2 checks, and then the cost of both laptops is staying as welll
+2014-01-03 16:55:46	jakenbake	so yeah you actually lost 5$ for that laptop
+2014-01-03 16:55:56	kweaver	I DONT GIVE A FUCK
+2014-01-03 16:55:59	jakenbake	lol
+2014-01-03 16:56:00	kweaver	alright cool
+2014-01-03 16:56:04	kweaver	lets run it
+2014-01-03 16:56:08	jakenbake	so yeah. i didnt tax or business the nemours
+2014-01-03 16:56:10	jakenbake	just the 1200
+2014-01-03 16:56:40	kweaver	1200?
+2014-01-03 16:56:46	kweaver	you mean the two laptops
+2014-01-03 16:57:00	kweaver	which would be 910 + 486
+2014-01-03 16:57:06	jakenbake	bo
+2014-01-03 16:57:09	jakenbake	no
+2014-01-03 16:57:23	jakenbake	there was a 700$ and a 552$ check we never split
+2014-01-03 16:57:26	jakenbake	cause we called it chump change
+2014-01-03 16:57:31	jakenbake	and thought nemours was incoming
+2014-01-03 16:57:50	kweaver	right
+2014-01-03 16:57:53	jakenbake	so i taxed and businessd them
+2014-01-03 16:58:03	jakenbake	which came to 020 taxes and 38 in business
+2014-01-03 16:58:05	jakenbake	split the rest
+2014-01-03 16:58:10	jakenbake	add that split to the nemours splits
+2014-01-03 16:58:19	jakenbake	and then subtracted the laptops from that
+2014-01-03 16:58:23	kweaver	ok
+2014-01-03 16:58:23	jakenbake	so we goods?
+2014-01-03 16:58:25	kweaver	good
+2014-01-03 16:58:27	jakenbake	okay
+2014-01-03 16:58:29	jakenbake	coiol
+2014-01-03 16:58:29	kweaver	gogogo
+2014-01-03 16:58:31	jakenbake	gonna transfer then
+2014-01-03 16:58:51	jakenbake	soon as i login to simple since we cant name our external fucking accounts
+2014-01-03 17:02:32	jakenbake	fuck kweaver
+2014-01-03 17:02:45	jakenbake	uhm.... i cant do another large transfer until tomorrow
+2014-01-03 17:02:52	kweaver	lololol
+2014-01-03 17:02:52	jakenbake	cause the limit is 5k
+2014-01-03 17:02:55	kweaver	thats lameeee
+2014-01-03 17:03:00	jakenbake	im sorry!
+2014-01-03 17:03:01	jakenbake	didnt know
+2014-01-03 17:03:08	kweaver	nah dude........ nah.....
+2014-01-03 17:03:13	kweaver	ill just....
+2014-01-03 17:03:14	kweaver	wait
+2014-01-03 17:03:19	kweaver	hahaha jk its fine
+2014-01-03 17:03:34	jakenbake	well fuck.. so we have to transfer 4415 to your simple tomorrow
+2014-01-03 17:03:43	jakenbake	i shoulda just done yours first after i got my account numbers
+2014-01-03 17:03:54	jakenbake	well since i can still move the taxes out ill do that
+2014-01-03 17:03:57	jakenbake	and pay le amex?
+2014-01-03 17:11:37	jakenbake	okay kweaver... we are apparently in a bit of a pickle on funds.  after paying you, we would ahve 1373.99 in the business account
+2014-01-03 17:11:54	jakenbake	amex is 1434.. wait im doing something wrong with my math
+2014-01-03 17:11:56	jakenbake	i think
+2014-01-03 17:12:34	kweaver	unless there was something extra on amex
+2014-01-03 17:12:38	kweaver	other than the laptops
+2014-01-03 17:12:51	kweaver	like chinese buffet dinner
+2014-01-03 17:13:39	jakenbake	the amex for the period is my gas in november, my laptop, DO, 9$ Lithium, laptop from you, and your gas and 25$ at newegg
+2014-01-03 17:14:36	kweaver	oh bullshit okay the $25 at newegg is a bullshit free windows 8 card they give you
+2014-01-03 17:14:43	kweaver	I guess it required some form of rebate
+2014-01-03 17:14:50	kweaver	in that case, add $25 to the cost of my laptop
+2014-01-03 17:15:00	jakenbake	i mean thats whatever
+2014-01-03 17:15:06	jakenbake	lmao haha
+2014-01-03 17:15:24	jakenbake	but... wed still be 30$ under
+2014-01-03 17:15:29	jakenbake	due to digital ocean
+2014-01-03 17:15:32	jakenbake	so
+2014-01-03 17:15:34	kweaver	well still subtract it if it was actually charged
+2014-01-03 17:15:53	jakenbake	im gonna cancel mine and take an extra $100 off my total
+2014-01-03 17:16:01	jakenbake	that way we dont deplete the business account
+2014-01-03 17:16:09	kweaver	cancel your what
+2014-01-03 17:16:31	jakenbake	the payout to me
+2014-01-03 17:16:40	jakenbake	unless you think that fucks shit in their system
+2014-01-03 17:16:47	jakenbake	ill just cancel one, resend it
+2014-01-03 17:18:49	jakenbake	with the 25 it puts you to 4390, which leaves uss at 1398.99 in the account, which is 34 short of the amex
+2014-01-03 17:22:47	jakenbake	if i knock another 100$ off me and you, it leaves us with 163.57 of funds in the biz account after you get 4290 i get 3891, and taxes out of that other sum
+2014-01-03 17:22:52	jakenbake	that cool kweaver ?
+2014-01-03 17:23:35	jakenbake	well have to give up 100 each for the business
+2014-01-03 17:25:33	jakenbake	just lemme know for sure. im cancelling mine and resending less a hundo
+2014-01-03 17:33:23	jakenbake	so for clarity, 3891 to me (Nemours, twochecks, -910, -100 safety net)  4290 to you (nemours, twochecks, -511, -100 safety net), 1435 to amex, 251 to taxes, 167$ in business account
+2014-01-03 17:33:32	jakenbake	that okay kweaver ^
+2014-01-03 17:33:42	kweaver	sec
+2014-01-03 17:34:26	kweaver	yeah thats fine
+2014-01-03 17:34:36	kweaver	jakenbake: 
+2014-01-03 17:34:44	jakenbake	okay. do you want me to pay amex? i figure we wait till your payment goes through as well
+2014-01-03 17:34:48	jakenbake	then pay the amex
+2014-01-03 17:35:06	kweaver	nah, just pay it now while were sorting shit out
+2014-01-03 17:35:51	jakenbake	okay.  i mean i did the math three times and well be good with the extra 100 out of our shit
+2014-01-03 17:38:39	jakenbake	okay.. were good. i have your total written down, will proceed to pay you at 2am cause they use central time for some reason
+2014-01-03 18:11:41	kweaver	dude you dont have to worry about it at 2
+2014-01-03 18:11:49	kweaver	just do it up tomorrow
+2014-01-03 18:14:33	jakenbake	either or
+2014-01-03 18:14:37	jakenbake	ill probs be up at 2
+2014-01-03 18:14:39	jakenbake	its a friday
+2014-01-03 18:14:46	jakenbake	so why not amirite.jpg
+2014-01-03 18:15:08	kweaver	go for it if youre up
+2014-01-03 18:15:11	kweaver	if not, no worries
+2014-01-03 18:25:07	kweaver	toms working on something with todd, so ill finish appending these elements
+2014-01-03 18:25:23	jakenbake	oh shit i thoght he had ended up doing it
+2014-01-03 18:25:29	jakenbake	lemme know after that ill build and push
+2014-01-03 18:25:33	kweaver	print css is almost done, just need to make a few changes in the javascript
+2014-01-03 18:32:47	kweaver	jakenbake: about to push
+2014-01-03 18:33:29	kweaver	if you could just take the classes I have in measurement.html and make the appended classes the same, we will be done
+2014-01-03 18:34:42	jakenbake	hmmm?
+2014-01-03 18:34:51	jakenbake	what do oyu mean by append the same?
+2014-01-03 18:35:00	kweaver	in other words
+2014-01-03 18:35:47	kweaver	i made a file called measurements.html to show tom exactly the html that I wanted for the print.  he already has a function that appends all of it, but I made some changes to the html
+2014-01-03 18:35:55	kweaver	so you need to go into his function and update it
+2014-01-03 18:35:59	kweaver	almost done
+2014-01-03 18:36:27	jakenbake	oooh okay
+2014-01-03 18:36:35	jakenbake	make his match your external one
+2014-01-03 18:44:58	kweaver	correct
+2014-01-03 18:45:00	kweaver	pushed jakenbake 
+2014-01-03 18:45:59	kweaver	he already has appending finished, you just need to change around some class names
+2014-01-03 18:46:36	kweaver	he said that he appended that class description with the paragraphs, but i didnt notice it in there, so you might need to append that text too
+2014-01-03 18:47:41	kweaver	youll also need to add some strong tags.  youll see them though
+2014-01-03 18:47:42	kweaver	brb
+2014-01-04 12:03:21	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-04 12:03:21	--	Mode #omnidev [+ns] by asimov.freenode.net
+2014-01-04 12:03:21	--	Nicks #omnidev: [@kweaver]
+2014-01-04 12:03:21	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-04 12:03:21	--	Mode #omnidev [-o kweaver] by services.
+2014-01-04 12:03:21	--	Notice(asimov.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1388855222 to 1337223617
+2014-01-04 12:03:21	--	Mode #omnidev [+ct-s] by services.
+2014-01-04 12:03:21	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-04 12:03:21	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-04 12:03:24	--	Mode #omnidev [+cnt]
+2014-01-04 12:03:24	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-05 01:30:13	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-05 01:30:13	--	irc: disconnected from server
+2014-01-05 16:04:38	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-05 16:04:38	--	Nicks #omnidev: [@ChanServ jakenbake kweaver]
+2014-01-05 16:04:38	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-01-05 16:04:40	--	Mode #omnidev [+cnt]
+2014-01-05 16:04:40	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-05 16:04:45	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-05 16:49:41	jakenbake	almost done commenting toms code
+2014-01-05 17:02:34	jakenbake	kweaver: pull in a minute
+2014-01-05 17:02:45	kweaver	no you pull
+2014-01-05 17:03:07	kweaver	I just made a couple small fixes to one of the long lines 
+2014-01-05 17:03:51	jakenbake	no
+2014-01-05 17:03:53	jakenbake	you merge!
+2014-01-05 17:04:03	jakenbake	i nearly commented the whole thing!
+2014-01-05 17:04:15	jakenbake	got like 3 more functions
+2014-01-05 17:04:22	kweaver	well i already pushed a few minutes ago
+2014-01-05 17:04:28	kweaver	should just be one line in js 
+2014-01-05 17:14:46	jakenbake	k its done
+2014-01-05 23:23:12	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-05 23:23:12	--	irc: disconnected from server
+2014-01-06 09:28:24	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-06 09:28:24	--	Mode #omnidev [+ns] by calvino.freenode.net
+2014-01-06 09:28:24	--	Nicks #omnidev: [@kweaver]
+2014-01-06 09:28:24	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-06 09:28:24	--	Mode #omnidev [-o kweaver] by services.
+2014-01-06 09:28:24	--	Notice(calvino.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389018504 to 1337223617
+2014-01-06 09:28:24	--	Mode #omnidev [+ct-s] by services.
+2014-01-06 09:28:24	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-06 09:28:24	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-06 09:28:27	--	Mode #omnidev [+cnt]
+2014-01-06 09:28:27	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-06 10:42:39	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-06 10:42:39	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-06 10:50:29	kweaver	jakenbake: 
+2014-01-06 10:50:34	kweaver	dlenny is in the room
+2014-01-06 10:50:58	kweaver	so we can discuss here
+2014-01-06 10:51:07	jakenbake	ah yeah sorry
+2014-01-06 10:51:21	jakenbake	fucking fidelity let my grandmothers accounts get cleared out
+2014-01-06 10:51:28	jakenbake	account email and password changed
+2014-01-06 10:51:32	jakenbake	all without confirming for he
+2014-01-06 10:51:36	jakenbake	her*
+2014-01-06 10:51:50	jakenbake	and they wont do anything until her PC is "free of viruses"
+2014-01-06 10:52:06	jakenbake	lile their gross oversight of basic account security is the end users fault
+2014-01-06 10:52:58	kweaver	christ
+2014-01-06 10:53:21	jakenbake	email to some scumbag, and fucking all further cash to some bitch in Miami florida
+2014-01-06 10:53:29	jakenbake	didnt raise a single flag that the names arent the sam
+2014-01-06 10:53:39	jakenbake	that moneys never been given to either
+2014-01-06 10:53:44	kweaver	thats horrific security
+2014-01-06 10:54:20	jakenbake	been on the phone for a while, they wont even hear it from me because im not the account holder
+2014-01-06 10:56:17	kweaver	but theyre cool with transfering all funds to someone else
+2014-01-06 11:00:03	jakenbake	yeah dude totally
+2014-01-06 11:00:07	jakenbake	anyways
+2014-01-06 11:00:23	jakenbake	any idea whats causing it? i looked into it last night some and got absolutely nowhere
+2014-01-06 11:00:31	jakenbake	everything is on the dom and when its outside their container
+2014-01-06 11:00:36	jakenbake	you just get a white line
+2014-01-06 13:53:03	jakenbake	kweaver: swipe works everywhere but very randomly on chrome for android
+2014-01-06 13:53:16	kweaver	lol
+2014-01-06 13:53:18	kweaver	oh well
+2014-01-06 13:53:32	kweaver	they wont remember anyway
+2014-01-06 13:53:34	jakenbake	yeah
+2014-01-06 13:53:39	jakenbake	i did it on ios with bstack
+2014-01-06 13:54:27	jakenbake	yeah. gonna push the change to the code in a sec
+2014-01-06 14:03:17	jakenbake	hows the print issue kweaver ?
+2014-01-06 14:10:51	kweaver	almost done
+2014-01-06 14:11:13	kweaver	once it is we can build it and ill send out this email
+2014-01-06 14:11:16	jakenbake	cool. do we have anything else? or can i run over to my grandmoms?
+2014-01-06 14:11:28	kweaver	yeah youre good to go
+2014-01-06 14:14:26	jakenbake	word. well ill have my laptop on me over there
+2014-01-06 14:14:37	jakenbake	so ill be online as well
+2014-01-06 14:26:03	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 276 seconds)
+2014-01-06 15:28:30	-->	jakenbake (~jake@c-68-46-125-73.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-06 16:59:44	<--	jakenbake (~jake@c-68-46-125-73.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-01-06 17:03:26	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-06 17:03:26	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2014-01-06 17:03:26	--	Nicks #omnidev: [@kweaver]
+2014-01-06 17:03:26	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-06 17:03:26	--	Mode #omnidev [-o kweaver] by services.
+2014-01-06 17:03:26	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389045806 to 1337223617
+2014-01-06 17:03:26	--	Mode #omnidev [+ct-s] by services.
+2014-01-06 17:03:26	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-06 17:03:26	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-06 17:03:28	--	Mode #omnidev [+cnt]
+2014-01-06 17:03:28	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-06 17:35:59	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-06 17:35:59	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-06 19:03:12	--	irc: disconnected from server
+2014-01-06 19:03:36	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-06 19:03:36	--	Nicks #omnidev: [jakenbake kweaver]
+2014-01-06 19:03:36	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-06 19:03:39	--	Mode #omnidev [+cnt]
+2014-01-06 19:03:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-06 22:00:09	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-06 22:26:39	kweaver_laptop	jakenbake:
+2014-01-06 22:28:45	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-01-07 00:59:08	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-07 00:59:08	--	irc: disconnected from server
+2014-01-07 08:58:45	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-07 08:58:45	--	Mode #omnidev [+ns] by cameron.freenode.net
+2014-01-07 08:58:45	--	Nicks #omnidev: [@kweaver]
+2014-01-07 08:58:45	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-07 08:58:45	--	Mode #omnidev [-o kweaver] by services.
+2014-01-07 08:58:45	--	Notice(cameron.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389103128 to 1337223617
+2014-01-07 08:58:45	--	Mode #omnidev [+ct-s] by services.
+2014-01-07 08:58:45	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-07 08:58:45	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-07 08:58:47	--	Mode #omnidev [+cnt]
+2014-01-07 08:58:47	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-07 15:15:37	-->	jakenbake (~jake@68.44.222.82) has joined #omnidev
+2014-01-07 15:15:37	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-07 15:16:29	jakenbake	yoyo kweaver sorry i woke up this morning and felt like shit, really achy flu like so i decided to set the alarm ofr another half hour
+2014-01-07 15:16:34	jakenbake	never made it after that
+2014-01-07 15:16:47	jakenbake	anyways. im pretty sure i did give kcc email. lemme try and get in there
+2014-01-07 15:19:26	kweaver	yeah lemme know if you find it.  if not we need to make her an email
+2014-01-07 15:19:34	kweaver	cause she asked me for the login creds like 2 months ago
+2014-01-07 15:19:49	kweaver	though I dont think she was in much of a rush with it
+2014-01-07 15:19:53	kweaver	she just reminded me
+2014-01-07 15:24:29	jakenbake	well the mx records are on her domain
+2014-01-07 15:24:35	jakenbake	but ms seems to think it doesnt exisat
+2014-01-07 15:43:09	kweaver	jakenbake G+?
+2014-01-07 15:52:25	jakenbake	 uh sure
+2014-01-07 15:52:27	jakenbake	theres contact
+2014-01-07 15:52:34	jakenbake	and jwhite@kingscustomclothiers.com
+2014-01-07 15:52:50	kweaver	pass?
+2014-01-07 15:53:21	jakenbake	not sure. probably etiw312!
+2014-01-07 15:53:26	jakenbake	just got into the account
+2014-01-07 15:53:34	jakenbake	kept forgettting ms admin accounts are @outlook
+2014-01-07 15:54:36	jakenbake	etih312!
+2014-01-07 15:54:39	jakenbake	kw
+2014-01-07 15:54:40	jakenbake	kweaver:
+2014-01-07 15:54:48	jakenbake	shes all setup
+2014-01-07 15:54:53	kweaver	ok
+2014-01-07 15:54:59	jakenbake	i put the admin creds online until i can go through the migratio
+2014-01-07 16:06:47	kweaver	www.kmwmotorsports.com/admin
+2014-01-07 16:07:20	kweaver	user: kmw@kmwmotorsports.com
+2014-01-07 16:07:29	kweaver	oops
+2014-01-07 16:07:45	kweaver	user: kmwmotorsports@gmail.com
+2014-01-07 16:07:51	kweaver	pass: kmwkmw123
+2014-01-07 16:23:50	kweaver	jakenbake: let me know when you have cushy configured and ill email KMW
+2014-01-07 16:47:48	jakenbake	just a sec. plugging it into cushy
+2014-01-07 16:52:34	jakenbake	kweaver: cushy says shes good to go
+2014-01-07 17:11:08	kweaver	email sent jakenbake 
+2014-01-07 17:11:51	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-07 17:11:51	--	irc: disconnected from server
+2014-01-08 09:58:08	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-08 09:58:08	--	Mode #omnidev [+ns] by hubbard.freenode.net
+2014-01-08 09:58:08	--	Nicks #omnidev: [@kweaver]
+2014-01-08 09:58:08	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-08 09:58:08	--	Mode #omnidev [-o kweaver] by services.
+2014-01-08 09:58:08	--	Notice(hubbard.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389193092 to 1337223617
+2014-01-08 09:58:08	--	Mode #omnidev [+ct-s] by services.
+2014-01-08 09:58:08	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-08 09:58:08	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-08 09:58:11	--	Mode #omnidev [+cnt]
+2014-01-08 09:58:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-08 12:46:04	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-08 12:46:04	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-08 12:52:36	jakenbake	well i fell asleep kinda early last night so i didnt resize or update the server. ill got for that tonight
+2014-01-08 12:52:58	jakenbake	did you get my messages about his db export having conflicts and using greeek characters in row names?
+2014-01-08 12:53:47	kweaver	yeah, you get the email I cced you in?
+2014-01-08 12:54:02	kweaver	I asked him for a new db export and then full drupal install files
+2014-01-08 12:55:05	jakenbake	yaya. just wasnt sure if my messages in here last night got to you
+2014-01-08 12:55:42	kweaver	yeah
+2014-01-08 13:02:06	kweaver	jakenbake: check the omni developers client note
+2014-01-08 13:02:25	kweaver	The full to do list is pretty huge, but most tasks are relatively small
+2014-01-08 13:08:48	jakenbake	yeah kweaver you cant keep them
+2014-01-08 13:09:02	jakenbake	i thought wed be able to change the domain with domains.live
+2014-01-08 13:09:03	jakenbake	but no
+2014-01-08 13:09:06	jakenbake	you have to recreate them
+2014-01-08 13:09:19	kweaver	do they at least have an export function?
+2014-01-08 13:11:22	jakenbake	not within the account manager
+2014-01-08 13:11:34	jakenbake	you can manage multiple domains with one account
+2014-01-08 13:11:38	jakenbake	but they are all separate
+2014-01-08 13:12:04	jakenbake	i mean. its their fault, not ours, so they can deal with those repurcussions, we dont have to take down their other mail
+2014-01-08 13:23:58	kweaver	jakenbake, unrelated but read this question and answer.  http://answers.microsoft.com/en-us/outlook_com/forum/oadmincenter-ocustomdom/transfer-domain-with-all-its-email-accounts-to/3541bfb6-fa9b-468c-9307-0d60d8bcbd8b?msgId=588cb534-d0ac-46e4-b465-a5d696b413d6
+2014-01-08 13:24:04	kweaver	I hope im reading this wrong
+2014-01-08 13:24:12	kweaver	"Deleting them will take up to 365 days and you can re-use them only after that period."
+2014-01-08 13:25:11	jakenbake	yeah thats how they do it
+2014-01-08 13:25:14	jakenbake	you cannot transfer
+2014-01-08 13:25:20	jakenbake	we can make new ones @tenco
+2014-01-08 13:25:24	jakenbake	and keep their old ones
+2014-01-08 13:25:27	jakenbake	but they cannot transfer
+2014-01-08 13:26:00	kweaver	what is microsoft doing over there
+2014-01-08 13:27:00	jakenbake	its the 8th graders
+2014-01-08 13:27:47	kweaver	thinking they need to hold a few of them back next year
+2014-01-08 13:29:59	jakenbake	yeah i mean this is the company that JUST added IMAP to mail
+2014-01-08 13:43:15	jakenbake	kweaver: want me to follow up with holdbrook / have the paid us?
+2014-01-08 13:45:00	kweaver	sure.  they have not paid yet
+2014-01-08 13:45:31	jakenbake	alrighty. so we have the one invoice out. and honestly should probably send the other eventually
+2014-01-08 13:45:41	jakenbake	ill email them with a hi happy new yea
+2014-01-08 13:45:45	jakenbake	fucking pay us
+2014-01-08 13:45:47	jakenbake	sorta deal
+2014-01-08 13:45:59	jakenbake	gonna get some food then ill tackle them
+2014-01-08 13:46:05	jakenbake	literally
+2014-01-08 13:46:55	kweaver	about how much should be included in the second invoice?
+2014-01-08 13:47:06	jakenbake	whatever hours we didnt invoice
+2014-01-08 13:47:08	jakenbake	its not alot
+2014-01-08 13:47:10	kweaver	i forget how many other hours it was
+2014-01-08 13:47:12	jakenbake	its just been a long time
+2014-01-08 13:47:14	kweaver	but yeah
+2014-01-08 13:47:16	kweaver	we should send that too
+2014-01-08 13:47:59	kweaver	just email her and let her know that we will be sending the next invoice with the remaining hours that occured after the first invoice
+2014-01-08 15:10:47	jakenbake	kweaver: would you like me to clone rpw and the db and get the other site at least prepped for ya?
+2014-01-08 15:11:01	jakenbake	also if you have new header images ill put them on tenbrook and whatnot
+2014-01-08 15:15:01	kweaver	sure jakenbake 
+2014-01-08 15:15:08	kweaver	I can recreate the new header image
+2014-01-08 15:16:37	jakenbake	yeah sure
+2014-01-08 15:16:44	jakenbake	ill clone all that shit for your dads other site
+2014-01-08 16:59:44	jakenbake	wtf does have you consulted brian flaim mean
+2014-01-08 16:59:49	jakenbake	their email costs money too
+2014-01-08 16:59:56	jakenbake	business can stop being cheapasses
+2014-01-08 17:21:20	kweaver	hahah I was going to ask you the same thing jakenbake 
+2014-01-08 17:21:24	kweaver	its insane
+2014-01-08 17:22:22	kweaver	too often I've seen business trying to save every possible cent they can, and end up spending way more in the process
+2014-01-08 17:22:25	kweaver	its painful to watch
+2014-01-08 17:27:18	jakenbake	oh shit i thought you were calling me
+2014-01-08 17:27:23	jakenbake	no wonder it didnt answer
+2014-01-08 17:27:25	jakenbake	woops lol
+2014-01-08 17:27:32	jakenbake	just missed a call from someone
+2014-01-08 17:27:35	kweaver	holdbrook just called 
+2014-01-08 17:27:43	kweaver	just missed it by a sec while i was shaving
+2014-01-08 17:27:59	kweaver	you wanna call back since you just sent the email?
+2014-01-08 17:28:20	kweaver	im gonna finish shaving haha
+2014-01-08 17:28:23	jakenbake	nah. they dont believe in leaving messages
+2014-01-08 17:28:34	jakenbake	oh she emailed too
+2014-01-08 17:28:37	jakenbake	said check is ready
+2014-01-08 17:28:40	jakenbake	do we want to pick it up
+2014-01-08 17:28:42	jakenbake	lol
+2014-01-08 17:29:01	jakenbake	totally thought you were sending hangouts cause all my shit was rinigng but no notifications on any pc
+2014-01-08 17:29:08	jakenbake	and then fucking couldnt do anything when i clicked on you
+2014-01-08 17:29:15	jakenbake	no indication of anything else antqhere
+2014-01-08 17:29:22	kweaver	of course
+2014-01-08 17:29:44	kweaver	well I dont mind seeing their place, but I also dont want it to turn into a thing right from the first check
+2014-01-08 17:30:13	kweaver	I dunno, maybe we should just swing by and meet everyone
+2014-01-08 17:30:43	kweaver	they seem like they have money and potential.  we could probably spare a couple hours and start to establish that relationship
+2014-01-08 17:31:24	jakenbake	yeah its probably good to meet them all once
+2014-01-08 17:31:31	kweaver	you wanna ask if theres a time/day that would be less busy so we can swing by and meet everyone
+2014-01-08 17:31:33	jakenbake	put my dick on their counter
+2014-01-08 17:31:40	kweaver	yeah exactly
+2014-01-08 17:32:07	kweaver	ive got like 10 black jokes for wendiezel
+2014-01-08 17:32:21	jakenbake	seriously
+2014-01-08 17:32:33	jakenbake	omg.. is he our first black client?
+2014-01-08 17:32:40	kweaver	hahahaha
+2014-01-08 17:32:41	kweaver	I think so
+2014-01-08 17:32:53	jakenbake	sheeeeeet
+2014-01-08 17:32:57	kweaver	unless maybe....  mark maraist is an albino never nude
+2014-01-08 17:33:11	jakenbake	anyways im gonna email chris and brandon about their email pricing and making sure it has a catch all
+2014-01-08 17:33:35	kweaver	yeah sounds good.  just cc me, not matt
+2014-01-08 17:33:42	kweaver	we'll talk to matt when its done
+2014-01-08 17:34:06	jakenbake	yeah had no intentions of having matt in the conversation
+2014-01-08 17:34:10	jakenbake	like youre a fucking dentist
+2014-01-08 17:34:13	jakenbake	i know you guys have the money
+2014-01-08 17:35:00	kweaver	and its not even one.  dude owns a chain of them.  I think he can afford real email
+2014-01-08 17:35:48	kweaver	this might not be fair.. but I still blame bflaim.  He started this entire conversation off on the bare bones low end for no reason
+2014-01-08 17:36:13	kweaver	dudes could have potentially been one of our bigger clients
+2014-01-08 17:40:02	jakenbake	yeah it really couldbe
+2014-01-08 17:40:08	jakenbake	5 or 6 dental offices
+2014-01-08 17:40:15	jakenbake	opening a fucking online distribution network
+2014-01-08 17:40:18	jakenbake	i think they have cash
+2014-01-08 17:40:25	jakenbake	bflaim said he wrote what, a check for 60k?
+2014-01-08 17:40:30	jakenbake	for the half of the year?
+2014-01-08 17:40:39	kweaver	yeah
+2014-01-08 17:40:47	kweaver	we definitely got shafted there
+2014-01-08 17:41:17	jakenbake	120k / year... site will be 4 - 6k and 300 yearly
+2014-01-08 17:41:19	jakenbake	lolol
+2014-01-08 17:41:25	jakenbake	coulda been a solid 10-15k
+2014-01-08 17:42:33	kweaver	that was still the earlier days so we cant be too pissed.  even though brian still has a fascination with ballparking everything himself, I think hes slowly beginning to understand the time investment
+2014-01-08 17:42:57	jakenbake	yeah i think weve got a much better handle on pricing
+2014-01-08 17:43:01	jakenbake	like holdbrook is great for us
+2014-01-08 17:43:03	jakenbake	good rate for us and them
+2014-01-08 17:43:10	jakenbake	but tenbrook coulda been better
+2014-01-08 17:43:15	kweaver	yeah def
+2014-01-08 17:43:16	jakenbake	GTA was probably in the right ballpark
+2014-01-08 17:43:22	jakenbake	nemours is/was fucking perfect
+2014-01-08 17:43:28	jakenbake	really hoping we get another project
+2014-01-08 17:43:29	kweaver	you still not feelin peebs?
+2014-01-08 17:43:35	kweaver	I think jeff should be home soon
+2014-01-08 17:43:41	kweaver	Ill probably head out shortly
+2014-01-08 17:44:05	kweaver	actually he just called
+2014-01-08 17:44:11	kweaver	hes swinging by to grab me
+2014-01-08 17:44:22	kweaver	come to PBs if youre feeling better jakenbake 
+2014-01-08 17:44:24	jakenbake	yeah ill pass for now. thanks though. i am feeling decent but had a later lunch and not really hungry
+2014-01-08 17:44:25	kweaver	ill bbl
+2014-01-08 17:44:27	jakenbake	thanks though kweaver
+2014-01-08 17:44:29	jakenbake	lates
+2014-01-08 17:44:30	kweaver	later
+2014-01-08 17:45:03	jakenbake	tell em all i said hi
+2014-01-08 17:45:06	jakenbake	i havent been in forever
+2014-01-08 17:48:57	jakenbake	also kweaver if youre still here
+2014-01-08 17:49:02	jakenbake	feels fucking great to be paid
+2014-01-08 17:49:05	jakenbake	lol
+2014-01-08 19:50:08	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-08 19:50:08	--	irc: disconnected from server
+2014-01-09 09:32:25	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-09 09:32:25	--	Mode #omnidev [+ns] by sendak.freenode.net
+2014-01-09 09:32:25	--	Nicks #omnidev: [@kweaver]
+2014-01-09 09:32:25	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-09 09:32:25	--	Mode #omnidev [-o kweaver] by services.
+2014-01-09 09:32:25	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389277946 to 1337223617
+2014-01-09 09:32:25	--	Mode #omnidev [+ct-s] by services.
+2014-01-09 09:32:25	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-09 09:32:25	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-09 09:32:27	--	Mode #omnidev [+cnt]
+2014-01-09 09:32:27	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-09 12:54:27	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-09 12:54:27	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-09 12:56:19	jakenbake	so i spawned a new server so we could use the 40G we pay for, but everytime i changed an IP address it said it was invalid
+2014-01-09 12:56:31	jakenbake	so i just restored our image last night
+2014-01-09 12:56:44	jakenbake	dunno wtf that was about or why we couldnt change the ip addess
+2014-01-09 13:01:00	kweaver	thats odd
+2014-01-09 13:02:35	jakenbake	yeah everytime.. im just thinking now. i wonder if it was a copy paste thing and there where characters in there
+2014-01-09 13:02:41	jakenbake	like ^D or something
+2014-01-09 14:26:40	jakenbake	reading his email now
+2014-01-09 14:26:46	jakenbake	kweaver: can you nslookup our domain
+2014-01-09 14:26:49	jakenbake	tell me the ip
+2014-01-09 14:27:20	kweaver	192.241.159.117
+2014-01-09 14:28:29	jakenbake	oh word
+2014-01-09 14:28:34	jakenbake	fuckin my ends backed up then
+2014-01-09 14:28:38	jakenbake	does all our shit work for you
+2014-01-09 14:28:43	kweaver	that the new site?
+2014-01-09 14:28:45	jakenbake	can you check the dev links and shit
+2014-01-09 14:28:47	jakenbake	yeah i moved it
+2014-01-09 14:28:52	kweaver	yeah the site loads
+2014-01-09 14:28:55	jakenbake	just making sure nothing broke before moving everyone else
+2014-01-09 14:29:30	kweaver	sec
+2014-01-09 14:29:41	kweaver	can you nslookup specific pages?
+2014-01-09 14:29:50	kweaver	nslookup http://omni-dev.com/old.php
+2014-01-09 14:30:05	kweaver	saids it cant be find
+2014-01-09 14:31:21	jakenbake	if you load it or nslookup?
+2014-01-09 14:31:30	kweaver	it loads
+2014-01-09 14:31:34	jakenbake	mines loading but i think im loading the old shit
+2014-01-09 14:31:43	jakenbake	well nslookup failing there doesnt bother me
+2014-01-09 14:31:46	kweaver	its probably fine then
+2014-01-09 14:31:48	jakenbake	oms2?
+2014-01-09 14:31:53	jakenbake	oms2.omni-dev.com
+2014-01-09 14:31:56	jakenbake	**
+2014-01-09 14:31:58	jakenbake	if that works
+2014-01-09 14:32:01	jakenbake	then ill move everyone over
+2014-01-09 14:35:17	kweaver	well
+2014-01-09 14:35:18	kweaver	it loads
+2014-01-09 14:35:24	kweaver	still getting a cant find
+2014-01-09 14:35:26	kweaver	nslookup
+2014-01-09 14:35:47	jakenbake	nslookup is nameservers
+2014-01-09 14:35:47	kweaver	nevermind, the http throws it off
+2014-01-09 14:35:49	jakenbake	not for pages
+2014-01-09 14:35:51	jakenbake	yeah
+2014-01-09 14:36:17	kweaver	so you loaded the new server with just our site first?
+2014-01-09 14:39:06	jakenbake	yeah
+2014-01-09 14:39:11	jakenbake	well i moved our host ip
+2014-01-09 14:39:14	jakenbake	thats all
+2014-01-09 14:39:19	jakenbake	the other sites are all on there
+2014-01-09 14:54:21	jakenbake	kweaver: just swapped everyone
+2014-01-09 14:54:24	jakenbake	ill brgb
+2014-01-09 14:54:29	jakenbake	should be 10 min for dns propigation
+2014-01-09 14:56:09	kweaver	k
+2014-01-09 14:56:29	kweaver	writing up some info about the katz site and then ill G+ you
+2014-01-09 14:56:43	kweaver	they wouldnt have trouble getting me ftp access
+2014-01-09 14:56:53	kweaver	shouldnt**
+2014-01-09 15:44:22	kweaver	G+ me when youre free jakenbake 
+2014-01-09 21:39:30	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 252 seconds)
+2014-01-09 22:09:46	--	irc: disconnected from server
+2014-01-09 22:10:12	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-09 22:10:12	--	Mode #omnidev [+ns] by leguin.freenode.net
+2014-01-09 22:10:12	--	Nicks #omnidev: [@kweaver]
+2014-01-09 22:10:12	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-09 22:10:12	--	Mode #omnidev [-o kweaver] by services.
+2014-01-09 22:10:12	--	Notice(leguin.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389323518 to 1337223617
+2014-01-09 22:10:12	--	Mode #omnidev [+ct-s] by services.
+2014-01-09 22:10:12	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-09 22:10:12	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-09 22:10:14	--	Mode #omnidev [+cnt]
+2014-01-09 22:10:14	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-10 09:48:08	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-10 09:48:08	--	Mode #omnidev [+ns] by dickson.freenode.net
+2014-01-10 09:48:08	--	Nicks #omnidev: [@kweaver]
+2014-01-10 09:48:08	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-10 09:48:08	--	Mode #omnidev [-o kweaver] by services.
+2014-01-10 09:48:08	--	Notice(dickson.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389365288 to 1337223617
+2014-01-10 09:48:08	--	Mode #omnidev [+ct-s] by services.
+2014-01-10 09:48:08	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-10 09:48:08	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-10 09:48:10	--	Mode #omnidev [+cnt]
+2014-01-10 09:48:10	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-10 11:01:40	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-10 11:01:40	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-10 11:05:13	jakenbake	kweaver: db restart fixed it
+2014-01-10 11:05:16	jakenbake	but it wasnt down
+2014-01-10 11:12:29	jakenbake	did you update crossfit to 3.8?
+2014-01-10 11:26:45	kweaver	nah
+2014-01-10 11:26:50	kweaver	jakenbake: 
+2014-01-10 11:27:11	kweaver	must have been one of them
+2014-01-10 11:27:31	kweaver	that was back when I gave client admin accounts by default instead of editor accounts
+2014-01-10 11:27:31	jakenbake	its odd their access logs say 3.8
+2014-01-10 11:27:40	kweaver	yeah im in the backend now, its 3.8
+2014-01-10 11:27:41	jakenbake	yeah most likely
+2014-01-10 11:43:38	jakenbake	http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/ good reasd
+2014-01-10 11:43:42	jakenbake	read*
+2014-01-10 11:57:24	jakenbake	kweaver:  im gonna grab some food and get showered ill call ya after but sbux?
+2014-01-10 12:07:07	<--	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 252 seconds)
+2014-01-10 13:14:10	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-10 13:57:05	jakenbake	http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/
+2014-01-10 13:58:07	-->	kweaverTop (~Kevin@dhcp-arubawireless-210-101.rowan.edu) has joined #omnidev
+2014-01-10 13:58:27	jakenbake	http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/
+2014-01-10 14:10:54	<--	kweaverTop (~Kevin@dhcp-arubawireless-210-101.rowan.edu) has quit (Read error: Connection reset by peer)
+2014-01-10 14:19:16	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-10 15:12:35	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 252 seconds)
+2014-01-10 15:16:03	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 272 seconds)
+2014-01-10 23:34:14	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-11 11:23:05	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-11 11:23:05	--	Mode #omnidev [+ns] by wolfe.freenode.net
+2014-01-11 11:23:05	--	Nicks #omnidev: [@kweaver]
+2014-01-11 11:23:05	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-11 11:23:05	--	Mode #omnidev [-o kweaver] by services.
+2014-01-11 11:23:05	--	Notice(wolfe.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389457385 to 1337223617
+2014-01-11 11:23:05	--	Mode #omnidev [+ct-s] by services.
+2014-01-11 11:23:05	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-11 11:23:05	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-11 11:23:07	--	Mode #omnidev [+cnt]
+2014-01-11 11:23:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-11 13:01:57	--	irc: disconnected from server
+2014-01-11 13:02:23	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-11 13:02:23	--	Mode #omnidev [+ns] by pratchett.freenode.net
+2014-01-11 13:02:23	--	Nicks #omnidev: [@kweaver]
+2014-01-11 13:02:23	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-11 13:02:23	--	Mode #omnidev [-o kweaver] by services.
+2014-01-11 13:02:23	--	Notice(pratchett.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389463345 to 1337223617
+2014-01-11 13:02:23	--	Mode #omnidev [+ct-s] by services.
+2014-01-11 13:02:23	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-11 13:02:23	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-11 13:02:25	--	Mode #omnidev [+cnt]
+2014-01-11 13:02:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-13 09:19:24	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-13 09:19:25	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2014-01-13 09:19:25	--	Nicks #omnidev: [@kweaver]
+2014-01-13 09:19:25	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-13 09:19:25	--	Mode #omnidev [-o kweaver] by services.
+2014-01-13 09:19:25	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389622765 to 1337223617
+2014-01-13 09:19:25	--	Mode #omnidev [+ct-s] by services.
+2014-01-13 09:19:25	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-13 09:19:25	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-13 09:19:27	--	Mode #omnidev [+cnt]
+2014-01-13 09:19:27	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-13 10:08:10	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-13 10:08:10	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-13 10:08:29	jakenbake	mannn no one ever answers fucking phones
+2014-01-13 10:08:43	jakenbake	didnt realize i never signed onto the old ircs
+2014-01-13 10:11:19	jakenbake	hopefully appel goes better, kelly is suppsoed to call back shortly though
+2014-01-13 10:13:05	jakenbake	also did you see cabot this morning kweaver ?
+2014-01-13 10:13:37	kweaver	carbot you mean?
+2014-01-13 10:15:57	jakenbake	nahhttp://cabotapp.com/
+2014-01-13 10:16:03	jakenbake	nah http://cabotapp.com/   *
+2014-01-13 10:16:08	jakenbake	but is there a new starcrafts?
+2014-01-13 10:16:12	jakenbake	cause thatd be cool
+2014-01-13 10:16:57	kweaver	hahah not sure
+2014-01-13 10:17:01	kweaver	that looks cool though
+2014-01-13 10:17:25	kweaver	throw it on the to do list and check it out
+2014-01-13 10:17:38	kweaver	the important thing is notifying mysql issues
+2014-01-13 10:18:02	kweaver	or rather, the important thing that monnit and uptime dont currently cover
+2014-01-13 10:20:18	kweaver	anyway, emily wants to do tomorrow for her call
+2014-01-13 10:20:34	kweaver	jakenbake you should just call kelly back again shortly
+2014-01-13 10:20:53	kweaver	I just did marks update
+2014-01-13 10:22:55	kweaver	also, read over the state of the game I wrote up last night and respond to my email
+2014-01-13 10:23:03	kweaver	gonna shower and head to the tech park
+2014-01-13 10:23:34	jakenbake	aye. yeah i was just gonna do marks shit
+2014-01-13 10:46:12	kweaver	brian just texted me "we are going to call on some web leads when you get there"
+2014-01-13 10:46:24	kweaver	hes pretty cryptic
+2014-01-13 10:46:38	kweaver	i guess its related to the "5 new sites" HE GOT US
+2014-01-13 10:47:10	jakenbake	dude
+2014-01-13 10:47:33	kweaver	its going to be that company again
+2014-01-13 10:47:35	kweaver	i know it
+2014-01-13 10:47:38	jakenbake	one day. well get a fucking text.  I need you here now, bring fertilizer and lye, also we have leads
+2014-01-13 10:47:40	kweaver	dino design or whatever
+2014-01-13 10:47:48	kweaver	hahaha
+2014-01-13 10:48:04	jakenbake	turns out, were just working for chabit and meeting leads
+2014-01-13 10:48:17	jakenbake	but hell make it fucking cryptic body burial status
+2014-01-13 11:37:04	-->	kweaver_laptop (~kweaver@dhcp-arubawireless-210-87.rowan.edu) has joined #omnidev
+2014-01-13 11:43:29	<--	kweaver_laptop (~kweaver@dhcp-arubawireless-210-87.rowan.edu) has quit (Ping timeout: 248 seconds)
+2014-01-13 11:50:52	-->	kweaver_laptop (~kweaver@dhcp-arubawireless-210-87.rowan.edu) has joined #omnidev
+2014-01-13 11:51:34	kweaver_laptop	jakenbake:
+2014-01-13 11:51:42	kweaver_laptop	at the techpark now with brian
+2014-01-13 11:52:16	kweaver_laptop	the cubicle they bought is that relatively small one that's along the big window
+2014-01-13 11:52:38	kweaver_laptop	when youre facing that big one by the window, its to the left
+2014-01-13 11:53:20	kweaver_laptop	basically right next to those little private meeting offices
+2014-01-13 12:03:40	jakenbake	gotchu
+2014-01-13 12:03:47	jakenbake	so they went ahead and grabbed her up eh
+2014-01-13 12:06:48	<--	kweaver_laptop (~kweaver@dhcp-arubawireless-210-87.rowan.edu) has quit (Ping timeout: 276 seconds)
+2014-01-13 15:36:47	kweaver	sup jakenbake 
+2014-01-13 15:54:13	kweaver	brb
+2014-01-13 15:54:22	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-13 16:18:54	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-13 16:18:54	--	Nicks #omnidev: [jakenbake kweaver]
+2014-01-13 16:18:54	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-13 16:18:56	--	Mode #omnidev [+cnt]
+2014-01-13 16:18:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-13 16:37:21	kweaver	you there jakenbake ?
+2014-01-13 17:31:05	jakenbake	found a 4.4.2 supposedly stable rom for my xoom
+2014-01-13 17:31:08	jakenbake	gonna tinker with it
+2014-01-13 17:31:48	jakenbake	also kweaver was there something with our server or was their report about candm an uptime bug
+2014-01-13 17:38:49	kweaver	i just forwarded it when I saw, but I remembered they arent even on our server
+2014-01-13 17:39:06	kweaver	thats the internal BC server
+2014-01-13 17:40:30	jakenbake	lolol so why did they ask us haha
+2014-01-13 17:41:35	kweaver	cause brandon dont know bout servers
+2014-01-13 21:44:01	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-13 21:44:01	--	irc: disconnected from server
+2014-01-14 09:09:08	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-14 09:09:08	--	Mode #omnidev [+ns] by adams.freenode.net
+2014-01-14 09:09:08	--	Nicks #omnidev: [@kweaver]
+2014-01-14 09:09:08	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-14 09:09:08	--	Mode #omnidev [-o kweaver] by services.
+2014-01-14 09:09:08	--	Notice(adams.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389708548 to 1337223617
+2014-01-14 09:09:08	--	Mode #omnidev [+ct-s] by services.
+2014-01-14 09:09:08	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-14 09:09:08	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-14 09:09:10	--	Mode #omnidev [+cnt]
+2014-01-14 09:09:10	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-14 13:13:04	-->	jakenbake (~jake@dhcp-143-215.rowan.edu) has joined #omnidev
+2014-01-14 13:13:04	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-14 13:21:40	<--	jakenbake (~jake@dhcp-143-215.rowan.edu) has quit (Ping timeout: 272 seconds)
+2014-01-14 13:25:57	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-14 13:27:20	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-14 13:35:31	kweaver_laptop	jakenbake:  theres a guy in line that looks like a bigger, version of gale from breaking bad
+2014-01-14 13:53:21	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 272 seconds)
+2014-01-14 13:56:30	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-14 13:57:11	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Read error: Connection reset by peer)
+2014-01-14 14:01:21	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-14 14:22:10	kweaver_laptop	jakenbake:  sup?
+2014-01-14 14:22:27	kweaver_laptop	this woman hates drupal
+2014-01-14 14:22:34	kweaver_laptop	haha
+2014-01-14 14:22:37	jakenbake	lol
+2014-01-14 14:22:39	jakenbake	really
+2014-01-14 14:22:41	jakenbake	oh
+2014-01-14 14:22:48	jakenbake	i meant say requires more maintenence
+2014-01-14 14:22:54	jakenbake	insteead of break
+2014-01-14 14:22:58	jakenbake	just a jargon thingy
+2014-01-14 14:30:47	jakenbake	kweaver_laptop: broke our backups
+2014-01-14 14:30:55	jakenbake	so were about 5 days behind
+2014-01-14 14:31:02	jakenbake	but i fixed them
+2014-01-14 14:36:20	jakenbake	not to rush you at all kweaver_laptop andy just text me and asked for an ETA
+2014-01-14 14:36:32	jakenbake	told him at least a half hour
+2014-01-14 14:37:17	jakenbake	hes coming here
+2014-01-14 15:10:52	<--	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2014-01-14 15:13:18	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 276 seconds)
+2014-01-15 15:58:20	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-15 15:58:20	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2014-01-15 15:58:20	--	Nicks #omnidev: [@kweaver]
+2014-01-15 15:58:20	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-15 15:58:20	--	Mode #omnidev [-o kweaver] by services.
+2014-01-15 15:58:20	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389819501 to 1337223617
+2014-01-15 15:58:20	--	Mode #omnidev [+ct-s] by services.
+2014-01-15 15:58:20	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-15 15:58:20	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-15 15:58:23	--	Mode #omnidev [+cnt]
+2014-01-15 15:58:23	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-15 16:24:50	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-15 16:24:50	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-15 16:27:01	kweaver	just talked to stacey jakenbake.  pretty brief since she was actually on vacation during the incident.  I wrote up some notes in their client notes.  she did, however, forward me the server logs that Creative gave them.  I put them in /Client Notes/Katz_JCC_access_log.txt
+2014-01-15 16:27:38	kweaver	creative said that all of the internal IPs became black listed
+2014-01-15 16:27:45	kweaver	thats what happened with flanders twice
+2014-01-15 16:30:23	jakenbake	lol who runs these servers
+2014-01-15 16:30:45	kweaver	company called creative
+2014-01-15 16:31:25	jakenbake	and who runs their internal networks
+2014-01-15 16:31:28	kweaver	but apparently, there is another company called Enom, that also has access to them.  while the sites were down internally, they contacted Enom to troubleshoot the situation
+2014-01-15 16:31:30	jakenbake	one of the two are at fault
+2014-01-15 16:31:41	kweaver	enom could be the internal guys
+2014-01-15 16:31:46	kweaver	im not sure exactly
+2014-01-15 16:32:30	kweaver	and by internal, i mean runs the internal network
+2014-01-15 16:34:07	kweaver	im writting up and email between you, me, chris, brandon with all of the info that we know
+2014-01-15 16:34:14	kweaver	and to see what they think
+2014-01-15 16:36:29	jakenbake	imma look at the logs
+2014-01-15 16:40:39	jakenbake	lmao
+2014-01-15 16:40:42	jakenbake	is creative a real company
+2014-01-15 16:40:47	jakenbake	they literally sent them access logs
+2014-01-15 16:40:53	jakenbake	like literal apache access logs
+2014-01-15 16:41:07	jakenbake	so it shows all successful accesses to the site through fucking apache
+2014-01-15 16:41:09	jakenbake	not error logs
+2014-01-15 16:41:12	jakenbake	not warnings
+2014-01-15 16:41:14	jakenbake	jesus fucking christ
+2014-01-15 16:43:51	jakenbake	kweaver: that log is absolutely useless and creative sent it because either A) theyre just as useless or B) they are sending them knowing no one at katz jcc can do anything with it
+2014-01-15 16:46:39	kweaver	hahahaha
+2014-01-15 16:46:42	kweaver	thats hilarious
+2014-01-15 16:46:53	kweaver	i just look at it
+2014-01-15 16:48:58	kweaver	so when the flanders network ip was blacklisted twice
+2014-01-15 16:49:09	kweaver	one time it was because someone failed to log in 20 times
+2014-01-15 16:49:35	kweaver	the other time, one of their email accounts was spamming emails for some reason
+2014-01-15 16:49:49	jakenbake	well apache logs.. access logs for that matter
+2014-01-15 16:49:51	jakenbake	do one thing
+2014-01-15 16:49:55	jakenbake	show successful requests
+2014-01-15 16:50:12	jakenbake	for them to be banned for failed logins would be by creative
+2014-01-15 16:50:14	jakenbake	not internal
+2014-01-15 16:50:34	jakenbake	and for internal ban out there, could be spam, but not likely
+2014-01-15 16:51:01	kweaver	if it was related to the store, it could have been the fact that the store was set to send emails as kathy.  and maybe when kathy tried to buy store items from kathy, kathy started spamming herself
+2014-01-15 16:51:05	jakenbake	unless the spam was going from and to katzjcc domains, therefore their internal network was getting spammed by the external mail server
+2014-01-15 16:55:14	kweaver	basically, im just going to tell them that if creative doesnt know the difference between access logs and error logs, then it is probably important for them to consider leaving their hosting, regardless of who the move to
+2014-01-15 16:55:52	jakenbake	i mean thats a valid statment
+2014-01-15 16:55:59	jakenbake	cause its only A or B above
+2014-01-15 16:56:00	jakenbake	thats it
+2014-01-15 16:56:27	kweaver	so ill tell them, since we dont have access to the server, it will make more sense to just do the transfer first, and then once it's on our server, we can work on bringing the store back online in a way that wont bring the site down internally
+2014-01-15 16:56:38	jakenbake	yo kweaver do you think your dad will mind if we do the prices in the AM?  i dont think ive got the energy for some focus on tedious shit, was just gonna test out my fixes on nemours
+2014-01-15 16:56:54	jakenbake	i mean its totally valid
+2014-01-15 16:56:59	jakenbake	without access to their internal config though
+2014-01-15 16:57:04	jakenbake	we dont know if its an internal block
+2014-01-15 16:57:18	jakenbake	but it doesnt change the fact that creative is either incompetent or trying to pull the wool over on them
+2014-01-15 16:57:36	kweaver	yeah thats fine
+2014-01-15 16:58:34	jakenbake	all them changes and comparing sheets just feels like a  9am coffee slutrush to me ya know
+2014-01-15 16:58:38	jakenbake	and i dont even know what a slutrush is
+2014-01-15 17:00:04	kweaver	yeah i agree
+2014-01-15 17:00:18	kweaver	plus i still have like 5 more important emails to write tonight
+2014-01-15 17:01:01	jakenbake	well do your emails.. and if you want CC me in on like two-three cause I feel like theres never a good way to pass me the buck and handle half the client contact load
+2014-01-15 17:01:45	jakenbake	are they bc jawnskimailers? cause i have forwarding on
+2014-01-15 17:03:05	kweaver	nah, all omni.  Ill CC you, and once anything gets moving with any of the clients, ill delegate
+2014-01-15 17:04:08	jakenbake	okay thats cool.  i jsut feel bad you get the mail or call from brian / ken / etc and then it takes forever for it to come my way
+2014-01-15 17:07:20	kweaver	http://www.theverge.com/2014/1/15/5311948/net-neutrality-and-the-death-of-the-internet
+2014-01-15 17:07:21	kweaver	:(
+2014-01-15 17:07:47	kweaver	the more I read, the more sad it makes me
+2014-01-15 17:08:25	jakenbake	dude
+2014-01-15 17:08:29	jakenbake	shit could get really ugly
+2014-01-15 17:08:31	jakenbake	real fast
+2014-01-15 17:59:43	jakenbake	well not sure if i fixed it or not. browsertack basically unusable
+2014-01-15 17:59:51	jakenbake	when my sister gets home ill user her laptop and tablet
+2014-01-15 18:08:57	kweaver	jakenbake, do you pay for hbo at your house?
+2014-01-15 18:13:01	jakenbake	uh. i think we have it
+2014-01-15 18:13:02	jakenbake	or we did
+2014-01-15 18:13:05	jakenbake	ill have to try and login
+2014-01-15 18:13:08	jakenbake	we got the free shit
+2014-01-15 18:13:12	jakenbake	then my fam didnt cancel
+2014-01-15 18:13:15	jakenbake	dunno if i still have iut
+2014-01-15 18:13:32	jakenbake	sup kweaver
+2014-01-15 18:15:16	kweaver	i just realized HBO Go comes free if you already pay for HBO
+2014-01-15 18:15:21	kweaver	so i figured id use it
+2014-01-15 18:15:28	jakenbake	yessir
+2014-01-15 18:16:04	kweaver	and im using their sign in for verizon fios customers and its broken
+2014-01-15 18:16:51	kweaver	you sign in, and then it takes you to an broken, offcentered iframe. and when you adjust the clientside width of the iframe, you see that its actually just another sign in page that doesnt nothing when you sign in
+2014-01-15 18:16:57	jakenbake	lmao.  yeah id have to get my moms email and password if we still have it
+2014-01-15 18:17:04	jakenbake	haha
+2014-01-15 18:17:31	kweaver	ill try it on the app
+2014-01-15 18:17:32	jakenbake	try separate browser / android app?
+2014-01-15 18:20:29	kweaver	it worked fine on the android app
+2014-01-15 18:20:45	kweaver	well if it turns out you dont have it, ill test it out on multiple devices first
+2014-01-15 18:21:04	kweaver	and if theyre like hulu and netflix and dont care how many devices access it, ill give you my info
+2014-01-15 18:22:16	jakenbake	pimp. ill check and see again as well
+2014-01-15 18:52:22	kweaver	jakenbake: got a bunch of kcups to bring tomorrow.  
+2014-01-15 18:53:10	kweaver	we could probably also grab cream to label and throw in the fridge if we wanted
+2014-01-15 18:56:10	jakenbake	i think youre jumpin on the office thing too hard
+2014-01-15 18:56:15	jakenbake	we dont want it to become a thing for bc
+2014-01-15 18:56:21	jakenbake	im all for having the cups and shit though
+2014-01-15 18:56:47	kweaver	yeah i bought kcups for home too
+2014-01-15 18:56:53	jakenbake	just dont wanna be there like 5 days in a row and then all of a sudden its 'wtf youre not in the office'
+2014-01-15 18:56:57	jakenbake	and then its all weird
+2014-01-15 18:57:01	jakenbake	and were not wearing pants
+2014-01-15 18:57:07	kweaver	yeah true
+2014-01-15 18:57:16	kweaver	i honestly dont think we'll ever see anyone from bc
+2014-01-15 18:57:31	jakenbake	nah i dont think we will either
+2014-01-15 18:57:36	kweaver	and if it did ever happen and they wanted a desk, we just hop over to bradm
+2014-01-15 18:57:44	jakenbake	i just mean in terms of them sending someone or phones
+2014-01-15 19:00:04	kweaver	brb
+2014-01-15 19:04:57	kweaver	jakenbake, next check, we should set asside like $100 in the biz account and start putting all of our wawa coffee on the amex
+2014-01-15 19:05:09	kweaver	i know its little, but we might as well so that its not always you paying
+2014-01-15 19:06:02	jakenbake	its a smart idea
+2014-01-15 19:08:40	jakenbake	so firefox mobile works great. cant get swipe on chrome mobile and sometimes on browser
+2014-01-15 19:08:46	jakenbake	but i locked it in place like they had asked
+2014-01-15 19:13:05	jakenbake	does look fine enough in browserstack until my sister gives me a real ios device to tesst
+2014-01-16 00:09:46	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-16 00:09:46	--	irc: disconnected from server
+2014-01-16 22:45:30	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-16 22:45:30	--	Mode #omnidev [+ns] by hobana.freenode.net
+2014-01-16 22:45:30	--	Nicks #omnidev: [@kweaver]
+2014-01-16 22:45:30	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-16 22:45:30	--	Mode #omnidev [-o kweaver] by services.
+2014-01-16 22:45:30	--	Notice(hobana.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1389930330 to 1337223617
+2014-01-16 22:45:30	--	Mode #omnidev [+ct-s] by services.
+2014-01-16 22:45:30	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-16 22:45:30	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-16 22:45:32	--	Mode #omnidev [+cnt]
+2014-01-16 22:45:33	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-16 23:54:14	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-16 23:54:14	--	irc: disconnected from server
+2014-01-18 12:10:04	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-18 12:10:04	--	Mode #omnidev [+ns] by adams.freenode.net
+2014-01-18 12:10:04	--	Nicks #omnidev: [@kweaver]
+2014-01-18 12:10:04	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-18 12:10:04	--	Mode #omnidev [-o kweaver] by services.
+2014-01-18 12:10:04	--	Notice(adams.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390065008 to 1337223617
+2014-01-18 12:10:04	--	Mode #omnidev [+ct-s] by services.
+2014-01-18 12:10:04	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-18 12:10:04	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-18 12:10:06	--	Mode #omnidev [+cnt]
+2014-01-18 12:10:06	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-18 22:52:20	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-18 22:52:20	--	Mode #omnidev [+ns] by dickson.freenode.net
+2014-01-18 22:52:20	--	Nicks #omnidev: [@kweaver]
+2014-01-18 22:52:20	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-18 22:52:21	--	Mode #omnidev [-o kweaver] by services.
+2014-01-18 22:52:21	--	Notice(dickson.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390103541 to 1337223617
+2014-01-18 22:52:21	--	Mode #omnidev [+ct-s] by services.
+2014-01-18 22:52:21	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-18 22:52:21	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-18 22:52:22	--	Mode #omnidev [+cnt]
+2014-01-18 22:52:22	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-18 23:27:44	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-18 23:27:44	--	irc: disconnected from server
+2014-01-19 10:39:36	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-19 10:39:36	--	Mode #omnidev [+ns] by rajaniemi.freenode.net
+2014-01-19 10:39:36	--	Nicks #omnidev: [@kweaver]
+2014-01-19 10:39:36	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-19 10:39:36	--	Notice(rajaniemi.freenode.net) -> #omnidev: [freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup
+2014-01-19 10:39:36	--	Mode #omnidev [-o kweaver] by services.
+2014-01-19 10:39:36	--	Notice(rajaniemi.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390145989 to 1337223617
+2014-01-19 10:39:36	--	Mode #omnidev [+ct-s] by services.
+2014-01-19 10:39:36	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-19 10:39:36	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-19 10:39:39	--	Mode #omnidev [+cnt]
+2014-01-19 10:39:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-19 18:16:53	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-19 18:16:53	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-19 19:52:09	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2014-01-19 20:07:49	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-19 23:03:41	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-01-20 00:28:13	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-20 00:28:13	--	irc: disconnected from server
+2014-01-20 09:01:01	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-20 09:01:01	--	Mode #omnidev [+ns] by kornbluth.freenode.net
+2014-01-20 09:01:01	--	Nicks #omnidev: [@kweaver]
+2014-01-20 09:01:01	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-20 09:01:01	--	Mode #omnidev [-o kweaver] by services.
+2014-01-20 09:01:01	--	Notice(kornbluth.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390226467 to 1337223617
+2014-01-20 09:01:01	--	Mode #omnidev [+ct-s] by services.
+2014-01-20 09:01:01	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-20 09:01:01	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-20 09:01:03	--	Mode #omnidev [+cnt]
+2014-01-20 09:01:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-20 14:42:34	-->	jakenbake (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-20 14:42:34	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-20 15:36:43	jakenbake	is orderdeck blocked?
+2014-01-20 15:53:16	kweaver	shouldnt be jakenbake 
+2014-01-20 15:53:21	kweaver	were all in there
+2014-01-20 16:00:35	jakenbake	i cant join it
+2014-01-20 16:06:16	jakenbake	says i need to be identified
+2014-01-20 16:10:54	kweaver	lemme see with tom
+2014-01-20 16:11:04	jakenbake	no biggie or anything
+2014-01-20 16:11:06	jakenbake	just odd
+2014-01-20 16:11:27	kweaver	he might have put a registration requirement to avoid the random bot joins
+2014-01-20 16:11:37	kweaver	have you tried registering your nick with freenode?
+2014-01-20 16:14:21	--	jakenbake is now known as jhartigan
+2014-01-20 16:14:53	jhartigan	yeah he did
+2014-01-20 19:55:30	<--	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 272 seconds)
+2014-01-20 22:56:41	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-20 22:56:41	--	irc: disconnected from server
+2014-01-21 09:05:41	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-21 09:05:41	--	Mode #omnidev [+ns] by sendak.freenode.net
+2014-01-21 09:05:41	--	Nicks #omnidev: [@kweaver]
+2014-01-21 09:05:41	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-21 09:05:41	--	Mode #omnidev [-o kweaver] by services.
+2014-01-21 09:05:41	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390313142 to 1337223617
+2014-01-21 09:05:41	--	Mode #omnidev [+ct-s] by services.
+2014-01-21 09:05:41	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-21 09:05:41	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-21 09:05:41	--	Mode #omnidev [+cnt]
+2014-01-21 09:05:41	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-21 11:09:52	-->	jakenbake (~jake@96.248.78.50) has joined #omnidev
+2014-01-21 11:09:53	--	jakenbake is now known as jhartigan
+2014-01-21 11:09:53	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-21 12:00:12	<--	jhartigan (~jake@96.248.78.50) has quit (Ping timeout: 252 seconds)
+2014-01-21 12:53:59	-->	jakenbake (~jake@dhcp-143-84.rowan.edu) has joined #omnidev
+2014-01-21 12:57:38	--	jakenbake is now known as jhartigan
+2014-01-21 12:59:34	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 13:04:27	<--	jhartigan (~jake@dhcp-143-84.rowan.edu) has quit (Ping timeout: 272 seconds)
+2014-01-21 13:12:11	-->	jakenbake (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 13:16:33	--	jakenbake is now known as jhartigan
+2014-01-21 14:01:40	jhartigan	kweaver:
+2014-01-21 14:01:46	jhartigan	kweaver_laptop: dont have ot move
+2014-01-21 14:01:54	jhartigan	can use his with proper mx shits
+2014-01-21 14:18:39	jhartigan	https://github.com/google/ios-webkit-debug-proxy
+2014-01-21 14:27:22	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2014-01-21 15:04:42	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:05:23	<--	jhartigan (~jake@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 264 seconds)
+2014-01-21 15:05:50	-->	jhartigan (~jake@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:08:01	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:08:19	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:12:28	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:12:44	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:15:02	jhartigan	----
+2014-01-21 15:15:13	kweaver_laptop	gi
+2014-01-21 15:15:14	kweaver_laptop	-----
+2014-01-21 15:15:29	jhartigan	   /set irc.server_default.sasl_mechanism dh-blowfish
+2014-01-21 15:15:37	jhartigan	   /set irc.server.oftc.sasl_username "mynick"
+2014-01-21 15:15:39	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:15:43	jhartigan	   /set irc.server.oftc.sasl_password *********
+2014-01-21 15:15:57	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:18:08	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:18:25	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:19:28	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:19:40	jhartigan	   /set irc.server.freenode.command "/msg NICKSERV identify password"
+2014-01-21 15:19:42	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:19:48	jhartigan	   /set irc.server.freenode.command "/msg NICKSERV identify password"
+2014-01-21 15:20:52	<--	jhartigan (~jake@ip-64-134-241-205.public.wayport.net) has quit (Quit: WeeChat 0.4.2)
+2014-01-21 15:21:11	-->	jakenbake (~jhartigan@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:22:08	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Client Quit)
+2014-01-21 15:22:25	-->	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has joined #omnidev
+2014-01-21 15:42:25	<--	kweaver_laptop (~kweaver@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 272 seconds)
+2014-01-21 15:51:50	<--	jakenbake (~jhartigan@ip-64-134-241-205.public.wayport.net) has quit (Ping timeout: 260 seconds)
+2014-01-21 16:45:02	-->	jakenbake (~jhartigan@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-21 16:48:38	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-21 17:20:05	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2014-01-21 17:28:45	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-21 17:33:18	kweaver_laptop	gpg --export-secret-keys >keyfile
+2014-01-21 17:53:06	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-01-21 17:54:20	-->	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-01-21 20:16:57	<--	jakenbake (~jhartigan@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2014-01-21 20:19:13	<--	kweaver_laptop (~kweaver@pool-173-72-100-113.cmdnnj.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2014-01-21 21:54:57	<--	kweaver (~kweaver@96.248.78.50) has quit (Quit: WeeChat 0.4.2)
+2014-01-21 21:54:57	--	irc: disconnected from server
+2014-01-22 09:07:23	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-22 09:07:23	--	Mode #omnidev [+ns] by hitchcock.freenode.net
+2014-01-22 09:07:23	--	Nicks #omnidev: [@kweaver]
+2014-01-22 09:07:23	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-01-22 09:07:24	--	Mode #omnidev [-o kweaver] by services.
+2014-01-22 09:07:24	--	Notice(hitchcock.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1390399644 to 1337223617
+2014-01-22 09:07:24	--	Mode #omnidev [+ct-s] by services.
+2014-01-22 09:07:24	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-01-22 09:07:24	--	Mode #omnidev [+o ChanServ] by services.
+2014-01-22 09:07:24	--	Mode #omnidev [+cnt]
+2014-01-22 09:07:24	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-22 10:04:58	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-22 10:04:58	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-01-22 11:10:37	kweaver	sup jhartigan
+2014-01-22 11:10:41	kweaver	maybe net split?
+2014-01-22 11:10:49	kweaver	anyway I left matt a message on his cell
+2014-01-22 11:10:52	kweaver	ill try again in a little
+2014-01-22 11:12:09	kweaver	im gonna shit and then lets G+ and figure out my dads store
+2014-01-22 11:16:22	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-01-22 11:17:40	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-01-22 11:17:44	jhartigan	hey kweaver can you see this
+2014-01-22 11:18:28	kweaver	yeah jhartigan 
+2014-01-22 11:18:34	jhartigan	cccool beans
+2014-01-22 11:18:53	jhartigan	so matt apparently didnt call?  my 45sec lag seems to be gone acording to the irc
+2014-01-22 11:18:57	jhartigan	matt didnt answer*
+2014-01-22 11:19:03	jhartigan	fucking comcast been sucking dick since last night
+2014-01-22 11:22:23	jhartigan	pass set up for me easybreezy last night
+2014-01-22 11:22:27	jhartigan	beautiful, covergirl
+2014-01-22 11:25:31	kweaver	im setting up pass now
+2014-01-22 11:38:10	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-22 11:38:10	--	Nicks #omnidev: [jhartigan kweaver]
+2014-01-22 11:38:10	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-22 11:38:10	--	Notice(leguin.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2014-01-22 11:38:10	--	Mode #omnidev [+cnt]
+2014-01-22 11:38:10	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-22 11:42:31	-->	kweaver (~kweaver@96.248.78.50) has joined #omnidev
+2014-01-22 11:42:31	--	Nicks #omnidev: [jhartigan kweaver]
+2014-01-22 11:42:31	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-01-22 11:42:31	--	Mode #omnidev [+cnt]
+2014-01-22 11:42:31	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-01-22 11:42:56	-->	kweaver_laptop (~kweaver@96.248.78.50) has joined #omnidev

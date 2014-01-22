@@ -108,3 +108,68 @@
 2013-10-26 18:31:24	kweaver	yeah fuck that, wasnt that good anyway
 2013-10-26 18:31:39	kweaver	okay answer my question in #orderdeck kthxbai
 2013-10-27 12:26:56	--	irc: disconnected from server
+2013-12-20 14:48:08	tommyvyo	- Percentile conversion is complete, we just need to fix the "status" where it says "overweight, underweight, normal" etc to match up properly to the percentiles
+2013-12-20 14:49:47	tommyvyo	- No error reporting yet, wanted to wait to get the entire flow of the UI done before we did any error handling
+2013-12-20 16:21:29	kweaver_desktop	if youre 732-740-3963
+2013-12-20 16:21:35	kweaver_desktop	minus the "if youre"
+2013-12-20 16:21:38	kweaver_desktop	that was old
+2014-01-06 16:18:36	tommyvyo	is that the fix?
+2014-01-06 16:18:39	tommyvyo	consider it done
+2014-01-06 16:18:44	kweaver	:)
+2014-01-06 16:20:03	tommyvyo	???
+2014-01-06 16:20:04	tommyvyo	what
+2014-01-06 16:20:05	tommyvyo	kweaver: 
+2014-01-06 16:20:16	kweaver	sec
+2014-01-06 16:20:17	kweaver	:)
+2014-01-06 16:22:29	kweaver	in your calculate or print append function, just get the divs of the two graphs, #graph-male-img and #graph-female-img, find the width of each image with 'clientWidth', and set an inline style to the image with that width
+2014-01-06 16:22:54	kweaver	you have to do this soooo
+2014-01-06 16:23:30	kweaver	that when it prints, it uses the specific size, and since the graph is responsive, we dont know what that size is
+2014-01-06 16:24:16	tommyvyo	that doesnt make any sense
+2014-01-06 16:24:20	tommyvyo	what is it intended to fix?
+2014-01-06 16:27:23	tommyvyo	push up for me
+2014-01-06 16:34:55	kweaver	thats why i wanted to explain it over hangout, cause it sounds stupid
+2014-01-06 16:35:22	tommyvyo	kk inv me
+2014-01-06 16:35:40	kweaver	the only reason the graph is lining up now when you print it is because I just set the image width to 418px in the print css
+2014-01-06 16:36:14	tommyvyo	so
+2014-01-06 16:36:18	kweaver	however, thats a shitty fix, because if the graph is originally plotted in a larger container, the print version is going to get contrsicted down
+2014-01-06 16:36:26	tommyvyo	- get the width of the graph
+2014-01-06 16:36:41	kweaver	the graph image
+2014-01-06 16:36:57	kweaver	and set an inline style of the width on the image
+2014-01-06 16:37:28	kweaver	so that it uses that when printed, instead of trying to default to 100%
+2014-01-06 16:37:44	tommyvyo	kk
+2014-01-06 17:20:07	tommyvyo	did they give you this commenting format?
+2014-01-06 17:24:53	tommyvyo	kweaver pushed final
+2014-01-06 17:24:59	tommyvyo	needs print fixes or something cause its borked for me
+2014-01-06 17:25:01	tommyvyo	going to the gym
+2014-01-06 17:25:03	tommyvyo	i'll be back in an hour
+2014-01-06 17:25:09	kweaver	ok
+2014-01-06 17:25:14	tommyvyo	try not to blow up all of my devices at once if you dont hear from me
+2014-01-06 17:25:16	kweaver	did you do the width setting?
+2014-01-06 17:25:17	tommyvyo	:)
+2014-01-06 17:25:19	tommyvyo	yea
+2014-01-06 17:25:19	kweaver	;)
+2014-01-06 17:25:20	kweaver	k
+2014-01-06 19:03:12	--	irc: disconnected from server
+2014-01-07 00:59:08	--	irc: disconnected from server
+2014-01-09 13:09:56	tommyvyo	kk will do
+2014-01-09 13:10:08	kweaver	actually just join this hangout with jake and i
+2014-01-09 13:10:20	kweaver	so we can talk nemours
+2014-01-09 13:17:01	kweaver	join boi
+2014-01-09 13:17:09	kweaver	I know how much you hate hangouts
+2014-01-09 13:19:48	kweaver	gat
+2014-01-09 13:19:50	kweaver	damn 
+2014-01-09 13:19:50	kweaver	it
+2014-01-09 13:19:54	kweaver	JOIN BOI
+2014-01-09 13:32:58	kweaver	cool cool
+2014-01-09 13:33:15	tommyvyo	i'll ping u when i can
+2014-01-09 13:59:15	kweaver	you should come up with a concrete plan of reentereing the focused working mindset, and that plan should include coming to town for a week and working on shit with with me
+2014-01-09 13:59:34	kweaver	if you need random paying odds and ends, we might be able to scrounge something up for you
+2014-01-09 14:00:36	kweaver	your new years res is a pretty baller first step, so now you just have to figure out step 2
+2014-01-09 14:00:37	kweaver	and 3
+2014-01-09 14:01:34	kweaver	I dont want to seem like Im prying either. just tryna help a nigga out
+2014-01-09 14:05:19	kweaver	you get that email from d-lenny?
+2014-01-09 16:24:13	tommyvyo	yea i saw em
+2014-01-09 16:31:30	kweaver	you in hangouts?
+2014-01-09 16:31:41	tommyvyo	im in but ping me whenever
+2014-01-09 16:31:49	kweaver	were done
+2014-01-09 22:09:46	--	irc: disconnected from server
