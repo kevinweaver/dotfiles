@@ -118,7 +118,7 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
   "pressing enter key in command mode removes search highlighting
   nnoremap <CR> :nohlsearch <CR>
 
-set mouse=a
+"set mouse=a
 
 "Highlight trailing whitespace in red
 :highlight ExtraWhitespace ctermbg=red guibg=red
