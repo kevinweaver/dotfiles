@@ -18,6 +18,8 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  Bundle 'tpope/vim-haml'
  Bundle 'tpope/vim-surround'
  Bundle 'pangloss/vim-javascript'
+ Bundle 'kchmck/vim-coffee-script'
+ Bundle 'vim-ruby/vim-ruby'
  Bundle 'scrooloose/nerdtree'
  Bundle 'scrooloose/syntastic'
  Bundle 'jistr/vim-nerdtree-tabs'
@@ -28,6 +30,8 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  "Bundle 'wakatime/vim-wakatime'
  Bundle 'airblade/vim-gitgutter'
  Bundle 'Lokaltog/vim-easymotion'
+ Bundle 'itchyny/calendar.vim'
+ Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on "req
 
@@ -105,6 +109,8 @@ set foldnestmax=2
 set foldlevel=100
 set foldenable
 
+nmap <f3> :TagbarToggle<CR>
+
 " set smartindent
 set laststatus=2
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
@@ -166,3 +172,6 @@ map <leader>t :w\|!rspec --drb --color %<cr>
 "    augroup END
 "endif
 set rtp+=/home/kevin/.local/lib/python2.7/site-packages/powerline/bindings/vim
+
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1

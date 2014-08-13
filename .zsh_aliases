@@ -38,3 +38,4 @@ alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart
 alias bctech="cd ~/workspace/sites/bctech/wp-content/themes/bcenfold"
 alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
 alias heroes="cd ~/workspace/applications/ems_heroes"
+alias heroes-site="cd ~/workspace/sites/ems-heroes"
