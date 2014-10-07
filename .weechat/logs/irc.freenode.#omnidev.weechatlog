@@ -6892,3 +6892,46 @@
 2014-01-22 11:47:34	jhartigan	http://michaelheap.com/installing-vim-7-4-on-ubuntu/
 2014-01-22 11:52:15	jhartigan	:q
 2014-01-22 11:55:38	kweaver	https://github.com/Lokaltog/powerline/issues/432
+2014-10-06 12:27:09	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-06 12:27:09	--	Nicks #omnidev: [jhartigan kweaver]
+2014-10-06 12:27:09	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-10-06 12:27:09	--	Notice(verne.freenode.net) -> #omnidev: [freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup
+2014-10-06 12:27:11	--	Mode #omnidev [+cnt]
+2014-10-06 12:27:11	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-06 12:27:55	--	irc: disconnected from server
+2014-10-06 12:34:18	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-06 12:34:18	--	Nicks #omnidev: [jhartigan kweaver]
+2014-10-06 12:34:18	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-10-06 12:34:20	--	Mode #omnidev [+cnt]
+2014-10-06 12:34:20	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-06 13:41:14	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-06 15:40:44	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 258 seconds)
+2014-10-06 17:09:54	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-06 17:17:28	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-07 08:48:28	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-07 08:48:28	--	Mode #omnidev [+ns] by orwell.freenode.net
+2014-10-07 08:48:28	--	Nicks #omnidev: [@kweaver]
+2014-10-07 08:48:28	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-07 08:48:30	--	Mode #omnidev [+ns]
+2014-10-07 08:48:30	--	Channel created on Tue, 07 Oct 2014 08:48:28
+2014-10-07 08:48:38	--	Mode #omnidev [-o kweaver] by services.
+2014-10-07 08:48:38	--	Notice(orwell.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1412686108 to 1337223617
+2014-10-07 08:48:38	--	Mode #omnidev [+ct-s] by services.
+2014-10-07 08:48:38	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-07 08:48:38	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-07 09:17:35	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-07 09:17:35	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-07 09:24:57	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-07 09:36:18	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-07 09:41:09	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-07 10:03:58	kweaver_desktop	jhartigan: you see that email from dorothy?
+2014-10-07 12:27:37	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2014-10-07 12:29:05	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-07 13:21:37	kweaver	jhartigan: to install my vim plugins, its just 
+2014-10-07 13:21:41	kweaver	:BundleInstall
+2014-10-07 13:21:42	kweaver	right?
+2014-10-07 13:22:10	kweaver	das not werking
+2014-10-07 13:23:34	kweaver	:PluginInstall doesnt either
+2014-10-07 13:28:46	kweaver	nevermind, bundle changed their vimrc requirements
+2014-10-07 13:28:52	kweaver	vundle***
+2014-10-07 13:30:31	kweaver	im good now

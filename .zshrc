@@ -5,7 +5,6 @@ DEFAULT_USER="kevin"
 
 ZSH_THEME="mh"
 # Aliases
-alias caffeine="echo 'No Sleep For an HOUR!'; caffeinate -u -t 3600"
 alias ll="ls -l"
 alias la="ls -a"
 alias deploy="~/scripts/deployment_scripts/main_deploy.sh"

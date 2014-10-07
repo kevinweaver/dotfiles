@@ -22244,3 +22244,179 @@
 2014-01-22 11:02:34	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #orderdeck
 2014-01-22 11:08:59	drkyro	https://github.com/fre5h/DoctrineEnumBundle/pull/12#issuecomment-33023169
 2014-01-22 11:16:22	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-10-06 12:27:09	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 12:27:09	--	Nicks #orderdeck: [dtriley4_ ericmazzola1 jfortunato jhartigan jspeak koreanderson kweaver]
+2014-10-06 12:27:09	--	Channel #orderdeck: 7 nicks (0 ops, 0 voices, 7 normals)
+2014-10-06 12:27:09	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-06 12:27:09	--	Mode #orderdeck [+cnt]
+2014-10-06 12:27:10	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-06 12:27:55	--	irc: disconnected from server
+2014-10-06 12:34:18	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 12:34:18	--	Nicks #orderdeck: [dtriley4_ ericmazzola1 jfortunato jhartigan jspeak koreanderson kweaver]
+2014-10-06 12:34:18	--	Channel #orderdeck: 7 nicks (0 ops, 0 voices, 7 normals)
+2014-10-06 12:34:19	--	Mode #orderdeck [+cnt]
+2014-10-06 12:34:19	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-06 12:34:19	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-06 12:50:20	ericmazzola1	guys
+2014-10-06 12:50:23	ericmazzola1	the google doodle is broken!
+2014-10-06 12:50:27	ericmazzola1	quick!
+2014-10-06 12:50:56	dtriley4_	lol huh?
+2014-10-06 12:53:04	ericmazzola1	www.google.com
+2014-10-06 12:53:34	ericmazzola1	broken image
+2014-10-06 12:54:10	ericmazzola1	kweaver, koreanderson jspeak jhartigan dtriley4_
+2014-10-06 12:54:17	ericmazzola1	is that tommy guy hacking the googs again
+2014-10-06 12:57:42	kweaver	mines fine ericmazzola1 
+2014-10-06 12:58:06	kweaver	i dont have a doodle
+2014-10-06 13:00:37	ericmazzola1	weird
+2014-10-06 13:05:03	dtriley4_	bro i'm about to hack every merchant jspeak
+2014-10-06 13:05:06	dtriley4_	jfortunato:
+2014-10-06 13:05:12	dtriley4_	https://www.irccloud.com/pastebin/Gt6Di3c3
+2014-10-06 13:05:26	dtriley4_	apparently my name is charles
+2014-10-06 13:06:54	jfortunato	lol did that send to an actual @everymerchant.com address dtriley4_ ?
+2014-10-06 13:07:56	dtriley4_	CharlesW@everymerchant.com" <charlesw@everymerchant.com>
+2014-10-06 13:08:01	kweaver	lol
+2014-10-06 13:08:09	dtriley4_	for some god awful reason i get all of charle's emails
+2014-10-06 13:08:11	jfortunato	so why did you get it
+2014-10-06 13:08:15	-->	MpWilli_ (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 13:08:18	dtriley4_	haha not sure
+2014-10-06 13:08:25	--	Mode #orderdeck [+o MpWilli_] by ChanServ
+2014-10-06 13:08:33	dtriley4_	maybe a forwarding thinng
+2014-10-06 13:08:41	dtriley4_	settings in the email or something
+2014-10-06 13:09:13	dtriley4_	dude is going through an awful divorce :(
+2014-10-06 13:09:15	dtriley4_	jkjk
+2014-10-06 13:09:27	kweaver	hahaha
+2014-10-06 13:12:56	kweaver	installing rails on a new desktop
+2014-10-06 13:13:19	kweaver	i was just about to say that i was shocked that i got through the install in like 2 minutes with no issue
+2014-10-06 13:13:24	kweaver	on the last step
+2014-10-06 13:13:32	kweaver	been frozen for 4 minutes
+2014-10-06 13:13:54	kweaver	:/
+2014-10-06 13:16:08	dtriley4_	what os kweaver ?
+2014-10-06 13:16:41	kweaver	ubuntu
+2014-10-06 13:16:43	kweaver	shes good now
+2014-10-06 13:16:44	dtriley4_	ahh
+2014-10-06 13:16:49	kweaver	just took a while
+2014-10-06 13:34:27	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 13:41:14	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 13:45:39	dtriley4_	Did you get a new setup kweaver ?
+2014-10-06 13:51:13	kweaver_desktop	nah, just started working from the tech park full time though
+2014-10-06 13:51:19	kweaver_desktop	so im using one of the bradm desktops again
+2014-10-06 13:52:19	dtriley4_	gotcha
+2014-10-06 13:52:42	dtriley4_	Starting to be heroic??
+2014-10-06 13:52:57	dtriley4_	:O
+2014-10-06 13:54:08	kweaver	i am
+2014-10-06 14:00:32	-->	ericmazzola (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-06 14:02:47	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Ping timeout: 245 seconds)
+2014-10-06 14:40:01	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-06 15:12:55	@MpWilli_	kweaver_desktop
+2014-10-06 15:12:57	@MpWilli_	kweaver
+2014-10-06 15:12:59	@MpWilli_	so spooky http://www.twitch.tv/lirik
+2014-10-06 15:18:54	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 15:20:10	@MpWilli_	http://www.twitch.tv/lirik jspeak
+2014-10-06 15:40:44	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 258 seconds)
+2014-10-06 15:47:16	-->	beadyox_ (~textual@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-06 16:56:22	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-06 16:57:22	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2014-10-06 16:57:29	<--	MpWilli_ (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-06 17:09:54	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-06 17:10:39	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Quit: Leaving)
+2014-10-06 17:17:28	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-06 17:30:39	-->	bananaboydean (~bananaboy@50-195-108-105-static.hfc.comcastbusiness.net) has joined #orderdeck
+2014-10-06 17:30:40	<--	bananaboydean (~bananaboy@50-195-108-105-static.hfc.comcastbusiness.net) has quit (Client Quit)
+2014-10-06 17:36:04	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-07 08:48:28	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 08:48:28	--	Nicks #orderdeck: [dtriley4_ ericmazzola kweaver]
+2014-10-07 08:48:28	--	Channel #orderdeck: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-07 08:48:28	--	Mode #orderdeck [+cnt]
+2014-10-07 08:48:28	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-07 08:48:37	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-07 09:06:38	-->	G________ (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-07 09:17:35	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 09:19:19	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 09:19:19	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-07 09:24:57	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-07 09:27:12	--	G________ is now known as beadyox
+2014-10-07 09:36:18	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-07 09:41:09	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 09:48:40	-->	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 09:55:37	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 10:14:51	dtriley4_	haha you know a chelsea jspeak jfortunato MpWilli?
+2014-10-07 10:14:59	jspeak	yeah why?
+2014-10-07 10:15:05	dtriley4_	andres assistant?
+2014-10-07 10:15:22	jspeak	lol i guess, i think shes an intern. not sure though
+2014-10-07 10:15:37	jspeak	are you getting more emails?
+2014-10-07 10:15:41	@MpWilli	is that the black lady over there?
+2014-10-07 10:15:46	jspeak	yeah
+2014-10-07 10:17:26	jhartigan	WHIA
+2014-10-07 10:25:18	dtriley4_	i'm like in awe that she is a real person..
+2014-10-07 10:25:27	dtriley4_	i just assumed it was toucan
+2014-10-07 10:25:38	dtriley4_	sending emails as a little girl
+2014-10-07 10:25:42	jspeak	hahaha
+2014-10-07 10:25:48	dtriley4_	yeah more emails
+2014-10-07 10:25:54	jspeak	yeah i could see that happening
+2014-10-07 10:26:07	jhartigan	jspeak: MpWilli lunch tomorraw?
+2014-10-07 10:26:11	jhartigan	my meetings at 11
+2014-10-07 10:26:20	jspeak	yeah im down, MpWilli wont be here
+2014-10-07 10:26:25	jhartigan	HAH GAY
+2014-10-07 10:26:47	jspeak	you wanna go to that pj's?
+2014-10-07 10:26:48	jhartigan	played a bunch of match making in smaash jspeak
+2014-10-07 10:27:02	jhartigan	its cool, nice to pick up and play online where its not bad
+2014-10-07 10:27:06	jhartigan	yeah id do that
+2014-10-07 10:27:34	jspeak	they dont have smart match making do they?
+2014-10-07 10:27:49	jspeak	like will it pair you against people of your skill level?
+2014-10-07 10:27:58	jhartigan	not from what ive seen
+2014-10-07 10:28:11	jhartigan	only one person reliably beat me more than once
+2014-10-07 10:28:27	jhartigan	and thats cause they found the one character with a spike and kill potential sub 150%
+2014-10-07 10:28:28	jspeak	well das kewl
+2014-10-07 10:28:37	jhartigan	but i learned to beat em anyways
+2014-10-07 10:28:50	jhartigan	but yeah, average % is 170 - 200 for kills =/
+2014-10-07 10:28:50	jspeak	who have you been playing mostly?
+2014-10-07 10:28:55	jspeak	ah wow
+2014-10-07 10:29:03	jhartigan	unless you play DK
+2014-10-07 10:29:14	jhartigan	or the dorf
+2014-10-07 10:29:22	jhartigan	he gets em around 70% with the right moves
+2014-10-07 10:29:36	jhartigan	dorf shiek zero suit and my ringer
+2014-10-07 10:29:37	jhartigan	the dr
+2014-10-07 10:31:34	jhartigan	maybe its just so differnt, but i find my max combo chain to be like 3 hits, esp cause no platforms at all
+2014-10-07 10:42:58	jspeak	i mean when you play pm, how many combos do you actually pull off?
+2014-10-07 10:43:22	jspeak	they obviously exist, but they are just hard to figure out
+2014-10-07 10:44:07	jspeak	when i play melee i can't even really get combos off, but i know other good players can do  them
+2014-10-07 10:46:43	jhartigan	i mean ive been able to get 5 + on a great sheik run
+2014-10-07 10:46:49	jhartigan	same with mewtwo
+2014-10-07 10:46:56	jhartigan	in pm
+2014-10-07 10:47:15	jhartigan	in this, the kockback and lack of dodge penalty make it impossible
+2014-10-07 10:47:28	jhartigan	you get hit, just spam L
+2014-10-07 11:28:23	dtriley4_	jspeak:
+2014-10-07 11:28:30	jspeak	yoyo
+2014-10-07 11:28:30	dtriley4_	you guys got a puerto rico office?
+2014-10-07 11:28:41	jspeak	lol i think so...
+2014-10-07 11:28:43	jspeak	kind of
+2014-10-07 11:28:47	jspeak	who knows
+2014-10-07 11:29:02	jspeak	how many emails do you get a day?
+2014-10-07 11:29:07	dtriley4_	haha not a lot
+2014-10-07 11:29:15	dtriley4_	just 1 or 2 once a week
+2014-10-07 11:29:19	dtriley4_	i keep filtering to delete
+2014-10-07 11:36:10	@MpWilli	dtriley4_ are you getting em emails to your personal stuff?
+2014-10-07 11:50:02	dtriley4_	MpWilli: i'm somehow bound to charlesw@everymerchant.com
+2014-10-07 11:50:07	dtriley4_	like auto forwarding
+2014-10-07 11:50:17	dtriley4_	it's not being sent to me personally
+2014-10-07 11:50:24	@MpWilli	weird
+2014-10-07 11:50:35	@MpWilli	let me see if i can fix dat
+2014-10-07 11:51:16	dtriley4_	i just deleted my everymerchant account
+2014-10-07 11:51:19	dtriley4_	from my gmail
+2014-10-07 11:51:21	dtriley4_	see if that helps
+2014-10-07 12:13:22	@MpWilli	lol http://nthitz.github.io/turndownforwhatjs/
+2014-10-07 12:15:14	jhartigan	its already blocked
+2014-10-07 12:16:14	@MpWilli	dtriley4_ are you getting forwards to your personal email?
+2014-10-07 12:16:41	@MpWilli	also who the fuck is charles w jspeak
+2014-10-07 12:16:56	jspeak	i have no clue
+2014-10-07 12:17:04	@MpWilli	ahahahahha dtriley4_
+2014-10-07 12:17:25	@MpWilli	i think andre reused your email and left a bunch of dtriley alias'
+2014-10-07 12:18:20	@MpWilli	ill brb. ima fix dis
+2014-10-07 12:22:05	<--	dtriley4_ (uid14947@gateway/web/irccloud.com/x-ypodnfhnnfastoxf) has quit (Remote host closed the connection)
+2014-10-07 12:27:37	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2014-10-07 12:29:05	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 12:50:43	-->	dtriley4_ (uid14947@gateway/web/irccloud.com/x-tjnokxfjctdbdpxe) has joined #orderdeck
+2014-10-07 12:54:49	-->	bananaboydean (~bananaboy@50-199-76-25-static.hfc.comcastbusiness.net) has joined #orderdeck
+2014-10-07 12:54:53	<--	bananaboydean (~bananaboy@50-199-76-25-static.hfc.comcastbusiness.net) has quit (Client Quit)
+2014-10-07 13:03:12	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-07 13:14:04	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Quit: Leaving)

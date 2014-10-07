@@ -1556,3 +1556,19 @@
 2014-01-22 11:37:57		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
 2014-01-22 11:37:58		script: 269 scripts for WeeChat 0.4.2
 2014-01-22 11:42:18		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-06 12:26:55		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-06 12:26:55		ruby scripts loaded: url_shorten
+2014-10-06 12:26:56		python scripts loaded: anotify
+2014-10-06 12:26:56		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-06 12:26:56		script: 275 scripts for WeeChat 0.4.2
+2014-10-06 12:27:55		python: scripts unloaded
+2014-10-06 12:27:55		ruby: scripts unloaded
+2014-10-06 12:34:05		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-06 12:34:05		ruby scripts loaded: url_shorten
+2014-10-06 12:34:05		python scripts loaded: anotify
+2014-10-06 12:34:05		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-07 08:48:15		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-07 08:48:15		ruby scripts loaded: url_shorten
+2014-10-07 08:48:16		python scripts loaded: anotify
+2014-10-07 08:48:16		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-07 08:48:16		script: 275 scripts for WeeChat 0.4.2

@@ -6,9 +6,9 @@ filetype off                   " required!
 
 imap ;; <esc>
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " let Vundle manage Vundle
 " required!
@@ -33,6 +33,7 @@ set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
  Bundle 'itchyny/calendar.vim'
  Bundle 'majutsushi/tagbar'
 
+call vundle#end()
 filetype plugin indent on "req
 
 "python from powerline.bindings.vim import 'source_plugin; source_plugin()
