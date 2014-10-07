@@ -1572,3 +1572,5 @@
 2014-10-07 08:48:16		python scripts loaded: anotify
 2014-10-07 08:48:16		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
 2014-10-07 08:48:16		script: 275 scripts for WeeChat 0.4.2
+2014-10-07 14:08:05		python: scripts unloaded
+2014-10-07 14:08:05		ruby: scripts unloaded

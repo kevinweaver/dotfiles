@@ -13,3 +13,17 @@
 [2014-10-07 08:48:15] Reading configuration file rmodifier.conf
 [2014-10-07 08:48:15] Reading configuration file xfer.conf
 [2014-10-07 08:48:16] Reading configuration file alias.conf
+[2014-10-07 14:08:05] Signal SIGTERM received, exiting WeeChat...
+[2014-10-07 14:08:05] Writing configuration file plugins.conf 
+[2014-10-07 14:08:05] Writing configuration file alias.conf 
+[2014-10-07 14:08:05] Writing configuration file xfer.conf 
+[2014-10-07 14:08:05] Writing configuration file rmodifier.conf 
+[2014-10-07 14:08:05] Writing configuration file irc.conf 
+[2014-10-07 14:08:05] Writing configuration file charset.conf 
+[2014-10-07 14:08:05] Writing configuration file relay.conf 
+[2014-10-07 14:08:05] Writing configuration file logger.conf 
+[2014-10-07 14:08:05] Writing configuration file aspell.conf 
+[2014-10-07 14:08:05] Writing configuration file script.conf 
+[2014-10-07 14:08:05] Writing configuration file buffers.conf 
+[2014-10-07 14:08:05] Writing configuration file weechat.conf 
+[2014-10-07 14:08:05] Writing configuration file sec.conf 
