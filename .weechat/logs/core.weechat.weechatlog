@@ -1574,3 +1574,58 @@
 2014-10-07 08:48:16		script: 275 scripts for WeeChat 0.4.2
 2014-10-07 14:08:05		python: scripts unloaded
 2014-10-07 14:08:05		ruby: scripts unloaded
+2014-10-07 14:13:48		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-07 14:13:48		ruby scripts loaded: url_shorten
+2014-10-07 14:13:49		python scripts loaded: anotify
+2014-10-07 14:13:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-07 14:13:49		script: 275 scripts for WeeChat 0.4.2
+2014-10-07 17:30:29		python: scripts unloaded
+2014-10-07 17:30:29		ruby: scripts unloaded
+2014-10-08 08:51:10		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-08 08:51:10		ruby scripts loaded: url_shorten
+2014-10-08 08:51:11		python scripts loaded: anotify
+2014-10-08 08:51:11		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-08 08:51:11		script: 275 scripts for WeeChat 0.4.2
+2014-10-08 17:39:21		anotify: The connection is closed
+2014-10-08 17:39:22		python: scripts unloaded
+2014-10-08 17:39:22		ruby: scripts unloaded
+2014-10-09 08:47:27		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-09 08:47:27		ruby scripts loaded: url_shorten
+2014-10-09 08:47:28		python scripts loaded: anotify
+2014-10-09 08:47:28		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-09 08:47:28		script: 275 scripts for WeeChat 0.4.2
+2014-10-09 17:31:15		python: scripts unloaded
+2014-10-09 17:31:15		ruby: scripts unloaded
+2014-10-10 13:26:52		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-10 13:26:52		ruby scripts loaded: url_shorten
+2014-10-10 13:26:53		python scripts loaded: anotify
+2014-10-10 13:26:53		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-10 13:26:53		script: 275 scripts for WeeChat 0.4.2
+2014-10-10 16:34:55		python: scripts unloaded
+2014-10-10 16:34:56		ruby: scripts unloaded
+2014-10-15 09:09:03		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-15 09:09:03		ruby scripts loaded: url_shorten
+2014-10-15 09:09:04		python scripts loaded: anotify
+2014-10-15 09:09:04		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-15 09:09:04		script: 275 scripts for WeeChat 0.4.2
+2014-10-15 17:31:40		python: scripts unloaded
+2014-10-15 17:31:40		ruby: scripts unloaded
+2014-10-16 09:44:47		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-16 09:44:47		ruby scripts loaded: url_shorten
+2014-10-16 09:44:49		python scripts loaded: anotify
+2014-10-16 09:44:50		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-16 09:44:50		script: 275 scripts for WeeChat 0.4.2
+2014-10-16 09:53:59		python: scripts unloaded
+2014-10-16 09:53:59		ruby: scripts unloaded
+2014-10-16 10:47:43		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-16 10:47:43		ruby scripts loaded: url_shorten
+2014-10-16 10:47:44		python scripts loaded: anotify
+2014-10-16 10:47:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-16 10:47:44		script: 275 scripts for WeeChat 0.4.2
+2014-10-16 11:25:55		python: scripts unloaded
+2014-10-16 11:25:55		ruby: scripts unloaded
+2014-10-16 13:26:00		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-10-16 13:26:00		ruby scripts loaded: url_shorten
+2014-10-16 13:26:00		python scripts loaded: anotify
+2014-10-16 13:26:00		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-10-16 13:26:01		script: 275 scripts for WeeChat 0.4.2

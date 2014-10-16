@@ -19528,3 +19528,788 @@
 2014-10-07 08:48:22	--	User mode [+i] by kweaver
 2014-10-07 08:48:37	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
 2014-10-07 14:08:05	--	irc: disconnected from server
+2014-10-07 14:13:48	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-07 14:13:49	--	irc: connected to chat.freenode.net/6667 (82.96.64.4)
+2014-10-07 14:13:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Looking up your hostname...
+2014-10-07 14:13:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Checking Ident
+2014-10-07 14:13:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Found your hostname
+2014-10-07 14:13:57	--	kornbluth.freenode.net (kornbluth.freenode.net): *** No Ident response
+2014-10-07 14:13:57	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-07 14:13:57	--	Your host is kornbluth.freenode.net[82.96.64.4/6667], running version ircd-seven-1.1.3
+2014-10-07 14:13:57	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-10-07 14:13:57	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-07 14:13:57	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-07 14:13:57	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-07 14:13:57	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-07 14:13:57	--	There are 188 users and 95969 invisible on 29 servers
+2014-10-07 14:13:57	--	31 :IRC Operators online
+2014-10-07 14:13:57	--	13 :unknown connection(s)
+2014-10-07 14:13:57	--	56981 :channels formed
+2014-10-07 14:13:57	--	I have 6725 clients and 1 servers
+2014-10-07 14:13:57	--	6725 15000 :Current local users 6725, max 15000
+2014-10-07 14:13:57	--	96157 104047 :Current global users 96157, max 104047
+2014-10-07 14:13:57	--	Highest connection count: 15001 (15000 clients) (1470278 connections received)
+2014-10-07 14:13:57	--	- kornbluth.freenode.net Message of the Day -
+2014-10-07 14:13:57	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-10-07 14:13:57	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-10-07 14:13:57	--	- sponsoring this server!
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-10-07 14:13:57	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-10-07 14:13:57	--	- first story professionally at age 15.  By the 1940's his
+2014-10-07 14:13:57	--	- stories appeared widely under several pennames, including
+2014-10-07 14:13:57	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-10-07 14:13:57	--	- studies in Chicago to serve in the Army in Europe during
+2014-10-07 14:13:57	--	- WWII, then returned to school and work in Chicago until he
+2014-10-07 14:13:57	--	- began writing full-time in 1951.  The author of The Marching
+2014-10-07 14:13:57	--	- Morons and the novels The Space Merchants (with Frederik
+2014-10-07 14:13:57	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-10-07 14:13:57	--	- satire and his collaborations with Pohl and with Judith
+2014-10-07 14:13:57	--	- Merril.
+2014-10-07 14:13:57	--	- Welcome to freenode - supporting the free and open source
+2014-10-07 14:13:57	--	- software communities since 1998.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- **************************************************************
+2014-10-07 14:13:57	--	-                       SECURITY ALERT
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-07 14:13:57	--	- some compromised binaries present on a number of servers.
+2014-10-07 14:13:57	--	- The servers in question have been removed from the network and
+2014-10-07 14:13:57	--	- shut down.  However, it's possible that network traffic  -
+2014-10-07 14:13:57	--	- including SSL traffic - has been sniffed and passwords
+2014-10-07 14:13:57	--	- exposed.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- We therefore recommend that all users change their nickserv
+2014-10-07 14:13:57	--	- password(s) to a new value which is not shared with any
+2014-10-07 14:13:57	--	- other service.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- Please note that investigation is ongoing to discover the root
+2014-10-07 14:13:57	--	- cause of the attack, and until this investigation is complete
+2014-10-07 14:13:57	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-07 14:13:57	--	- have been removed. We may have to ask you to change your
+2014-10-07 14:13:57	--	- passwords again after analysis has completed.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- Further details will appear on https://blog.freenode.net/
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- **************************************************************
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- By connecting to freenode you indicate that you have read and
+2014-10-07 14:13:57	--	- accept our policies as set out on http://www.freenode.net
+2014-10-07 14:13:57	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-07 14:13:57	--	- any network-related questions or queries, where a number of
+2014-10-07 14:13:57	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-07 14:13:57	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-07 14:13:57	--	- real-life collaboration.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- We would like to thank Private Internet Access
+2014-10-07 14:13:57	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-07 14:13:57	--	- organisations that help keep freenode and our other projects
+2014-10-07 14:13:57	--	- running for their sustained support.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	- In particular we would like to thank the sponsor
+2014-10-07 14:13:57	--	- of this server, details of which can be found above.
+2014-10-07 14:13:57	--	-
+2014-10-07 14:13:57	--	End of /MOTD command.
+2014-10-07 14:13:57	--	User mode [+i] by kweaver
+2014-10-07 14:13:57	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-07 17:30:29	--	irc: disconnected from server
+2014-10-08 08:51:10	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-08 08:51:11	--	irc: connected to chat.freenode.net/6667 (195.148.124.79)
+2014-10-08 08:51:11	--	rajaniemi.freenode.net (rajaniemi.freenode.net): *** Looking up your hostname...
+2014-10-08 08:51:11	--	rajaniemi.freenode.net (rajaniemi.freenode.net): *** Checking Ident
+2014-10-08 08:51:11	--	rajaniemi.freenode.net (rajaniemi.freenode.net): *** Found your hostname
+2014-10-08 08:51:18	--	rajaniemi.freenode.net (rajaniemi.freenode.net): *** No Ident response
+2014-10-08 08:51:18	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-08 08:51:18	--	Your host is rajaniemi.freenode.net[195.148.124.79/6667], running version ircd-seven-1.1.3
+2014-10-08 08:51:18	--	This server was created Mon Dec 31 2012 at 23:37:13 EET
+2014-10-08 08:51:18	--	rajaniemi.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-08 08:51:18	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-08 08:51:18	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-08 08:51:18	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-08 08:51:18	--	There are 187 users and 92217 invisible on 28 servers
+2014-10-08 08:51:18	--	31 :IRC Operators online
+2014-10-08 08:51:18	--	13 :unknown connection(s)
+2014-10-08 08:51:18	--	56744 :channels formed
+2014-10-08 08:51:18	--	I have 12881 clients and 1 servers
+2014-10-08 08:51:18	--	12881 12890 :Current local users 12881, max 12890
+2014-10-08 08:51:18	--	92404 104047 :Current global users 92404, max 104047
+2014-10-08 08:51:18	--	Highest connection count: 12891 (12890 clients) (2172397 connections received)
+2014-10-08 08:51:18	--	- rajaniemi.freenode.net Message of the Day -
+2014-10-08 08:51:18	--	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+2014-10-08 08:51:18	--	- Aalto University for sponsoring this server!
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+2014-10-08 08:51:18	--	- author of two novels and several short stories, and his debut novel 'The
+2014-10-08 08:51:18	--	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+2014-10-08 08:51:18	--	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+2014-10-08 08:51:18	--	- director of ThinkTank Maths, a commercial research organisation.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- Welcome to freenode - supporting the free and open source
+2014-10-08 08:51:18	--	- software communities since 1998.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- **************************************************************
+2014-10-08 08:51:18	--	-                       SECURITY ALERT
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-08 08:51:18	--	- some compromised binaries present on a number of servers.
+2014-10-08 08:51:18	--	- The servers in question have been removed from the network and
+2014-10-08 08:51:18	--	- shut down.  However, it's possible that network traffic  -
+2014-10-08 08:51:18	--	- including SSL traffic - has been sniffed and passwords
+2014-10-08 08:51:18	--	- exposed.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- We therefore recommend that all users change their nickserv
+2014-10-08 08:51:18	--	- password(s) to a new value which is not shared with any
+2014-10-08 08:51:18	--	- other service.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- Please note that investigation is ongoing to discover the root
+2014-10-08 08:51:18	--	- cause of the attack, and until this investigation is complete
+2014-10-08 08:51:18	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-08 08:51:18	--	- have been removed. We may have to ask you to change your
+2014-10-08 08:51:18	--	- passwords again after analysis has completed.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- Further details will appear on https://blog.freenode.net/
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- **************************************************************
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- By connecting to freenode you indicate that you have read and
+2014-10-08 08:51:18	--	- accept our policies as set out on http://www.freenode.net
+2014-10-08 08:51:18	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-08 08:51:18	--	- any network-related questions or queries, where a number of
+2014-10-08 08:51:18	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-08 08:51:18	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-08 08:51:18	--	- real-life collaboration.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- We would like to thank Private Internet Access
+2014-10-08 08:51:18	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-08 08:51:18	--	- organisations that help keep freenode and our other projects
+2014-10-08 08:51:18	--	- running for their sustained support.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	- In particular we would like to thank the sponsor
+2014-10-08 08:51:18	--	- of this server, details of which can be found above.
+2014-10-08 08:51:18	--	-
+2014-10-08 08:51:18	--	End of /MOTD command.
+2014-10-08 08:51:18	--	User mode [+i] by kweaver
+2014-10-08 08:51:18	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-08 17:39:19	=!=	Closing Link: pool-96-235-140-4.cmdnnj.fios.verizon.net (Quit: WeeChat 0.4.2)
+2014-10-08 17:39:19	--	irc: disconnected from server
+2014-10-08 17:39:19	--	irc: reconnecting to server in 10 seconds
+2014-10-08 17:39:22	--	irc: disconnected from server
+2014-10-09 08:47:27	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-09 08:47:28	--	irc: connected to chat.freenode.net/6667 (82.96.64.4)
+2014-10-09 08:47:28	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Looking up your hostname...
+2014-10-09 08:47:28	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Checking Ident
+2014-10-09 08:47:28	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Found your hostname
+2014-10-09 08:47:37	--	kornbluth.freenode.net (kornbluth.freenode.net): *** No Ident response
+2014-10-09 08:47:37	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-09 08:47:38	--	Your host is kornbluth.freenode.net[82.96.64.4/6667], running version ircd-seven-1.1.3
+2014-10-09 08:47:38	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-10-09 08:47:38	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-09 08:47:38	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-09 08:47:38	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-09 08:47:38	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-09 08:47:38	--	There are 186 users and 92334 invisible on 28 servers
+2014-10-09 08:47:38	--	31 :IRC Operators online
+2014-10-09 08:47:38	--	16 :unknown connection(s)
+2014-10-09 08:47:38	--	56817 :channels formed
+2014-10-09 08:47:38	--	I have 7310 clients and 1 servers
+2014-10-09 08:47:38	--	7310 15000 :Current local users 7310, max 15000
+2014-10-09 08:47:38	--	92520 104047 :Current global users 92520, max 104047
+2014-10-09 08:47:38	--	Highest connection count: 15001 (15000 clients) (1508181 connections received)
+2014-10-09 08:47:38	--	- kornbluth.freenode.net Message of the Day -
+2014-10-09 08:47:38	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-10-09 08:47:38	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-10-09 08:47:38	--	- sponsoring this server!
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-10-09 08:47:38	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-10-09 08:47:38	--	- first story professionally at age 15.  By the 1940's his
+2014-10-09 08:47:38	--	- stories appeared widely under several pennames, including
+2014-10-09 08:47:38	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-10-09 08:47:38	--	- studies in Chicago to serve in the Army in Europe during
+2014-10-09 08:47:38	--	- WWII, then returned to school and work in Chicago until he
+2014-10-09 08:47:38	--	- began writing full-time in 1951.  The author of The Marching
+2014-10-09 08:47:38	--	- Morons and the novels The Space Merchants (with Frederik
+2014-10-09 08:47:38	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-10-09 08:47:38	--	- satire and his collaborations with Pohl and with Judith
+2014-10-09 08:47:38	--	- Merril.
+2014-10-09 08:47:38	--	- Welcome to freenode - supporting the free and open source
+2014-10-09 08:47:38	--	- software communities since 1998.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- **************************************************************
+2014-10-09 08:47:38	--	-                       SECURITY ALERT
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-09 08:47:38	--	- some compromised binaries present on a number of servers.
+2014-10-09 08:47:38	--	- The servers in question have been removed from the network and
+2014-10-09 08:47:38	--	- shut down.  However, it's possible that network traffic  -
+2014-10-09 08:47:38	--	- including SSL traffic - has been sniffed and passwords
+2014-10-09 08:47:38	--	- exposed.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- We therefore recommend that all users change their nickserv
+2014-10-09 08:47:38	--	- password(s) to a new value which is not shared with any
+2014-10-09 08:47:38	--	- other service.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- Please note that investigation is ongoing to discover the root
+2014-10-09 08:47:38	--	- cause of the attack, and until this investigation is complete
+2014-10-09 08:47:38	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-09 08:47:38	--	- have been removed. We may have to ask you to change your
+2014-10-09 08:47:38	--	- passwords again after analysis has completed.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- Further details will appear on https://blog.freenode.net/
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- **************************************************************
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- By connecting to freenode you indicate that you have read and
+2014-10-09 08:47:38	--	- accept our policies as set out on http://www.freenode.net
+2014-10-09 08:47:38	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-09 08:47:38	--	- any network-related questions or queries, where a number of
+2014-10-09 08:47:38	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-09 08:47:38	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-09 08:47:38	--	- real-life collaboration.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- We would like to thank Private Internet Access
+2014-10-09 08:47:38	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-09 08:47:38	--	- organisations that help keep freenode and our other projects
+2014-10-09 08:47:38	--	- running for their sustained support.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	- In particular we would like to thank the sponsor
+2014-10-09 08:47:38	--	- of this server, details of which can be found above.
+2014-10-09 08:47:38	--	-
+2014-10-09 08:47:38	--	End of /MOTD command.
+2014-10-09 08:47:38	--	User mode [+i] by kweaver
+2014-10-09 08:47:38	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-09 17:31:15	--	irc: disconnected from server
+2014-10-10 13:26:53	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-10 13:26:53	--	irc: connected to chat.freenode.net/6667 (84.240.3.129)
+2014-10-10 13:26:53	--	cameron.freenode.net (cameron.freenode.net): *** Looking up your hostname...
+2014-10-10 13:26:53	--	cameron.freenode.net (cameron.freenode.net): *** Checking Ident
+2014-10-10 13:26:53	--	cameron.freenode.net (cameron.freenode.net): *** Found your hostname
+2014-10-10 13:27:00	--	cameron.freenode.net (cameron.freenode.net): *** No Ident response
+2014-10-10 13:27:00	--	irc: nickname "kweaver" is already in use, trying nickname "kweaver_desktop"
+2014-10-10 13:27:00	--	Welcome to the freenode Internet Relay Chat Network kweaver_desktop
+2014-10-10 13:27:00	--	Your host is cameron.freenode.net[84.240.3.129/6667], running version ircd-seven-1.1.3
+2014-10-10 13:27:00	--	This server was created Mon Dec 31 2012 at 23:38:16 EET
+2014-10-10 13:27:00	--	cameron.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-10 13:27:00	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-10 13:27:00	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-10 13:27:00	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-10 13:27:00	--	There are 183 users and 93657 invisible on 28 servers
+2014-10-10 13:27:00	--	30 :IRC Operators online
+2014-10-10 13:27:00	--	9 :unknown connection(s)
+2014-10-10 13:27:00	--	56998 :channels formed
+2014-10-10 13:27:00	--	I have 5936 clients and 3 servers
+2014-10-10 13:27:00	--	5936 10584 :Current local users 5936, max 10584
+2014-10-10 13:27:00	--	93840 104047 :Current global users 93840, max 104047
+2014-10-10 13:27:00	--	Highest connection count: 10586 (10584 clients) (2536638 connections received)
+2014-10-10 13:27:00	--	- cameron.freenode.net Message of the Day -
+2014-10-10 13:27:00	--	- Welcome to cameron.freenode.net, hosted in Vilnius, Lithuania.
+2014-10-10 13:27:00	--	- Thanks to Skynet (http://www.skynet.lt) for sponsoring this server!
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- CAMERON, JAMES (1954-). Canadian screenwriter/director James Cameron has
+2014-10-10 13:27:00	--	- been involved in the production of many of the film "greatest hits"
+2014-10-10 13:27:00	--	- of the past 25 years, including the Terminator movies and the 3D
+2014-10-10 13:27:00	--	- blockbuster Avatar.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- Welcome to freenode - supporting the free and open source
+2014-10-10 13:27:00	--	- software communities since 1998.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- **************************************************************
+2014-10-10 13:27:00	--	-                       SECURITY ALERT
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-10 13:27:00	--	- some compromised binaries present on a number of servers.
+2014-10-10 13:27:00	--	- The servers in question have been removed from the network and
+2014-10-10 13:27:00	--	- shut down.  However, it's possible that network traffic  -
+2014-10-10 13:27:00	--	- including SSL traffic - has been sniffed and passwords
+2014-10-10 13:27:00	--	- exposed.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- We therefore recommend that all users change their nickserv
+2014-10-10 13:27:00	--	- password(s) to a new value which is not shared with any
+2014-10-10 13:27:00	--	- other service.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- Please note that investigation is ongoing to discover the root
+2014-10-10 13:27:00	--	- cause of the attack, and until this investigation is complete
+2014-10-10 13:27:00	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-10 13:27:00	--	- have been removed. We may have to ask you to change your
+2014-10-10 13:27:00	--	- passwords again after analysis has completed.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- Further details will appear on https://blog.freenode.net/
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- **************************************************************
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- By connecting to freenode you indicate that you have read and
+2014-10-10 13:27:00	--	- accept our policies as set out on http://www.freenode.net
+2014-10-10 13:27:00	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-10 13:27:00	--	- any network-related questions or queries, where a number of
+2014-10-10 13:27:00	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-10 13:27:00	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-10 13:27:00	--	- real-life collaboration.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- We would like to thank Private Internet Access
+2014-10-10 13:27:00	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-10 13:27:00	--	- organisations that help keep freenode and our other projects
+2014-10-10 13:27:00	--	- running for their sustained support.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	- In particular we would like to thank the sponsor
+2014-10-10 13:27:00	--	- of this server, details of which can be found above.
+2014-10-10 13:27:00	--	-
+2014-10-10 13:27:00	--	End of /MOTD command.
+2014-10-10 13:27:00	--	User mode [+i] by kweaver_desktop
+2014-10-10 16:34:56	--	irc: disconnected from server
+2014-10-15 09:09:03	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-15 09:09:04	--	irc: connected to chat.freenode.net/6667 (192.186.157.43)
+2014-10-15 09:09:04	--	tepper.freenode.net (tepper.freenode.net): *** Looking up your hostname...
+2014-10-15 09:09:04	--	tepper.freenode.net (tepper.freenode.net): *** Checking Ident
+2014-10-15 09:09:04	--	tepper.freenode.net (tepper.freenode.net): *** Found your hostname
+2014-10-15 09:09:11	--	tepper.freenode.net (tepper.freenode.net): *** No Ident response
+2014-10-15 09:09:11	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-15 09:09:12	--	Your host is tepper.freenode.net[192.186.157.43/6667], running version ircd-seven-1.1.3
+2014-10-15 09:09:12	--	This server was created Sun Jul 20 2014 at 01:18:10 UTC
+2014-10-15 09:09:12	--	tepper.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-15 09:09:12	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-15 09:09:12	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-15 09:09:12	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-15 09:09:12	--	There are 185 users and 92645 invisible on 29 servers
+2014-10-15 09:09:12	--	31 :IRC Operators online
+2014-10-15 09:09:12	--	9 :unknown connection(s)
+2014-10-15 09:09:12	--	57177 :channels formed
+2014-10-15 09:09:12	--	I have 6768 clients and 1 servers
+2014-10-15 09:09:12	--	6768 9738 :Current local users 6768, max 9738
+2014-10-15 09:09:12	--	92830 104047 :Current global users 92830, max 104047
+2014-10-15 09:09:12	--	Highest connection count: 9739 (9738 clients) (1440993 connections received)
+2014-10-15 09:09:12	--	- tepper.freenode.net Message of the Day -
+2014-10-15 09:09:12	--	- Welcome to tepper.freenode.net in Buffalo, NY.
+2014-10-15 09:09:12	--	- Thanks to http://www.servermania.com/ for sponsoring
+2014-10-15 09:09:12	--	- this server!
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- TEPPER, SHERI S. (1929-), an American science fiction,
+2014-10-15 09:09:12	--	- horror and mystery novel author, behind more than thirty
+2014-10-15 09:09:12	--	- books, many themed unapologetically eco-feminist. Her
+2014-10-15 09:09:12	--	- writing career started composing children's stories, but
+2014-10-15 09:09:12	--	- moved to adult fiction in 1982. With the 1991 novel
+2014-10-15 09:09:12	--	- 'Beauty' she won the Locus award for Best Fantasy Novel.
+2014-10-15 09:09:12	--	- Her other well-known works include 'Grass' (1989, nominated
+2014-10-15 09:09:12	--	- for Hugo and Locus Awards in 1990) and 'Gate to Women's
+2014-10-15 09:09:12	--	- Country' (1988).
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- Welcome to freenode - supporting the free and open source
+2014-10-15 09:09:12	--	- software communities since 1998.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- **************************************************************
+2014-10-15 09:09:12	--	-                       SECURITY ALERT
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-15 09:09:12	--	- some compromised binaries present on a number of servers.
+2014-10-15 09:09:12	--	- The servers in question have been removed from the network and
+2014-10-15 09:09:12	--	- shut down.  However, it's possible that network traffic  -
+2014-10-15 09:09:12	--	- including SSL traffic - has been sniffed and passwords
+2014-10-15 09:09:12	--	- exposed.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- We therefore recommend that all users change their nickserv
+2014-10-15 09:09:12	--	- password(s) to a new value which is not shared with any
+2014-10-15 09:09:12	--	- other service.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- Please note that investigation is ongoing to discover the root
+2014-10-15 09:09:12	--	- cause of the attack, and until this investigation is complete
+2014-10-15 09:09:12	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-15 09:09:12	--	- have been removed. We may have to ask you to change your
+2014-10-15 09:09:12	--	- passwords again after analysis has completed.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- Further details will appear on https://blog.freenode.net/
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- **************************************************************
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- By connecting to freenode you indicate that you have read and
+2014-10-15 09:09:12	--	- accept our policies as set out on http://www.freenode.net
+2014-10-15 09:09:12	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-15 09:09:12	--	- any network-related questions or queries, where a number of
+2014-10-15 09:09:12	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-15 09:09:12	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-15 09:09:12	--	- real-life collaboration.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- We would like to thank Private Internet Access
+2014-10-15 09:09:12	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-15 09:09:12	--	- organisations that help keep freenode and our other projects
+2014-10-15 09:09:12	--	- running for their sustained support.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	- In particular we would like to thank the sponsor
+2014-10-15 09:09:12	--	- of this server, details of which can be found above.
+2014-10-15 09:09:12	--	-
+2014-10-15 09:09:12	--	End of /MOTD command.
+2014-10-15 09:09:12	--	User mode [+i] by kweaver
+2014-10-15 09:09:12	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-15 14:57:38	=!=	Closing Link: pool-96-235-140-4.cmdnnj.fios.verizon.net (Ping timeout: 246 seconds)
+2014-10-15 14:57:38	--	irc: disconnected from server
+2014-10-15 14:57:38	--	irc: reconnecting to server in 10 seconds
+2014-10-15 14:57:48	--	irc: reconnecting to server...
+2014-10-15 14:57:48	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-15 14:57:48	--	irc: connected to chat.freenode.net/6667 (82.96.64.4)
+2014-10-15 14:57:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Looking up your hostname...
+2014-10-15 14:57:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Checking Ident
+2014-10-15 14:57:49	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Found your hostname
+2014-10-15 14:57:55	--	kornbluth.freenode.net (kornbluth.freenode.net): *** No Ident response
+2014-10-15 14:57:55	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-15 14:57:57	--	Your host is kornbluth.freenode.net[82.96.64.4/6667], running version ircd-seven-1.1.3
+2014-10-15 14:57:57	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-10-15 14:57:57	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-15 14:57:57	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-15 14:57:57	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-15 14:57:57	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-15 14:57:57	--	There are 181 users and 93286 invisible on 29 servers
+2014-10-15 14:57:57	--	32 :IRC Operators online
+2014-10-15 14:57:57	--	19 :unknown connection(s)
+2014-10-15 14:57:57	--	57044 :channels formed
+2014-10-15 14:57:57	--	I have 8091 clients and 1 servers
+2014-10-15 14:57:57	--	8091 15000 :Current local users 8091, max 15000
+2014-10-15 14:57:57	--	93467 104047 :Current global users 93467, max 104047
+2014-10-15 14:57:57	--	Highest connection count: 15001 (15000 clients) (1621428 connections received)
+2014-10-15 14:57:57	--	- kornbluth.freenode.net Message of the Day -
+2014-10-15 14:57:57	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-10-15 14:57:57	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-10-15 14:57:57	--	- sponsoring this server!
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-10-15 14:57:57	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-10-15 14:57:57	--	- first story professionally at age 15.  By the 1940's his
+2014-10-15 14:57:57	--	- stories appeared widely under several pennames, including
+2014-10-15 14:57:57	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-10-15 14:57:57	--	- studies in Chicago to serve in the Army in Europe during
+2014-10-15 14:57:57	--	- WWII, then returned to school and work in Chicago until he
+2014-10-15 14:57:57	--	- began writing full-time in 1951.  The author of The Marching
+2014-10-15 14:57:57	--	- Morons and the novels The Space Merchants (with Frederik
+2014-10-15 14:57:57	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-10-15 14:57:57	--	- satire and his collaborations with Pohl and with Judith
+2014-10-15 14:57:57	--	- Merril.
+2014-10-15 14:57:57	--	- Welcome to freenode - supporting the free and open source
+2014-10-15 14:57:57	--	- software communities since 1998.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- **************************************************************
+2014-10-15 14:57:57	--	-                       SECURITY ALERT
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-15 14:57:57	--	- some compromised binaries present on a number of servers.
+2014-10-15 14:57:57	--	- The servers in question have been removed from the network and
+2014-10-15 14:57:57	--	- shut down.  However, it's possible that network traffic  -
+2014-10-15 14:57:57	--	- including SSL traffic - has been sniffed and passwords
+2014-10-15 14:57:57	--	- exposed.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- We therefore recommend that all users change their nickserv
+2014-10-15 14:57:57	--	- password(s) to a new value which is not shared with any
+2014-10-15 14:57:57	--	- other service.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- Please note that investigation is ongoing to discover the root
+2014-10-15 14:57:57	--	- cause of the attack, and until this investigation is complete
+2014-10-15 14:57:57	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-15 14:57:57	--	- have been removed. We may have to ask you to change your
+2014-10-15 14:57:57	--	- passwords again after analysis has completed.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- Further details will appear on https://blog.freenode.net/
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- **************************************************************
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- By connecting to freenode you indicate that you have read and
+2014-10-15 14:57:57	--	- accept our policies as set out on http://www.freenode.net
+2014-10-15 14:57:57	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-15 14:57:57	--	- any network-related questions or queries, where a number of
+2014-10-15 14:57:57	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-15 14:57:57	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-15 14:57:57	--	- real-life collaboration.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- We would like to thank Private Internet Access
+2014-10-15 14:57:57	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-15 14:57:57	--	- organisations that help keep freenode and our other projects
+2014-10-15 14:57:57	--	- running for their sustained support.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	- In particular we would like to thank the sponsor
+2014-10-15 14:57:57	--	- of this server, details of which can be found above.
+2014-10-15 14:57:57	--	-
+2014-10-15 14:57:57	--	End of /MOTD command.
+2014-10-15 14:57:57	--	User mode [+i] by kweaver
+2014-10-15 14:57:57	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-15 17:31:40	--	irc: disconnected from server
+2014-10-16 09:44:47	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-16 09:44:50	--	irc: connected to chat.freenode.net/6667 (82.96.64.4)
+2014-10-16 09:44:50	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Looking up your hostname...
+2014-10-16 09:44:50	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Checking Ident
+2014-10-16 09:44:50	--	kornbluth.freenode.net (kornbluth.freenode.net): *** Found your hostname
+2014-10-16 09:44:57	--	kornbluth.freenode.net (kornbluth.freenode.net): *** No Ident response
+2014-10-16 09:44:57	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-16 09:44:58	--	Your host is kornbluth.freenode.net[82.96.64.4/6667], running version ircd-seven-1.1.3
+2014-10-16 09:44:58	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-10-16 09:44:58	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-16 09:44:58	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-16 09:44:58	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-16 09:44:58	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-16 09:44:58	--	There are 177 users and 93170 invisible on 29 servers
+2014-10-16 09:44:58	--	31 :IRC Operators online
+2014-10-16 09:44:58	--	10 :unknown connection(s)
+2014-10-16 09:44:58	--	57338 :channels formed
+2014-10-16 09:44:58	--	I have 7909 clients and 1 servers
+2014-10-16 09:44:58	--	7909 15000 :Current local users 7909, max 15000
+2014-10-16 09:44:58	--	93347 104047 :Current global users 93347, max 104047
+2014-10-16 09:44:58	--	Highest connection count: 15001 (15000 clients) (1635478 connections received)
+2014-10-16 09:44:58	--	- kornbluth.freenode.net Message of the Day -
+2014-10-16 09:44:58	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-10-16 09:44:58	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-10-16 09:44:58	--	- sponsoring this server!
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-10-16 09:44:58	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-10-16 09:44:58	--	- first story professionally at age 15.  By the 1940's his
+2014-10-16 09:44:58	--	- stories appeared widely under several pennames, including
+2014-10-16 09:44:58	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-10-16 09:44:58	--	- studies in Chicago to serve in the Army in Europe during
+2014-10-16 09:44:58	--	- WWII, then returned to school and work in Chicago until he
+2014-10-16 09:44:58	--	- began writing full-time in 1951.  The author of The Marching
+2014-10-16 09:44:58	--	- Morons and the novels The Space Merchants (with Frederik
+2014-10-16 09:44:58	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-10-16 09:44:58	--	- satire and his collaborations with Pohl and with Judith
+2014-10-16 09:44:58	--	- Merril.
+2014-10-16 09:44:58	--	- Welcome to freenode - supporting the free and open source
+2014-10-16 09:44:58	--	- software communities since 1998.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- **************************************************************
+2014-10-16 09:44:58	--	-                       SECURITY ALERT
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-16 09:44:58	--	- some compromised binaries present on a number of servers.
+2014-10-16 09:44:58	--	- The servers in question have been removed from the network and
+2014-10-16 09:44:58	--	- shut down.  However, it's possible that network traffic  -
+2014-10-16 09:44:58	--	- including SSL traffic - has been sniffed and passwords
+2014-10-16 09:44:58	--	- exposed.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- We therefore recommend that all users change their nickserv
+2014-10-16 09:44:58	--	- password(s) to a new value which is not shared with any
+2014-10-16 09:44:58	--	- other service.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- Please note that investigation is ongoing to discover the root
+2014-10-16 09:44:58	--	- cause of the attack, and until this investigation is complete
+2014-10-16 09:44:58	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-16 09:44:58	--	- have been removed. We may have to ask you to change your
+2014-10-16 09:44:58	--	- passwords again after analysis has completed.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- Further details will appear on https://blog.freenode.net/
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- **************************************************************
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- By connecting to freenode you indicate that you have read and
+2014-10-16 09:44:58	--	- accept our policies as set out on http://www.freenode.net
+2014-10-16 09:44:58	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-16 09:44:58	--	- any network-related questions or queries, where a number of
+2014-10-16 09:44:58	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-16 09:44:58	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-16 09:44:58	--	- real-life collaboration.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- We would like to thank Private Internet Access
+2014-10-16 09:44:58	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-16 09:44:58	--	- organisations that help keep freenode and our other projects
+2014-10-16 09:44:58	--	- running for their sustained support.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	- In particular we would like to thank the sponsor
+2014-10-16 09:44:58	--	- of this server, details of which can be found above.
+2014-10-16 09:44:58	--	-
+2014-10-16 09:44:58	--	End of /MOTD command.
+2014-10-16 09:44:58	--	User mode [+i] by kweaver
+2014-10-16 09:44:58	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-16 09:53:59	--	irc: disconnected from server
+2014-10-16 10:47:43	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-16 10:47:44	--	irc: connected to chat.freenode.net/6667 (185.30.166.35)
+2014-10-16 10:47:44	--	verne.freenode.net (verne.freenode.net): *** Looking up your hostname...
+2014-10-16 10:47:44	--	verne.freenode.net (verne.freenode.net): *** Checking Ident
+2014-10-16 10:47:44	--	verne.freenode.net (verne.freenode.net): *** Found your hostname
+2014-10-16 10:47:50	--	verne.freenode.net (verne.freenode.net): *** No Ident response
+2014-10-16 10:47:50	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-16 10:47:51	--	Your host is verne.freenode.net[185.30.166.35/6667], running version ircd-seven-1.1.3
+2014-10-16 10:47:51	--	This server was created Sat Mar 22 2014 at 14:55:42 EDT
+2014-10-16 10:47:51	--	verne.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-16 10:47:51	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-16 10:47:51	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-16 10:47:51	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-16 10:47:51	--	There are 182 users and 94805 invisible on 29 servers
+2014-10-16 10:47:51	--	30 :IRC Operators online
+2014-10-16 10:47:51	--	17 :unknown connection(s)
+2014-10-16 10:47:51	--	57476 :channels formed
+2014-10-16 10:47:51	--	I have 8341 clients and 1 servers
+2014-10-16 10:47:51	--	8341 15001 :Current local users 8341, max 15001
+2014-10-16 10:47:51	--	94987 104047 :Current global users 94987, max 104047
+2014-10-16 10:47:51	--	Highest connection count: 15002 (15001 clients) (1658875 connections received)
+2014-10-16 10:47:51	--	- verne.freenode.net Message of the Day -
+2014-10-16 10:47:51	--	- Welcome to verne.freenode.net in Amsterdam, NL.
+2014-10-16 10:47:51	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-10-16 10:47:51	--	- this server!
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- VERNE, Jules (1828-1905). Born in Nantes, France, Verne was
+2014-10-16 10:47:51	--	- a pioneering french author known for novels such as Twenty
+2014-10-16 10:47:51	--	- Thousand Leagues Under the Sea, A Journey to the Center of the
+2014-10-16 10:47:51	--	- Earth, and Around the World in Eighty Days. Often lauded as the
+2014-10-16 10:47:51	--	- Father of science fiction, Verne wrote about concepts such as
+2014-10-16 10:47:51	--	- space travel, skyscrapers, and worldwide communications
+2014-10-16 10:47:51	--	- networks long before these ideas became popularised or realised.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- Welcome to freenode - supporting the free and open source
+2014-10-16 10:47:51	--	- software communities since 1998.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- **************************************************************
+2014-10-16 10:47:51	--	-                       SECURITY ALERT
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-16 10:47:51	--	- some compromised binaries present on a number of servers.
+2014-10-16 10:47:51	--	- The servers in question have been removed from the network and
+2014-10-16 10:47:51	--	- shut down.  However, it's possible that network traffic  -
+2014-10-16 10:47:51	--	- including SSL traffic - has been sniffed and passwords
+2014-10-16 10:47:51	--	- exposed.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- We therefore recommend that all users change their nickserv
+2014-10-16 10:47:51	--	- password(s) to a new value which is not shared with any
+2014-10-16 10:47:51	--	- other service.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- Please note that investigation is ongoing to discover the root
+2014-10-16 10:47:51	--	- cause of the attack, and until this investigation is complete
+2014-10-16 10:47:51	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-16 10:47:51	--	- have been removed. We may have to ask you to change your
+2014-10-16 10:47:51	--	- passwords again after analysis has completed.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- Further details will appear on https://blog.freenode.net/
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- **************************************************************
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- By connecting to freenode you indicate that you have read and
+2014-10-16 10:47:51	--	- accept our policies as set out on http://www.freenode.net
+2014-10-16 10:47:51	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-16 10:47:51	--	- any network-related questions or queries, where a number of
+2014-10-16 10:47:51	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-16 10:47:51	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-16 10:47:51	--	- real-life collaboration.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- We would like to thank Private Internet Access
+2014-10-16 10:47:51	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-16 10:47:51	--	- organisations that help keep freenode and our other projects
+2014-10-16 10:47:51	--	- running for their sustained support.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	- In particular we would like to thank the sponsor
+2014-10-16 10:47:51	--	- of this server, details of which can be found above.
+2014-10-16 10:47:51	--	-
+2014-10-16 10:47:51	--	End of /MOTD command.
+2014-10-16 10:47:51	--	User mode [+i] by kweaver
+2014-10-16 10:47:51	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-10-16 11:25:55	--	irc: disconnected from server
+2014-10-16 13:26:00	--	irc: connecting to server chat.freenode.net/6667...
+2014-10-16 13:26:00	--	irc: connected to chat.freenode.net/6667 (162.213.39.42)
+2014-10-16 13:26:00	--	weber.freenode.net (weber.freenode.net): *** Looking up your hostname...
+2014-10-16 13:26:00	--	weber.freenode.net (weber.freenode.net): *** Checking Ident
+2014-10-16 13:26:00	--	weber.freenode.net (weber.freenode.net): *** Found your hostname
+2014-10-16 13:26:10	--	weber.freenode.net (weber.freenode.net): *** No Ident response
+2014-10-16 13:26:10	--	Welcome to the freenode Internet Relay Chat Network kweaver
+2014-10-16 13:26:11	--	Your host is weber.freenode.net[162.213.39.42/6667], running version ircd-seven-1.1.3
+2014-10-16 13:26:11	--	This server was created Sun Jul 6 2014 at 19:37:14 BST
+2014-10-16 13:26:11	--	weber.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-10-16 13:26:11	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-10-16 13:26:11	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-10-16 13:26:11	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-10-16 13:26:11	--	There are 184 users and 94787 invisible on 29 servers
+2014-10-16 13:26:11	--	31 :IRC Operators online
+2014-10-16 13:26:11	--	7 :unknown connection(s)
+2014-10-16 13:26:11	--	57439 :channels formed
+2014-10-16 13:26:11	--	I have 4459 clients and 1 servers
+2014-10-16 13:26:11	--	4459 4599 :Current local users 4459, max 4599
+2014-10-16 13:26:11	--	94971 98074 :Current global users 94971, max 98074
+2014-10-16 13:26:11	--	Highest connection count: 4600 (4599 clients) (113063 connections received)
+2014-10-16 13:26:11	--	- weber.freenode.net Message of the Day -
+2014-10-16 13:26:11	--	- Welcome to weber.freenode.net in California, USA.
+2014-10-16 13:26:11	--	- Thanks to https://www.cloudsigma.com/ for sponsoring
+2014-10-16 13:26:11	--	- this server!
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- WEBER, DAVID M. (1952-), an American fantasy and scifi
+2014-10-16 13:26:11	--	- author. Best known for his 'Honor Harrington' series, his
+2014-10-16 13:26:11	--	- works span several genres, including alternate history,
+2014-10-16 13:26:11	--	- epic fantasy, military scifi and space opera. He's also
+2014-10-16 13:26:11	--	- done wargame design mainly for the StarFire tabletop
+2014-10-16 13:26:11	--	- boardgame series, a job which later evolved into the novel,
+2014-10-16 13:26:11	--	- 'Insurrection' (collaboration with Steve White, published
+2014-10-16 13:26:11	--	- in 1990).
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- Welcome to freenode - supporting the free and open source
+2014-10-16 13:26:11	--	- software communities since 1998.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- **************************************************************
+2014-10-16 13:26:11	--	-                       SECURITY ALERT
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-10-16 13:26:11	--	- some compromised binaries present on a number of servers.
+2014-10-16 13:26:11	--	- The servers in question have been removed from the network and
+2014-10-16 13:26:11	--	- shut down.  However, it's possible that network traffic  -
+2014-10-16 13:26:11	--	- including SSL traffic - has been sniffed and passwords
+2014-10-16 13:26:11	--	- exposed.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- We therefore recommend that all users change their nickserv
+2014-10-16 13:26:11	--	- password(s) to a new value which is not shared with any
+2014-10-16 13:26:11	--	- other service.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- You can do this with /msg nickserv set password newpasshere
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- Please note that investigation is ongoing to discover the root
+2014-10-16 13:26:11	--	- cause of the attack, and until this investigation is complete
+2014-10-16 13:26:11	--	- we cannot be 100% certain that all traces of the compromises
+2014-10-16 13:26:11	--	- have been removed. We may have to ask you to change your
+2014-10-16 13:26:11	--	- passwords again after analysis has completed.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- Further details will appear on https://blog.freenode.net/
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- **************************************************************
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- By connecting to freenode you indicate that you have read and
+2014-10-16 13:26:11	--	- accept our policies as set out on http://www.freenode.net
+2014-10-16 13:26:11	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-10-16 13:26:11	--	- any network-related questions or queries, where a number of
+2014-10-16 13:26:11	--	- volunteer staff and helpful users will be happy to assist you.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-10-16 13:26:11	--	- together with like-minded FOSS enthusiasts for talks and
+2014-10-16 13:26:11	--	- real-life collaboration.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- We would like to thank Private Internet Access
+2014-10-16 13:26:11	--	- (https://www.privateinternetaccess.com/) and the other
+2014-10-16 13:26:11	--	- organisations that help keep freenode and our other projects
+2014-10-16 13:26:11	--	- running for their sustained support.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	- In particular we would like to thank the sponsor
+2014-10-16 13:26:11	--	- of this server, details of which can be found above.
+2014-10-16 13:26:11	--	-
+2014-10-16 13:26:11	--	End of /MOTD command.
+2014-10-16 13:26:11	--	User mode [+i] by kweaver
+2014-10-16 13:26:17	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
