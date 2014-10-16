@@ -6937,3 +6937,245 @@
 2014-10-07 13:30:31	kweaver	im good now
 2014-10-07 14:08:05	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
 2014-10-07 14:08:05	--	irc: disconnected from server
+2014-10-07 14:14:03	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-07 14:14:03	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-07 14:14:03	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-07 14:14:05	--	Mode #omnidev [+cnt]
+2014-10-07 14:14:06	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-07 16:23:30	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-10-07 17:30:29	--	irc: disconnected from server
+2014-10-08 08:51:24	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-08 08:51:24	--	Mode #omnidev [+ns] by rajaniemi.freenode.net
+2014-10-08 08:51:24	--	Nicks #omnidev: [@kweaver]
+2014-10-08 08:51:24	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-08 08:51:24	--	Mode #omnidev [-o kweaver] by services.
+2014-10-08 08:51:24	--	Notice(rajaniemi.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1412772684 to 1337223617
+2014-10-08 08:51:24	--	Mode #omnidev [+ct-s] by services.
+2014-10-08 08:51:24	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-08 08:51:24	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-08 08:51:26	--	Mode #omnidev [+cnt]
+2014-10-08 08:51:27	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-08 17:39:19	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-08 17:39:19	--	irc: disconnected from server
+2014-10-09 08:47:43	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-09 08:47:43	--	Mode #omnidev [+ns] by kornbluth.freenode.net
+2014-10-09 08:47:43	--	Nicks #omnidev: [@kweaver]
+2014-10-09 08:47:43	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-09 08:47:43	--	Mode #omnidev [-o kweaver] by services.
+2014-10-09 08:47:43	--	Notice(kornbluth.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1412858863 to 1337223617
+2014-10-09 08:47:43	--	Mode #omnidev [+ct-s] by services.
+2014-10-09 08:47:43	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-09 08:47:43	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-09 08:47:45	--	Mode #omnidev [+cnt]
+2014-10-09 08:47:45	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-09 13:05:50	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-09 13:05:50	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-09 17:31:15	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-09 17:31:15	--	irc: disconnected from server
+2014-10-10 13:27:06	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-10 13:27:06	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-10 13:27:06	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-10 13:27:08	--	Mode #omnidev [+cnt]
+2014-10-10 13:27:08	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-10 14:25:31	kweaver_desktop	yo jhartigan 
+2014-10-10 14:25:56	kweaver_desktop	so whenever that check clears, you wanna take care of amex and paying us?
+2014-10-10 14:30:00	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-10 16:34:55	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-10 16:34:56	--	irc: disconnected from server
+2014-10-15 09:09:17	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-15 09:09:17	--	Nicks #omnidev: [jhartigan jharty kweaver]
+2014-10-15 09:09:17	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-15 09:09:19	--	Mode #omnidev [+cnt]
+2014-10-15 09:09:19	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-15 09:11:03	kweaver	jhartigan: jharty just message me here if you have any other things
+2014-10-15 09:11:34	kweaver	i do want to do a more full recap this afternoon, but bruiz is sitting here
+2014-10-15 09:14:29	kweaver	and then tonight ill be starting the longtail around 7
+2014-10-15 09:15:28	kweaver	i figure step one is to setup middleman, the repo, and then try out our graphing options
+2014-10-15 09:18:17	jharty	ya i understand
+2014-10-15 09:27:22	jharty	no worries, just get the scaffolding laid out.  assuming all goes well today, only thing ill have to do tomorrow is give katz a proposal on the redesign
+2014-10-15 09:27:35	jharty	oh and ill be out tonight kweaver with a later start tomorrow
+2014-10-15 09:27:49	jharty	laceys bday and my buddy jon got engaged so its a dual party thing
+2014-10-15 09:28:01	kweaver	oh nice
+2014-10-15 09:28:23	jharty	oh shit
+2014-10-15 09:28:27	jharty	the one important thing kweaver
+2014-10-15 09:28:32	kweaver	sup
+2014-10-15 09:28:33	jharty	want me to ry and transfer to you again
+2014-10-15 09:28:37	jharty	or you wanna write yourself a check
+2014-10-15 09:28:45	jharty	since it kicked yours back 2 days after submission
+2014-10-15 09:29:11	kweaver	thats weird, did it give a reason?
+2014-10-15 09:30:38	jharty	its that stupid limit shit
+2014-10-15 09:30:42	kweaver	just try the transfer again jharty 
+2014-10-15 09:30:44	jharty	i forgot until they sent an email
+2014-10-15 09:30:55	kweaver	oh yeah
+2014-10-15 09:30:56	kweaver	hm
+2014-10-15 09:31:03	jharty	i just didnt want you to wait longer since transfers take 3ish days
+2014-10-15 09:31:06	jharty	mine didnt drop yet
+2014-10-15 09:31:13	jharty	but im not sure what they count as a day
+2014-10-15 09:31:20	jharty	since i scheduled them a day apart and it still cancelled
+2014-10-15 09:31:32	jharty	it doesnt let you transfer on the same day
+2014-10-15 09:31:37	jharty	so i dont quite get their system
+2014-10-15 09:31:43	kweaver	just try again
+2014-10-15 09:31:47	jharty	kk
+2014-10-15 09:31:49	kweaver	and if it doesnt work again ill write a check
+2014-10-15 09:31:54	kweaver	thx
+2014-10-15 09:32:17	jharty	no probs
+2014-10-15 09:32:56	jharty	jesus kweaver when youre free - favorite toy as a child
+2014-10-15 09:33:00	jharty	it forgot my linux desktop
+2014-10-15 09:33:15	kweaver	huh?
+2014-10-15 09:33:19	jharty	pnc
+2014-10-15 09:33:27	jharty	security question
+2014-10-15 09:33:30	kweaver	ohhhh
+2014-10-15 09:33:47	kweaver	i think 'video games' or 'videogames'
+2014-10-15 09:37:01	jharty	theyve failed. oldest siblings nicknames
+2014-10-15 09:37:18	kweaver	eric
+2014-10-15 09:37:19	kweaver	lol
+2014-10-15 09:37:36	jharty	tricky tricky
+2014-10-15 09:41:58	jharty	okay kweaver this time it threw and error and let me schedule it to start tomrrow
+2014-10-15 09:42:07	jharty	instead of sunday/monday like before
+2014-10-15 09:42:22	kweaver	okay
+2014-10-15 09:42:31	jharty	so barring another email itll go through
+2014-10-15 09:43:02	jharty	oh shit one more somewhat important thing
+2014-10-15 09:43:08	jharty	fuck lol im bad at memory
+2014-10-15 09:43:26	kweaver	sall good
+2014-10-15 09:43:35	jharty	did you respond to justine regarding those katz invoices kweaver, she asked me when i was there and i wasnt totally sure how you had gone about it so i told her id check with you
+2014-10-15 09:44:05	kweaver	yeah i emailed her on monday.  she was just confused about arielles weird breakdown, but i explained it to her
+2014-10-15 09:45:01	jharty	okay good deal, wasnt sure if she ever got an answer and when i went back to the office at 430 since martines took that long, she was gone
+2014-10-15 10:10:23	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-10-15 10:24:52	kweaver	jharty: what did you say the pnc transfer amount was?
+2014-10-15 10:25:23	jharty	3408
+2014-10-15 10:25:31	kweaver	k
+2014-10-15 10:26:00	kweaver	the long tail deposit should be nice too
+2014-10-15 10:26:06	kweaver	and hopefully not too far away
+2014-10-15 10:30:05	jharty	kweaver:
+2014-10-15 10:30:07	jharty	we lost doug
+2014-10-15 10:30:10	jharty	to http://www.extremetechnologiesllc.com/
+2014-10-15 10:30:10	kweaver	huh?
+2014-10-15 10:30:12	jharty	lol
+2014-10-15 10:30:16	jharty	landis title
+2014-10-15 10:30:20	jharty	just called, switching hosting
+2014-10-15 10:30:28	kweaver	oh god....
+2014-10-15 10:30:37	kweaver	thats a joke, right?
+2014-10-15 10:30:54	jharty	100% Uptime Guarantee
+2014-10-15 10:30:56	jharty	lmao
+2014-10-15 10:30:57	jharty	not even a little bit
+2014-10-15 10:31:07	kweaver	ask chris/brandon if doug is leaving from for IT also
+2014-10-15 10:34:39	jharty	doug was like 'hey uh remember when we were switching to godaddy or whatever' me - 'uh its on go daddys registrar' doug - 'yeah the other stuff, i dont need you guys for that'
+2014-10-15 10:36:03	kweaver	lololol
+2014-10-15 10:36:08	kweaver	thats great
+2014-10-15 10:36:14	kweaver	best of luck dougy boy
+2014-10-15 10:36:21	jharty	im sure itll be grand
+2014-10-15 10:36:24	jharty	100% uptime and all
+2014-10-15 10:36:29	kweaver	hahaha
+2014-10-15 10:37:20	kweaver	company must have a bigger infrastructure than google, go daddy, name cheap, or any other hosting company in the world
+2014-10-15 10:37:23	jharty	anyways, few emails to finish up. then getting kirks coming soon done, finishing the content he gave me, and launching his coming soon
+2014-10-15 10:37:32	kweaver	cool
+2014-10-15 10:37:33	jharty	i mean i figure they have trojans and host off me
+2014-10-15 10:37:38	kweaver	any updates from eirc?
+2014-10-15 10:37:46	jharty	no response yet
+2014-10-15 10:37:54	jharty	oh they left bc months ago
+2014-10-15 10:39:15	kweaver	oh
+2014-10-15 10:39:18	kweaver	thats why then
+2014-10-15 10:39:28	kweaver	well, it doesnt have to be why
+2014-10-15 10:40:18	kweaver	but i can see someone like doug thinking that theyd benefit from switching everything IT/website/electronics/nick-nack related all at the same time
+2014-10-15 10:40:28	jharty	absolutely
+2014-10-15 10:40:48	jharty	chris even said hew was super volatile so it was good to go
+2014-10-15 10:41:19	kweaver	yeah he did that bullshit with the angry email Tim CC a while back
+2014-10-15 10:42:00	jharty	oh thats right
+2014-10-15 10:43:31	kweaver	its interesting to see the full spectrum of client personalities
+2014-10-15 10:44:04	kweaver	and important to be able to read the early signs of potential personality conflicts
+2014-10-15 10:47:07	jharty	yeah it really is wild, i wonder how close we were to billing him again
+2014-10-15 11:00:34	kweaver	probably very
+2014-10-15 11:05:58	jharty	can you read alicias email real quick kweaver and confirm im not an idiot  -- no clue what the difference between sidebar and side nav is or how a massive amount of text goes into the sidebar
+2014-10-15 11:35:29	kweaver	i will in a bit
+2014-10-15 11:46:37	kweaver	jharty: when you talked to brian on monday, everything seemed pretty fine between us and bc, right?  i just wanted to make sure that this 'omni-bc separation' was strictly for easier client relations and didnt have any additional reasons
+2014-10-15 11:46:58	jharty	if shit was fucked, they made no indication of it
+2014-10-15 11:47:06	jharty	theyre generally pretty straight forward too
+2014-10-15 11:47:09	kweaver	yeah i figured as much
+2014-10-15 11:47:11	kweaver	yeah
+2014-10-15 11:47:15	jharty	but i guess it wouldnt hurt to ask
+2014-10-15 11:47:18	kweaver	they let us know when they arent happy
+2014-10-15 11:47:31	jharty	yeah they tend to haha
+2014-10-15 11:47:36	jharty	esp when its never our fault
+2014-10-15 11:47:43	kweaver	im not too worried because the set up that we had really didnt even make sense to begin with
+2014-10-15 11:47:47	kweaver	and just wasted justine's time
+2014-10-15 11:48:18	jharty	yeah im not overly concerned, and at the end of the day, we wont change their minds regarless of their decision
+2014-10-15 11:48:20	kweaver	and cost them money in taxes for income they werent even making
+2014-10-15 11:48:22	jharty	we just get to ride it out
+2014-10-15 11:49:06	jharty	yeah exactly, i mean sure we keep some of their clients happy, but could literally do the same thing, without any issues and save them money
+2014-10-15 11:50:17	kweaver	i think the concept was probably just a tim idea to begin with.  something like "well, if these guys are getting all of our clients, then i at least want our name on the good ones".  just turned out to not be worth the trouble
+2014-10-15 11:50:27	jharty	i saw tim for like 2 seconds walking away, he was hungover eating, and aparently there was a dui incident recently
+2014-10-15 11:50:38	kweaver	oh shit
+2014-10-15 11:50:38	jharty	so i dont think that was any indication of animosity
+2014-10-15 11:50:53	kweaver	you think he got a dui?
+2014-10-15 11:51:00	jharty	again these are the things they discuss in front of me, but without context
+2014-10-15 11:51:10	jharty	wasnt gonna be all OH SO TIM GOT A DUI AND KENS GETTING FIRED?
+2014-10-15 11:51:31	kweaver	yeah
+2014-10-15 11:51:43	kweaver	aight well i told bruiz that ill have to meet with bc thursday or friday
+2014-10-15 11:52:05	kweaver	so ill see which day is better with bc and go from there.  you have an issue with either day/times?
+2014-10-15 11:52:08	jharty	id prefer fridizzle, unless it doesnt work out
+2014-10-15 11:52:17	jharty	but thurs morning would be roughish
+2014-10-15 11:52:19	kweaver	yeah im good with friday
+2014-10-15 11:52:32	jharty	plsu, id like to make sure im good to go work wise
+2014-10-15 11:52:45	jharty	so if it becomes this long thing im not stuck at bc where we never seem to get real shit done
+2014-10-15 12:55:49	jharty	lemme know what you think of that email
+2014-10-15 12:55:54	jharty	when you have a free minute
+2014-10-15 12:56:02	jharty	iu think im nearing completion of kirks shit
+2014-10-15 13:13:49	kweaver	i think in alicia's email, shes saying that they want specific sidebars for specific pages
+2014-10-15 13:14:43	kweaver	so on service page A, they'll show service B, C, and D.    but on service page E, they'll show service F, G, and H
+2014-10-15 13:15:42	jharty	yeah i get that, but if you look at her attachments
+2014-10-15 13:15:46	jharty	its a fucking page of text
+2014-10-15 13:15:49	jharty	its not sidebar content
+2014-10-15 13:15:56	kweaver	yeah im looking now.  yeah that doesnt make sense
+2014-10-15 13:16:02	kweaver	you might want to clarify with her then
+2014-10-15 13:16:31	kweaver	and let her know that if she actually meant 'sidebar' then the page would be 10 minutes long, and the page body would be 95% empty
+2014-10-15 13:17:01	jharty	yeah i just wanted to make sure i was reading everything right before callin her out
+2014-10-15 13:17:15	kweaver	slam her to the ground
+2014-10-15 13:17:18	kweaver	and tell her no
+2014-10-15 13:17:29	jharty	THATS NOT A SIDEBAR, THATS A CELL PHONE
+2014-10-15 13:17:44	kweaver	hahaha
+2014-10-15 13:19:43	jharty	ill reach out after i eat, finishin up kirks shit then noms
+2014-10-15 13:31:43	kweaver	k
+2014-10-15 14:37:30	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-15 14:57:38	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 246 seconds)
+2014-10-15 14:57:38	--	irc: disconnected from server
+2014-10-15 14:58:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-15 14:58:01	--	Nicks #omnidev: [jharty kweaver kweaver_desktop]
+2014-10-15 14:58:01	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-15 14:58:05	--	Mode #omnidev [+cnt]
+2014-10-15 14:58:06	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-15 15:43:10	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-10-15 15:56:36	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2014-10-15 16:17:52	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-15 16:37:13	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-10-15 17:26:27	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-15 17:31:40	--	irc: disconnected from server
+2014-10-16 09:45:02	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-16 09:45:02	--	Mode #omnidev [+ns] by kornbluth.freenode.net
+2014-10-16 09:45:02	--	Nicks #omnidev: [@kweaver]
+2014-10-16 09:45:02	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-16 09:45:03	--	Mode #omnidev [-o kweaver] by services.
+2014-10-16 09:45:03	--	Notice(kornbluth.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1413467103 to 1337223617
+2014-10-16 09:45:03	--	Mode #omnidev [+ct-s] by services.
+2014-10-16 09:45:03	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-16 09:45:03	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-16 09:45:04	--	Mode #omnidev [+cnt]
+2014-10-16 09:45:04	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-16 09:53:59	--	irc: disconnected from server
+2014-10-16 10:47:56	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-16 10:47:56	--	Mode #omnidev [+ns] by verne.freenode.net
+2014-10-16 10:47:56	--	Nicks #omnidev: [@kweaver]
+2014-10-16 10:47:56	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-16 10:47:57	--	Mode #omnidev [-o kweaver] by services.
+2014-10-16 10:47:57	--	Notice(verne.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1413470876 to 1337223617
+2014-10-16 10:47:57	--	Mode #omnidev [+ct-s] by services.
+2014-10-16 10:47:57	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-16 10:47:57	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-16 10:47:58	--	Mode #omnidev [+cnt]
+2014-10-16 10:47:58	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-16 11:25:55	--	irc: disconnected from server
+2014-10-16 13:26:16	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-16 13:26:16	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2014-10-16 13:26:16	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-16 13:26:18	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-16 13:26:18	--	Mode #omnidev [+cnt]
+2014-10-16 13:26:18	--	Channel created on Wed, 16 May 2012 23:00:17

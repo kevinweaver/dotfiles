@@ -382,3 +382,99 @@
 2014-10-07 12:29:05	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
 2014-10-07 14:08:05	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
 2014-10-07 14:08:05	--	irc: disconnected from server
+2014-10-07 14:14:03	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-07 14:14:03	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop]
+2014-10-07 14:14:03	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-07 14:14:08	--	Mode #heroes [+cnt]
+2014-10-07 14:14:08	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-07 17:30:29	--	irc: disconnected from server
+2014-10-08 08:51:24	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-08 08:51:24	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-08 08:51:24	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-08 08:51:24	--	Notice(rajaniemi.freenode.net) -> #heroes: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2014-10-08 08:51:28	--	Mode #heroes [+cnt]
+2014-10-08 08:51:29	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-08 14:42:58	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-08 14:43:16	jchaike	https://gist.github.com/jchaike/d8bcfa75929bb4b17f38
+2014-10-08 14:43:21	jchaike	kweaver char's cloud9 error
+2014-10-08 15:11:27	jchaike	kw https://gist.github.com/jchaike/c1102ec7a4795815f32d
+2014-10-08 15:26:09	jchaike	https://gist.github.com/jchaike/c1102ec7a4795815f32d
+2014-10-08 15:26:58	jchaike	few thing about invoices i thought of: invoices for an agency should never be duplicated
+2014-10-08 15:27:10	jchaike	but there could be 5 invoice number 1's for the billing agency
+2014-10-08 15:28:11	kweaver	correct.  thats why invoice.id is what we use for our own internal primary key, and then invoice.invoice_number is what we should be submitting to char
+2014-10-08 17:39:19	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-08 17:39:19	--	irc: disconnected from server
+2014-10-09 08:47:43	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-09 08:47:43	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-09 08:47:43	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-09 08:47:47	--	Mode #heroes [+cnt]
+2014-10-09 08:47:47	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-09 13:14:58	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-09 15:04:41	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-09 15:44:49	-->	jchaike (~jchaike@dhcp-arubawireless-215-150.rowan.edu) has joined #heroes
+2014-10-09 15:48:57	<--	jchaike (~jchaike@dhcp-arubawireless-215-150.rowan.edu) has quit (Ping timeout: 245 seconds)
+2014-10-09 17:31:15	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-09 17:31:15	--	irc: disconnected from server
+2014-10-10 13:27:06	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-10 13:27:06	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop]
+2014-10-10 13:27:06	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-10 13:27:10	--	Mode #heroes [+cnt]
+2014-10-10 13:27:10	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-10 14:30:00	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-10 16:34:55	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-10 16:34:56	--	irc: disconnected from server
+2014-10-15 09:09:17	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-15 09:09:17	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-15 09:09:17	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-15 09:09:21	--	Mode #heroes [+cnt]
+2014-10-15 09:09:21	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-15 11:29:34	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-15 11:56:18	kweaver	jchaike: just added http://jira.omni-dev.com/browse/HERO-169 for this afternoon
+2014-10-15 11:56:37	jchaike	sure kweaver
+2014-10-15 11:56:53	jchaike	its super easy, one line of jquery
+2014-10-15 11:56:57	kweaver	k
+2014-10-15 12:02:11	jchaike	kweaver want me to show you the masked inputs now?
+2014-10-15 12:02:28	kweaver	nah gonna wrap something else up frist
+2014-10-15 12:02:32	kweaver	well do it after lunch
+2014-10-15 12:02:42	jchaike	sure
+2014-10-15 13:29:06	jchaike	kweaver http://digitalbush.com/projects/masked-input-plugin/
+2014-10-15 13:29:07	[url]:	http://tinyurl.com/28bm9t
+2014-10-15 14:37:30	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-15 14:38:37	kweaver_desktop	just message me here if you have questions
+2014-10-15 14:55:07	jchaike	sure
+2014-10-15 14:57:38	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 246 seconds)
+2014-10-15 14:57:38	--	irc: disconnected from server
+2014-10-15 14:58:03	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-15 14:58:04	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop]
+2014-10-15 14:58:04	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-10-15 14:58:07	--	Mode #heroes [+cnt]
+2014-10-15 14:58:08	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-15 15:02:57	kweaver_desktop	jchaike: faker gave me the client agency city: "South Jesus"
+2014-10-15 15:03:06	jchaike	NICE haha
+2014-10-15 15:03:16	jchaike	i fucking love faker
+2014-10-15 15:03:17	jchaike	.com
+2014-10-15 15:03:18	jchaike	lol
+2014-10-15 15:03:29	jchaike	and to match that, i fucking hate prawn
+2014-10-15 15:03:38	kweaver_desktop	i know, it keeps example data interesting
+2014-10-15 15:06:55	jchaike	kweaver_desktop if youve got a second, i have a question im getting a nameerror when i tried to just create a new class to make invoices_controller not so unorganized
+2014-10-15 15:56:36	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2014-10-15 17:03:21	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2014-10-15 17:31:40	--	irc: disconnected from server
+2014-10-16 09:45:03	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-16 09:45:03	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-16 09:45:03	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-16 09:45:06	--	Mode #heroes [+cnt]
+2014-10-16 09:45:06	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-16 09:53:59	--	irc: disconnected from server
+2014-10-16 10:47:57	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-16 10:47:57	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-16 10:47:57	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-16 10:48:00	--	Mode #heroes [+cnt]
+2014-10-16 10:48:00	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-16 11:25:55	--	irc: disconnected from server
+2014-10-16 13:26:16	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-16 13:26:16	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-16 13:26:16	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-16 13:26:16	--	Notice(weber.freenode.net) -> #heroes: [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-10-16 13:26:20	--	Mode #heroes [+cnt]
+2014-10-16 13:26:20	--	Channel created on Mon, 18 Jan 2010 18:55:10

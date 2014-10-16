@@ -22426,3 +22426,443 @@
 2014-10-07 13:59:21	dtriley4_	hi matthewspeak
 2014-10-07 14:08:05	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
 2014-10-07 14:08:05	--	irc: disconnected from server
+2014-10-07 14:14:03	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-07 14:14:03	--	Nicks #orderdeck: [beadyox dtriley4_ jfortunato jhartigan jspeak kweaver kweaver_desktop matthewspeak MpWilli_]
+2014-10-07 14:14:03	--	Channel #orderdeck: 9 nicks (0 ops, 0 voices, 9 normals)
+2014-10-07 14:14:03	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-07 14:14:03	--	Mode #orderdeck [+cnt]
+2014-10-07 14:14:03	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-07 14:59:32	dtriley4_	haha i guess it didn't do the trick @MpWilli_
+2014-10-07 14:59:42	dtriley4_	thought removing my EM email from gmail would help
+2014-10-07 15:00:38	MpWilli_	damn dtriley4_ . well yo when i get back into the office on thursday I'll have access to andre's admin account and will be able to delete those alias accounts
+2014-10-07 15:00:49	dtriley4_	nice
+2014-10-07 15:00:50	dtriley4_	cool
+2014-10-07 15:00:52	dtriley4_	thanks @MpWilli_
+2014-10-07 15:00:57	MpWilli_	yeah no problem
+2014-10-07 15:09:56	dtriley4_	unless
+2014-10-07 15:10:00	dtriley4_	i am charles...
+2014-10-07 15:10:03	dtriley4_	dun dun dun!!!
+2014-10-07 15:10:10	MpWilli_	woah
+2014-10-07 15:10:15	dtriley4_	"you are charles, you've been charles the whole time"
+2014-10-07 15:13:52	<--	matthewspeak (6c18792f@gateway/web/freenode/ip.108.24.121.47) has quit (Ping timeout: 246 seconds)
+2014-10-07 15:41:07	kweaver	*queue fight club music
+2014-10-07 15:41:35	kweaver	*charles's world comes crashing down around him
+2014-10-07 15:48:05	jspeak	charles noooooooooo!
+2014-10-07 15:48:32	jspeak	charles get outta my head
+2014-10-07 16:23:30	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 246 seconds)
+2014-10-07 17:01:20	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-07 17:02:31	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2014-10-07 17:30:29	--	irc: disconnected from server
+2014-10-08 08:51:24	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-08 08:51:24	--	Nicks #orderdeck: [@ChanServ ericmazzola kweaver]
+2014-10-08 08:51:24	--	Channel #orderdeck: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-08 08:51:24	<--	ChanServ (ChanServ@services.) has left #orderdeck
+2014-10-08 08:51:24	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-08 08:51:24	--	Mode #orderdeck [+cnt]
+2014-10-08 08:51:24	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-08 09:09:24	kweaver	sup ericmazzola 
+2014-10-08 09:09:34	ericmazzola	supp
+2014-10-08 09:09:52	kweaver	youll need to ask jhartigan to make you an ftp account whenever he gets in here
+2014-10-08 09:11:42	ericmazzola	gotcha
+2014-10-08 09:11:44	ericmazzola	no worries
+2014-10-08 09:22:56	-->	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-08 09:23:30	kweaver	oh poops http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/services-catalog.html
+2014-10-08 09:23:36	kweaver	IBM Watson API released
+2014-10-08 09:29:02	ericmazzola	snapp
+2014-10-08 09:35:40	-->	MpWilli_ (~mpwilli_@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-08 09:42:39	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-08 09:42:52	jspeak	morns
+2014-10-08 09:59:00	-->	bananaboydean (~bananaboy@50-195-108-105-static.hfc.comcastbusiness.net) has joined #orderdeck
+2014-10-08 10:15:36	-->	dtriley4_ (uid14947@gateway/web/irccloud.com/x-lkgvfakonnswlkbg) has joined #orderdeck
+2014-10-08 10:15:45	dtriley4_	yo bananaboydean ericmazzola jfortunato jspeak kweaver MpWilli_
+2014-10-08 10:15:50	jfortunato	yoyo
+2014-10-08 10:15:50	jspeak	soup
+2014-10-08 10:16:02	dtriley4_	haa
+2014-10-08 10:27:25	MpWilli_	sup my dogs
+2014-10-08 10:49:29	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Read error: Connection reset by peer)
+2014-10-08 10:52:39	-->	ericmazzola (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-08 11:30:12	dtriley4_	hey dawg MpWilli_
+2014-10-08 11:30:27	MpWilli_	what up dtriley4_
+2014-10-08 11:39:12	ericmazzola	today, i'm addicted to anamanaguchi - endless fantasy
+2014-10-08 11:39:26	ericmazzola	if anyone is looking to get their chiptune-ish fix
+2014-10-08 11:57:49	jspeak	hah, yeah this is pretty good ericmazzola
+2014-10-08 14:27:02	ericmazzola	jspeak, dtriley4_  http://cyvasse-online.com/
+2014-10-08 14:27:11	jspeak	oooh shit
+2014-10-08 14:28:05	jspeak	that's pretty cool, we should try it later
+2014-10-08 14:28:42	ericmazzola	i need to read up on the rules
+2014-10-08 14:28:47	ericmazzola	how it's played
+2014-10-08 14:29:11	ericmazzola	they were saying on /r/asoiaf that average games when both people know how to play can last between 1-2 hours
+2014-10-08 14:31:46	jspeak	ooh fawk
+2014-10-08 14:32:08	jspeak	in asoiaf it seemed like the games were quick
+2014-10-08 14:32:22	jspeak	i wonder if grrm actually has real rules for this
+2014-10-08 14:42:58	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-08 14:52:09	jspeak	MpWilli_:  the link in that od tweet is broken
+2014-10-08 15:05:53	<--	dtriley4_ (uid14947@gateway/web/irccloud.com/x-lkgvfakonnswlkbg) has quit (Quit: Connection closed for inactivity)
+2014-10-08 15:07:41	MpWilli_	oh word? thanks jchaike
+2014-10-08 15:07:42	MpWilli_	jspeak
+2014-10-08 15:33:11	-->	drkyro (~textual@50.250.92.213) has joined #orderdeck
+2014-10-08 15:33:24	drkyro	sup kweaver
+2014-10-08 15:33:34	kweaver	sup drkyro 
+2014-10-08 15:35:32	drkyro	here man working
+2014-10-08 15:39:21	kweaver	nice
+2014-10-08 15:39:34	kweaver	i take it you arent coming up to live the with goof troop, right?
+2014-10-08 15:40:12	drkyro	naa dude
+2014-10-08 15:40:16	drkyro	two friends where like
+2014-10-08 15:40:23	drkyro	yo we want to co found a company with us
+2014-10-08 15:41:12	kweaver	two dudes other than MpWilli_ and tommyvyo?
+2014-10-08 15:42:07	drkyro	yes
+2014-10-08 15:42:09	drkyro	lol
+2014-10-08 15:43:13	kweaver	wowwwww
+2014-10-08 15:43:20	kweaver	serves these goons right
+2014-10-08 15:43:35	kweaver	they could have had you
+2014-10-08 15:43:42	kweaver	their loss
+2014-10-08 15:44:03	kweaver	was it money drkyro?
+2014-10-08 15:44:28	kweaver	these guys were going to pay you in grilled cheeses, werent they?
+2014-10-08 15:45:04	drkyro	hahahahah
+2014-10-08 15:45:09	drkyro	its a bitcoin startup
+2014-10-08 15:45:11	drkyro	so i loved that
+2014-10-08 15:45:17	-->	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-08 15:45:18	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-08 15:46:39	<--	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has quit (Client Quit)
+2014-10-08 15:47:08	-->	dtriley4_ (uid14947@gateway/web/irccloud.com/x-yqsibkyumwmfniih) has joined #orderdeck
+2014-10-08 15:52:11	-->	koreanderson (uid15382@gateway/web/irccloud.com/x-moaoutkcphfxhznq) has joined #orderdeck
+2014-10-08 16:24:24	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Quit: Leaving)
+2014-10-08 16:36:32	<--	MpWilli_ (~mpwilli_@pool-108-36-201-149.phlapa.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2014-10-08 17:00:59	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-08 17:03:18	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2014-10-08 17:39:19	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-08 17:39:19	--	irc: disconnected from server
+2014-10-09 08:47:42	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 08:47:43	--	Nicks #orderdeck: [bananaboydean kweaver]
+2014-10-09 08:47:43	--	Channel #orderdeck: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-10-09 08:47:43	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-09 08:47:43	--	Mode #orderdeck [+cnt]
+2014-10-09 08:47:43	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-09 08:54:17	-->	ericmazzola (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-09 08:54:24	ericmazzola	morning kweaver bananaboydean
+2014-10-09 09:40:02	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 09:40:02	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-09 09:47:45	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 09:48:20	-->	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 10:02:30	-->	dtriley4_ (uid14947@gateway/web/irccloud.com/x-njmzzchtumufeckj) has joined #orderdeck
+2014-10-09 10:02:37	dtriley4_	hi MpWilli bananaboydean ericmazzola jfortunato jspeak kweaver
+2014-10-09 10:02:46	ericmazzola	morning
+2014-10-09 10:02:47	jspeak	yoyo
+2014-10-09 10:03:07	dtriley4_	murn
+2014-10-09 10:12:57	@MpWilli	hola
+2014-10-09 10:18:12	dtriley4_	hola MpWilli
+2014-10-09 10:27:56	kweaver	ya
+2014-10-09 10:28:29	-->	koreanderson (uid15382@gateway/web/irccloud.com/x-ilefuifvtvlnyerm) has joined #orderdeck
+2014-10-09 10:35:16	@MpWilli	no
+2014-10-09 10:36:59	koreanderson	gmorning
+2014-10-09 10:41:25	ericmazzola	hai
+2014-10-09 10:41:38	dtriley4_	yo koreanderson
+2014-10-09 10:43:03	koreanderson	how's everyone doing?
+2014-10-09 10:46:14	dtriley4_	gooood
+2014-10-09 10:46:38	koreanderson	having people over this weekend?
+2014-10-09 10:50:05	dtriley4_	yessum
+2014-10-09 10:50:11	dtriley4_	did you get my message koreanderson ?
+2014-10-09 10:50:23	dtriley4_	I irc'd you a few days ago
+2014-10-09 10:52:06	koreanderson	mhmm
+2014-10-09 10:52:48	dtriley4_	cool
+2014-10-09 10:52:55	dtriley4_	gonna be able to make it?
+2014-10-09 10:53:04	koreanderson	i think so
+2014-10-09 10:53:32	koreanderson	last time I visited was fun
+2014-10-09 10:55:07	kweaver	dude isnt basing his decision of the friendship that you hold together.  100% based off of how much bean dip there will be again
+2014-10-09 10:55:42	dtriley4_	hahaha
+2014-10-09 10:55:46	dtriley4_	fuck
+2014-10-09 10:55:50	dtriley4_	gonna have to make some dip
+2014-10-09 10:55:53	kweaver	"can I get some level of guarantee that there will be an equal or greater amount of fun?"
+2014-10-09 10:56:53	koreanderson	mmm
+2014-10-09 10:56:56	koreanderson	how much dip though?
+2014-10-09 10:57:00	koreanderson	and what kind
+2014-10-09 10:57:00	kweaver	lolol
+2014-10-09 10:57:05	koreanderson	you never specific bean dip
+2014-10-09 10:57:15	koreanderson	"some dip" - dtriley4_
+2014-10-09 10:57:43	kweaver	that level of obscurity may lead to a koreanderson-less gathering
+2014-10-09 10:57:57	dtriley4_	buffalo chicken
+2014-10-09 11:00:06	koreanderson	buff chick > bean dip
+2014-10-09 11:00:08	koreanderson	imo
+2014-10-09 11:00:26	koreanderson	i believe i may make an appearance
+2014-10-09 11:00:37	kweaver	I wont
+2014-10-09 11:00:58	kweaver	ill be in florida visiting my dad
+2014-10-09 11:01:37	ericmazzola	seriously?
+2014-10-09 11:01:38	ericmazzola	kweaver,
+2014-10-09 11:02:36	kweaver	yeah ericmazzola, ill be in orlando friday night - tuesday night
+2014-10-09 11:02:50	kweaver	staying in orlando for some extended family gathering
+2014-10-09 11:02:56	ericmazzola	ahh
+2014-10-09 11:03:14	kweaver	soooo,  a pretty big hike for either of us
+2014-10-09 11:03:20	ericmazzola	I was jsut about to ask if your dad moved to orlando
+2014-10-09 11:03:46	kweaver	nah, still in PSL
+2014-10-09 11:03:55	ericmazzola	gotcha
+2014-10-09 11:04:09	kweaver	ill probably be back down this winter again to chill with you and johnnie and whoever 
+2014-10-09 11:04:19	kweaver	but this ones just a quick family thang
+2014-10-09 11:04:19	ericmazzola	word
+2014-10-09 11:04:26	ericmazzola	well if you look like you'll have any spare time
+2014-10-09 11:04:30	ericmazzola	Orlando is only 2 hours away
+2014-10-09 11:04:33	ericmazzola	let me know
+2014-10-09 11:04:34	kweaver	yeah ill keep you posted
+2014-10-09 11:04:43	kweaver	i have no idea what the iternerary is at this time
+2014-10-09 11:04:57	kweaver	maybe its just us hanging out at universal studios
+2014-10-09 11:05:02	ericmazzola	word
+2014-10-09 11:05:04	kweaver	in which case, you guys should come
+2014-10-09 11:05:08	kweaver	but i dont think it is
+2014-10-09 11:05:11	kweaver	ill let you know though
+2014-10-09 11:07:24	ericmazzola	haha ok
+2014-10-09 11:07:33	ericmazzola	we were debating going there this or next weekend actually
+2014-10-09 11:07:49	ericmazzola	but, disney instead of universal
+2014-10-09 11:09:43	dtriley4_	my money is on you guys squatting at margaritaville
+2014-10-09 11:11:51	kweaver	i do want to see what harry potter world is about at some point, but danielle would murder me if i went without her
+2014-10-09 12:11:36	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Ping timeout: 258 seconds)
+2014-10-09 12:13:32	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Ping timeout: 245 seconds)
+2014-10-09 12:13:41	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-09 12:18:41	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 12:18:41	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-09 12:21:59	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 12:26:24	-->	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 13:05:50	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-09 13:12:35	-->	ericmazzola1 (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-09 13:14:58	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-09 13:16:00	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Ping timeout: 272 seconds)
+2014-10-09 13:44:45	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Quit: Leaving)
+2014-10-09 14:40:38	-->	beadyox_ (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-09 14:40:38	--	beadyox_ is now known as beadyox
+2014-10-09 15:02:02	-->	matthewspeak (6c18792f@gateway/web/freenode/ip.108.24.121.47) has joined #orderdeck
+2014-10-09 15:03:00	jhartigan	damn jspeak tmobile sponsoring esl one apparently
+2014-10-09 15:03:06	jhartigan	thats two us events theyve gotten in on
+2014-10-09 15:04:41	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-09 15:05:31	jspeak	oh dang
+2014-10-09 15:05:39	jspeak	that's a pretty legit sponsor
+2014-10-09 15:44:49	-->	jchaike (~jchaike@dhcp-arubawireless-215-150.rowan.edu) has joined #orderdeck
+2014-10-09 15:45:17	-->	drkyro (~textual@50.250.92.213) has joined #orderdeck
+2014-10-09 15:48:57	<--	jchaike (~jchaike@dhcp-arubawireless-215-150.rowan.edu) has quit (Ping timeout: 245 seconds)
+2014-10-09 16:55:58	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2014-10-09 16:55:59	<--	jfortunato (~justin@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-09 16:56:21	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Remote host closed the connection)
+2014-10-09 17:05:39	<--	matthewspeak (6c18792f@gateway/web/freenode/ip.108.24.121.47) has quit (Quit: Page closed)
+2014-10-09 17:12:31	<--	drkyro (~textual@50.250.92.213) has quit (Remote host closed the connection)
+2014-10-09 17:16:51	jhartigan	dtriley4_: did you know homeland started?
+2014-10-09 17:31:15	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-09 17:31:15	--	irc: disconnected from server
+2014-10-10 13:27:06	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-10 13:27:06	--	Nicks #orderdeck: [bananaboydean beadyox dtriley4_ ericmazzola1 jfortunato jhartigan jspeak koreanderson kweaver kweaver_desktop MpWilli_]
+2014-10-10 13:27:06	--	Channel #orderdeck: 11 nicks (0 ops, 0 voices, 11 normals)
+2014-10-10 13:27:06	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-10 13:27:06	--	Mode #orderdeck [+cnt]
+2014-10-10 13:27:06	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-10 13:46:07	<--	beadyox (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-10 14:30:00	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-10 15:45:38	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Quit: Leaving)
+2014-10-10 16:22:12	-->	beadyox_ (~textual@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-10 16:22:12	--	beadyox_ is now known as beadyox
+2014-10-10 16:34:55	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-10 16:34:56	--	irc: disconnected from server
+2014-10-15 09:09:17	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 09:09:17	--	Nicks #orderdeck: [bananabo1dean drkyro dtriley4_ ericmazzola jhartigan jharty kweaver]
+2014-10-15 09:09:17	--	Channel #orderdeck: 7 nicks (0 ops, 0 voices, 7 normals)
+2014-10-15 09:09:17	--	Mode #orderdeck [+cnt]
+2014-10-15 09:09:17	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-15 09:09:17	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-15 09:29:12	jharty	greetings and salutations
+2014-10-15 09:34:55	-->	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-15 09:34:55	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-15 09:36:52	-->	jfortunato (~jfortunat@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 09:40:38	-->	ericmazzola1 (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-15 09:44:09	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Ping timeout: 255 seconds)
+2014-10-15 09:50:18	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 09:51:55	dtriley4_	lol
+2014-10-15 09:52:05	dtriley4_	yo MpWilli bananabo1dean drkyro ericmazzola1 jfortunato jharty jspeak kweaver
+2014-10-15 09:52:09	jspeak	hai
+2014-10-15 09:52:31	ericmazzola1	what upp
+2014-10-15 09:52:38	jharty	oy
+2014-10-15 09:52:41	jharty	oy
+2014-10-15 09:52:43	jharty	oy
+2014-10-15 09:52:43	jspeak	oy
+2014-10-15 09:52:47	jharty	jspeak: you see dat TL hots team
+2014-10-15 09:52:50	jharty	fuckin sheth
+2014-10-15 09:52:52	jspeak	yar
+2014-10-15 09:53:02	jspeak	hahah yeah
+2014-10-15 09:53:22	jspeak	part of me feels like they made that team just so sheth could be on tl
+2014-10-15 09:53:35	jharty	id bet they did
+2014-10-15 09:53:42	jharty	i dont see hots going anywhere
+2014-10-15 09:53:44	jharty	but who am i
+2014-10-15 09:53:51	jspeak	yeah i dont think it will
+2014-10-15 09:54:48	jharty	i mean c9 eg tl and someone else at blizzcon
+2014-10-15 09:54:58	jharty	got all the big boys involved
+2014-10-15 09:55:06	jharty	probably paid to get involved though
+2014-10-15 09:55:16	jharty	also VG and Newbee not going to lan finals in kiev
+2014-10-15 09:55:19	jharty	deemed too dangerous
+2014-10-15 10:10:05	<--	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 10:10:23	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-10-15 10:10:27	jspeak	lol why would it be dangerous?
+2014-10-15 10:10:41	jharty	russia being dicks
+2014-10-15 10:11:08	jspeak	ooh right
+2014-10-15 10:37:18	-->	MpWilli_ (~mpwilli_@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-15 11:24:49	jharty	guys guys
+2014-10-15 11:25:02	jharty	had to put up coming soon for a client cause they sucked and are slow
+2014-10-15 11:25:06	jharty	they decided to make it for me
+2014-10-15 11:25:08	jharty	http://oms2.omni-dev.com/dev/jfma/
+2014-10-15 11:25:22	jharty	LOOK AT IT
+2014-10-15 11:25:25	jharty	ITS BEAUTY
+2014-10-15 11:27:52	MpWilli_	lolol jharty
+2014-10-15 11:29:34	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 11:44:25	jharty	youre jealous of its beauty arent you MpWilli_
+2014-10-15 11:44:37	MpWilli_	yes i am
+2014-10-15 11:44:47	jharty	thatll be live around 4pm in case you need to see it on a real url
+2014-10-15 11:45:06	kweaver	jharty: is their real site down yet?
+2014-10-15 11:45:59	jharty	no kweaver they say 6pm
+2014-10-15 11:46:05	jharty	we go live with that baby around 4pm
+2014-10-15 12:00:40	jspeak	lol so sick
+2014-10-15 12:05:14	jharty	jspeak: ill be in the vicinity of poker tonight
+2014-10-15 12:05:15	jharty	should i play
+2014-10-15 12:05:18	jharty	1 2 nl
+2014-10-15 12:06:33	jspeak	where you going?
+2014-10-15 12:06:42	jharty	harrahs
+2014-10-15 12:06:57	jharty	bday / engagement party
+2014-10-15 12:06:57	jspeak	ooh cool. what for?
+2014-10-15 12:07:39	jharty	im so out of practice
+2014-10-15 12:07:42	jharty	not sure if i should sit down
+2014-10-15 12:07:58	jharty	but the one guy going, would totally be down, and after we drink i know itll be a topic
+2014-10-15 12:09:57	jharty	but im scurred
+2014-10-15 12:10:10	jharty	its been so damn long since ive actually played, was watching someone the other night
+2014-10-15 12:10:38	dtriley4_	dust of those dancing shoes
+2014-10-15 12:11:20	jharty	oh dtriley4_ jon got engaged
+2014-10-15 12:11:45	dtriley4_	damn really
+2014-10-15 12:11:46	dtriley4_	nice
+2014-10-15 12:11:51	dtriley4_	grats to him
+2014-10-15 12:11:59	dtriley4_	to whom jharty
+2014-10-15 12:12:01	dtriley4_	anyone i know
+2014-10-15 12:12:17	jharty	not sure
+2014-10-15 12:12:21	jharty	ever meet caitlin?
+2014-10-15 12:12:27	jharty	she worked at another lowes, was our grade in twp
+2014-10-15 12:12:38	jharty	but shes a cool cat, hes been stringing her around forever now
+2014-10-15 12:54:15	ericmazzola1	lol
+2014-10-15 12:54:16	ericmazzola1	wtf
+2014-10-15 12:54:29	ericmazzola1	jewishbytheshore.com
+2014-10-15 13:04:18	<--	drkyro (~textual@50.250.92.213) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 13:04:44	-->	beadyox_ (~textual@c-68-83-3-113.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-15 13:04:46	--	beadyox_ is now known as beadyox
+2014-10-15 13:05:33	-->	drkyro (~textual@50.250.92.213) has joined #orderdeck
+2014-10-15 13:10:32	ericmazzola1	jewin-the-most-at-the-beach.com
+2014-10-15 13:11:06	dtriley4_	lol
+2014-10-15 13:11:19	dtriley4_	ah nah jharty
+2014-10-15 13:11:48	jharty	omgomg best url ever
+2014-10-15 13:11:55	jharty	sall good dtriley4_
+2014-10-15 13:36:33	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Ping timeout: 260 seconds)
+2014-10-15 13:36:53	-->	ericmazzola (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-15 14:27:06	-->	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has joined #orderdeck
+2014-10-15 14:27:06	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-15 14:30:41	<--	MpWilli (~mpwilli@pool-108-36-201-149.phlapa.fios.verizon.net) has quit (Client Quit)
+2014-10-15 14:37:30	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 14:46:12	-->	koreanderson (uid15382@gateway/web/irccloud.com/x-ivhsakhgvybdeaef) has joined #orderdeck
+2014-10-15 14:57:38	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 246 seconds)
+2014-10-15 14:57:38	--	irc: disconnected from server
+2014-10-15 14:58:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-15 14:58:01	--	Nicks #orderdeck: [bananabo1dean beadyox drkyro dtriley4_ ericmazzola jchaike jfortunato jharty jspeak koreanderson kweaver kweaver_desktop MpWilli_]
+2014-10-15 14:58:01	--	Channel #orderdeck: 13 nicks (0 ops, 0 voices, 13 normals)
+2014-10-15 14:58:01	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-15 14:58:01	--	Mode #orderdeck [+cnt]
+2014-10-15 14:58:01	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-15 15:43:10	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-10-15 15:56:36	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2014-10-15 16:12:12	-->	bananaboydean (~bananaboy@50-195-108-105-static.hfc.comcastbusiness.net) has joined #orderdeck
+2014-10-15 16:17:52	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-15 16:37:13	<--	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2014-10-15 16:45:48	<--	ericmazzola (~eric.mazz@198.72.46.242) has quit (Ping timeout: 272 seconds)
+2014-10-15 17:02:24	<--	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has left #orderdeck
+2014-10-15 17:02:44	<--	jfortunato (~jfortunat@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-15 17:03:21	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2014-10-15 17:26:27	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #orderdeck
+2014-10-15 17:31:40	--	irc: disconnected from server
+2014-10-16 09:45:02	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-16 09:45:02	--	Nicks #orderdeck: [@MpWilli bananabo1dean bananaboydean beadyox drkyro ericmazzola1 jfortunato kweaver]
+2014-10-16 09:45:02	--	Channel #orderdeck: 8 nicks (1 op, 0 voices, 7 normals)
+2014-10-16 09:45:03	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-16 09:45:03	--	Mode #orderdeck [+cnt]
+2014-10-16 09:45:03	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-16 09:46:52	kweaver	good morning MpWilli bananabo1dean bananaboydean  beadyox drkyro ericmazzola1 jfortunato 
+2014-10-16 09:47:05	kweaver	bananabo1dean: bananaboydean how come you were in town last night?
+2014-10-16 09:52:44	-->	jspeak (~jspeak@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-16 09:52:57	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Read error: Connection reset by peer)
+2014-10-16 09:53:02	-->	ericmazzola (~eric.mazz@198.72.46.242) has joined #orderdeck
+2014-10-16 09:53:59	--	irc: disconnected from server
+2014-10-16 10:47:56	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-16 10:47:56	--	Nicks #orderdeck: [@MpWilli bananabo1dean bananaboydean beadyox drkyro dtriley4_ ericmazzola1 jfortunato jspeak kweaver]
+2014-10-16 10:47:56	--	Channel #orderdeck: 10 nicks (1 op, 0 voices, 9 normals)
+2014-10-16 10:47:57	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-16 10:47:57	--	Mode #orderdeck [+cnt]
+2014-10-16 10:47:57	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-16 10:54:35	ericmazzola1	$15 a month?
+2014-10-16 10:54:52	ericmazzola1	not that bad :p
+2014-10-16 10:57:09	<--	ericmazzola1 (~eric.mazz@198.72.46.242) has quit (Read error: Connection reset by peer)
+2014-10-16 11:01:01	<--	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-16 11:11:35	jspeak	yeah but id have to buy the expansion
+2014-10-16 11:11:40	jspeak	and im poor
+2014-10-16 11:14:41	-->	MpWilli (~mpwilli@static-71-245-123-65.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-16 11:14:41	--	Mode #orderdeck [+o MpWilli] by ChanServ
+2014-10-16 11:25:55	--	irc: disconnected from server
+2014-10-16 13:26:16	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #orderdeck
+2014-10-16 13:26:16	--	Nicks #orderdeck: [@MpWilli bananabo1dean bananaboydean drkyro dtriley4_ jfortunato jhartigan jspeak kweaver matthewspeak]
+2014-10-16 13:26:16	--	Channel #orderdeck: 10 nicks (1 op, 0 voices, 9 normals)
+2014-10-16 13:26:16	--	Mode #orderdeck [+cnt]
+2014-10-16 13:26:17	--	Channel created on Tue, 27 Dec 2011 08:43:45
+2014-10-16 13:26:18	--	Notice(ChanServ): "WELCOME TO ORDERDECK HOME OF DTRILEY THE FUNNY GUY"
+2014-10-16 13:29:39	@MpWilli	apple evebt boys
+2014-10-16 13:32:27	dtriley4_	another MpWilli ?
+2014-10-16 13:32:37	dtriley4_	or are you reffering to kweaver as the apple event
+2014-10-16 13:32:43	@MpWilli	no another one
+2014-10-16 13:32:44	dtriley4_	word on the street
+2014-10-16 13:32:51	@MpWilli	the one where they announce more stuff
+2014-10-16 13:32:51	kweaver	lolol
+2014-10-16 13:33:01	@MpWilli	like new ipads and hopefully yosemite release
+2014-10-16 13:33:09	dtriley4_	ahh
+2014-10-16 13:33:14	jhartigan	MpWilli: can i borrow your xboxen for the evil within
+2014-10-16 13:33:17	dtriley4_	kweaver: how was FL?
+2014-10-16 13:34:03	@MpWilli	whats htat
+2014-10-16 13:35:07	jhartigan	survival horror from shinji mikami
+2014-10-16 13:35:12	jhartigan	aka the man behind RE
+2014-10-16 13:35:14	jhartigan	the good ones
+2014-10-16 13:36:01	kweaver	yeah MpWilli they just announced yosemite is available today
+2014-10-16 13:36:14	@MpWilli	WOO
+2014-10-16 13:36:15	@MpWilli	yeah i saw
+2014-10-16 13:36:18	kweaver	but i aint watchin that shit  ;0
+2014-10-16 13:36:19	@MpWilli	cantwait
+2014-10-16 13:36:24	kweaver	dtriley4_:  it was fun
+2014-10-16 13:37:00	dtriley4_	shit
+2014-10-16 13:37:05	dtriley4_	i don't even have mavericks yet
+2014-10-16 13:37:12	@MpWilli	noob
+2014-10-16 13:37:17	dtriley4_	lolol
+2014-10-16 13:37:50	jhartigan	kweaver: not gonna see when your new laptop comes out?
+2014-10-16 13:38:06	kweaver	lol im just playin, im watching it
+2014-10-16 13:38:11	@MpWilli	i hope they annouce new macbooks
+2014-10-16 13:38:16	@MpWilli	so the current gen goes on sale
+2014-10-16 13:38:19	kweaver	macbook airs are the rumor
+2014-10-16 13:38:21	kweaver	12"
+2014-10-16 13:38:26	@MpWilli	i wanna pro
+2014-10-16 13:38:29	kweaver	ive already got a 12" though
+2014-10-16 13:38:35	kweaver	so i dont need another
+2014-10-16 13:38:41	kweaver	._.
+2014-10-16 13:38:52	kweaver	:|
+2014-10-16 13:38:56	kweaver	:]
+2014-10-16 13:38:59	kweaver	:}
+2014-10-16 13:39:04	@MpWilli	shh
+2014-10-16 13:39:20	dtriley4_	did you buy a mac kweaver ?
+2014-10-16 13:39:23	dtriley4_	ohh..
+2014-10-16 13:39:24	dtriley4_	nvmmmm
+2014-10-16 13:39:26	dtriley4_	.....
+2014-10-16 13:39:28	dtriley4_	got me
+2014-10-16 13:40:12	kweaver	harhar
+2014-10-16 13:40:43	kweaver	"The best tablet you can buy."  -Dan, The iVerge
+2014-10-16 13:41:02	jhartigan	MpWilli: how old is your mbp now?
+2014-10-16 13:41:06	jhartigan	oh you mean macpro
+2014-10-16 13:41:18	@MpWilli	no i mean book
+2014-10-16 13:41:21	-->	koreanderson (uid15382@gateway/web/irccloud.com/x-tdovbawhgsrjepym) has joined #orderdeck
+2014-10-16 13:41:22	@MpWilli	and mine is 2008
+2014-10-16 13:41:28	@MpWilli	the first gen unibody
+2014-10-16 13:41:59	jhartigan	oh lat 08
+2014-10-16 13:42:00	jhartigan	noice
+2014-10-16 13:42:03	jhartigan	i had early 08
+2014-10-16 13:42:08	@MpWilli	woordd
+2014-10-16 13:42:18	jhartigan	aka the old we have a logic board/gfx card flaw thats a semi recall
+2014-10-16 13:42:22	jhartigan	but you only get it if it boots
+2014-10-16 13:42:58	@MpWilli	hahah
