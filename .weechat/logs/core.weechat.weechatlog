@@ -1638,3 +1638,5 @@
 2014-11-17 22:24:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
 2014-11-17 22:24:17		fifo: pipe closed
 2014-11-17 22:24:17		ruby: scripts unloaded
+2014-11-17 22:44:52		ruby scripts loaded: url_shorten
+2014-11-17 22:44:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer

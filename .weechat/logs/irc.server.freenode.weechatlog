@@ -20401,3 +20401,88 @@
 2014-11-17 22:24:14	--	morgan.freenode.net: *** Looking up your hostname...
 2014-11-17 22:24:14	--	morgan.freenode.net: *** Checking Ident
 2014-11-17 22:24:14	--	morgan.freenode.net: *** Found your hostname
+2014-11-17 22:44:52		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-11-17 22:44:53	--	irc: connected to chat.freenode.net/6667 (185.30.166.35)
+2014-11-17 22:44:53	--	verne.freenode.net: *** Looking up your hostname...
+2014-11-17 22:44:53	--	verne.freenode.net: *** Checking Ident
+2014-11-17 22:44:53	--	verne.freenode.net: *** Found your hostname
+2014-11-17 22:45:02	--	verne.freenode.net: *** No Ident response
+2014-11-17 22:45:02	--	irc: nickname "kweaver" is already in use, trying nickname "kweaver_desktop"
+2014-11-17 22:45:03	--	Welcome to the freenode Internet Relay Chat Network kweaver_desktop
+2014-11-17 22:45:03	--	Your host is verne.freenode.net[185.30.166.35/6667], running version ircd-seven-1.1.3
+2014-11-17 22:45:03	--	This server was created Sat Mar 22 2014 at 14:55:42 EDT
+2014-11-17 22:45:03	--	verne.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-11-17 22:45:03	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-11-17 22:45:03	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-11-17 22:45:03	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-11-17 22:45:03	--	There are 178 users and 85967 invisible on 30 servers
+2014-11-17 22:45:03	--	29 :IRC Operators online
+2014-11-17 22:45:03	--	6 :unknown connection(s)
+2014-11-17 22:45:03	--	58532 :channels formed
+2014-11-17 22:45:03	--	I have 8072 clients and 1 servers
+2014-11-17 22:45:03	--	8072 15001 :Current local users 8072, max 15001
+2014-11-17 22:45:03	--	86145 104047 :Current global users 86145, max 104047
+2014-11-17 22:45:03	--	Highest connection count: 15002 (15001 clients) (2111169 connections received)
+2014-11-17 22:45:03	--	- verne.freenode.net Message of the Day -
+2014-11-17 22:45:03	--	- Welcome to verne.freenode.net in Amsterdam, NL.
+2014-11-17 22:45:03	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-11-17 22:45:03	--	- this server!
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- VERNE, Jules (1828-1905). Born in Nantes, France, Verne was
+2014-11-17 22:45:03	--	- a pioneering french author known for novels such as Twenty
+2014-11-17 22:45:03	--	- Thousand Leagues Under the Sea, A Journey to the Center of the
+2014-11-17 22:45:03	--	- Earth, and Around the World in Eighty Days. Often lauded as the
+2014-11-17 22:45:03	--	- Father of science fiction, Verne wrote about concepts such as
+2014-11-17 22:45:03	--	- space travel, skyscrapers, and worldwide communications
+2014-11-17 22:45:03	--	- networks long before these ideas became popularised or realised.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- Welcome to freenode - supporting the free and open source
+2014-11-17 22:45:03	--	- software communities since 1998.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- **************************************************************
+2014-11-17 22:45:03	--	-                       SECURITY ALERT
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-11-17 22:45:03	--	- some compromised binaries present on a number of servers.
+2014-11-17 22:45:03	--	- The servers in question have been removed from the network and
+2014-11-17 22:45:03	--	- shut down.  However, it's possible that network traffic  -
+2014-11-17 22:45:03	--	- including SSL traffic - has been sniffed and passwords
+2014-11-17 22:45:03	--	- exposed.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- We therefore recommend that all users change their nickserv
+2014-11-17 22:45:03	--	- password(s) to a new value which is not shared with any
+2014-11-17 22:45:03	--	- other service.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- You can do this with /msg nickserv set password newpasshere
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- Please note that investigation is ongoing to discover the root
+2014-11-17 22:45:03	--	- cause of the attack, and until this investigation is complete
+2014-11-17 22:45:03	--	- we cannot be 100% certain that all traces of the compromises
+2014-11-17 22:45:03	--	- have been removed. We may have to ask you to change your
+2014-11-17 22:45:03	--	- passwords again after analysis has completed.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- Further details will appear on https://blog.freenode.net/
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- **************************************************************
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- By connecting to freenode you indicate that you have read and
+2014-11-17 22:45:03	--	- accept our policies as set out on http://www.freenode.net
+2014-11-17 22:45:03	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-11-17 22:45:03	--	- any network-related questions or queries, where a number of
+2014-11-17 22:45:03	--	- volunteer staff and helpful users will be happy to assist you.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-11-17 22:45:03	--	- together with like-minded FOSS enthusiasts for talks and
+2014-11-17 22:45:03	--	- real-life collaboration.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- We would like to thank Private Internet Access
+2014-11-17 22:45:03	--	- (https://www.privateinternetaccess.com/) and the other
+2014-11-17 22:45:03	--	- organisations that help keep freenode and our other projects
+2014-11-17 22:45:03	--	- running for their sustained support.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	- In particular we would like to thank the sponsor
+2014-11-17 22:45:03	--	- of this server, details of which can be found above.
+2014-11-17 22:45:03	--	-
+2014-11-17 22:45:03	--	End of /MOTD command.
+2014-11-17 22:45:03	--	User mode [+i] by kweaver_desktop

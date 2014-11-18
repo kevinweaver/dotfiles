@@ -6,13 +6,13 @@
 ######################
 terminal(){
   cd ~
-  echo "Installing curl and wget... \n"
+  echo "Installing curl and wget... "
   sleep 2
   sudo apt-get install curl libc6 libcurl3 zlib1g wget
-  echo "Installing tmux... \n"
+  echo "Installing tmux... "
   sleep 2
   sudo apt-get install tmux
-  echo "Installing oh-my-zsh... \n"
+  echo "Installing oh-my-zsh... "
   sleep 2
   sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
@@ -24,16 +24,16 @@ terminal(){
 ######################
 lamp(){
   sudo apt-get update
-  echo "Installing Apache... \n"
+  echo "Installing Apache... "
   sleep 2
   sudo apt-get install apache2
-  echo "Installing MySQL \n"
+  echo "Installing MySQL "
   sleep 2
   sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
-  echo "Installing SqLite \n"
+  echo "Installing SqLite "
   sleep 2
   sudo apt-get install sqlite3 libsqlite3-dev
-  echo "Installing PHP \n"
+  echo "Installing PHP "
   sleep 2
   sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
   sudo /etc/init.d/apache2 restart
@@ -43,7 +43,7 @@ lamp(){
 # Install Python
 ######################
 python(){
-  echo "Installing Python... \n"
+  echo "Installing Python... "
   sleep 2
   sudo add-apt-repository ppa:fkrull/deadsnakes
   sudo apt-get update
@@ -56,7 +56,7 @@ python(){
 # Install Node
 ######################
 node(){
-  echo "Installing Node... \n"
+  echo "Installing Node... "
   sleep 2
   sudo add-apt-repository ppa:chris-lea/node.js
   sudo apt-get update
@@ -67,7 +67,7 @@ node(){
 # Powerline
 ######################
 powerline(){
-  echo "Installing Powerline... \n"
+  echo "Installing Powerline... "
   sleep 2
   sudo apt-get install python-pip # <--- Might not need this
   pip install -U pip
@@ -90,7 +90,7 @@ powerline(){
 # Rails Setup
 ######################
 ror(){
-  echo "Installing ruby and rails... \n"
+  echo "Installing ruby and rails... "
   sleep 2
   #install dependencies
   sudo apt-get update
@@ -109,7 +109,7 @@ ror(){
 # Postgres Setup
 ######################
 postgres(){
-  echo "Installing Postgres... \n"
+  echo "Installing Postgres... "
   sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
   wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
   sudo apt-get update
@@ -122,7 +122,7 @@ postgres(){
 # Install Weechat
 ######################
 weechat(){
-  echo "Installing Weechat... \n"
+  echo "Installing Weechat... "
   sleep 2
   sudo add-apt-repository ppa:nesthib/weechat-stable
   sudo apt-get update
@@ -133,7 +133,7 @@ weechat(){
 # Clone Relavant Repos
 ######################
 repos(){
-  echo "Creating personal workspace... \n"
+  echo "Creating personal workspace... "
   sleep 2
   mkdir -p ~/workspace/websites
   mkdir -p ~/workspace/projects
@@ -147,14 +147,13 @@ repos(){
   git clone git@bitbucket.org:kevinweaver/kidshealth-longtail.git
   git clone git@bitbucket.org:kevinweaver/nemours-slider.git
   git clone git@bitbucket.org:kevinweaver/nemours-bmi.git
-  
 }
 
 ######################
 # Dotfile Symlinks
 ######################
 dotfiles(){
-  echo "Symlinking dotfiles... \n"
+  echo "Symlinking dotfiles... "
   sleep 2
   rm $HOME/.zshrc
   rm $HOME/.weechat
@@ -175,7 +174,7 @@ dotfiles(){
 # Setup Vim
 ######################
 vim(){
-  echo "Installing Vim and Vundle Plugins... \n"
+  echo "Installing Vim and Vundle Plugins... "
   sleep 2
   sudo apt-get install vim
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -185,12 +184,22 @@ vim(){
 ######################
 # Ip tables
 ######################
-final(){
-  echo -e "Adding ISP throttling IP to iptables...\n"
+iptables(){
+  echo -e "Adding ISP throttling IP to iptables..."
+  sleep 2
   sudo iptables -A INPUT -s 173.194.55.0/24 -j DROP
   sudo iptables -A INPUT -s 206.111.0.0/16 -j DROP
 }
 
+######################
+# Ip tables
+######################
+colors(){
+  echo "Almost done.  Set up your color scheme..."
+  sleep 2
+  cd ~/.dotfiles/gnome-terminal-colors
+  ./install.sh
+}
 
 terminal
 lamp
@@ -203,4 +212,5 @@ weechat
 repos
 dotfiles
 vim
-final
+iptables
+colors
