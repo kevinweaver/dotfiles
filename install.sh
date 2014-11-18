@@ -1,175 +1,204 @@
-#! /bin/bash
- 
-#install rbenv on osx or any linux
-rbenvInstall() {
-  git clone git://github.com/sstephenson/rbenv.git $HOME/.rbenv
-  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshrc
-  git clone git://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
-  echo "If you're not using the zshrc in this repo add eval "$(rbenv init -)" to your bashrc or zshrc."
-}
+# README
+# Use to set up a new machine with all my fancy things
 
-#build vim from source
-buildVim(){
-  sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial
-  sudo apt-get remove vim vim-runtime gvim
+######################
+# Install Z Shell
+######################
+terminal(){
   cd ~
-  hg clone https://code.google.com/p/vim/
-  cd vim
-  ./configure --with-features=huge \
-              --enable-rubyinterp \
-              --enable-pythoninterp \
-              --enable-perlinterp \
-              --enable-gui=gtk2 --enable-cscope --prefix=/usr
-  make VIMRUNTIMEDIR=/usr/share/vim/vim73
-  sudo make install
+  echo "Installing curl and wget... \n"
+  sleep 2
+  sudo apt-get install curl libc6 libcurl3 zlib1g wget
+  echo "Installing tmux... \n"
+  sleep 2
+  sudo apt-get install tmux
+  echo "Installing oh-my-zsh... \n"
+  sleep 2
+  curl -L http://install.ohmyz.sh | sh
 }
 
-#ubuntu YCM plugin plugin installation
-ubuYCM() {
-  echo -e "Installing YCM plugin plugin... \n"
-  sudo apt-get install build-essential cmake python-dev
-  cd $HOME/.vim/bundle/YouCompleteme
-  ./install.sh --clang-completer
+######################
+# Install SQL Langs
+######################
+lamp(){
+  sudo apt-get update
+  echo "Installing Apache... \n"
+  sleep 2
+  sudo apt-get install apache2
+  echo "Installing MySQL \n"
+  sleep 2
+  sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+  echo "Installing SqLite \n"
+  sleep 2
+  sudo apt-get install sqlite3 libsqlite3-dev
+  echo "Installing PHP \n"
+  sleep 2
+  sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+  sudo /etc/init.d/apache2 restart
 }
 
-ubuPowerline() {
-  sudo apt-get install python-pip
-  pip install --user git+git://github.com/Lokaltog/powerline
-  echo "set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim" >> $HOME/.vimrc
-  mkdir $HOME/.fonts && cd $HOME/.fonts
-  fontConfDir='unset'
-  if [[ -d "$HOME/.fonts.conf.d" ]]; then   #fontconfig
-    fontConfDir="$HOME/.fonts.conf.d"
-  elif  [[ -d "$HOME/.config/fontconfig/conf.d" ]]; then  
-    fontConfDir="$HOME/.config/fontconfig/conf.d"
-  fi
-  if [[ $fontConfDir != 'unset' ]]; then
-    echo -e "Setting up fontconfig so powerline has proper symbols...\n"
-    wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-    cd $fontConfDir && wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
-  else # no fontconfig detected
-    echo -e "Downloading two patched fonts (Inconsolata/DroidSansMono) that you can set for use in your terminal of choice since fontconfig failed...\n"
-    wget https://github.com/Lokaltog/powerline-fonts/tree/master/Inconsolata/Inconsolata\ for\ Powerline.otf
-    wget https://github.com/Lokaltog/powerline-fonts/tree/master/DroidSansMono/Inconsolata\ for\ Powerline.otf
-  fi
-  fc-cache -vf $HOME/.fonts
-  echo -e "Powerline should have installed successfully.  Locate it and add rtp+=path/to/powerline/bindings/vim to your vimrc.\n":
-}
-
-#Install oh-my-zsh
-ohmyzsh() {
-  echo -e "Installing oh-my-zsh...\n"
-  curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-  #in case prompt fails for zsh
-  chsh -s /bin/zsh
-}
-
-#Install irssi
-irssi(){
-  sudo apt-get -y install irssi irssi-scripts ca-certificates libcrypt-blowfish-perl libcrypt-dh-perl libcrypt-openssl-bignum-perl libmath-bigint-gmp-perl
-}
-
-#Install tmux and wemux
-tmuxwemux(){
-  echo -e "Installing tmux..."
-  sudo apt-get tmux
-  echo -e "Installing wemux..."
-  git clone git://github.com/zolrath/wemux.git /usr/local/share/wemux
-  ln -s /usr/local/share/wemux/wemux /usr/local/bin/wemux
-  cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
-  echo -e "Running basic wemux configuration..."
-  read -p "Which user would you like to set as your wemux host? (Probably this one)" user
-  echo "host_list=($user)" >> /user/local/etc/wemux.conf
-}
-
-#Install Python
+######################
+# Install Python
+######################
 python(){
-  echo -e "Installing sqlite 3..."
-  sudo apt-get install libsqlite3-dev
-  sudo apt-get install sqlite3
-  sudo apt-get install bzip2 libbz2-dev
-  echo -e "Installing python 3.3..."
-  mkdir $HOME/applications
-  cd $HOME/applications
-  wget http://python.org/ftp/python/3.3.0/Python-3.3.0.tar.bz2
-  tar jxf ./Python-3.3.0.tar.bz2
-  cd ./Python-3.3.0
-  ./configure --prefix=/opt/python3.3
-  make && sudo make install
-  echo -e "Installing python 2.7..."
-  cd $HOME/applications
-  sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-  wget http://python.org/ftp/python/2.7.2/Python-2.7.2.tgz
-  tar -xvf Python-2.7.2.tgz && cd Python-2.7.2/
-  ./configure
-  make
-  sudo make altinstall
+  echo "Installing Python... \n"
+  sleep 2
+  sudo add-apt-repository ppa:fkrull/deadsnakes
+  sudo apt-get update
+  sudo apt-get install python2.7
+
+  curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python2.7
 }
 
-echo -e "Installing zsh and git...\n"
-sudo apt-get update; sudo apt-get install curl wget zsh git
+######################
+# Install Node
+######################
+node(){
+  echo "Installing Node... \n"
+  sleep 2
+  sudo add-apt-repository ppa:chris-lea/node.js
+  sudo apt-get update
+  sudo apt-get install nodejs
+}
 
-#install python
+######################
+# Powerline
+######################
+powerline(){
+  echo "Installing Powerline... \n"
+  sleep 2
+  sudo apt-get install python-pip # <--- Might not need this
+  pip install -U pip
+  pip install --user git+git://github.com/Lokaltog/powerline
+  cd ~
+  wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+  mv PowerlineSymbols.otf ~/.local/share/fonts/
+  sudo fc-cache -f -v
+  wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+ 
+  # Create a per-user fontconfig folder if it doesn't already exist
+  mkdir -p ~/.config/fontconfig/fonts.conf
+  mv 10-powerline-symbols.conf ~/.config/fontconfig/fonts.conf/
+  wget https://raw.githubusercontent.com/Lokaltog/powerline-fonts/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf
+  mv Sauce\ Code\ Powerline\ Regular.otf ~/.local/share/fonts/
+  sudo fc-cache -v
+}
+
+######################
+# Rails Setup
+######################
+ror(){
+  echo "Installing ruby and rails... \n"
+  sleep 2
+  #install dependencies
+  sudo apt-get update
+  sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties
+
+  \curl -sSL https://get.rvm.io | bash -s stable --rails
+  source ~/.rvm/scripts/rvm
+  rvm install 2.1.5
+  rvm use 2.1.5 --default
+  ruby -v
+  gem install rails
+  rails -v
+}
+
+######################
+# Postgres Setup
+######################
+postgres(){
+  echo "Installing Postgres... \n"
+  sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+  wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+  sudo apt-get update
+  sudo apt-get install postgresql-common
+  sudo apt-get install postgresql-9.3 libpq-dev
+}
+
+
+######################
+# Install Weechat
+######################
+weechat(){
+  echo "Installing Weechat... \n"
+  sleep 2
+  sudo add-apt-repository ppa:nesthib/weechat-stable
+  sudo apt-get update
+  sudo apt-get install weechat
+}
+
+######################
+# Clone Relavant Repos
+######################
+repos(){
+  echo "Creating personal workspace... \n"
+  sleep 2
+  mkdir -p ~/workspace/websites
+  mkdir -p ~/workspace/projects
+  mkdir -p ~/workspace/applications
+  echo "Cloning Relevant Repos..."
+  sleep 2
+  cd ~/workspace/applications
+  git clone git@bitbucket.org:kevinweaver/ems-heroes.git
+  git clone git@bitbucket.org:kevinweaver/hackerhang.git
+  cd ~/workspace/projects
+  git clone git@bitbucket.org:kevinweaver/kidshealth-longtail.git
+  git clone git@bitbucket.org:kevinweaver/nemours-slider.git
+  git clone git@bitbucket.org:kevinweaver/nemours-bmi.git
+  
+}
+
+######################
+# Dotfile Symlinks
+######################
+dotfiles(){
+  echo "Symlinking dotfiles... \n"
+  sleep 2
+  rm $HOME/.zshrc
+  rm $HOME/.weechat
+  rm $HOME/.vimrc
+  rm $HOME/.tmux
+  ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+  ln -s $HOME/.dotfiles/.zsh_aliases $HOME/.zsh_aliases
+  ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
+  ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
+  ln -s $HOME/.dotfiles/.tmux $HOME/.tmux
+  ln -s $HOME/.dotfiles/.fontconfig $HOME/.fontconfig
+  ln -s $HOME/.dotfiles/.fonts $HOME/.fonts
+  ln -s $HOME/.dotfiles/.weechat $HOME/.weechat
+  mkdir -p $HOME/.vim/tmp $HOME/.vim/backups
+}
+
+######################
+# Setup Vim
+######################
+vim(){
+  echo "Installing Vim and Vundle Plugins... \n"
+  sleep 2
+  sudo apt-get install vim
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+}
+
+######################
+# Ip tables
+######################
+final(){
+  echo -e "Adding ISP throttling IP to iptables...\n"
+  sudo iptables -A INPUT -s 173.194.55.0/24 -j DROP
+  sudo iptables -A INPUT -s 206.111.0.0/16 -j DROP
+}
+
+
+terminal
+lamp
 python
-#Build Vim from Source
-buildVim
-#install oh-my-zsh
-ohmyzsh
-#install wemux
-tmuxwemux
-
-#Install vimrc zshrc and functions
-echo -e "Symlinking vimrc, zshrc, tmux.conf and such to HOME...\n"
-rm $HOME/.zshrc
-rm $HOME/.irssi
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zsh_aliases $HOME/.zsh_aliases
-ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
-ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
-ln -s $HOME/.dotfiles/.tmux $HOME/.tmux
-ln -s $HOME/.dotfiles/.irssi $HOME/.irssi
-ln -s $HOME/.dotfiles/.fontconfig $HOME/.fontconfig
-ln -s $HOME/.dotfiles/.fonts $HOME/.fonts
-mkdir -p $HOME/.vim/tmp $HOME/.vim/backups
-
-echo -e "Running basic git configuration...\n"
-read -p "Enter your name (full name): " name
-read -p "Enter your git email address: " email
-git config --global user.name "$name"
-git config --global user.email "$email"
-git config --global push.default simple
-
-#Install Pianobar
-echo -e "Installing Necessary Pianobar files...\n"
-sudo apt-get install git-core libao-dev libmad0-dev libfaac-dev libfaad-dev libgnutls-dev libjson0-dev make
-mkdir -p $HOME/applications && cd $HOME/applications
-git clone git://github.com/PromyLOPh/pianobar.git
-cd pianobar
-make clean
-make
-sudo make install
-echo -e "Creating Pianobar configuration...\n"
-read -p "Enter your Pandora email: " pandMail
-read -p "Enter your Pandora password: " pandPass
-mkdir -p $HOME/.config/pianobar/ && touch $HOME/.config/pianobar/config
-echo "user = $pandMail" >> $HOME/.config/pianobar/config
-echo "password = $pandPass" >> $HOME/.config/pianobar/config
-
-echo -e "Installing Vundle and running BundleInstall for vim plugins...\n"
-git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
-vim +BundleInstall +qall
-
-#YCM BUILD AND POWERLINE INSTALLATION - CURRENTLY NOT AUTOMATED IN OSX DUE TO GOOFY PYTHON ISSUS WITH HOMEBREW / SYSTEM
-ubuYCM
-echo -e "YCM complete, now installing powerline and its fonts...\n"
-ubuPowerline
-
-#rbenv installation
-rbenvInstall
-#install irssi
-irssi
-
-#ip tables to prevent a good bit of bullshit ISP throttling
-echo -e "Adding ISP throttling IP to iptables...\n"
-sudo iptables -A INPUT -s 173.194.55.0/24 -j DROP
-sudo iptables -A INPUT -s 206.111.0.0/16 -j DROP
+node
+powerline
+ror
+postgres
+weechat
+repos
+dotfiles
+vim
+final
