@@ -20313,3 +20313,91 @@
 2014-10-16 13:26:11	--	End of /MOTD command.
 2014-10-16 13:26:11	--	User mode [+i] by kweaver
 2014-10-16 13:26:17	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-11-17 22:07:13		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-11-17 22:07:13	--	irc: connected to chat.freenode.net/6667 (64.32.24.176)
+2014-11-17 22:07:13	--	morgan.freenode.net: *** Looking up your hostname...
+2014-11-17 22:07:13	--	morgan.freenode.net: *** Checking Ident
+2014-11-17 22:07:14	--	morgan.freenode.net: *** Found your hostname
+2014-11-17 22:07:20	--	morgan.freenode.net: *** No Ident response
+2014-11-17 22:07:20	--	irc: nickname "kweaver" is already in use, trying nickname "kweaver_desktop"
+2014-11-17 22:07:20	--	Welcome to the freenode Internet Relay Chat Network kweaver_desktop
+2014-11-17 22:07:21	--	Your host is morgan.freenode.net[64.32.24.176/6667], running version ircd-seven-1.1.3
+2014-11-17 22:07:21	--	This server was created Thu Jul 31 2014 at 17:07:15 UTC
+2014-11-17 22:07:21	--	morgan.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-11-17 22:07:21	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-11-17 22:07:21	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-11-17 22:07:21	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-11-17 22:07:21	--	There are 177 users and 86427 invisible on 30 servers
+2014-11-17 22:07:21	--	29 :IRC Operators online
+2014-11-17 22:07:21	--	9 :unknown connection(s)
+2014-11-17 22:07:21	--	58579 :channels formed
+2014-11-17 22:07:21	--	I have 3800 clients and 1 servers
+2014-11-17 22:07:21	--	3800 8152 :Current local users 3800, max 8152
+2014-11-17 22:07:21	--	86604 99525 :Current global users 86604, max 99525
+2014-11-17 22:07:21	--	Highest connection count: 8154 (8152 clients) (1203592 connections received)
+2014-11-17 22:07:21	--	- morgan.freenode.net Message of the Day -
+2014-11-17 22:07:21	--	- Welcome to morgan.freenode.net in Chicago, IL, USA! Thank
+2014-11-17 22:07:21	--	- you to psyprus for sponsoring this server!
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- MORGAN, RICHARD K. (1965-) is an English science fiction
+2014-11-17 22:07:21	--	- author. Morgan's books are generally set in a dystopian world.
+2014-11-17 22:07:21	--	- His breakout novel Altered Carbon won the Philip K. Dick Award,
+2014-11-17 22:07:21	--	- and he has written many successful and amazing works to follow.
+2014-11-17 22:07:21	--	- His more recent writings explore the theme of autonomy
+2014-11-17 22:07:21	--	- in science fiction and escapism in fantasy.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- Welcome to freenode - supporting the free and open source
+2014-11-17 22:07:21	--	- software communities since 1998.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- **************************************************************
+2014-11-17 22:07:21	--	-                       SECURITY ALERT
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-11-17 22:07:21	--	- some compromised binaries present on a number of servers.
+2014-11-17 22:07:21	--	- The servers in question have been removed from the network and
+2014-11-17 22:07:21	--	- shut down.  However, it's possible that network traffic  -
+2014-11-17 22:07:21	--	- including SSL traffic - has been sniffed and passwords
+2014-11-17 22:07:21	--	- exposed.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- We therefore recommend that all users change their nickserv
+2014-11-17 22:07:21	--	- password(s) to a new value which is not shared with any
+2014-11-17 22:07:21	--	- other service.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- You can do this with /msg nickserv set password newpasshere
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- Please note that investigation is ongoing to discover the root
+2014-11-17 22:07:21	--	- cause of the attack, and until this investigation is complete
+2014-11-17 22:07:21	--	- we cannot be 100% certain that all traces of the compromises
+2014-11-17 22:07:21	--	- have been removed. We may have to ask you to change your
+2014-11-17 22:07:21	--	- passwords again after analysis has completed.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- Further details will appear on https://blog.freenode.net/
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- **************************************************************
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- By connecting to freenode you indicate that you have read and
+2014-11-17 22:07:21	--	- accept our policies as set out on http://www.freenode.net
+2014-11-17 22:07:21	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-11-17 22:07:21	--	- any network-related questions or queries, where a number of
+2014-11-17 22:07:21	--	- volunteer staff and helpful users will be happy to assist you.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-11-17 22:07:21	--	- together with like-minded FOSS enthusiasts for talks and
+2014-11-17 22:07:21	--	- real-life collaboration.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- We would like to thank Private Internet Access
+2014-11-17 22:07:21	--	- (https://www.privateinternetaccess.com/) and the other
+2014-11-17 22:07:21	--	- organisations that help keep freenode and our other projects
+2014-11-17 22:07:21	--	- running for their sustained support.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	- In particular we would like to thank the sponsor
+2014-11-17 22:07:21	--	- of this server, details of which can be found above.
+2014-11-17 22:07:21	--	-
+2014-11-17 22:07:21	--	End of /MOTD command.
+2014-11-17 22:07:21	--	User mode [+i] by kweaver_desktop
+2014-11-17 22:24:14		[url] Shortener service set to: http://tinyurl.com/api-create.php?url=%s
+2014-11-17 22:24:14	--	irc: connected to chat.freenode.net/6667 (64.32.24.176)
+2014-11-17 22:24:14	--	morgan.freenode.net: *** Looking up your hostname...
+2014-11-17 22:24:14	--	morgan.freenode.net: *** Checking Ident
+2014-11-17 22:24:14	--	morgan.freenode.net: *** Found your hostname

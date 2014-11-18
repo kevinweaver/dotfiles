@@ -1629,3 +1629,12 @@
 2014-10-16 13:26:00		python scripts loaded: anotify
 2014-10-16 13:26:00		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
 2014-10-16 13:26:01		script: 275 scripts for WeeChat 0.4.2
+2014-11-17 22:07:13		ruby scripts loaded: url_shorten
+2014-11-17 22:07:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-17 22:07:15		script: 279 scripts for WeeChat 1.0.1
+2014-11-17 22:15:17		fifo: pipe closed
+2014-11-17 22:15:17		ruby: scripts unloaded
+2014-11-17 22:24:14		ruby scripts loaded: url_shorten
+2014-11-17 22:24:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-17 22:24:17		fifo: pipe closed
+2014-11-17 22:24:17		ruby: scripts unloaded

@@ -14,7 +14,9 @@ terminal(){
   sudo apt-get install tmux
   echo "Installing oh-my-zsh... \n"
   sleep 2
+  sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
+  chsh -s $(which zsh)
 }
 
 ######################
