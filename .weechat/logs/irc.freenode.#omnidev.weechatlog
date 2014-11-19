@@ -7179,3 +7179,1164 @@
 2014-10-16 13:26:18	<--	ChanServ (ChanServ@services.) has left #omnidev
 2014-10-16 13:26:18	--	Mode #omnidev [+cnt]
 2014-10-16 13:26:18	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-16 15:20:16	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-16 16:33:33	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-16 17:32:46	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-16 17:32:46	--	irc: disconnected from server
+2014-10-17 08:47:54	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-17 08:47:54	--	Nicks #omnidev: [jhartigan kweaver]
+2014-10-17 08:47:54	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-10-17 08:47:55	--	Mode #omnidev [+cnt]
+2014-10-17 08:47:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-17 09:25:36	jhartigan	kweaver: getting breakfast with sam, if you need me for anything just holla via hangout
+2014-10-17 09:27:51	kweaver	k
+2014-10-17 12:49:44	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-17 12:49:45	--	irc: disconnected from server
+2014-10-20 08:51:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 08:51:01	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2014-10-20 08:51:01	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-20 08:51:01	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-20 08:51:03	--	Mode #omnidev [+cnt]
+2014-10-20 08:51:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 10:40:07	jhartigan	ugh kweaver really weird kjcc bug
+2014-10-20 10:40:46	kweaver	sup jhartigan 
+2014-10-20 10:41:28	jhartigan	also kathy handles the store right?
+2014-10-20 10:42:08	jhartigan	one of their tickets is completely not using the set event time at all
+2014-10-20 10:42:13	jhartigan	kjccstore*
+2014-10-20 10:42:26	jhartigan	i swore i talked to kathy but just called her at her extension and it said michelle
+2014-10-20 10:42:31	kweaver	yeah shes the store gal
+2014-10-20 10:42:41	kweaver	possibly forwarded?
+2014-10-20 10:42:50	kweaver	whats the ticket?
+2014-10-20 10:43:50	jhartigan	http://katzjccstore.org/product/andy-cohen-the-andy-cohen-diaries-a-deep-look-at-a-shallow-year-general-admission/
+2014-10-20 10:43:54	[url]:	http://tinyurl.com/osa9gv4
+2014-10-20 10:43:54	jhartigan	for some reason
+2014-10-20 10:43:59	jhartigan	its completely ignoring the set date and time
+2014-10-20 10:44:20	jhartigan	whats her email so i can shoot her one - somehow she doesnt come up in my search in outlook
+2014-10-20 10:45:42	kweaver	Kathy McLaughlin <kmclaughlin@jfedsnj.org>;
+2014-10-20 10:46:19	jhartigan	k thanks
+2014-10-20 10:46:26	jhartigan	wish i knew why the event doesnt work
+2014-10-20 10:46:51	kweaver	maybe try duplicating, or manually recreating
+2014-10-20 10:47:11	kweaver	looking at it now, i dont see why i wouldnt be working either
+2014-10-20 10:48:08	jhartigan	yeah im comparing it.. doesnt make sense ill have to recreate
+2014-10-20 10:57:14	kweaver	if its not already there, you might want to grab that post/page duplicate plugin jhartigan 
+2014-10-20 10:57:58	jhartigan	doesnt work anyway still broken on dupe have to recreate and hope it works
+2014-10-20 10:58:08	kweaver	lame
+2014-10-20 11:06:42	jhartigan	found a workaround. no actual clue what caused this
+2014-10-20 11:44:25	jhartigan	kathy just called... and shot the shit for like 10 min after we went over everything
+2014-10-20 11:44:33	jhartigan	all ican think about is what bflaim had said lol
+2014-10-20 11:49:15	kweaver	yeah shes a firecracker alright
+2014-10-20 11:50:13	jhartigan	she was all like 'oh you know, its just computers - theyre a mystery'
+2014-10-20 11:50:29	jhartigan	me explaining id be wasting time finding the bug affecting one event only
+2014-10-20 11:55:33	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 12:17:08	jhartigan	kweaver: wheres the layer slider you edited for jfedma?
+2014-10-20 12:17:19	jhartigan	oh is it transparent header slider
+2014-10-20 12:17:29	jhartigan	ya nevermind
+2014-10-20 12:17:30	jhartigan	we good
+2014-10-20 13:30:35	kweaver	how goes eirc jhartigan ?
+2014-10-20 13:30:40	kweaver	you have a meeting with them this week>?
+2014-10-20 13:30:56	jhartigan	wed
+2014-10-20 13:31:01	kweaver	coo
+2014-10-20 13:31:13	kweaver	they ever pick a support plugin?
+2014-10-20 13:31:16	jhartigan	figure out what it is they want exactly then we should be cleared for live
+2014-10-20 13:31:18	jhartigan	nope
+2014-10-20 13:31:24	jhartigan	ill just ask em wed
+2014-10-20 13:31:28	kweaver	k
+2014-10-20 13:32:21	kweaver	it is likely that they will pick a paid solution, and during the last one they asked if we could pay it and add the amount to the yearly invoice
+2014-10-20 13:32:30	kweaver	youll also need to throw an ssl on there
+2014-10-20 13:32:38	kweaver	yearly/monthly invoice rather*
+2014-10-20 13:33:02	kweaver	they never specified which, though you should push them to monthly.  especially since we will be interacting with them directly as omni soon
+2014-10-20 13:41:43	kweaver	jhartigan: http://www.theverge.com/2014/10/20/7013177/gmail-android-app-yahoo-outlook-account-support
+2014-10-20 13:42:07	kweaver	i assume that works as a cloud magic alternative
+2014-10-20 13:48:54	jhartigan	oh holy fucki
+2014-10-20 13:48:56	jhartigan	its gmail
+2014-10-20 13:48:58	jhartigan	nice
+2014-10-20 13:50:51	kweaver	yeah 
+2014-10-20 13:50:59	kweaver	lemme know if you try it
+2014-10-20 13:51:43	jhartigan	is it out now? i didnt read the article just headlines
+2014-10-20 13:52:14	kweaver	ah not yet
+2014-10-20 13:52:47	kweaver	im excited for the day when all of googles apps are given material design
+2014-10-20 13:53:18	kweaver	i was actually even thinking about using the material design library for the next UI i build
+2014-10-20 13:53:29	jhartigan	can you goto jfedm dev url and see if custom.js loaded?
+2014-10-20 13:54:10	kweaver	nah 404
+2014-10-20 13:55:33	jhartigan	wtfffff
+2014-10-20 15:03:43	jhartigan	man kathy said she went through the store and said more are bugged
+2014-10-20 15:03:47	jhartigan	i have no idea what causes it
+2014-10-20 15:04:01	jhartigan	and have no time for it at the moment
+2014-10-20 15:14:52	jhartigan	and shes being fucking impatient
+2014-10-20 15:15:02	jhartigan	jesus christ sorry i didnt respond within 1 hour
+2014-10-20 15:58:08	kweaver	she can do that
+2014-10-20 16:01:01	--	irc: disconnected from server
+2014-10-20 16:01:46	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:01:46	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:01:46	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:01:48	--	Mode #omnidev [+cnt]
+2014-10-20 16:01:48	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:02:56	--	irc: disconnected from server
+2014-10-20 16:03:11	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:03:11	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:03:11	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:03:14	--	Mode #omnidev [+cnt]
+2014-10-20 16:03:14	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:06:43	--	irc: disconnected from server
+2014-10-20 16:07:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:07:01	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:07:01	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:07:01	--	Notice(wolfe.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2014-10-20 16:07:03	--	Mode #omnidev [+cnt]
+2014-10-20 16:07:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:08:15	jhartigan	go to finally get lunch
+2014-10-20 16:08:19	jhartigan	2 fucking calls
+2014-10-20 16:08:29	--	irc: disconnected from server
+2014-10-20 16:08:46	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:08:46	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:08:46	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:08:48	--	Mode #omnidev [+cnt]
+2014-10-20 16:08:49	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:11:20	--	irc: disconnected from server
+2014-10-20 16:11:34	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:11:34	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:11:34	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:11:37	--	Mode #omnidev [+cnt]
+2014-10-20 16:11:37	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:12:19	--	irc: disconnected from server
+2014-10-20 16:12:36	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-20 16:12:36	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-20 16:12:36	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-20 16:12:38	--	Mode #omnidev [+cnt]
+2014-10-20 16:12:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-20 16:34:37	--	irc: disconnected from server
+2014-10-21 10:37:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-21 10:37:00	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-21 10:37:00	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-21 10:37:02	--	Mode #omnidev [+cnt]
+2014-10-21 10:37:02	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-21 11:10:33	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2014-10-21 11:10:56	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-21 11:27:16	jhartigan	kweaver: kweaver_desktop ken just called
+2014-10-21 11:27:24	jhartigan	i think what i overheard from bflaim is true
+2014-10-21 11:27:47	jhartigan	just wanted some info so he could 'push eirc to close'
+2014-10-21 11:50:08	--	irc: disconnected from server
+2014-10-21 11:50:30	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-21 11:50:30	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-21 11:50:30	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-21 11:50:30	--	Notice(kornbluth.freenode.net) -> #omnidev: [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2014-10-21 11:50:32	--	Mode #omnidev [+cnt]
+2014-10-21 11:50:32	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-21 13:15:25	--	irc: disconnected from server
+2014-10-21 13:20:36	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-21 13:20:36	--	Nicks #omnidev: [jhartigan kweaver kweaver_desktop]
+2014-10-21 13:20:36	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-10-21 13:20:39	--	Mode #omnidev [+cnt]
+2014-10-21 13:20:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-21 15:21:19	jhartigan	kweaver: kweaver_desktop do you know what email / pass you setup analytics for maccabigames was?
+2014-10-21 15:21:45	jhartigan	i dont have anything in pass except and email for the store which doesnt sound right
+2014-10-21 15:21:54	jhartigan	i thought it was katzjccmaccabi@gmail.com
+2014-10-21 15:24:10	kweaver_desktop	not sure
+2014-10-21 15:24:14	kweaver_desktop	you can check the maccabi site though
+2014-10-21 15:24:17	kweaver_desktop	just in the analytics settings
+2014-10-21 15:24:46	jhartigan	no its not
+2014-10-21 15:25:06	jhartigan	did that already
+2014-10-21 15:25:13	kweaver_desktop	wouldnt it have to be?
+2014-10-21 15:25:33	jhartigan	no it does outside auth
+2014-10-21 15:25:42	kweaver_desktop	whats the username//pass for that site?
+2014-10-21 15:26:06	jhartigan	webdev maccab312!
+2014-10-21 15:27:02	jhartigan	i literally checked it before asking though
+2014-10-21 15:27:04	jhartigan	its not there
+2014-10-21 15:29:41	kweaver_desktop	did katzjccmaccabi@gmail.com not work?
+2014-10-21 15:29:54	jhartigan	i cant login with anything
+2014-10-21 15:30:02	jhartigan	thats why im asking for pass options
+2014-10-21 15:30:15	jhartigan	its not katz312! kjcc312! maccabi312! maccab312!
+2014-10-21 15:30:32	kweaver_desktop	just try a password reset to make sure its a real email
+2014-10-21 15:32:16	jhartigan	im pretty sure you emailed it to arielle once but i dont have it
+2014-10-21 15:32:20	jhartigan	or cant find it
+2014-10-21 15:32:27	jhartigan	oh its whatever one we let them edit the spreadsheets with
+2014-10-21 15:32:56	kweaver_desktop	true
+2014-10-21 15:33:26	kweaver_desktop	katzjccmaccabi@gamil.com//katzjcc312!
+2014-10-21 15:33:47	jhartigan	yeah found that
+2014-10-21 15:33:51	jhartigan	i knew we had it somehwere
+2014-10-21 15:33:53	jhartigan	ty
+2014-10-21 16:07:07	jhartigan	kweaver_desktop: did you change ruby versions or something
+2014-10-21 16:07:13	jhartigan	my middleman crashes on longtail
+2014-10-21 16:07:42	kweaver_desktop	i did have to upgrade ruby due to some rubygems bug
+2014-10-21 16:07:57	kweaver_desktop	sec
+2014-10-21 16:08:10	kweaver_desktop	ruby --version 
+2014-10-21 16:08:15	kweaver_desktop	ruby 2.1.3p242
+2014-10-21 17:03:59	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2014-10-21 17:09:26	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-21 17:16:45	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-21 17:16:45	--	irc: disconnected from server
+2014-10-22 08:56:37	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-22 08:56:37	--	Nicks #omnidev: [@ChanServ jhartigan kweaver]
+2014-10-22 08:56:37	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-22 08:56:38	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-22 08:56:39	--	Mode #omnidev [+cnt]
+2014-10-22 08:56:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-22 09:26:31	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-10-22 12:04:46	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-22 12:04:46	--	irc: disconnected from server
+2014-10-23 08:36:52	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-23 08:36:52	--	Mode #omnidev [+ns] by tepper.freenode.net
+2014-10-23 08:36:52	--	Nicks #omnidev: [@kweaver]
+2014-10-23 08:36:52	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-23 08:36:52	--	Mode #omnidev [-o kweaver] by services.
+2014-10-23 08:36:52	--	Notice(tepper.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414067812 to 1337223617
+2014-10-23 08:36:52	--	Mode #omnidev [+ct-s] by services.
+2014-10-23 08:36:52	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-23 08:36:52	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-23 08:36:55	--	Mode #omnidev [+cnt]
+2014-10-23 08:36:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-23 09:43:22	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-23 09:43:22	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-23 11:55:49	jhartigan	oh kweaver forgot yesterday
+2014-10-23 11:56:01	jhartigan	might have a free cruise and if so figured id see if you wanted to go
+2014-10-23 11:56:28	jhartigan	my dad apparently won it, havent called yet but he was like im not going on a fuckin cruise
+2014-10-23 11:56:48	kweaver	how did he win that?
+2014-10-23 11:57:04	jhartigan	vfw auction for a harley
+2014-10-23 11:57:09	jhartigan	paperwork looks legit
+2014-10-23 11:57:27	kweaver	wow
+2014-10-23 11:57:40	kweaver	what do you know about it?
+2014-10-23 11:58:00	jhartigan	just that its cruise and airfare for two lol - 7 day 8 night
+2014-10-23 11:58:10	kweaver	where to?
+2014-10-23 11:58:40	jhartigan	but youve been a real pal and if its legit id totes offer the slot up your way
+2014-10-23 11:58:47	jhartigan	uh anywhere norweigan goes i guess
+2014-10-23 11:58:54	jhartigan	im sure ill know more after calling assuming it is legit
+2014-10-23 11:58:54	kweaver	well thanks dude
+2014-10-23 11:59:06	kweaver	any idea of a time frame?
+2014-10-23 11:59:11	kweaver	or just whenever you want to redeem
+2014-10-23 11:59:26	jhartigan	id hope for january+
+2014-10-23 11:59:36	jhartigan	trying to get my medical shit and nemours squared before hand
+2014-10-23 11:59:48	kweaver	yeah that would be first priority
+2014-10-23 12:00:25	jhartigan	gonna call em later this afternoon and see how legit it is
+2014-10-23 12:42:46	jhartigan	kweaver: we dont have an example csv yet, just hthe db right?
+2014-10-23 13:26:03	kweaver	nah i figured once you show them the dashboard tomorrow, ask if we have all the right buttons planned for and then ask them for access to a test db
+2014-10-23 13:26:28	kweaver	actually we'll need the test csv too
+2014-10-23 13:26:48	kweaver	pj did send one excell file
+2014-10-23 13:27:10	kweaver	ill have to look at it tonight.  i dunno if it was meant to be used to data though
+2014-10-23 13:33:44	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2014-10-23 13:34:30	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-23 14:41:57	jhartigan	kweaver: should i tell brian im not for the life of me going to their office for minimum 4 hours of my time to explain wordpress
+2014-10-23 14:42:05	jhartigan	i have too much todo to go give lessons to kirk and becky
+2014-10-23 14:42:26	jhartigan	ill screenshare with them but unless they pay, im not going to margate
+2014-10-23 14:51:14	kweaver	das fine, as long as you word that the right way, i dont think he'll mind
+2014-10-23 14:51:46	kweaver	you really dont have to go down there, so them asking you to is just kirk not knowing about screensharing
+2014-10-23 14:53:59	kweaver	i also think we need to start setting different rates for going somewhere for stuff like that
+2014-10-23 14:54:23	kweaver	a meeting about a potential project is one thing
+2014-10-23 14:54:34	jhartigan	yeah i agree
+2014-10-23 14:54:43	kweaver	but for existing clients wanting to learn how to use their site, it shouldnt be the same rate as an update
+2014-10-23 14:54:45	jhartigan	i have martines address so im gonna mail them a fuckin invoice
+2014-10-23 14:54:58	kweaver	it should be like $100-120/hr
+2014-10-23 14:55:05	jhartigan	also i guess we never set up their VM shit
+2014-10-23 14:55:12	jhartigan	cause... its not on there, waiting on ken
+2014-10-23 14:55:24	kweaver	oh yeah
+2014-10-23 14:55:33	jhartigan	so now that my days been sufficiently interrupted by kjcc and jccma
+2014-10-23 14:55:42	jhartigan	im back to le graphs
+2014-10-23 14:56:04	kweaver	i pushed a small update to the repo last night, but also have the dashboard mostly mocked up in photoshop
+2014-10-23 14:56:19	jhartigan	yeah i pulled
+2014-10-23 14:56:21	jhartigan	so
+2014-10-23 14:56:23	jhartigan	d3 is reallly really cool
+2014-10-23 14:56:31	jhartigan	has a .csv and .tsv function
+2014-10-23 14:56:32	kweaver	by the end of tonight ill have the photoshop mockup done and in html/css
+2014-10-23 14:56:39	jhartigan	built in reading of csv and tsv files
+2014-10-23 14:56:48	kweaver	nice
+2014-10-23 14:56:51	jhartigan	so i was wonering if we had any actual csvs or just the export
+2014-10-23 14:56:57	jhartigan	cause i have a demo tsv in mine
+2014-10-23 14:57:24	kweaver	well see if you can get the graph up with zoom and stuff with some demo data
+2014-10-23 14:57:39	kweaver	for my graph i just made some example longtail
+2014-10-23 14:59:35	jhartigan	yeah im gonna find a demo csv instead of this tsv
+2014-10-23 14:59:43	jhartigan	use that and get responsive and zoom working
+2014-10-23 15:00:52	kweaver	i know they offered to pay us more if the graph is responsive, but i figure we'll just see if it actually causes any issues down the road before taking up their offer
+2014-10-23 15:01:43	kweaver	like if responsiveness becomes an issues with 10k results or we hit some unforseen circumstances and have to go out of our way, then i have no problem asking for more
+2014-10-23 15:01:53	kweaver	but i dont see that being a likely scenario
+2014-10-23 15:11:51	jhartigan	well responsive graphs are all math
+2014-10-23 15:11:59	jhartigan	so long as we have a min and max scale
+2014-10-23 15:12:01	jhartigan	i can do it
+2014-10-23 15:12:04	jhartigan	at least from what ive read
+2014-10-23 15:12:32	jhartigan	today im gonna do a shitload of learning and then tomorrow i think lay into a full fledged responsive bar graph
+2014-10-23 15:12:38	jhartigan	with sort from highest > lowest
+2014-10-23 15:12:40	jhartigan	then add zoom
+2014-10-23 15:12:44	jhartigan	sound smartt?
+2014-10-23 15:13:18	jhartigan	i dont wanna dive in and struggle, for an hour and a half since i htink were going to tmo tonight so ill get some more d3 learning on
+2014-10-23 15:13:30	kweaver	tmo?
+2014-10-23 15:13:34	kweaver	soudns good
+2014-10-23 15:14:02	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-23 15:15:39	jhartigan	tmobile
+2014-10-23 15:16:01	jhartigan	also kweaver i dont know if you filled in any data manually - not sure why i got that nan bug on that graph - but did you see what it looked like?
+2014-10-23 15:16:18	jhartigan	basically the entire graphs are svg, which means we get total design control in CSS
+2014-10-23 15:16:29	jhartigan	so between setting scale and CSS responsive shouldnt be a problem
+2014-10-23 15:18:03	kweaver_desktop	yeah im not worried about responsive being an issue.  just another case of 'if it takes more than 2 minutes, then we can talk about adding additional budget for it'
+2014-10-23 15:18:34	kweaver_desktop	i dunno if you played with the amchart one at all
+2014-10-23 15:18:42	kweaver_desktop	but they do a really nice job of responsiveness
+2014-10-23 15:18:46	jhartigan	i did, my biggest gripe, and you might not of noticed it
+2014-10-23 15:18:50	jhartigan	its not efficent
+2014-10-23 15:18:52	jhartigan	at all
+2014-10-23 15:18:54	jhartigan	but it def works
+2014-10-23 15:18:56	jhartigan	but on my chromebook
+2014-10-23 15:19:01	jhartigan	fire and brimstone rain down
+2014-10-23 15:19:04	kweaver_desktop	really?
+2014-10-23 15:19:07	jhartigan	mhmm
+2014-10-23 15:19:13	jhartigan	like crash and burn slow status
+2014-10-23 15:19:19	kweaver_desktop	well that stinks
+2014-10-23 15:19:25	jhartigan	yes and no
+2014-10-23 15:19:25	kweaver_desktop	yeah i didnt have any efficiency issues
+2014-10-23 15:19:35	jhartigan	for the most part.. i dont think that matters
+2014-10-23 15:19:38	jhartigan	so if we wanna use that
+2014-10-23 15:19:42	jhartigan	its not a huge deal
+2014-10-23 15:19:47	jhartigan	but initial render, and resize
+2014-10-23 15:19:51	jhartigan	shit hits the fan
+2014-10-23 15:19:53	kweaver_desktop	well it all depends on how we render the full graph
+2014-10-23 15:20:33	kweaver_desktop	i dont think we need to actually have 10k bars on one page.  i imagined the the full graph would almost be more of a summary-style line graph or something
+2014-10-23 15:20:44	kweaver_desktop	and then loading only subsets with full data
+2014-10-23 15:21:10	kweaver_desktop	in my example i think i only like like 200 bars
+2014-10-23 15:21:21	kweaver_desktop	we will be looking at about 10k for theirs
+2014-10-23 15:21:47	jhartigan	yeah, does it use SVG i didnt look
+2014-10-23 15:22:03	jhartigan	but i wonder if thats a buff since its native browser, not JS drawing
+2014-10-23 15:22:16	kweaver_desktop	i didnt look either. but it does give you a ton of control for them
+2014-10-23 15:22:35	kweaver_desktop	http://live.amcharts.com/
+2014-10-23 15:22:43	kweaver_desktop	they also have a cute little builder
+2014-10-23 15:23:23	kweaver_desktop	you can save graph styles and publish them
+2014-10-23 15:23:25	kweaver_desktop	http://live.amcharts.com/NkMmI/
+2014-10-23 15:23:30	kweaver_desktop	thats the one i published
+2014-10-23 15:24:28	jhartigan	yeah they use svgs too
+2014-10-23 15:24:31	jhartigan	okay good
+2014-10-23 15:24:35	jhartigan	so regardles scaling is basically the same
+2014-10-23 15:24:43	jhartigan	we best use whats easiest
+2014-10-23 15:25:04	jhartigan	im sur eyou havent looked, but any reservations about adjusting or extending am?
+2014-10-23 15:25:14	kweaver_desktop	am?
+2014-10-23 15:28:17	kweaver_desktop	avery merchant
+2014-10-23 15:28:59	jhartigan	lol
+2014-10-23 15:29:01	jhartigan	amcharts?
+2014-10-23 15:30:04	kweaver_desktop	nah havent really looked, but it does seem very flexible from what ive seen
+2014-10-23 15:30:25	kweaver_desktop	i figure we just get an equivilant zoom and responsiveness going for D3 and then make our final decision
+2014-10-23 15:31:20	jhartigan	kk sounds good
+2014-10-23 15:31:23	kweaver_desktop	and then by next week we get the csv and db access from dave and start going ham with one of them
+2014-10-23 15:31:29	jhartigan	hoping kirk gets back to me tonight so i can finish this for real
+2014-10-23 15:31:45	jhartigan	hes asking for more shit - dropped the scope creep hammer
+2014-10-23 15:31:51	kweaver_desktop	nice
+2014-10-23 15:31:55	kweaver_desktop	what was he asking for?
+2014-10-23 15:32:25	kweaver_desktop	most powerful tool youve got as a hired developer
+2014-10-23 15:32:53	jhartigan	well he already crept and in the interest of not hurting feelers i ported that random ass slew of content
+2014-10-23 15:32:56	jhartigan	jewish 411
+2014-10-23 15:33:00	jhartigan	but now hes like theres random spaces and shit
+2014-10-23 15:33:16	kweaver_desktop	spaces from the content he gave you?
+2014-10-23 15:33:44	jhartigan	yeah
+2014-10-23 15:33:47	jhartigan	from the old site
+2014-10-23 15:33:56	jhartigan	said if i were doing redesign work on it, id have to charge
+2014-10-23 15:34:00	kweaver_desktop	yeah i would just tell him "well editing your own content sounds like a perfect opportunity for you to learn how to use the wordpress backend"
+2014-10-23 15:35:07	jhartigan	yeah i mean this is the page i ported https://jewishbytheshore.org/jewish411/
+2014-10-23 15:35:17	jhartigan	was not a copy pasta port
+2014-10-23 15:35:28	jhartigan	but hes complaining about copypasta ports on other pages
+2014-10-23 15:36:19	kweaver_desktop	yeah i would just framed it as a ' great and easy learning opportunity' for him
+2014-10-23 15:36:36	kweaver_desktop	though we know how much he likes learning about applications
+2014-10-23 15:37:01	jhartigan	yeah
+2014-10-23 15:37:04	jhartigan	and im tired
+2014-10-23 15:37:06	jhartigan	of him
+2014-10-23 15:37:27	jhartigan	hes also slowly giving review changes, which after he approves what ive just done, and i get the VM creds from ken
+2014-10-23 15:37:29	jhartigan	thats all done
+2014-10-23 15:37:31	jhartigan	scope sealed
+2014-10-23 15:37:56	kweaver_desktop	yeah just wrap this thang up the second you have that done
+2014-10-23 15:39:31	kweaver_desktop	if he has other changes, just let him know youll be happy to do them at our hourly rate once the project gets paid.  i dont think he's dumb enough to try to argue that the project hasnt already gone months over the alotted time
+2014-10-23 15:41:02	jhartigan	yeah he wont, i just want to make sure hes actually happy with what we told him hed get
+2014-10-23 15:42:31	jhartigan	but hes basically gonna get to give me his approval / last slew of changes, and then I can call it a wrap, shess ssld, everythings been above and beyond on our end, regardless of him and well move on
+2014-10-23 15:48:21	jhartigan	kweaver_desktop: omg we should material design this bitch
+2014-10-23 15:48:25	jhartigan	its just so pretty
+2014-10-23 15:52:10	kweaver_desktop	i was thinking about it
+2014-10-23 15:52:18	kweaver_desktop	not a bad idea
+2014-10-23 15:52:30	kweaver_desktop	ill show you the mockup i have once its done tonight
+2014-10-23 15:52:39	jhartigan	trueconfessions: just saw swift key material design
+2014-10-23 15:52:41	jhartigan	want gmails
+2014-10-23 15:52:56	jhartigan	yeah im gonna finish this responsive and zoom readup
+2014-10-23 15:52:58	kweaver_desktop	wouldnt be much work to also integrate the material design library
+2014-10-23 16:26:43	kweaver_desktop	overall though jhartigan, i plan on blowing them away with the design on this one. pj likes us now, wait til he sees what we can do with a little design freedom
+2014-10-23 16:35:12	jhartigan	yeah i think we shoul
+2014-10-23 16:35:34	jhartigan	i think we should also extrapolate what the dataset is > separate processor > graph it
+2014-10-23 16:35:40	jhartigan	we could potentially market it to others
+2014-10-23 16:54:14	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-23 16:54:16	--	irc: disconnected from server
+2014-10-24 08:41:19	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-24 08:41:19	--	Mode #omnidev [+ns] by weber.freenode.net
+2014-10-24 08:41:19	--	Nicks #omnidev: [@kweaver]
+2014-10-24 08:41:19	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-24 08:41:20	--	Mode #omnidev [-o kweaver] by services.
+2014-10-24 08:41:20	--	Notice(weber.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414154478 to 1337223617
+2014-10-24 08:41:20	--	Mode #omnidev [+ct-s] by services.
+2014-10-24 08:41:20	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-24 08:41:20	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-24 08:41:21	--	Mode #omnidev [+cnt]
+2014-10-24 08:41:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-24 10:01:00	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-24 10:01:00	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-24 10:20:33	jhartigan	kweaver: based on that email from justine i think she was still waiting on you to clarify, unless theres an email you sent her i didnt get
+2014-10-24 10:23:12	jhartigan	?? is a bit cryptic
+2014-10-24 10:38:20	kweaver	i just did jhartigan 
+2014-10-24 10:38:27	kweaver	thanks though
+2014-10-24 10:38:45	kweaver	i missed her original response while i was in florida
+2014-10-24 10:41:38	kweaver	just did = just responded back to her*
+2014-10-24 10:46:17	jhartigan	i follow ya
+2014-10-24 10:46:19	jhartigan	all goo
+2014-10-24 10:46:25	jhartigan	i jsut didnt really get what her ?? meant
+2014-10-24 10:51:50	kweaver	does my google voice number ring on your phone now?
+2014-10-24 10:51:58	kweaver	just got a voicemail from kirk
+2014-10-24 10:59:26	jhartigan	yeah it did when i was in the bathroom
+2014-10-24 10:59:30	jhartigan	something about mailchimp
+2014-10-24 10:59:35	jhartigan	lol he must really not like me
+2014-10-24 10:59:38	jhartigan	to call you haha
+2014-10-24 11:01:23	jhartigan	i just sent an email saying were in a meeting and that ill call him when out
+2014-10-24 11:01:31	jhartigan	so he can keep on loving you
+2014-10-24 11:01:36	jhartigan	and think youre not ignoring him
+2014-10-24 11:05:43	jhartigan	kweaver: did we setup forwarding or did you do it?
+2014-10-24 11:05:49	jhartigan	i dont remember having to accept anything on my phone
+2014-10-24 11:05:52	jhartigan	its pretty cool
+2014-10-24 11:17:20	kweaver	you had already accepted it like day 1 of omni
+2014-10-24 11:17:27	kweaver	so i just have to check you off again jhartigan 
+2014-10-24 11:17:56	jhartigan	oooh
+2014-10-24 11:18:01	jhartigan	thats right we tried to make it ring both
+2014-10-24 11:18:08	jhartigan	and then it fucked my shit up
+2014-10-24 11:18:10	jhartigan	but now it didnt
+2014-10-24 11:18:27	jhartigan	kweaver: katz wants you and i for a meeting next week - for jcccamps
+2014-10-24 11:18:38	jhartigan	its not a wordpress site so im gonna milk 10k for wordpress migration
+2014-10-24 11:18:48	kweaver	oh yeah def
+2014-10-24 11:19:03	jhartigan	was just gonna tell em you were booked unless you wanted to do it wed
+2014-10-24 11:19:08	kweaver	unfortuneately i dont think outside meetings will be a thing for a while
+2014-10-24 11:19:15	kweaver	could be possible in a couple weeks
+2014-10-24 11:19:32	kweaver	but i have a lot to finish on the flu billing front in the next few weeks
+2014-10-24 11:19:39	kweaver	since were gonna use it for this years clinics
+2014-10-24 11:23:46	kweaver	jhartigan: whats the comm_build creds?
+2014-10-24 11:23:49	kweaver	deans asking for em
+2014-10-24 11:24:14	kweaver	im open to future wednesday meetings but definitely not just yet
+2014-10-24 11:24:45	kweaver	of course i asked to set up a call with the woman i met from rowan newsletter.  "im free everyday next week except wednesday"
+2014-10-24 11:25:37	jhartigan	combuild_admin cbuild312!
+2014-10-24 11:26:21	kweaver	thanks
+2014-10-24 11:29:54	jhartigan	man.. everytime
+2014-10-24 11:29:57	jhartigan	becky gets me
+2014-10-24 11:31:06	jhartigan	i think shes a robot and shes not
+2014-10-24 11:42:31	kweaver	lol
+2014-10-24 11:43:54	jhartigan	literally sat there for like 10 sec waiting on a menu
+2014-10-24 11:43:57	jhartigan	and she just waited
+2014-10-24 11:44:00	jhartigan	it must happen often
+2014-10-24 11:44:20	jhartigan	kweaver: should i talk to brian about this weird separation
+2014-10-24 11:44:32	jhartigan	since were gonna get another katz dealio most likely
+2014-10-24 11:45:01	kweaver	yeah maybe just reply to that chain and ask when he planned on going over the separate protocol
+2014-10-24 11:45:14	kweaver	i would prefer to be separate before any new projects from them
+2014-10-24 11:49:00	jhartigan	me too
+2014-10-24 12:01:27	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 244 seconds)
+2014-10-24 12:02:28	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-24 12:19:37	kweaver	jhartigan: if you dont have plans, you should come to the pour house tonight
+2014-10-24 12:19:55	kweaver	i dont mind driving
+2014-10-24 12:20:08	kweaver	myself, danielle, jesse, melissa so far
+2014-10-24 12:21:35	jhartigan	word
+2014-10-24 12:21:38	jhartigan	ugh and be social?
+2014-10-24 12:21:44	jhartigan	naw thats cool id be down to go
+2014-10-24 13:22:22	kweaver	k cool
+2014-10-24 13:22:56	kweaver	ill let know the deets.  i think were aiming to leave at 7:30
+2014-10-24 14:31:06	kweaver	sound good jhartigan ?
+2014-10-24 14:35:44	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-24 15:49:15	jhartigan	oh yeah im fine with that
+2014-10-24 16:12:19	jhartigan	oh does that mean 9pm if were on jessie time?
+2014-10-24 16:43:59	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-10-24 16:45:21	jhartigan	also are you guys eating there or before hand?
+2014-10-24 17:01:13	--	irc: disconnected from server
+2014-10-27 08:41:10	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-27 08:41:10	--	Mode #omnidev [+ns] by holmes.freenode.net
+2014-10-27 08:41:10	--	Nicks #omnidev: [@kweaver]
+2014-10-27 08:41:10	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-27 08:41:10	--	Mode #omnidev [-o kweaver] by services.
+2014-10-27 08:41:10	--	Notice(holmes.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414413669 to 1337223617
+2014-10-27 08:41:10	--	Mode #omnidev [+ct-s] by services.
+2014-10-27 08:41:10	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-27 08:41:10	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-27 08:41:13	--	Mode #omnidev [+cnt]
+2014-10-27 08:41:13	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-27 09:48:43	--	irc: disconnected from server
+2014-10-27 09:49:00	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-27 09:49:00	--	Nicks #omnidev: [@ChanServ kweaver]
+2014-10-27 09:49:00	--	Channel #omnidev: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-27 09:49:03	--	Mode #omnidev [+cnt]
+2014-10-27 09:49:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-27 12:37:22	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-10-27 12:37:22	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-27 12:38:56	kweaver	dlenny asked a question
+2014-10-27 12:39:02	kweaver	i dont remember the answer offhand
+2014-10-27 12:39:26	kweaver	jhartigan: 
+2014-10-27 12:40:07	jhartigan	no idea why. i just know it was a webkit issue
+2014-10-27 12:40:18	jhartigan	katz is picky with the store
+2014-10-27 12:40:27	jhartigan	also stephanie is hot
+2014-10-27 12:42:46	jhartigan	kweaver: this camps guy seems to like creativ
+2014-10-27 12:43:34	jhartigan	do we charge normal hosting to Katz, 300/domain?
+2014-10-27 12:44:06	kweaver	correct, $300 per website
+2014-10-27 12:44:16	kweaver	so they currently pay $600 for just the two sites
+2014-10-27 12:44:19	jhartigan	yeah
+2014-10-27 12:44:23	kweaver	when you switch camp over, itll be another $300
+2014-10-27 12:44:36	jhartigan	if
+2014-10-27 12:45:13	jhartigan	he wasnt overly happy when i said a direct clone of the camps with wordpress and mobile port would be substantially more costly than a new mobile ready site
+2014-10-27 12:45:34	jhartigan	said creative was gonna do the wordpress port for him and i said thats fine if you think itll work out
+2014-10-27 12:51:46	kweaver	did he say how much creative was gonna charge for it?
+2014-10-27 12:52:30	jhartigan	nah he wanted to hear our bid
+2014-10-27 12:52:48	jhartigan	i dont care, creative sucks and he wont be happy with it if they do it
+2014-10-27 12:52:58	jhartigan	he joked about 15k for it
+2014-10-27 12:53:16	jhartigan	i think im gonna telll him 12k, meanwhile 6k to use new theme
+2014-10-27 12:53:43	kweaver	yeah thats reasonable
+2014-10-27 12:53:55	kweaver	just make sure he knows that the 6k new site would like 60000000x better
+2014-10-27 12:54:02	kweaver	and give examples
+2014-10-27 12:58:37	jhartigan	oh i did
+2014-10-27 12:58:43	jhartigan	he likkes his 10 year old site
+2014-10-27 12:58:46	jhartigan	which in his defense
+2014-10-27 12:58:52	jhartigan	doesnt remotely look 10 years old
+2014-10-27 12:59:39	jhartigan	also stephanie is hot
+2014-10-27 13:01:36	jhartigan	almost got another visit to the ER last night, but waited it out.  fucken like 0 sleep
+2014-10-27 13:01:41	jhartigan	meeting went well overall htough
+2014-10-27 13:03:15	kweaver	which stephanie?
+2014-10-27 13:03:24	kweaver	isnt she the old one?
+2014-10-27 13:03:39	jhartigan	no
+2014-10-27 13:03:40	kweaver	theres too many people there, i cant keep track of everyone
+2014-10-27 13:03:49	jhartigan	i thought she was older based on phone
+2014-10-27 13:03:52	kweaver	how old is she?
+2014-10-27 13:03:52	jhartigan	shes roughly our age
+2014-10-27 13:03:54	jhartigan	black hair
+2014-10-27 13:03:55	kweaver	oh damn
+2014-10-27 13:04:02	kweaver	maybe i havent met her?
+2014-10-27 13:04:05	jhartigan	sits behind arielle
+2014-10-27 13:04:10	jhartigan	this was the first time i met her
+2014-10-27 13:05:14	jhartigan	walked her through updates and she was like... omg this is so easy
+2014-10-27 13:10:18	jhartigan	but yeah.. fuckin felt very heartattackish last night/early mornign, was not fun.  0/10 would not recommend
+2014-10-27 13:38:58	kweaver	well that sucks
+2014-10-27 13:39:21	kweaver	so then its official that your last surgery didnt fix it
+2014-10-27 13:40:01	jhartigan	yeah i guess so
+2014-10-27 13:40:17	jhartigan	this was weird, pains never severe and neither is the breathing shit
+2014-10-27 13:40:27	jhartigan	but i went through literally every symptom of heartattack
+2014-10-27 13:40:29	jhartigan	which worries me
+2014-10-27 13:41:30	kweaver	yeah thats worrisome
+2014-10-27 13:41:53	jhartigan	they all came and went but the pain remained a while
+2014-10-27 13:41:58	jhartigan	and has come back a bit
+2014-10-27 13:59:01	jhartigan	so i found something that fits all of my symptoms, to the t
+2014-10-27 13:59:03	jhartigan	and is missed often
+2014-10-27 13:59:07	jhartigan	because we vaccinate
+2014-10-27 13:59:14	jhartigan	im on the high end of my vaccine reup
+2014-10-27 14:16:11	kweaver	what is it
+2014-10-27 14:18:23	jhartigan	diphtheria
+2014-10-27 14:18:38	jhartigan	and according to my sister.. i wouldnt have gotten the vaccine i thought i wouldve
+2014-10-27 14:18:42	jhartigan	the plot thickens
+2014-10-27 14:21:13	jhartigan	wtf... why is tony setting me up on a call with their developer
+2014-10-27 14:21:19	jhartigan	its cause hes getting fired
+2014-10-27 14:22:07	kweaver	the def is getting fired?
+2014-10-27 14:22:09	kweaver	dev*
+2014-10-27 14:22:14	jhartigan	no tony
+2014-10-27 14:22:18	jhartigan	tony and ken were the two
+2014-10-27 14:22:52	kweaver	ken said that tony makes less sales than ken does, but tony also makes lese
+2014-10-27 14:22:56	kweaver	less*
+2014-10-27 14:23:17	jhartigan	tony said its a call with their dev.  im not taking a call to walk someone through a document because he cant implement a curl or whatever he needs to do
+2014-10-27 14:23:46	kweaver	yeah just give him the developer url again and say thats all we can do
+2014-10-27 14:23:56	kweaver	this is seriously deja vu
+2014-10-27 14:24:11	kweaver	we've gotten to this point two other times
+2014-10-27 14:24:16	jhartigan	im not even taking the call if he responds and says hes still working on the site
+2014-10-27 14:24:30	jhartigan	if he wants me its gonna be 120$ since their dev needs a fucking consult
+2014-10-27 14:26:32	jhartigan	120/hr
+2014-10-27 14:26:56	kweaver	yeah def
+2014-10-27 15:31:54	kweaver	i dont know why tony has had such a tough time grasping the situation enough to explain to the client well
+2014-10-27 15:32:11	kweaver	its rather simple and ive told tony like 3 or 4 times
+2014-10-27 15:32:41	jhartigan	yeah dude
+2014-10-27 15:32:58	jhartigan	i might respond with, youre going to have to tell them i'm billing for my time in the cal
+2014-10-27 15:33:06	jhartigan	a developer that cant handle an api
+2014-10-27 15:33:10	jhartigan	isnt my problem
+2014-10-27 15:33:52	kweaver	i would hear out the call first, just take 5 minutes to explain again and then offer them the option of setting up a paid call if they need help walking through the api
+2014-10-27 15:34:13	jhartigan	thought about that
+2014-10-27 15:34:18	jhartigan	then thought about how much i care
+2014-10-27 15:34:20	jhartigan	its 0
+2014-10-27 15:34:28	jhartigan	so money or no deal seems good to me
+2014-10-27 15:34:32	jhartigan	its not my first call
+2014-10-27 15:34:39	jhartigan	ive spoken to the agency and the dev
+2014-10-27 15:34:45	jhartigan	and sent him the information
+2014-10-27 15:35:25	kweaver	you know tony would then just forward the situation on to brian, who doesnt have a clue about any of whats going on
+2014-10-27 15:35:57	kweaver	i dunno, i would personally just take 5 minutes and let them know that any future work on that client will have to be billed
+2014-10-27 15:36:02	kweaver	to avoid a situation with bc
+2014-10-27 15:36:11	jhartigan	i dont care if its a situation
+2014-10-27 15:36:53	kweaver	well then thats up to you
+2014-10-27 15:36:59	jhartigan	dude my days are emails and phone calls without wasting my time, let alone willingly adding a time waste.  im finishing shit up with EIRC stuff and still need time to work on nemours
+2014-10-27 15:37:07	jhartigan	a situation is the least of my concern
+2014-10-27 15:38:48	kweaver	its up to you, just keep in mind that a situation would be much more time consuming than a 5 minute call.  and during a time where we are still unsure of our true standings with bc, probably not wise
+2014-10-27 15:39:18	jhartigan	helping tony close one deal has no bearing on our stance with bc
+2014-10-27 15:39:28	jhartigan	hes digging up a client who hasnt moved in 9 months
+2014-10-27 15:40:05	kweaver	but coming off like we dont feel like supporting bc's sales team would have a bearing
+2014-10-27 15:40:25	jhartigan	this is the 4th time
+2014-10-27 15:40:30	jhartigan	its not a lack of support
+2014-10-27 15:56:11	jhartigan	no wonder tony cant close
+2014-10-27 15:56:15	jhartigan	he doesnt fucking read
+2014-10-27 16:01:01	jhartigan	oh kweaver is the new gmail inbox or is inbox separate and gmail is just redesigned and updated?
+2014-10-27 17:13:27	kweaver	i think its pretty separate jhartigan 
+2014-10-27 17:13:44	kweaver	you dont have a signup list, they just ask you to email some address if youre interested
+2014-10-27 17:15:09	kweaver	so i emailed that address, and in case anyone ever actually reads those emails, i made sure to mention how bad google can be with product anouncements and user experience.  emailing a random message to a random address is stupid and unorganized.  just make a fuckin signup list like anyone else
+2014-10-27 17:15:28	kweaver	 /rant
+2014-10-27 17:32:25	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-27 17:32:25	--	irc: disconnected from server
+2014-10-28 08:47:18	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-28 08:47:18	--	Mode #omnidev [+ns] by holmes.freenode.net
+2014-10-28 08:47:18	--	Nicks #omnidev: [@kweaver]
+2014-10-28 08:47:18	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-28 08:47:18	--	Mode #omnidev [-o kweaver] by services.
+2014-10-28 08:47:18	--	Notice(holmes.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414500437 to 1337223617
+2014-10-28 08:47:18	--	Mode #omnidev [+ct-s] by services.
+2014-10-28 08:47:18	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-28 08:47:18	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-28 08:47:20	--	Mode #omnidev [+cnt]
+2014-10-28 08:47:21	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-28 18:27:21	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-28 18:27:21	--	irc: disconnected from server
+2014-10-29 08:51:14	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-29 08:51:14	--	Mode #omnidev [+ns] by sendak.freenode.net
+2014-10-29 08:51:14	--	Nicks #omnidev: [@kweaver]
+2014-10-29 08:51:14	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-29 08:51:14	--	Mode #omnidev [-o kweaver] by services.
+2014-10-29 08:51:14	--	Notice(sendak.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414587073 to 1337223617
+2014-10-29 08:51:14	--	Mode #omnidev [+ct-s] by services.
+2014-10-29 08:51:14	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-29 08:51:14	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-29 08:51:16	--	Mode #omnidev [+cnt]
+2014-10-29 08:51:16	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-29 09:12:51	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-29 09:12:51	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-29 09:35:17	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2014-10-29 11:25:35	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-29 11:25:35	--	irc: disconnected from server
+2014-10-29 11:27:09	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-29 11:27:09	--	Mode #omnidev [+ns] by kornbluth.freenode.net
+2014-10-29 11:27:09	--	Nicks #omnidev: [@kweaver]
+2014-10-29 11:27:09	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-29 11:27:09	--	Mode #omnidev [-o kweaver] by services.
+2014-10-29 11:27:09	--	Notice(kornbluth.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414596429 to 1337223617
+2014-10-29 11:27:09	--	Mode #omnidev [+ct-s] by services.
+2014-10-29 11:27:09	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-29 11:27:09	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-29 11:27:12	--	Mode #omnidev [+cnt]
+2014-10-29 11:27:12	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-29 14:45:26	--	irc: disconnected from server
+2014-10-29 14:45:50	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-29 14:45:50	--	Nicks #omnidev: [@ChanServ kweaver]
+2014-10-29 14:45:50	--	Channel #omnidev: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-29 14:45:52	--	Mode #omnidev [+cnt]
+2014-10-29 14:45:52	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-29 17:38:37	--	irc: disconnected from server
+2014-10-30 08:42:10	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-30 08:42:10	--	Mode #omnidev [+ns] by wolfe.freenode.net
+2014-10-30 08:42:10	--	Nicks #omnidev: [@kweaver]
+2014-10-30 08:42:10	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-30 08:42:10	--	Mode #omnidev [-o kweaver] by services.
+2014-10-30 08:42:10	--	Notice(wolfe.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414672821 to 1337223617
+2014-10-30 08:42:10	--	Mode #omnidev [+ct-s] by services.
+2014-10-30 08:42:10	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-30 08:42:10	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-30 08:42:12	--	Mode #omnidev [+cnt]
+2014-10-30 08:42:12	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-30 10:01:10	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 10:01:10	--	irc: disconnected from server
+2014-10-30 13:54:52	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-30 13:54:52	--	Nicks #omnidev: [@ChanServ kweaver kweaver_desktop]
+2014-10-30 13:54:52	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-30 13:54:52	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-30 13:54:54	--	Mode #omnidev [+cnt]
+2014-10-30 13:54:54	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-30 13:56:40	--	irc: disconnected from server
+2014-10-30 14:10:23	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-30 14:10:23	--	Nicks #omnidev: [@ChanServ kweaver kweaver_desktop]
+2014-10-30 14:10:23	--	Channel #omnidev: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-30 14:10:24	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-10-30 14:10:26	--	Mode #omnidev [+cnt]
+2014-10-30 14:10:26	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-30 15:17:09	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 15:17:09	--	irc: disconnected from server
+2014-10-30 15:19:06	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-30 15:19:06	--	Nicks #omnidev: [kweaver kweaver_desktop]
+2014-10-30 15:19:06	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-10-30 15:19:08	--	Mode #omnidev [+cnt]
+2014-10-30 15:19:08	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-30 15:20:03	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 17:18:41	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 17:18:42	--	irc: disconnected from server
+2014-10-31 08:55:54	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-10-31 08:55:54	--	Mode #omnidev [+ns] by verne.freenode.net
+2014-10-31 08:55:54	--	Nicks #omnidev: [@kweaver]
+2014-10-31 08:55:54	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-10-31 08:55:54	--	Mode #omnidev [-o kweaver] by services.
+2014-10-31 08:55:54	--	Notice(verne.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1414760153 to 1337223617
+2014-10-31 08:55:54	--	Mode #omnidev [+ct-s] by services.
+2014-10-31 08:55:54	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-10-31 08:55:54	--	Mode #omnidev [+o ChanServ] by services.
+2014-10-31 08:55:56	--	Mode #omnidev [+cnt]
+2014-10-31 08:55:56	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-10-31 16:46:20	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-31 16:46:25	--	irc: disconnected from server
+2014-11-03 08:44:05	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-03 08:44:05	--	Mode #omnidev [+ns] by weber.freenode.net
+2014-11-03 08:44:05	--	Nicks #omnidev: [@kweaver]
+2014-11-03 08:44:05	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-03 08:44:06	--	Mode #omnidev [-o kweaver] by services.
+2014-11-03 08:44:06	--	Notice(weber.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415022245 to 1337223617
+2014-11-03 08:44:06	--	Mode #omnidev [+ct-s] by services.
+2014-11-03 08:44:06	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-03 08:44:06	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-03 08:44:07	--	Mode #omnidev [+cnt]
+2014-11-03 08:44:07	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-03 08:51:07	-->	kweaver1 (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-03 08:51:07	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-03 09:56:07	-->	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-03 10:02:34	kweaver	jhartigan: you making that call now?
+2014-11-03 10:03:00	jhartigan	she asked to call me
+2014-11-03 10:03:04	jhartigan	but havent gotten it yet
+2014-11-03 10:03:12	jhartigan	gonna give her till 15 and then call her
+2014-11-03 10:03:17	jhartigan	actually no im not
+2014-11-03 10:03:20	jhartigan	she didnt give me her number
+2014-11-03 10:03:25	jhartigan	so ill email her
+2014-11-03 10:03:50	kweaver	aight
+2014-11-03 10:08:31	jhartigan	ugh i hope she doesnt rescheduleee
+2014-11-03 10:08:37	jhartigan	i wwanna get this outta the way
+2014-11-03 10:08:46	jhartigan	stupid dev meeting at 2
+2014-11-03 10:15:28	jhartigan	whats up with ken kweaver did he bring up the KFED pin
+2014-11-03 10:15:31	jhartigan	kfed
+2014-11-03 10:15:33	jhartigan	lol
+2014-11-03 10:16:33	kweaver	jhartigan: ken called and said he talked to becky from jfed margate.  she said they want someone to call and schedule a time to 'come down and show them how to use the website'.  I figure you should just let them know that if they want you to come down, youll have to bill for your time and time on the road. they probably just dont know about any screensharing solutions
+2014-11-03 10:17:00	kweaver	so im sure if you told them that, theyd prefer to just use a screenshare
+2014-11-03 10:17:35	kweaver	then he was complaining about how poorly bc handled their email switch
+2014-11-03 10:18:55	jhartigan	well as i told them already
+2014-11-03 10:19:01	jhartigan	im not doing that wihtout being paid
+2014-11-03 10:19:49	jhartigan	and he still needs to give me a pin
+2014-11-03 10:20:04	jhartigan	I walked becky through shit, as well as kirk, once in person once on the phone
+2014-11-03 10:20:44	kweaver	das cool.  so yeah just call becky and let her know
+2014-11-03 10:22:28	jhartigan	dudes havent even paid and id be asking them to pay up but i need that PIN before its technically done
+2014-11-03 10:23:00	kweaver	i guess email ken
+2014-11-03 10:24:10	jhartigan	i had, but if he lost it, makes sense
+2014-11-03 10:24:59	jhartigan	so youre all good on your dads shit though?
+2014-11-03 10:25:14	kweaver	yeah mostly
+2014-11-03 10:25:33	kweaver	he just doesnt feel like doing his own store updates
+2014-11-03 10:25:49	kweaver	so i have to keep telling him that these are things he shouldnt be waiting on me for
+2014-11-03 10:26:47	jhartigan	i just feel like if there were redirects, nd one store
+2014-11-03 10:26:49	jhartigan	he wouldnt hate it
+2014-11-03 11:05:21	kweaver	jhartigan: whats your simple check deposit limit?
+2014-11-03 11:05:36	kweaver	$3k?
+2014-11-03 11:05:54	jhartigan	mines 3k yeah
+2014-11-03 11:05:59	jhartigan	but dunno what yours is
+2014-11-03 11:06:05	kweaver	just checking
+2014-11-03 11:06:14	kweaver	heres there setup https://www.simple.com/policies/photo-check-deposit-limits
+2014-11-03 11:06:33	kweaver	i have to deposit 5 checks to be allowed to deposit $3k
+2014-11-03 11:06:40	kweaver	even $3k is kinda lame
+2014-11-03 11:06:47	jhartigan	oh interesting
+2014-11-03 11:06:49	jhartigan	yeah it really is
+2014-11-03 11:06:58	jhartigan	if PNC didnt have a limit it wouldnt matter
+2014-11-03 11:07:02	jhartigan	but its 5k/day
+2014-11-03 11:07:04	kweaver	yeah
+2014-11-03 11:07:07	jhartigan	but counts transfer window
+2014-11-03 11:07:16	kweaver	ill probably just write a check and drop it off at TD
+2014-11-03 11:07:21	jhartigan	so its 5k/day until transfer
+2014-11-03 12:54:21	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-03 12:58:16	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-03 13:26:55	jhartigan	i put my transfer through less gas money kweaver
+2014-11-03 13:27:44	kweaver	kk
+2014-11-03 13:51:59	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-03 13:52:03	--	irc: disconnected from server
+2014-11-03 13:53:31	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-03 13:53:31	--	Nicks #omnidev: [jhartigan kweaver kweaver1]
+2014-11-03 13:53:31	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-11-03 13:53:34	--	Mode #omnidev [+cnt]
+2014-11-03 13:53:34	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-03 14:19:48	<--	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2014-11-03 14:19:49	-->	jharty (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-03 15:08:03	kweaver	jharty: how was that talk?
+2014-11-03 15:14:39	jharty	with whom?
+2014-11-03 15:14:46	jharty	on phone meeting now with new lead
+2014-11-03 15:19:51	kweaver	the 2pm tony one^
+2014-11-03 15:19:57	kweaver	kcool
+2014-11-03 15:28:42	jharty	oh that went literally as it did before
+2014-11-03 15:28:51	jharty	not sure if that guy is a competent dev or not
+2014-11-03 15:29:00	jharty	but he took my number... expecting shitty phone calls
+2014-11-03 15:29:13	jharty	got shit squared away with jfed, finishing some katz shit, and some eirc stuff
+2014-11-03 15:29:17	jharty	all is good though kweaver
+2014-11-03 15:29:51	kweaver	whats the jfed plan?
+2014-11-03 15:30:21	jharty	i needed their PIN, kirks on vacation. figured ill boomerang out a request for final changes and payment for monday morning when hes back
+2014-11-03 15:31:04	kweaver	you talked to becky?
+2014-11-03 15:32:40	jharty	yeah
+2014-11-03 15:33:56	jharty	she mentioned nothing about coming in
+2014-11-03 15:34:06	jharty	Ken mentioned it when i talked to him
+2014-11-03 15:34:11	kweaver	lol
+2014-11-03 15:34:13	kweaver	aight
+2014-11-03 15:34:18	jharty	but i said im really busy, needed to be paid for it, etc
+2014-11-03 15:34:24	kweaver	yeah
+2014-11-03 15:34:33	jharty	yeah i dunno. i was like anything you need from me and she said nah you took care of it im great
+2014-11-03 15:34:41	jharty	i wonder if ken relayed the message late
+2014-11-03 16:05:36	--	irc: disconnected from server
+2014-11-04 08:11:41	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-04 08:11:41	--	Mode #omnidev [+ns] by leguin.freenode.net
+2014-11-04 08:11:41	--	Nicks #omnidev: [@kweaver]
+2014-11-04 08:11:41	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-04 08:11:41	--	Mode #omnidev [-o kweaver] by services.
+2014-11-04 08:11:41	--	Notice(leguin.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415106701 to 1337223617
+2014-11-04 08:11:41	--	Mode #omnidev [+ct-s] by services.
+2014-11-04 08:11:41	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-04 08:11:41	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-04 08:11:43	--	Mode #omnidev [+cnt]
+2014-11-04 08:11:43	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-04 09:21:21	-->	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-04 09:21:22	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-04 09:54:53	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-04 10:16:42	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-04 14:16:19	kweaver	how goes it jhartigan ?
+2014-11-04 15:12:09	jhartigan	yp just chillen, been doing a bunch of d3 work.. waiting for lori to call
+2014-11-04 15:12:14	jhartigan	she said 130.....
+2014-11-04 15:13:21	kweaver	gotcha
+2014-11-04 15:14:00	kweaver	im replying to the KCC email. apparently all domains registered after January 1, 2014 have to verify the owner email address, or the domain will be shut down
+2014-11-04 15:14:28	kweaver	the owner address was kingscustomclothiers@gmail.com, which nobody checks.  there were like 10 warning emails in there
+2014-11-04 15:15:08	jhartigan	oh ufck interesting
+2014-11-04 15:15:17	jhartigan	i completely forgot to relogin to the BC email
+2014-11-04 15:17:21	jhartigan	so. is that a namecheap thing that does that?
+2014-11-04 15:18:10	kweaver	ICANN mandates namecheap and everyone else to do that now
+2014-11-04 15:18:31	kweaver	so namecheap was sending the emails, and took the site down
+2014-11-04 15:18:55	jhartigan	very interesting... kinda dic, i mean generally that wouldnt happen, but i wonder why
+2014-11-04 15:19:15	kweaver	As of January 1, 2014, the Internet Corporation for Assigned Names and Numbers (ICANN) has mandated that all ICANN accredited registrars begin verifying the WHOIS contact information for all new domain registrations and Registrant contact modifications.
+2014-11-04 15:19:22	kweaver	its just a thing now I guess
+2014-11-04 15:21:09	jhartigan	what ya think about brians ROR site
+2014-11-04 15:21:22	jhartigan	unless its c&m lol
+2014-11-04 15:21:56	kweaver	did he CC me?  i dont see anything
+2014-11-04 15:22:35	jhartigan	he respnded to the one about separation
+2014-11-04 15:22:43	jhartigan	said potential lead, but might need RoR
+2014-11-04 15:23:05	kweaver	oh its probably c&m haha
+2014-11-04 15:23:08	kweaver	ill reply
+2014-11-04 15:23:08	jhartigan	RoR means money tome, so unless its something silly like C&M i can hear it out
+2014-11-04 15:23:20	kweaver	yeah im good widdit
+2014-11-04 15:23:26	kweaver	as long as its not that
+2014-11-04 15:24:08	jhartigan	kk im gonna get some foods, ill bbs, waited on lunch for after my meeting with lori
+2014-11-04 15:24:10	jhartigan	but she never called
+2014-11-04 15:24:16	jhartigan	god shes like a terrible date
+2014-11-04 15:24:32	kweaver	i just noticed a panicked emails on 10/30 from kathy and arielle
+2014-11-04 15:24:36	kweaver	did you already sort those out?
+2014-11-04 15:25:22	jhartigan	is it shit about forms?
+2014-11-04 15:25:33	jhartigan	yeah theyre sorted
+2014-11-04 15:25:50	kweaver	k
+2014-11-04 15:25:50	jhartigan	kathy for some reason, wanted access to the gmail account, that was mailing her from the store
+2014-11-04 15:26:01	jhartigan	lol, and arielle needed 12 forms put on the site
+2014-11-04 15:26:03	jhartigan	literallly 12
+2014-11-04 15:26:30	kweaver	actually, you wanna reply to brian so he'll call you with the deets instead of me?
+2014-11-04 15:27:06	jhartigan	yeah thats fine
+2014-11-04 15:27:08	jhartigan	oh shit
+2014-11-04 15:27:36	jhartigan	http://www.comicbookresources.com/?page=article&id=56813
+2014-11-04 15:27:39	jhartigan	you see dis?
+2014-11-04 15:28:07	kweaver	oh yeah i saw that image on fb
+2014-11-04 15:28:11	kweaver	wasnt sure what its about
+2014-11-04 15:28:13	kweaver	thats cool
+2014-11-04 16:18:12	jhartigan	damn kweaver we have alot 'incoming' from katz
+2014-11-04 16:18:33	jhartigan	also tomorrow i should have some good stuff for this graph project
+2014-11-04 16:18:39	jhartigan	just needs some more love
+2014-11-04 17:08:09	--	irc: disconnected from server
+2014-11-06 08:51:04	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-06 08:51:05	--	Mode #omnidev [+ns] by cameron.freenode.net
+2014-11-06 08:51:05	--	Nicks #omnidev: [@kweaver]
+2014-11-06 08:51:05	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-06 08:51:05	--	Mode #omnidev [-o kweaver] by services.
+2014-11-06 08:51:05	--	Notice(cameron.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415281864 to 1337223617
+2014-11-06 08:51:05	--	Mode #omnidev [+ct-s] by services.
+2014-11-06 08:51:05	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-06 08:51:05	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-06 08:51:06	--	Mode #omnidev [+cnt]
+2014-11-06 08:51:06	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-06 09:25:57	-->	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-06 09:25:57	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-06 09:37:06	kweaver	jhartigan: my check cleared
+2014-11-06 09:37:18	kweaver	so i can officially say i no longer feel poor
+2014-11-06 09:37:31	kweaver	just paid off everything, still have a good chunk to hang onto
+2014-11-06 09:37:35	kweaver	today was a good day
+2014-11-06 09:40:21	jhartigan	yeah my transfer went through too.  mines pretty decent after the phones, now ill start answering all the phone calls that want money from me
+2014-11-06 09:40:32	jhartigan	after bills this month and med bills
+2014-11-06 09:40:36	jhartigan	ill still be doing okay
+2014-11-06 09:40:43	jhartigan	and we have so much still coming in
+2014-11-06 09:40:45	jhartigan	its nice
+2014-11-06 09:41:05	jhartigan	theres a surprising chunk incoming from katz i was surprised kweaver
+2014-11-06 09:41:37	kweaver	oh werd?
+2014-11-06 09:41:40	kweaver	thats true
+2014-11-06 09:41:43	kweaver	they owe us a shit load
+2014-11-06 09:41:59	kweaver	just keep track of the time youve done stuff in the last few weeks
+2014-11-06 09:42:06	kweaver	and make sure to separate that as your own
+2014-11-06 09:42:30	kweaver	we need to send them an october invoice
+2014-11-06 09:43:50	jhartigan	yeah, did you see justines having problems getting them to pay
+2014-11-06 09:43:53	jhartigan	she asked ken about it
+2014-11-06 09:43:58	jhartigan	its like 4200 total form them
+2014-11-06 09:46:04	kweaver	yeah its a shit load
+2014-11-06 09:46:19	kweaver	at some point ill get in touch with justine and see what bc has been paid from them
+2014-11-06 09:46:28	kweaver	it really shouldnt be this big a deal to get paid by them
+2014-11-06 09:46:45	kweaver	if it continues to be a pain, we're just going to have to switch them to paying upfront for hours
+2014-11-06 09:47:03	kweaver	and not do changes until theyve bought enough hours
+2014-11-06 09:47:50	kweaver	we should make that switch regardless
+2014-11-06 09:48:02	kweaver	for any larger client that will likely make changes
+2014-11-06 09:48:35	kweaver	maybe switch pricing to $65/hr if you pay upfront, and $75 and hour if you are paying on demand
+2014-11-06 09:51:40	jhartigan	yeah ut in the meeting, they stressed how they preferred being invoiced for hours vs paying up dront lol
+2014-11-06 09:51:51	kweaver	ugh
+2014-11-06 09:52:10	kweaver	of course
+2014-11-06 09:52:18	kweaver	cause then theres no rush to ever pay
+2014-11-06 09:53:00	kweaver	we'll just have to start enforcing a policy of "if your last invoice is over 30 days late, we can't continue to work until we've received payment"
+2014-11-06 09:53:19	kweaver	because theyve gone as far as like 90 days im pretty sure
+2014-11-06 09:54:56	kweaver	its frustrating too because stereotypes are funny to joke about, but kind of annoying when it actually becomes true
+2014-11-06 09:55:28	jhartigan	i mean it is ridiculous
+2014-11-06 09:55:31	jhartigan	they are 90 days
+2014-11-06 09:55:40	jhartigan	and 30 on the sept payement too
+2014-11-06 09:55:42	jhartigan	nearly 30
+2014-11-06 09:55:51	jhartigan	cause sept was a 30 day window and 30 more is nov 10th
+2014-11-06 09:59:42	jhartigan	you havent logged into Converge yet since VM switched over have you
+2014-11-06 09:59:45	jhartigan	i got so excited
+2014-11-06 09:59:51	jhartigan	but its just a front end swap
+2014-11-06 10:10:35	kweaver	oh nah
+2014-11-06 10:10:45	kweaver	so its the same, just prettier?
+2014-11-06 10:12:19	jhartigan	its beautiful
+2014-11-06 10:12:20	jhartigan	till you login
+2014-11-06 10:12:31	kweaver	course
+2014-11-06 10:12:52	jhartigan	idont get why thats considered doing work these days
+2014-11-06 10:19:34	jhartigan	i dont know offhand but jfed owes us money too
+2014-11-06 10:19:37	jhartigan	like 2k or something
+2014-11-06 11:30:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-06 13:50:22	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2014-11-06 14:04:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-06 14:37:08	jhartigan	kathy fuckin loves me
+2014-11-06 14:37:18	jhartigan	i really hope ken sets up a meeting or phone call to discuss this swap soon
+2014-11-06 14:37:25	jhartigan	i dont know how long well have BC email
+2014-11-06 14:37:32	kweaver_desktop	yeah exactly
+2014-11-06 14:37:57	jhartigan	shes having all sorts of issues with their ssl for memberlink.katz
+2014-11-06 14:38:00	jhartigan	and im trying to help her
+2014-11-06 14:38:06	jhartigan	but had to set tech contact to m
+2014-11-06 14:38:14	jhartigan	used my omni cause i dont want this shit to get fucked
+2014-11-06 17:13:26	<--	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-06 17:49:28	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2014-11-07 09:14:45	-->	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-07 11:37:54	kweaver	sup jhartigan 
+2014-11-07 11:39:56	kweaver	any luck on the responsive/zoom for the longtail?  i have amcharts connected to the db now, and i have the db rows outputted in the proper json for amcharts values
+2014-11-07 11:41:18	kweaver	just have to play with some values and ill have the connection done on the db side 
+2014-11-07 11:42:04	kweaver	i looked at the csv, i think they had like 4k+ values there
+2014-11-07 11:42:31	kweaver	that should be a quick connection though
+2014-11-07 12:13:54	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-07 12:25:32	jhartigan	i had made decent progress on some test stuff aside from yesterday
+2014-11-07 12:26:13	jhartigan	kathy held me up and called me like 3 tines even though im not the one her problem is with, but i tried to help her our cause i want her to stay with us
+2014-11-07 12:29:12	jhartigan	just havent been able to get my head in the game consistently but the hack day will certainly help as well as free time coming with these two projects being pseudo completed
+2014-11-07 12:32:32	jhartigan	new lead from bc might be a decent on
+2014-11-07 12:32:40	jhartigan	still unsure about rowanmag
+2014-11-07 16:34:41	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-07 17:02:30	<--	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-07 17:02:35	--	irc: disconnected from server
+2014-11-10 08:25:41	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-10 08:25:41	--	Mode #omnidev [+ns] by cameron.freenode.net
+2014-11-10 08:25:41	--	Nicks #omnidev: [@kweaver]
+2014-11-10 08:25:41	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-10 08:25:41	--	Mode #omnidev [-o kweaver] by services.
+2014-11-10 08:25:41	--	Notice(cameron.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415625941 to 1337223617
+2014-11-10 08:25:41	--	Mode #omnidev [+ct-s] by services.
+2014-11-10 08:25:41	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-10 08:25:41	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-10 08:25:43	--	Mode #omnidev [+cnt]
+2014-11-10 08:25:43	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-10 10:50:31	-->	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-10 10:50:31	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-10 14:11:54	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-10 14:28:41	jhartigan	tablet long press options0
+2014-11-10 14:33:29	jhartigan	multiple dataset defaults
+2014-11-10 14:34:12	jhartigan	folder query for end user
+2014-11-10 14:34:16	jhartigan	? ^
+2014-11-10 14:44:28	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-10 15:22:21	kweaver	yo jhartigan 
+2014-11-10 15:26:15	jhartigan	supsup
+2014-11-10 15:26:22	jhartigan	so ive got a plan for moving forward
+2014-11-10 15:26:27	jhartigan	unless oyu think its bad
+2014-11-10 15:26:46	jhartigan	since they like amcharts - so long as we can extend it easily, we use that - so we can finish and bill for more
+2014-11-10 15:26:55	jhartigan	if not ill just continue finishing zoom and response for d3
+2014-11-10 15:27:39	kweaver	im fine with that
+2014-11-10 15:27:52	jhartigan	just cause more moneys on the line
+2014-11-10 15:27:57	jhartigan	i like more
+2014-11-10 15:27:59	jhartigan	and i wanna use d3
+2014-11-10 15:28:07	jhartigan	but i dont wanna spend more time when i could just make more money
+2014-11-10 15:32:17	jhartigan	do you forsee any issues extending amcharts?
+2014-11-10 15:38:41	kweaver	nah i really dont but feel free to check it out yourself
+2014-11-10 15:40:13	jhartigan	yeah i will
+2014-11-10 15:40:28	jhartigan	im gonna finish my desak transfer and then do a quick am charts double take
+2014-11-10 15:40:33	jhartigan	and then just move on with amcharts
+2014-11-10 15:42:04	kweaver	jhartigan: if they want to remove the amcharts logo at the top, and not be dicks to amcharts, its $140 for a full single site commercial license
+2014-11-10 15:42:07	kweaver	http://www.amcharts.com/online-store/
+2014-11-10 15:46:10	kweaver	but as the late great PJ once said "Our wallets run deaper than the atlantic ocean.  Your 'currencies' are of no concern to my people"
+2014-11-10 15:46:15	kweaver	or something along those lines
+2014-11-10 15:49:10	jhartigan	i think it was a direct quote
+2014-11-10 15:49:12	jhartigan	you nailed it
+2014-11-10 15:52:34	kweaver	i believe so
+2014-11-10 15:55:03	kweaver	i kinda wanna leave ourselves at least 3 weeks for planners, and maybe one buffer week.
+2014-11-10 15:55:22	kweaver	which gives us all of november (3 weeks) to finish longtail
+2014-11-10 15:55:54	kweaver	which is pretty good
+2014-11-10 15:56:27	jhartigan	yeah its why i wanna use am
+2014-11-10 15:56:32	jhartigan	cauase i wanna finish early
+2014-11-10 15:56:35	kweaver	same
+2014-11-10 15:56:35	jhartigan	and get more monies
+2014-11-10 15:56:37	kweaver	same
+2014-11-10 15:56:47	kweaver	$$$$$$$$$$$$$ -> days
+2014-11-10 15:56:54	jhartigan	uh yes
+2014-11-10 15:56:58	kweaver	lol
+2014-11-10 15:57:00	jhartigan	not sure what it means
+2014-11-10 15:57:02	jhartigan	but yes
+2014-11-10 15:57:04	kweaver	money for days
+2014-11-10 15:57:09	jhartigan	haha okay
+2014-11-10 15:57:16	jhartigan	just jumped to ruby in my head lol
+2014-11-10 15:57:33	kweaver	set money to days
+2014-11-10 15:58:53	kweaver	yeah i do wanna take them up on the mobile stuff.  like touch controls
+2014-11-10 15:58:57	kweaver	and make more from that stuff
+2014-11-10 15:59:40	kweaver	responsive alone (where we currently are) isnt enough to justify asking for more, but tying in special click events would be 
+2014-11-10 16:00:57	kweaver	i kinda hope they have another project lined up for next year. them giving us money doesnt need to be limited to an end of the year habit
+2014-11-10 16:09:14	jhartigan	yeah im hoping so as well
+2014-11-10 16:09:25	jhartigan	when this closes out, we can always poke pjs brain
+2014-11-10 16:11:19	kweaver	yeah
+2014-11-10 16:11:35	kweaver	ill fuckin come up with something if i have to
+2014-11-10 17:09:59	<--	jhartigan (~jake@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-11-10 18:32:02	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-10 18:32:02	--	irc: disconnected from server
+2014-11-11 08:19:35	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-11 08:19:35	--	Mode #omnidev [+ns] by rajaniemi.freenode.net
+2014-11-11 08:19:35	--	Nicks #omnidev: [@kweaver]
+2014-11-11 08:19:35	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-11 08:19:35	--	Mode #omnidev [-o kweaver] by services.
+2014-11-11 08:19:35	--	Notice(rajaniemi.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415711974 to 1337223617
+2014-11-11 08:19:35	--	Mode #omnidev [+ct-s] by services.
+2014-11-11 08:19:35	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-11 08:19:35	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-11 08:19:37	--	Mode #omnidev [+cnt]
+2014-11-11 08:19:37	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-11 09:22:58	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-11 09:22:58	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-11 09:47:51	kweaver	jhartigan: in a call, you wanna follow up to dlenny
+2014-11-11 09:47:55	kweaver	?
+2014-11-11 10:24:00	kweaver	or not :(
+2014-11-11 10:38:11	kweaver	:'(
+2014-11-11 10:38:11	kweaver	jhartigan: 
+2014-11-11 10:56:35	jhartigan	my bad, silenced that convo this morning so didnt get any beep blurps
+2014-11-11 14:19:43	-->	jharty (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-11 14:19:43	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Read error: Connection reset by peer)
+2014-11-11 15:29:10	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-11 16:24:14	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-11 16:24:15	--	irc: disconnected from server
+2014-11-12 08:37:27	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-12 08:37:27	--	Mode #omnidev [+ns] by weber.freenode.net
+2014-11-12 08:37:27	--	Nicks #omnidev: [@kweaver]
+2014-11-12 08:37:27	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-12 08:37:27	--	Notice(weber.freenode.net) -> #omnidev: [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-11-12 08:37:28	--	Mode #omnidev [-o kweaver] by services.
+2014-11-12 08:37:28	--	Notice(weber.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415799447 to 1337223617
+2014-11-12 08:37:28	--	Mode #omnidev [+ct-s] by services.
+2014-11-12 08:37:28	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-12 08:37:28	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-12 08:37:29	--	Mode #omnidev [+cnt]
+2014-11-12 08:37:30	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-12 09:16:09	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-12 09:16:09	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-12 09:28:30	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-12 14:42:03	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-12 16:29:08	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-12 16:29:44	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-12 17:45:03	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2014-11-12 18:24:45	-->	kweaver_desktop (~kweaver@pool-108-24-114-189.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-12 20:32:25	<--	kweaver_desktop (~kweaver@pool-108-24-114-189.cmdnnj.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2014-11-12 21:17:57	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-12 22:55:30	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-13 09:27:56	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-13 09:51:15	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-13 10:05:17	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-13 14:14:35	jhartigan	hey katz might pay up kweaver
+2014-11-13 14:20:17	kweaver	yeah i saw
+2014-11-13 14:20:18	kweaver	lol
+2014-11-13 14:20:23	kweaver	poor justine
+2014-11-13 14:20:31	kweaver	she shouldnt have to be our collections
+2014-11-13 14:20:48	jhartigan	no she shouldnt
+2014-11-13 14:20:51	jhartigan	she wonot be soon
+2014-11-13 14:20:56	kweaver	yeah
+2014-11-13 14:21:05	jhartigan	speaking of which ill send you hours for flanders so we can invoice them soon
+2014-11-13 14:21:11	jhartigan	i put an alert on slickdeals for quickbooks
+2014-11-13 14:28:26	jhartigan	and well be invoicing katz again soon
+2014-11-13 14:28:36	jhartigan	bout to finish some work for them and small eirc stuff again
+2014-11-13 14:28:47	jhartigan	eirc slowly becoming one of them long ass clients
+2014-11-13 14:46:28	kweaver	what did Mark M end up wanting jhartigan ?
+2014-11-13 14:47:11	jhartigan	oh
+2014-11-13 14:47:14	jhartigan	no idea lol
+2014-11-13 14:47:16	jhartigan	forgot about him
+2014-11-13 14:47:19	jhartigan	whoops, sending email now
+2014-11-13 15:20:22	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-13 15:20:26	--	irc: disconnected from server
+2014-11-13 15:26:40	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-13 15:26:40	--	Nicks #omnidev: [jhartigan kweaver]
+2014-11-13 15:26:40	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-11-13 15:26:42	--	Mode #omnidev [+cnt]
+2014-11-13 15:26:42	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-13 17:22:49	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-13 18:18:45	--	irc: disconnected from server
+2014-11-14 08:47:05	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-14 08:47:05	--	Mode #omnidev [+ns] by card.freenode.net
+2014-11-14 08:47:05	--	Nicks #omnidev: [@kweaver]
+2014-11-14 08:47:05	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-14 08:47:05	--	Mode #omnidev [-o kweaver] by services.
+2014-11-14 08:47:05	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1415972825 to 1337223617
+2014-11-14 08:47:05	--	Mode #omnidev [+ct-s] by services.
+2014-11-14 08:47:05	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-14 08:47:05	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-14 08:47:08	--	Mode #omnidev [+cnt]
+2014-11-14 08:47:08	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-14 14:47:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-14 14:47:00	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-14 16:08:28	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-14 16:08:28	--	Nicks #omnidev: [kweaver kweaver_desktop]
+2014-11-14 16:08:28	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-11-14 16:08:30	--	Mode #omnidev [+cnt]
+2014-11-14 16:08:30	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-14 16:32:32	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 258 seconds)
+2014-11-14 16:46:41	--	irc: disconnected from server
+2014-11-17 08:52:13	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-17 08:52:13	--	Mode #omnidev [+ns] by morgan.freenode.net
+2014-11-17 08:52:13	--	Nicks #omnidev: [@kweaver]
+2014-11-17 08:52:13	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-17 08:52:14	--	Mode #omnidev [-o kweaver] by services.
+2014-11-17 08:52:14	--	Notice(morgan.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1416232333 to 1337223617
+2014-11-17 08:52:14	--	Mode #omnidev [+ct-s] by services.
+2014-11-17 08:52:14	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-17 08:52:14	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-17 08:52:15	--	Mode #omnidev [+cnt]
+2014-11-17 08:52:15	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-17 09:48:37	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-17 09:48:37	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-11-17 11:36:20	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-17 11:41:20	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-17 12:12:52	jhartigan	lol kweaver for arielle
+2014-11-17 12:13:00	jhartigan	was the big one for maccabi?
+2014-11-17 12:13:05	jhartigan	yeah its 90% maccabi
+2014-11-17 12:13:08	jhartigan	oh okay great
+2014-11-17 12:13:14	jhartigan	done invoice discussion
+2014-11-17 12:14:24	kweaver	anything important they were asking about?
+2014-11-17 12:14:35	jhartigan	no
+2014-11-17 12:14:38	jhartigan	literally that was it
+2014-11-17 12:14:41	jhartigan	then she discussed changes
+2014-11-17 12:14:52	jhartigan	so couple questions were what they were for
+2014-11-17 12:15:03	jhartigan	hah so it appears to be all good
+2014-11-17 12:15:12	kweaver	k cool
+2014-11-17 12:36:21	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-17 14:43:41	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-17 17:43:48	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-17 22:07:56	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-17 22:15:48	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-17 22:45:12	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-17 23:43:44	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-18 09:33:08	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-18 21:20:11	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-18 22:50:51	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 256 seconds)
+2014-11-19 02:28:31	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-11-19 08:10:16	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 10:21:34	--	irc: disconnected from server
+2014-11-19 10:21:51	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-19 10:21:51	--	Nicks #omnidev: [jhartigan kweaver]
+2014-11-19 10:21:51	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-11-19 10:21:53	--	Mode #omnidev [+cnt]
+2014-11-19 10:21:53	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 11:43:31	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 244 seconds)
+2014-11-19 14:09:52	--	irc: disconnected from server
+2014-11-19 14:18:53	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #omnidev
+2014-11-19 14:18:53	--	Mode #omnidev [+ns] by card.freenode.net
+2014-11-19 14:18:53	--	Nicks #omnidev: [@kweaver]
+2014-11-19 14:18:53	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-19 14:18:53	--	Mode #omnidev [-o kweaver] by services.
+2014-11-19 14:18:53	--	Notice(card.freenode.net) -> #omnidev: *** Notice -- TS for #omnidev changed from 1416424733 to 1337223617
+2014-11-19 14:18:53	--	Mode #omnidev [+ct-s] by services.
+2014-11-19 14:18:53	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-19 14:18:53	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-19 14:18:55	--	Mode #omnidev [+cnt]
+2014-11-19 14:18:55	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 14:36:59	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 14:36:59	<--	ChanServ (ChanServ@services.) has left #omnidev

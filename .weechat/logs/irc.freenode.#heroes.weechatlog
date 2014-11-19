@@ -478,3 +478,1361 @@
 2014-10-16 13:26:16	--	Notice(weber.freenode.net) -> #heroes: [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
 2014-10-16 13:26:20	--	Mode #heroes [+cnt]
 2014-10-16 13:26:20	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-16 15:20:16	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-16 16:33:33	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2014-10-16 17:32:46	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-16 17:32:46	--	irc: disconnected from server
+2014-10-17 08:47:54	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-17 08:47:54	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-17 08:47:54	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-17 08:47:57	--	Mode #heroes [+cnt]
+2014-10-17 08:47:57	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-17 11:51:28	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-17 12:49:44	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-17 12:49:45	--	irc: disconnected from server
+2014-10-20 08:51:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 08:51:01	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-20 08:51:01	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-20 08:51:05	--	Mode #heroes [+cnt]
+2014-10-20 08:51:05	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 11:42:00	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 11:44:41	jchaike	hey kweaver
+2014-10-20 11:48:04	jchaike	ping me when youre around. i got your email. i wont be coming into the tech park because whatever i have has actually gotten worse, but ill be around and can work for a couple of hours.
+2014-10-20 11:48:30	jchaike	i probably cant do a google hangout, mostly becuase i lost my voice, but let me know what the project is when youve got a minute
+2014-10-20 11:48:45	kweaver	aight np
+2014-10-20 11:48:50	kweaver	you starting now?
+2014-10-20 11:48:52	kweaver	or later
+2014-10-20 11:51:26	jchaike	yeah i can start now
+2014-10-20 11:55:33	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 12:04:48	jchaike	also checkout http://www.drinksmartwater.com/ its such an insanely well designed website.. even if it is a little pointless
+2014-10-20 12:07:39	kweaver	haha yeah i like it
+2014-10-20 12:08:11	kweaver	anyway continue with your 1500 file for now, but shortly im gonna have to do some stuff in the db/seeds.rb
+2014-10-20 12:08:12	kweaver	file
+2014-10-20 12:11:01	jchaike	ok sure
+2014-10-20 13:01:43	kweaver	k jchaike whenever youre at a good break point with the 1500 form
+2014-10-20 13:01:51	kweaver	check out /db/seeds.rb
+2014-10-20 13:02:02	kweaver	you will see an example of what i need you to do
+2014-10-20 13:02:11	kweaver	i created new models called:
+2014-10-20 13:02:16	kweaver	Master::ProcedureCode 
+2014-10-20 13:02:17	jchaike	is this on develop?
+2014-10-20 13:02:19	kweaver	yeah
+2014-10-20 13:02:23	jchaike	ok cool
+2014-10-20 13:02:27	kweaver	Master::InsuranceCarrier
+2014-10-20 13:03:21	kweaver	you are going to the massive list of 500 insurance carriers that char gave you, and use your sublime magic so enter them as actual records in the seed file
+2014-10-20 13:03:29	kweaver	going to take***
+2014-10-20 13:03:45	kweaver	look at my procedure codes as examples
+2014-10-20 13:04:42	kweaver	but essentially we are going to keep a separate, ongoing table where we can populate it with our full list of insurance carriers, procedure codes, and diagnosis codes
+2014-10-20 13:04:59	kweaver	then once an agency sees one they want to use, we just duplicate that one carrier into their own set of carriers
+2014-10-20 13:05:20	kweaver	that way we arent populating 500 carriers for every single agency
+2014-10-20 13:09:47	kweaver	lemme know if you understand jchaike 
+2014-10-20 13:09:56	jchaike	ah sorry let me catch up on that
+2014-10-20 13:10:48	jchaike	yeah i got it
+2014-10-20 13:10:56	jchaike	but as far as the concept of "once an agency sees one they want to use"
+2014-10-20 13:11:03	jchaike	thats something the user does in a settings menu somewhere?
+2014-10-20 13:11:05	jchaike	kweaver
+2014-10-20 13:11:23	kweaver	correct
+2014-10-20 13:12:43	kweaver	or on the invoice form, we only populate the carriers they have used before, and then if they dont see the one they want, we give them a modal that has our current chosen of alllll insurance carriers, and when they click save, it does the duplication
+2014-10-20 13:13:53	jchaike	right
+2014-10-20 13:13:55	jchaike	ok cool
+2014-10-20 13:13:59	jchaike	so nothing really on my end with the seeds
+2014-10-20 13:14:06	kweaver	nah thatll be later
+2014-10-20 13:14:25	kweaver	for now you just want to make a line for every carrier like i did for the procedure codes
+2014-10-20 13:14:34	jchaike	sure
+2014-10-20 13:14:42	jchaike	im pulling up the latest develop now
+2014-10-20 13:15:10	kweaver	the file you had originally with all the carriers, what did that have for each carrier?
+2014-10-20 13:15:18	kweaver	just name, npi, and chars value? or more
+2014-10-20 13:15:45	jchaike	name, universally accepted id, and char's id
+2014-10-20 13:15:51	jchaike	and the "universally accepted id"
+2014-10-20 13:15:53	jchaike	char doesnt even care about
+2014-10-20 13:16:01	jchaike	its just for someone like amanda who may remeber the id quicker than the name
+2014-10-20 13:16:02	jchaike	or something
+2014-10-20 13:16:07	jchaike	just a better way of searching
+2014-10-20 13:16:51	kweaver	i believe the universally accepted id will go in the 'payer_id' column
+2014-10-20 13:17:22	kweaver	i already annotated app/models/master/insurance_carrier.rb, so open that up to see your columns
+2014-10-20 13:17:32	jchaike	ok awesome
+2014-10-20 13:17:34	jchaike	got it
+2014-10-20 13:18:19	kweaver	im thinking your array should only have those three values then.  dont do a bunch of empty strings for all the other columns
+2014-10-20 13:18:22	kweaver	ex: 
+2014-10-20 13:18:51	kweaver	["Blue Cross Blue Shield - New Jersey", "12345", "54321]
+2014-10-20 13:19:05	kweaver	errrr
+2014-10-20 13:19:23	kweaver	actually you have a "coverage_state" column
+2014-10-20 13:19:49	kweaver	put your state values in that
+2014-10-20 13:19:51	kweaver	soooo
+2014-10-20 13:20:02	jchaike	oh hm
+2014-10-20 13:20:07	jchaike	ill have to look thoruhg it
+2014-10-20 13:20:13	jchaike	im not sure if ill know the answer to all of them
+2014-10-20 13:20:18	jchaike	unless they all specifically have a state listed
+2014-10-20 13:20:19	kweaver	yeah get started and do the first couple
+2014-10-20 13:20:23	kweaver	true
+2014-10-20 13:20:32	kweaver	we could also do:
+2014-10-20 13:21:04	kweaver	["Blue Cross Blue Shield - New Jersey", "12345", "54321", "NJ"]  <-- last column will be the converage_state column when listed
+2014-10-20 13:21:30	jchaike	so insurance name, insurance_id, chars_id, state_of_coverage
+2014-10-20 13:21:35	kweaver	["Someshit", "12345", "54321", ""]
+2014-10-20 13:21:50	kweaver	yeah, and then leave state blank when you dont know
+2014-10-20 13:21:53	jchaike	sure
+2014-10-20 13:22:08	jchaike	alright i think ive got it covered, ill let you know if i run into any snags
+2014-10-20 13:22:38	kweaver	that way we can be cool and sort by state when they want to look at the list.  saves us from the 15 second delays when possible
+2014-10-20 13:23:26	jchaike	yeah thatd be awesome
+2014-10-20 13:27:20	kweaver	I would still list the state in the description too though
+2014-10-20 13:33:14	jchaike	even though we can populate the chosen with that state field?
+2014-10-20 13:36:53	kweaver	yeah its a tradeoff either way
+2014-10-20 13:37:41	jchaike	ok sure
+2014-10-20 13:38:04	kweaver	its up to you
+2014-10-20 13:38:09	kweaver	which is easier
+2014-10-20 13:38:13	jchaike	ok ill see what happens when i sort through it
+2014-10-20 13:39:02	jchaike	wait why are there so many fileds in this?
+2014-10-20 13:39:44	jchaike	whats category for insurance carrier
+2014-10-20 13:39:48	jchaike	oh like the 1-7
+2014-10-20 13:39:57	jchaike	nvm
+2014-10-20 13:41:06	kweaver	yeah
+2014-10-20 13:55:48	kweaver	jchaike: when youre working on that, commit with "HERO-173"
+2014-10-20 14:05:28	jchaike	sounds good
+2014-10-20 14:35:38	kweaver	how goes it jchaike 
+2014-10-20 14:35:59	jchaike	not bad
+2014-10-20 14:36:03	jchaike	im not going to add the states though
+2014-10-20 14:36:09	jchaike	it really only applies to maybe 50/2000
+2014-10-20 14:36:27	jchaike	i started to, but then that means i have to add a blank state field to each of the items in that array
+2014-10-20 14:36:36	kweaver	gotcha
+2014-10-20 14:36:37	kweaver	alright
+2014-10-20 14:37:18	jchaike	like most of htem are pretty generic like "Aetna"and highmark - key family
+2014-10-20 14:37:38	jchaike	i dont think those are really state specific, so a state specific search wouldnt return proper results, unless we do specifically listed as NJ, and all listed as nothing
+2014-10-20 14:44:22	jchaike	kweaver i just do a rake db:poulate to execute the seeds right?
+2014-10-20 14:44:36	kweaver	nah, rake db:reset will do it
+2014-10-20 14:44:38	kweaver	reset does:
+2014-10-20 14:44:49	kweaver	rake db:drop, rake db:create, rake db:seed
+2014-10-20 14:44:56	jchaike	ohh ok
+2014-10-20 15:09:49	-->	Voltara (askalski@71.186.236.109) has joined #heroes
+2014-10-20 15:22:05	jchaike	Voltara
+2014-10-20 15:22:10	kweaver	whodat
+2014-10-20 15:22:17	jchaike	idk lets befriend him
+2014-10-20 15:22:22	kweaver	yo Voltara 
+2014-10-20 15:22:27	jchaike	Voltara sick name
+2014-10-20 15:22:55	jchaike	kweaver do you own this channel/ are you an op?
+2014-10-20 15:23:33	jchaike	Voltara whats it like in buffalo?
+2014-10-20 15:23:48	jchaike	is steve carell still your news anchor?
+2014-10-20 15:23:52	kweaver	nah i havent set up anything for the chanel
+2014-10-20 15:23:55	kweaver	channel*
+2014-10-20 15:24:01	kweaver	i should
+2014-10-20 15:24:19	jchaike	Voltara do you like FiOS? im not a big fan
+2014-10-20 15:26:33	kweaver	Voltara: Andrewwwwww answer usssss
+2014-10-20 15:27:13	kweaver_desktop	https://www.facebook.com/andrew.skalski.7
+2014-10-20 15:27:20	kweaver_desktop	Andrewwwww
+2014-10-20 15:27:23	jchaike	Voltara
+2014-10-20 15:27:25	kweaver_desktop	I seeeee youuuuu
+2014-10-20 15:27:32	jchaike	andrew Voltara Skalski
+2014-10-20 15:27:39	jchaike	thats your newly appointed middle name
+2014-10-20 15:28:20	kweaver_desktop	its funny how much you can figure out in like a second
+2014-10-20 15:28:26	jchaike	insanely creepy
+2014-10-20 15:28:31	jchaike	see how mcuh you can find out on me haha
+2014-10-20 15:28:45	kweaver	gurlll i already know boutchu
+2014-10-20 15:28:57	kweaver	lol
+2014-10-20 15:28:58	jchaike	using JUST GOOGLE
+2014-10-20 15:29:11	jchaike	i had someone give me my home address and home phone number just from a google search lol
+2014-10-20 15:29:16	kweaver	jchaike: i made a new rake task
+2014-10-20 15:29:37	jchaike	oh yeah? for what
+2014-10-20 15:29:45	kweaver	but im also gonna make an alias that just calls everything
+2014-10-20 15:29:49	jchaike	ok cool
+2014-10-20 15:29:55	jchaike	the insurance carriers seeds works
+2014-10-20 15:30:08	jchaike	i decdied to add a blank field populating the state of coverage
+2014-10-20 15:30:14	jchaike	and i will just fill out some of them, it cant hurt
+2014-10-20 15:30:26	jchaike	and we can use aliases to determinne some of them as "applicable in all states" or something
+2014-10-20 15:31:25	kweaver	that works
+2014-10-20 15:31:31	kweaver	push when you get a chance
+2014-10-20 15:31:57	kweaver	jchaike: add this to your bash or zsh aliases:
+2014-10-20 15:32:19	kweaver	alias rakeall="rake db:reset && rake db:populate && rake db:initialize"
+2014-10-20 15:32:46	jchaike	i actually have basically that
+2014-10-20 15:32:48	jchaike	i do dbreset
+2014-10-20 15:32:53	jchaike	and it does db reset and populate
+2014-10-20 15:32:57	jchaike	ill add initialize
+2014-10-20 15:34:08	kweaver	rake db:initialize is the new one.  its existance will just be for development, but its purpose is to scan all the agencies and clone over any important records from the Master tables
+2014-10-20 15:34:26	jchaike	oh ok cool
+2014-10-20 15:34:30	jchaike	whats minitest?
+2014-10-20 15:34:33	kweaver	ex: all bls client agencies need the procedure code A0425 to function (mileage)
+2014-10-20 15:34:36	kweaver	dunno
+2014-10-20 15:34:39	kweaver	where you see that?
+2014-10-20 15:34:50	jchaike	ems_heroes(develop): rakeall
+2014-10-20 15:34:50	jchaike	Could not find minitest-4.7.5 in any of the sources
+2014-10-20 15:34:50	jchaike	Run `bundle install` to install missing gems.
+2014-10-20 15:35:00	kweaver	ah dunno
+2014-10-20 15:35:08	jchaike	lol ok well its apparently in the gemfile now
+2014-10-20 15:35:08	kweaver	i rake into another random bundle issue today though
+2014-10-20 15:35:20	kweaver	its most likely just a dependency to something 
+2014-10-20 15:35:24	jchaike	lol rake
+2014-10-20 15:35:30	kweaver	ran*
+2014-10-20 15:35:31	kweaver	lolol
+2014-10-20 15:36:03	jchaike	hm
+2014-10-20 15:36:06	jchaike	kweaver LoadError: cannot load such file -- hitimes/hitimes
+2014-10-20 15:36:15	kweaver	thats the one i ran into
+2014-10-20 15:36:32	kweaver	i was getting it when i ran bundle exec annotate
+2014-10-20 15:36:46	kweaver	i just did "bundle install annotate" and that fixed it
+2014-10-20 15:37:03	kweaver	i also did like 10 other things though
+2014-10-20 15:37:07	jchaike	oh haha
+2014-10-20 15:37:10	jchaike	well
+2014-10-20 15:38:01	jchaike	you mean bundle exec annotate right?
+2014-10-20 15:38:08	kweaver	yeah
+2014-10-20 15:38:12	kweaver	that
+2014-10-20 15:38:19	kweaver	errr
+2014-10-20 15:38:20	jchaike	shit lol, this is pretty trivial i cant even reset
+2014-10-20 15:39:01	kweaver	hmm
+2014-10-20 15:39:09	kweaver	try bundle install
+2014-10-20 15:39:17	kweaver	bundle update
+2014-10-20 15:40:22	jchaike	im tring gem update --system
+2014-10-20 15:40:45	kweaver	i did that as well
+2014-10-20 15:40:53	jchaike	mine failed'
+2014-10-20 15:41:11	kweaver	im still getting that hitimes issue when i just run 'guard'
+2014-10-20 15:41:17	kweaver	though 'bundle exec guard' works fine
+2014-10-20 15:41:39	kweaver	i dont even know what hitimes does, its just a dependency for something
+2014-10-20 15:42:25	jchaike	but you can rake reset and stuff?
+2014-10-20 15:42:33	kweaver	yeah
+2014-10-20 15:42:50	jchaike	what was the latest gem you added?
+2014-10-20 15:43:00	jchaike	becuase when i did bundle intsall now it installed a new gem, railroady lol
+2014-10-20 15:43:28	kweaver	another dependency
+2014-10-20 15:43:34	kweaver	i havent added any gems in a while
+2014-10-20 15:44:20	jchaike	oh ok
+2014-10-20 15:44:37	jchaike	looked like i needed to just do gem instlal hitimes for some reason
+2014-10-20 15:44:41	jchaike	when i do rakeall i get this
+2014-10-20 15:44:41	jchaike	https://www.dropbox.com/s/10t7vm5w13atbrd/Screenshot%202014-10-20%2015.44.13.png?dl=0
+2014-10-20 15:44:43	[url]:	http://tinyurl.com/pue93pg
+2014-10-20 15:46:09	kweaver	lol wtf
+2014-10-20 15:46:19	kweaver	no idea
+2014-10-20 15:46:36	jchaike	well then thats insulting, theyre calling your code lazy lol
+2014-10-20 15:46:41	kweaver	yeah they are
+2014-10-20 15:46:56	kweaver	actually ive made changes since
+2014-10-20 15:47:01	kweaver	lemme merge back develop
+2014-10-20 15:47:04	jchaike	sure
+2014-10-20 15:48:04	kweaver	pull
+2014-10-20 15:49:42	jchaike	youre still lazy.... lol
+2014-10-20 15:49:47	kweaver	rough
+2014-10-20 15:49:48	jchaike	it hink it worked though let me check
+2014-10-20 15:50:08	kweaver	try each part individually
+2014-10-20 15:50:24	Voltara	hah
+2014-10-20 15:50:52	jchaike	HEY Voltara !!
+2014-10-20 15:50:59	kweaver	suppppp 
+2014-10-20 15:51:38	Voltara	hilarious, my irc client decided to join my efnet channels on freenode instead :-D
+2014-10-20 15:51:40	jchaike	yo kweaver so apparently that issue is coming from rake db:reset, and it wont acutally reset
+2014-10-20 15:51:46	kweaver	oh damn
+2014-10-20 15:51:56	kweaver	so what #heroes were you trying to go to Voltara ?
+2014-10-20 15:51:57	jchaike	WAIT theres no other heroes but us!
+2014-10-20 15:52:54	kweaver	ok, to go more specific, dont use reset, use rake db:drop, rake db:create, rake db:migrate, rake db:seed
+2014-10-20 15:53:09	Voltara	lets see... i think i'm not only one who joins #heroes on efnet anymore.  we created it years and years ago to talk about D&D, but then (a) heroes of might and magic 4 came out, and then (b) the tv show heroes became popular, so we had to flee
+2014-10-20 15:53:16	kweaver	or maybe migrate before create
+2014-10-20 15:53:28	kweaver	haha
+2014-10-20 15:53:31	jchaike	oh wow haha
+2014-10-20 15:53:31	kweaver	thats awesome 
+2014-10-20 15:53:44	jchaike	kweaver drop does the same thing
+2014-10-20 15:53:55	jchaike	im going to do some googlging
+2014-10-20 15:53:59	kweaver	k
+2014-10-20 15:54:05	kweaver	are you running server or console?
+2014-10-20 15:54:14	kweaver	Voltara: you a programer?
+2014-10-20 15:54:20	Voltara	yeah
+2014-10-20 15:54:26	kweaver	what languages
+2014-10-20 15:54:29	kweaver	and how old
+2014-10-20 15:54:34	Voltara	heh
+2014-10-20 15:54:43	Voltara	you guys tryin' to steal my identity or something?  :-)
+2014-10-20 15:54:46	kweaver	lol
+2014-10-20 15:55:05	kweaver	you do any rails development?
+2014-10-20 15:55:15	kweaver	or just php
+2014-10-20 15:55:18	kweaver	like everyone else...
+2014-10-20 15:55:35	Voltara	no, the languages i tend to deal with are C/C++/PHP/Perl, or whatever happens to need help at work
+2014-10-20 15:55:48	jchaike	kweaver can you do ruby -v and rails -v we might have different builds could be interfering with some gems
+2014-10-20 15:56:05	kweaver	ruby 2.1.3p242
+2014-10-20 15:56:07	Voltara	though i've done just enough ruby to configure puppet
+2014-10-20 15:56:13	kweaver	rails 4.0.0
+2014-10-20 15:56:16	jchaike	well then lol that could be an issue
+2014-10-20 15:56:19	jchaike	ruby 2.0.0p481
+2014-10-20 15:56:23	kweaver	ah damn
+2014-10-20 15:56:31	jchaike	do you use rvm?
+2014-10-20 15:56:34	kweaver	yeah
+2014-10-20 15:56:43	kweaver	actually i just updated my ruby when i started getting that issue this morning
+2014-10-20 15:56:47	kweaver	so update your ruby
+2014-10-20 15:56:55	kweaver	well das cool Voltara 
+2014-10-20 15:57:24	kweaver	if you wanna chill with our other super cool developer friends, you'd be welcome to hangout in freenode #orderdeck
+2014-10-20 15:58:23	kweaver	we've got a few php devs in there
+2014-10-20 15:58:34	jchaike	kweaver ruby update fixed it
+2014-10-20 15:58:40	kweaver	oh cool
+2014-10-20 15:59:17	jchaike	oh this is werid
+2014-10-20 15:59:24	jchaike	oh nvm
+2014-10-20 15:59:29	jchaike	Populating large amounts of initial data...
+2014-10-20 15:59:29	jchaike	You might want to grab some tea.
+2014-10-20 15:59:29	jchaike	Creating Procedure Codes for all agencies...
+2014-10-20 15:59:29	jchaike	Creating A0425 for Harness Customized Mindshare Corp.
+2014-10-20 15:59:29	jchaike	Creating A0425 for E Enable Bricks And Clicks Applications LLC
+2014-10-20 15:59:29	jchaike	Creating A0425 for Enable Distributed Solutions LLC
+2014-10-20 15:59:30	jchaike	Creating A0425 for Integrate Innovative Initiatives
+2014-10-20 15:59:30	jchaike	Creating A0425 for Enable Back End Infomediaries Ltd.
+2014-10-20 15:59:31	jchaike	Creating A0425 for Enable Distributed Convergence Inc.
+2014-10-20 15:59:31	jchaike	Creating A0425 for Syndicate One To One Architectures Ltd.
+2014-10-20 15:59:32	jchaike	Creating A0425 for E Enable 24/7 Methodologies Enterprise
+2014-10-20 15:59:32	jchaike	Creating A0425 for Harness Virtual Web Services Ltd.
+2014-10-20 15:59:34	kweaver	yeah thats me
+2014-10-20 15:59:35	jchaike	you added that? thats what initialize is?
+2014-10-20 15:59:37	jchaike	oh ok lol
+2014-10-20 15:59:42	jchaike	i got scared i was like NO I DONT WANT MORE FAKER DATA
+2014-10-20 15:59:42	kweaver	i havent made anything pretty yet for it
+2014-10-20 16:00:03	kweaver	that file will be used for a few other things soon though
+2014-10-20 16:01:01	--	irc: disconnected from server
+2014-10-20 16:01:46	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:01:46	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:01:46	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:01:50	--	Mode #heroes [+cnt]
+2014-10-20 16:01:50	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:02:56	--	irc: disconnected from server
+2014-10-20 16:03:11	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:03:11	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:03:11	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:03:16	--	Mode #heroes [+cnt]
+2014-10-20 16:03:16	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:05:31	jchaike	kweaver having some tech park connection issues? lol
+2014-10-20 16:05:50	kweaver	nah, adjusting my weechat conf
+2014-10-20 16:05:51	kweaver	brb
+2014-10-20 16:06:43	--	irc: disconnected from server
+2014-10-20 16:07:01	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:07:01	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:07:01	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:07:05	--	Mode #heroes [+cnt]
+2014-10-20 16:07:05	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:08:29	--	irc: disconnected from server
+2014-10-20 16:08:46	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:08:46	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:08:46	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:08:50	--	Mode #heroes [+cnt]
+2014-10-20 16:08:51	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:11:20	--	irc: disconnected from server
+2014-10-20 16:11:34	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:11:34	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:11:34	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:11:39	--	Mode #heroes [+cnt]
+2014-10-20 16:11:39	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:12:00	jchaike	sure
+2014-10-20 16:12:19	--	irc: disconnected from server
+2014-10-20 16:12:36	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-20 16:12:36	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop Voltara]
+2014-10-20 16:12:36	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-10-20 16:12:40	--	Mode #heroes [+cnt]
+2014-10-20 16:12:41	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-20 16:20:16	jchaike	hey kweaver_desktop  kweaver im adding states of coverage
+2014-10-20 16:20:26	jchaike	but i am at one now that actually covers multiple states
+2014-10-20 16:20:32	jchaike	"["CORESOURCE OF AZ, IL, IN, MD, MN, NC, PA", "35182", "00330", ""],"
+2014-10-20 16:22:17	kweaver	thats annoying
+2014-10-20 16:22:20	jchaike	lmao
+2014-10-20 16:22:26	kweaver	leave it blank for now
+2014-10-20 16:22:29	jchaike	sure
+2014-10-20 16:23:06	jchaike	fuck and the CAROLINAS
+2014-10-20 16:23:12	jchaike	fuck them lol they should just merge into one single state
+2014-10-20 16:23:26	kweaver	boo
+2014-10-20 16:23:43	kweaver	just make note of those guys i guess
+2014-10-20 16:23:55	kweaver	nah just leave em blank
+2014-10-20 16:24:00	kweaver	its fine
+2014-10-20 16:34:37	--	irc: disconnected from server
+2014-10-21 10:37:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-21 10:37:00	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop Voltara]
+2014-10-21 10:37:00	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-10-21 10:37:04	--	Mode #heroes [+cnt]
+2014-10-21 10:37:04	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-21 11:50:08	--	irc: disconnected from server
+2014-10-21 11:50:30	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-21 11:50:30	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop Voltara]
+2014-10-21 11:50:30	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-10-21 11:50:34	--	Mode #heroes [+cnt]
+2014-10-21 11:50:34	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-21 13:15:25	--	irc: disconnected from server
+2014-10-21 13:20:36	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-21 13:20:36	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop Voltara]
+2014-10-21 13:20:36	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-10-21 13:20:41	--	Mode #heroes [+cnt]
+2014-10-21 13:20:41	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-21 17:16:45	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-21 17:16:45	--	irc: disconnected from server
+2014-10-22 08:56:38	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-22 08:56:38	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-22 08:56:38	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-22 08:56:41	--	Mode #heroes [+cnt]
+2014-10-22 08:56:41	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-22 10:17:57	kweaver	sup Voltara 
+2014-10-22 10:33:11	Voltara	mornin'
+2014-10-22 10:34:11	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-22 10:36:38	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-10-22 10:37:01	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-22 10:37:14	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-10-22 10:38:11	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-22 10:39:14	jchaike	testing out new textual
+2014-10-22 12:04:46	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-22 12:04:46	--	irc: disconnected from server
+2014-10-23 08:36:52	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-23 08:36:52	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-23 08:36:52	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-23 08:36:57	--	Mode #heroes [+cnt]
+2014-10-23 08:36:58	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-23 12:32:43	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-23 12:32:50	jchaike	yo kweaver
+2014-10-23 13:24:47	kweaver	sup jchaike 
+2014-10-23 13:24:57	kweaver	i reset the cpanel pass so nevermind
+2014-10-23 14:05:36	jchaike	hm? about lunarpages? i never got a mesage about that lol
+2014-10-23 14:06:01	jchaike	just had a few min free time, i was talking with Brian yesterday he told me about potentially focusing on tripsheets if the state would give us money for it
+2014-10-23 14:06:08	jchaike	was wondering if you guys made a decicion aobut it
+2014-10-23 14:06:11	jchaike	kweaver ^^
+2014-10-23 14:23:23	kweaver	we talked.  its still entirely dependant on brians discussion with the guy from the state
+2014-10-23 14:23:55	jchaike	ok cool, was just wondering, seems like there was a lot of potential in it if the state is like SURE TAKE MY MONEY
+2014-10-23 14:23:56	kweaver	between you and me, brian has some VERY lofty hopes about that conversation
+2014-10-23 14:25:08	jchaike	yeah i mean, who knows. it seems like a lot of his clients would want something like this, and it would only make amanda's and other biller's jobs easier anyways
+2014-10-23 14:25:33	jchaike	i feel like either way no matter which direction we take in developing these different sections of Heroes, we're still moving closer and closer to a finished product either way
+2014-10-23 14:26:09	kweaver	yeah, im completely open to going that direct if the opportunity is there
+2014-10-23 14:26:43	kweaver	I think he often confuses "his clients wanting a tripsheet" with "there is potential revenue and incentive to building it now"
+2014-10-23 14:27:06	jchaike	well i know he has mentioned a few times that some clients have even been like "we'll fund it"
+2014-10-23 14:27:42	jchaike	but even Char was pretty into the trispheet idea this time around it seemed
+2014-10-23 14:28:25	kweaver	his wording is also usually loose when he talks about that.  one sentence he'll say "so and so offered to fund it." and then next he'll say "i know him well enough that i think if i asked him to fund it, he would"
+2014-10-23 14:28:29	kweaver	yeah yeah i am too
+2014-10-23 14:28:34	kweaver	i dont want to sound like a debbie downer
+2014-10-23 14:29:16	kweaver	but i basically told brian that ill wait to get excited when we can secure some real potential revenue or potential opportunity
+2014-10-23 14:30:01	jchaike	i mean either way, it doesnt matter to me. my stake in Heroes is basically I hope it goes somewhere decently big, so then when I graduate in December I'll have a job, and a job doing something that 1) ive been doing 2) something i enjoy 3) working with people i already know i work well with
+2014-10-23 14:30:44	jchaike	4) i get to be part of something big, not necessarily since the beginning, but fairly close to the beginning in the grand scheme of things
+2014-10-23 14:31:24	kweaver	yeah i agree. i want to keep you around as long as possible.  i think you and i are both extremely flexible between frontend and backend design
+2014-10-23 14:31:35	kweaver	most guys i know are either one or the other
+2014-10-23 14:31:45	jchaike	yeah i was literally just typing, i dont think many people are like that
+2014-10-23 14:31:51	jchaike	lol
+2014-10-23 14:31:53	kweaver	and i think you and i are amoung the few 'full stack' developers
+2014-10-23 14:32:10	kweaver	among*
+2014-10-23 14:32:30	jchaike	^^ something Rowan certainly didn't teach me. lol.
+2014-10-23 14:32:42	kweaver	and being a full stack developer attributes very well to a small start up like this
+2014-10-23 14:32:56	kweaver	same
+2014-10-23 14:33:12	jchaike	my friend is doing is comp sci senior project, they ahve to make a web app with an api that conects to an iOS app.... he doesnt know HTML PHP CSS Javascript Obj-C, SQL, or design...
+2014-10-23 14:33:22	kweaver	oh god
+2014-10-23 14:33:25	kweaver	good luck...
+2014-10-23 14:33:48	jchaike	i was helping him last night, i helped him just design a quick login screen, he sent it to his group mates and they were all like WOW THATS AMAZING lol
+2014-10-23 14:33:54	kweaver	at the same time though, if he didnt do anything on his own, then all he will know is java and some C/C++
+2014-10-23 14:34:04	jchaike	yeah basically
+2014-10-23 14:34:12	kweaver	which is sad
+2014-10-23 14:34:23	kweaver	because where is he going to go from there?
+2014-10-23 14:34:31	jchaike	but hes a really good Java programmer, as far as like "HOW TO PROGRAM" if he watched that 10 hour michael hartl tutorial, hed probably be pretty good at rails
+2014-10-23 14:34:34	jchaike	like he knows the concepts behind it
+2014-10-23 14:34:39	kweaver	thats good
+2014-10-23 14:34:41	jchaike	but he said to me last night hes like "ive never had to make a UI in my life"
+2014-10-23 14:34:46	jchaike	its like WHAT
+2014-10-23 14:34:50	kweaver	yeah thats crazy
+2014-10-23 14:34:53	jchaike	hes like yeah we used blu-jay my entire college career lol
+2014-10-23 14:35:14	kweaver	nooooo
+2014-10-23 14:35:15	kweaver	hahaha
+2014-10-23 14:35:32	jchaike	theres no way people at Rowan are ready to take on a full time programming job with just the knowledge they leave school with
+2014-10-23 14:35:34	kweaver	im cool with the idea of blu-jay for like the first cs intro course
+2014-10-23 14:35:39	kweaver	but it has to end there
+2014-10-23 14:36:18	kweaver	i have no idea why bergmann is allowed to keep using blujay on students that are ready to graduate
+2014-10-23 14:37:22	jchaike	lmao its so absurd to me
+2014-10-23 14:37:39	jchaike	yo check out what i just came accross... the first program i ever built and released
+2014-10-23 14:37:40	jchaike	http://www.majorgeeks.com/files/details/aim_spyware_remover.html
+2014-10-23 14:37:46	jchaike	CIRA 2006
+2014-10-23 14:37:54	jchaike	lol
+2014-10-23 14:38:13	kweaver	hahaha sickkk
+2014-10-23 14:38:34	jchaike	check out those sexy design skilz
+2014-10-23 14:38:41	kweaver	yeah looking at it now
+2014-10-23 14:38:45	jchaike	lmao
+2014-10-23 14:38:50	kweaver	sik skilz bro
+2014-10-23 14:39:13	jchaike	i only made that program becuase i used to have this sick obsession (still sort of do..) with PROGRESS BARS
+2014-10-23 14:39:15	jchaike	i fucking love progress bars lol
+2014-10-23 14:39:29	kweaver	haha nah, at least you can say you built something in 2006.  its 2014 and i still cant even point to something that ive built
+2014-10-23 14:39:39	kweaver	only half finished projects
+2014-10-23 14:39:52	kweaver	^one of the many driving forces for me to finish heroes
+2014-10-23 14:39:55	jchaike	gotta finish that shit yo
+2014-10-23 14:40:05	kweaver	yeah, i used to have dean-itis
+2014-10-23 14:40:10	jchaike	lmao
+2014-10-23 14:40:13	kweaver	which is why i yell at him all the time for it
+2014-10-23 14:40:15	jchaike	^ forever called Dean-itis
+2014-10-23 14:40:18	kweaver	hahaha
+2014-10-23 14:41:06	kweaver	anyway ima keep working
+2014-10-23 14:41:11	kweaver	ill see you tomorrow then
+2014-10-23 14:41:13	jchaike	yup
+2014-10-23 14:41:19	kweaver	i think were gonna do a quick meeting at some point
+2014-10-23 14:41:27	jchaike	ok sure
+2014-10-23 14:41:37	kweaver	SBE vs Bradm
+2014-10-23 14:41:48	jchaike	about what
+2014-10-23 14:41:51	kweaver	just meet and explain to the other side what were doing 
+2014-10-23 14:41:54	kweaver	and vice versa
+2014-10-23 14:41:56	jchaike	oh ok cool
+2014-10-23 14:42:01	kweaver	explain our goals etc
+2014-10-23 14:42:06	kweaver	gonna make it a monthly thing
+2014-10-23 14:42:39	jchaike	oh ok, sounds good
+2014-10-23 14:42:40	jchaike	i might have to email you and brian, i might have to go home tonight, but ill be back down in glassboro to work tomorow, just might be later than 9:30. ill email you later when i know for sure
+2014-10-23 14:42:42	kweaver	im moreso interested in hearing about the sbe side.  its important for us to know their pain points
+2014-10-23 14:42:53	kweaver	sounds good
+2014-10-23 14:43:16	jchaike	i cant wait for them to start using heroes so we can get a good idea about future design changes
+2014-10-23 14:43:21	kweaver	yeah same
+2014-10-23 14:43:35	jchaike	but yeah, ill email you and brian if anything about my timing tomorrow changes
+2014-10-23 15:13:18	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-23 15:14:02	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-23 16:54:14	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-23 16:54:16	--	irc: disconnected from server
+2014-10-24 08:41:20	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-24 08:41:20	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-24 08:41:20	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-24 08:41:23	--	Mode #heroes [+cnt]
+2014-10-24 08:41:23	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-24 11:25:24	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-24 11:26:39	jchaike	yo kweaver do you know how modifiers, diagnosis pointers, and "units" for charges are determined?
+2014-10-24 11:26:45	kweaver	sup Voltara 
+2014-10-24 13:22:14	jchaike	kweaver next time we have a char call, lets just put her on speaker, apparently we dont need to be courteous to other people in the office
+2014-10-24 13:23:04	kweaver	hahahaha
+2014-10-24 13:23:06	kweaver	seriously
+2014-10-24 13:23:14	jchaike	really? who wants to hear your kid scream on facetime
+2014-10-24 13:23:19	jchaike	wait let me answer for you
+2014-10-24 13:23:21	jchaike	nobody.
+2014-10-24 13:23:29	kweaver	i know a 4 year old, we could hook him up on some suround sound
+2014-10-24 13:24:06	jchaike	might as well
+2014-10-24 13:24:06	kweaver	uh oh, 'we'd like to show you what we have'
+2014-10-24 13:24:07	jchaike	lol
+2014-10-24 13:24:29	kweaver	'here's the empty page where we would put a tripsheet form'
+2014-10-24 13:24:48	jchaike	lol
+2014-10-24 13:25:05	jchaike	he'd probably demo your blue tripsheet one right?
+2014-10-24 13:25:10	kweaver	yeah
+2014-10-24 13:25:38	jchaike	did you make that with foundations?
+2014-10-24 13:25:43	kweaver	which is like throwing a pepsi taste test party, but just offering coke cause its close enough
+2014-10-24 13:25:44	kweaver	nope
+2014-10-24 13:25:55	kweaver	not responsive
+2014-10-24 13:25:55	jchaike	lol
+2014-10-24 13:26:01	jchaike	oh right good point
+2014-10-24 13:26:03	kweaver	fields are all over the place too
+2014-10-24 13:26:30	jchaike	i feel like its really little to no work to make it in heroes though, especeially becuase its simply storing data, not manipulating it or anything like we're doing with invoices
+2014-10-24 13:26:40	kweaver	yeah i agree
+2014-10-24 13:27:00	kweaver	brian keeps throwing out the idea of just letting people use the php version and i have to keep denying him
+2014-10-24 13:27:20	kweaver	and telling him that it would take much longer to get that up an running than to just build a quick form on this
+2014-10-24 13:27:41	jchaike	i said that if that php version is using that nemsis database, we'd never be able to export that data and import it into whatever our final heroes solution ends up being
+2014-10-24 13:28:01	kweaver	yeah using the php version wouldnt make any sense at all
+2014-10-24 13:28:18	jchaike	i think its becuase it looks good. so it appears to be completed
+2014-10-24 13:29:32	kweaver	i want to stay optimistic to the opportunity of possibly having heroes promoted on a state wide level.  but realistically, what state-level official would endourse a product that doesnt exist, has no previous users, from a tech company that doesnt have any official products yet?
+2014-10-24 13:29:56	kweaver	let alone offer money for it's production
+2014-10-24 13:30:08	jchaike	new jersey gives out tons of grants for startups so i dont think its that absurd
+2014-10-24 13:30:13	jchaike	but yeah i see what you mean
+2014-10-24 13:30:36	jchaike	also i assume we'd say we have 200 users using our 'previous version of the software' which would really just be char's program
+2014-10-24 13:30:47	kweaver	so in the absolute best case scenario, the guy is going to say "well let me know when its built, in the meantime, check out this nj grants page and feel free to apply to some"
+2014-10-24 13:31:12	jchaike	i mean if they say oh yeah wed like to see what you have
+2014-10-24 13:31:21	jchaike	and we can just whip up a quick rails heroes tripsheet in a few weeks
+2014-10-24 13:31:29	jchaike	theres really no need to test, we know that scaffolds work
+2014-10-24 13:31:41	jchaike	that could be an option
+2014-10-24 13:33:35	kweaver	yeah and thats fine.  i just also imagine that for a company like image trend to be endoursed by the state of nj, they were probably in a list of 10 other hugely popular programs.  how disasterous would it be if NJ started telling agencies to go use some program that doesnt have any history
+2014-10-24 13:45:25	jchaike	kweaver https://www.dropbox.com/s/a2613aezh2jxptn/Screenshot%202014-10-24%2013.45.21.png?dl=0
+2014-10-24 13:45:27	[url]:	http://tinyurl.com/ohxdkqm
+2014-10-24 14:35:44	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-24 14:58:37	jchaike	kweaver or kweaver_desktop
+2014-10-24 16:33:59	jchaike	kweaver_desktop ?
+2014-10-24 16:34:01	jchaike	or are you kweaver
+2014-10-24 16:34:40	jchaike	1) come check out google's hold music its funny. 2) google support is super nice 3) im looking in the code now for that chosen stuff
+2014-10-24 16:35:15	jchaike	check out invoice/invoices.js on line 156
+2014-10-24 16:43:59	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2014-10-24 17:01:13	--	irc: disconnected from server
+2014-10-27 08:41:10	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-27 08:41:10	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-27 08:41:10	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-27 08:41:15	--	Mode #heroes [+cnt]
+2014-10-27 08:41:15	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-27 09:48:43	--	irc: disconnected from server
+2014-10-27 09:49:00	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-27 09:49:00	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-27 09:49:00	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-27 09:49:05	--	Mode #heroes [+cnt]
+2014-10-27 09:49:05	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-27 14:09:50	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-27 14:10:48	jchaike	hey kweaver when youre back from lunch let me know
+2014-10-27 14:16:12	jchaike	but basically, im pretty sure im having OS X compatibility issues, so I need to reinstall OS X. I'm able to boot but only in safe mode. I have cloud9 setup, so i'm going to work off my tablet while i reinstall OS X
+2014-10-27 14:16:33	jchaike	im not going to clock in or anything, this is my fuck up, so ill just deal with it like that.
+2014-10-27 14:16:38	kweaver	sounds good
+2014-10-27 14:17:14	jchaike	El emailed me back, he is around noon tomorrow. I have a 12:30 clas, but if he is available at 12 i'll have more than enough time to fix his scanning issues
+2014-10-27 14:17:20	jchaike	so ill do that tomorrow as well
+2014-10-27 14:17:31	kweaver	well just see how it goes.  if you end up getting some work done, just write up some hours.  if not no big, its not like it's your fault
+2014-10-27 14:17:47	jchaike	im hoping i can either fix this issue through the re-install, or if that doesnt work, ill be able to run to the apple store tonight and get this all sorted out
+2014-10-27 14:17:49	jchaike	im so mad about it
+2014-10-27 14:18:37	kweaver	any response from brian's client?
+2014-10-27 14:18:52	kweaver	ah just read your response
+2014-10-27 14:19:09	kweaver	ok
+2014-10-27 14:19:27	kweaver	sounds good
+2014-10-27 16:37:12	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-27 17:32:25	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-27 17:32:25	--	irc: disconnected from server
+2014-10-28 08:47:18	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-28 08:47:18	--	Nicks #heroes: [@ChanServ kweaver Voltara]
+2014-10-28 08:47:18	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-28 08:47:22	--	Mode #heroes [+cnt]
+2014-10-28 08:47:23	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-28 11:40:16	kweaver	you there Voltara ?
+2014-10-28 11:40:22	kweaver	youve been so distant lately...
+2014-10-28 17:20:03	<--	Voltara (~askalski@2001:470:8c24::69) has quit (Read error: Connection reset by peer)
+2014-10-28 18:27:21	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-28 18:27:21	--	irc: disconnected from server
+2014-10-29 08:51:14	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-29 08:51:14	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-29 08:51:14	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-29 08:51:18	--	Mode #heroes [+cnt]
+2014-10-29 08:51:18	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-29 09:12:51	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-29 09:35:17	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2014-10-29 09:47:37	-->	jchaike (~jchaike@dhcp-arubawireless-215-140.rowan.edu) has joined #heroes
+2014-10-29 09:48:10	jchaike	yo kweaver  so 1500 form is techincally finished, ill need to go back and add in all of the conditinoals so that its actually functional once we have a fully functioning BLS invoice (things like diagnosis codes)
+2014-10-29 09:48:24	kweaver	sounds good
+2014-10-29 09:48:44	kweaver	and then when im done in develop, ill let you know
+2014-10-29 09:51:47	jchaike	"Redefine Killer Metrics"
+2014-10-29 09:51:55	kweaver	awww yeahhh
+2014-10-29 10:01:46	jchaike	kweaver when youve got a sec i wanna go over this insurance stuff with you
+2014-10-29 10:01:54	kweaver	k
+2014-10-29 10:01:57	kweaver	nows fine
+2014-10-29 10:43:26	kweaver	 alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake db:initialize"
+2014-10-29 10:43:58	jchaike	thanks
+2014-10-29 10:59:51	jchaike	https://gist.github.com/anonymous/51ce24c4c7e20ab67c57
+2014-10-29 11:04:12	kweaver	halpppppp jchaike 
+2014-10-29 11:04:18	jchaike	sup
+2014-10-29 11:25:35	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-29 11:25:35	--	irc: disconnected from server
+2014-10-29 11:27:09	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-29 11:27:09	--	Nicks #heroes: [@ChanServ jchaike kweaver]
+2014-10-29 11:27:09	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-29 11:27:14	--	Mode #heroes [+cnt]
+2014-10-29 11:27:14	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-29 11:32:27	jchaike	kweaver theres something in the migrate that breaks it
+2014-10-29 14:17:38	jchaike	kweaver i dont think this could be done in 2 weeks
+2014-10-29 14:17:46	kweaver	not at all
+2014-10-29 14:17:55	jchaike	i mean if i worked full time with you maye
+2014-10-29 14:18:02	kweaver	yeah
+2014-10-29 14:18:27	kweaver	its difficult to manage brians expectations because he gets so emotional about things.  
+2014-10-29 14:18:30	jchaike	theres a lot of re-factoring that would make this not just usable, but productive
+2014-10-29 14:18:35	kweaver	yeah
+2014-10-29 14:18:50	jchaike	i get like anxious thinking about all of this stuff that needs to be done lmao
+2014-10-29 14:19:18	jchaike	like we talk about it and its like yeah were almost done! and then we talk about it more i get a pit in my stomach like..holy fuck we're not almost done hahaah
+2014-10-29 14:19:46	kweaver	like when i sent that email last month about how flu billing is on the horizon, i sent it because i know brian likes to hear good news about progress, but its almost a double edged sword, because then he starts to make decisions based off of that 
+2014-10-29 14:20:25	kweaver	so its whatever.  basically, im going to work under the assumption that we will not be using this for flu billing
+2014-10-29 14:20:25	jchaike	and its hard becuase char cant be fully focused on the goal of heroes
+2014-10-29 14:20:31	jchaike	shes got so much other shit to deal with we cant expect that
+2014-10-29 14:20:32	kweaver	the questions is how to break that to brian
+2014-10-29 14:20:45	jchaike	i mean itd be totally awesome
+2014-10-29 14:20:52	kweaver	yeah i know
+2014-10-29 14:20:55	jchaike	and like if amanda entered in flu info and we just re-entered in the info into heroes
+2014-10-29 14:21:03	jchaike	just so its not like her time wasted, its only our time  wasted if that
+2014-10-29 14:21:17	kweaver	yeah im fine with doing that initially, even just for more relevant data
+2014-10-29 14:21:18	jchaike	i wish we could easily import char's data into heroes lol
+2014-10-29 14:21:25	kweaver	yeah
+2014-10-29 14:21:37	jchaike	http://mentalpagingspace.blogspot.com/2007/10/ruby-rails-importorting-dbase-and.html
+2014-10-29 14:21:39	[url]:	http://tinyurl.com/ob6eb4k
+2014-10-29 14:27:23	jchaike	kweaver why would something show up in console doing Pretty Puts in the params, but not actually save to the DB
+2014-10-29 14:40:34	kweaver	lemme know when thats done
+2014-10-29 14:45:26	--	irc: disconnected from server
+2014-10-29 14:45:50	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-29 14:45:50	--	Nicks #heroes: [@ChanServ jchaike kweaver]
+2014-10-29 14:45:50	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-29 14:45:54	--	Mode #heroes [+cnt]
+2014-10-29 14:45:54	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-29 15:15:04	jchaike	kweaver did the all metro email migration work?
+2014-10-29 15:15:27	kweaver	havent had any complains yet
+2014-10-29 15:15:30	kweaver	so it sounds like it
+2014-10-29 15:36:12	jchaike	kweaver http://www.ipcrems.com/
+2014-10-29 15:36:41	jchaike	omg SICK promo vid
+2014-10-29 15:36:48	jchaike	click on the MPA warning green screne on their home page
+2014-10-29 15:36:56	jchaike	lmfao
+2014-10-29 15:36:59	jchaike	^ by sick, i mean super lame
+2014-10-29 15:38:00	kweaver	why would they make this ipad specific?
+2014-10-29 15:38:19	kweaver	why not just make it cloud based?
+2014-10-29 15:38:29	jchaike	its like schools saying YOU MUST HAVE AN IPAD.. they get to up the ipad price, and manage the ipad through the cloud
+2014-10-29 15:38:36	jchaike	they could also get a enterprise license through apple's dev program
+2014-10-29 15:38:40	jchaike	and not put it in the appstore
+2014-10-29 15:38:46	jchaike	and it would be like "local distribution" maybe
+2014-10-29 15:38:49	jchaike	im not sure why theyd choose that
+2014-10-29 15:38:59	jchaike	it looks like crap
+2014-10-29 15:39:18	jchaike	people like ipads, if they made this for a toughbook people would just think oh, anodhter ugly app
+2014-10-29 15:40:39	kweaver	but it sounds like they made it a legit ipad only app.  makes more sense to make it cloud based and just use phone gap
+2014-10-29 15:40:48	jchaike	i keep getting skeychy calls from las vegas telling me that i owe them money from staying at showboat last march lol
+2014-10-29 15:40:52	kweaver	lolol
+2014-10-29 15:41:01	kweaver	showboat vegas?
+2014-10-29 15:41:07	jchaike	showboat AC
+2014-10-29 15:41:10	jchaike	but its owned by ceasers
+2014-10-29 15:41:14	jchaike	i geuss theire "based" in LA
+2014-10-29 15:41:15	jchaike	*Vega
+2014-10-29 15:41:16	jchaike	s
+2014-10-29 15:41:25	kweaver	did you stay in AC?
+2014-10-29 15:41:31	jchaike	nah, in march of 2014 lol
+2014-10-29 15:41:35	jchaike	so literally almost a year ago lmao
+2014-10-29 15:41:45	jchaike	its local on ipad i bet becuase this way they can call it secure because its all local no "security issues"
+2014-10-29 15:41:46	jchaike	kind of thing
+2014-10-29 15:41:52	jchaike	but it looks like their app has a FAX button lol
+2014-10-29 15:41:59	kweaver	lol
+2014-10-29 15:42:03	jchaike	their nemsis compliant
+2014-10-29 15:42:09	kweaver	yeah i saw that
+2014-10-29 15:42:25	jchaike	but noit "really"
+2014-10-29 15:42:25	jchaike	http://www.ipcrems.com/compliancy.php
+2014-10-29 15:42:31	jchaike	their NJ is "pending" whats that mean
+2014-10-29 15:43:46	jchaike	they clearly spent a TON of money on this stuff
+2014-10-29 15:44:12	kweaver	most people that decide to build real software are loaded
+2014-10-29 15:44:15	kweaver	lol
+2014-10-29 15:44:33	kweaver	not in our case
+2014-10-29 15:44:38	jchaike	true lol
+2014-10-29 15:44:44	jchaike	they probably got funding or something
+2014-10-29 15:45:12	kweaver	most likely
+2014-10-29 15:45:44	kweaver	i like listening to brian talk to people
+2014-10-29 15:45:48	kweaver	it always sounds so negative
+2014-10-29 15:45:53	jchaike	lmao
+2014-10-29 15:46:04	jchaike	this is an odd approach for this company though
+2014-10-29 15:46:06	jchaike	to call brian?
+2014-10-29 15:46:08	kweaver	yeah
+2014-10-29 15:46:08	jchaike	not talk to all metro
+2014-10-29 15:46:23	jchaike	and hes not going to get anything except headaches because all metro is going to want pandora on their ipads
+2014-10-29 15:46:23	jchaike	lol
+2014-10-29 15:46:56	kweaver	it sounds like this company cold called all metro, and the owner of all metro just said "call brian, hes in charge of that kinda stuff"
+2014-10-29 15:47:03	jchaike	yo i was right lol
+2014-10-29 15:47:03	jchaike	http://www.ipcrems.com/tech.php
+2014-10-29 15:47:14	jchaike	they are distributing it through a entrprise license
+2014-10-29 15:52:19	jchaike	kweaver why is he giving them leads lol
+2014-10-29 15:52:34	kweaver	who knows haha
+2014-10-29 15:52:54	jchaike	check out their BOOTh and this EMS expo
+2014-10-29 15:52:55	jchaike	http://vimeo.com/61114154
+2014-10-29 15:53:02	jchaike	mute the video, the guy talking scuks lol
+2014-10-29 16:48:40	jchaike	kweaver i think the concept is to keep ti seperated
+2014-10-29 16:48:41	jchaike	right?
+2014-10-29 16:49:01	jchaike	only the current client agency can access their current client agency
+2014-10-29 16:49:12	kweaver	yeah
+2014-10-29 16:49:34	jchaike	is she thinking about htis wrong? i feel like we ARENT doing this
+2014-10-29 16:49:35	jchaike	*that
+2014-10-29 16:49:50	kweaver	i think she doesnt know entirely how we have it set up
+2014-10-29 16:49:55	jchaike	right
+2014-10-29 16:50:01	jchaike	maybe we should show her at soome point soon
+2014-10-29 16:50:02	kweaver	i think we just have to catch ourselves when we talk to her
+2014-10-29 16:50:14	kweaver	and make sure that we rename tripsheet at some point
+2014-10-29 16:50:22	kweaver	we have to call el soon
+2014-10-29 16:50:26	jchaike	10 minutes
+2014-10-29 16:53:51	jchaike	and its not always the same for the same insurance every time/
+2014-10-29 16:53:52	jchaike	?
+2014-10-29 16:53:54	jchaike	kweaver
+2014-10-29 16:56:53	kweaver	?
+2014-10-29 16:56:56	jchaike	nvm doesnt sound like it
+2014-10-29 16:56:58	jchaike	check out googl ehangouts
+2014-10-29 16:57:02	jchaike	brian is screen sharing
+2014-10-29 17:09:51	jchaike	kweaver want me to show you the server stuff real quick before we head out?
+2014-10-29 17:09:57	kweaver	sure
+2014-10-29 17:09:59	jchaike	kk
+2014-10-29 17:10:17	kweaver	that info is in the password sheet?
+2014-10-29 17:10:24	jchaike	yea
+2014-10-29 17:12:16	kweaver	check out the sick watchface i made
+2014-10-29 17:12:30	kweaver	it doesnt actually tell the time though
+2014-10-29 17:12:32	jchaike	SICK
+2014-10-29 17:37:49	<--	jchaike (~jchaike@dhcp-arubawireless-215-140.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-29 17:38:37	--	irc: disconnected from server
+2014-10-30 08:42:10	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-30 08:42:10	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-30 08:42:10	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-30 08:42:14	--	Mode #heroes [+cnt]
+2014-10-30 08:42:14	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-30 10:01:10	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 10:01:10	--	irc: disconnected from server
+2014-10-30 13:54:52	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-30 13:54:52	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop]
+2014-10-30 13:54:52	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-30 13:54:56	--	Mode #heroes [+cnt]
+2014-10-30 13:54:56	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-30 13:56:40	--	irc: disconnected from server
+2014-10-30 14:10:24	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-30 14:10:24	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop]
+2014-10-30 14:10:24	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-30 14:10:28	--	Mode #heroes [+cnt]
+2014-10-30 14:10:28	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-30 15:17:09	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 15:17:09	--	irc: disconnected from server
+2014-10-30 15:19:06	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-30 15:19:06	--	Nicks #heroes: [@ChanServ kweaver kweaver_desktop]
+2014-10-30 15:19:06	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-10-30 15:19:10	--	Mode #heroes [+cnt]
+2014-10-30 15:19:10	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-30 15:20:03	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 17:18:41	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-30 17:18:42	--	irc: disconnected from server
+2014-10-31 08:55:54	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-10-31 08:55:54	--	Nicks #heroes: [@ChanServ kweaver]
+2014-10-31 08:55:54	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-10-31 08:55:58	--	Mode #heroes [+cnt]
+2014-10-31 08:55:58	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-10-31 09:42:01	-->	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has joined #heroes
+2014-10-31 10:10:37	jchaike	kweaver i bet that guy over in the tasty vodka drops asks us to keep the noise level down
+2014-10-31 10:10:47	kweaver	lol yeah
+2014-10-31 10:34:16	jchaike	kweaver do you think resetting your DB could fix some issues? idk what the relation between them would do but im trying that for me now
+2014-10-31 10:34:20	jchaike	*for my issue
+2014-10-31 11:00:06	jchaike	kweaver http://www.youtube.com/watch?v=kGYcNcFhctc
+2014-10-31 11:17:43	kweaver	whats that womans name?  the one with the annoying voice?
+2014-10-31 11:17:46	kweaver	jchaike: 
+2014-10-31 11:17:56	jchaike	oh idk haha
+2014-10-31 11:18:01	jchaike	you mean what we made up?
+2014-10-31 11:18:03	jchaike	i call her janet
+2014-10-31 11:18:05	kweaver	oh yeah
+2014-10-31 11:18:07	kweaver	that works
+2014-10-31 11:18:11	kweaver	her voice bothers me
+2014-10-31 11:18:19	kweaver	and their awkward discussions bother me
+2014-10-31 11:18:24	jchaike	and i think we should name the guy horace lol
+2014-10-31 11:18:34	jchaike	yeah their conversations sound SO fake
+2014-10-31 11:18:37	kweaver	ive never heard a group of people talk to eachother so fakely
+2014-10-31 11:18:38	kweaver	for so long
+2014-10-31 11:18:50	jchaike	like theyre trying to form these meaningful buisiness relationships becuase i guess they work togehter?
+2014-10-31 11:18:53	kweaver	like, shouldnt they be out of that awkward phase by now
+2014-10-31 11:19:06	kweaver	its so sad
+2014-10-31 11:19:10	jchaike	its more entertaining listneing to them than my music
+2014-10-31 11:19:16	kweaver	haha its true
+2014-10-31 11:19:30	jchaike	whats their company name?
+2014-10-31 11:19:34	kweaver	listening to them get so fakely excited about stupid shit
+2014-10-31 11:19:41	kweaver	provonix
+2014-10-31 11:19:45	kweaver	and something else
+2014-10-31 11:19:46	jchaike	NEXT TIME ON: provonix, the company face times horace's baby!
+2014-10-31 11:19:51	kweaver	hahaha
+2014-10-31 11:20:09	jchaike	when is SBE moving to its own building? lmao
+2014-10-31 11:20:14	kweaver	fereal
+2014-10-31 11:20:21	kweaver	also
+2014-10-31 11:20:30	kweaver	i have yet to hear a work related discussion from them
+2014-10-31 11:20:41	kweaver	its always about people they know
+2014-10-31 11:21:16	jchaike	sometimes they talk about how cool itd be to get their product into hops and grapes
+2014-10-31 11:21:53	jchaike	http://www.quora.com/What-are-the-stupidest-decisions-ever-made-in-Silicon-Valley <-- interesting
+2014-10-31 11:34:41	jchaike	https://stacksocial.com/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=StackSocial+Deals+Newsletter&utm_campaign=f1a432b283-SS+Pre-Order+Exclusive%3A+The+Limited+Edition+Code+B&utm_medium=email&utm_term=0_bf74b34094-f1a432b283-291260137&mc_cid=f1a432b283&mc_eid=fb67f81416
+2014-10-31 11:34:49	[url]:	http://tinyurl.com/qbmrbxp
+2014-10-31 11:35:23	kweaver	hmm
+2014-10-31 11:35:27	kweaver	not bad for 100
+2014-10-31 11:35:30	jchaike	potentially cool right?
+2014-10-31 11:35:41	kweaver	only one way to find out...
+2014-10-31 11:35:45	kweaver	nah im too poor
+2014-10-31 11:35:47	jchaike	haha
+2014-10-31 11:35:53	jchaike	yeah i wish i could just be like FUCKIT LETS GET IT
+2014-10-31 12:20:43	jchaike	kweaver
+2014-10-31 12:20:44	jchaike	https://www.classmarker.com/online-test/start/?quiz=fnx4e11c1f24bc57
+2014-10-31 12:30:06	jchaike	kweaver https://accounts.google.com/AccountChooser?hd=allmetroambulance.com&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&ss=1&ltmpl=default
+2014-10-31 12:30:07	[url]:	http://tinyurl.com/lzaqre6
+2014-10-31 12:33:56	jchaike	kweaver https://account.lunarpages.com
+2014-10-31 12:34:19	kweaver	oh god... hes been leaving a message this whole time
+2014-10-31 12:34:23	jchaike	OH
+2014-10-31 12:34:31	kweaver	why does he do that...
+2014-10-31 12:34:33	jchaike	i thought he was on thephone
+2014-10-31 12:34:36	kweaver	me too
+2014-10-31 12:34:38	jchaike	like speaking with someone
+2014-10-31 12:34:50	jchaike	id say "hey just want to talk aobut something, callme back"
+2014-10-31 12:35:34	kweaver	ohhh nm
+2014-10-31 12:35:35	jchaike	oh he is on the phone kweaver  lol
+2014-10-31 12:35:37	kweaver	he is on the phone
+2014-10-31 12:35:38	kweaver	hahaha
+2014-10-31 12:35:41	kweaver	its so hard to tell
+2014-10-31 12:35:41	jchaike	lmao
+2014-10-31 12:35:49	jchaike	yeah it did sound like a message after you said that
+2014-10-31 12:37:40	jchaike	kweaver http://wiki.lunarpages.com/Editing_DNS_Records
+2014-10-31 12:41:29	jchaike	kweaver http://mail.google.com/a/allmetroambulance.com
+2014-10-31 12:49:18	jchaike	oh yeah i forgot, kweaver  i need to leave like 30 minutes early today. i was nominated for this rowan media festival that i wanted to make sure i get to on time
+2014-10-31 12:55:32	jchaike	kweaver you doing lunch?
+2014-10-31 12:55:49	kweaver	sounds good.  also yeah
+2014-10-31 12:55:55	kweaver	what were you thinkin ?
+2014-10-31 12:56:09	jchaike	either wendy's or wawa
+2014-10-31 12:56:10	jchaike	one of them W's
+2014-10-31 12:56:21	jchaike	or something else if you had something else in mind
+2014-10-31 12:56:43	kweaver	i did mcdonalds mcgriddle for breakfast, so ill pass on more fast food
+2014-10-31 12:57:00	kweaver	actually you go do whatever, i have shit loads of mac and cheese here
+2014-10-31 12:57:07	kweaver	ill just eat that 
+2014-10-31 12:57:21	jchaike	ah alright
+2014-10-31 12:57:25	jchaike	sounds gooood
+2014-10-31 12:57:32	jchaike	i should really start stashing microwavable food here
+2014-10-31 14:05:05	jchaike	kweaver it works in console, but not in populate? is that weird
+2014-10-31 14:07:40	kweaver	thats why i thought he was leaving a message before
+2014-10-31 14:07:46	kweaver	jchaike: 
+2014-10-31 14:07:52	kweaver	lol
+2014-10-31 14:07:53	jchaike	yeah lmao
+2014-10-31 14:49:21	jchaike	"go go gadget INCOGNITO!"
+2014-10-31 15:00:19	<--	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-10-31 15:02:28	-->	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has joined #heroes
+2014-10-31 15:02:38	jchaike	https://docs.c9.io/setting_up_postgresql.html kweaver
+2014-10-31 15:14:55	jchaike	kweaver are you both on the same cloud9 url ? lol
+2014-10-31 15:33:50	jchaike	im working with patient Dooley Dario. First name Dooley. Last name Dario
+2014-10-31 15:41:29	jchaike	kweaver when youve got a second lemme know, no rush
+2014-10-31 15:47:52	<--	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-31 15:51:20	-->	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has joined #heroes
+2014-10-31 16:23:54	jchaike	kweaver
+2014-10-31 16:23:56	jchaike	chagne insurance_policy_patient_responsible_party_id
+2014-10-31 16:23:58	jchaike	whoops
+2014-10-31 16:24:02	jchaike	New Item buttom to
+2014-10-31 16:24:04	jchaike	New Item button
+2014-10-31 16:24:06	jchaike	button*
+2014-10-31 16:31:36	<--	jchaike (~jchaike@dhcp-arubawireless-215-29.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-31 16:46:20	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-10-31 16:46:25	--	irc: disconnected from server
+2014-11-03 08:44:06	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-03 08:44:06	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-03 08:44:06	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-03 08:44:09	--	Mode #heroes [+cnt]
+2014-11-03 08:44:09	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-03 08:51:07	-->	kweaver1 (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-03 09:31:56	-->	jchaike (~jchaike@dhcp-arubawireless-215-158.rowan.edu) has joined #heroes
+2014-11-03 09:32:11	<--	jchaike (~jchaike@dhcp-arubawireless-215-158.rowan.edu) has quit (Remote host closed the connection)
+2014-11-03 11:33:47	-->	jchaike (~jchaike@dhcp-arubawireless-215-158.rowan.edu) has joined #heroes
+2014-11-03 11:37:56	jchaike	kweaver brian wasnt clear about where the mispelling was lol
+2014-11-03 11:38:02	jchaike	i checked the website first also
+2014-11-03 11:39:01	jchaike	kweaver1 ^^
+2014-11-03 11:41:58	<--	jchaike (~jchaike@dhcp-arubawireless-215-158.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-03 12:54:21	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-03 12:57:34	-->	jchaike (~jchaike@dhcp-arubawireless-215-194.rowan.edu) has joined #heroes
+2014-11-03 12:58:16	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-03 13:15:01	jchaike	www.jchaike.com/beta
+2014-11-03 13:47:40	<--	jchaike (~jchaike@dhcp-arubawireless-215-194.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-03 13:51:59	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-03 13:52:03	--	irc: disconnected from server
+2014-11-03 13:53:31	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-03 13:53:31	--	Nicks #heroes: [@ChanServ kweaver kweaver1]
+2014-11-03 13:53:31	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-11-03 13:53:36	--	Mode #heroes [+cnt]
+2014-11-03 13:53:36	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-03 15:10:04	-->	jchaike (~jchaike@dhcp-arubawireless-215-194.rowan.edu) has joined #heroes
+2014-11-03 15:10:14	jchaike	kweaver does insurance_carrier have many invoice_insurance_policies?
+2014-11-03 16:05:36	--	irc: disconnected from server
+2014-11-04 08:11:41	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-04 08:11:41	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-04 08:11:41	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-04 08:11:45	--	Mode #heroes [+cnt]
+2014-11-04 08:11:45	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-04 09:54:53	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-04 10:16:42	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-04 13:26:36	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-04 13:42:19	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-04 17:08:09	--	irc: disconnected from server
+2014-11-06 08:51:05	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-06 08:51:05	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-06 08:51:05	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-06 08:51:08	--	Mode #heroes [+cnt]
+2014-11-06 08:51:08	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-06 11:30:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-06 13:50:22	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2014-11-06 14:04:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-06 17:49:28	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2014-11-07 10:34:29	-->	jchaike (~jchaike@dhcp-arubawireless-215-244.rowan.edu) has joined #heroes
+2014-11-07 10:34:38	jchaike	kweaver i pushed my changes to develop
+2014-11-07 10:34:51	kweaver	sounds good
+2014-11-07 10:48:46	jchaike	kweaver how is the insurance policy supposed to work with the patient? right now it doesnt seem to serve much purpose
+2014-11-07 12:13:54	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-07 12:54:20	kweaver	jchaike: https://www.youtube.com/watch?v=wJelEXaPhJ8
+2014-11-07 13:24:02	kweaver	https://gist.github.com/kevinweaver/4e588cdd07d9520be971
+2014-11-07 13:31:12	jchaike	kweaver, so im going to set the patient model as has_many tripsheet_flus and has_many invoice_invoices and setup the relationship that way?
+2014-11-07 13:31:30	kweaver	yup
+2014-11-07 13:31:35	kweaver	are those set already?
+2014-11-07 13:31:39	jchaike	nope
+2014-11-07 13:32:25	kweaver	k
+2014-11-07 13:32:33	jchaike	its almost like your "create models if necessary" DOES that relationship, right?
+2014-11-07 13:37:20	kweaver	what do you mean jchaike ?
+2014-11-07 13:51:43	jchaike	kweaver http://www.aim-system.com/
+2014-11-07 14:00:08	jchaike	kweaver
+2014-11-07 14:00:13	kweaver	sup
+2014-11-07 14:00:15	jchaike	mighta fucked up
+2014-11-07 14:03:40	<--	jchaike (~jchaike@dhcp-arubawireless-215-244.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-07 14:36:08	-->	jchaike (~jchaike@dhcp-arubawireless-215-244.rowan.edu) has joined #heroes
+2014-11-07 15:06:25	jchaike	does your mileage create a new procedure code on the fly?
+2014-11-07 15:06:27	jchaike	kweaver
+2014-11-07 15:07:02	kweaver	yeah
+2014-11-07 15:07:06	kweaver	ill show in a sec
+2014-11-07 15:07:09	jchaike	sure
+2014-11-07 15:30:02	jchaike	sexy insurance carrier % YEH https://www.dropbox.com/s/fwge5luq1ukyafs/Screenshot%202014-11-07%2015.29.43.png?dl=0
+2014-11-07 15:30:06	[url]:	http://tinyurl.com/pzz4r6o
+2014-11-07 15:44:41	jchaike	yo kweaver  if youve got a minute
+2014-11-07 15:44:46	jchaike	i got a qustion
+2014-11-07 16:34:41	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-07 17:01:53	<--	jchaike (~jchaike@dhcp-arubawireless-215-244.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-07 17:02:35	--	irc: disconnected from server
+2014-11-10 08:25:41	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-10 08:25:41	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-10 08:25:41	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-10 08:25:45	--	Mode #heroes [+cnt]
+2014-11-10 08:25:45	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-10 12:45:31	-->	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has joined #heroes
+2014-11-10 12:45:40	jchaike	kweaver https://stacksocial.com/sales/the-extreme-micro-drone-2-0-aerial-camera?utm_source=StackSocial+Deals+Newsletter&utm_campaign=8e74e57971-SS+The+Extreme+Micro+Drone+2.0+%2B+Aerial+Camera&utm_medium=email&utm_term=0_bf74b34094-8e74e57971-291260137&mc_cid=8e74e57971&mc_eid=fb67f81416
+2014-11-10 12:45:41	[url]:	http://tinyurl.com/k3p87xr
+2014-11-10 13:03:21	jchaike	kweaver we're not using CANCAN are we?
+2014-11-10 13:03:34	kweaver	i dont believe so
+2014-11-10 13:03:43	kweaver	what is it
+2014-11-10 13:03:58	jchaike	"CanCan is an authorization library for Ruby on Rails which restricts what resources a given user is allowed to access."
+2014-11-10 13:04:15	kweaver	ah, nah we arent
+2014-11-10 13:04:15	jchaike	im just getting an error, and my search results are bringin up can can issues
+2014-11-10 13:04:24	jchaike	"undefined method `reflect_on_association' for NilClass:Class"
+2014-11-10 14:11:54	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-10 14:44:28	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-10 15:21:03	<--	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has quit (Remote host closed the connection)
+2014-11-10 15:39:35	-->	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has joined #heroes
+2014-11-10 15:53:28	<--	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-10 15:56:03	-->	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has joined #heroes
+2014-11-10 16:59:17	<--	jchaike (~jchaike@dhcp-arubawireless-215-221.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-10 18:32:02	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-10 18:32:02	--	irc: disconnected from server
+2014-11-11 08:19:35	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-11 08:19:35	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-11 08:19:35	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-11 08:19:39	--	Mode #heroes [+cnt]
+2014-11-11 08:19:39	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-11 15:29:10	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-11 16:24:14	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-11 16:24:15	--	irc: disconnected from server
+2014-11-12 08:37:28	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 08:37:28	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-12 08:37:28	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-12 08:37:31	--	Mode #heroes [+cnt]
+2014-11-12 08:37:32	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-12 09:16:09	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 10:22:20	-->	jchaike (~jchaike@dhcp-arubawireless-215-135.rowan.edu) has joined #heroes
+2014-11-12 10:29:39	jchaike	kweaver kweaver_desktop so the deal with the API is that HEROES wil use this API? or who is using this api
+2014-11-12 10:29:41	jchaike	whats the point exactly
+2014-11-12 10:49:00	kweaver_desktop	ill explain later jchaike
+2014-11-12 10:49:08	jchaike	sure
+2014-11-12 10:49:23	kweaver_desktop	basically to give char something to do that wont fug with us, and that will be ultimately useful to heroes
+2014-11-12 10:50:15	jchaike	ah ok
+2014-11-12 10:50:24	jchaike	so this is really something not to be implemented for potentially a year
+2014-11-12 10:51:25	kweaver_desktop	basically, i dont think char realizes the work thats going to be involved
+2014-11-12 10:51:36	jchaike	oh lol okay
+2014-11-12 10:51:45	jchaike	an api is such an enourmous undertaking
+2014-11-12 10:51:50	jchaike	for something with no userbase lol
+2014-11-12 10:52:39	kweaver_desktop	yeah, theyve been working on improving eligible api for the last 3 years, and who knows how long ago it actually began
+2014-11-12 10:52:50	kweaver_desktop	but that is a product and a company all in itself
+2014-11-12 10:52:58	jchaike	right
+2014-11-12 10:53:10	kweaver_desktop	which ultimately just leads to a small nice-to-have for heroes:
+2014-11-12 10:53:26	kweaver_desktop	the ability to look up if a patient is eligible for something without calling or looking around the internet
+2014-11-12 10:53:28	jchaike	it seems like we're stretching heroes as a product very thin
+2014-11-12 10:53:35	kweaver_desktop	incredibly thin
+2014-11-12 10:53:53	kweaver_desktop	thats why i dont plan on being involved with her api
+2014-11-12 10:54:00	kweaver_desktop	id love to
+2014-11-12 10:54:08	kweaver_desktop	but we have 5 mountains to climb first
+2014-11-12 10:54:13	kweaver_desktop	and yet, i know she will need me to help
+2014-11-12 10:54:17	jchaike	right
+2014-11-12 10:54:40	jchaike	im stresssed, i cant imagine how youre feeling lol
+2014-11-12 10:56:36	kweaver_desktop	the only way to mentally handle everything is to only analyze very small portions and keep your head down.  then do a bi-weekly recap and poke our heads up
+2014-11-12 10:56:48	kweaver_desktop	and look at the wasteland ahead of us
+2014-11-12 10:56:50	kweaver_desktop	haha
+2014-11-12 10:59:08	jchaike	lmao
+2014-11-12 10:59:17	jchaike	what a depressed way to explain heroes development process
+2014-11-12 11:00:00	kweaver_desktop	hahaha its true
+2014-11-12 11:00:19	jchaike	if you have a chance can you explain some of your patient population code (the javascript stuff)
+2014-11-12 11:00:22	kweaver_desktop	i think the only truly frustrating part is the lack of understanding from brian
+2014-11-12 11:00:29	kweaver_desktop	yeah sec
+2014-11-12 11:00:30	jchaike	sure
+2014-11-12 11:00:39	jchaike	when i explain thigns to him, i take the programmign aspect out of it
+2014-11-12 11:01:38	kweaver_desktop	like yesterday, brian was asking about progress.  i said it was good, but there are still mountains ahead and it doesnt help when im spending entire days helping char.  and he just kinda sulked and looked back at his screen
+2014-11-12 11:01:48	jchaike	hm
+2014-11-12 11:01:56	jchaike	i mean it is important for char to be as involved as she can be
+2014-11-12 11:02:04	kweaver_desktop	yeah its a necessary evil
+2014-11-12 11:02:28	jchaike	its only evil becuase she piles all of the unknowns on top of everything else that we know, but havent implemented yet haha
+2014-11-12 11:02:49	kweaver_desktop	yeah, and again, she showed me some new views that ive never seen in heroes
+2014-11-12 11:02:58	kweaver_desktop	so we have more to look forward to
+2014-11-12 11:03:12	kweaver_desktop	never seen in her program before***
+2014-11-12 11:03:16	jchaike	lmao
+2014-11-12 11:03:30	jchaike	MVP is becoming just "the final release"
+2014-11-12 11:03:39	kweaver_desktop	it is
+2014-11-12 11:03:44	kweaver_desktop	and i keep resisting
+2014-11-12 11:03:47	kweaver_desktop	but it doesnt even matter
+2014-11-12 11:03:56	jchaike	because these are all "necessary for a useful proudct"
+2014-11-12 11:04:12	kweaver_desktop	and yet, he'll say that about things that dont even exist yet
+2014-11-12 11:04:15	kweaver_desktop	in hers
+2014-11-12 11:05:27	kweaver_desktop	i also just learned about rake db:migrate:redo
+2014-11-12 11:05:34	jchaike	whats that
+2014-11-12 11:06:07	kweaver_desktop	when you just run rake db:migrate, 90% of the time it wont actually go back to the beginning and create the db from migrations.  its almost like caching
+2014-11-12 11:06:26	jchaike	ohhh
+2014-11-12 11:06:35	kweaver_desktop	so if you want to force it to go from the beginning, run it with :redo
+2014-11-12 11:06:35	jchaike	so we can do rake db:migrate:redo instead of rake db:migrate in our rakeall?
+2014-11-12 11:06:43	kweaver_desktop	yeah thats what im thinking
+2014-11-12 11:07:37	kweaver_desktop	it will prevent us from those odd situations where we create a model, later do some changes, later delete the model, and then like 6 months later "oh hey, your migration failed.  whats this model you're trying to change?"
+2014-11-12 11:07:45	kweaver_desktop	instead we will find those issues immediately
+2014-11-12 11:07:50	jchaike	right, well thats cool
+2014-11-12 11:07:59	jchaike	it sounds like something that should happen on rake db:migrate anyways though lol
+2014-11-12 11:08:21	kweaver_desktop	i know
+2014-11-12 11:08:45	kweaver_desktop	im cool with like a 'cache migrations mode' in the rake settings
+2014-11-12 11:08:48	kweaver_desktop	but that shouldnt be a default
+2014-11-12 11:08:52	kweaver_desktop	just leads to confusion
+2014-11-12 11:09:43	jchaike	yea\
+2014-11-12 11:24:43	jchaike	so i need a place to put the payer_id on the insurance carrier... what is OTHER ID NUMBER, and could ij ust rename that to the payer_id?
+2014-11-12 11:24:46	jchaike	or should i create a new field?
+2014-11-12 11:26:26	jchaike	kweaver_desktop ^^
+2014-11-12 11:52:58	jchaike	kweaver_desktop
+2014-11-12 11:53:06	jchaike	what is invoice_insurance_carrier in the table?
+2014-11-12 11:53:16	jchaike	OH its invoice_insurance_policies
+2014-11-12 11:53:17	jchaike	nvm
+2014-11-12 12:00:23	jchaike	kweaver_desktop you said that people CAN add their own insurance, but they CANT... char only accepts carriers that have an EAC ID
+2014-11-12 12:00:31	jchaike	they can name their insurance carriers whatever they want
+2014-11-12 12:00:39	jchaike	but it has to match to an existing one, part of this master database
+2014-11-12 12:00:57	jchaike	well i guess if youre not submitting electronically then it doesnt matter
+2014-11-12 12:13:45	-->	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 12:13:52	jchaike_	kweaver_desktop yo i can show you her program
+2014-11-12 12:15:42	<--	jchaike (~jchaike@dhcp-arubawireless-215-135.rowan.edu) has quit (Ping timeout: 245 seconds)
+2014-11-12 12:19:22	<--	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-12 12:19:43	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 12:25:20	jchaike	kweaver_desktop im loking thorugh the flu validations
+2014-11-12 12:25:26	jchaike	why cant we have policy comments?
+2014-11-12 12:25:32	jchaike	i would think htats okay and just a biller specific thing
+2014-11-12 12:25:42	kweaver_desktop	i put it back
+2014-11-12 12:25:46	kweaver_desktop	char said to delete it
+2014-11-12 12:25:49	kweaver_desktop	but amanda wants it
+2014-11-12 12:25:51	jchaike	oh ok
+2014-11-12 12:25:53	jchaike	gotchya
+2014-11-12 12:25:59	jchaike	i was going to say i thought we decided it was something hta tshould be there
+2014-11-12 12:26:03	jchaike	and doesn tmatter either way its not like we're submitting it
+2014-11-12 12:26:12	kweaver_desktop	yeah
+2014-11-12 12:26:19	jchaike	and why does AGE matter?
+2014-11-12 12:27:36	jchaike	also is the carrier NPI something that CHAR knows? it seems like it from what amanda showed us in char's program
+2014-11-12 12:27:43	jchaike	*somethingn that is part of her carrier dB
+2014-11-12 12:31:02	kweaver_desktop	yeah, isnt that one of the values we have from her giant list?
+2014-11-12 12:31:15	jchaike	its not a value that im populating, or got from her
+2014-11-12 12:42:14	jchaike	kweaver_desktop would provider_id then be a string or integer?
+2014-11-12 12:42:20	jchaike	we dont know the format of these ids
+2014-11-12 12:43:43	kweaver_desktop	yeah string
+2014-11-12 12:43:46	kweaver_desktop	jchaike:
+2014-11-12 13:00:01	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-12 13:36:45	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 14:09:02	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-12 14:16:07	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 14:20:32	jchaike	kweaver_desktop did you want to go over how i do the payment stuff in javascript at some point? or is that a later on thing?
+2014-11-12 14:24:35	jchaike	how do you get the values to save on javascript?
+2014-11-12 14:24:41	jchaike	when they are inputed in javascript?
+2014-11-12 14:24:43	jchaike	**
+2014-11-12 15:31:24	jchaike	kweaver_desktop
+2014-11-12 15:34:20	jchaike	brians talking to i guess a new client... and talking about ePCR stuff... and idk if we discussed this, but if people ar elooking for this, and paying 10,000 a year, why cant we charge half, and thats still considered "disrupting the market" isnt it
+2014-11-12 15:44:19	jchaike	yo kweaver_desktop  when you have a second i have a question regarding the electronic submissipons
+2014-11-12 15:44:22	jchaike	relating to insurance
+2014-11-12 16:27:25	kweaver_desktop	yeah jchaike see if any of your friends would be interested in doing pax this year.  ive got plenty of extra tickets and hotel rooms booked
+2014-11-12 16:27:50	kweaver_desktop	its legitimately the best weekend of the year
+2014-11-12 16:27:52	kweaver_desktop	such a good time
+2014-11-12 16:29:08	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-12 16:29:44	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 16:54:53	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-12 17:45:03	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2014-11-12 18:24:45	-->	kweaver_desktop (~kweaver@pool-108-24-114-189.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-12 20:32:25	<--	kweaver_desktop (~kweaver@pool-108-24-114-189.cmdnnj.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2014-11-12 21:17:57	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-12 22:55:30	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-13 09:27:56	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-13 10:05:17	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-13 15:20:22	<--	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-13 15:20:26	--	irc: disconnected from server
+2014-11-13 15:26:40	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-13 15:26:40	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-13 15:26:40	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-13 15:26:44	--	Mode #heroes [+cnt]
+2014-11-13 15:26:44	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-13 18:18:45	--	irc: disconnected from server
+2014-11-14 08:47:05	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-14 08:47:05	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-14 08:47:05	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-14 08:47:10	--	Mode #heroes [+cnt]
+2014-11-14 08:47:10	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-14 09:34:36	-->	jchaike (~jchaike@dhcp-arubawireless-215-64.rowan.edu) has joined #heroes
+2014-11-14 12:35:06	jchaike	kweaver http://www.quora.com/Why-did-Harvard-students-accept-Facebook-as-cool
+2014-11-14 13:01:28	<--	jchaike (~jchaike@dhcp-arubawireless-215-64.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-14 13:37:05	-->	jchaike (~jchaike@dhcp-arubawireless-215-64.rowan.edu) has joined #heroes
+2014-11-14 13:52:59	<--	jchaike (~jchaike@dhcp-arubawireless-215-64.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-14 13:55:19	-->	jchaike (~jchaike@dhcp-arubawireless-215-64.rowan.edu) has joined #heroes
+2014-11-14 14:04:08	kweaver	http://i.imgur.com/q8QamPi.png
+2014-11-14 14:33:44	jchaike	kweaver pushed working birth date/age calculator stuff
+2014-11-14 14:47:00	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-14 15:03:55	jchaike	kweaver_desktop pull dat shyyyt
+2014-11-14 15:12:28	jchaike	pax rules: Nerf guns are only allowed if they have been deactivated and can not fire.
+2014-11-14 15:12:33	jchaike	DEACTIVATE NERF GUN
+2014-11-14 15:27:17	jchaike	kweaver
+2014-11-14 15:27:19	jchaike	kweaver_desktop
+2014-11-14 15:27:36	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:37	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:37	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:38	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:38	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:38	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:38	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:38	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:39	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:39	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:40	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:40	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:41	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:41	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:42	jchaike	kweaver_desktop kweaver
+2014-11-14 15:27:42	jchaike	kweaver_desktop kweaver
+2014-11-14 15:41:04	jchaike	kweaver added javascript for the mileage calculator
+2014-11-14 15:45:20	kweaver	sickk
+2014-11-14 16:08:28	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-14 16:08:28	--	Nicks #heroes: [@ChanServ jchaike kweaver kweaver_desktop]
+2014-11-14 16:08:28	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-11-14 16:08:32	--	Mode #heroes [+cnt]
+2014-11-14 16:08:32	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-14 16:32:32	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 258 seconds)
+2014-11-14 16:33:56	kweaver	http://www.theverge.com/2014/11/14/7221215/typing-text-with-your-thoughts-translating-sign-language-with-a
+2014-11-14 16:46:41	--	irc: disconnected from server
+2014-11-17 08:52:13	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-17 08:52:13	--	Nicks #heroes: [@ChanServ kweaver]
+2014-11-17 08:52:13	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-17 08:52:13	--	Notice(morgan.freenode.net) -> #heroes: [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-11-17 08:52:17	--	Mode #heroes [+cnt]
+2014-11-17 08:52:17	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-17 11:36:20	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-17 11:41:20	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-17 12:47:31	-->	jchaike (~jchaike@dhcp-arubawireless-215-68.rowan.edu) has joined #heroes
+2014-11-17 12:47:35	jchaike	http://filmsforme513e.ninefold-apps.com/
+2014-11-17 13:18:03	jchaike	kweaver http://objectliteral.blogspot.com/2009/07/make-faker-work-with-factory-girl.html
+2014-11-17 13:18:04	[url]:	http://tinyurl.com/6hnp4fn
+2014-11-17 13:34:36	<--	jchaike (~jchaike@dhcp-arubawireless-215-68.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-17 13:39:28	-->	jchaike (~jchaike@dhcp-arubawireless-215-68.rowan.edu) has joined #heroes
+2014-11-17 13:41:03	kweaver	http://stackoverflow.com/questions/26979573/faker-gem-producing-blank-names-randomly
+2014-11-17 13:42:31	kweaver	http://www.reddit.com/r/rails/comments/2mkzue/anyone_else_experience_this_issue_with_faker_gem/
+2014-11-17 14:10:18	jchaike	kweaver if you have a minute , take a look at this, im not sure if i can condense this any more https://gist.github.com/anonymous/50d9919b9f47cb2fef7c
+2014-11-17 14:10:56	kweaver	k
+2014-11-17 14:25:58	jchaike	kweaver it doesnt seem like i can move this method into a helper
+2014-11-17 14:26:10	kweaver	sec
+2014-11-17 14:26:54	kweaver	i think youd have to pass the method your params
+2014-11-17 14:27:46	jchaike	someone is talking about the conept of "concerns"but im not sure what that exaclty means
+2014-11-17 14:27:48	jchaike	im looking into it now
+2014-11-17 14:27:54	jchaike	but it seems like its more complex than it should be
+2014-11-17 14:27:59	kweaver	its basically a helper
+2014-11-17 14:31:59	kweaver	ugh im like falling asleep
+2014-11-17 14:32:03	kweaver	i need to go stand for a few
+2014-11-17 14:32:05	kweaver	brb jchaike 
+2014-11-17 14:32:07	jchaike	sure
+2014-11-17 14:43:41	-->	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-17 14:51:56	<--	jchaike (~jchaike@dhcp-arubawireless-215-68.rowan.edu) has quit (Ping timeout: 240 seconds)
+2014-11-17 14:57:31	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-17 14:57:39	jchaike	got dat company credit card? kweaver_desktop ? lol
+2014-11-17 15:04:30	kweaver_desktop	lol yeah
+2014-11-17 15:04:33	kweaver_desktop	no idea why
+2014-11-17 15:04:44	jchaike	haha, you know.. company lunches
+2014-11-17 15:04:56	kweaver_desktop	lol i guess so
+2014-11-17 15:05:10	kweaver_desktop	hes talked about cards before
+2014-11-17 15:05:18	kweaver_desktop	but i guess decided to just do it
+2014-11-17 15:05:26	jchaike	well thats cool lol
+2014-11-17 15:05:30	jchaike	its more legit than a business card
+2014-11-17 15:05:31	kweaver_desktop	i dont plan on ever using it though unless he asks me to buy something
+2014-11-17 15:05:36	jchaike	lol
+2014-11-17 15:05:36	kweaver_desktop	haha yeah
+2014-11-17 15:05:41	jchaike	do you have a business card?
+2014-11-17 15:05:50	kweaver_desktop	nah
+2014-11-17 15:05:59	jchaike	gotta get heroes ones
+2014-11-17 15:06:07	kweaver_desktop	only downside is that i have only give my company card out to one person :/
+2014-11-17 15:06:25	kweaver_desktop	and then they steal all of the company money
+2014-11-17 15:06:37	jchaike	lol good point
+2014-11-17 15:37:57	jchaike	kweaver_desktop what does SBE cleanup day mean
+2014-11-17 15:54:24	kweaver_desktop	no idea
+2014-11-17 15:54:35	kweaver_desktop	brian said were gonna rearrange the office
+2014-11-17 15:55:23	jchaike	lol okay
+2014-11-17 15:57:58	kweaver	sounds like just another day spent working on something that isnt heroes.. :/
+2014-11-17 15:58:49	kweaver	i think were supposed to do another company meeting next week or so
+2014-11-17 15:58:55	jchaike	to increase our productivitiy on heroes
+2014-11-17 15:59:00	jchaike	we havnt done those in a while
+2014-11-17 15:59:12	kweaver	im going to bring up a new policy for devs 
+2014-11-17 15:59:15	kweaver	and billers i guess
+2014-11-17 15:59:25	jchaike	regarding what
+2014-11-17 15:59:43	kweaver	dtriley in #orderdeck works for a big software company in PA
+2014-11-17 16:00:23	kweaver	and he said they have a policy in place that doesnt allow management or anyone to disturb a programmer without first sending either a hipchat message or an email
+2014-11-17 16:00:40	kweaver	in our case, hangouts
+2014-11-17 16:00:46	jchaike	that does make sense
+2014-11-17 16:00:58	jchaike	i am totally distracted now lmao, i mean its not a huge deal, i can deal with it, but it happens
+2014-11-17 16:01:07	kweaver	he was saying that all of their management has to be a programmer to some degree
+2014-11-17 16:01:14	kweaver	no middle managers that dont know things
+2014-11-17 16:01:41	kweaver	but i even feel bad with how often amanda gets bugged by me and brian
+2014-11-17 16:01:53	jchaike	it makes sense i guess becuase they DO software, we do billing, and attempt software
+2014-11-17 16:02:05	jchaike	thats like saying you need to be fluent with billing isnt it?
+2014-11-17 16:02:36	kweaver	yeah he was just saying that his direct supervisor is a programmer, and the boss of that guy is also a programmer
+2014-11-17 16:02:38	kweaver	which is graet
+2014-11-17 16:02:47	kweaver	because they know how shitty distractions can be 
+2014-11-17 16:03:08	jchaike	yeah
+2014-11-17 16:03:14	jchaike	and understand the issues that come with programming
+2014-11-17 16:03:19	jchaike	like bugs and setbacks and whatnot
+2014-11-17 16:03:46	jchaike	it definitely makes sense to kind of restrict communication to some extent just so we can all focus on work and stuff
+2014-11-17 16:03:48	jchaike	it would increase productivitiy
+2014-11-17 16:04:46	kweaver_desktop	yeah, and its one thing if you and i are just chatting about something between code sprints.  or if brian notices that were hanging out between thoughts
+2014-11-17 16:05:37	kweaver_desktop	but that policy just avoids the situation that happens 12 times a day where i look over and brian is trying to tell me something random
+2014-11-17 16:09:20	jchaike	yeah that definitely makes sense
+2014-11-17 16:11:06	kweaver_desktop	jchaike: just merged into develop.  we now have one render for patients in invoice_invoice, tripsheet_flu, and patient_patient
+2014-11-17 16:11:14	jchaike	awesome
+2014-11-17 16:11:28	kweaver_desktop	next im gonna do the same for patient_responsible_party, and invoice_responsible_party
+2014-11-17 16:11:34	jchaike	okay cool
+2014-11-17 16:11:42	kweaver_desktop	its gonna feel so good when we can make changes so quickly
+2014-11-17 16:11:44	jchaike	im going to finish up the populator stuff, make sure it works, then merge to develop
+2014-11-17 16:11:50	kweaver_desktop	k
+2014-11-17 16:22:04	jchaike	kweaver kweaver_desktop  is UNKNOWN really an acceptable choice for gender?
+2014-11-17 16:22:10	jchaike	or should it be male/female only?
+2014-11-17 16:24:15	kweaver_desktop	jchaike: remove unknown
+2014-11-17 16:24:20	kweaver_desktop	that was left over from nemsis
+2014-11-17 16:24:27	kweaver_desktop	and fug dat shit
+2014-11-17 16:25:15	jchaike	iiiight
+2014-11-17 16:25:30	jchaike	"Snapchat partners with Square, launches Snapcash for instantly sending money between users" now you can PAY for temporary nudes
+2014-11-17 16:27:53	kweaver_desktop	lolol
+2014-11-17 16:28:22	kweaver_desktop	thats a joke right ^
+2014-11-17 16:28:30	jchaike	i made it into a joke
+2014-11-17 16:28:33	kweaver_desktop	its sad that im unsure
+2014-11-17 16:28:35	jchaike	but snapcash is real lol
+2014-11-17 16:28:37	kweaver_desktop	haha ok
+2014-11-17 16:28:48	jchaike	http://9to5mac.com/2014/11/17/snapcash-snapchat-payment-service/
+2014-11-17 16:52:06	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2014-11-17 17:43:48	<--	kweaver_desktop (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: WeeChat 0.4.2)
+2014-11-17 22:07:56	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-17 22:15:48	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-17 22:45:12	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-17 23:43:44	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-18 16:12:22	-->	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-18 16:12:27	jchaike	yo kweaver  you there?
+2014-11-18 18:12:06	<--	ChanServ (ChanServ@services.) has quit (shutting down)
+2014-11-18 18:15:10	-->	ChanServ (ChanServ@services.) has joined #heroes
+2014-11-18 18:15:10	--	Mode #heroes [+o ChanServ] by morgan.freenode.net
+2014-11-18 21:20:11	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-18 22:50:51	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 256 seconds)
+2014-11-19 08:10:16	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 08:10:55	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has left #heroes
+2014-11-19 09:34:29	<--	jchaike (~jchaike@pool-173-61-196-148.cmdnnj.fios.verizon.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-11-19 09:50:14	-->	jchaike (~jchaike@dhcp-arubawireless-215-206.rowan.edu) has joined #heroes
+2014-11-19 09:53:47	jchaike	kweaver when you go to run a server, do you randomly get missing gems errors?
+2014-11-19 09:53:54	jchaike	its happening to me more often
+2014-11-19 09:59:46	<--	jchaike (~jchaike@dhcp-arubawireless-215-206.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-19 10:03:24	-->	jchaike (~jchaike@dhcp-arubawireless-215-206.rowan.edu) has joined #heroes
+2014-11-19 10:21:34	--	irc: disconnected from server
+2014-11-19 10:21:51	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 10:21:51	--	Nicks #heroes: [@ChanServ jchaike kweaver]
+2014-11-19 10:21:51	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-11-19 10:21:51	--	Notice(wolfe.freenode.net) -> #heroes: [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2014-11-19 10:21:55	--	Mode #heroes [+cnt]
+2014-11-19 10:21:55	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-19 10:26:42	jchaike	kweaver do we have like a "universal javascript file"
+2014-11-19 10:26:43	jchaike	or somethin
+2014-11-19 10:26:52	jchaike	i just made the age calculator generic so it should work across all patient partials
+2014-11-19 10:27:01	kweaver	hmm
+2014-11-19 10:27:07	kweaver	nah
+2014-11-19 10:27:25	jchaike	would that go in the patient.js and then i just include that across all necessary views?
+2014-11-19 10:27:31	kweaver	yeah id do  that
+2014-11-19 10:27:34	jchaike	ok sure
+2014-11-19 10:37:32	jchaike	kweaver if you look at http://localhost:3000/patient/patients/31/edit does your patient birth_Date show up?
+2014-11-19 10:38:24	kweaver	eh im in the middle of a big migration
+2014-11-19 10:38:28	kweaver	ill let you know in a bit
+2014-11-19 10:38:29	jchaike	ah ok
+2014-11-19 10:38:30	jchaike	sure
+2014-11-19 10:39:50	jchaike	nvm i figured it out anyways. for some reason birth_Date isnt always a datetime. so im going to make a migration that fixes that
+2014-11-19 10:39:56	jchaike	kweaver ^
+2014-11-19 10:40:04	kweaver	yeah i realized that last week
+2014-11-19 10:40:10	kweaver	feel free to fix it up then
+2014-11-19 10:40:15	jchaike	will do
+2014-11-19 10:40:30	kweaver	while youre at it, make sure all fields relating to date are set up the same
+2014-11-19 10:40:35	kweaver	run date, invoice date etc
+2014-11-19 11:11:29	<--	jchaike (~jchaike@dhcp-arubawireless-215-206.rowan.edu) has quit (Ping timeout: 244 seconds)
+2014-11-19 11:14:40	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:18:28	jchaike	kweaver when you have a second before you head out i have a quick question
+2014-11-19 11:18:36	kweaver	k sec
+2014-11-19 11:46:05	-->	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:48:49	jchaike_	exit
+2014-11-19 11:48:51	<--	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 11:50:16	-->	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:50:45	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-19 11:50:50	<--	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 11:51:06	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:51:49	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 11:52:07	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:52:30	-->	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:57:02	jchaike	\q
+2014-11-19 11:58:18	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: leaving)
+2014-11-19 11:58:33	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 11:58:59	<--	jchaike_ (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-11-19 12:01:16	jchaike	exit
+2014-11-19 12:01:18	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 12:01:31	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 12:01:39	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 12:02:31	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 12:05:29	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Client Quit)
+2014-11-19 12:05:46	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 12:07:40	jchaike	cat ~/.irssi/nicklistfifo
+2014-11-19 12:11:29	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Quit: leaving)
+2014-11-19 12:12:00	-->	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 12:36:45	<--	jchaike (~jchaike@pool-96-235-140-4.cmdnnj.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2014-11-19 13:42:55	-->	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has joined #heroes
+2014-11-19 13:52:37	<--	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has quit (Quit: leaving)
+2014-11-19 14:06:29	-->	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has joined #heroes
+2014-11-19 14:06:31	<--	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has quit (Client Quit)
+2014-11-19 14:06:58	-->	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has joined #heroes
+2014-11-19 14:07:36	<--	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has quit (Client Quit)
+2014-11-19 14:09:21	-->	jchaike (~jchaike@dhcp-arubawireless-215-46.rowan.edu) has joined #heroes
+2014-11-19 14:09:52	--	irc: disconnected from server
+2014-11-19 14:18:53	-->	kweaver (~kweaver@pool-96-235-140-4.cmdnnj.fios.verizon.net) has joined #heroes
+2014-11-19 14:18:53	--	Nicks #heroes: [@ChanServ jchaike kweaver]
+2014-11-19 14:18:53	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-11-19 14:18:57	--	Mode #heroes [+cnt]
+2014-11-19 14:18:57	--	Channel created on Mon, 18 Jan 2010 18:55:10

@@ -32,6 +32,7 @@ call vundle#begin()
  Bundle 'Lokaltog/vim-easymotion'
  Bundle 'itchyny/calendar.vim'
  Bundle 'majutsushi/tagbar'
+ Bundle 'esneider/YUNOcommit.vim'
 
 call vundle#end()
 filetype plugin indent on "req
