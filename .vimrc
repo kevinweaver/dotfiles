@@ -33,6 +33,7 @@ call vundle#begin()
  Bundle 'itchyny/calendar.vim'
  Bundle 'terryma/vim-multiple-cursors'
  Bundle 'majutsushi/tagbar'
+ Bundle 'esneider/YUNOcommit.vim'
 
 call vundle#end()
 filetype plugin indent on "req
