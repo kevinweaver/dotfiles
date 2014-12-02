@@ -39,5 +39,6 @@ alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart
 alias bctech="cd ~/workspace/sites/bctech/wp-content/themes/bcenfold"
 alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
 alias heroes="cd ~/workspace/applications/ems-heroes"
-alias nemours="cd ~/workspace/projects/kh-longtail/source"
+alias hackerhang="cd ~/workspace/applications/hackerhang"
+alias nemours="cd ~/workspace/projects/kidshealth-longtail/source"
 alias heroes-site="cd ~/workspace/sites/ems-heroes"
