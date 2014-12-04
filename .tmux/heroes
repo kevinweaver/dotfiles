@@ -1,0 +1,26 @@
+# pane0:top |  pane1:bottom-left | pane2:bottom-mid | pane3: bottom-right
+# select first pane -- only one if empty
+rename-window Dev
+select-pane -t 0
+# split horizontally by 85%
+split-window -v -p 20
+# select bottom pane and split vertically by 33%
+select-pane -t 1
+split-window -h -p 75
+# select larger bottom pane and split in half - yielding 3 1/3 chunks
+select-pane -t 2
+split-window -h -p 66
+
+# run commands
+send -t 0 heroes ENTER
+send -t 1 heroes ENTER
+send -t 1 'rails c' ENTER
+send -t 2 heroes ENTER
+send -t 2 'rails s' ENTER
+send -t 3 weechat ENTER
+
+select-pane -t 0
+
+new-window -n 'OMS2'
+
+select-window -t 1

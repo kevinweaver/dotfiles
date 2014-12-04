@@ -31,10 +31,22 @@ call vundle#begin()
  Bundle 'airblade/vim-gitgutter'
  Bundle 'Lokaltog/vim-easymotion'
  Bundle 'itchyny/calendar.vim'
+ Bundle 'terryma/vim-multiple-cursors'
  Bundle 'majutsushi/tagbar'
+ Bundle 'esneider/YUNOcommit.vim'
+ Bundle 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 filetype plugin indent on "req
+
+"Vim Multiple Cursors Bindings
+let g:multi_cursor_use_default_mapping=0
+" Default mapping
+"let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_next_key='<C-x>'
+let g:multi_cursor_prev_key='<C-p>'
+"let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 "python from powerline.bindings.vim import 'source_plugin; source_plugin()
 
