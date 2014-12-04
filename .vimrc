@@ -34,6 +34,7 @@ call vundle#begin()
  Bundle 'terryma/vim-multiple-cursors'
  Bundle 'majutsushi/tagbar'
  Bundle 'esneider/YUNOcommit.vim'
+ Bundle 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 filetype plugin indent on "req
