@@ -7186,3 +7186,359 @@
 2014-11-17 22:45:09	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
 2014-11-17 22:45:09	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
 2014-11-17 22:45:12	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-18 21:20:12	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-18 21:20:12	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-11-18 21:20:14	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 19:15:41	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 19:15:41	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-11-19 19:15:43	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 20:18:33	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 20:23:51	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-19 21:15:47	--	irc: disconnected from server
+2014-11-19 21:16:13	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 21:16:13	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-11-19 21:16:15	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 21:17:17	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 21:19:58	jhartigan	oh hey kweaver
+2014-11-19 21:20:19	jhartigan	forgot i talked to brian a good bit about that ror project
+2014-11-19 21:20:31	kweaver	ohw yeah jhartigan ?
+2014-11-19 21:20:38	kweaver	whats it all about
+2014-11-19 21:20:56	jhartigan	its for that guy who i got as a site lead
+2014-11-19 21:20:58	jhartigan	datalles
+2014-11-19 21:21:02	jhartigan	a background info guy
+2014-11-19 21:21:12	jhartigan	brian said hed 'like to see my ror skills' before deciding
+2014-11-19 21:21:21	jhartigan	but said lee would architect it, and we would build it
+2014-11-19 21:21:30	jhartigan	i said if it were start of new year, would probably be good
+2014-11-19 21:21:34	jhartigan	no other real iinfo other than that
+2014-11-19 21:21:50	kweaver	gotcha.  yeah thatd be my only request too.  after january 1 maybe
+2014-11-19 21:22:09	jhartigan	coincidentally i finally found a project ive got mild interest in and had just started it this wekk
+2014-11-19 21:22:14	jhartigan	so im getting some more rails in
+2014-11-19 21:22:39	kweaver	can you try the FTP info in the email kevin sent?
+2014-11-19 21:22:44	kweaver	I just tried and it didnt work
+2014-11-19 21:22:47	jhartigan	yeah one sec
+2014-11-19 21:22:50	kweaver	just wanna make sure im not cray
+2014-11-19 21:23:16	kweaver	I feel like FTP info is the most frequently mistaken info
+2014-11-19 21:23:44	jhartigan	i got in via web
+2014-11-19 21:23:46	jhartigan	sec
+2014-11-19 21:24:08	jhartigan	yeah i got them
+2014-11-19 21:24:16	kweaver	what port?
+2014-11-19 21:24:23	jhartigan	just use the link he sent
+2014-11-19 21:24:24	kweaver	i tried it ony fireftp and a chrome ftp
+2014-11-19 21:24:26	jhartigan	in browser
+2014-11-19 21:24:27	kweaver	ohhhh
+2014-11-19 21:24:34	jhartigan	ill give you dowload access
+2014-11-19 21:24:38	jhartigan	but should be port 21
+2014-11-19 21:24:48	jhartigan	since its KH ill bet they changed it like we did
+2014-11-19 21:25:29	kweaver	got it
+2014-11-19 21:29:27	kweaver	aight just read over everything.  seems pretty straight forward
+2014-11-19 21:29:37	kweaver	ill probably start the bullshit work part of it this weekend
+2014-11-19 21:31:59	kweaver	I plan on yanking the skeleton out of the quiz js so we use the same helper methods and general setup
+2014-11-19 21:32:53	jhartigan	yeah i feel like most of this one is tooo similar to the quizes
+2014-11-19 21:34:04	kweaver	like, reallllly similar
+2014-11-19 21:34:20	jhartigan	yeah. and i think we can actually get away with one js file
+2014-11-19 21:34:35	jhartigan	and tweak the json config to do the different shit
+2014-11-19 21:34:51	kweaver	yeah id have to really compare the 3 different planners, because id ideally rather just use 1 js file
+2014-11-19 21:35:06	kweaver	we dont need to do the json config, but i wouldnt mind doing one either
+2014-11-19 21:35:11	jhartigan	as of now, without epic comparisons, i feel like we can use just one json
+2014-11-19 21:35:17	jhartigan	js file
+2014-11-19 21:35:37	jhartigan	well i mean using the config to style and design the 3 different options
+2014-11-19 21:37:03	kweaver	so are we saving this data anywhere?  i thought the whole point was for weird kids to be able to go back later and see what they wrote
+2014-11-19 21:37:14	kweaver	but i dont see anything about saving this data.  only sending out an email
+2014-11-19 21:38:01	jhartigan	well.... i know how to write a cgi lol
+2014-11-19 21:38:05	jhartigan	since theyre against sqlite
+2014-11-19 21:40:19	kweaver	okay i see why he was thinking a different js for each.  we can definitely keep the majority of everything in one. but all of the fields and numbers of fields are pretty different
+2014-11-19 21:40:26	kweaver	one planner has a calendar randomly
+2014-11-19 21:40:52	jhartigan	lol.. your own gcal
+2014-11-19 21:41:38	kweaver	ahhh ok i see, so the whole point is really to print out a nice pretty page at the end
+2014-11-19 21:41:58	kweaver	just step through one of them http://kidshealth.org/teen/misc/making_a_change_module.html
+2014-11-19 21:42:13	kweaver	i hate styling for print.. D:
+2014-11-19 21:43:12	kweaver	should be way easier this time though
+2014-11-19 21:43:41	kweaver	last time the dynamic size of the bmi calc graph made it a pain.  these are all static
+2014-11-19 21:43:53	jhartigan	yeah its just silly charts
+2014-11-19 21:45:41	kweaver	anyway i copied all of daves notes from the hangout since the last meeting
+2014-11-19 21:46:08	kweaver	gonna continue implementing what i can
+2014-11-19 21:49:09	jhartigan	kk ill be working late as well
+2014-11-19 21:49:27	jhartigan	bout to eat actually and break for a bit, but ill pull whatever you get done and merge tomorrow
+2014-11-19 22:09:16	kweaver	jhartigan: did you say you had the csv loading data into amcharts yet?
+2014-11-19 22:09:30	kweaver	if so i wanna connect the db to the real data
+2014-11-19 22:10:28	jhartigan	no, well yes andno
+2014-11-19 22:10:32	jhartigan	its being parsed
+2014-11-19 22:11:53	jhartigan	but the graphs not drawing yet
+2014-11-19 22:11:58	jhartigan	need to further read the amcharts docs
+2014-11-19 22:28:55	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 22:28:55	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-11-19 22:28:57	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-19 22:45:54	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-11-19 22:47:43	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-19 22:49:33	kweaver	ive been getting this stupid issue trying to access my php script to upload from the database
+2014-11-19 22:49:37	kweaver	XMLHttpRequest cannot load http://localhost:4567/php/amcharts-upload.php. 
+2014-11-19 22:49:50	kweaver	pretty much all purple links on google
+2014-11-19 22:50:23	kweaver	made changes to file permissions, htaccess permissions, php permissions
+2014-11-19 22:56:12	jhartigan	best guess
+2014-11-19 22:56:18	jhartigan	you dont have php installe
+2014-11-19 22:56:26	jhartigan	and or middleman server cant run php
+2014-11-19 23:00:55	jhartigan	http://stackoverflow.com/questions/25843558/how-to-proxy-apache-to-middleman-server
+2014-11-19 23:02:22	kweaver	i think its php itself
+2014-11-19 23:02:35	kweaver	because when i go to the php screen, chrome just shows me the source
+2014-11-19 23:03:49	jhartigan	well thats cause middleman is a rails server for html and js i believe
+2014-11-19 23:03:52	jhartigan	not even js
+2014-11-19 23:03:58	jhartigan	you need a runtime library for that
+2014-11-19 23:04:33	jhartigan	so my best theory, and one thats not an easy fix, is that middleman cannot server php
+2014-11-19 23:04:37	jhartigan	serve*
+2014-11-19 23:05:32	kweaver	i wonder if this would be quicker to just throw the db up on oms1
+2014-11-19 23:05:36	kweaver	and load the file from there
+2014-11-19 23:06:48	jhartigan	yeah
+2014-11-19 23:06:50	jhartigan	most def
+2014-11-19 23:07:10	jhartigan	trying to proxy your local apache and middleman just wont be worth the work
+2014-11-19 23:09:22	kweaver	my biggest personal goal for these projects
+2014-11-19 23:09:44	kweaver	is that over the next month we manage our time well enough that we dont end up pulling a bunch of all nighters in a row
+2014-11-19 23:09:48	kweaver	thats all i ask
+2014-11-19 23:10:44	kweaver	im all for working under pressure, but im not tryna have anymore nemours project hell weeks
+2014-11-19 23:11:23	jhartigan	i dont think we will
+2014-11-19 23:11:38	jhartigan	this one could have some curve balls at the end, but i dnt think itll be too many
+2014-11-19 23:12:40	kweaver	i forget, what all is running on oms1?
+2014-11-19 23:13:01	jhartigan	i dont remotely know what youre looking for in an answer there haha
+2014-11-19 23:13:04	jhartigan	sites?
+2014-11-19 23:13:30	kweaver	what do we use oms1 for
+2014-11-19 23:13:34	kweaver	jira
+2014-11-19 23:13:43	kweaver	ticketing
+2014-11-19 23:13:46	jhartigan	jira, suite, tickets
+2014-11-19 23:13:48	jhartigan	mainly
+2014-11-19 23:13:53	jhartigan	theres a puppet server as well
+2014-11-19 23:14:18	kweaver	i wonder if its worth throwing some site on her?
+2014-11-19 23:14:27	kweaver	or maybe just dropping her back down to a smaller size
+2014-11-19 23:15:03	jhartigan	its definitely ready to be used for more sites, plus bc wont be on it
+2014-11-19 23:15:10	jhartigan	we just need to officially cancel lithium too
+2014-11-19 23:15:21	kweaver	yes
+2014-11-19 23:15:24	jhartigan	and we basically break even if it were to go smaller or stay the same
+2014-11-19 23:33:21	kweaver	fuckin git
+2014-11-19 23:33:24	kweaver	needs to make up their mind
+2014-11-19 23:33:32	kweaver	in the last year 
+2014-11-19 23:33:36	kweaver	shit went from:
+2014-11-19 23:33:39	kweaver	git add .
+2014-11-19 23:33:43	kweaver	to
+2014-11-19 23:33:47	kweaver	git add -A
+2014-11-19 23:34:11	kweaver	just got a new deprecation error
+2014-11-19 23:34:19	kweaver	now they want: git add --al
+2014-11-19 23:34:38	kweaver	git add --all    *
+2014-11-19 23:34:43	kweaver	that one^
+2014-11-19 23:35:09	jhartigan	i didnt get any errors with all three
+2014-11-19 23:35:23	jhartigan	do you use hub?
+2014-11-19 23:35:40	kweaver	github?
+2014-11-19 23:36:14	jhartigan	https://github.com/github/hub
+2014-11-19 23:36:20	jhartigan	its like a git extension
+2014-11-19 23:36:30	jhartigan	maybe thats why mine doesnt throw errors, they handle that shit for em
+2014-11-19 23:36:32	jhartigan	me
+2014-11-19 23:36:47	kweaver	possibly
+2014-11-19 23:36:49	kweaver	warning: The behavior of 'git add --all (or -A)' with no path argument from a
+2014-11-19 23:36:49	kweaver	subdirectory of the tree will change in Git 2.0 and should not be used anymore.
+2014-11-19 23:36:49	kweaver	To add content for the whole tree, run:
+2014-11-19 23:36:49	kweaver	  git add --all :/
+2014-11-19 23:37:09	kweaver	i lied, now they actually want you to add the colon and slash
+2014-11-19 23:37:12	kweaver	thats just ugly
+2014-11-19 23:37:25	jhartigan	oh
+2014-11-19 23:37:30	jhartigan	well i always add from the root
+2014-11-19 23:38:19	kweaver	oh im in source
+2014-11-19 23:38:26	kweaver	still, ive never seen that syntax before
+2014-11-19 23:38:36	jhartigan	neither have i
+2014-11-20 00:33:45	kweaver	myeh
+2014-11-20 00:33:56	kweaver	im debating between two means of displaying the graph
+2014-11-20 00:34:10	kweaver	i guess itll be up to them
+2014-11-20 00:36:48	kweaver	not worth typing up, ill just put together examples
+2014-11-20 00:38:07	jhartigan	what do you mean exactly
+2014-11-20 00:38:17	jhartigan	im porting the upload > graph as it is now
+2014-11-20 00:38:24	jhartigan	are you changing the type / style?
+2014-11-20 00:38:28	kweaver	style yeah
+2014-11-20 00:38:36	jhartigan	but same am shit?
+2014-11-20 00:38:39	kweaver	yeah
+2014-11-20 00:38:41	kweaver	dave introduced the concept of 4 different colors
+2014-11-20 00:38:42	jhartigan	kk
+2014-11-20 00:38:45	jhartigan	goto town
+2014-11-20 00:40:28	kweaver	think youll have csv upload tonight?
+2014-11-20 00:40:44	kweaver	trying to figure out how to show this properly
+2014-11-20 00:41:35	jhartigan	yeah im plannin on that being working for them to see
+2014-11-20 00:44:39	kweaver	jjwq
+2014-11-20 00:44:46	kweaver	yess
+2014-11-20 00:44:51	kweaver	wrong window
+2014-11-20 00:44:54	jhartigan	got vimmed
+2014-11-20 00:50:53	kweaver	yo can I screen share something real quick?  youll need to be able to explain these colors tomorrow
+2014-11-20 00:51:01	kweaver	you dont need to turn on your webcam if youre naked
+2014-11-20 00:51:03	kweaver	or maybe
+2014-11-20 00:51:05	kweaver	you should
+2014-11-20 00:51:06	kweaver	what
+2014-11-20 00:51:15	jhartigan	hahaha
+2014-11-20 00:51:20	jhartigan	yeah see if it works on my laptop
+2014-11-20 00:51:30	jhartigan	im chillin in bed, if not no worries ill just move over
+2014-11-20 00:52:14	kweaver	sec jhartigan 
+2014-11-20 00:52:47	jhartigan	can oyu hear me?
+2014-11-20 00:52:53	jhartigan	or are you talking i mean
+2014-11-20 02:07:38	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-11-20 02:19:32	kweaver	okay jhartigan pull develop when you get a sec
+2014-11-20 02:20:12	kweaver	the index now has a list of 4 example pages:
+2014-11-20 02:20:16	kweaver	zoom/layout
+2014-11-20 02:20:19	kweaver	colors stacked
+2014-11-20 02:20:23	kweaver	colors bunched
+2014-11-20 02:20:33	kweaver	populated by csv <-- where yours will go
+2014-11-20 02:23:15	kweaver	then check the nemours client notes
+2014-11-20 02:23:25	kweaver	i wrote up a quick list of points to hit on
+2014-11-20 02:23:46	kweaver	ima log jhartigan
+2014-11-20 02:23:47	kweaver	see ya
+2014-11-20 02:24:05	jhartigan	later yo
+2014-11-20 02:24:08	jhartigan	take it easy
+2014-11-20 02:24:36	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-30 11:24:37	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-30 11:24:37	--	Mode #omnidev [+ns] by sinisalo.freenode.net
+2014-11-30 11:24:37	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-30 11:24:37	--	Mode #omnidev [-o kweaver] by services.
+2014-11-30 11:24:37	--	Notice(sinisalo.freenode.net): *** Notice -- TS for #omnidev changed from 1417364677 to 1337223617
+2014-11-30 11:24:37	--	Mode #omnidev [+ct-s] by services.
+2014-11-30 11:24:37	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-30 11:24:37	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-30 11:24:39	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-30 12:33:27	--	irc: disconnected from server
+2014-11-30 13:35:21	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-11-30 13:35:21	--	Mode #omnidev [+ns] by tepper.freenode.net
+2014-11-30 13:35:21	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-11-30 13:35:21	--	Mode #omnidev [-o kweaver] by services.
+2014-11-30 13:35:21	--	Notice(tepper.freenode.net): *** Notice -- TS for #omnidev changed from 1417372526 to 1337223617
+2014-11-30 13:35:21	--	Mode #omnidev [+ct-s] by services.
+2014-11-30 13:35:21	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-11-30 13:35:21	--	Mode #omnidev [+o ChanServ] by services.
+2014-11-30 13:35:23	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-11-30 19:21:03	kweaver	hmm
+2014-12-01 01:34:39	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-12-01 08:51:01	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 08:51:01	--	Mode #omnidev [+ns] by wolfe.freenode.net
+2014-12-01 08:51:01	--	Channel #omnidev: 1 nick (1 op, 0 voices, 0 normals)
+2014-12-01 08:51:01	--	Mode #omnidev [-o kweaver] by services.
+2014-12-01 08:51:01	--	Notice(wolfe.freenode.net): *** Notice -- TS for #omnidev changed from 1417441719 to 1337223617
+2014-12-01 08:51:01	--	Mode #omnidev [+ct-s] by services.
+2014-12-01 08:51:01	-->	ChanServ (ChanServ@services.) has joined #omnidev
+2014-12-01 08:51:01	--	Mode #omnidev [+o ChanServ] by services.
+2014-12-01 08:51:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-12-01 09:17:34	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 09:17:34	<--	ChanServ (ChanServ@services.) has left #omnidev
+2014-12-01 09:42:51	jhartigan	hey kweaver remind me after the meeting and ill get you dem cool ass vim/tmux shits
+2014-12-01 09:42:59	kweaver	k
+2014-12-01 10:13:45	--	irc: disconnected from server
+2014-12-01 10:31:01	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 10:31:01	--	Channel #omnidev: 2 nicks (0 ops, 0 voices, 2 normals)
+2014-12-01 10:31:03	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-12-01 10:37:29	kweaver	jhartigan: is there anything new to show them on the longtail side?
+2014-12-01 10:37:44	kweaver	i kinda wish this was later in the week D:
+2014-12-01 10:37:57	jhartigan	im adding zoom and some other shit at the moment
+2014-12-01 10:38:10	jhartigan	zoom icd search and moving the tabs if all goes well
+2014-12-01 10:38:54	kweaver	comcast called and said they stop by earlier
+2014-12-01 10:38:59	kweaver	hopefuly i can get that out of the way first
+2014-12-01 10:39:07	kweaver	so my internet doesnt go down
+2014-12-01 10:39:41	jhartigan	good ol comcast
+2014-12-01 10:39:51	jhartigan	unless you wanna tell them your internets dropping and to move it
+2014-12-01 10:39:55	jhartigan	but you already worked from home
+2014-12-01 10:39:57	jhartigan	zooms going well
+2014-12-01 10:40:13	jhartigan	jumping to ICD code will be a little bit more difficult
+2014-12-01 10:40:21	jhartigan	but i think both well be good
+2014-12-01 10:40:27	jhartigan	 and i fixed a few small bugs they saw last time
+2014-12-01 11:01:17	kweaver	cool
+2014-12-01 11:02:00	kweaver	yeah as long as there are some visual differences to show them, the planner design should show them enough to be happy
+2014-12-01 11:02:07	kweaver	these weeks fly by so fast
+2014-12-01 11:02:30	kweaver	i plan on going hard every night and weekend this month though
+2014-12-01 11:02:45	kweaver	im totally fine with a hellish month if it means the majority of one year's income
+2014-12-01 11:07:26	kweaver	dude, comcast has to be the most evil villian of any company
+2014-12-01 11:07:35	kweaver	ive been dealing with shit internet for the last two months
+2014-12-01 11:07:53	kweaver	between 1 - 10mbps
+2014-12-01 11:08:14	kweaver	i get a call from the tech thats on his way "im looking at your internet now, everything seems fine."
+2014-12-01 11:08:22	kweaver	i do a speedtest and were al like 50mbps
+2014-12-01 11:08:25	kweaver	first time in months
+2014-12-01 11:10:17	kweaver	Im absolutely sure they have some script that increases internet speeds during the days of scheduled technician support.  just to make their guys look good 
+2014-12-01 11:12:30	kweaver	im sure heres gonna walk in, press a button on his phone and our internet will be through the roof for one week
+2014-12-01 11:13:27	kweaver	im actually tempted to write a script that checks and graphs my internet, and shows events like calling comcast and scheduling support 
+2014-12-01 11:14:17	kweaver	open source that puppy and tell other people to start agregating some real data
+2014-12-01 11:15:35	jhartigan	they have real data
+2014-12-01 11:15:39	jhartigan	they just dont care
+2014-12-01 11:15:44	jhartigan	cause they suck
+2014-12-01 11:16:10	kweaver	because america sucks
+2014-12-01 11:16:41	jhartigan	yeah we really do
+2014-12-01 11:16:53	jhartigan	mark cuban let me down recently
+2014-12-01 11:17:01	jhartigan	fuckin supporting the death of net neutrality
+2014-12-01 11:17:14	jhartigan	because the proposed option to preserve it isnt 'the right solution'
+2014-12-01 11:20:23	kweaver	its so sad when people actually prioritize the 'free market' of 3 cable companies vs the truly free market of millions of tech and online companies
+2014-12-01 11:21:09	kweaver	its worse for us too because this is our future
+2014-12-01 11:21:21	kweaver	if net neutrality fails, and finish heroes
+2014-12-01 11:22:09	kweaver	all it takes is verizon to be like "oh.  were gonna buy ems charts.  and if you arent ems charts, were just going to throttle you right out of the market lololol"
+2014-12-01 11:22:24	kweaver	and I finish heroes***
+2014-12-01 11:22:48	kweaver	that is an extremely real situation that could so easily happen
+2014-12-01 11:27:03	jhartigan	yeah absolutely
+2014-12-01 11:29:11	kweaver	pull master if you wanna see the planner design
+2014-12-01 11:29:15	kweaver	just doing the last page now
+2014-12-01 11:33:14	jhartigan	ight ill get it pulled in a few
+2014-12-01 11:33:16	jhartigan	wanna finish this zoom
+2014-12-01 11:43:17	kweaver	sounds good
+2014-12-01 11:43:31	kweaver	comcast just left.  our internet is at 140mbps now
+2014-12-01 11:43:37	kweaver	WOW THANKS COMCAST GUY
+2014-12-01 11:44:17	kweaver	literally just signed into our router and looked around
+2014-12-01 11:46:20	jhartigan	lol are you kidding?
+2014-12-01 11:46:24	kweaver	nope
+2014-12-01 11:46:43	kweaver	he had their app up on his phone though
+2014-12-01 11:47:14	kweaver	fuck that company
+2014-12-01 11:55:39	jhartigan	turned off the screw this customer button
+2014-12-01 11:59:54	jhartigan	ugh zoom is actually going to be trickier than i thought
+2014-12-01 12:00:38	jhartigan	unless we find where am adjusts its internal zoom from the slider
+2014-12-01 12:02:13	kweaver	its treated as a separate graph
+2014-12-01 12:02:17	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 12:02:18	kweaver	with settings
+2014-12-01 12:02:24	kweaver	pulling from the same data
+2014-12-01 12:02:28	jhartigan	but the zoom isnt
+2014-12-01 12:02:34	jhartigan	zoom has no settings
+2014-12-01 12:02:38	kweaver	oh
+2014-12-01 12:02:49	jhartigan	i cant pull where its currently located
+2014-12-01 12:02:59	jhartigan	i can do it all myself for the enter zoom button
+2014-12-01 12:03:07	jhartigan	but i cant actually pull from adjustments to the scrollbar
+2014-12-01 12:03:23	jhartigan	http://docs.amcharts.com/3/javascriptcharts/ChartScrollbar
+2014-12-01 12:04:30	kweaver	so youre using the zoom input box to set the maximum and minimum values I assume?
+2014-12-01 12:04:46	jhartigan	no
+2014-12-01 12:04:55	jhartigan	those are calculated
+2014-12-01 12:05:01	jhartigan	the scrollbar values doesnt matter
+2014-12-01 12:05:32	jhartigan	i can set a zoom with the input we have on the bottom
+2014-12-01 12:05:48	jhartigan	and can kinda keep the current targeted focus
+2014-12-01 12:06:02	jhartigan	but i cant track the changes made when zooming with the tabs on the scrollbar
+2014-12-01 12:07:21	kweaver	i see
+2014-12-01 12:07:38	jhartigan	i mean i could just not track those changes
+2014-12-01 12:07:45	jhartigan	and just override the zoom with the percent
+2014-12-01 12:07:50	kweaver	you wanna work from starbucks for an hour or two after our meeting maybe?
+2014-12-01 12:08:13	jhartigan	dunno
+2014-12-01 12:08:22	jhartigan	might have to take my moms truck into shop
+2014-12-01 12:08:25	jhartigan	car*
+2014-12-01 12:08:26	kweaver	aight
+2014-12-01 12:08:30	kweaver	we'll play it by ear
+2014-12-01 12:08:34	jhartigan	she got rear ended the other night driving my uncle to the airport
+2014-12-01 12:08:38	jhartigan	but i havent heard from her yet
+2014-12-01 12:08:42	kweaver	that sucks
+2014-12-01 12:08:57	jhartigan	yeah not the best two weeks for her with her mom falling and the crash
+2014-12-01 12:16:54	jhartigan	so were just gonna use the percent to set the zoom level
+2014-12-01 12:17:10	jhartigan	not actually coordinate with the current scrollbar position cause amcharts doesnt give access to that
+2014-12-01 12:18:18	kweaver	aight
+2014-12-01 12:18:37	kweaver	thats shitty that they dont have just a few functions for it
+2014-12-01 12:19:48	jhartigan	yeah i cant really figure out why they dont have it
+2014-12-01 12:19:51	jhartigan	the api is decent
+2014-12-01 12:20:07	jhartigan	but its like the third time ive had an issue finding what should be simple
+2014-12-01 12:20:27	jhartigan	just wasting too much try trying to macguyver my own settings
+2014-12-01 12:30:15	kweaver	worst case we'd have to reimplement our own zoom, which is what we'd have to do anyway with with D3
+2014-12-01 12:32:01	jhartigan	that wouldnt remotely be easy with am charts
+2014-12-01 12:32:04	jhartigan	unless we read all of their code
+2014-12-01 12:32:10	jhartigan	since itd have to tie into their graph
+2014-12-01 12:43:22	jhartigan	making food irght quick ill brb if you need me
+2014-12-01 12:43:39	kweaver	k
+2014-12-01 13:20:45	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 264 seconds)
+2014-12-01 14:03:32	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 14:11:46	-->	kweaver2 (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 14:11:46	--	Channel #omnidev: 4 nicks (0 ops, 0 voices, 4 normals)
+2014-12-01 14:11:48	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-12-01 14:11:53	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-12-01 15:03:59	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 15:03:59	--	Channel #omnidev: 3 nicks (0 ops, 0 voices, 3 normals)
+2014-12-01 15:04:01	--	Channel created on Wed, 16 May 2012 23:00:17
+2014-12-01 17:16:46	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2014-12-01 17:54:30	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Ping timeout: 256 seconds)
+2014-12-01 19:02:32	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #omnidev
+2014-12-01 21:50:37	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has quit (Remote host closed the connection)
+2014-12-01 23:41:12	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)

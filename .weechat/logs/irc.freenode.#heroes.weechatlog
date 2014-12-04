@@ -485,3 +485,278 @@
 2014-11-17 22:45:09	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
 2014-11-17 22:45:09	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
 2014-11-17 22:45:14	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-18 21:20:12	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-18 21:20:12	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-11-18 21:20:16	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-19 19:15:41	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 19:15:41	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-19 19:15:45	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-19 20:18:33	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 20:23:51	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 258 seconds)
+2014-11-19 21:15:47	--	irc: disconnected from server
+2014-11-19 21:16:13	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 21:16:13	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-19 21:16:17	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-19 21:17:17	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 22:28:55	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-19 22:28:55	--	Channel #heroes: 3 nicks (1 op, 0 voices, 2 normals)
+2014-11-19 22:28:59	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-20 02:07:38	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-11-20 02:24:36	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-11-30 11:24:37	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-30 11:24:37	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-30 11:24:41	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-11-30 12:33:27	--	irc: disconnected from server
+2014-11-30 13:35:21	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-11-30 13:35:21	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-11-30 13:35:25	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-12-01 01:34:39	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2014-12-01 08:51:01	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 08:51:01	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-12-01 08:51:05	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-12-01 09:17:34	-->	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 09:18:58	<--	jhartigan (~jhartigan@c-68-44-222-82.hsd1.nj.comcast.net) has left #heroes
+2014-12-01 10:13:45	--	irc: disconnected from server
+2014-12-01 10:31:01	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 10:31:01	--	Channel #heroes: 2 nicks (1 op, 0 voices, 1 normal)
+2014-12-01 10:31:05	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-12-01 12:02:17	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 13:17:43	-->	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has joined #heroes
+2014-12-01 13:18:24	jchaike	yo kweaver_desktop  kweaver  when youve got a second lemme know
+2014-12-01 13:20:45	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 264 seconds)
+2014-12-01 13:22:21	kweaver	sup jchaike 
+2014-12-01 13:22:42	jchaike	so i pulled develop
+2014-12-01 13:22:48	kweaver	ya
+2014-12-01 13:23:09	jchaike	and the date issue is up again, dio you remember any merge issues when you merged into develop?
+2014-12-01 13:23:31	kweaver	i had like 12 merge issues
+2014-12-01 13:23:49	kweaver	i was pretty careful
+2014-12-01 13:23:54	kweaver	though its possible i missed something
+2014-12-01 13:24:01	kweaver	check my commit on bitbucket
+2014-12-01 13:24:55	kweaver	right now im skimming everything to make sure we are good to be done the refactor by tomorrow
+2014-12-01 13:25:01	jchaike	ok awesome
+2014-12-01 13:25:15	jchaike	i was gonna check out jira, but im going to now just fix this date issue, or figure out what the comits were and stuff
+2014-12-01 13:25:27	kweaver	so check the merge, see if i missed something
+2014-12-01 13:25:29	kweaver	check bitbucket
+2014-12-01 13:25:32	jchaike	yup sure
+2014-12-01 13:25:37	kweaver	since wont have all of them
+2014-12-01 13:25:43	kweaver	since jira wont**
+2014-12-01 13:26:24	jchaike	did you work on friday? kweaver ?
+2014-12-01 13:26:38	kweaver	yeah, but just some odds an ends shit
+2014-12-01 13:26:44	kweaver	looked into angular some more
+2014-12-01 13:27:06	kweaver	found a couple neat rails gems that we could use in the future
+2014-12-01 13:27:14	jchaike	awesome
+2014-12-01 13:27:28	jchaike	im looking forward to implementing angular, its going to make heroes feel more complete
+2014-12-01 13:27:31	jchaike	and fluid
+2014-12-01 13:27:34	kweaver	yeah
+2014-12-01 13:28:14	jchaike	im not finding anything in your commits, ill just debug it like i did last time
+2014-12-01 13:28:30	jchaike	i wouldnt expect it taking as long as wedensday becuase i know what im looking for this time
+2014-12-01 13:29:03	kweaver	yeah
+2014-12-01 13:29:14	kweaver	if its my fault, sorry about that
+2014-12-01 13:29:20	jchaike	no problem
+2014-12-01 13:29:32	jchaike	im not sure what it was
+2014-12-01 13:29:45	jchaike	i was so sure i fixed it, and looking at the code it looks like all you changed was tripsheet_flu to pcr_flu
+2014-12-01 13:29:50	jchaike	so i wouldnt think thatd be an issue
+2014-12-01 13:30:28	kweaver	the main changes were: tripsheet -> pcr, client -> provider, invoice_invoice -> invoice_ambulance
+2014-12-01 13:31:19	kweaver	so i changed like every file, and had to rename files and folders
+2014-12-01 13:32:17	kweaver	now any code in something like "invoice_invoice.js" or "helper/invoice/invoice.rb" will be general code to any invoice
+2014-12-01 13:32:31	kweaver	so its possible that caused some issues for you
+2014-12-01 13:40:36	<--	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-12-01 13:43:26	-->	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has joined #heroes
+2014-12-01 13:44:27	jchaike	kweaver
+2014-12-01 13:44:28	jchaike	just making sure
+2014-12-01 13:44:29	jchaike	@invoice_flu..consent_date = @invoice_flu.service_date
+2014-12-01 13:44:43	kweaver	correct. at least for now
+2014-12-01 13:44:44	jchaike	thats a syntax issue correct? @invoice_flu.consent date no invoice_flu......consent_date
+2014-12-01 13:45:09	jchaike	the two ..'s
+2014-12-01 13:45:09	kweaver	it should be one period
+2014-12-01 13:45:12	kweaver	correct
+2014-12-01 13:45:15	jchaike	kk just making sure
+2014-12-01 13:45:18	kweaver	probably my find replace
+2014-12-01 13:45:22	jchaike	i know that you can do 1..20 and thats correct right?
+2014-12-01 13:45:26	jchaike	meaning 1 thorugh 20
+2014-12-01 13:45:37	kweaver	also, i disconnected flu pcr from flu invoice
+2014-12-01 13:45:43	kweaver	yeah
+2014-12-01 13:48:22	jchaike	kweaver there is no consent date for invoice_flu
+2014-12-01 13:48:26	jchaike	should i create that field?
+2014-12-01 13:54:12	jchaike	kweaver does the flus_controller need to accept parameters for patient?
+2014-12-01 13:54:25	jchaike	i mean added to  params.require
+2014-12-01 13:54:46	kweaver	sec
+2014-12-01 13:54:48	kweaver	brb actually
+2014-12-01 13:54:50	jchaike	sure
+2014-12-01 14:03:32	-->	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 14:11:46	-->	kweaver2 (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 14:11:46	--	Channel #heroes: 5 nicks (1 op, 0 voices, 4 normals)
+2014-12-01 14:11:46	--	Notice(weber.freenode.net): [freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+2014-12-01 14:11:47	[url]:	http://tinyurl.com/6levd
+2014-12-01 14:11:50	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-12-01 14:11:53	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Ping timeout: 240 seconds)
+2014-12-01 15:03:59	-->	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has joined #heroes
+2014-12-01 15:03:59	--	Channel #heroes: 4 nicks (1 op, 0 voices, 3 normals)
+2014-12-01 15:04:03	--	Channel created on Mon, 18 Jan 2010 18:55:10
+2014-12-01 15:04:59	kweaver	still need help jchaike ?
+2014-12-01 15:05:10	jchaike	yeah can i ping you in a minute? on the phone with brian with all metro for a minute
+2014-12-01 15:05:27	kweaver	k
+2014-12-01 15:08:35	jchaike	yo kweaver
+2014-12-01 15:08:35	jchaike	ok
+2014-12-01 15:08:36	jchaike	so
+2014-12-01 15:08:48	jchaike	still not 100% sure about the date thing, it seems to have something to do with relationships maybe?
+2014-12-01 15:09:20	jchaike	like date_of_birth and [invoice_insurance_policy_attributes][holder_dob] or whatever
+2014-12-01 15:09:21	jchaike	those all dont work
+2014-12-01 15:09:36	jchaike	and its not even trying to filter those dates at all and thats what the issue is
+2014-12-01 15:09:44	jchaike	i saw that date_of_birth wasnt in the params.require
+2014-12-01 15:09:46	jchaike	so i added it
+2014-12-01 15:09:48	jchaike	but that didnt seem to help
+2014-12-01 15:10:11	jchaike	the insurance_policy_attributes seems to be in place
+2014-12-01 15:10:13	jchaike	also
+2014-12-01 15:10:16	jchaike	so im not sure whats going on exactly
+2014-12-01 15:23:20	kweaver	hmm
+2014-12-01 15:25:45	jchaike	im looking at the models now
+2014-12-01 15:25:51	jchaike	but to me everything looks ok
+2014-12-01 15:26:01	jchaike	but theres a lot of changes that i might not be aware of you know?
+2014-12-01 15:26:29	kweaver	looking at it now
+2014-12-01 15:26:38	jchaike	ok cool
+2014-12-01 15:45:57	<--	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-12-01 15:48:29	-->	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has joined #heroes
+2014-12-01 15:48:32	jchaike	yo kweaver, sorry not sure why i keep disconnecting
+2014-12-01 15:48:45	kweaver	i was DCing all yesterday
+2014-12-01 15:48:50	kweaver	been better since comcast came
+2014-12-01 15:49:00	jchaike	getting better speeds now?
+2014-12-01 15:49:07	kweaver	ive been down to like 1-10mbps for the last couple months
+2014-12-01 15:49:13	jchaike	ew
+2014-12-01 15:49:22	jchaike	no way smash bros is fun on that connection speed lol
+2014-12-01 15:49:37	kweaver	its not
+2014-12-01 15:50:07	kweaver	dude doesnt do anything, just walks in and signs into my router
+2014-12-01 15:50:14	kweaver	now im up to 36mbps
+2014-12-01 15:50:19	jchaike	lmfao
+2014-12-01 15:50:24	kweaver	course he was on his phone with the comcast app
+2014-12-01 15:50:52	kweaver	i would, in no way, be surprised if they boost internet speeds during support appointments
+2014-12-01 15:51:02	jchaike	thatd be so fucked
+2014-12-01 15:51:37	kweaver	cause seriously, ts been shit for months.  i checked it yesterday and it was like 8mbps
+2014-12-01 15:51:59	kweaver	i get a call this morning "im on my way for the tech support.  i just checked, and your internet seems fine from our end"
+2014-12-01 15:52:05	kweaver	i check again, its like 50 mbps
+2014-12-01 15:52:16	jchaike	lmao thats crazy
+2014-12-01 15:52:25	kweaver	i wouldnt even be surprised if that was just an automated script they wrote
+2014-12-01 15:52:32	kweaver	tie it into the scheduling software
+2014-12-01 15:52:56	kweaver	boost the internet during the day of an support tech appointment to make themselves look good
+2014-12-01 15:53:14	kweaver	i hate that company
+2014-12-01 15:53:19	jchaike	that would be so messed up
+2014-12-01 15:53:28	jchaike	do you have fios as an option
+2014-12-01 15:53:44	kweaver	nah, we did at our old pitman house, not in sewell though
+2014-12-01 15:53:51	kweaver	i was so sad when we had to switch back
+2014-12-01 15:53:59	jchaike	wow. so youre forced to use comcast basically?
+2014-12-01 15:54:11	kweaver	yup, or i think direct tv
+2014-12-01 15:54:17	kweaver	merica
+2014-12-01 15:58:09	jchaike	lmao
+2014-12-01 15:58:16	jchaike	i mean better than like australia
+2014-12-01 15:58:42	jchaike	i was working on a proj with someone from there, they could only work on the project with me in bursts of time becuase they pay for their home internet on a per MB plan lmao
+2014-12-01 15:59:08	kweaver	that sucks
+2014-12-01 15:59:28	kweaver	yeah i felt really bad when i called, cause some lady from india answered and set up my appointment
+2014-12-01 15:59:40	kweaver	and while she was waiting for stuff, we chatted
+2014-12-01 16:00:24	kweaver	and i dont think she was supposed to talk about this kinda stuff, but she was telling me that in 'her place' they only got like 1/100 of what comcast offers in 'my place'
+2014-12-01 16:00:42	kweaver	and i was like "yeahh.... thats rough..."
+2014-12-01 16:00:45	kweaver	made me feel like a dick
+2014-12-01 16:01:06	kweaver	then she started talking about her kids and stuff
+2014-12-01 16:01:34	kweaver	and how her nanny is pregnant now, so shes going to have to find someone else
+2014-12-01 16:02:01	jchaike	wow lmao
+2014-12-01 16:02:11	jchaike	ive never gotten that personal with a customer service person
+2014-12-01 16:02:17	kweaver	hahah i havent either
+2014-12-01 16:02:20	jchaike	i mean not LOL, thats relaly rough
+2014-12-01 16:02:51	kweaver	someday ill find 'Amy' from comcast india
+2014-12-01 16:02:56	kweaver	and move her out to america
+2014-12-01 16:02:58	jchaike	lmfao
+2014-12-01 16:03:12	jchaike	should have asked if htats her real name
+2014-12-01 16:03:17	jchaike	or if its her comcast id lol
+2014-12-01 16:03:29	jchaike	yo ive been just browsing through the heroes project and i cant find anything, im not sure what im missing
+2014-12-01 16:04:24	kweaver	did you try skimming through the merge commit?
+2014-12-01 16:04:31	jchaike	yeah nothing involving dates
+2014-12-01 16:05:18	jchaike	its weird becuase its not showing up on commits but i did find an issue with the filter_date helper method
+2014-12-01 16:05:23	jchaike	but it didnt fix what i though tit would
+2014-12-01 16:05:25	jchaike	*thought it would
+2014-12-01 16:07:26	jchaike	uh not sure what changed but might have figured it out?
+2014-12-01 16:07:35	jchaike	i think im confusing date_of_birth and birth_date
+2014-12-01 16:07:40	jchaike	do we use them interchangably?
+2014-12-01 16:07:44	jchaike	or do we use one over the other?
+2014-12-01 16:07:55	kweaver	we only use birth_date now
+2014-12-01 16:08:02	jchaike	AH thats it
+2014-12-01 16:08:04	jchaike	fuck
+2014-12-01 16:08:07	kweaver	hahah damnnn
+2014-12-01 16:08:59	kweaver	the pains of refactoring with more than one person
+2014-12-01 16:09:04	jchaike	yeah lol
+2014-12-01 16:09:19	jchaike	ok so then one last issue with date is the invoice_insurance_policy
+2014-12-01 16:09:48	kweaver	probably the same?
+2014-12-01 16:09:50	jchaike	which is odd becuase in console I can do Invoice::Flu.last.invoice_insurance_policy.holder_birth_date
+2014-12-01 16:10:13	jchaike	 params[:invoice_flu][:invoice_insurance_policy_attributes][:holder_birth_date]
+2014-12-01 16:10:18	jchaike	is what i would expect'
+2014-12-01 16:10:21	jchaike	it to be
+2014-12-01 16:10:27	kweaver	which file is that?
+2014-12-01 16:10:54	jchaike	app/helpers/invoice/flus_helper.rb
+2014-12-01 16:13:20	kweaver	do [:invoice_flu][:holder_birth_date]
+2014-12-01 16:14:17	kweaver	last.invoice_insurance_policy.holder_birth_date only works because after we pass the params in, I create the actual invoice_insurance_policy model for it
+2014-12-01 16:14:33	kweaver	in the params and on the form though, we arent actually creating the ins policy yet
+2014-12-01 16:14:44	jchaike	AH
+2014-12-01 16:14:48	jchaike	didnt realize that
+2014-12-01 16:14:49	jchaike	thanks
+2014-12-01 16:14:55	jchaike	trying that out now
+2014-12-01 16:14:58	kweaver	only using the ins policy fields, because we named them the same as the invoice_flu fields
+2014-12-01 16:15:58	kweaver	yeah, once youre done with those masks/chosens, then both invoices are now caught up to date with all fields, masks, chosens, autopopulation, and model creation
+2014-12-01 16:22:34	jchaike	awesome
+2014-12-01 16:23:50	jchaike	kweaver brian said you should come in a little early tomorrow, i moved your desktop into the office, so youre computerless/deskless/monitorless
+2014-12-01 16:23:55	jchaike	theres stuff there, but not setup yet'
+2014-12-01 16:32:55	kweaver	oh damn
+2014-12-01 16:32:56	kweaver	alright
+2014-12-01 16:33:20	jchaike	i mean he said come in early so you dont come in at 9 expecting to start actually getting to work at 9
+2014-12-01 16:33:23	jchaike	or whatever time you came in
+2014-12-01 16:33:28	kweaver	sounds good
+2014-12-01 16:33:34	kweaver	usually 8:30, ill head in at 8
+2014-12-01 16:33:44	jchaike	he also mentione dsomething about a desk he wasnt sure if you bought the desk or not thats why we didnt set up anything for you
+2014-12-01 16:33:55	kweaver	i just messaged him
+2014-12-01 16:33:58	kweaver	gonna buy it now
+2014-12-01 16:34:00	jchaike	ok cool
+2014-12-01 16:34:19	jchaike	cool
+2014-12-01 16:34:23	jchaike	you and brian are both getting one?
+2014-12-01 16:34:31	kweaver	nah i think just me for now
+2014-12-01 16:34:36	kweaver	im just buying it myself
+2014-12-01 16:34:45	kweaver	he might buy his own later, dunno
+2014-12-01 16:35:42	jchaike	oh cool
+2014-12-01 16:35:47	jchaike	i started moving computers around today
+2014-12-01 16:35:51	jchaike	so sharon is next to me
+2014-12-01 16:36:11	jchaike	jenny is parallel to sharon and theres nobody in the "middle" except me
+2014-12-01 16:40:25	jchaike	hm still having insurance policy holder_birth_date issues
+2014-12-01 16:40:53	kweaver	jchaike: was today our clean up day?
+2014-12-01 16:41:01	jchaike	not that i was aware of
+2014-12-01 16:41:12	jchaike	wednesday
+2014-12-01 16:41:14	jchaike	december 3rd
+2014-12-01 16:41:15	kweaver	okay cool
+2014-12-01 16:41:16	jchaike	this wednesday
+2014-12-01 16:41:40	kweaver	thats what i thought
+2014-12-01 16:41:40	jchaike	i feel like thatll be good, code cleanup, IRL cleanup lmao
+2014-12-01 16:41:46	kweaver	haha
+2014-12-01 16:41:47	kweaver	yeah
+2014-12-01 16:42:09	jchaike	when i cant work or sturggling to get school work done, i just like clean up my entire room, and then feel so much better about doing work lamo
+2014-12-01 16:42:17	jchaike	and i want to punch this date issue in the face
+2014-12-01 16:46:22	kweaver	its gonna be a variation on either of those issues
+2014-12-01 16:46:26	kweaver	just somewhere else in the code
+2014-12-01 16:49:14	jchaike	so its definitely seperated even though the partial render is
+2014-12-01 16:49:14	jchaike	 = render partial: "insurance/policies/fields", locals: { :f => builder }
+2014-12-01 16:50:39	kweaver	yeah, we just render the same partial since ive renamed all of our variables to be the same
+2014-12-01 16:50:49	jchaike	alright
+2014-12-01 16:50:53	jchaike	im tryign to just like work backwards
+2014-12-01 16:51:23	kweaver	nothing in that partial actually specificies which model it should go to
+2014-12-01 16:51:25	kweaver	yeah i hear ya
+2014-12-01 17:01:10	jchaike	ugh i honeslty have no idea
+2014-12-01 17:01:16	jchaike	im sure im overlooking something so dumb
+2014-12-01 17:01:18	jchaike	but i cant figure it out
+2014-12-01 17:01:39	kweaver	merge whatever you have into develop
+2014-12-01 17:01:43	jchaike	yeah im gonna do that
+2014-12-01 17:02:08	jchaike	im going to comment out the line im having issues with so everything works as long as the month and day of the date could be interchangable
+2014-12-01 17:02:20	kweaver	k
+2014-12-01 17:02:23	jchaike	so maybe we can take like 10 minutes wednesday and look through it
+2014-12-01 17:04:39	kweaver	yeah
+2014-12-01 17:04:45	jchaike	ok cool
+2014-12-01 17:04:52	jchaike	gotta get htis date thing behind me lmao
+2014-12-01 17:04:54	jchaike	it keeps haunting me
+2014-12-01 17:05:08	kweaver	fereal
+2014-12-01 17:05:31	jchaike	alright well im OUTIE. see you wednesday
+2014-12-01 17:05:49	<--	jchaike (~jchaike@dhcp-arubawireless-218-22.rowan.edu) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-12-01 17:16:46	<--	kweaver_desktop (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 0.4.2)
+2014-12-01 23:41:12	<--	kweaver (~kweaver@c-68-45-107-225.hsd1.nj.comcast.net) has quit (Quit: WeeChat 1.0.1)

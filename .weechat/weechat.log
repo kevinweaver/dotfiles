@@ -1,16 +1,16 @@
-[2014-11-17 22:44:52] WeeChat 1.0.1 (compiled on Sep 28 2014 11:47:35)
-[2014-11-17 22:44:52] Reading configuration file sec.conf
-[2014-11-17 22:44:52] Reading configuration file weechat.conf
-[2014-11-17 22:44:52] Reading configuration file plugins.conf
-[2014-11-17 22:44:52] Reading configuration file relay.conf
-[2014-11-17 22:44:52] Reading configuration file buffers.conf
-[2014-11-17 22:44:52] Reading configuration file xfer.conf
-[2014-11-17 22:44:52] Reading configuration file charset.conf
-[2014-11-17 22:44:52] Reading configuration file trigger.conf
-[2014-11-17 22:44:52] Reading configuration file exec.conf
-[2014-11-17 22:44:52] Reading configuration file script.conf
-[2014-11-17 22:44:52] Reading configuration file irc.conf
-[2014-11-17 22:44:52] irc: connecting to server chat.freenode.net/6667...
-[2014-11-17 22:44:52] Reading configuration file aspell.conf
-[2014-11-17 22:44:52] Reading configuration file logger.conf
-[2014-11-17 22:44:52] Reading configuration file alias.conf
+[2014-12-03 21:54:41] WeeChat 1.0.1 (compiled on Sep 28 2014 11:47:35)
+[2014-12-03 21:54:41] Reading configuration file sec.conf
+[2014-12-03 21:54:41] Reading configuration file weechat.conf
+[2014-12-03 21:54:41] Reading configuration file plugins.conf
+[2014-12-03 21:54:41] Reading configuration file relay.conf
+[2014-12-03 21:54:41] Reading configuration file buffers.conf
+[2014-12-03 21:54:41] Reading configuration file xfer.conf
+[2014-12-03 21:54:41] Reading configuration file charset.conf
+[2014-12-03 21:54:41] Reading configuration file trigger.conf
+[2014-12-03 21:54:42] Reading configuration file exec.conf
+[2014-12-03 21:54:42] Reading configuration file script.conf
+[2014-12-03 21:54:42] Reading configuration file irc.conf
+[2014-12-03 21:54:42] irc: connecting to server chat.freenode.net/6667...
+[2014-12-03 21:54:42] Reading configuration file aspell.conf
+[2014-12-03 21:54:42] Reading configuration file logger.conf
+[2014-12-03 21:54:42] Reading configuration file alias.conf

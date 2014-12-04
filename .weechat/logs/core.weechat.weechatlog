@@ -1640,3 +1640,49 @@
 2014-11-17 22:24:17		ruby: scripts unloaded
 2014-11-17 22:44:52		ruby scripts loaded: url_shorten
 2014-11-17 22:44:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-17 23:43:32		fifo: pipe closed
+2014-11-17 23:43:32		ruby: scripts unloaded
+2014-11-18 21:19:56		ruby scripts loaded: url_shorten
+2014-11-18 21:19:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-18 21:19:57		script: 279 scripts for WeeChat 1.0.1
+2014-11-18 22:55:57		fifo: pipe closed
+2014-11-18 22:55:57		ruby: scripts unloaded
+2014-11-19 19:15:25		ruby scripts loaded: url_shorten
+2014-11-19 19:15:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-19 19:15:26		script: 279 scripts for WeeChat 1.0.1
+2014-11-19 22:27:06		fifo: pipe closed
+2014-11-19 22:27:06		ruby: scripts unloaded
+2014-11-19 22:28:42		ruby scripts loaded: url_shorten
+2014-11-19 22:28:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-19 22:28:59		script: 279 scripts for WeeChat 1.0.1
+2014-11-20 02:24:36		fifo: pipe closed
+2014-11-20 02:24:36		ruby: scripts unloaded
+2014-11-30 11:24:24		ruby scripts loaded: url_shorten
+2014-11-30 11:24:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-30 11:24:25		script: 279 scripts for WeeChat 1.0.1
+2014-11-30 12:58:16		fifo: pipe closed
+2014-11-30 12:58:16		ruby: scripts unloaded
+2014-11-30 13:35:05		ruby scripts loaded: url_shorten
+2014-11-30 13:35:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-11-30 13:35:06		script: 279 scripts for WeeChat 1.0.1
+2014-12-01 01:34:39		fifo: pipe closed
+2014-12-01 01:34:39		ruby: scripts unloaded
+2014-12-01 08:50:46		ruby scripts loaded: url_shorten
+2014-12-01 08:50:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-01 08:50:47	=!=	script: error downloading list of scripts: curl error 56 () (URL: "http://www.weechat.org/files/plugins.xml.gz")
+2014-12-01 10:17:47		fifo: pipe closed
+2014-12-01 10:17:47		ruby: scripts unloaded
+2014-12-01 10:30:47		ruby scripts loaded: url_shorten
+2014-12-01 10:30:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-01 10:30:48		script: 279 scripts for WeeChat 1.0.1
+2014-12-01 14:08:34		fifo: pipe closed
+2014-12-01 14:08:34		ruby: scripts unloaded
+2014-12-01 14:11:28		ruby scripts loaded: url_shorten
+2014-12-01 14:11:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-01 14:11:29		script: 279 scripts for WeeChat 1.0.1
+2014-12-01 15:03:39		fifo: pipe closed
+2014-12-01 15:03:39		ruby: scripts unloaded
+2014-12-01 15:03:46		ruby scripts loaded: url_shorten
+2014-12-01 15:03:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-01 23:41:12		fifo: pipe closed
+2014-12-01 23:41:12		ruby: scripts unloaded
