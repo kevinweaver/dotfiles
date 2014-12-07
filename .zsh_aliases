@@ -41,4 +41,4 @@ alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcen
 alias heroes="cd ~/workspace/applications/ems-heroes"
 alias hackerhang="cd ~/workspace/applications/hackerhang"
 alias nemours="cd ~/workspace/projects/kidshealth-longtail/source"
-alias heroes-site="cd ~/workspace/sites/ems-heroes"
+alias nemoursp="cd ~/workspace/projects/kidshealth-planner/source"
