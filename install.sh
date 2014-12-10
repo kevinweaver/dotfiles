@@ -103,6 +103,9 @@ ror(){
   ruby -v
   gem install rails
   rails -v
+
+  sudo gem install bundler
+
 }
 
 ######################
