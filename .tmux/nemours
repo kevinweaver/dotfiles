@@ -12,11 +12,10 @@ select-pane -t 2
 split-window -h -p 66
 
 # run commands
-send -t 0 heroes ENTER
-send -t 1 heroes ENTER
-send -t 1 'rails c' ENTER
-send -t 2 heroes ENTER
-send -t 2 'rails s' ENTER
+send -t 0 nemours ENTER
+send -t 1 nemours ENTER
+send -t 1 'bundle exec midbundle exec middleman ss' ENTER
+send -t 2 nemours ENTER
 send -t 3 weechat ENTER
 
 select-pane -t 0
