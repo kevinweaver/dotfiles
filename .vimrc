@@ -136,6 +136,7 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
   set smartcase
   "pressing enter key in command mode removes search highlighting
   nnoremap <CR> :nohlsearch <CR>
+  nnoremap Q <nop>
 
 "set mouse=a
 
