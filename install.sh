@@ -195,7 +195,7 @@ iptables(){
 }
 
 ######################
-# Ip tables
+# Color Scheme
 ######################
 colors(){
   echo "Almost done.  Set up your color scheme..."
