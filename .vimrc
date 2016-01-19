@@ -122,6 +122,32 @@ set foldnestmax=2
 set foldlevel=100
 set foldenable
 
+set undofile                                      "allow per file undo persistance
+set undoreload=10000
+set undodir=~/.vim/tmp/undo//                     "undo dir
+set backupdir=~/.vim/tmp/backups//                "backup dir -- // saves full filepath with % as folder delimeter
+set directory=~/.vim/tmp/swap//                   "temporary dir for swap files
+set backup                                        "file backups enabled
+set writebackup                                   "enabling backups
+set noswapfile                                    "disable swaps - were using backups in 2015
+
+" if undo and backup directories do not exist, make them
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮  "show unicode characters for tab,eol,and with wrap on
+set showbreak=↪
+
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+nnoremap <leader>ww mz:%s/\s\+$//<cr>:let @/=''<cr>`z
+"clears eol whitespace
+
 nmap <f3> :TagbarToggle<CR>
 
 " set smartindent
