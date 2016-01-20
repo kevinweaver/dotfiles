@@ -25,12 +25,6 @@ dnslookup(){
   dig $1 ANY +noall +answer
 }
 
-# General Aliases
-alias ll="ls -l"
-alias la="ls -a"
-alias deploy="~/scripts/deployment_scripts/main_deploy.sh"
-alias sudo="nocorrect sudo"
-alias gitog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # General Aliases
 alias scan="xsane"
@@ -43,7 +37,7 @@ alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed
 alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake db:initialize"
 alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
 alias tether="easytether connect"
-alias colors="~/.dotfiles/gnome-terminal-colors/install.sh"
+alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
 #Website Project Folders
 alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart_tranq"
