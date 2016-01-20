@@ -4,12 +4,6 @@ ZSH=$HOME/.oh-my-zsh
 DEFAULT_USER="kevin"
 
 ZSH_THEME="mh"
-# Aliases
-alias ll="ls -l"
-alias la="ls -a"
-alias deploy="~/scripts/deployment_scripts/main_deploy.sh"
-alias sudo="nocorrect sudo"
-alias gitog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 
 
