@@ -3,7 +3,12 @@ ZSH=$HOME/.oh-my-zsh
 
 DEFAULT_USER="kevin"
 
-ZSH_THEME="mh"
+#ZSH_THEME="mh"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
+
 # General Aliases
 alias ll="ls -l"
 alias la="ls -a"
