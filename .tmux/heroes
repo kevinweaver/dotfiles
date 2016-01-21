@@ -3,7 +3,7 @@
 rename-window Dev
 select-pane -t 0
 # split horizontally by 85%
-split-window -v -p 20
+split-window -v -p 10
 # select bottom pane and split vertically by 33%
 select-pane -t 1
 split-window -h -p 75

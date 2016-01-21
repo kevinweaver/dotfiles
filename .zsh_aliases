@@ -33,9 +33,6 @@ alias mxlookup="nslookup -q=mx"
 alias sublime_text="subl"
 alias sublime-text="subl"
 alias weechat="weechat-curses"
-alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake db:initialize"
-alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake db:initialize"
-alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
 alias tether="easytether connect"
 alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
@@ -48,3 +45,8 @@ alias hackerhang="cd ~/workspace/applications/hackerhang"
 alias nemours="cd ~/workspace/projects/kidshealth-longtail/source"
 alias nemoursp="cd ~/workspace/projects/kidshealth-planner/source"
 
+#Rails
+alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake db:initialize"
+alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake db:initialize"
+alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
+alias guard="bundle exec guard"
