@@ -12,13 +12,10 @@ select-pane -t 2
 split-window -h -p 66
 
 # run commands
-#send -t 0 ruby -v
-#send -t 0 heroes ENTER
-#send -t 1 heroes ENTER
-#send -t 1 'rails c' ENTER
-#send -t 2 heroes ENTER
-#send -t 2 'guard' ENTER
-#send -t 3 heroes ENTER
+send -t 0 100doc ENTER
+send -t 1 100doc ENTER
+send -t 2 100doc ENTER
+send -t 3 100doc ENTER
 
 select-pane -t 0
 
