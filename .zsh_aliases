@@ -37,9 +37,6 @@ alias tether="easytether connect"
 alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
 #Website Project Folders
-alias tranquilo="cd ~/workspace/sites/kickstart/sites/all/themes/omega_kickstart_tranq"
-alias bctech="cd ~/workspace/sites/bctech/wp-content/themes/bcenfold"
-alias bctechnologies="cd ~/workspace/sites/bctechnologies/wp-content/themes/bcenfold"
 alias heroes="cd ~/workspace/applications/ems-heroes"
 alias bird="cd ~/workspace/applications/birdsign"
 alias hackerhang="cd ~/workspace/applications/hackerhang"

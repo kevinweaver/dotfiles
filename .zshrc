@@ -47,6 +47,7 @@ PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/share/npm/bin/:$PATH"
 
 #export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/opt/local/bin"
 export PATH=/usr/local/share/npm/bin:$PATH

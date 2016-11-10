@@ -25,17 +25,19 @@ call vundle#begin()
  Bundle 'jistr/vim-nerdtree-tabs'
  Bundle 'msanders/snipmate.vim'
  Bundle 'Townk/vim-autoclose'
- Bundle 'kien/ctrlp.vim'
- "Bundle 'Valloric/YouCompleteMe'
+ Bundle 'ctrlpvim/ctrlp.vim'
+ Bundle 'Valloric/YouCompleteMe'
+ "Bundle 'kien/ctrlp.vim'
  "Bundle 'wakatime/vim-wakatime'
  Bundle 'airblade/vim-gitgutter'
- Bundle 'Lokaltog/vim-easymotion'
  Bundle 'itchyny/calendar.vim'
  Bundle 'terryma/vim-multiple-cursors'
  Bundle 'majutsushi/tagbar'
  Bundle 'esneider/YUNOcommit.vim'
  Bundle 'christoomey/vim-tmux-navigator'
  Bundle 'bling/vim-airline'
+ Bundle 'leafgarland/typescript-vim'
+ Bundle 'easymotion/vim-easymotion'
 
 call vundle#end()
 filetype plugin indent on "req
@@ -48,7 +50,7 @@ let g:multi_cursor_next_key='<C-x>'
 let g:multi_cursor_prev_key='<C-p>'
 "let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
-
+let g:ycm_min_num_of_chars_for_completion = 5
 "python from powerline.bindings.vim import 'source_plugin; source_plugin()
 
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -199,7 +201,7 @@ cnoreabbrev td tab drop
 "inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 "inoremap <s-tab> <c-n>
 
-let mapleader=","
+let mapleader="\\"
 
 map <leader>t :w\|!rspec --drb --color %<cr>
 
@@ -216,3 +218,6 @@ map <leader>t :w\|!rspec --drb --color %<cr>
 
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
+
+
+
