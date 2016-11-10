@@ -12,12 +12,12 @@ select-pane -t 2
 split-window -h -p 66
 
 # run commands
-send -t 0 100days ENTER
-send -t 1 100days ENTER
+send -t 0 stitch ENTER
+send -t 1 stitch ENTER
 send -t 1 'rails c' ENTER
-send -t 2 100days ENTER
-send -t 2 'npm start' ENTER
-send -t 3 100days ENTER
+send -t 2 stitch ENTER
+send -t 2 'guard' ENTER
+send -t 3 stitch ENTER
 
 select-pane -t 0
 

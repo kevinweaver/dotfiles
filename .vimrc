@@ -1,9 +1,6 @@
 set nocompatible               " be iproved
 filetype off                   " required!
 "esc is far away, let's try ;; to get us out of insert mode
-
-
-
 imap ;; <esc>
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -24,7 +21,8 @@ call vundle#begin()
  Bundle 'scrooloose/syntastic'
  Bundle 'jistr/vim-nerdtree-tabs'
  Bundle 'msanders/snipmate.vim'
- Bundle 'Townk/vim-autoclose'
+ "Bundle 'Townk/vim-autoclose'
+ Bundle 'Raimondi/delimitMate'
  Bundle 'ctrlpvim/ctrlp.vim'
  Bundle 'Valloric/YouCompleteMe'
  "Bundle 'kien/ctrlp.vim'
@@ -49,9 +47,9 @@ let g:multi_cursor_next_key='<C-x>'
 let g:multi_cursor_prev_key='<C-p>'
 "let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
-let g:ycm_min_num_of_chars_for_completion = 5
+"6 characters before you complete me kicks in
+let g:ycm_min_num_of_chars_for_completion = 6
 "python from powerline.bindings.vim import 'source_plugin; source_plugin()
-
 let g:nerdtree_tabs_open_on_console_startup=1
 "colorscheme solarized
 set background=dark
