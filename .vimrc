@@ -33,6 +33,7 @@ call vundle#begin()
  Bundle 'majutsushi/tagbar'
  Bundle 'esneider/YUNOcommit.vim'
  Bundle 'christoomey/vim-tmux-navigator'
+ Bundle 'bling/vim-airline'
  Bundle 'leafgarland/typescript-vim'
  Bundle 'easymotion/vim-easymotion'
 
