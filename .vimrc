@@ -9,33 +9,44 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
- Bundle 'gmarik/vundle'
- Bundle 'tpope/vim-fugitive'
- Bundle 'tpope/vim-rails'
- Bundle 'tpope/vim-haml'
- Bundle 'tpope/vim-surround'
- Bundle 'pangloss/vim-javascript'
- Bundle 'kchmck/vim-coffee-script'
- Bundle 'vim-ruby/vim-ruby'
- Bundle 'scrooloose/nerdtree'
- Bundle 'scrooloose/syntastic'
- Bundle 'jistr/vim-nerdtree-tabs'
- Bundle 'msanders/snipmate.vim'
- "Bundle 'Townk/vim-autoclose'
- Bundle 'Raimondi/delimitMate'
- Bundle 'ctrlpvim/ctrlp.vim'
- Bundle 'Valloric/YouCompleteMe'
- "Bundle 'kien/ctrlp.vim'
- "Bundle 'wakatime/vim-wakatime'
- Bundle 'airblade/vim-gitgutter'
- Bundle 'itchyny/calendar.vim'
- Bundle 'terryma/vim-multiple-cursors'
- Bundle 'majutsushi/tagbar'
- Bundle 'esneider/YUNOcommit.vim'
- Bundle 'christoomey/vim-tmux-navigator'
- Bundle 'bling/vim-airline'
- Bundle 'leafgarland/typescript-vim'
- Bundle 'easymotion/vim-easymotion'
+
+"Look into
+"emmet
+"fxf
+"ultisnips
+"honza/vim-snippets
+"TODO  Switch to (or just add) vim-plug for plugins
+"
+
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-surround'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'msanders/snipmate.vim'
+Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/ctrlp.vim'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'itchyny/calendar.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'majutsushi/tagbar'
+Plugin 'esneider/YUNOcommit.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'bling/vim-airline'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'easymotion/vim-easymotion'
+"Plugine 'junegunn/fzf.vim'
+Plugin 'wincent/command-t'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on "req
@@ -51,7 +62,7 @@ let g:multi_cursor_quit_key='<Esc>'
 "6 characters before you complete me kicks in
 let g:ycm_min_num_of_chars_for_completion = 6
 "python from powerline.bindings.vim import 'source_plugin; source_plugin()
-let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=0
 "colorscheme solarized
 set background=dark
 
@@ -108,6 +119,7 @@ set backup
 set backupdir=~/.vim/backups
 set directory=~/.vim/tmp
 set noerrorbells
+set belloff=all
 set timeoutlen=350
 "set mousehide
 set expandtab
@@ -199,7 +211,7 @@ cnoreabbrev td tab drop
 "inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 "inoremap <s-tab> <c-n>
 
-let mapleader="\\"
+"let mapleader="\\"
 
 map <leader>t :w\|!rspec --drb --color %<cr>
 
@@ -219,3 +231,18 @@ let g:calendar_google_task = 1
 
 
 
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+:nnoremap <LeftMouse> m'<LeftMouse>
+:nnoremap <LeftRelease> <LeftRelease>g``
+
+"use ag for ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+"do not have ack jump to first response
+cnoreabbrev Ack Ack!
+"ack for the current word under cursor
+nnoremap <Leader>a :Ack!<Space><C-R><C-W>

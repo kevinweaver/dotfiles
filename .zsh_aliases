@@ -30,23 +30,15 @@ dnslookup(){
 alias scan="xsane"
 alias scanner="xsane"
 alias mxlookup="nslookup -q=mx"
-alias sublime_text="subl"
-alias sublime-text="subl"
 alias weechat="weechat-curses"
 alias tether="easytether connect"
 alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
 #Website Project Folders
-alias heroes="cd ~/workspace/applications/ems-heroes"
-alias bird="cd ~/workspace/applications/birdsign"
-alias stitch="cd ~/workspace/applications/stitch"
-alias hackerhang="cd ~/workspace/applications/hackerhang"
-alias stitch="cd ~/workspace/applications/stitch"
-alias casper="cd ~/workspace/applications/casper"
+alias workspace="cd ~/workspace"
+alias kufak="cd ~/workspace/kufak-suite"
+alias hell="cd ~/workspace/hellblazer"
 alias learn="cd ~/workspace/projects/learning"
-alias nemours="cd ~/workspace/projects/kidshealth-longtail/source"
-alias nemoursp="cd ~/workspace/projects/kidshealth-planner/source"
-alias 100days="cd ~/workspace/projects/100DaysOfCode/angular/angular2-tour-of-heroes"
 
 #Rails
 #alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"

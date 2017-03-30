@@ -21,6 +21,21 @@ alias gitlog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C
 
 source $HOME/.zsh_aliases
 
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l | grep "The agent has no identities" && ssh-add
+
+#. $HOME/ssh-find-agent.sh
+#ssh-find-agent -a
+#if [ -z "$SSH_AUTH_SOCK" ]
+#then
+#   eval $(ssh-agent) > /dev/null
+#   ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
+#fi
+
 # Plugins to load, loc in  ~/.oh-my-zsh/custom/plugins/ Ex: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github vundle rbenv ruby rails encode64 tmux)
 
@@ -49,7 +64,11 @@ PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/share/npm/bin/:$PATH"
 
+export PATH="/usr/local/bin/:$PATH"
+
 #export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/opt/local/bin"
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=$HOME/.node/bin:$PATH
 export PATH=$PATH:$HOME/.rvm/bin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
