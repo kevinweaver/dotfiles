@@ -35,10 +35,11 @@ alias tether="easytether connect"
 alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
 #Website Project Folders
-alias workspace="cd ~/workspace"
-alias kufak="cd ~/workspace/kufak-suite"
-alias hell="cd ~/workspace/hellblazer"
-alias learn="cd ~/workspace/projects/learning"
+alias work="cd ~/github.com/stitchfix"
+alias kufak="cd ~/github.com/stitchfix/kufak-suite"
+alias hell="cd ~/github.com/stitchfix/hellblazer"
+alias learn="cd ~/github.com/kevinweaver/learning"
+alias dot="cd ~/dotfiles"
 
 #Rails
 #alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"

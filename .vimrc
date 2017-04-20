@@ -33,7 +33,7 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlp/ctrlp.vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/calendar.vim'
@@ -44,7 +44,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bling/vim-airline'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'easymotion/vim-easymotion'
-"Plugine 'junegunn/fzf.vim'
 Plugin 'wincent/command-t'
 Plugin 'mileszs/ack.vim'
 
@@ -142,7 +141,7 @@ set backupdir=~/.vim/tmp/backups//                "backup dir -- // saves full f
 set directory=~/.vim/tmp/swap//                   "temporary dir for swap files
 set backup                                        "file backups enabled
 set writebackup                                   "enabling backups
-set noswapfile                                    "disable swaps - were using backups in 2015
+set noswapfile                                    "disable swaps - were using backups in 2017
 
 " if undo and backup directories do not exist, make them
 if !isdirectory(expand(&undodir))
@@ -168,14 +167,14 @@ set laststatus=2
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 "Search Stuff
-  set hlsearch  " highlight previous search matches
-  set incsearch " search as you type
-  " Make searches case-sensitive only if they contain upper-case characters
-  set ignorecase
-  set smartcase
-  "pressing enter key in command mode removes search highlighting
-  nnoremap <CR> :nohlsearch <CR>
-  nnoremap Q <nop>
+set hlsearch  " highlight previous search matches
+set incsearch " search as you type
+" Make searches case-sensitive only if they contain upper-case characters
+set ignorecase
+set smartcase
+"pressing enter key in command mode removes search highlighting
+nnoremap <CR> :nohlsearch <CR>
+nnoremap Q <nop>
 
 "set mouse=a
 
