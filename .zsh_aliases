@@ -34,6 +34,7 @@ alias weechat="weechat-curses"
 alias tether="easytether connect"
 alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 
+#TODO Replace these with better autocomplete
 #Website Project Folders
 alias work="cd ~/github.com/stitchfix"
 alias kufak="cd ~/github.com/stitchfix/kufak-suite"
@@ -47,3 +48,296 @@ alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake d
 alias rakeall="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed"
 alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
 alias guard="bundle exec guard"
+
+#git
+
+# directory listing & navigation
+alias l="ls -lAh"
+alias ll='ls -hl'
+alias la='ls -a'
+alias lla='ls -lah'
+
+alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+alias q='exit'
+
+# tmux
+alias tat='tmux_attach'
+alias t='tmux_attach'
+
+# ruby
+alias bi='bundle install'
+alias bu='bundle update'
+alias be='bundle exec'
+alias b='bundle exec !!'
+alias r='bundle exec rspec'
+
+# rails
+alias tlog='tail -f log/development.log'
+alias scaffold='script/generate nifty_scaffold'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+
+alias rdm="rake db:migrate"
+alias rdtp="rake db:test:prepare"
+alias rsa='rake spec:all'
+alias rc='rails console'
+alias rs='rails server'
+alias rsd='rails server --debugger'
+alias spec='/usr/bin/time bundle exec rspec'
+
+# misc
+alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
+alias f='find . -iname'
+alias v='vim $(fzf)'
+alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
+alias m='more'
+alias df='df -h'
+alias lm='!! | more'
+alias sane='stty sane'
+
+alias py='python'
+alias sha1="openssl sha1"
+
+alias vim_bundle_install='vim +PlugInstall'
+alias vim_bundle_update='vim +PlugUpdate +qall'
+alias vim_bundle_clean='vim +PlugClean +qall'
+alias vim_bundle_maintenance='vim +PlugInstall +PlugUpdate +PlugClean +qall'
+
+if command -v nvim >/dev/null 2>&1
+then
+  alias vim='nvim'
+fi
+
+alias v='vim'
+alias vi='vim -u NONE -N'
+
+# It's aliases all the way down
+alias local_vim_bundles='$EDITOR $HOME/.bundles.local.vim'
+alias local_gitconfig='$EDITOR $HOME/.gitconfig.local'
+alias local_shell_conf='$EDITOR $HOME/.local.sh'
+alias local_tmux_conf='$EDITOR $HOME/.tmux.local'
+alias local_vimrc='$EDITOR $HOME/.vimrc.local'
+
+
+# git
+alias got='git'
+alias get='git'
+
+# git status
+alias g='git status -sb'
+
+# git pull
+alias glf='git pull --ff-only'
+alias glr='git pull --rebase'
+
+alias gu='git fetch && git update-ref refs/heads/master origin/master'
+
+# git cherry-pick
+alias gcpa="git cherry-pick --abort"
+alias gcpc="git cherry-pick --continue"
+
+# git rebase
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
+
+# git push
+alias gp='git push'
+
+# git add
+alias ga='git add'
+alias gaa='git add -A .'
+alias gap='git add --patch'
+alias grh='git reset HEAD'
+
+# git clone
+alias gcl='git clone'
+
+# git branches
+alias gco='git checkout'
+alias gb='git branch'
+
+# git commit
+alias gc='git commit -v'
+#alias gcm='git commit -v -m'
+alias gcam='git commit -a -m'
+alias gca='git commit -v --amend'
+alias amend='git commit -v --amend'
+
+# git diff
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias dt='git difftool'
+alias dtc='git difftool --cached'
+alias dth='git difftool HEAD'
+
+function gitall() {
+	git add .
+	if [ "$1" != "" ] # or better, if [ -n "$1" ]
+	then
+	    git commit -m "$1"
+	else
+	    git commit -m update
+	fi
+	git push
+}
+
+gpo() {
+  git push --set-upstream origin "$(git branch | awk '/^\* / { print $2 }')" >> /dev/null
+}
+
+gpf() {
+  branch=$(current_branch)
+  if [[ $branch == 'master' ]]
+  then
+    echo "This command cannot be run from the master branch"
+    return 1
+  else
+    git push origin +"$branch" --force-with-lease
+  fi
+}
+
+ci_status_url() {
+  hub ci-status -v | awk '{ print $2 }'
+}
+
+merge() {
+  if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1
+  then
+    branch=$(current_branch)
+    if [[ $branch == 'master' ]]
+    then
+      echo "This command cannot be run from the master branch"
+      return 1
+    else
+      git fetch &&\
+        git diff-index --quiet --cached HEAD && \
+        git checkout master && \
+        git diff-index --quiet --cached HEAD && \
+        git pull origin master && \
+        git checkout "$branch" && \
+        git rebase master && \
+        git push origin +"$branch" --force-with-lease && \
+        wait_for_ci && \
+        git checkout master && \
+        git merge "$branch" --ff-only && \
+        sleep 2 && \
+        git push origin master && \
+        hub browse && \
+        sleep 10 && \
+        git push origin ":$branch"
+    fi
+  else
+    echo "This command must be run within a git repository"
+    return 1
+  fi
+}
+
+ds() {
+  args="$1"
+  if [ "x$args" != "x" ];then
+    git diff --stat "$args~1..$args"
+  else
+    git diff --stat --cached
+  fi
+}
+
+compare_to_master() {
+  branch="$(current_branch)"
+  git diff --stat "master..$branch"
+}
+
+diff_with_master() {
+  branch="$(current_branch)"
+  git difftool "master..$branch"
+}
+
+# git rebase
+alias grc='git rebase --continue'
+alias gri='git fetch && git rebase -i origin/master'
+
+show() {
+  # Show a given commit in git difftool
+  args="$1"
+  if [ "x$args" != "x" ];then
+    git difftool "$args~1..$args"
+  else
+    echo "Usage: show SHA"
+  fi
+}
+
+# Show commits that differ from the master branch
+divergent () {
+  branch="$(current_branch)"
+  if [[ "${1}" == "--bare" ]]
+  then
+    command_opt="--format=%h"
+  else
+    command_opt=(--left-right --graph --cherry-pick --oneline)
+  fi
+  if [[ "$branch" == "master" ]]
+  then
+    echo "This command cannot be run against the master branch"
+  else
+    git log "${command_opt[@]}" master.."$branch"
+  fi
+}
+
+# Isolate a single commit to its own branch
+isolate() {
+  if [ "$#" -ne 2 ]
+  then
+    echo "Usage: isolate <sha> <branch-name>"
+    return 1
+  else
+    git diff-index --quiet --cached HEAD && \
+      git checkout -b "$2" && \
+      git reset --hard origin/master && \
+      git cherry-pick "$1"
+  fi
+}
+
+alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+
+alias stashpop="git stash && git pull && git stash pop"
+alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
+
+alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %aN: %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gg="git log --graph --pretty=format:'%Cred%h%Creset %aN: %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative \$(current_branch) --not \$(git for-each-ref --format='%(refname)' refs/heads/ | grep -v \"refs/heads/\$(current_branch)\")"
+alias ggg="git log --graph --pretty=format:'%C(yellow)%h %Creset(%cr)%nAuthor: %C(green)%aN <%aE>%Creset%n%n    %Cblue%s%Creset%n'"
+alias gggg="git log --pretty=format:'%C(yellow)%h %Creset(%cr) %C(green)%aN <%aE>%Creset%n%Cblue%s%Creset%n ' --numstat"
+alias gitmine="git log --author='\$(git config --get user.name)' --pretty=format:'%Cgreen%ad%Creset %s%C(yellow)%d%Creset %Cred(%h)%Creset' --date=short"
+alias today='git lg --since="1 day ago"'
+alias mark_as_safe='[ -d .git ] && mkdir .git/safe || echo "Run this command at the root of a git repository"'
+
+# External Tools
+alias tower='gittower'
+alias gt='gittower'
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
+# rewrite authorship
+alias reauthor='git commit --amend --reset-author --no-edit'
+
+gdv() {
+  args=("$@")
+  git diff -w "${args[@]}" | view -
+}
+
+gdvc() {
+  args=("$@")
+  git diff --cached -w "${args[@]}" | view -
+}
+
+clean_branches (){
+  git checkout master && \
+    git diff-index --quiet --cached HEAD && \
+    git branch --merged | \
+    grep -v "\*" | \
+    grep -v master | \
+    grep -v dev | \
+    xargs -n 1 git branch -d &&\
+    echo "Done."
+}
+
+

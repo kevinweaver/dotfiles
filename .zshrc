@@ -21,6 +21,9 @@ alias gitlog="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C
 
 source $HOME/.zsh_aliases
 
+#Plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
