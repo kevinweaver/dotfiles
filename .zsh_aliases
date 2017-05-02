@@ -171,9 +171,18 @@ alias dt='git difftool'
 alias dtc='git difftool --cached'
 alias dth='git difftool HEAD'
 
-function gitall() {
-	git add .
+gcm() {
 	if [ "$1" != "" ] # or better, if [ -n "$1" ]
+	then
+	    git commit -vm "$1"
+	else
+	    echo "Please provide a message."
+	fi
+}
+
+gitall() {
+	git add .
+	if [ "$1" != "" ]
 	then
 	    git commit -m "$1"
 	else
