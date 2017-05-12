@@ -39,7 +39,7 @@ alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 alias work="cd ~/github.com/stitchfix"
 alias kufak="cd ~/github.com/stitchfix/kufak-suite"
 alias hell="cd ~/github.com/stitchfix/hellblazer"
-alias learn="cd ~/github.com/kevinweaver/learning"
+alias learn="cd ~/github.com/kevinweaver/100DaysOfCode"
 alias dot="cd ~/dotfiles"
 
 #Rails
@@ -125,7 +125,7 @@ alias got='git'
 alias get='git'
 
 # git status
-alias g='git status -sb'
+alias gs='git status -sb'
 
 # git pull
 alias glf='git pull --ff-only'
@@ -159,7 +159,7 @@ alias gb='git branch'
 
 # git commit
 alias gc='git commit -v'
-#alias gcm='git commit -v -m'
+#alias gcvm='git commit -v -m'
 alias gcam='git commit -a -m'
 alias gca='git commit -v --amend'
 alias amend='git commit -v --amend'
@@ -171,10 +171,10 @@ alias dt='git difftool'
 alias dtc='git difftool --cached'
 alias dth='git difftool HEAD'
 
-gcm() {
+gcmsg() {
 	if [ "$1" != "" ] # or better, if [ -n "$1" ]
 	then
-	    git commit -vm "$1"
+	    git commit - -m "$*"
 	else
 	    echo "Please provide a message."
 	fi

@@ -12,41 +12,49 @@ call vundle#begin()
 
 "Look into
 "emmet
-"fxf
+"fzf
 "ultisnips
 "honza/vim-snippets
 "TODO  Switch to (or just add) vim-plug for plugins
 "
 
-Plugin 'gmarik/vundle'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-surround'
+
+Plugin 'gmarik/vundle'                    "Vim plugin manager
+"Autocomplete Plugins
+Plugin 'tpope/vim-surround'               "Adds auto-complete for parens, brackets, quotes
+Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
+Plugin 'terryma/vim-multiple-cursors'
+"Navigation Plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'majutsushi/tagbar'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'easymotion/vim-easymotion'
+"Functional Plugins
+Plugin 'itchyny/calendar.vim'
+Plugin 'esneider/YUNOcommit.vim'
+Plugin 'bling/vim-airline'
+Plugin 'wincent/command-t'
+"Git Plugins
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
+"Search Plugins
 Plugin 'tpope/vim-unimpaired'
+Plugin 'msanders/snipmate.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ctrlp/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+"Syntax Highlighting Plugins
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-rails'                  "Syntax + error highlight for rails
+Plugin 'tpope/vim-haml'                   "Syntax highlight for haml
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'msanders/snipmate.vim'
-Plugin 'Townk/vim-autoclose'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ctrlp/ctrlp.vim'
-"Plugin 'wakatime/vim-wakatime'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'itchyny/calendar.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'majutsushi/tagbar'
-Plugin 'esneider/YUNOcommit.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'bling/vim-airline'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'wincent/command-t'
-Plugin 'mileszs/ack.vim'
+
 
 call vundle#end()
 filetype plugin indent on "req
@@ -61,7 +69,7 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_quit_key='<Esc>'
 "6 characters before you complete me kicks in
 let g:ycm_min_num_of_chars_for_completion = 6
-"python from powerline.bindings.vim import 'source_plugin; source_plugin()
+"python from powerline.bindings.vim impor 'source_plugin; source_plugin()
 let g:nerdtree_tabs_open_on_console_startup=0
 "colorscheme solarized
 set background=dark
@@ -89,6 +97,7 @@ endif
  map <C-l> <C-w><Right>
  map <C-h> <C-w><Left>
  map <C-n> <plug>NERDTreeTabsToggle<CR>
+ nmap <C-m> :TagbarToggle<CR>
 
  cmap w!! %!sudo tee > /dev/null/ %
 
@@ -189,46 +198,10 @@ nnoremap Q <nop>
 
 cnoreabbrev td tab drop
 
-"syntax on
-"if has("autocmd")
-"filetype plugin indent on
-"	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-"else
-"	set autoindent
-"endif
-
-
-" Remap the tab key to do autocompletion or indentation depending on the
-" context (from http://www.vim.org/tips/tip.php?tip_id=102)
-"function! InsertTabWrapper()
-"  let col = col('.') - 1
-"  if !col || getline('.')[col - 1] !~ '\k'
-"    return "\<tab>"
-"  else
-"    return "\<c-p>"
-"  endif
-"endfunction
-"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-"inoremap <s-tab> <c-n>
-
-"let mapleader="\\"
-
 map <leader>t :w\|!rspec --drb --color %<cr>
-
-" fix so powerline updates faster 
-"if ! has('gui_running')
-"    set ttimeoutlen=10
-"    augroup FastEscape
-"        autocmd!
-"        au InsertEnter * set timeoutlen=0
-"        au InsertLeave * set timeoutlen=1000
-"    augroup END
-"endif
-"set rtp+=/home/kevin/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
-
 
 
 " bind K to grep word under cursor
@@ -246,3 +219,16 @@ endif
 cnoreabbrev Ack Ack!
 "ack for the current word under cursor
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
+
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
+
+" tmux knows the extended mouse mode
+nnoremap <leader>. :CtrlPTag<cr>
+
+" Auto open tagbar
+autocmd VimEnter * nested :call tagbar#autoopen(1)
+nmap <F8> :TagbarToggle<CR>
