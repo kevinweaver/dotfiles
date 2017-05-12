@@ -143,6 +143,7 @@ alias gra="git rebase --abort"
 
 # git push
 alias gp='git push'
+alias gpoh='git push origin HEAD'
 
 # git add
 alias ga='git add'
