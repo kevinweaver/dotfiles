@@ -40,10 +40,12 @@ alias work="cd ~/github.com/stitchfix"
 alias kufak="cd ~/github.com/stitchfix/kufak-suite"
 alias hell="cd ~/github.com/stitchfix/hellblazer"
 alias learn="cd ~/github.com/kevinweaver/100DaysOfCode"
+alias react="cd ~/github.com/kevinweaver/hackernews"
+alias kevin="cd ~/github.com/kevinweaver"
 alias dot="cd ~/dotfiles"
 
 #Rails
-#alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
+alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
 alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
 alias rakeall="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed"
 alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
@@ -123,9 +125,10 @@ alias local_vimrc='$EDITOR $HOME/.vimrc.local'
 # git
 alias got='git'
 alias get='git'
+alias glive='git checkout master && git pull && git reset --hard origin/master && bundle install && rake db:migrate'
 
 # git status
-alias gs='git status -sb'
+alias gs='git status'
 
 # git pull
 alias glf='git pull --ff-only'
@@ -310,7 +313,7 @@ isolate() {
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 alias stashpop="git stash && git pull && git stash pop"
-alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
+#alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
 
 alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %aN: %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gg="git log --graph --pretty=format:'%Cred%h%Creset %aN: %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative \$(current_branch) --not \$(git for-each-ref --format='%(refname)' refs/heads/ | grep -v \"refs/heads/\$(current_branch)\")"

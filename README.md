@@ -19,21 +19,13 @@ My very own personal dotfiles
 # WORK IN PROGRESS
 ## FIX THIS
 Things I Want
--Vundle or plugged
-Set up your dotfiles
-Basics
-Breaking up things
-Dotfile syncing
-Dean’s script
-Vim
-Vim Basics + Advanced Text Manipulation
-Follow tutorials:
-
-Document learnings
-Live practice
-Autocomplete 
-Markup
-https://www.youtube.com/watch?v=Sc30cyEH5oo
+1. Dotfile syncing
+   1. Script to automatically push dotfile changes.
+1. Vim
+   1. Basics + Advanced Text Manipulation
+      1. Document in separate readme
+1. Autocomplete
+   1. Markup
 HTML
 Emmet
 Ruby
