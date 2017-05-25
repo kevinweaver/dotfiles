@@ -133,6 +133,7 @@ alias gs='git status'
 # git pull
 alias glf='git pull --ff-only'
 alias glr='git pull --rebase'
+alias gpom='git pull origin master'
 
 alias gu='git fetch && git update-ref refs/heads/master origin/master'
 
@@ -149,7 +150,7 @@ alias gp='git push'
 alias gpoh='git push origin HEAD'
 
 # git add
-alias ga='git add'
+alias ga='git add -p'
 alias gaa='git add -A .'
 alias gap='git add --patch'
 alias grh='git reset HEAD'

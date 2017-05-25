@@ -19,6 +19,7 @@ call vundle#begin()
 "
 
 
+"Manage Plugins
 Plugin 'gmarik/vundle'                    "Vim plugin manager
 "Autocomplete Plugins
 Plugin 'tpope/vim-surround'               "Adds auto-complete for parens, brackets, quotes
@@ -43,7 +44,7 @@ Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstat
 "Search Plugins
 Plugin 'tpope/vim-unimpaired'
 Plugin 'msanders/snipmate.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlp/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 "Syntax Highlighting Plugins
@@ -232,3 +233,5 @@ nnoremap <leader>. :CtrlPTag<cr>
 " Auto open tagbar
 autocmd VimEnter * nested :call tagbar#autoopen(1)
 nmap <F8> :TagbarToggle<CR>
+
+nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
