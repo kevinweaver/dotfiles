@@ -17,4 +17,4 @@ My very own personal dotfiles
 /.zshrc        - Zshell config. <br/>
 
 ## The Wiki
-(Vim Commands)[https://github.com/kevinweaver/dotfiles/wiki/Vim-Commands]
+[Vim Commands](https://github.com/kevinweaver/dotfiles/wiki/Vim-Commands)
