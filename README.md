@@ -1,4 +1,4 @@
-dotfiles
+Table of Contents
 ========
 
 My very own personal dotfiles
@@ -16,5 +16,13 @@ My very own personal dotfiles
 /.zsh_aliases - zsh aliases.  Need to pull some from .zshrc <br/>
 /.zshrc        - Zshell config. <br/>
 
-## The Wiki
-(Vim Commands)[https://github.com/kevinweaver/dotfiles/wiki/Vim-Commands]
+The Wiki
+========
+
+## To Do List
+[Sharpen](https://github.com/kevinweaver/dotfiles/wiki/Sharpen) - Everything I want to change/improve about my dotfiles.</br>
+
+## Reference Lists
+[Zshell Commands](https://github.com/kevinweaver/dotfiles/wiki/Zshell-Commands) - A helpful list of useful zshell commands.</br>
+[Vim Commands](https://github.com/kevinweaver/dotfiles/wiki/Vim-Commands) - A helpful list of vim commands.</br>
+[Tmux Commands](https://github.com/kevinweaver/dotfiles/wiki/Tmux-Commands) - A helpful list of tmux commands.</br>
