@@ -7,25 +7,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 "set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
-" let Vundle manage Vundle
-" required!
-
-"Look into
-"emmet
-"fzf
-"ultisnips
-"honza/vim-snippets
-"TODO  Switch to (or just add) vim-plug for plugins
-"
-
 
 "Manage Plugins
 Plugin 'gmarik/vundle'                    "Vim plugin manager
 "Autocomplete Plugins
-Plugin 'tpope/vim-surround'               "Adds auto-complete for parens, brackets, quotes
-Plugin 'Townk/vim-autoclose'
+Plugin 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
+Plugin 'Townk/vim-autoclose'              "Adds closing pairs
 Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
+
 "Navigation Plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
@@ -33,20 +23,24 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'majutsushi/tagbar'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'easymotion/vim-easymotion'
+
 "Functional Plugins
 Plugin 'itchyny/calendar.vim'
 Plugin 'esneider/YUNOcommit.vim'
 Plugin 'bling/vim-airline'
 Plugin 'wincent/command-t'
+
 "Git Plugins
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
+
 "Search Plugins
 Plugin 'tpope/vim-unimpaired'
 Plugin 'msanders/snipmate.vim'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlp/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+"Plugin 'Valloric/YouCompleteMe'
+
 "Syntax Highlighting Plugins
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-rails'                  "Syntax + error highlight for rails
