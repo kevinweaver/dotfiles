@@ -38,6 +38,7 @@ alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
 #Website Project Folders
 alias work="cd ~/github.com/stitchfix"
 alias kufak="cd ~/github.com/stitchfix/kufak-suite"
+alias fix="cd ~/github.com/stitchfix/fix-service"
 alias hell="cd ~/github.com/stitchfix/hellblazer"
 alias learn="cd ~/github.com/kevinweaver/100DaysOfCode"
 alias react="cd ~/github.com/kevinweaver/hackernews"
