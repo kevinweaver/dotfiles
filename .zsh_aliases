@@ -170,6 +170,8 @@ alias gc='git commit -v'
 alias gcam='git commit -a -m'
 alias gca='git commit -v --amend'
 alias amend='git commit -v --amend'
+alias gcn='git commit --patch -n'
+
 
 # git diff
 alias gd='git diff'
