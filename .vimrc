@@ -29,6 +29,7 @@ Plugin 'itchyny/calendar.vim'
 Plugin 'esneider/YUNOcommit.vim'
 Plugin 'bling/vim-airline'
 Plugin 'wincent/command-t'
+Plugin 'thoughtbot/vim-rspec'
 
 "Git Plugins
 Plugin 'airblade/vim-gitgutter'
@@ -193,7 +194,14 @@ nnoremap Q <nop>
 
 cnoreabbrev td tab drop
 
-map <leader>t :w\|!rspec --drb --color %<cr>
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>g :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+"Spring rspec
+"let g:rspec_command = '!spring rspec {spec}'
+let g:rspec_command = '!RAILS_ENV=test bundle exec rspec {spec} --color --profile'
 
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
