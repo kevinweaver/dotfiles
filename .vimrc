@@ -93,7 +93,7 @@ endif
  map <C-l> <C-w><Right>
  map <C-h> <C-w><Left>
  map <C-n> <plug>NERDTreeTabsToggle<CR>
- nmap <C-m> :TagbarToggle<CR>
+ map <C-m> :TagbarToggle<CR>
 
  cmap w!! %!sudo tee > /dev/null/ %
 
@@ -233,7 +233,7 @@ endif
 nnoremap <leader>. :CtrlPTag<cr>
 
 " Auto open tagbar
-autocmd VimEnter * nested :call tagbar#autoopen(1)
+"autocmd VimEnter * nested :call tagbar#autoopen(1)
 nmap <F8> :TagbarToggle<CR>
 
 nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md

@@ -21,8 +21,15 @@ extract () {
      fi
 }
 
+#full dns info
 dnslookup(){
   dig $1 ANY +noall +answer
+}
+
+#ls after cd
+function chpwd() {
+    emulate -L zsh
+      ls -la
 }
 
 
@@ -45,13 +52,9 @@ alias react="cd ~/github.com/kevinweaver/hackernews"
 alias kevin="cd ~/github.com/kevinweaver"
 alias dot="cd ~/dotfiles"
 alias wiki="cd ~/github.com/kevinweaver/dotfiles.wiki"
+alias dotw="cd ~/github.com/kevinweaver/dotfiles.wiki"
 
 #Rails
-alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
-alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
-alias rakeall="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed"
-alias herokureset="heroku pg:reset DATABASE --confirm ems-heroes && heroku run rake db:migrate:redo && heroku run rake db:seed && heroku run rake db:populate && heroku run rake db:initialize"
-alias guard="bundle exec guard"
 
 #git
 
@@ -77,6 +80,11 @@ alias b='bundle exec !!'
 alias r='bundle exec rspec'
 
 # rails
+alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
+alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
+alias rakeall="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed"
+
+alias guard="bundle exec guard"
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'

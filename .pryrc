@@ -1,3 +1,6 @@
+Pry.config.editor = "vim"
+Pry.config.theme= "pry-classic"
+
 # Add shortcuts for commands
 if defined?(PryByebug)
   Pry.commands.alias_command 'c', 'continue'
