@@ -50,5 +50,9 @@ export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/opt
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=$HOME/.node/bin:$PATH
 export PATH=$PATH:$HOME/.rvm/bin
+export NPM_TOKEN=9d6c3a50-d478-418a-97ce-cabb5e948fb8
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+$EDITOR=vim
+$BUNDLE_EDITOR=vim

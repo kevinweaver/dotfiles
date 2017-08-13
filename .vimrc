@@ -10,11 +10,15 @@ call vundle#begin()
 
 "Manage Plugins
 Plugin 'gmarik/vundle'                    "Vim plugin manager
+
 "Autocomplete Plugins
 Plugin 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
 Plugin 'Townk/vim-autoclose'              "Adds closing pairs
 Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mattn/emmet-vim'
+Plugin 'mattn/webapi-vim'
+"Plugin 'Valloric/YouCompleteMe'
 
 "Navigation Plugins
 Plugin 'scrooloose/nerdtree'
@@ -40,7 +44,6 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'msanders/snipmate.vim'
 Plugin 'ctrlp/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
-"Plugin 'Valloric/YouCompleteMe'
 
 "Syntax Highlighting Plugins
 Plugin 'scrooloose/syntastic'
@@ -237,3 +240,6 @@ nnoremap <leader>. :CtrlPTag<cr>
 nmap <F8> :TagbarToggle<CR>
 
 nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
+
+"Emmet Plugin
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))

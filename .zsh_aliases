@@ -27,9 +27,9 @@ dnslookup(){
 }
 
 #ls after cd
-function chpwd() {
-    emulate -L zsh
-      ls -la
+ch() {
+  emulate -L zsh
+    exa -bghHliS
 }
 
 
@@ -48,7 +48,7 @@ alias kufak="cd ~/github.com/stitchfix/kufak-suite"
 alias fix="cd ~/github.com/stitchfix/fix-service"
 alias hell="cd ~/github.com/stitchfix/hellblazer"
 alias learn="cd ~/github.com/kevinweaver/100DaysOfCode"
-alias react="cd ~/github.com/kevinweaver/hackernews"
+alias react="cd ~/github.com/kevinweaver/hackernews-react"
 alias kevin="cd ~/github.com/kevinweaver"
 alias dot="cd ~/dotfiles"
 alias wiki="cd ~/github.com/kevinweaver/dotfiles.wiki"
