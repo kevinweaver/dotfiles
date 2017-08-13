@@ -1,7 +1,7 @@
 {
     "javascript": {
         "snippets": {
-            "rf": "import React, { Component } from 'react';\nclass Example extends Component {\n\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {\n\n\t\t};\n\t\tthis.onExample = this onExample.bind(this);\n\t}\n\n\tonExample() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"Example\">\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default Example;",
+            "rf": "import React, { Component } from 'react';\nclass Example extends Component {\n\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {\n\n\t\t};\n\t\tthis.onExample = this onExample.bind(this);\n\t}\n\n\tonExample() {\n\n\t}\n\n\trender() {\n\t\tconst { onExample } = this.props;\n\t\treturn (\n\t\t\t<div className=\"Example\">\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default Example;",
             "ri": "import React, { Component } from 'react';\n",
             "rcc": "class App extends Component {\n${cursor}\n}",
             "pt": "propTypes: {\n\t${cursor}\n},",
