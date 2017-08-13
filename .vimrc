@@ -2,6 +2,8 @@ set nocompatible               " be iproved
 filetype off                   " required!
 "esc is far away, let's try ;; to get us out of insert mode
 imap ;; <esc>
+"Map ; to : for speeeed
+:nmap ; :
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,6 +14,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'                    "Vim plugin manager
 
 "Autocomplete Plugins
+Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
 Plugin 'Townk/vim-autoclose'              "Adds closing pairs
 Plugin 'Raimondi/delimitMate'
@@ -90,6 +93,10 @@ endif
   command! Wq :wq
   command! WQ :wq
 
+"Map ctrl+t to copy out of vim
+vnoremap <C-t> "+y
+
+
 " Map ctrl-movement keys to window switching
  map <C-k> <C-w><Up>
  map <C-j> <C-w><Down>
@@ -99,6 +106,8 @@ endif
  map <C-m> :TagbarToggle<CR>
 
  cmap w!! %!sudo tee > /dev/null/ %
+
+ 
 
 set backspace=indent,eol,start
 set history=100
@@ -113,6 +122,11 @@ set hidden        " keep undo history for background buffers
 set autoread      " autoamically read the file again when it is changed externally
 set showtabline=2 " always show tab bar
 set term=cons25   " fix issue with arrow keys
+
+"map pasting
+nnoremap <C-p> "+gP
+vnoremap <C-p> "+gP
+set clipboard=unnamedplus
 
 " Editting configuration
 syntax enable

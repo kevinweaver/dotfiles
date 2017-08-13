@@ -40,17 +40,6 @@ if [ "$TMUX" = "" ]; then tmux; fi
 # Load rvm into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
-# PATH
-export PATH=${PATH}:~/applications/android-sdk-linux/tools
-export PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/local/share/npm/bin/:$PATH"
-export PATH="/usr/local/bin/:$PATH"
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/opt
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=$HOME/.node/bin:$PATH
-export PATH=$PATH:$HOME/.rvm/bin
-export NPM_TOKEN=9d6c3a50-d478-418a-97ce-cabb5e948fb8
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

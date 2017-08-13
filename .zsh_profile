@@ -1,0 +1,12 @@
+# PATH
+export PATH=${PATH}:~/applications/android-sdk-linux/tools
+export PATH=${PATH}:~/applications/android-sdk-linux/platform-tools
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/share/npm/bin/:$PATH"
+export PATH="/usr/local/bin/:$PATH"
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/opt
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=$HOME/.node/bin:$PATH
+export PATH=$PATH:opt/local/bin
+export PATH=$PATH:opt/local/sbin
+export PATH=$PATH:$HOME/.rvm/bin
