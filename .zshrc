@@ -15,6 +15,8 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 plugins=(git github vundle rbenv ruby rails encode64 tmux)
 
 source $HOME/.zsh_aliases
+source $HOME/.zsh_profile
+source $HOME/.env
 
 #ZSH Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -43,5 +45,5 @@ if [ "$TMUX" = "" ]; then tmux; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-$EDITOR=vim
-$BUNDLE_EDITOR=vim
+export EDITOR=/usr/bin/vim
+export BUNDLE_EDITOR=/usr/bin/vim

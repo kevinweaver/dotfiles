@@ -23,6 +23,10 @@ Plugin 'mattn/emmet-vim'
 Plugin 'mattn/webapi-vim'
 "Plugin 'Valloric/YouCompleteMe'
 
+"Layout
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 "Navigation Plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
@@ -34,7 +38,6 @@ Plugin 'easymotion/vim-easymotion'
 "Functional Plugins
 Plugin 'itchyny/calendar.vim'
 Plugin 'esneider/YUNOcommit.vim'
-Plugin 'bling/vim-airline'
 Plugin 'wincent/command-t'
 Plugin 'thoughtbot/vim-rspec'
 
@@ -60,6 +63,8 @@ Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 filetype plugin indent on "req
+
+"Plugin
 
 "Vim Multiple Cursors Bindings
 let g:multi_cursor_use_default_mapping=0
@@ -124,9 +129,9 @@ set showtabline=2 " always show tab bar
 set term=cons25   " fix issue with arrow keys
 
 "map pasting
-nnoremap <C-p> "+gP
-vnoremap <C-p> "+gP
-set clipboard=unnamedplus
+"nnoremap <C-p> "+gP
+"vnoremap <C-p> "+gP
+"set clipboard=unnamedplus
 
 " Editting configuration
 syntax enable
@@ -257,3 +262,8 @@ nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
 
 "Emmet Plugin
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
+
+"Plugin: Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline_theme='base16_railscasts'
