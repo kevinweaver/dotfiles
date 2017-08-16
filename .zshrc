@@ -16,7 +16,7 @@ plugins=(git github vundle rbenv ruby rails encode64 tmux)
 
 source $HOME/.zsh_aliases
 source $HOME/.zsh_profile
-source $HOME/.env
+source $HOME/.zsh_env
 
 #ZSH Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -1,3 +1,4 @@
 /.weechat/logs/*
 /.weechat/weechat.log
 /.env
+/.zsh_env
