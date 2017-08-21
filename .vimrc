@@ -2,8 +2,9 @@ set nocompatible               " be iproved
 filetype off                   " required!
 "esc is far away, let's try ;; to get us out of insert mode
 imap ;; <esc>
+
 "Map ; to : for speeeed
-:nmap ; :
+":nmap ; :
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()

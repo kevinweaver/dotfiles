@@ -27,9 +27,9 @@ dnslookup(){
 }
 
 #ls after cd
-ch() {
-  emulate -L zsh
-    exa -bghHliS
+function chpwd() {
+    emulate -L zsh
+      ls -la
 }
 
 
