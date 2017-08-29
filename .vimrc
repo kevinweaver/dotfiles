@@ -20,8 +20,9 @@ Plugin 'tpope/vim-surround'               "Adds 'cs' command to change pair char
 Plugin 'Townk/vim-autoclose'              "Adds closing pairs
 Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'                  "Adds snippets
 Plugin 'mattn/webapi-vim'
+Plugin 'tpope/vim-endwise'                "Auto-close ruby elements
 "Plugin 'Valloric/YouCompleteMe'
 
 "Layout
@@ -109,6 +110,7 @@ vnoremap <C-t> "+y
  map <C-l> <C-w><Right>
  map <C-h> <C-w><Left>
  map <C-n> <plug>NERDTreeTabsToggle<CR>
+ nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
  map <C-m> :TagbarToggle<CR>
 
  cmap w!! %!sudo tee > /dev/null/ %
@@ -205,8 +207,6 @@ set smartcase
 nnoremap <CR> :nohlsearch <CR>
 nnoremap Q <nop>
 
-"set mouse=a
-
 "Highlight trailing whitespace in red
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
@@ -233,9 +233,6 @@ let g:calendar_google_task = 1
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-:nnoremap <LeftMouse> m'<LeftMouse>
-:nnoremap <LeftRelease> <LeftRelease>g``
-
 "use ag for ack.vim
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -246,20 +243,29 @@ cnoreabbrev Ack Ack!
 "ack for the current word under cursor
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
 
-set mouse+=a
+"Mouse Settings
+"set clipboard=unnamed
+set mouse=a            "enable mouse
 if &term =~ '^screen'
-    " tmux knows the extended mouse mode
-    set ttymouse=xterm2
+  set ttymouse=xterm2  " tmux knows the extended mouse mode
 endif
-
-" tmux knows the extended mouse mode
+nnoremap <LeftMouse> m'<LeftMouse>
+nnoremap <LeftRelease> <LeftRelease>g``
 nnoremap <leader>. :CtrlPTag<cr>
+map <Leader>h :set number!<CR> :GitGutterToggle<CR>
+
+
+"bind ctrl+c to copy
+vmap <C-c> "+y
+"vnoremap :w !cp /dev/null ~/temp.txt && cat > ~/temp.txt
+"noremap :r !cat ~/temp.txt
 
 " Auto open tagbar
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
+nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md<CR>
+nmap <F9> :vs ~/dotfiles/.vimrc<CR>
 
 "Emmet Plugin
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
