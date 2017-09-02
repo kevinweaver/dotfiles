@@ -110,13 +110,20 @@ vnoremap <C-t> "+y
  map <C-j> <C-w><Down>
  map <C-l> <C-w><Right>
  map <C-h> <C-w><Left>
- map <C-n> <plug>NERDTreeTabsToggle<CR>
- nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
- map <C-m> :TagbarToggle<CR>
 
- cmap w!! %!sudo tee > /dev/null/ %
+"Nerdtree maps
+map <C-n> <plug>NERDTreeTabsToggle<CR>
+nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
+"map \c to run ctags in folder
+map <Leader>c :! ctags -R -f ./.git/tags .<CR>
+" Ctrl+[ to so that manuevering ctags is simply Ctrl+] to go down and Ctrl+[ to go up
+nnoremap <Leader>[ <C-t>
+nnoremap <Leader>] <C-]>
 
- 
+"Tagbar maps
+map <C-m> :TagbarToggle<CR>
+
+cmap w!! %!sudo tee > /dev/null/ %
 
 set backspace=indent,eol,start
 set history=100
@@ -249,8 +256,8 @@ set mouse=a            "enable mouse
 if &term =~ '^screen'
   set ttymouse=xterm2  " tmux knows the extended mouse mode
 endif
-nnoremap <LeftMouse> m'<LeftMouse>
-nnoremap <LeftRelease> <LeftRelease>g``
+"nnoremap <LeftMouse> m'<LeftMouse>
+"nnoremap <LeftRelease> <LeftRelease>g``
 nnoremap <leader>. :CtrlPTag<cr>
 map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
@@ -265,7 +272,7 @@ nmap <C-c> :.w !pbcopy<CR><CR>
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md<CR>
+nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
 nmap <F9> :vs ~/dotfiles/.vimrc<CR>
 
 "Emmet Plugin
