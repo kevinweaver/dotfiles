@@ -36,7 +36,7 @@ export TERM="xterm-256color"
 alias weechat='TERM=screen-256color weechat-curses'
 
 #Tmux
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux new; fi
 
 #rvm
 # Load rvm into a shell session *as a function*

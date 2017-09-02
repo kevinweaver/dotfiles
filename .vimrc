@@ -80,6 +80,7 @@ let g:multi_cursor_quit_key='<Esc>'
 let g:ycm_min_num_of_chars_for_completion = 6
 "python from powerline.bindings.vim impor 'source_plugin; source_plugin()
 let g:nerdtree_tabs_open_on_console_startup=0
+let NERDTreeShowHidden=1
 "colorscheme solarized
 set background=dark
 
@@ -244,7 +245,6 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
 
 "Mouse Settings
-"set clipboard=unnamed
 set mouse=a            "enable mouse
 if &term =~ '^screen'
   set ttymouse=xterm2  " tmux knows the extended mouse mode
@@ -256,7 +256,8 @@ map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
 
 "bind ctrl+c to copy
-vmap <C-c> "+y
+"vmap <C-c> "+y
+nmap <C-c> :.w !pbcopy<CR><CR>
 "vnoremap :w !cp /dev/null ~/temp.txt && cat > ~/temp.txt
 "noremap :r !cat ~/temp.txt
 

@@ -12,12 +12,11 @@ select-pane -t 2
 split-window -h -p 66
 
 # run commands
-send -t 0 learn ENTER
-send -t 1 heroes ENTER
-send -t 1 'rails c' ENTER
-send -t 2 learn ENTER
-send -t 2 'guard' ENTER
-send -t 3 learn ENTER
+send -t 0 react ENTER
+send -t 1 react ENTER
+send -t 1 'npm start' ENTER
+send -t 2 react ENTER
+send -t 3 react ENTER
 
 select-pane -t 0
 
