@@ -53,7 +53,6 @@ alias react="cd ~/github.com/kevinweaver/hackernews-react"
 alias kevin="cd ~/github.com/kevinweaver"
 alias dot="cd ~/dotfiles"
 alias wiki="cd ~/github.com/kevinweaver/dotfiles.wiki"
-alias dotw="cd ~/github.com/kevinweaver/dotfiles.wiki"
 
 #Rails
 

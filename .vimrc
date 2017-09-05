@@ -114,6 +114,8 @@ vnoremap <C-t> "+y
 "Nerdtree maps
 map <C-n> <plug>NERDTreeTabsToggle<CR>
 nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
+
+"Ctags
 "map \c to run ctags in folder
 map <Leader>c :! ctags -R -f ./.git/tags .<CR>
 " Ctrl+[ to so that manuevering ctags is simply Ctrl+] to go down and Ctrl+[ to go up
@@ -262,11 +264,16 @@ nnoremap <leader>. :CtrlPTag<cr>
 map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
 
+"COPY
 "bind ctrl+c to copy
 "vmap <C-c> "+y
-nmap <C-c> :.w !pbcopy<CR><CR>
+"nmap <C-c> :.w !pbcopy<CR><CR>
 "vnoremap :w !cp /dev/null ~/temp.txt && cat > ~/temp.txt
 "noremap :r !cat ~/temp.txt
+
+"vnoremap <C-t> "+y
+"vnoremap <C-p> "+gP
+"set clipboard=unnamedplus "this breaks yy copy
 
 " Auto open tagbar
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
