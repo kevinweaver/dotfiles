@@ -3,18 +3,19 @@
         "snippets": {
             "rf": "import React, { Component } from 'react';\nclass Example extends Component {\n\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {\n\n\t\t};\n\t\tthis.onExample = this onExample.bind(this);\n\t}\n\n\tonExample() {\n\n\t}\n\n\trender() {\n\t\tconst { onExample } = this.props;\n\t\treturn (\n\t\t\t<div className=\"Example\">\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default Example;",
             "ri": "import React, { Component } from 'react';\n",
-            "rcc": "class App extends Component {\n${cursor}\n}",
-            "pt": "propTypes: {\n\t${cursor}\n},",
-            "gdp": "getDefaultProps: function() {\n\treturn {\n\t${cursor}\n\t};\n},",
-            "gis": "getInitialState: function() {\n\treturn {\n\t${cursor}\n\t};\n},",
+            "rcc": "class App extends Component {\n${\t\tcursor}\n}",
+            "rr": "render() {\n\treturn(\n${cursor}\n\t);\n}",
+            "rpt": "propTypes: {\n\t${cursor}\n},",
+            "rgdp": "getDefaultProps: function() {\n\treturn {\n\t${cursor}\n\t};\n},",
+            "rgis": "getInitialState: function() {\n\treturn {\n\t${cursor}\n\t};\n},",
 
-            "cdm": "componentDidMount () {\n\t${cursor} \n},",
-            "cwm": "componentWillMount () {\n\t${cursor}\n},",
-            "cdup": "componentDidUpdate () {\n\t${cursor}\n},",
-            "crw": "componentWillReceiveProps () {\n\t${cursor}\n},",
-            "cwun": "componentWillUnmount () {\n\t${cursor}\n},",
-            "cwu": "componentWillUpdate () {\n\t${cursor}\n},",
-            "sst": "setState({\n\t${cursor}\n});"
+            "rcdm": "componentDidMount () {\n\t${cursor} \n},",
+            "rcwm": "componentWillMount () {\n\t${cursor}\n},",
+            "rcdup": "componentDidUpdate () {\n\t${cursor}\n},",
+            "rcrw": "componentWillReceiveProps () {\n\t${cursor}\n},",
+            "rcwun": "componentWillUnmount () {\n\t${cursor}\n},",
+            "rcwu": "componentWillUpdate () {\n\t${cursor}\n},",
+            "rsst": "setState({\n\t${cursor}\n});"
         },
         "abbreviations":{
         }

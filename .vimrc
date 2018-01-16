@@ -3,6 +3,7 @@ filetype off                   " required!
 "esc is far away, let's try ;; to get us out of insert mode
 imap ;; <esc>
 
+
 "Map ; to : for speeeed
 ":nmap ; :
 
@@ -52,6 +53,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'msanders/snipmate.vim'
 Plugin 'ctrlp/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-bundler'
 
 "Syntax Highlighting Plugins
 Plugin 'scrooloose/syntastic'
@@ -131,6 +133,7 @@ set backspace=indent,eol,start
 set history=100
 
 set number        " Show line numbers
+set relativenumber        " Show relative line numbers
 set nowrap        " Turn off Text Wrap
 set scrolloff=3   " Keep more context when scrolling off the end of a buffer
 set ruler         " show the cursor position all the time
@@ -218,12 +221,15 @@ nnoremap <CR> :nohlsearch <CR>
 nnoremap Q <nop>
 
 "Highlight trailing whitespace in red
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-:au InsertLeave * match ExtraWhitespace /\s\+$/
-:match ExtraWhitespace /\s\+$/           " Show trailing whitespace
-:match ExtraWhitespace /\s\+$\| \+\ze\t/ " Show trailing whitespace and spaces before a tab
-:match ExtraWhitespace /[^\t]\zs\t\+/    " Show tabs that are not at the start of a line
+":highlight ExtraWhitespace ctermbg=red guibg=red
+":au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+":au InsertLeave * match ExtraWhitespace /\s\+$/
+":match ExtraWhitespace /\s\+$/           " Show trailing whitespace
+":match ExtraWhitespace /\s\+$\| \+\ze\t/ " Show trailing whitespace and spaces before a tab
+":match ExtraWhitespace /[^\t]\zs\t\+/    " Show tabs that are not at the start of a line
+
+"Automatically strip trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
 
 cnoreabbrev td tab drop
 
@@ -261,6 +267,7 @@ endif
 "nnoremap <LeftMouse> m'<LeftMouse>
 "nnoremap <LeftRelease> <LeftRelease>g``
 nnoremap <leader>. :CtrlPTag<cr>
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
 
@@ -273,19 +280,23 @@ map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
 "vnoremap <C-t> "+y
 "vnoremap <C-p> "+gP
-"set clipboard=unnamedplus "this breaks yy copy
+"set clipboard=unnamed "this breaks yy copy
 
 " Auto open tagbar
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
-nmap <F8> :TagbarToggle<CR>
 
 nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
 nmap <F9> :vs ~/dotfiles/.vimrc<CR>
+nmap <F8> :TagbarToggle<CR>
+nmap <F7> :vs ~/dotfiles/.snippets.json<CR>
 
 "Emmet Plugin
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
+let g:user_emmet_expandabbr_key = '<Tab>'
 
 "Plugin: Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline_theme='base16_railscasts'
+
+
