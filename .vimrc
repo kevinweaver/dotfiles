@@ -143,6 +143,7 @@ set hidden        " keep undo history for background buffers
 set autoread      " autoamically read the file again when it is changed externally
 set showtabline=2 " always show tab bar
 set term=cons25   " fix issue with arrow keys
+set autoread | au CursorHold * checktime | call feedkeys("lh")  " auto refresh vim if current files change outside vim
 
 "map pasting
 "nnoremap <C-p> "+gP
@@ -151,7 +152,7 @@ set term=cons25   " fix issue with arrow keys
 
 " Editting configuration
 syntax enable
-set pastetoggle=<F2> 
+set pastetoggle=<F2>
 set term=screen-256color
 set ts=2
 set smarttab
