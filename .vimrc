@@ -133,7 +133,19 @@ set backspace=indent,eol,start
 set history=100
 
 set number        " Show line numbers
-set relativenumber        " Show relative line numbers
+"set relativenumber        " Show relative line numbers
+
+set number relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
+
+
+
 set nowrap        " Turn off Text Wrap
 set scrolloff=3   " Keep more context when scrolling off the end of a buffer
 set ruler         " show the cursor position all the time
@@ -250,15 +262,16 @@ let g:calendar_google_task = 1
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+"Ack
 "use ag for ack.vim
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-"do not have ack jump to first response
-cnoreabbrev Ack Ack!
 "ack for the current word under cursor
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
+"do not have ack jump to first response
+cnoreabbrev Ack Ack!
 
 "Mouse Settings
 set mouse=a            "enable mouse
@@ -267,9 +280,13 @@ if &term =~ '^screen'
 endif
 "nnoremap <LeftMouse> m'<LeftMouse>
 "nnoremap <LeftRelease> <LeftRelease>g``
+
+"CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-map <Leader>h :set number!<CR> :GitGutterToggle<CR>
+
+"Hide everything
+map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>
 
 
 "COPY

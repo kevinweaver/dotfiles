@@ -1,5 +1,7 @@
 # Basic options
 --recurse=yes
 --tag-relative=yes
+--languages=ruby
 --exclude=.git
-
+--exclude=log . $(bundle list --paths)
+--exclude=db/tmp

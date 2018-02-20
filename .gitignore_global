@@ -22,8 +22,6 @@ Icon?
 Thumbs.db
 \#*\#
 ehthumbs.db
-gems.tags
-tags
 tags-ja
 vim/spell/
 /.coverage.out
@@ -44,3 +42,4 @@ dump.rdb
 .ctags
 tags
 .pt
+EOT
