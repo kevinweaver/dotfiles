@@ -14,13 +14,13 @@ select-pane -t 3
 split-window -h -p 66
 
 # run commands
-send -t 0 hell ENTER
-send -t 1 hell ENTER
+send -t 0 work ENTER
+send -t 1 work ENTER
 send -t 2 kufak ENTER
 send -t 2 'invoker start' ENTER
 #send -t 1 'postgres -D ./pg_db' ENTER
-send -t 3 hell ENTER
-send -t 4 hell ENTER
+send -t 3 work ENTER
+send -t 4 work ENTER
 
 select-pane -t 0
 

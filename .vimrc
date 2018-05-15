@@ -64,6 +64,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'leafgarland/typescript-vim'
 
+"External Pugins
+Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
 
 call vundle#end()
 filetype plugin indent on "req
@@ -133,15 +135,15 @@ set backspace=indent,eol,start
 set history=100
 
 set number        " Show line numbers
-"set relativenumber        " Show relative line numbers
+set relativenumber        " Show relative line numbers
 
-set number relativenumber
+"set number relativenumber
 
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+"augroup numbertoggle
+"  autocmd!
+"  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+"augroup END
 
 
 
@@ -286,7 +288,8 @@ nnoremap <leader>. :CtrlPTag<cr>
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 "Hide everything
-map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>
+"map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>
+map <Leader>h :set number!<CR> :GitGutterToggle<CR>
 
 
 "COPY
@@ -304,6 +307,7 @@ map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 
 nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
+nmap <F10> :vs ~/github.com/kevinweaver/dotfiles.wiki/
 nmap <F9> :vs ~/dotfiles/.vimrc<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :vs ~/dotfiles/.snippets.json<CR>

@@ -12,14 +12,10 @@ select-pane -t 2
 split-window -h -p 66
 
 # run commands
-send -t 0 react ENTER
-send -t 1 react ENTER
-send -t 1 'npm start' ENTER
-send -t 2 react ENTER
-send -t 3 react ENTER
+send -t 0 kevin ENTER
+send -t 1 kevin ENTER
+send -t 2 kevin ENTER
+send -t 3 kevin ENTER
 
 select-pane -t 0
 
-new-window -n 'SSH'
-
-select-window -t 1

@@ -12,3 +12,4 @@ export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 export PATH=$PATH:$HOME/.rvm/bin
 export PATH="/usr/local/bin:$PATH"
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"

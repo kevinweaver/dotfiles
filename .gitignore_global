@@ -40,6 +40,6 @@ dump.rdb
 .tern-port
 *.zwc
 .ctags
-tags
+/tags
 .pt
 EOT

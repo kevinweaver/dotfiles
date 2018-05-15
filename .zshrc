@@ -12,7 +12,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 # Plugins to load, loc in  ~/.oh-my-zsh/custom/plugins/ Ex: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github vundle rbenv ruby rails encode64 tmux)
+plugins=(github vundle rbenv ruby rails encode64 tmux)
 
 source $HOME/.zsh_aliases
 source $HOME/.zsh_profile
@@ -40,10 +40,11 @@ if [ "$TMUX" = "" ]; then tmux new; fi
 
 #rvm
 # Load rvm into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export EDITOR=/usr/bin/vim
 export BUNDLE_EDITOR=/usr/bin/vim
+

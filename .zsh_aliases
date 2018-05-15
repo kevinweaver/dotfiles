@@ -1,5 +1,4 @@
 
-
 #to extract all the things
 extract () {
     if [ -f $1 ] ; then
@@ -33,36 +32,42 @@ function chpwd() {
       ls -la
 }
 
+# Apps
+alias insty='python3 ~/github/following/instagram-terminal-news-feed/start.py'
+alias instagram='python3 ~/github/following/instagram-terminal-news-feed/start.py'
+alias instyc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'
+alias instagramc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'
+alias reddit='rtv'
+alias train='sl'
+alias shipit='sl'
 
 # General Aliases
-alias vim="mvim -v"
-alias scan="xsane"
-alias scanner="xsane"
-alias mxlookup="nslookup -q=mx"
-alias weechat="weechat-curses"
-alias tether="easytether connect"
-alias color="~/.dotfiles/gnome-terminal-colors/install.sh"
+#alias vim='mvim -v'
+alias scan='xsane'
+alias scanner='xsane'
+alias mxlookup='nslookup -q=mx'
+alias weechat='weechat-curses'
+alias tether='easytether connect'
+alias color='~/.dotfiles/gnome-terminal-colors/install.sh'
 
 #TODO Replace these with better autocomplete
 # Project Folders
-alias work="cd ~/github.com/stitchfix"
-alias kufak="cd ~/github.com/stitchfix/kufak-suite"
-alias fix="cd ~/github.com/stitchfix/fix-service"
-alias hell="cd ~/github.com/stitchfix/hellblazer"
-alias feature="cd ~/github.com/stitchfix/feature-flag-service"
-alias learn="cd ~/github.com/kevinweaver/100DaysOfCode"
-alias react="cd ~/github.com/kevinweaver/hackernews-react"
-alias kevin="cd ~/github.com/kevinweaver"
-alias dot="cd ~/dotfiles"
-alias wiki="cd ~/github.com/kevinweaver/dotfiles.wiki"
-alias openhell="cd ~/github.com/stitchfix/kufak-suite; invoker remove hellblazer; cd ~/github.com/stitchfix/hellblazer; rails s"
+alias work='cd ~/github.com/stitchfix'
+alias kufak='cd ~/github.com/stitchfix/kufak-suite'
+alias stitch='cd ~/github.com/stitchfix'
+alias hell='cd ~/github.com/stitchfix/hellblazer'
+alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
+alias react='cd ~/github.com/kevinweaver/hackernews-react'
+alias kevin='cd ~/github.com/kevinweaver'
+alias dot='cd ~/dotfiles'
+alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
+alias openhell='cd ~/github.com/stitchfix/kufak-suite; invoker remove hellblazer; cd ~/github.com/stitchfix/hellblazer; rails s'
 
 #Rails
 
-#git
 
 # directory listing & navigation
-alias l="ls -lAh"
+alias l='ls -lAh'
 alias ll='ls -hl'
 alias la='ls -a'
 alias lla='ls -lah'
@@ -83,21 +88,21 @@ alias b='bundle exec !!'
 alias r='bundle exec rspec'
 
 # rails
-alias rakeall="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
-alias rakealll="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start"
-alias rakeall="rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed"
+alias rakeall='rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start'
+alias rakealll='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start'
+alias rakeall='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed'
 
 #This is required to run custom rake tasks in zsh
 alias rake='noglob rake'
 
-alias guard="bundle exec guard"
+alias guard='bundle exec guard'
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
-alias rdm="rake db:migrate"
-alias rdtp="rake db:test:prepare"
+alias rdm='rake db:migrate'
+alias rdtp='rake db:test:prepare'
 alias rsa='rake spec:all'
 alias rc='rails console'
 alias rs='rails server'
@@ -105,6 +110,7 @@ alias rsd='rails server --debugger'
 alias spec='/usr/bin/time bundle exec rspec'
 
 # misc
+alias ctags='`brew --prefix`/bin/ctags'
 alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
 alias f='find . -iname'
 alias v='vim $(fzf)'
@@ -115,7 +121,7 @@ alias lm='!! | more'
 alias sane='stty sane'
 
 alias py='python'
-alias sha1="openssl sha1"
+alias sha1='openssl sha1'
 
 alias vim_bundle_install='vim +PlugInstall'
 alias vim_bundle_update='vim +PlugUpdate +qall'
@@ -142,13 +148,14 @@ alias local_vimrc='$EDITOR $HOME/.vimrc.local'
 alias got='git'
 alias get='git'
 alias glive='git checkout master && git pull && git reset --hard origin/master && bundle install && rake db:migrate'
+alias gcpom='git checkout master && git pull origin master'
 
 # git status
 alias gs='git status'
 
 # git pull
 #gpull() {
-#  git pull origin "$(git branch | grep -E '^\* ' | sed 's/^\* //g')"
+#  git pull origin '$(git branch | grep -E '^\* ' | sed 's/^\* //g')'
 #}
 alias glf='git pull --ff-only'
 alias glr='git pull --rebase'
@@ -157,12 +164,12 @@ alias gpom='git pull origin master'
 alias gu='git fetch && git update-ref refs/heads/master origin/master'
 
 # git cherry-pick
-alias gcpa="git cherry-pick --abort"
-alias gcpc="git cherry-pick --continue"
+alias gcpa='git cherry-pick --abort'
+alias gcpc='git cherry-pick --continue'
 
 # git rebase
-alias grc="git rebase --continue"
-alias gra="git rebase --abort"
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
 
 # git push
 alias gp='git push'
@@ -188,29 +195,16 @@ alias gcam='git commit -a -m'
 alias gca='git commit -v --amend'
 alias amend='git commit -v --amend'
 alias gcn='git commit --patch -n'
-
+alias gcm='git commit -m'
 
 # git diff
-alias gd='git diff master..HEAD'
-#alias gdc='git diff --cached'
-#alias dt='git difftool'
-#alias dtc='git difftool --cached'
-#alias dth='git difftool HEAD'
-#
-#gcmsg() {
-#	if [ "$1" != "" ] # or better, if [ -n "$1" ]
-#	then
-#	    git commit - -m "$*"
-#	else
-#	    echo "Please provide a message."
-#	fi
-#}
-#
-#gitall() {
+alias gd='git diff master..HEAD -- .'
+
+# gitall() {
 #	git add .
-#	if [ "$1" != "" ]
+#	if [ '$1' != '' ]
 #	then
-#	    git commit -m "$1"
+#	    git commit -m '$1'
 #	else
 #	    git commit -m update
 #	fi
@@ -218,17 +212,17 @@ alias gd='git diff master..HEAD'
 #}
 #
 #gpo() {
-#  git push --set-upstream origin "$(git branch | awk '/^\* / { print $2 }')" >> /dev/null
+#  git push --set-upstream origin '$(git branch | awk '/^\* / { print $2 }')' >> /dev/null
 #}
 #
 #gpf() {
 #  branch=$(current_branch)
 #  if [[ $branch == 'master' ]]
 #  then
-#    echo "This command cannot be run from the master branch"
+#    echo 'This command cannot be run from the master branch'
 #    return 1
 #  else
-#    git push origin +"$branch" --force-with-lease
+#    git push origin +'$branch' --force-with-lease
 #  fi
 #}
 #
@@ -242,7 +236,7 @@ alias gd='git diff master..HEAD'
 #    branch=$(current_branch)
 #    if [[ $branch == 'master' ]]
 #    then
-#      echo "This command cannot be run from the master branch"
+#      echo 'This command cannot be run from the master branch'
 #      return 1
 #    else
 #      git fetch &&\
@@ -250,41 +244,41 @@ alias gd='git diff master..HEAD'
 #        git checkout master && \
 #        git diff-index --quiet --cached HEAD && \
 #        git pull origin master && \
-#        git checkout "$branch" && \
+#        git checkout '$branch' && \
 #        git rebase master && \
-#        git push origin +"$branch" --force-with-lease && \
+#        git push origin +'$branch' --force-with-lease && \
 #        wait_for_ci && \
 #        git checkout master && \
-#        git merge "$branch" --ff-only && \
+#        git merge '$branch' --ff-only && \
 #        sleep 2 && \
 #        git push origin master && \
 #        hub browse && \
 #        sleep 10 && \
-#        git push origin ":$branch"
+#        git push origin ':$branch'
 #    fi
 #  else
-#    echo "This command must be run within a git repository"
+#    echo 'This command must be run within a git repository'
 #    return 1
 #  fi
 #}
 #
 #ds() {
-#  args="$1"
-#  if [ "x$args" != "x" ];then
-#    git diff --stat "$args~1..$args"
+#  args='$1'
+#  if [ 'x$args' != 'x' ];then
+#    git diff --stat '$args~1..$args'
 #  else
 #    git diff --stat --cached
 #  fi
 #}
 #
 #compare_to_master() {
-#  branch="$(current_branch)"
-#  git diff --stat "master..$branch"
+#  branch='$(current_branch)'
+#  git diff --stat 'master..$branch'
 #}
 #
 #diff_with_master() {
-#  branch="$(current_branch)"
-#  git difftool "master..$branch"
+#  branch='$(current_branch)'
+#  git difftool 'master..$branch'
 #}
 #
 ## git rebase
@@ -293,48 +287,48 @@ alias gd='git diff master..HEAD'
 #
 #show() {
 #  # Show a given commit in git difftool
-#  args="$1"
-#  if [ "x$args" != "x" ];then
-#    git difftool "$args~1..$args"
+#  args='$1'
+#  if [ 'x$args' != 'x' ];then
+#    git difftool '$args~1..$args'
 #  else
-#    echo "Usage: show SHA"
+#    echo 'Usage: show SHA'
 #  fi
 #}
 #
 ## Show commits that differ from the master branch
 #divergent () {
-#  branch="$(current_branch)"
-#  if [[ "${1}" == "--bare" ]]
+#  branch='$(current_branch)'
+#  if [[ '${1}' == '--bare' ]]
 #  then
-#    command_opt="--format=%h"
+#    command_opt='--format=%h'
 #  else
 #    command_opt=(--left-right --graph --cherry-pick --oneline)
 #  fi
-#  if [[ "$branch" == "master" ]]
+#  if [[ '$branch' == 'master' ]]
 #  then
-#    echo "This command cannot be run against the master branch"
+#    echo 'This command cannot be run against the master branch'
 #  else
-#    git log "${command_opt[@]}" master.."$branch"
+#    git log '${command_opt[@]}' master..'$branch'
 #  fi
 #}
 #
 ## Isolate a single commit to its own branch
 #isolate() {
-#  if [ "$#" -ne 2 ]
+#  if [ '$#' -ne 2 ]
 #  then
-#    echo "Usage: isolate <sha> <branch-name>"
+#    echo 'Usage: isolate <sha> <branch-name>'
 #    return 1
 #  else
 #    git diff-index --quiet --cached HEAD && \
-#      git checkout -b "$2" && \
+#      git checkout -b '$2' && \
 #      git reset --hard origin/master && \
-#      git cherry-pick "$1"
+#      git cherry-pick '$1'
 #  fi
 #}
 #
 #alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 #
-#alias stashpop="git stash && git pull && git stash pop"
+#alias stashpop='git stash && git pull && git stash pop'
 ##alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
 #
 alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %aN: %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
