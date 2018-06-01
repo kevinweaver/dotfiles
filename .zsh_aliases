@@ -33,6 +33,10 @@ function chpwd() {
 }
 
 # Apps
+macdown() {
+  "$(mdfind kMDItemCFBundleIdentifier=com.uranusjr.macdown | head -n1)/Contents/SharedSupport/bin/macdown" $@
+}
+
 alias insty='python3 ~/github/following/instagram-terminal-news-feed/start.py'
 alias instagram='python3 ~/github/following/instagram-terminal-news-feed/start.py'
 alias instyc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'

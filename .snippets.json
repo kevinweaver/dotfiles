@@ -24,5 +24,17 @@
         "snippets": {
             "extends": "javascript"
         }
+    },
+    "ruby": {
+        "snippets": {
+            "rspec": "require 'rails_helper'\n\ndescribe ExampleService do\n\tlet(:example) { create(:example_thing) }\n\n\tbefore do\n\tend\n\n\tdescribe '#example_method' do\n\t\tcontext 'given something' do\n\t\t\tit 'does something' do\n\t\t\t\texpect something to be true\n\t\t\tend\n\t\tend\n\tend\nend"
+        },
+        "abbreviations":{
+        }
+    },
+    "rb": {
+        "snippets": {
+            "extends": "ruby"
+        }
     }
 }
