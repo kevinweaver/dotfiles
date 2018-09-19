@@ -1,11 +1,11 @@
 set nocompatible               " be iproved
 filetype off                   " required!
-"esc is far away, let's try ;; to get us out of insert mode
-imap ;; <esc>
 
+"esc is far away, Use ;; to get us out of insert mode
+"imap ;; <esc>
 
 "Map ; to : for speeeed
-":nmap ; :
+:nmap ; :
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -43,6 +43,7 @@ Plugin 'itchyny/calendar.vim'
 Plugin 'esneider/YUNOcommit.vim'
 Plugin 'wincent/command-t'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'jgdavey/tslime.vim'
 
 "Git Plugins
 Plugin 'airblade/vim-gitgutter'
@@ -63,6 +64,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'fatih/vim-go'
 
 "External Pugins
 Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
@@ -92,12 +94,6 @@ if has('gui_running')
   set guifont=Inconsolata\ 13    " set fonts for gui vim
   set guioptions=egmrt           " hide the gui menubar
 endif
-
-" ARROW KEYS ARE UNACCEPTABLE
-"  map <Left> :echo "no!"<cr>
-"  map <Right> :echo "no!"<cr>
-"  map <Up> :echo "no!"<cr>
-"  map <Down> :echo "no!"<cr>
 
 " Pretty obvious defaults if you ask me...
   command! W :w
@@ -135,7 +131,7 @@ set backspace=indent,eol,start
 set history=100
 
 set number        " Show line numbers
-set relativenumber        " Show relative line numbers
+"set relativenumber        " Show relative line numbers
 
 "set number relativenumber
 
@@ -144,9 +140,6 @@ set relativenumber        " Show relative line numbers
 "  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 "  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 "augroup END
-
-
-
 
 set nowrap        " Turn off Text Wrap
 set scrolloff=3   " Keep more context when scrolling off the end of a buffer
@@ -253,6 +246,11 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>g :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>s :vs<CR>\| :A<CR>
+
+" tslime.vim - Specs running in Tmux
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
 "Spring rspec
 "let g:rspec_command = '!spring rspec {spec}'
 let g:rspec_command = '!RAILS_ENV=test bundle exec rspec {spec} --color --profile'
@@ -289,7 +287,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 "Hide everything
 "map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>
-map <Leader>h :set number!<CR> :GitGutterToggle<CR>
+map <Leader>m :set number!<CR> :GitGutterToggle<CR>
 
 
 "COPY
@@ -316,10 +314,31 @@ nmap <F7> :vs ~/dotfiles/.snippets.json<CR>
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
 let g:user_emmet_expandabbr_key = '<Tab>'
 
-"Plugin: Airline
-let g:airline#extensions#tabline#enabled = 1
+
+"Plugin: Airline - Used to display top and bottom bars for tabs and file info
+let g:airline#extensions#tabline#enabled = 1     " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline_theme='base16_railscasts'
+
+" ---Tab controls---
+" To open a new empty tab
+nmap <leader>n :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+nmap <D->l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+nmap <D->h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
 
 
 " Function that will create directories on save if necessary:

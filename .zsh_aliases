@@ -26,11 +26,11 @@ dnslookup(){
   dig $1 ANY +noall +answer
 }
 
-#ls after cd
-function chpwd() {
-    emulate -L zsh
-      ls -la
-}
+##ls after cd
+#function chpwd() {
+#    emulate -L zsh
+#      ls -la
+#}
 
 # Apps
 macdown() {
@@ -44,6 +44,7 @@ alias instagramc='python3 ~/github/following/instagram-terminal-news-feed/start.
 alias reddit='rtv'
 alias train='sl'
 alias shipit='sl'
+alias wow='sudo ~/wow/WoW.app/Contents/MacOS/World\ of\ Warcraft'
 
 # General Aliases
 #alias vim='mvim -v'
@@ -60,6 +61,7 @@ alias work='cd ~/github.com/stitchfix'
 alias kufak='cd ~/github.com/stitchfix/kufak-suite'
 alias stitch='cd ~/github.com/stitchfix'
 alias hell='cd ~/github.com/stitchfix/hellblazer'
+alias chui='cd ~/github.com/stitchfix/client-home-ui'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
 alias kevin='cd ~/github.com/kevinweaver'
@@ -152,6 +154,7 @@ alias local_vimrc='$EDITOR $HOME/.vimrc.local'
 alias got='git'
 alias get='git'
 alias glive='git checkout master && git pull && git reset --hard origin/master && bundle install && rake db:migrate'
+alias gcom='git checkout master'
 alias gcpom='git checkout master && git pull origin master'
 
 # git status

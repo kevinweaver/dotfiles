@@ -40,7 +40,7 @@ if [ "$TMUX" = "" ]; then tmux new; fi
 
 #rvm
 # Load rvm into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -48,3 +48,6 @@ if [ "$TMUX" = "" ]; then tmux new; fi
 export EDITOR=/usr/bin/vim
 export BUNDLE_EDITOR=/usr/bin/vim
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
