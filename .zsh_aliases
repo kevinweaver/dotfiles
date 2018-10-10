@@ -37,6 +37,7 @@ macdown() {
   "$(mdfind kMDItemCFBundleIdentifier=com.uranusjr.macdown | head -n1)/Contents/SharedSupport/bin/macdown" $@
 }
 
+alias ngrok='~/ngrok'
 alias insty='python3 ~/github/following/instagram-terminal-news-feed/start.py'
 alias instagram='python3 ~/github/following/instagram-terminal-news-feed/start.py'
 alias instyc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'
@@ -64,10 +65,14 @@ alias hell='cd ~/github.com/stitchfix/hellblazer'
 alias chui='cd ~/github.com/stitchfix/client-home-ui'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
+alias ether='cd ~/github.com/ethereumbook/ethereumbook && vim book.asciidoc'
 alias kevin='cd ~/github.com/kevinweaver'
 alias dot='cd ~/dotfiles'
 alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
+
+# Work commands
 alias openhell='cd ~/github.com/stitchfix/kufak-suite; invoker remove hellblazer; cd ~/github.com/stitchfix/hellblazer; rails s'
+alias invoke='cd ~/github.com/stitchfix/kufak-suite; pkill puma; pkill invoker; invoker start'
 
 #Rails
 
@@ -99,7 +104,7 @@ alias rakealll='rake db:drop && rake db:create && rake db:migrate:redo && rake d
 alias rakeall='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed'
 
 #This is required to run custom rake tasks in zsh
-alias rake='noglob rake'
+alias rake='noglob bundle exec rake'
 
 alias guard='bundle exec guard'
 alias tlog='tail -f log/development.log'
@@ -153,12 +158,17 @@ alias local_vimrc='$EDITOR $HOME/.vimrc.local'
 # git
 alias got='git'
 alias get='git'
-alias glive='git checkout master && git pull && git reset --hard origin/master && bundle install && rake db:migrate'
 alias gcom='git checkout master'
 alias gcpom='git checkout master && git pull origin master'
+alias gscpom='git stash && git checkout master && git stash && git pull origin master'
+alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && git stash'
 
 # git status
 alias gs='git status'
+
+# git stash
+alias gst='git stash'
+
 
 # git pull
 #gpull() {
@@ -206,6 +216,10 @@ alias gcm='git commit -m'
 
 # git diff
 alias gd='git diff master..HEAD -- .'
+
+gdn() {
+  git diff HEAD~$1..
+}
 
 # gitall() {
 #	git add .

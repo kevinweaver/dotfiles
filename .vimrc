@@ -43,7 +43,8 @@ Plugin 'itchyny/calendar.vim'
 Plugin 'esneider/YUNOcommit.vim'
 Plugin 'wincent/command-t'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'jgdavey/tslime.vim'
+Plugin 'jgdavey/tslime.vim'               "Send tmux commands in vim (isn't working)
+Plugin 'benmills/vimux'                   "Run Tmux commands from vim in 20% window
 
 "Git Plugins
 Plugin 'airblade/vim-gitgutter'
@@ -65,6 +66,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'fatih/vim-go'
+Plugin 'tomlion/vim-solidity'             "Syntax highlight Eth lang
+Plugin 'mxw/vim-jsx'
 
 "External Pugins
 Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
@@ -95,21 +98,26 @@ if has('gui_running')
   set guioptions=egmrt           " hide the gui menubar
 endif
 
-" Pretty obvious defaults if you ask me...
-  command! W :w
-  command! Q :q
-  command! Wq :wq
-  command! WQ :wq
+" Allow for mistakes
+command! W :w
+command! Q :q
+command! Wq :wq
+command! WQ :wq
 
 "Map ctrl+t to copy out of vim
 vnoremap <C-t> "+y
 
-
 " Map ctrl-movement keys to window switching
- map <C-k> <C-w><Up>
- map <C-j> <C-w><Down>
- map <C-l> <C-w><Right>
- map <C-h> <C-w><Left>
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
+" Map command-movement keys to buffer switching
+" NOTE: These only work in MacVim.  For support in default vim, add keyboard
+" shortcut in iTerm preferences using action 'Send Text with vim special chars'
+map <D-h> :bp<CR>
+map <D-l> :bn<CR>
 
 "Nerdtree maps
 map <C-n> <plug>NERDTreeTabsToggle<CR>
@@ -140,8 +148,17 @@ set number        " Show line numbers
 "  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 "  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 "augroup END
-
 set nowrap        " Turn off Text Wrap
+"But allow for wrap toggle with \w
+map <Leader>w :call ToggleWrap()<CR>
+function ToggleWrap()
+ if (&wrap == 1)
+   set nowrap
+ else
+   set wrap
+ endif
+endfunction
+
 set scrolloff=3   " Keep more context when scrolling off the end of a buffer
 set ruler         " show the cursor position all the time
 set wildmenu      " Make tab completion for files/buffers act like bash
@@ -241,19 +258,22 @@ autocmd BufWritePre * %s/\s\+$//e
 
 cnoreabbrev td tab drop
 
+
+" tslime.vim - Specs running in Tmux
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
+
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>g :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-map <Leader>s :vs<CR>\| :A<CR>
 
-" tslime.vim - Specs running in Tmux
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+"Open Spec file in vertical pane
+map <Leader>s :vs<CR>\| :A<CR>
 
 "Spring rspec
 "let g:rspec_command = '!spring rspec {spec}'
-let g:rspec_command = '!RAILS_ENV=test bundle exec rspec {spec} --color --profile'
 
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
@@ -304,8 +324,8 @@ map <Leader>m :set number!<CR> :GitGutterToggle<CR>
 " Auto open tagbar
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 
-nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md
-nmap <F10> :vs ~/github.com/kevinweaver/dotfiles.wiki/
+nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md<CR>
+nmap <F10> :vs ~/github.com/kevinweaver/dotfiles.wiki/<CR>
 nmap <F9> :vs ~/dotfiles/.vimrc<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :vs ~/dotfiles/.snippets.json<CR>
