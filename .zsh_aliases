@@ -38,10 +38,10 @@ macdown() {
 }
 
 alias ngrok='~/ngrok'
-alias insty='python3 ~/github/following/instagram-terminal-news-feed/start.py'
-alias instagram='python3 ~/github/following/instagram-terminal-news-feed/start.py'
-alias instyc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'
-alias instagramc='python3 ~/github/following/instagram-terminal-news-feed/start.py --color'
+alias insty='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
+alias instagram='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
+alias instyc='python3 ~/github.com/following/instagram-terminal-news-feed/start.py --color'
+alias instagramc='python3 ~/github.com/following/instagram-terminal-news-feed/start.py --color'
 alias reddit='rtv'
 alias train='sl'
 alias shipit='sl'
@@ -65,15 +65,17 @@ alias hell='cd ~/github.com/stitchfix/hellblazer'
 alias chui='cd ~/github.com/stitchfix/client-home-ui'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
-alias ether='cd ~/github.com/ethereumbook/ethereumbook && vim book.asciidoc'
+alias ether='cd ~/github.com/ethereumbook/ethereumbook'
 alias kevin='cd ~/github.com/kevinweaver'
 alias dot='cd ~/dotfiles'
 alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
+alias ethwp='macdown ~/github.com/ethereum/wiki.wiki/Ethereum-Whitepaper.md'
 
 # Work commands
 alias openhell='cd ~/github.com/stitchfix/kufak-suite; invoker remove hellblazer; cd ~/github.com/stitchfix/hellblazer; rails s'
 alias invoke='cd ~/github.com/stitchfix/kufak-suite; pkill puma; pkill invoker; invoker start'
 
+#alias killrails="ps aux | grep puma | awk '{print $2}' | xargs kill -15"
 #Rails
 
 
@@ -119,6 +121,7 @@ alias rc='rails console'
 alias rs='rails server'
 alias rsd='rails server --debugger'
 alias spec='/usr/bin/time bundle exec rspec'
+alias railsnopry='DISABLE_PRY_RAILS=1 bundle exec rails c'
 
 # misc
 alias ctags='`brew --prefix`/bin/ctags'
@@ -147,21 +150,12 @@ fi
 alias v='vim'
 alias vi='vim -u NONE -N'
 
-# It's aliases all the way down
-alias local_vim_bundles='$EDITOR $HOME/.bundles.local.vim'
-alias local_gitconfig='$EDITOR $HOME/.gitconfig.local'
-alias local_shell_conf='$EDITOR $HOME/.local.sh'
-alias local_tmux_conf='$EDITOR $HOME/.tmux.local'
-alias local_vimrc='$EDITOR $HOME/.vimrc.local'
-
-
 # git
-alias got='git'
-alias get='git'
 alias gcom='git checkout master'
 alias gcpom='git checkout master && git pull origin master'
 alias gscpom='git stash && git checkout master && git stash && git pull origin master'
 alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && git stash'
+alias unstage='git reset HEAD'
 
 # git status
 alias gs='git status'

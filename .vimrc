@@ -53,8 +53,8 @@ Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstat
 "Search Plugins
 Plugin 'tpope/vim-unimpaired'
 Plugin 'msanders/snipmate.vim'
-Plugin 'ctrlp/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
+Plugin 'ctrlp/ctrlp.vim'                  "Allows for fuzzy file search
+Plugin 'mileszs/ack.vim'                  "
 Plugin 'tpope/vim-bundler'
 
 "Syntax Highlighting Plugins
@@ -71,6 +71,7 @@ Plugin 'mxw/vim-jsx'
 
 "External Pugins
 Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
+Plugin 'junegunn/goyo.vim'
 
 call vundle#end()
 filetype plugin indent on "req
@@ -81,10 +82,10 @@ filetype plugin indent on "req
 let g:multi_cursor_use_default_mapping=0
 " Default mapping
 "let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_next_key='<C-x>'
-let g:multi_cursor_prev_key='<C-p>'
+"let g:multi_cursor_next_key='<C-x>'
+"let g:multi_cursor_prev_key='<C-p>'
 "let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
+"let g:multi_cursor_quit_key='<Esc>'
 "6 characters before you complete me kicks in
 let g:ycm_min_num_of_chars_for_completion = 6
 "python from powerline.bindings.vim impor 'source_plugin; source_plugin()
@@ -104,6 +105,8 @@ command! Q :q
 command! Wq :wq
 command! WQ :wq
 
+"=============MOVEMENT==============
+
 "Map ctrl+t to copy out of vim
 vnoremap <C-t> "+y
 
@@ -120,12 +123,20 @@ map <D-h> :bp<CR>
 map <D-l> :bn<CR>
 
 "Nerdtree maps
+
+"Open/close nerdtree
 map <C-n> <plug>NERDTreeTabsToggle<CR>
+"map <C-n> <plug>NERDTreeTabsToggle<CR> :TagbarToggle<CR>
+
+"Render the current file's folder
+map <leader>n :NERDTreeFind<cr>
+"Reload nerdtree
 nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 
 "Ctags
 "map \c to run ctags in folder
 map <Leader>c :! ctags -R -f ./.git/tags .<CR>
+set tags=tags
 " Ctrl+[ to so that manuevering ctags is simply Ctrl+] to go down and Ctrl+[ to go up
 nnoremap <Leader>[ <C-t>
 nnoremap <Leader>] <C-]>
@@ -135,10 +146,10 @@ map <C-m> :TagbarToggle<CR>
 
 cmap w!! %!sudo tee > /dev/null/ %
 
-set backspace=indent,eol,start
-set history=100
+set backspace=indent,eol,start " make backspace work like most other programs
+set history=1024               " Set
 
-set number        " Show line numbers
+set number                 " Show line numbers
 "set relativenumber        " Show relative line numbers
 
 "set number relativenumber
@@ -190,8 +201,8 @@ set noerrorbells
 set belloff=all
 set timeoutlen=350
 "set mousehide
-set expandtab
-set tabstop=2
+set expandtab                         "Expand tabs to use the real number of spaces
+set tabstop=2                         "
 set shiftwidth=2
 set softtabstop=2
 set autoindent
@@ -203,14 +214,14 @@ set foldnestmax=2
 set foldlevel=100
 set foldenable
 
-set undofile                                      "allow per file undo persistance
-set undoreload=10000
-set undodir=~/.vim/tmp/undo//                     "undo dir
-set backupdir=~/.vim/tmp/backups//                "backup dir -- // saves full filepath with % as folder delimeter
-set directory=~/.vim/tmp/swap//                   "temporary dir for swap files
-set backup                                        "file backups enabled
-set writebackup                                   "enabling backups
-set noswapfile                                    "disable swaps - were using backups in 2017
+set undofile                           "allow per file undo persistance
+set undoreload=10000                   " how many times can you undo
+set undodir=~/.vim/tmp/undo//          "undo dir
+set backupdir=~/.vim/tmp/backups//     "backup dir -- // saves full filepath with % as folder delimeter
+set directory=~/.vim/tmp/swap//        "temporary dir for swap files
+set backup                             "file backups enabled
+set writebackup                        "enabling backups
+set noswapfile                         "disable swaps - were using backups in the distant future
 
 " if undo and backup directories do not exist, make them
 if !isdirectory(expand(&undodir))
@@ -238,9 +249,11 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 "Search Stuff
 set hlsearch  " highlight previous search matches
 set incsearch " search as you type
+
 " Make searches case-sensitive only if they contain upper-case characters
-set ignorecase
-set smartcase
+set ignorecase    " search ignores casing
+set smartcase     " if an upcase exists,
+
 "pressing enter key in command mode removes search highlighting
 nnoremap <CR> :nohlsearch <CR>
 nnoremap Q <nop>
@@ -267,7 +280,7 @@ let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>g :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
 
 "Open Spec file in vertical pane
 map <Leader>s :vs<CR>\| :A<CR>
@@ -310,7 +323,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 map <Leader>m :set number!<CR> :GitGutterToggle<CR>
 
 
-"COPY
+"===========COPY==============
 "bind ctrl+c to copy
 "vmap <C-c> "+y
 "nmap <C-c> :.w !pbcopy<CR><CR>
@@ -324,8 +337,7 @@ map <Leader>m :set number!<CR> :GitGutterToggle<CR>
 " Auto open tagbar
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 
-nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/Sharpen.md<CR>
-nmap <F10> :vs ~/github.com/kevinweaver/dotfiles.wiki/<CR>
+nmap <F12> :vs ~/github.com/kevinweaver/dotfiles.wiki/<CR>
 nmap <F9> :vs ~/dotfiles/.vimrc<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :vs ~/dotfiles/.snippets.json<CR>
@@ -340,26 +352,6 @@ let g:airline#extensions#tabline#enabled = 1     " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline_theme='base16_railscasts'
-
-" ---Tab controls---
-" To open a new empty tab
-nmap <leader>n :enew<cr>
-
-" Move to the next buffer
-nmap <leader>l :bnext<CR>
-nmap <D->l :bnext<CR>
-
-" Move to the previous buffer
-nmap <leader>h :bprevious<CR>
-nmap <D->h :bprevious<CR>
-
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
-nmap <leader>bq :bp <BAR> bd #<CR>
-
-" Show all open buffers and their status
-nmap <leader>bl :ls<CR>
-
 
 " Function that will create directories on save if necessary:
 function s:MkNonExDir(file, buf)
