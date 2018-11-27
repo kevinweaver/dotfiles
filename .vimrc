@@ -47,8 +47,9 @@ Plugin 'jgdavey/tslime.vim'               "Send tmux commands in vim (isn't work
 Plugin 'benmills/vimux'                   "Run Tmux commands from vim in 20% window
 
 "Git Plugins
-Plugin 'airblade/vim-gitgutter'
+"Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
+Plugin 'mhinz/vim-signify'                "Adds git diffs in gutter
 
 "Search Plugins
 Plugin 'tpope/vim-unimpaired'
@@ -58,7 +59,7 @@ Plugin 'mileszs/ack.vim'                  "
 Plugin 'tpope/vim-bundler'
 
 "Syntax Highlighting Plugins
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-rails'                  "Syntax + error highlight for rails
 Plugin 'tpope/vim-haml'                   "Syntax highlight for haml
 Plugin 'pangloss/vim-javascript'
@@ -68,6 +69,10 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'fatih/vim-go'
 Plugin 'tomlion/vim-solidity'             "Syntax highlight Eth lang
 Plugin 'mxw/vim-jsx'
+
+"Linting Plugins
+Plugin 'vim-syntastic/syntastic'
+"Plugin 'w0rp/ale'                         "Async linting
 
 "External Pugins
 Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
@@ -159,6 +164,7 @@ set number                 " Show line numbers
 "  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 "  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 "augroup END
+set lbr
 set nowrap        " Turn off Text Wrap
 "But allow for wrap toggle with \w
 map <Leader>w :call ToggleWrap()<CR>
@@ -177,7 +183,7 @@ set showcmd       " display incomplete commands
 set hidden        " keep undo history for background buffers
 set autoread      " autoamically read the file again when it is changed externally
 set showtabline=2 " always show tab bar
-set term=cons25   " fix issue with arrow keys
+"set term=cons25   " fix issue with arrow keys
 set autoread | au CursorHold * checktime | call feedkeys("lh")  " auto refresh vim if current files change outside vim
 
 "map pasting
@@ -188,7 +194,7 @@ set autoread | au CursorHold * checktime | call feedkeys("lh")  " auto refresh v
 " Editting configuration
 syntax enable
 set pastetoggle=<F2>
-set term=screen-256color
+"set term=screen-256color
 set ts=2
 set smarttab
 set showmatch
@@ -303,6 +309,10 @@ endif
 
 "ack for the current word under cursor
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
+
+"start a find+replace for the current word
+nnoremap <Leader>f :%s/<C-R><C-W>/
+
 "do not have ack jump to first response
 cnoreabbrev Ack Ack!
 
@@ -311,12 +321,23 @@ set mouse=a            "enable mouse
 if &term =~ '^screen'
   set ttymouse=xterm2  " tmux knows the extended mouse mode
 endif
+
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 "nnoremap <LeftMouse> m'<LeftMouse>
 "nnoremap <LeftRelease> <LeftRelease>g``
 
 "CtrlP
+"search file names and contents
 nnoremap <leader>. :CtrlPTag<cr>
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+endif
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|images|*.svg'
 
 "Hide everything
 "map <Leader>h :set number! relativenumber!<CR> :GitGutterToggle<CR>

@@ -51,3 +51,5 @@ export BUNDLE_EDITOR=/usr/bin/vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+export PATH=/usr/local/share/npm/bin:$PATH

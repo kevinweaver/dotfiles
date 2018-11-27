@@ -1,4 +1,3 @@
-
 #to extract all the things
 extract () {
     if [ -f $1 ] ; then
@@ -26,6 +25,24 @@ dnslookup(){
   dig $1 ANY +noall +answer
 }
 
+#update all relevant repos
+kufaksync(){
+  cd ~/github.com/stitchfix/
+  for string in client-home-ui client-service fix-service hellblazer kufak-suite scheduling-service style-pass-service style-pass-ui styling-fee-service survey-service thenames
+  do
+    echo " ---------- Syncing $string ---------- "
+    cd $string
+    glive
+    cd ~/github.com/stitchfix/
+  done
+  echo " ---------- Finished Syncing ---------- "
+}
+
+syncinvoke(){
+  kufaksync
+  invoke
+}
+
 ##ls after cd
 #function chpwd() {
 #    emulate -L zsh
@@ -37,6 +54,8 @@ macdown() {
   "$(mdfind kMDItemCFBundleIdentifier=com.uranusjr.macdown | head -n1)/Contents/SharedSupport/bin/macdown" $@
 }
 
+#alias vim='nvim'
+#alias geth='~/github.com/ethereum/go-ethereum/build/bin/geth'
 alias ngrok='~/ngrok'
 alias insty='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
 alias instagram='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
@@ -121,6 +140,7 @@ alias rc='rails console'
 alias rs='rails server'
 alias rsd='rails server --debugger'
 alias spec='/usr/bin/time bundle exec rspec'
+alias rspec='bundle exec rspec'
 alias railsnopry='DISABLE_PRY_RAILS=1 bundle exec rails c'
 
 # misc
@@ -142,10 +162,10 @@ alias vim_bundle_update='vim +PlugUpdate +qall'
 alias vim_bundle_clean='vim +PlugClean +qall'
 alias vim_bundle_maintenance='vim +PlugInstall +PlugUpdate +PlugClean +qall'
 
-if command -v nvim >/dev/null 2>&1
-then
-  alias vim='nvim'
-fi
+#if command -v nvim >/dev/null 2>&1
+#then
+#  alias vim='nvim'
+#fi
 
 alias v='vim'
 alias vi='vim -u NONE -N'
@@ -201,10 +221,7 @@ alias gb='git branch'
 
 # git commit
 alias gc='git commit -v'
-#alias gcvm='git commit -v -m'
-alias gcam='git commit -a -m'
-alias gca='git commit -v --amend'
-alias amend='git commit -v --amend'
+alias gca='git commit --amend --no-edit'
 alias gcn='git commit --patch -n'
 alias gcm='git commit -m'
 
