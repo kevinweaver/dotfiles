@@ -43,7 +43,7 @@ syncinvoke(){
   invoke
 }
 
-##ls after cd
+#ls after cd
 #function chpwd() {
 #    emulate -L zsh
 #      ls -la
@@ -54,7 +54,7 @@ macdown() {
   "$(mdfind kMDItemCFBundleIdentifier=com.uranusjr.macdown | head -n1)/Contents/SharedSupport/bin/macdown" $@
 }
 
-#alias vim='nvim'
+alias vim='nvim'
 #alias geth='~/github.com/ethereum/go-ethereum/build/bin/geth'
 alias ngrok='~/ngrok'
 alias insty='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
@@ -84,7 +84,7 @@ alias hell='cd ~/github.com/stitchfix/hellblazer'
 alias chui='cd ~/github.com/stitchfix/client-home-ui'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
-alias ether='cd ~/github.com/ethereumbook/ethereumbook'
+alias ether='cd ~/github.com/kevinweaver/ethereum-learnings'
 alias kevin='cd ~/github.com/kevinweaver'
 alias dot='cd ~/dotfiles'
 alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
@@ -103,6 +103,7 @@ alias l='ls -lAh'
 alias ll='ls -hl'
 alias la='ls -a'
 alias lla='ls -lah'
+alias lsla='ls -lah'
 
 alias ..='cd ..'
 alias ...='cd .. ; cd ..'
@@ -232,17 +233,11 @@ gdn() {
   git diff HEAD~$1..
 }
 
-# gitall() {
-#	git add .
-#	if [ '$1' != '' ]
-#	then
-#	    git commit -m '$1'
-#	else
-#	    git commit -m update
-#	fi
-#	git push
-#}
-#
+# push "some commit message"
+function push {
+  gap && gcm "$1" && gpoh
+}
+
 #gpo() {
 #  git push --set-upstream origin '$(git branch | awk '/^\* / { print $2 }')' >> /dev/null
 #}

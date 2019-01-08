@@ -309,6 +309,12 @@ endif
 
 "ack for the current word under cursor
 nnoremap <Leader>a :Ack!<Space><C-R><C-W>
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+if executable('rg')
+  set grepprg=rg--color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 "start a find+replace for the current word
 nnoremap <Leader>f :%s/<C-R><C-W>/
