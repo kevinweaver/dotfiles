@@ -1,6 +1,5 @@
 #to extract all the things
-extract () {
-    if [ -f $1 ] ; then
+extract () { if [ -f $1 ] ; then
       case $1 in
         *.tar.bz2)   tar xjf $1     ;;
         *.tar.gz)    tar xzf $1     ;;
@@ -37,6 +36,19 @@ kufaksync(){
   done
   echo " ---------- Finished Syncing ---------- "
 }
+
+kufakcreate(){
+  cd ~/github.com/stitchfix/
+  for string in client-home-ui client-service fix-service hellblazer scheduling-service style-pass-service style-pass-ui styling-fee-service survey-service
+  do
+    echo " ---------- Syncing $string ---------- "
+    cd ~/github.com/stitchfix/
+    cd $string
+    glivecreate
+  done
+  echo " ---------- Finished Syncing ---------- "
+}
+
 
 syncinvoke(){
   kufaksync
@@ -176,6 +188,7 @@ alias gcom='git checkout master'
 alias gcpom='git checkout master && git pull origin master'
 alias gscpom='git stash && git checkout master && git stash && git pull origin master'
 alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && git stash'
+alias glivecreate='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rails stichfix:db:create:all && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
 alias unstage='git reset HEAD'
 
 # git status
