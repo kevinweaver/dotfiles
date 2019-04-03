@@ -14,71 +14,71 @@ call plug#begin()
 
 
 "Manage Plugins
-Plugin 'gmarik/vundle'                    "Vim plugin manager
+Plug 'gmarik/vundle'                    "Vim plugin manager
 
 "Autocomplete Plugins
-Plugin 'alvan/vim-closetag'
-Plugin 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
-Plugin 'Townk/vim-autoclose'              "Adds closing pairs
-Plugin 'Raimondi/delimitMate'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mattn/emmet-vim'                  "Adds snippets
-Plugin 'mattn/webapi-vim'
-Plugin 'tpope/vim-endwise'                "Auto-close ruby elements
-"Plugin 'Valloric/YouCompleteMe'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
+Plug 'Townk/vim-autoclose'              "Adds closing pairs
+Plug 'Raimondi/delimitMate'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mattn/emmet-vim'                  "Adds snippets
+Plug 'mattn/webapi-vim'
+Plug 'tpope/vim-endwise'                "Auto-close ruby elements
+"Plug 'Valloric/YouCompleteMe'
 
 "Visual
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'TaDaa/vimade'                     "Fade unfocused vim splits
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'TaDaa/vimade'                     "Fade unfocused vim splits
 
 "Navigation Plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'majutsushi/tagbar'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'majutsushi/tagbar'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'easymotion/vim-easymotion'
 
 "Functional Plugins
-Plugin 'itchyny/calendar.vim'
-Plugin 'esneider/YUNOcommit.vim'
-Plugin 'wincent/command-t'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'jgdavey/tslime.vim'               "Send tmux commands in vim (isn't working)
-Plugin 'benmills/vimux'                   "Run Tmux commands from vim in 20% window
+Plug 'itchyny/calendar.vim'
+Plug 'esneider/YUNOcommit.vim'
+Plug 'wincent/command-t'
+Plug 'thoughtbot/vim-rspec'
+Plug 'jgdavey/tslime.vim'               "Send tmux commands in vim (isn't working)
+Plug 'benmills/vimux'                   "Run Tmux commands from vim in 20% window
 
 "Git Plugins
-"Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
-Plugin 'mhinz/vim-signify'                "Adds git diffs in gutter
+"Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
+Plug 'mhinz/vim-signify'                "Adds git diffs in gutter
 
 "Search Plugins
-Plugin 'tpope/vim-unimpaired'
-Plugin 'msanders/snipmate.vim'
-Plugin 'ctrlp/ctrlp.vim'                  "Allows for fuzzy file search
-Plugin 'mileszs/ack.vim'                  "
-Plugin 'tpope/vim-bundler'
+Plug 'tpope/vim-unimpaired'
+Plug 'msanders/snipmate.vim'
+Plug 'ctrlp/ctrlp.vim'                  "Allows for fuzzy file search
+Plug 'mileszs/ack.vim'                  "
+Plug 'tpope/vim-bundler'
 
 "Syntax Highlighting Plugins
-"Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-rails'                  "Syntax + error highlight for rails
-Plugin 'tpope/vim-haml'                   "Syntax highlight for haml
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'fatih/vim-go'
-Plugin 'tomlion/vim-solidity'             "Syntax highlight Eth lang
-Plugin 'mxw/vim-jsx'
+"Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-rails'                  "Syntax + error highlight for rails
+Plug 'tpope/vim-haml'                   "Syntax highlight for haml
+Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
+Plug 'vim-ruby/vim-ruby'
+Plug 'leafgarland/typescript-vim'
+Plug 'fatih/vim-go'
+Plug 'tomlion/vim-solidity'             "Syntax highlight Eth lang
+Plug 'mxw/vim-jsx'
 
 "Linting Plugins
-Plugin 'vim-syntastic/syntastic'
-"Plugin 'w0rp/ale'                         "Async linting
+Plug 'vim-syntastic/syntastic'
+"Plug 'w0rp/ale'                         "Async linting
 
 "External Pugins
-Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
-Plugin 'junegunn/goyo.vim'
+Plug 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
+Plug 'junegunn/goyo.vim'
 
 "call vundle#end()
 call plug#end()
