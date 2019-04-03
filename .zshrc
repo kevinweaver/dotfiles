@@ -18,6 +18,7 @@ source $HOME/.zsh_aliases
 source $HOME/.zsh_profile
 source $HOME/.zsh_env
 source $HOME/.work_scripts
+source $HOME/.work_aliases
 
 #ZSH Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

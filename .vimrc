@@ -27,9 +27,10 @@ Plugin 'mattn/webapi-vim'
 Plugin 'tpope/vim-endwise'                "Auto-close ruby elements
 "Plugin 'Valloric/YouCompleteMe'
 
-"Layout
+"Visual
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'TaDaa/vimade'                     "Fade unfocused vim splits
 
 "Navigation Plugins
 Plugin 'scrooloose/nerdtree'
@@ -395,3 +396,19 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+" Vimade
+let g:vimade = {}
+"let g:vimade = {
+"  \ "normalid": '',
+"  \ "normalncid": '',
+"  \ "basefg": '',
+"  \ "basebg": '',
+"  \ "fadelevel": 0.4,
+"  \ "colbufsize": 15,
+"  \ "rowbufsize": 15,
+"  \ "checkinterval": 100,
+"  \ "usecursorhold": 0,
+"  \ "detecttermcolors": 1,
+"  \ 'enablesigns': 0,
+"  \ 'signsretentionperiod': 4000 }
