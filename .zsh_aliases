@@ -24,37 +24,6 @@ dnslookup(){
   dig $1 ANY +noall +answer
 }
 
-#update all relevant repos
-kufaksync(){
-  cd ~/github.com/stitchfix/
-  for string in client-home-ui client-service fix-service hellblazer kufak-suite scheduling-service style-pass-service style-pass-ui styling-fee-service survey-service thenames
-  do
-    echo " ---------- Syncing $string ---------- "
-    cd $string
-    glive
-    cd ~/github.com/stitchfix/
-  done
-  echo " ---------- Finished Syncing ---------- "
-}
-
-kufakcreate(){
-  cd ~/github.com/stitchfix/
-  for string in client-home-ui client-service fix-service hellblazer scheduling-service style-pass-service style-pass-ui styling-fee-service survey-service
-  do
-    echo " ---------- Syncing $string ---------- "
-    cd ~/github.com/stitchfix/
-    cd $string
-    glivecreate
-  done
-  echo " ---------- Finished Syncing ---------- "
-}
-
-
-syncinvoke(){
-  kufaksync
-  invoke
-}
-
 #ls after cd
 #function chpwd() {
 #    emulate -L zsh
@@ -87,13 +56,6 @@ alias weechat='weechat-curses'
 alias tether='easytether connect'
 alias color='~/.dotfiles/gnome-terminal-colors/install.sh'
 
-#TODO Replace these with better autocomplete
-# Project Folders
-alias work='cd ~/github.com/stitchfix'
-alias kufak='cd ~/github.com/stitchfix/kufak-suite'
-alias stitch='cd ~/github.com/stitchfix'
-alias hell='cd ~/github.com/stitchfix/hellblazer'
-alias chui='cd ~/github.com/stitchfix/client-home-ui'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
 alias ether='cd ~/github.com/kevinweaver/ethereum-learnings'
@@ -101,10 +63,6 @@ alias kevin='cd ~/github.com/kevinweaver'
 alias dot='cd ~/dotfiles'
 alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
 alias ethwp='macdown ~/github.com/ethereum/wiki.wiki/Ethereum-Whitepaper.md'
-
-# Work commands
-alias openhell='cd ~/github.com/stitchfix/kufak-suite; invoker remove hellblazer; cd ~/github.com/stitchfix/hellblazer; rails s'
-alias invoke='cd ~/github.com/stitchfix/kufak-suite; pkill puma; pkill invoker; invoker start'
 
 #alias killrails="ps aux | grep puma | awk '{print $2}' | xargs kill -15"
 #Rails
@@ -187,8 +145,8 @@ alias vi='vim -u NONE -N'
 alias gcom='git checkout master'
 alias gcpom='git checkout master && git pull origin master'
 alias gscpom='git stash && git checkout master && git stash && git pull origin master'
-alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && git stash'
-alias glivecreate='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rails stichfix:db:create:all && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
+alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && yarn install && git stash'
+alias glivecreate='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rails stitchfix:db:create:all rails stitchfix:db:create RAILS_ENV=test && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
 alias unstage='git reset HEAD'
 
 # git status
@@ -219,6 +177,7 @@ alias gra='git rebase --abort'
 # git push
 alias gp='git push'
 alias gpoh='git push origin HEAD'
+alias gpohf='git push origin HEAD -f'
 
 # git add
 alias ga='git add -p'

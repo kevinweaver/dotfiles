@@ -15,4 +15,3 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/github.com/ethereum/go-ethereum/build/bin/:$PATH"
-
