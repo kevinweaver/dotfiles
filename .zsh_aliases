@@ -87,6 +87,7 @@ alias weechat='weechat-curses'
 alias tether='easytether connect'
 alias color='~/.dotfiles/gnome-terminal-colors/install.sh'
 
+
 #TODO Replace these with better autocomplete
 # Project Folders
 alias work='cd ~/github.com/stitchfix'
@@ -169,6 +170,8 @@ alias sane='stty sane'
 
 alias py='python'
 alias sha1='openssl sha1'
+alias rand='openssl rand -base64 32'
+alias random=rand
 
 alias vim_bundle_install='vim +PlugInstall'
 alias vim_bundle_update='vim +PlugUpdate +qall'
@@ -213,6 +216,7 @@ alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
 
 # git rebase
+alias grom='git rebase origin/master'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 

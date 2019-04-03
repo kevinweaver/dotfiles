@@ -8,7 +8,8 @@ filetype off                   " required!
 :nmap ; :
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
+call plug#begin()
 "set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 
@@ -78,7 +79,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
 Plugin 'junegunn/goyo.vim'
 
-call vundle#end()
+"call vundle#end()
+call plug#end()
 filetype plugin indent on "req
 
 "Plugin
