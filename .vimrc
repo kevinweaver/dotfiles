@@ -56,7 +56,7 @@ Plug 'mhinz/vim-signify'                "Adds git diffs in gutter
 "Search Plugins
 Plug 'tpope/vim-unimpaired'
 Plug 'msanders/snipmate.vim'
-Plug 'ctrlp/ctrlp.vim'                  "Allows for fuzzy file search
+Plug 'kien/ctrlp.vim'                  "Allows for fuzzy file search
 Plug 'mileszs/ack.vim'                  "
 Plug 'tpope/vim-bundler'
 
