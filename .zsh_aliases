@@ -56,6 +56,7 @@ alias weechat='weechat-curses'
 alias tether='easytether connect'
 alias color='~/.dotfiles/gnome-terminal-colors/install.sh'
 
+alias kiln='cd ~/github.com/kevinweaver/kiln/kiln-ethereum'
 alias learn='cd ~/github.com/kevinweaver/100DaysOfCode'
 alias react='cd ~/github.com/kevinweaver/hackernews-react'
 alias ether='cd ~/github.com/kevinweaver/ethereum-learnings'
@@ -80,6 +81,7 @@ alias ...='cd .. ; cd ..'
 alias q='exit'
 
 # tmux
+alias tmux="TERM=screen-256color-bce tmux"
 alias tat='tmux_attach'
 alias t='tmux_attach'
 
