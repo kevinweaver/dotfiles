@@ -12,6 +12,7 @@
 .agignore
 .dropbox
 .gems.tags
+gems.tags
 .svn
 .tags
 /.bundle/
