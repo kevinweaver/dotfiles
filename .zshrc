@@ -55,3 +55,7 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 export PATH=/usr/local/share/npm/bin:$PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/kevinweaver/.sdkman"
+[[ -s "/Users/kevinweaver/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kevinweaver/.sdkman/bin/sdkman-init.sh"
