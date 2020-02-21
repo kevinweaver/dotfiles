@@ -156,6 +156,7 @@ alias gscpom='git stash && git checkout master && git stash && git pull origin m
 alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && yarn install && git stash'
 alias glivecreate='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rails stitchfix:db:create:all rails stitchfix:db:create RAILS_ENV=test && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
 alias unstage='git reset HEAD'
+alias gfix='$EDITOR `git diff --name-only | uniq`'
 
 # git status
 alias gs='git status'

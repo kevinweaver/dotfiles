@@ -1,5 +1,5 @@
-set nocompatible               " be iproved
-filetype off                   " required!
+set nocompatible               " be improved
+filetype plugin on                   " required!
 
 "esc is far away, Use ;; to get us out of insert mode
 "imap ;; <esc>
@@ -25,7 +25,19 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mattn/emmet-vim'                  "Adds snippets
 Plug 'mattn/webapi-vim'
 Plug 'tpope/vim-endwise'                "Auto-close ruby elements
-"Plug 'Valloric/YouCompleteMe'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' } "Auto complete
+Plug 'Valloric/YouCompleteMe', { 'do': '.install.py --tern-completer' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Search Plugins
+Plug 'tpope/vim-unimpaired'
+Plug 'msanders/snipmate.vim'
+Plug 'ctrlpvim/ctrlp.vim'                  "Allows for fuzzy file search
+Plug 'mileszs/ack.vim'                  "Fuzzy text search
+Plug 'tpope/vim-bundler'
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'                 "Fuzzy Finder
+Plug 'ludovicchabant/vim-gutentags'     "Auto generate tags
 
 "Visual
 Plug 'vim-airline/vim-airline'
@@ -53,28 +65,22 @@ Plug 'benmills/vimux'                   "Run Tmux commands from vim in 20% windo
 Plug 'tpope/vim-fugitive'               "Adds git commands like :Gdiff, :Gstatus
 Plug 'mhinz/vim-signify'                "Adds git diffs in gutter
 
-"Search Plugins
-Plug 'tpope/vim-unimpaired'
-Plug 'msanders/snipmate.vim'
-Plug 'ctrlp/ctrlp.vim'                  "Allows for fuzzy file search
-Plug 'mileszs/ack.vim'                  "Fuzzy text search
-Plug 'tpope/vim-bundler'
-
 "Syntax Highlighting Plugins
 "Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-rails'                  "Syntax + error highlight for rails
 Plug 'tpope/vim-haml'                   "Syntax highlight for haml
-Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 Plug 'vim-ruby/vim-ruby'
 Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
-Plug 'tomlion/vim-solidity'             "Syntax highlight Eth lang
-Plug 'mxw/vim-jsx'
+Plug 'tomlion/vim-solidity'             "Syntax highlight smart contracts
+Plug 'sheerun/vim-polyglot'             "Syntax highlight many languages
+"Plug 'pangloss/vim-javascript'  "covered by polyglot
+"Plug 'mxw/vim-jsx'              "covered by polyglot
 
 "Linting Plugins
 Plug 'vim-syntastic/syntastic'
-"Plug 'w0rp/ale'                         "Async linting
+Plug 'dense-analysis/ale'               "Async linting
 
 "External Pugins
 Plug 'hashrocket/vim-macdown'          "Use \p to live reload markdown files in MacDown app
@@ -94,8 +100,6 @@ let g:multi_cursor_use_default_mapping=0
 "let g:multi_cursor_prev_key='<C-p>'
 "let g:multi_cursor_skip_key='<C-x>'
 "let g:multi_cursor_quit_key='<Esc>'
-"6 characters before you complete me kicks in
-let g:ycm_min_num_of_chars_for_completion = 6
 "python from powerline.bindings.vim impor 'source_plugin; source_plugin()
 let g:nerdtree_tabs_open_on_console_startup=0
 let NERDTreeShowHidden=1
@@ -107,11 +111,15 @@ if has('gui_running')
   set guioptions=egmrt           " hide the gui menubar
 endif
 
+"=============SAVING==============
 " Allow for mistakes
 command! W :w
 command! Q :q
 command! Wq :wq
 command! WQ :wq
+
+"save on buffer leave
+autocmd BufLeave,FocusLost,VimResized * silent! wall
 
 "=============MOVEMENT==============
 
@@ -143,6 +151,8 @@ nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 
 "Ctags
 "map \c to run ctags in folder
+set statusline+=%{gutentags#statusline()}
+
 map <Leader>c :! ctags -R -f ./.git/tags .<CR>
 set tags=tags
 " Ctrl+[ to so that manuevering ctags is simply Ctrl+] to go down and Ctrl+[ to go up
@@ -399,16 +409,26 @@ augroup END
 
 " Vimade
 let g:vimade = {}
-"let g:vimade = {
-"  \ "normalid": '',
-"  \ "normalncid": '',
-"  \ "basefg": '',
-"  \ "basebg": '',
-"  \ "fadelevel": 0.4,
-"  \ "colbufsize": 15,
-"  \ "rowbufsize": 15,
-"  \ "checkinterval": 100,
-"  \ "usecursorhold": 0,
-"  \ "detecttermcolors": 1,
-"  \ 'enablesigns': 0,
-"  \ 'signsretentionperiod': 4000 }
+
+let g:fzf_buffers_jump = 1
+
+" Ale linter
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+let g:ale_fix_on_save = 1
+
+"Auto completion
+set omnifunc=syntaxcomplete#Complete
+
+" Start autocompletion after 4 chars
+"4 characters before you complete me kicks in
+let g:ycm_min_num_of_chars_for_completion = 4
+let g:ycm_min_num_identifier_candidate_chars = 4
+let g:ycm_enable_diagnostic_highlighting = 0
+" Don't show YCM's preview window [ I find it really annoying ]
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
+
+" Python setup
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
+
