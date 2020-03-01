@@ -71,7 +71,6 @@ alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
 alias ethwp='macdown ~/github.com/ethereum/wiki.wiki/Ethereum-Whitepaper.md'
 
 #alias killrails="ps aux | grep puma | awk '{print $2}' | xargs kill -15"
-#Rails
 
 
 # directory listing & navigation
@@ -96,6 +95,8 @@ alias bu='bundle update'
 alias be='bundle exec'
 alias b='bundle exec !!'
 alias r='bundle exec rspec'
+alias gemclean='gem cleanup && gem install bundler && bundle install'
+alias gemreset=gemclean
 
 # rails
 alias rakeall='rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start'
@@ -112,6 +113,7 @@ alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
 alias rdm='rake db:migrate'
+alias rdbm='rails db:migrate'
 alias rdtp='rake db:test:prepare'
 alias rsa='rake spec:all'
 alias rc='rails console'
@@ -121,9 +123,11 @@ alias spec='/usr/bin/time bundle exec rspec'
 alias rspec='bundle exec rspec'
 alias railsnopry='DISABLE_PRY_RAILS=1 bundle exec rails c'
 
-# misc
+#ctags
 alias ctags='`brew --prefix`/bin/ctags'
 alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
+
+# misc
 alias f='find . -iname'
 alias v='vim $(fzf)'
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
