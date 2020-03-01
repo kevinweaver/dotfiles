@@ -19,6 +19,11 @@ extract () { if [ -f $1 ] ; then
      fi
 }
 
+#find and replace
+#findreplace () { if [ -f $1 ] ; then
+#  grep -lr --exclude-dir=".git" -e "$1" . | xargs sed -i '' -e 's/$1/$2/g\'
+#}
+
 #full dns info
 dnslookup(){
   dig $1 ANY +noall +answer
@@ -200,6 +205,7 @@ alias gb='git branch'
 # git commit
 alias gc='git commit -v'
 alias gca='git commit --amend --no-edit'
+alias gcma='git commit -m --amend --no-edit'
 alias gcn='git commit --patch -n'
 alias gcm='git commit -m'
 

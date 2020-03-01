@@ -16,3 +16,7 @@ export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/github.com/ethereum/go-ethereum/build/bin/:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+#NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
