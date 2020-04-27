@@ -1,4 +1,4 @@
-"set nocompatible               " be improved
+set nocompatible               " be improved
 filetype plugin on                   " required!
 
 "esc is far away, Use ;; to get us out of insert mode
@@ -26,7 +26,7 @@ Plug 'mattn/emmet-vim'                  "Adds snippets
 Plug 'mattn/webapi-vim'
 Plug 'tpope/vim-endwise'                "Auto-close ruby elements
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' } "Auto complete
-Plug 'Valloric/YouCompleteMe', { 'do': '.install.py --tern-completer' }
+"Plug 'Valloric/YouCompleteMe', { 'do': '.install.py --tern-completer' }
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Search Plugins
@@ -37,7 +37,7 @@ Plug 'mileszs/ack.vim'                  "Fuzzy text search
 Plug 'tpope/vim-bundler'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'                 "Fuzzy Finder
-Plug 'ludovicchabant/vim-gutentags'     "Auto generate tags
+"Plug 'ludovicchabant/vim-gutentags'     "Auto generate tags
 
 "Visual
 Plug 'vim-airline/vim-airline'
@@ -576,3 +576,8 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+
+"ale
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'

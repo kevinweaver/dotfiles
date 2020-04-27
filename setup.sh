@@ -235,7 +235,9 @@ install_xcode () {
 install_vim () {
   brew install neovim
   brew install python
+  brew upgrade python
   brew install python3
+  brew upgrade python3
   pip2 install neovim --upgrade
   pip3 install neovim --upgrade
 }
