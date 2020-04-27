@@ -434,6 +434,7 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+<<<<<<< HEAD
 " NeoClide Fuzzy Search
 
 " TextEdit might fail if hidden is not set.
