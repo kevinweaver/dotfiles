@@ -1,0 +1,23 @@
+{
+  "window.zoomLevel": 1,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.enablePreview": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "yaml.schemas": {
+    "file:///Users/kevinweaver/.vscode/extensions/atlassian.atlascode-2.7.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.jira.jqlList": [
+    {
+      "id": "01e33336-f2c7-42f0-85db-e8e595e9a75b",
+      "enabled": true,
+      "name": "My stitchfix Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "cd7d20ac-4e98-426c-839e-75697da5cc3e",
+      "monitor": true
+    }
+  ],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}

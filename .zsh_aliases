@@ -102,6 +102,7 @@ alias gemreset=gemclean
 alias rakeall='rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start'
 alias rakealll='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed && rake db:populate && rake ts:stop && rake ts:index && rake ts:start'
 alias rakeall='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed'
+alias binstart='bundle install && yarn install && bin/start'
 
 #This is required to run custom rake tasks in zsh
 alias rake='noglob bundle exec rake'
@@ -128,6 +129,7 @@ alias ctags='`brew --prefix`/bin/ctags'
 alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log *'
 
 # misc
+alias lint='standardrb --fix && yarn lint --fix'
 alias f='find . -iname'
 alias v='vim $(fzf)'
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
@@ -179,6 +181,7 @@ alias glr='git pull --rebase'
 alias gpom='git pull origin master'
 
 alias gu='git fetch && git update-ref refs/heads/master origin/master'
+alias gfom='git fetch origin master'
 
 # git cherry-pick
 alias gcpa='git cherry-pick --abort'

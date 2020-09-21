@@ -38,7 +38,7 @@ export TERM="xterm-256color"
 alias weechat='TERM=screen-256color weechat-curses'
 
 #Tmux
-if [ "$TMUX" = "" ]; then tmux new; fi
+#if [ "$TMUX" = "" ]; then tmux new; fi
 
 #rvm
 # Load rvm into a shell session *as a function*
@@ -59,3 +59,6 @@ export PATH=/usr/local/share/npm/bin:$PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/kevinweaver/.sdkman"
 [[ -s "/Users/kevinweaver/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kevinweaver/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="~/.nvm"
+source ~/.nvm/nvm.sh

@@ -19,4 +19,4 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 #NVM
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+#source $(brew --prefix nvm)/nvm.sh
