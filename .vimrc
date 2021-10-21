@@ -7,9 +7,9 @@ filetype plugin on                   " required!
 "Map ; to : for speeeed
 :nmap ; :
 
-set rtp+=~/.vim/bundle/Vundle.vim
+"set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin()
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 "set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
 
@@ -20,21 +20,20 @@ Plug 'gmarik/vundle'                    "Vim plugin manager
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'               "Adds 'cs' command to change pair characters
 Plug 'Townk/vim-autoclose'              "Adds closing pairs
-Plug 'Raimondi/delimitMate'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'Raimondi/delimitMate'
+"Plug 'terryma/vim-multiple-cursors'
 Plug 'mattn/emmet-vim'                  "Adds snippets
 Plug 'mattn/webapi-vim'
 Plug 'tpope/vim-endwise'                "Auto-close ruby elements
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' } "Auto complete
-Plug 'Valloric/YouCompleteMe', { 'do': '.install.py --tern-completer' }
+"Plug 'Valloric/YouCompleteMe', { 'do': '.install.py --tern-completer' }
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Search Plugins
-Plug 'tpope/vim-unimpaired'
-Plug 'msanders/snipmate.vim'
-Plug 'ctrlpvim/ctrlp.vim'                  "Allows for fuzzy file search
+Plug 'tpope/vim-unimpaired'             "Paidrs brackets
+"Plug 'garbas/snipmate.vim'             "snippets
+Plug 'ctrlpvim/ctrlp.vim'               "Allows for fuzzy file search
 Plug 'mileszs/ack.vim'                  "Fuzzy text search
-Plug 'tpope/vim-bundler'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'                 "Fuzzy Finder
 Plug 'ludovicchabant/vim-gutentags'     "Auto generate tags
@@ -42,20 +41,21 @@ Plug 'ludovicchabant/vim-gutentags'     "Auto generate tags
 "Visual
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'TaDaa/vimade'                     "Fade unfocused vim splits
+"Plug 'tpope/vim-bundler'               "Adds bundler commands + highlights
+"Plug 'TaDaa/vimade'                     "Fade unfocused vim splits
 
 "Navigation Plugins
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'              "Sidenav w/ ctrl+n
 Plug 'scrooloose/nerdcommenter'         "Adds easy comment and uncomment
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
 
 "Functional Plugins
-Plug 'itchyny/calendar.vim'
-Plug 'esneider/YUNOcommit.vim'
-Plug 'wincent/command-t'
+"Plug 'itchyny/calendar.vim'
+"Plug 'esneider/YUNOcommit.vim'
+Plug 'wincent/command-t'                "tags
 Plug 'thoughtbot/vim-rspec'
 Plug 'jgdavey/tslime.vim'               "Send tmux commands in vim (isn't working)
 Plug 'benmills/vimux'                   "Run Tmux commands from vim in 20% window
@@ -69,17 +69,17 @@ Plug 'mhinz/vim-signify'                "Adds git diffs in gutter
 "Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-rails'                  "Syntax + error highlight for rails
 Plug 'tpope/vim-haml'                   "Syntax highlight for haml
-Plug 'kchmck/vim-coffee-script'
-Plug 'vim-ruby/vim-ruby'
-Plug 'leafgarland/typescript-vim'
-Plug 'fatih/vim-go'
+Plug 'kchmck/vim-coffee-script'         "Syntax highlight coffee-script
+Plug 'vim-ruby/vim-ruby'                "syntax highlight ruby
+Plug 'leafgarland/typescript-vim'       "syntax highlight ruby
+Plug 'fatih/vim-go'                     "syntax highlight go
 Plug 'tomlion/vim-solidity'             "Syntax highlight smart contracts
 Plug 'sheerun/vim-polyglot'             "Syntax highlight many languages
 "Plug 'pangloss/vim-javascript'  "covered by polyglot
 "Plug 'mxw/vim-jsx'              "covered by polyglot
 
 "Linting Plugins
-Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'          "left bar error highlights
 Plug 'dense-analysis/ale'               "Async linting
 
 "External Pugins
@@ -198,8 +198,9 @@ set showcmd       " display incomplete commands
 set hidden        " keep undo history for background buffers
 set autoread      " autoamically read the file again when it is changed externally
 set showtabline=2 " always show tab bar
-"set term=cons25   " fix issue with arrow keys
-set autoread | au CursorHold * checktime | call feedkeys("lh")  " auto refresh vim if current files change outside vim
+
+" THIS LINE causes the cursor to flicker
+"set autoread | au CursorHold * checktime | call feedkeys("lh")  " auto refresh vim if current files change outside vim
 
 "map pasting
 "nnoremap <C-p> "+gP
@@ -385,7 +386,7 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F7> :vs ~/dotfiles/.snippets.json<CR>
 
 "Emmet Plugin
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
+"let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets.json')), "\n"))
 let g:user_emmet_expandabbr_key = '<Tab>'
 
 
@@ -431,6 +432,6 @@ set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 
 " Python setup
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python_host_prog  = $HOME.'/.pyenvs/nvim-2.7.16/bin/python'
+let g:python3_host_prog  = $HOME.'/.pyenvs/nvim-3.9.7/bin/python'
 
