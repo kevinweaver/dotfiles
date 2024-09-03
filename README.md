@@ -16,9 +16,6 @@ My very own personal dotfiles
 /.zsh_aliases - zsh aliases.  Need to pull some from .zshrc <br/>
 /.zshrc        - Zshell config. <br/>
 
-The Wiki
-========
-
 ## To Do List
 [Sharpen](https://github.com/kevinweaver/dotfiles/wiki/Sharpen) - Everything I want to change/improve about my dotfiles.</br>
 
