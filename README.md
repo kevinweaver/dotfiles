@@ -17,7 +17,7 @@ My very own personal dotfiles
 /.zshrc        - Zshell config. <br/>
 
 ## To Do List
-[Sharpen](https://github.com/kevinweaver/dotfiles/wiki/Sharpen) - Everything I want to change/improve about my dotfiles.</br>
+[Sharpen](https://github.com/kevinweaver/dotfiles/wiki/Sharpen) - Everything I want to change/improve about my dotfiles.
 
 ## Reference Lists
 [Zshell Commands](https://github.com/kevinweaver/dotfiles/wiki/Zshell-Commands) - A helpful list of useful zshell commands.</br>
