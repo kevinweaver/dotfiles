@@ -6,13 +6,14 @@ DEFAULT_USER="kevin"
 #ZSH_THEME="mh"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
+
 #ZSH_THEME="mira"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-ZSH_THEME="mira"
+ZSH_THEME="robbyrussell"
 # Plugins to load, loc in  ~/.oh-my-zsh/custom/plugins/ Ex: plugins=(rails git textmate ruby lighthouse)
 plugins=(github tmux zsh-autosuggestions)
 
@@ -66,12 +67,21 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 
 ## TRUFFLE_ROOT is the path to your cloned truffle project
-export TRUFFLE_ROOT=~/github/trufflesuite/truffle # YOU SHOULD ADJUST THIS FOR YOURSELF
+export TRUFFLE_ROOT=~/github/suite/truffle # YOU SHOULD ADJUST THIS FOR YOURSELF
 
 ## REPROD_ROOT is where you would like reproductions to be created.
 export REPROD_ROOT=~/github/trufflesuite/reprod
 
-source ~/.truffle-dotfiles/scripts/truffle-scripts.sh
+## source ~/.truffle-dotfiles/scripts/truffle-scripts.sh
 
 export FZF_EIP_HOME=$HOME/.fzf-eip
-source $FZF_EIP_HOME/init.sh
+## source $FZF_EIP_HOME/init.sh
+# pnpm
+export PNPM_HOME="/Users/kevin/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+function cursor { open -a "/Applications/Cursor.app" "$@"; }
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -115,6 +115,11 @@ alias rakealll='rake db:drop && rake db:create && rake db:migrate:redo && rake d
 alias rakeall='rake db:drop && rake db:create && rake db:migrate:redo && rake db:seed'
 alias binstart='bundle install && yarn install && bin/start'
 
+# npm
+alias npmall='npm install && npm run build && npm run dev'
+alias yarnall='yarn install && yarn build && yarn dev'
+alias bunall='bun install && bun run build && bun run dev'
+
 #This is required to run custom rake tasks in zsh
 alias rake='noglob bundle exec rake'
 
