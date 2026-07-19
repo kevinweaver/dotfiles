@@ -30,17 +30,17 @@ dnslookup(){
 }
 
 #ls after cd
-#function chpwd() {
-#    emulate -L zsh
-#      ls -la
-#}
+function chpwd() {
+    emulate -L zsh
+      ls -la
+}
 
 # Apps
 macdown() {
   "$(mdfind kMDItemCFBundleIdentifier=com.uranusjr.macdown | head -n1)/Contents/SharedSupport/bin/macdown" $@
 }
 
-alias vim='nvim'
+#alias vim='nvim'
 #alias geth='~/github.com/ethereum/go-ethereum/build/bin/geth'
 alias ngrok='~/ngrok'
 alias insty='python3 ~/github.com/following/instagram-terminal-news-feed/start.py'
@@ -69,6 +69,17 @@ alias kevin='cd ~/github.com/kevinweaver'
 alias dot='cd ~/dotfiles'
 alias wiki='cd ~/github.com/kevinweaver/dotfiles.wiki'
 alias ethwp='macdown ~/github.com/ethereum/wiki.wiki/Ethereum-Whitepaper.md'
+
+alias restart='rm -rf dist && npm install && npm run build && npm run start'
+alias restarts='rm -rf dist && npm install && npm run build:swc && npm run start'
+
+alias reset='rm -rf node_modules dist package-lock.json && npm install && npm run build && npm run start'
+alias resets='rm -rf node_modules dist package-lock.json && npm install && npm run build:swc && npm run start'
+
+alias nibs='npm install && npm run build && npm run start'
+alias nibd='npm install && npm run build && npm run dev'
+alias nbs='npm run build && npm run start'
+alias nbd='npm run build && npm run dev'
 
 #alias killrails="ps aux | grep puma | awk '{print $2}' | xargs kill -15"
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -157,16 +168,20 @@ alias v='vim'
 alias vi='vim -u NONE -N'
 
 # git
-alias gcom='git checkout master'
-alias gcpom='git checkout master && git pull origin master'
-alias gscpom='git stash && git checkout master && git stash && git pull origin master'
-alias glive='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rake db:migrate && yarn install && git stash'
-alias glivecreate='git stash && git checkout master && git stash && git pull && git reset --hard origin/master && gem install bundler && bundle exec bundle install && rails stitchfix:db:create:all rails stitchfix:db:create RAILS_ENV=test && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
+alias gcom='git checkout main'
+alias gcpom='git checkout main && git pull'
+alias gscpom='git stash && git checkout main && git stash && git pull origin main'
+alias glive='git stash && git checkout main && git stash && git pull && git reset --hard origin/main && gem install bundler && bundle exec bundle install && rake db:migrate && yarn install && git stash'
+alias glivecreate='git stash && git checkout main && git stash && git pull && git reset --hard origin/main && gem install bundler && bundle exec bundle install && rails stitchfix:db:create:all rails stitchfix:db:create RAILS_ENV=test && rails db:migrate && rails db:migrate RAILS_ENV=test && git stash'
 alias unstage='git reset HEAD'
 alias gfix='$EDITOR `git diff --name-only | uniq`'
 
 # git status
 alias gs='git status'
+alias gap='git add --intent-to-add . && git add --patch'
+alias gcm='git commit -m'
+alias gpoh='git push origin HEAD'
+alias gcpom='git checkout main && git pull'
 
 # git stash
 alias gst='git stash'
@@ -178,17 +193,17 @@ alias gst='git stash'
 #}
 alias glf='git pull --ff-only'
 alias glr='git pull --rebase'
-alias gpom='git pull origin master'
+alias gpom='git pull origin main'
 
-alias gu='git fetch && git update-ref refs/heads/master origin/master'
-alias gfom='git fetch origin master'
+alias gu='git fetch && git update-ref refs/heads/main origin/main'
+alias gfom='git fetch origin main'
 
 # git cherry-pick
 alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
 
 # git rebase
-alias grom='git rebase origin/master'
+alias grom='git rebase origin/main'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 
@@ -218,7 +233,9 @@ alias gcn='git commit --patch -n'
 alias gcm='git commit -m'
 
 # git diff
-alias gd='git diff master..HEAD -- .'
+alias gd='git diff main..HEAD -- .'
+alias gdiff=gd
+alias gitdiff=gd
 
 gdn() {
   git diff HEAD~$1..
@@ -235,9 +252,9 @@ function push {
 #
 #gpf() {
 #  branch=$(current_branch)
-#  if [[ $branch == 'master' ]]
+#  if [[ $branch == 'main' ]]
 #  then
-#    echo 'This command cannot be run from the master branch'
+#    echo 'This command cannot be run from the main branch'
 #    return 1
 #  else
 #    git push origin +'$branch' --force-with-lease
@@ -252,24 +269,24 @@ function push {
 #  if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1
 #  then
 #    branch=$(current_branch)
-#    if [[ $branch == 'master' ]]
+#    if [[ $branch == 'main' ]]
 #    then
-#      echo 'This command cannot be run from the master branch'
+#      echo 'This command cannot be run from the main branch'
 #      return 1
 #    else
 #      git fetch &&\
 #        git diff-index --quiet --cached HEAD && \
-#        git checkout master && \
+#        git checkout main && \
 #        git diff-index --quiet --cached HEAD && \
-#        git pull origin master && \
+#        git pull origin main && \
 #        git checkout '$branch' && \
-#        git rebase master && \
+#        git rebase main && \
 #        git push origin +'$branch' --force-with-lease && \
 #        wait_for_ci && \
-#        git checkout master && \
+#        git checkout main && \
 #        git merge '$branch' --ff-only && \
 #        sleep 2 && \
-#        git push origin master && \
+#        git push origin main && \
 #        hub browse && \
 #        sleep 10 && \
 #        git push origin ':$branch'
@@ -289,19 +306,19 @@ function push {
 #  fi
 #}
 #
-#compare_to_master() {
+#compare_to_main() {
 #  branch='$(current_branch)'
-#  git diff --stat 'master..$branch'
+#  git diff --stat 'main..$branch'
 #}
 #
-#diff_with_master() {
+#diff_with_main() {
 #  branch='$(current_branch)'
-#  git difftool 'master..$branch'
+#  git difftool 'main..$branch'
 #}
 #
 ## git rebase
 #alias grc='git rebase --continue'
-#alias gri='git fetch && git rebase -i origin/master'
+#alias gri='git fetch && git rebase -i origin/main'
 #
 #show() {
 #  # Show a given commit in git difftool
@@ -313,7 +330,7 @@ function push {
 #  fi
 #}
 #
-## Show commits that differ from the master branch
+## Show commits that differ from the main branch
 #divergent () {
 #  branch='$(current_branch)'
 #  if [[ '${1}' == '--bare' ]]
@@ -322,11 +339,11 @@ function push {
 #  else
 #    command_opt=(--left-right --graph --cherry-pick --oneline)
 #  fi
-#  if [[ '$branch' == 'master' ]]
+#  if [[ '$branch' == 'main' ]]
 #  then
-#    echo 'This command cannot be run against the master branch'
+#    echo 'This command cannot be run against the main branch'
 #  else
-#    git log '${command_opt[@]}' master..'$branch'
+#    git log '${command_opt[@]}' main..'$branch'
 #  fi
 #}
 #
@@ -339,7 +356,7 @@ function push {
 #  else
 #    git diff-index --quiet --cached HEAD && \
 #      git checkout -b '$2' && \
-#      git reset --hard origin/master && \
+#      git reset --hard origin/main && \
 #      git cherry-pick '$1'
 #  fi
 #}
@@ -357,15 +374,10 @@ alias gitmine="git log --author='\$(git config --get user.name)' --pretty=format
 alias today='git lg --since="1 day ago"'
 alias mark_as_safe='[ -d .git ] && mkdir .git/safe || echo "Run this command at the root of a git repository"'
 
-clean_branches (){
-  git checkout master && \
-    git diff-index --quiet --cached HEAD && \
-    git branch --merged | \
-    grep -v "\*" | \
-    grep -v master | \
-    grep -v dev | \
-    xargs -n 1 git branch -d &&\
-    echo "Done."
-}
-
-
+alias bunall='bun install && bun run build && bun run dev'
+alias npmall='npm install && npm run build && npm run dev'
+alias yarnall='yarn install && yarn run build && yarn run dev'
+# alias applekid='ssh applekid@100.81.109.51'
+alias applepi='ssh applepi@100.83.85.63'
+alias applekid='ssh orangekid@100.81.109.51'
+alias orangekid='ssh everdred@orangekid'
